@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import Industrial Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+@layer base {
+  body {
+    @apply font-sans text-gray-900 bg-white;
+    font-family: 'Inter', sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+  }
+}
+
+@layer components {
+  /* GKN-Style Hero Typography */
+  .text-hero {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500; /* Bolder like GKN */
+    font-size: 3.5rem;
+    line-height: 1.0;
+    text-transform: uppercase;
+    color: #1a1a1a;
+  }
+
+  @media (min-width: 768px) {
+    .text-hero {
+        font-size: 5.5rem; /* Huge text on desktop */
+    }
+  }
+
+  .text-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #666;
+    margin-bottom: 1rem;
+    display: block;
+  }
+
+  /* Industrial Buttons (Boxy Style) */
+  .btn-industrial {
+    @apply inline-flex items-center justify-center px-8 py-4 border border-gray-300 bg-gray-100 text-gray-900 font-medium text-lg uppercase tracking-wide transition-all duration-300;
+    font-family: 'Oswald', sans-serif;
+  }
+  
+  .btn-industrial:hover {
+    @apply bg-gray-200 border-gray-400;
+  }
+  
+  .btn-primary-industrial {
+    @apply inline-flex items-center justify-center px-8 py-4 border border-gray-300 bg-white text-gray-900 font-medium text-lg uppercase tracking-wide transition-all duration-300;
+    font-family: 'Oswald', sans-serif;
+  }
+  
+  .btn-primary-industrial:hover {
+    @apply bg-gray-50 border-gray-400;
+  }
+
+  /* Diagonal Cuts */
+  .diagonal-hero-image {
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+  }
+  
+  @media (max-width: 768px) {
+    .diagonal-hero-image {
+      clip-path: none;
+    }
+  }
+
+  /* Industrial Cards */
+  .industrial-card {
+    @apply bg-white border border-gray-200 p-8 transition-all duration-300 relative overflow-hidden h-full flex flex-col;
+  }
+  
+  .industrial-card::before {
+    content: '';
+    @apply absolute top-0 left-0 w-full h-1 bg-primary transform scale-x-0 transition-transform duration-300 origin-left;
+  }
+  
+  .industrial-card:hover {
+    @apply border-primary shadow-lg;
+  }
+  
+  .industrial-card:hover::before {
+    @apply scale-x-100;
+  }
+
+  /* Navigation Links */
+  .nav-link-industrial {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 1.125rem; /* 18px */
+    color: #1a1a1a;
+    position: relative;
+    padding-bottom: 4px;
+    @apply hover:text-primary transition-colors duration-200;
+  }
+}
