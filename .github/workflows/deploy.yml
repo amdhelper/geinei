@@ -3,7 +3,7 @@ name: Deploy to Server
 on:
   push:
     branches:
-      - main  #  或者你的主分支名，如master
+      - main
 
 jobs:
   deploy:
@@ -13,13 +13,16 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Deploy to server via rsync
-        uses: burnett01/rsync-deployments@7.0.1
+      - name: Setup SSH
+        uses: webfactory/ssh-agent@v0.9.0
         with:
-          switches: -avzr --delete --exclude='.git' --exclude='.github'
-          path: ./
-          remote_path: /www/
-          remote_host: 119.29.236.51
-          remote_port: 333
-          remote_user: ${{ secrets.SSH_USER }}
-          remote_key: ${{ secrets.SSH_PRIVATE_KEY }}
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      - name: Add host key to known_hosts
+        run: |
+          mkdir -p ~/.ssh
+          ssh-keyscan -p 333 -H 119.29.236.51 >> ~/.ssh/known_hosts
+
+      - name: Deploy via rsync
+        run: |
+          rsync -avzr --delete --exclude='.git' --exclude='.github' -e "ssh -p 333 -o StrictHostKeyChecking=no" ./ root@119.29.236.51:/www/
