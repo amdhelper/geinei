@@ -19,7 +19,7 @@ jobs:
           switches: -avzr --delete --exclude='.git' --exclude='.github'
           path: ./
           remote_path: /www/
-          remote_host: 130.162.131.76
-          remote_port: 22
+          remote_host: 119.29.236.51
+          remote_port: 333
           remote_user: ${{ secrets.SSH_USER }}
           remote_key: ${{ secrets.SSH_PRIVATE_KEY }}
