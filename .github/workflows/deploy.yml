@@ -18,7 +18,7 @@ jobs:
         with:
           switches: -avzr --delete --exclude='.git' --exclude='.github'
           path: ./
-          remote_path: /www/v2ray_web/
+          remote_path: /www/
           remote_host: 130.162.131.76
           remote_port: 22
           remote_user: ${{ secrets.SSH_USER }}
