@@ -3,339 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore Yeh Sheng's service workflow for powder metallurgy projects. From inquiry and engineering evaluation to prototyping and mass production.">
-    <meta name="keywords" content="powder metallurgy workflow, PM inquiry process, engineering evaluation, DFM, prototyping, mass production">
-    <meta property="og:title" content="Service Workflow - Yeh Sheng Powder Parts Ind. Co. Ltd.">
-    <meta property="og:description" content="Step-by-step guide to working with Yeh Sheng on your powder metallurgy projects. Inquiry, DFM, tooling, and production.">
-    <meta property="og:image" content="https://yehsheng.com/images/logo.png">
-    <meta property="og:url" content="https://yehsheng.com/solutions.html">
-    <meta property="og:type" content="website">
-    <link rel="icon" type="image/png" href="images/favicon.png">
-    <title>Service Workflow - Yeh Sheng</title>
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <title>Solutions - Yeh Sheng Powder Parts Ind. Co. Ltd.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/custom.css">
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-XXXXXXXXXX');
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#C5A059',
+                        secondary: '#1a1a1a',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
     </script>
-    <!-- Structured Data (Schema.org) -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Yeh Sheng Powder Parts Ind. Co. Ltd.",
-        "url": "https://yehsheng.com",
-        "logo": "https://yehsheng.com/images/logo.png",
-        "description": "Premier manufacturer of high-precision powder metallurgy components since 1984",
-        "foundingDate": "1984",
-        "areaServed": "Worldwide",
-        "contactPoint": {
-            "@type": "ContactPoint",
-            "contactType": "Sales",
-            "url": "https://yehsheng.com/contact.html"
-        }
-    }
-    </script>
-
-    <!-- Import Google Fonts: Playfair Display (Serif) for Headings, Inter (Sans) for Body -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    
-    <style>
-        /* Global Reset */
-        body { margin: 0; padding: 0; font-family: 'Inter', sans-serif; color: #333; background-color: #fcfcfc; overflow-x: hidden; }
-        a { text-decoration: none; color: inherit; transition: all 0.3s ease; }
-        * { box-sizing: border-box; }
-        
-        /* Utility Classes */
-        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-        
-        /* Workflow Step Style */
-        .workflow-step {
-            position: relative;
-            padding: 40px;
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
-            border-left: 5px solid #C5A059;
-            margin-bottom: 30px;
-            transition: transform 0.3s ease;
-        }
-        .workflow-step:hover {
-            transform: translateX(10px);
-        }
-        .step-number {
-            font-family: 'Playfair Display', serif;
-            font-size: 48px;
-            font-weight: 700;
-            color: #e0e0e0;
-            position: absolute;
-            top: 20px;
-            right: 30px;
-            line-height: 1;
-        }
-        
-        /* Checklist Style */
-        .checklist-item {
-            display: flex;
-            align-items: flex-start;
-            margin-bottom: 15px;
-        }
-        .checklist-icon {
-            color: #C5A059;
-            margin-right: 15px;
-            font-weight: bold;
-            font-size: 18px;
-        }
-
-        /* Mobile Menu Styles */
-        .mobile-menu-btn { display: none; cursor: pointer; font-size: 24px; color: #333; }
-        .mobile-menu { 
-            display: none; 
-            position: absolute; 
-            top: 100%; 
-            left: 0; 
-            width: 100%; 
-            background: white; 
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1); 
-            padding: 20px; 
-            flex-direction: column; 
-            gap: 15px; 
-            z-index: 99;
-        }
-        .mobile-menu.active { display: flex; }
-        
-        /* Responsive Styles */
-        @media (max-width: 768px) {
-            .hidden-mobile { display: none !important; }
-            .mobile-menu-btn { display: block; }
-            .workflow-step:hover { transform: none; }
-            h1 { font-size: 36px !important; }
-        }
-    </style>
 </head>
-<body>
-    <!-- Top Bar (Klein Blue) -->
-    <div style="background-color: #002FA7; color: white; padding: 10px 0;" class="hidden-mobile">
-        <div class="container" style="display: flex; justify-content: flex-end; gap: 25px; font-size: 13px; font-weight: 500; letter-spacing: 0.5px;">
-            <a href="about.html" style="color: #ddd;">About Us</a>
-            <a href="contact.html" style="color: #ddd;">Contact</a>
-            <div style="position: relative; display: inline-block;">
-                <span style="cursor: pointer; color: #C5A059;">English ▼</span>
-            </div>
-        </div>
-    </div>
-
+<body class="font-sans text-gray-800 antialiased">
     <!-- Navigation -->
-    <nav style="background: white; box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 100;">
-        <div class="container" style="padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; position: relative;">
-            <div style="display: flex; align-items: center; gap: 15px;">
-                <a href="index.html" style="display: flex; align-items: center; gap: 15px;">
-                    <img src="images/logo.png" alt="Logo" style="height: 40px;">
-                    <div style="display: flex; flex-direction: column;">
-                        <span style="font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; color: #111; line-height: 1.2;">Yeh Sheng Powder Parts Ind. Co. Ltd.</span>
-                        <span style="font-size: 10px; font-weight: 600; color: #C5A059; letter-spacing: 1px; text-transform: uppercase;">Powder Metallurgy</span>
+    <nav class="bg-black text-white sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <img src="images/logo.png" alt="Yeh Sheng Logo" class="h-10">
+                <span class="text-xl font-serif font-bold tracking-wide">Yeh Sheng Powder Parts Ind. Co. Ltd.</span>
+            </div>
+            <div class="hidden md:flex space-x-8 text-sm font-medium uppercase tracking-wider">
+                <a href="index.html" class="hover:text-primary transition">Home</a>
+                <a href="solutions.html" class="text-primary hover:text-white transition">Solutions</a>
+                <a href="applications.html" class="hover:text-primary transition">Applications</a>
+                <a href="emerging-tech.html" class="hover:text-primary transition">Emerging Tech</a>
+                <a href="capabilities.html" class="hover:text-primary transition">Capabilities</a>
+                <a href="products.html" class="hover:text-primary transition">Products</a>
+                <a href="about.html" class="hover:text-primary transition">About</a>
+                
+                <!-- Language Switcher -->
+                <div class="relative group">
+                    <button class="flex items-center hover:text-primary transition">
+                        <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        English
+                        <svg class="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="absolute right-0 mt-2 w-32 bg-white text-gray-800 rounded shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform origin-top-right">
+                        <a href="zh/solutions.html" class="block px-4 py-2 hover:bg-gray-100">中文</a>
+                        <a href="de/solutions.html" class="block px-4 py-2 hover:bg-gray-100">Deutsch</a>
+                        <a href="jp/solutions.html" class="block px-4 py-2 hover:bg-gray-100">日本語</a>
                     </div>
-                </a>
+                </div>
             </div>
-            
-            <!-- Desktop Menu -->
-            <div class="hidden-mobile" style="display: flex; gap: 35px; align-items: center;">
-                <a href="products.html" style="font-size: 15px; font-weight: 500; color: #333; text-transform: uppercase; letter-spacing: 0.5px;">Products</a>
-                <a href="solutions.html" style="font-size: 15px; font-weight: 500; color: #C5A059; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 700;">Service Workflow</a>
-                <a href="capabilities.html" style="font-size: 15px; font-weight: 500; color: #333; text-transform: uppercase; letter-spacing: 0.5px;">Capabilities</a>
-                <a href="applications.html" style="font-size: 15px; font-weight: 500; color: #333; text-transform: uppercase; letter-spacing: 0.5px;">Industries</a>
-                <a href="resources.html" style="font-size: 15px; font-weight: 500; color: #333; text-transform: uppercase; letter-spacing: 0.5px;">Resources</a>
-                <a href="contact.html" style="background: #C5A059; color: white; padding: 8px 20px; border-radius: 4px; font-size: 14px; font-weight: 500;">Contact</a>
-            </div>
-
-            <!-- Mobile Menu Button -->
-            <div class="mobile-menu-btn" onclick="toggleMenu()">
-                ☰
-            </div>
-
-            <!-- Mobile Menu Dropdown -->
-            <div class="mobile-menu" id="mobileMenu">
-                <a href="products.html" style="font-size: 16px; font-weight: 500; color: #333; padding: 10px 0; border-bottom: 1px solid #eee;">Products</a>
-                <a href="solutions.html" style="font-size: 16px; font-weight: 500; color: #C5A059; padding: 10px 0; border-bottom: 1px solid #eee; font-weight: 700;">Service Workflow</a>
-                <a href="capabilities.html" style="font-size: 16px; font-weight: 500; color: #333; padding: 10px 0; border-bottom: 1px solid #eee;">Capabilities</a>
-                <a href="applications.html" style="font-size: 16px; font-weight: 500; color: #333; padding: 10px 0; border-bottom: 1px solid #eee;">Industries</a>
-                <a href="resources.html" style="font-size: 16px; font-weight: 500; color: #333; padding: 10px 0; border-bottom: 1px solid #eee;">Resources</a>
-                <a href="about.html" style="font-size: 16px; font-weight: 500; color: #333; padding: 10px 0; border-bottom: 1px solid #eee;">About Us</a>
-                <a href="contact.html" style="font-size: 16px; font-weight: 500; color: #C5A059; padding: 10px 0;">Contact Us</a>
-            </div>
+            <a href="contact.html" class="bg-primary text-white px-6 py-2 rounded hover:bg-yellow-600 transition font-medium">Contact</a>
         </div>
     </nav>
 
-    <!-- Header Section -->
-    <section style="padding: 80px 0 40px 0; background: #f8f9fa;">
-        <div class="container">
-            <div style="max-width: 800px; margin: 0 auto; text-align: center;">
-                <h1 style="font-family: 'Playfair Display', serif; font-size: 48px; font-weight: 700; color: #111; margin-bottom: 20px;">
-                    How We Work With You
-                </h1>
-                <p style="font-size: 18px; color: #666; line-height: 1.6;">
-                    From initial concept to mass production, Yeh Sheng provides comprehensive engineering support. Our transparent workflow ensures your project is delivered on time, on budget, and to your exact specifications.
-                </p>
-            </div>
+    <!-- Page Header -->
+    <header class="bg-secondary text-white py-20 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-20 bg-[url('images/hero-bg.jpg')] bg-cover bg-center"></div>
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <h1 class="text-4xl md:text-5xl font-serif font-bold mb-4">Engineering Solutions</h1>
+            <p class="text-xl text-gray-300 max-w-2xl mx-auto">Solving complex challenges with powder metallurgy</p>
         </div>
-    </section>
+    </header>
 
-    <!-- Workflow Steps -->
-    <section style="padding: 60px 0; background: #f8f9fa;">
-        <div class="container">
-            <div style="max-width: 900px; margin: 0 auto;">
-                
-                <!-- Step 1 -->
-                <div class="workflow-step">
-                    <div class="step-number">01</div>
-                    <h3 style="font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 700; color: #002FA7; margin-bottom: 15px;">
-                        Inquiry & Requirement Analysis
-                    </h3>
-                    <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">
-                        The process begins when you send us your project details. To provide an accurate quotation and feasibility assessment, please provide:
-                    </p>
-                    <div style="background: #f0f4f8; padding: 20px; border-radius: 8px;">
-                        <div class="checklist-item">
-                            <span class="checklist-icon">✓</span>
-                            <span><strong>Drawings:</strong> 2D (PDF) with tolerances and 3D (STEP/IGES) files.</span>
-                        </div>
-                        <div class="checklist-item">
-                            <span class="checklist-icon">✓</span>
-                            <span><strong>Material Specifications:</strong> Required hardness, density, or specific alloy standards (e.g., MPIF, JIS).</span>
-                        </div>
-                        <div class="checklist-item">
-                            <span class="checklist-icon">✓</span>
-                            <span><strong>Quantity:</strong> Estimated annual usage (EAU) or batch size.</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Step 2 -->
-                <div class="workflow-step">
-                    <div class="step-number">02</div>
-                    <h3 style="font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 700; color: #002FA7; margin-bottom: 15px;">
-                        Engineering Evaluation & DFM
-                    </h3>
-                    <p style="color: #555; line-height: 1.6;">
-                        Our engineering team reviews your design for <strong>Design for Manufacturability (DFM)</strong>. We may suggest minor design modifications to optimize the part for the powder metallurgy process, helping you reduce tooling costs and improve part strength.
+    <!-- Content -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Cost Reduction</h3>
+                    <p class="text-gray-600">
+                        Powder metallurgy minimizes material waste and eliminates secondary machining steps, offering significant cost savings for high-volume production compared to traditional machining or casting.
                     </p>
                 </div>
-
-                <!-- Step 3 -->
-                <div class="workflow-step">
-                    <div class="step-number">03</div>
-                    <h3 style="font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 700; color: #002FA7; margin-bottom: 15px;">
-                        Quotation & Tooling Development
-                    </h3>
-                    <p style="color: #555; line-height: 1.6;">
-                        Once the design is finalized, we provide a formal quotation including tooling costs and unit prices. Upon approval, we proceed with mold design and fabrication. Our in-house tooling capabilities ensure precision and faster lead times.
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Complex Geometries</h3>
+                    <p class="text-gray-600">
+                        Our process allows for the creation of intricate shapes, such as gears with complex profiles, splines, and multi-level parts, which are difficult or impossible to manufacture by other means.
                     </p>
                 </div>
-
-                <!-- Step 4 -->
-                <div class="workflow-step">
-                    <div class="step-number">04</div>
-                    <h3 style="font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 700; color: #002FA7; margin-bottom: 15px;">
-                        Prototyping & Sample Approval
-                    </h3>
-                    <p style="color: #555; line-height: 1.6;">
-                        We produce T1 samples for your verification. We provide a full dimensional inspection report with the samples. Mass production begins only after you have approved the samples.
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Material Versatility</h3>
+                    <p class="text-gray-600">
+                        We can tailor material properties by blending different metal powders, creating unique alloys with specific magnetic, electrical, or mechanical characteristics to suit your application.
                     </p>
                 </div>
-
-                <!-- Step 5 -->
-                <div class="workflow-step">
-                    <div class="step-number">05</div>
-                    <h3 style="font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 700; color: #002FA7; margin-bottom: 15px;">
-                        Mass Production & Quality Control
-                    </h3>
-                    <p style="color: #555; line-height: 1.6;">
-                        Our ISO 9001 certified production line handles compacting, sintering, sizing, and any necessary secondary operations (machining, heat treatment, plating). Rigorous QC checks are performed at every stage.
-                    </p>
-                </div>
-
             </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section style="padding: 80px 0; background: white; text-align: center;">
-        <div class="container">
-            <h2 style="font-family: 'Playfair Display', serif; font-size: 36px; font-weight: 700; color: #111; margin-bottom: 20px;">
-                Ready to Start Your Project?
-            </h2>
-            <p style="font-size: 18px; color: #666; margin-bottom: 40px; max-width: 600px; margin-left: auto; margin-right: auto;">
-                Send us your drawings today for a free engineering evaluation and quotation.
-            </p>
-            <a href="contact.html" class="btn-gold" style="font-size: 18px; padding: 15px 40px;">
-                Request a Quote
-            </a>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer style="background: #002FA7; color: white; padding: 80px 0 40px 0;">
-        <div class="container">
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 50px; margin-bottom: 60px;">
-                
-                <!-- Brand -->
-                <div>
-                    <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 25px;">
-                        <img src="images/logo.png" alt="Logo" style="height: 50px; margin-bottom: 20px;">
-                        <div style="display: flex; flex-direction: column;">
-                            <h3 style="font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 700; color: #C5A059; margin: 0 0 5px 0;">Yeh Sheng Powder Parts Ind. Co. Ltd.</h3>
-                            
-                        </div>
-                    </div>
-                    <p style="color: #e0e0e0; line-height: 1.6; font-size: 14px;">
-                        Premier manufacturer of high-precision powder metallurgy components since 1984.
-                    </p>
-                </div>
-
-                <!-- Links -->
-                <div>
-                    <h4 style="color: white; font-size: 16px; font-weight: 600; margin-bottom: 25px;">Company</h4>
-                    <div style="display: flex; flex-direction: column; gap: 15px;">
-                        <a href="about.html" style="color: #e0e0e0; font-size: 14px;">About Us</a>
-                        <a href="products.html" style="color: #e0e0e0; font-size: 14px;">All Products</a>
-                        <a href="capabilities.html" style="color: #e0e0e0; font-size: 14px;">Capabilities</a>
-                        <a href="resources.html" style="color: #e0e0e0; font-size: 14px;">Resources</a>
-                        <a href="contact.html" style="color: #e0e0e0; font-size: 14px;">Contact</a>
-                    </div>
-                </div>
-
-                <!-- Contact -->
-                <div>
-                    <h4 style="color: white; font-size: 16px; font-weight: 600; margin-bottom: 25px;">Contact Us</h4>
-                    <div style="display: flex; flex-direction: column; gap: 15px; color: #e0e0e0; font-size: 14px;">
-                        <span>No. 11, Ln. 721, Zhong Zheng Rd.</span>
-                        <span>Xin Zhuang Dist., New Taipei City</span>
-                        <a href="mailto:YS@yehsheng.com" style="color: #C5A059;">YS@yehsheng.com</a>
-                        <a href="tel:+886229018266" style="color: white;">+886-2-2901-8266</a>
-                    </div>
-                </div>
-
-            </div>
-
-            <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 30px; text-align: center; color: #e0e0e0; font-size: 13px;">
-                &copy; 2025 Yeh Sheng Powder Parts Ind. Co. Ltd. All rights reserved.
-            </div>
+    <footer class="bg-black text-white py-12 border-t border-gray-800">
+        <div class="container mx-auto px-6 text-center text-gray-500 text-sm">
+            &copy; 2025 Yeh Sheng Powder Parts Ind. Co. Ltd. All rights reserved.
         </div>
     </footer>
-
-    <script>
-        function toggleMenu() {
-            var menu = document.getElementById('mobileMenu');
-            if (menu.style.display === 'flex') {
-                menu.style.display = 'none';
-            } else {
-                menu.style.display = 'flex';
-            }
-        }
-    </script>
 </body>
 </html>

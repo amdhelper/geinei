@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Yeh Sheng 粉末混合 Parts Ind. Co. Ltd. - Precision 粉末混合 Metallurgy</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Playfair+Display:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="../assets/custom.css" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#C5A059',
+                        secondary: '#1a1a1a',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .hero-section-new {
+            background-image: url('images/hero-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        .hero-overlay {
+            background: linear-gradient(to right, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 100%);
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 antialiased">
+<!-- Navigation -->
+<nav class="bg-white text-gray-900 sticky top-0 z-50 shadow-md border-b border-gray-100">
+<div class="container mx-auto px-6 py-4 flex justify-between items-center">
+<div class="flex items-center space-x-3 md:space-x-4"><img alt="Yeh Sheng Logo" class="h-8 md:h-10" src="../images/logo.png"/><span class="text-sm md:text-xl font-serif font-bold tracking-wide leading-tight text-gray-900">Yeh Sheng 粉末混合 Parts Ind. Co. Ltd.</span></div>
+<!-- Mobile Menu Button -->
+<button class="md:hidden text-gray-900 focus:outline-none p-2" id="mobile-menu-btn">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+<!-- Desktop Menu -->
+<div class="hidden md:flex space-x-6 lg:space-x-8 text-sm font-medium uppercase tracking-wider items-center">
+<a class="text-primary hover:text-yellow-600 transition" href="index.html">ホーム</a>
+<a class="text-gray-700 hover:text-primary transition" href="solutions.html">ソリューション</a>
+<a class="text-gray-700 hover:text-primary transition" href="applications.html">応用分野</a>
+<a class="text-gray-700 hover:text-primary transition" href="emerging-tech.html">新技術</a>
+<a class="text-gray-700 hover:text-primary transition" href="capabilities.html">製造能力</a>
+<a class="text-gray-700 hover:text-primary transition" href="products.html">製品紹介</a>
+<a class="text-gray-700 hover:text-primary transition" href="about.html">会社概要</a>
+<!-- Language Switcher -->
+<div class="relative group">
+<button class="flex items-center hover:text-primary transition">
+<svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+                        EN
+                        <svg class="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+<div class="absolute right-0 mt-2 w-32 bg-white text-gray-800 rounded shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform origin-top-right border border-gray-100">
+<a class="block px-4 py-2 hover:bg-gray-50 hover:text-primary" href="../zh/index.html">中文</a>
+<a class="block px-4 py-2 hover:bg-gray-50 hover:text-primary" href="../de/index.html">Deutsch</a>
+<a class="block px-4 py-2 hover:bg-gray-50 hover:text-primary" href="../jp/index.html">日本語</a>
+</div>
+</div>
+<a class="bg-primary text-white px-5 py-2 rounded hover:bg-yellow-600 transition font-medium shadow-sm" href="contact.html">お問い合わせ</a>
+</div>
+</div>
+<!-- Mobile Menu (Hidden by default) -->
+<div class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full left-0 shadow-lg" id="mobile-menu">
+<div class="flex flex-col px-6 py-4 space-y-4">
+<a class="text-primary font-medium" href="index.html">ホーム</a>
+<a class="text-gray-700 hover:text-primary" href="solutions.html">ソリューション</a>
+<a class="text-gray-700 hover:text-primary" href="applications.html">応用分野</a>
+<a class="text-gray-700 hover:text-primary" href="emerging-tech.html">新技術</a>
+<a class="text-gray-700 hover:text-primary" href="capabilities.html">製造能力</a>
+<a class="text-gray-700 hover:text-primary" href="products.html">製品紹介</a>
+<a class="text-gray-700 hover:text-primary" href="about.html">会社概要</a>
+<div class="border-t border-gray-100 pt-4 flex justify-between items-center">
+<span class="text-gray-500">Language:</span>
+<div class="flex space-x-4">
+<a class="text-gray-700 hover:text-primary" href="../zh/index.html">中文</a>
+<a class="text-gray-700 hover:text-primary" href="../de/index.html">DE</a>
+<a class="text-gray-700 hover:text-primary" href="../jp/index.html">JP</a>
+</div>
+</div>
+<a class="bg-primary text-white px-6 py-3 rounded text-center font-medium" href="contact.html">お問い合わせ Us</a>
+</div>
+</div>
+</nav>
+<script>
+        // Mobile Menu Toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+<!-- Hero Carousel Section -->
+<header class="bg-white text-gray-900 py-20 relative overflow-hidden border-b border-gray-100">
+<!-- Slide 1: Core Value -->
+<div class="carousel-slide active">
+<div class="carousel-content container mx-auto px-6 h-full">
+<div class="carousel-text">
+<div class="inline-block bg-primary/10 text-primary px-4 py-1 rounded-full text-sm font-semibold mb-6 border border-primary/20">
+                        ISO 9001:2015 Certified Manufacturer
+                    </div>
+<h1 class="text-5xl md:text-7xl font-serif font-bold text-gray-900 leading-tight mb-6 text-gray-900">
+                        Precision in <br/>Every Particle
+                    </h1>
+<p class="text-xl text-gray-600 mb-10 leading-relaxed text-gray-600">
+                        粉末冶金における40年以上の卓越した経験 in 粉末混合 Metallurgy. We engineer high-performance sintered components with micron-level precision.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<a class="bg-primary text-white px-8 py-4 rounded text-center font-semibold hover:bg-yellow-600 transition shadow-lg hover:shadow-primary/30" href="products.html">
+                            Explore 製品紹介
+                        </a>
+<a class="bg-transparent border-2 border-gray-800 text-gray-800 px-8 py-4 rounded text-center font-semibold hover:bg-gray-800 hover:text-white transition" href="contact.html">
+                            設計を相談する
+                        </a>
+</div>
+</div>
+<!-- Image removed -->
+</div>
+</div>
+<!-- Slide 2: Automotive -->
+<div class="carousel-slide">
+<div class="carousel-content container mx-auto px-6 h-full">
+<div class="carousel-text">
+<div class="inline-block bg-primary/10 text-primary px-4 py-1 rounded-full text-sm font-semibold mb-6 border border-primary/20">
+                        自動車部品の卓越性
+                    </div>
+<h1 class="text-5xl md:text-7xl font-serif font-bold text-gray-900 leading-tight mb-6">
+                        Driving Future <br/>Mobility
+                    </h1>
+<p class="text-xl text-gray-600 mb-10 leading-relaxed">
+                        次世代の自動車およびオートバイ用途向けの超精密ローター、ギア、構造部品。
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<a class="bg-primary text-white px-8 py-4 rounded text-center font-semibold hover:bg-yellow-600 transition shadow-lg hover:shadow-primary/30" href="applications.html#automotive">
+                            自動車部品を見る
+                        </a>
+</div>
+</div>
+<!-- Image removed -->
+</div>
+</div>
+<!-- Slide 3: Power Tools -->
+<div class="carousel-slide">
+<div class="carousel-content container mx-auto px-6 h-full">
+<div class="carousel-text">
+<div class="inline-block bg-primary/10 text-primary px-4 py-1 rounded-full text-sm font-semibold mb-6 border border-primary/20">
+                        産業用強度
+                    </div>
+<h1 class="text-5xl md:text-7xl font-serif font-bold text-gray-900 leading-tight mb-6">
+                        Powering <br/>Performance
+                    </h1>
+<p class="text-xl text-gray-600 mb-10 leading-relaxed">
+                        高トルク電動工具および産業機械向けに設計された堅牢なギアとトランスミッション部品。
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<a class="bg-primary text-white px-8 py-4 rounded text-center font-semibold hover:bg-yellow-600 transition shadow-lg hover:shadow-primary/30" href="applications.html#powertools">
+                            電動工具部品を見る
+                        </a>
+</div>
+</div>
+<!-- Image removed -->
+</div>
+</div>
+<!-- Indicators -->
+<div class="carousel-indicators">
+<div class="indicator active" onclick="switchSlide(0)"></div>
+<div class="indicator" onclick="switchSlide(1)"></div>
+<div class="indicator" onclick="switchSlide(2)"></div>
+</div>
+</header>
+<script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel-slide');
+        const indicators = document.querySelectorAll('.indicator');
+        const totalSlides = slides.length;
+
+        function switchSlide(index) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            indicators.forEach(ind => ind.classList.remove('active'));
+            
+            slides[index].classList.add('active');
+            indicators[index].classList.add('active');
+            currentSlide = index;
+        }
+
+        function nextSlide() {
+            let next = (currentSlide + 1) % totalSlides;
+            switchSlide(next);
+        }
+
+        // Auto-advance every 5 seconds
+        setInterval(nextSlide, 5000);
+    </script>
+<!-- Stats Section -->
+<section class="py-20 bg-white relative -mt-20 z-20">
+<div class="container mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-8">
+<div class="bg-white p-8 rounded-xl shadow-xl border-b-4 border-primary text-center transform hover:-translate-y-2 transition duration-300">
+<div class="text-4xl font-bold text-primary mb-2">40+</div>
+<div class="text-gray-500 font-medium">年の経験</div>
+</div>
+<div class="bg-white p-8 rounded-xl shadow-xl border-b-4 border-primary text-center transform hover:-translate-y-2 transition duration-300">
+<div class="text-4xl font-bold text-primary mb-2">±0.01mm</div>
+<div class="text-gray-500 font-medium">精密公差</div>
+</div>
+<div class="bg-white p-8 rounded-xl shadow-xl border-b-4 border-primary text-center transform hover:-translate-y-2 transition duration-300">
+<div class="text-4xl font-bold text-primary mb-2">ISO 9001</div>
+<div class="text-gray-500 font-medium">品質認証</div>
+</div>
+<div class="bg-white p-8 rounded-xl shadow-xl border-b-4 border-primary text-center transform hover:-translate-y-2 transition duration-300">
+<div class="text-4xl font-bold text-primary mb-2">グローバル</div>
+<div class="text-gray-500 font-medium">輸出範囲</div>
+</div>
+<div class="bg-white p-8 rounded-xl shadow-xl border-b-4 border-primary text-center transform hover:-translate-y-2 transition duration-300">
+<div class="text-4xl font-bold text-primary mb-2">100%</div>
+<div class="text-gray-500 font-medium">カスタマイズ</div>
+</div>
+<div class="bg-white p-8 rounded-xl shadow-xl border-b-4 border-primary text-center transform hover:-translate-y-2 transition duration-300">
+<div class="text-4xl font-bold text-primary mb-2">コスト</div>
+<div class="text-gray-500 font-medium">効率的</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Industries Preview -->
+<section class="py-20 bg-gray-50">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-serif font-bold text-gray-900 mb-4">Industries We Serve</h2>
+<div class="w-20 h-1 bg-primary mx-auto"></div>
+</div>
+<!-- 4-Column Grid Layout -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Automotive -->
+<a class="group relative overflow-hidden rounded-xl shadow-lg h-96 block" href="applications.html#automotive">
+<div class="absolute inset-0 bg-gray-200"></div>
+<img alt="Automotive &amp; Motorcycle Parts" class="w-full h-full object-contain p-8 transition duration-700 group-hover:scale-110" src="../images/1002680621b_refined.png"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-80 group-hover:opacity-90 transition"></div>
+<div class="absolute bottom-0 left-0 p-6">
+<h3 class="text-xl font-bold text-white mb-2">Automotive &amp; Motorcycle</h3>
+<p class="text-gray-300 text-xs mb-4 opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition duration-300">
+                            エンジン、トランスミッション、オイルポンプ部品。
+                        </p>
+<span class="text-primary font-medium text-sm flex items-center">
+                            Learn more <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M17 8l4 4m0 0l-4 4m4-4H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</span>
+</div>
+</a>
+<!-- Mechanical -->
+<a class="group relative overflow-hidden rounded-xl shadow-lg h-96 block" href="applications.html#mechanical">
+<div class="absolute inset-0 bg-gray-200"></div>
+<img alt="機械部品" class="w-full h-full object-contain p-8 transition duration-700 group-hover:scale-110" src="../images/1002680619b_refined.png"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-80 group-hover:opacity-90 transition"></div>
+<div class="absolute bottom-0 left-0 p-6">
+<h3 class="text-xl font-bold text-white mb-2">機械部品</h3>
+<p class="text-gray-300 text-xs mb-4 opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition duration-300">
+                            産業用ギアおよび油圧ローター。
+                        </p>
+<span class="text-primary font-medium text-sm flex items-center">
+                            Learn more <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M17 8l4 4m0 0l-4 4m4-4H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</span>
+</div>
+</a>
+<!-- Power Tools -->
+<a class="group relative overflow-hidden rounded-xl shadow-lg h-96 block" href="applications.html#powertools">
+<div class="absolute inset-0 bg-gray-200"></div>
+<img alt="電動工具部品" class="w-full h-full object-contain p-8 transition duration-700 group-hover:scale-110" src="../images/Gears_refined.png"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-80 group-hover:opacity-90 transition"></div>
+<div class="absolute bottom-0 left-0 p-6">
+<h3 class="text-xl font-bold text-white mb-2">電動工具部品</h3>
+<p class="text-gray-300 text-xs mb-4 opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition duration-300">
+                            プロ用工具向け高トルクギア。
+                        </p>
+<span class="text-primary font-medium text-sm flex items-center">
+                            Learn more <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M17 8l4 4m0 0l-4 4m4-4H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</span>
+</div>
+</a>
+<!-- ハードウェア・電子部品 -->
+<a class="group relative overflow-hidden rounded-xl shadow-lg h-96 block" href="applications.html#hardware">
+<div class="absolute inset-0 bg-gray-200"></div>
+<img alt="Hardware &amp; Electronics" class="w-full h-full object-contain p-8 transition duration-700 group-hover:scale-110" src="../images/1002680622b_refined.png"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-80 group-hover:opacity-90 transition"></div>
+<div class="absolute bottom-0 left-0 p-6">
+<h3 class="text-xl font-bold text-white mb-2">Hardware &amp; Electronics</h3>
+<p class="text-gray-300 text-xs mb-4 opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition duration-300">
+                            精密ロック部品および事務機器部品。
+                        </p>
+<span class="text-primary font-medium text-sm flex items-center">
+                            Learn more <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M17 8l4 4m0 0l-4 4m4-4H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</span>
+</div>
+</a>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-secondary text-white py-12 border-t border-gray-800">
+<div class="container mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+<div>
+<div class="flex items-center space-x-2 mb-6">
+<img alt="Logo" class="h-8 brightness-0 invert" src="../images/logo.png"/>
+<span class="font-serif font-bold text-lg">Yeh Sheng</span>
+</div>
+<p class="text-gray-400 text-sm leading-relaxed">
+                        Precision powder metallurgy solutions for a demanding world. ISO 9001 certified manufacturer based in Taiwan.
+                    </p>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-6 text-primary">Quick Links</h4>
+<ul class="space-y-3 text-sm text-gray-400">
+<li><a class="hover:text-white transition" href="index.html">ホーム</a></li>
+<li><a class="hover:text-white transition" href="products.html">製品紹介</a></li>
+<li><a class="hover:text-white transition" href="capabilities.html">製造能力</a></li>
+<li><a class="hover:text-white transition" href="contact.html">お問い合わせ</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-6 text-primary">お問い合わせ</h4>
+<ul class="space-y-3 text-sm text-gray-400">
+<li class="flex items-start">
+<svg class="w-5 h-5 mr-3 text-primary mt-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+                            Miaoli County, Taiwan
+                        </li>
+<li class="flex items-center">
+<svg class="w-5 h-5 mr-3 text-primary" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+                            +886-2-29032176
+                        </li>
+<li class="flex items-center">
+<svg class="w-5 h-5 mr-3 text-primary" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+                            YS@yehsheng.com
+                        </li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-6 text-primary">Certifications</h4>
+<div class="flex space-x-4">
+<div class="bg-white/10 px-3 py-2 rounded text-xs text-gray-300 border border-white/20">
+                            ISO 9001:2015
+                        </div>
+<div class="bg-white/10 px-3 py-2 rounded text-xs text-gray-300 border border-white/20">
+                            IATF 16949
+                        </div>
+</div>
+</div>
+</div>
+<div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500 text-sm">
+                © 2025 Yeh Sheng 粉末混合 Parts Ind. Co. Ltd. All rights reserved.
+            </div>
+</div>
+</footer>
+</body>
+</html>
