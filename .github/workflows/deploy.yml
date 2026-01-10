@@ -25,4 +25,4 @@ jobs:
 
       - name: Deploy via rsync
         run: |
-          rsync -avzr --delete --exclude='.git' --exclude='.github' -e "ssh -p 333 -o StrictHostKeyChecking=no" ./ root@119.29.236.51:/www/
+          rsync -avzr --delete --exclude='.git' --exclude='.github' -e "ssh -p 333 -o StrictHostKeyChecking=no" ./ root@119.29.236.51:/www/xray_web/
