@@ -1,286 +1,128 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
+<html lang="zh-Hans">
 
-<html lang="zh-cn">
 <head>
-<!-- Google Analytics -->
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-XS5ZTZGF2Y"></script>
-<script>
+    <meta name="google-site-verification" content="YUhT_jRF5sxYfCWMMcB08B38K6MB2yAEv4wEo1fjdXg" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XS5ZTZGF2Y"></script>
+    <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
         gtag('config', 'G-XS5ZTZGF2Y');
     </script>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Applications - Yeh Sheng Powder Parts Ind. Co. Ltd.</title>
-<!-- Import Google Fonts: Playfair Display (Serif) for Headings, Inter (Sans) for Body -->
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
-<style>
-        /* Global Reset */
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>应用领域 - 冶圣工业股份有限公司</title>
+    <meta content="探索粉末冶金零件的产业应用，包括汽车、机械、电动工具、五金电子、绿色能源、医疗设备、工业机械和锁具安防。" name="description" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&amp;family=Noto+Sans+SC:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <style>
         body {
             margin: 0;
             padding: 0;
-            font-family: 'Inter', sans-serif;
+            font-family: 'Noto Sans SC', sans-serif;
             color: #333;
-            background-color: #fcfcfc;
-            overflow-x: hidden;
+            background: #fcfcfc
         }
 
         a {
             text-decoration: none;
-            color: inherit;
-            transition: all 0.3s ease;
+            color: inherit
         }
 
-        * {
-            box-sizing: border-box;
-        }
-
-        /* Utility Classes */
         .container {
             max-width: 1400px;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 0 20px
         }
 
-        /* Grid Layout Fixes */
-        .grid {
-            display: grid;
-        }
-
-        .grid-cols-1 {
-            grid-template-columns: repeat(1, minmax(0, 1fr));
-        }
-
-        .gap-8 {
-            gap: 2rem;
-        }
-
-        .mb-10 {
-            margin-bottom: 2.5rem;
-        }
-
-        @media (min-width: 768px) {
-            .md\:grid-cols-2 {
-                grid-template-columns: repeat(2, minmax(0, 1fr));
-            }
-        }
-
-        @media (min-width: 1024px) {
-            .lg\:grid-cols-4 {
-                grid-template-columns: repeat(4, minmax(0, 1fr));
-            }
-        }
-
-        /* Industry Card Styles */
-        .industry-card-3d {
+        .industry-card {
             background: white;
             border-radius: 12px;
             overflow: hidden;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s;
             display: flex;
             flex-direction: column;
-            height: 100%;
+            height: 100%
         }
 
-        .industry-card-3d:hover {
+        .industry-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1)
         }
 
-        .card-image-container {
+        .card-image {
             position: relative;
-            height: 250px;
-            background-color: #f3f4f6;
-            overflow: hidden;
+            height: 200px;
+            background: #f3f4f6;
+            overflow: hidden
         }
 
-        .card-image-container img {
+        .card-image img {
             width: 100%;
             height: 100%;
             object-fit: contain;
-            padding: 2rem;
-            transition: transform 0.5s ease;
+            padding: 1.5rem;
+            transition: transform 0.5s
         }
 
-        .industry-card-3d:hover .card-image-container img {
-            transform: scale(1.05);
+        .industry-card:hover .card-image img {
+            transform: scale(1.05)
+        }
+
+        .card-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent)
+        }
+
+        .card-title {
+            position: absolute;
+            bottom: 1rem;
+            left: 1rem;
+            color: white;
+            font-weight: 700;
+            font-size: 1.1rem
         }
 
         .card-content {
-            padding: 1.5rem;
+            padding: 1.25rem;
             display: flex;
             flex-direction: column;
-            flex-grow: 1;
+            flex-grow: 1
         }
 
-        /* Text Utilities */
-        .text-white {
-            color: white;
+        .card-content p {
+            font-size: 13px;
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 0.75rem;
+            flex-grow: 1
         }
 
-        .font-bold {
+        .card-content h4 {
+            font-size: 12px;
             font-weight: 700;
+            color: #333;
+            margin: 0 0 0.5rem;
+            text-transform: uppercase
         }
 
-        .text-xl {
-            font-size: 1.25rem;
-            line-height: 1.75rem;
+        .card-content .apps {
+            font-size: 12px;
+            color: #555;
+            margin-bottom: 0.5rem
         }
 
-        .text-gray-600 {
-            color: #4b5563;
-        }
-
-        .text-gray-800 {
-            color: #1f2937;
-        }
-
-        .text-gray-500 {
-            color: #6b7280;
-        }
-
-        .text-sm {
-            font-size: 0.875rem;
-            line-height: 1.25rem;
-        }
-
-        .mb-2 {
-            margin-bottom: 0.5rem;
-        }
-
-        .mb-6 {
-            margin-bottom: 1.5rem;
-        }
-
-        .uppercase {
-            text-transform: uppercase;
-        }
-
-        .tracking-wide {
-            letter-spacing: 0.025em;
-        }
-
-        .flex-grow {
-            flex-grow: 1;
-        }
-
-        .border-t {
-            border-top-width: 1px;
-        }
-
-        .border-gray-100 {
-            border-color: #f3f4f6;
-        }
-
-        .pt-4 {
-            padding-top: 1rem;
-        }
-
-        .space-y-1>*+* {
-            margin-top: 0.25rem;
-        }
-
-        .absolute {
-            position: absolute;
-        }
-
-        .inset-0 {
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-        }
-
-        .bottom-4 {
-            bottom: 1rem;
-        }
-
-        .left-4 {
-            left: 1rem;
-        }
-
-        .bg-gradient-to-t {
-            background-image: linear-gradient(to top, var(--tw-gradient-stops));
-        }
-
-        .from-black\/60 {
-            --tw-gradient-from: rgba(0, 0, 0, 0.6);
-            --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
-        }
-
-        .to-transparent {
-            --tw-gradient-to: transparent;
-        }
-
-        .opacity-60 {
-            opacity: 0.6;
-        }
-
-        /* Premium Card Style */
-        .premium-card {
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-            padding: 40px 30px;
-            text-align: center;
-            border-bottom: 4px solid #C5A059;
-            /* Gold Accent */
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            height: 100%;
-        }
-
-        .premium-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 40px rgba(197, 160, 89, 0.15);
-        }
-
-        /* Gold Button Style */
-        .btn-gold {
-            background-color: #C5A059;
-            color: white;
-            padding: 16px 32px;
-            border-radius: 6px;
-            font-weight: 500;
-            letter-spacing: 0.5px;
-            display: inline-block;
-            border: 1px solid #C5A059;
-            text-align: center;
-            cursor: pointer;
-        }
-
-        .btn-gold:hover {
-            background-color: #b08d4d;
-            border-color: #b08d4d;
-        }
-
-        .btn-outline-gold {
-            background-color: transparent;
-            color: #C5A059;
-            padding: 16px 32px;
-            border-radius: 6px;
-            font-weight: 500;
-            letter-spacing: 0.5px;
-            display: inline-block;
-            border: 1px solid #C5A059;
-            text-align: center;
-            cursor: pointer;
-        }
-
-        .btn-outline-gold:hover {
-            background-color: #C5A059;
-            color: white;
-        }
-
-        /* Mobile Menu Styles */
         .mobile-menu-btn {
             display: none;
             cursor: pointer;
-            font-size: 24px;
-            color: #333;
+            font-size: 24px
         }
 
         .mobile-menu {
@@ -294,518 +136,246 @@
             padding: 20px;
             flex-direction: column;
             gap: 15px;
-            z-index: 99;
+            z-index: 99
         }
 
         .mobile-menu.active {
-            display: flex;
+            display: flex
         }
 
-        /* Responsive Styles */
-        @media (max-width: 768px) {
+        #industry-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem
+        }
+
+        @media(max-width:1024px) {
+            #industry-grid {
+                grid-template-columns: repeat(2, 1fr)
+            }
+        }
+
+        @media(max-width:768px) {
             .hidden-mobile {
-                display: none !important;
+                display: none !important
             }
 
             .mobile-menu-btn {
-                display: block;
+                display: block
             }
 
-            /* Layout Adjustments */
-            .flex-col-mobile {
-                flex-direction: column !important;
-                gap: 40px !important;
-            }
-
-            .w-full-mobile {
-                width: 100% !important;
-            }
-
-            .mt-mobile {
-                margin-top: 20px !important;
-            }
-
-            /* Typography Adjustments */
             h1 {
-                font-size: 42px !important;
-                line-height: 1.2 !important;
+                font-size: 32px !important
             }
 
-            h2 {
-                font-size: 32px !important;
-            }
-
-            p {
-                font-size: 16px !important;
-            }
-
-            /* Spacing Adjustments */
             section {
-                padding: 60px 0 !important;
+                padding: 60px 0 !important
             }
 
-            .container {
-                padding: 0 20px;
-            }
-
-            /* Button Adjustments */
-            .btn-gold,
-            .btn-outline-gold {
-                width: 100%;
-                box-sizing: border-box;
-            }
-
-            /* Grid Adjustments */
-            .grid-mobile {
-                grid-template-columns: 1fr !important;
+            #industry-grid {
+                grid-template-columns: 1fr
             }
         }
     </style>
-<link href="https://yehsheng.com/applications.html" rel="canonical"/>
-<!-- hreflang tags for multilingual SEO -->
-<link href="https://yehsheng.com/applications.html" hreflang="en" rel="alternate"/>
-<link href="https://yehsheng.com/zh/applications.html" hreflang="zh-Hant" rel="alternate"/>
-<link href="https://yehsheng.com/zh-cn/applications.html" hreflang="zh-Hans" rel="alternate"/>
-<link href="https://yehsheng.com/de/applications.html" hreflang="de" rel="alternate"/>
-<link href="https://yehsheng.com/jp/applications.html" hreflang="ja" rel="alternate"/>
-<link href="https://yehsheng.com/applications.html" hreflang="x-default" rel="alternate"/>
-<style id="google-translate-style">
-        /* Google Translate Customization */
-        .goog-te-gadget-simple {
-            background-color: transparent !important;
-            border: none !important;
-            padding: 0 !important;
-            font-size: 13px !important;
-        }
-
-        .goog-te-gadget-simple .goog-te-menu-value {
-            color: #C5A059 !important;
-            /* Match the Gold color */
-            font-weight: 500;
-        }
-
-        .goog-te-gadget-simple .goog-te-menu-value span {
-            color: #C5A059 !important;
-            border-left: none !important;
-        }
-
-        .goog-te-gadget-simple .goog-te-menu-value img {
-            display: none !important;
-            /* Hide Google Icon */
-        }
-
-        /* Hide the Google Top Bar */
-        .goog-te-banner-frame.skiptranslate {
-            display: none !important;
-        }
-
-        body {
-            top: 0px !important;
-        }
-
-        /* Hide tooltips */
-        .goog-tooltip {
-            display: none !important;
-        }
-
-        .goog-tooltip:hover {
-            display: none !important;
-        }
-
-        .goog-text-highlight {
-            background-color: transparent !important;
-            border: none !important;
-            box-shadow: none !important;
-        }
-    </style>
-<style>
-        .industry-grid-fixed {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 2rem;
-            margin-bottom: 2.5rem;
-        }
-
-        @media (min-width: 768px) {
-            .industry-grid-fixed {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media (min-width: 1024px) {
-            .industry-grid-fixed {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-    </style>
-<style>
-        /* Force Grid Layout */
-        #industry-grid-container {
-            display: grid !important;
-            grid-template-columns: 1fr !important;
-            gap: 2rem !important;
-            width: 100% !important;
-            max-width: 100% !important;
-        }
-
-        /* Tablet: 2 columns */
-        @media (min-width: 768px) {
-            #industry-grid-container {
-                grid-template-columns: repeat(2, 1fr) !important;
-            }
-        }
-
-        /* Desktop: 4 columns */
-        @media (min-width: 1024px) {
-            #industry-grid-container {
-                grid-template-columns: repeat(4, 1fr) !important;
-            }
-        }
-
-        /* Ensure cards don't overflow */
-        .industry-card-3d {
-            width: 100% !important;
-            height: auto !important;
-            min-height: 400px;
-            /* Give it some height */
-        }
-    </style>
-<link href="../images/logo.png" rel="icon" type="image/png"/>
+    <link href="https://yehsheng.com/zh-cn/applications.html" rel="canonical" />
+    <link rel="icon" href="../images/logo.png" type="image/png">
 </head>
-<body>
-<!-- Top Bar (Klein Blue #002FA7) -->
-<div class="hidden-mobile" style="background-color: #002FA7; color: white; padding: 10px 0;">
-<div class="container" style="display: flex; justify-content: flex-end; gap: 25px; font-size: 13px; font-weight: 500; letter-spacing: 0.5px; align-items: center;">
-<a href="about.html" style="color: #ddd;">关于我们</a>
-<a href="contact.html" style="color: #ddd;">联系我们</a>
-<!-- Language Dropdown -->
-<div style="position: relative; display: inline-block;">
-<button onclick="toggleLangDropdown()" style="background: transparent; border: 1px solid #C5A059; color: #C5A059; padding: 6px 15px; border-radius: 4px; cursor: pointer; font-size: 13px; font-weight: 600; display: flex; align-items: center; gap: 8px;">
-                    🌐 English ▼
-                </button>
-<div id="langDropdown" style="display: none; position: absolute; right: 0; top: 100%; margin-top: 5px; background: white; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); min-width: 160px; z-index: 1000; overflow: hidden;">
-<a href="applications.html" style="display: block; padding: 12px 20px; color: #333; font-size: 14px; border-bottom: 1px solid #eee; font-weight: 600; background: #f8f9fa;">🇺🇸 English</a>
-<a href="zh/applications.html" style="display: block; padding: 12px 20px; color: #333; font-size: 14px; border-bottom: 1px solid #eee;">🇹🇼 繁體中文</a>
-<a href="zh-cn/applications.html" style="display: block; padding: 12px 20px; color: #333; font-size: 14px; border-bottom: 1px solid #eee;">🇨🇳 简体中文</a>
-<a href="de/applications.html" style="display: block; padding: 12px 20px; color: #333; font-size: 14px; border-bottom: 1px solid #eee;">🇩🇪 Deutsch</a>
-<a href="jp/applications.html" style="display: block; padding: 12px 20px; color: #333; font-size: 14px;">🇯🇵 日本語</a>
-</div>
-</div>
-</div>
-</div>
-<!-- Navigation -->
-<nav style="background: white; box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 100;">
-<div class="container" style="padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; position: relative;">
-<div style="display: flex; align-items: center; gap: 15px;">
-<a href="index.html" style="display: flex; align-items: center; gap: 15px;">
-<img alt="Logo" src="../images/logo.png" style="height: 40px;"/>
-<div style="display: flex; flex-direction: column;">
-<span style="font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; color: #111; line-height: 1.2;">Yeh Sheng Powder Parts Ind. Co. Ltd.</span>
-<span style="font-size: 10px; font-weight: 600; color: #C5A059; letter-spacing: 1px; text-transform: uppercase;">Powder
-                            Metallurgy</span>
-</div>
-</a>
-</div>
-<!-- Desktop Menu -->
-<div class="hidden-mobile" style="display: flex; gap: 35px; align-items: center;">
-<a href="products.html" style="font-size: 15px; font-weight: 500; color: #333; text-transform: uppercase; letter-spacing: 0.5px;">产品介绍</a>
-<a href="solutions.html" style="font-size: 15px; font-weight: 500; color: #333; text-transform: uppercase; letter-spacing: 0.5px;">Service
-                    Workflow</a>
-<a href="capabilities.html" style="font-size: 15px; font-weight: 500; color: #333; text-transform: uppercase; letter-spacing: 0.5px;">制程能力</a>
-<a href="applications.html" style="font-size: 15px; font-weight: 500; color: #C5A059; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 700;">应用领域</a>
-<a href="resources.html" style="font-size: 15px; font-weight: 500; color: #333; text-transform: uppercase; letter-spacing: 0.5px;">Resources</a>
-<a href="contact.html" style="background: #C5A059; color: white; padding: 8px 20px; border-radius: 4px; font-size: 14px; font-weight: 500;">联系我们</a>
-</div>
-<!-- Mobile Menu Button -->
-<div class="mobile-menu-btn" onclick="toggleMenu()">
-                ☰
-            </div>
-<!-- Mobile Menu Dropdown -->
-<div class="mobile-menu" id="mobileMenu">
-<a href="products.html" style="font-size: 16px; font-weight: 500; color: #333; padding: 10px 0; border-bottom: 1px solid #eee;">产品介绍</a>
-<a href="solutions.html" style="font-size: 16px; font-weight: 500; color: #333; padding: 10px 0; border-bottom: 1px solid #eee;">Service
-                    Workflow</a>
-<a href="capabilities.html" style="font-size: 16px; font-weight: 500; color: #333; padding: 10px 0; border-bottom: 1px solid #eee;">制程能力</a>
-<a href="applications.html" style="font-size: 16px; font-weight: 500; color: #333; padding: 10px 0; border-bottom: 1px solid #eee;">应用领域</a>
-<a href="resources.html" style="font-size: 16px; font-weight: 500; color: #333; padding: 10px 0; border-bottom: 1px solid #eee;">Resources</a>
-<a href="about.html" style="font-size: 16px; font-weight: 500; color: #333; padding: 10px 0; border-bottom: 1px solid #eee;">关于我们</a>
-<a href="contact.html" style="font-size: 16px; font-weight: 500; color: #C5A059; padding: 10px 0;">联系我们</a>
-</div>
-</div>
-</nav>
-<section class="py-20 bg-gray-50">
-<div class="container mx-auto px-6">
-<div style="max-width: 800px; margin: 0 auto 50px auto; text-align: center; color: #555; line-height: 1.8;">
-<p style="margin-bottom: 15px;">Powder Metallurgy is a highly efficient metal-forming process that
-                    creates precision components by heating compacted metal powders. It is favored for its material
-                    efficiency, net-shape capability, and cost-effectiveness in high-volume production.</p>
-</div>
-<div class="mb-16" class_="industry-grid-fixed grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-10" id="industry-grid-container">
-<div class="industry-card-3d group" id="automotive">
-<div class="card-image-container bg-gray-200">
-<img alt="汽机车零件" class="w-full h-full object-contain p-8" src="../images/automotive_parts_v2.png"/>
-<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60"></div>
-<div class="absolute bottom-4 left-4 text-white font-bold text-xl">汽机车零件</div>
-</div>
-<div class="card-content">
-<p class="text-gray-600 mb-6 flex-grow" style="font-size: 14px; line-height: 1.6;">
-                            The automotive sector is the largest consumer of PM parts. As vehicles shift toward greater
-                            fuel efficiency and lightweight designs, PM technology is essential for producing complex,
-                            high-performance components.
-                        </p>
-<div class="border-t border-gray-100 pt-4">
-<h3 class="font-bold text-gray-800 mb-2 text-sm uppercase tracking-wide">Key Applications
-                            </h3>
-<p class="text-sm text-gray-500 mb-3">Engine timing sprockets, oil pump gears, transmission
-                                synchronizer rings, shock absorber components, and ABS sensor rings.</p>
-<h3 class="font-bold text-gray-800 mb-2 text-sm uppercase tracking-wide">Advantages</h3>
-<p class="text-sm text-gray-500">Creates components with unique wear-resistant properties
-                                and reduces vehicle weight without compromising structural integrity.</p>
-</div>
-</div>
-</div>
-<div class="industry-card-3d group" id="mechanical">
-<div class="card-image-container bg-gray-200">
-<img alt="机械零件" class="w-full h-full object-contain p-8" src="../images/1002680619b_refined.png"/>
-<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60"></div>
-<div class="absolute bottom-4 left-4 text-white font-bold text-xl">机械零件</div>
-</div>
-<div class="card-content">
-<p class="text-gray-600 mb-6 flex-grow" style="font-size: 14px; line-height: 1.6;">
-                            For general industrial machinery, PM is the preferred choice for structural parts that
-                            require high precision and durability while avoiding the high scrap rates of traditional
-                            machining.
-                        </p>
-<div class="border-t border-gray-100 pt-4">
-<h3 class="font-bold text-gray-800 mb-2 text-sm uppercase tracking-wide">Key Applications
-                            </h3>
-<p class="text-sm text-gray-500 mb-3">Spur and helical gears, self-lubricating bearings
-                                (oil-impregnated), bushings, couplings, and flanges.</p>
-<h3 class="font-bold text-gray-800 mb-2 text-sm uppercase tracking-wide">Advantages</h3>
-<p class="text-sm text-gray-500">The ability to produce "self-lubricating" parts
-                                significantly reduces maintenance needs and noise in industrial environments.</p>
-</div>
-</div>
-</div>
-<div class="industry-card-3d group" id="powertools">
-<div class="card-image-container bg-gray-200">
-<img alt="电动工具零件" class="w-full h-full object-contain p-8" src="../images/power_tool_parts_v2.png"/>
-<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60"></div>
-<div class="absolute bottom-4 left-4 text-white font-bold text-xl">电动工具零件</div>
-</div>
-<div class="card-content">
-<p class="text-gray-600 mb-6 flex-grow" style="font-size: 14px; line-height: 1.6;">
-                            Power tools demand components that are compact, high-torque, and impact-resistant. PM
-                            technology is ideal for the intricate internal drive systems of these handheld devices.
-                        </p>
-<div class="border-t border-gray-100 pt-4">
-<h3 class="font-bold text-gray-800 mb-2 text-sm uppercase tracking-wide">Key Applications
-                            </h3>
-<p class="text-sm text-gray-500 mb-3">Planetary gear systems, impact blocks, drill chuck
-                                components, and gearboxes.</p>
-<h3 class="font-bold text-gray-800 mb-2 text-sm uppercase tracking-wide">Advantages</h3>
-<p class="text-sm text-gray-500">Provides excellent dimensional consistency and high fatigue
-                                strength to withstand the repetitive stress of professional-grade tools.</p>
-</div>
-</div>
-</div>
-<div class="industry-card-3d group" id="hardware">
-<div class="card-image-container bg-gray-200">
-<img alt="五金与电子" class="w-full h-full object-contain p-8" src="../images/hardware_parts_v2.png"/>
-<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60"></div>
-<div class="absolute bottom-4 left-4 text-white font-bold text-xl">五金与电子</div>
-</div>
-<div class="card-content">
-<p class="text-gray-600 mb-6 flex-grow" style="font-size: 14px; line-height: 1.6;">
-                            In the fast-paced world of consumer electronics, parts are becoming smaller and more
-                            aesthetically demanding. PM and MIM provide the precision needed for modern gadgets.
-                        </p>
-<div class="border-t border-gray-100 pt-4">
-<h3 class="font-bold text-gray-800 mb-2 text-sm uppercase tracking-wide">Key Applications
-                            </h3>
-<p class="text-sm text-gray-500 mb-3">Smartphone hinge mechanisms (for foldable phones),
-                                wearable device frames, fiber optic connectors, and smart lock internal components.</p>
-<h3 class="font-bold text-gray-800 mb-2 text-sm uppercase tracking-wide">Advantages</h3>
-<p class="text-sm text-gray-500">Capable of processing hard materials like stainless steel
-                                and tungsten with superior surface finishes and extremely tight tolerances.</p>
-</div>
-</div>
-<!-- Summary Section -->
-</div>
-<div class="industry-card-3d group" id="green-energy">
-<div class="card-image-container bg-gray-200"><img alt="Green Energy &amp; EV" class="w-full h-full object-contain p-8" src="../images/InnerandOuterRotor_optimized.png?v=2"/>
-<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60"></div>
-<div class="absolute bottom-4 left-4 text-white font-bold text-xl">Green Energy &amp; EV</div>
-</div>
-<div class="card-content">
-<p class="text-gray-600 mb-6 flex-grow" style="font-size: 14px; line-height: 1.6;">
-                            High-efficiency magnetic parts and structural components for electric vehicles and renewable
-                            energy systems.</p>
-<div class="border-t border-gray-100 pt-4">
-<h3 class="font-bold text-gray-800 mb-2 text-sm uppercase tracking-wide">Key Applications
-                            </h3>
-<p class="text-sm text-gray-500 mb-3">EV motor cores, wind turbine gears, solar tracker
-                                components, and high-efficiency magnetic couplings.</p>
-<h3 class="font-bold text-gray-800 mb-2 text-sm uppercase tracking-wide">Advantages</h3>
-<p class="text-sm text-gray-500">Supports the transition to clean energy with materials
-                                optimized for magnetic performance and durability.</p>
-</div>
-</div>
-</div>
-<div class="industry-card-3d group" id="medical">
-<div class="card-image-container bg-gray-200"><img alt="Medical Devices" class="w-full h-full object-contain p-8" src="../images/medical_parts_v2.png"/>
-<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60"></div>
-<div class="absolute bottom-4 left-4 text-white font-bold text-xl">Medical Devices</div>
-</div>
-<div class="card-content">
-<p class="text-gray-600 mb-6 flex-grow" style="font-size: 14px; line-height: 1.6;">
-                            Biocompatible, high-precision stainless steel parts for surgical instruments and medical
-                            robotics.</p>
-<div class="border-t border-gray-100 pt-4">
-<h3 class="font-bold text-gray-800 mb-2 text-sm uppercase tracking-wide">Key Applications
-                            </h3>
-<p class="text-sm text-gray-500 mb-3">Surgical staplers, laparoscopic jaws, dental implant
-                                tools, and drug delivery system components.</p>
-<h3 class="font-bold text-gray-800 mb-2 text-sm uppercase tracking-wide">Advantages</h3>
-<p class="text-sm text-gray-500">MIM technology allows for the mass production of complex,
-                                sterile-grade stainless steel instruments.</p>
-</div>
-</div>
-</div>
-<div class="industry-card-3d group" id="industrial">
-<div class="card-image-container bg-gray-200"><img alt="Industrial Machinery" class="w-full h-full object-contain p-8" src="../images/industrial_parts_v2.png"/>
-<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60"></div>
-<div class="absolute bottom-4 left-4 text-white font-bold text-xl">Industrial Machinery</div>
-</div>
-<div class="card-content">
-<p class="text-gray-600 mb-6 flex-grow" style="font-size: 14px; line-height: 1.6;">
-                            Wear-resistant gears, bushings, and cams designed for heavy-duty industrial automation
-                            equipment.</p>
-<div class="border-t border-gray-100 pt-4">
-<h3 class="font-bold text-gray-800 mb-2 text-sm uppercase tracking-wide">Key Applications
-                            </h3>
-<p class="text-sm text-gray-500 mb-3">Conveyor system gears, hydraulic pump parts, textile
-                                machinery components, and heavy-duty bushings.</p>
-<h3 class="font-bold text-gray-800 mb-2 text-sm uppercase tracking-wide">Advantages</h3>
-<p class="text-sm text-gray-500">Offers superior wear resistance and load-bearing capacity
-                                for continuous industrial operations.</p>
-</div>
-</div>
-</div>
-<div class="industry-card-3d group" id="security">
-<div class="card-image-container bg-gray-200"><img alt="Lock &amp; Security" class="w-full h-full object-contain p-8" src="../images/lock_parts_v2.png"/>
-<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60"></div>
-<div class="absolute bottom-4 left-4 text-white font-bold text-xl">Lock &amp; Security</div>
-</div>
-<div class="card-content">
-<p class="text-gray-600 mb-6 flex-grow" style="font-size: 14px; line-height: 1.6;">Complex
-                            net-shape lock cylinders, latches, and security components produced with high security
-                            standards.</p>
-<div class="border-t border-gray-100 pt-4">
-<h3 class="font-bold text-gray-800 mb-2 text-sm uppercase tracking-wide">Key Applications
-                            </h3>
-<p class="text-sm text-gray-500 mb-3">High-security lock cylinders, deadbolt latches,
-                                padlock bodies, and electronic lock gears.</p>
-<h3 class="font-bold text-gray-800 mb-2 text-sm uppercase tracking-wide">Advantages</h3>
-<p class="text-sm text-gray-500">Net-shape manufacturing prevents tampering vulnerabilities
-                                and ensures consistent precision for security mechanisms.</p>
-</div>
-</div>
-</div>
-</div>
-<div style="background-color: #fff; border-radius: 12px; padding: 40px; margin-top: 60px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); text-align: center; max-width: 900px; margin-left: auto; margin-right: auto;">
-<h3 style="font-family: 'Playfair Display', serif; font-size: 28px; color: #002FA7; margin-bottom: 20px;">
-                    Summary</h3>
-<p style="color: #555; line-height: 1.8; font-size: 16px;">
-                    Powder Metallurgy is no longer just a cost-saving alternative; it is a primary design solution for
-                    modern engineering. Whether it is the durability required for an engine or the micro-precision
-                    needed for a smartphone hinge, PM provides a versatile and sustainable manufacturing path.
-                </p>
-</div>
-</div>
-</section>
-<!-- Footer -->
-<!-- Footer -->
-<!-- Footer (Klein Blue) -->
-<!-- Footer (Klein Blue) -->
-<footer style="background: #002FA7; color: white; padding: 80px 0 40px 0;">
-<div class="container">
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 50px; margin-bottom: 60px;">
-<!-- Brand -->
-<div>
-<div style="display: flex; align-items: center; gap: 15px; margin-bottom: 25px;">
-<img alt="Logo" src="../images/logo.png" style="height: 50px;"/>
-<div style="display: flex; flex-direction: column;">
-<h3 style="font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 700; color: #C5A059; margin: 0 0 5px 0;">Yeh Sheng Powder Parts Ind. Co. Ltd.</h3>
-</div>
-</div>
-<p style="font-family: 'Inter', sans-serif; color: #a0b0d0; line-height: 1.6; font-size: 14px;">
-                        Premier manufacturer of high-precision powder metallurgy components since 1984.
-                    </p>
-</div>
-<!-- Links -->
-<div>
-<h4 style="font-family: 'Playfair Display', serif; color: #C5A059; font-size: 18px; font-weight: 700; margin-bottom: 25px; letter-spacing: 1px;">
-                        COMPANY</h4>
-<ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 15px;">
-<li><a href="about.html" style="color: #a0b0d0; font-size: 15px;">关于我们</a></li>
-<li><a href="products.html" style="color: #a0b0d0; font-size: 15px;">所有产品</a></li>
-<li><a href="capabilities.html" style="color: #a0b0d0; font-size: 15px;">制程能力</a></li>
-<li><a href="resources.html" style="color: #a0b0d0; font-size: 15px;">Resources</a></li>
-<li><a href="contact.html" style="color: #a0b0d0; font-size: 15px;">联系我们</a></li>
-</ul>
-</div>
-联系我们
-<div>
-<h4 style="font-family: 'Playfair Display', serif; color: #C5A059; font-size: 18px; font-weight: 700; margin-bottom: 25px; letter-spacing: 1px;">
-                        CONTACT US</h4>
-<ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 15px;">
-<li style="color: #a0b0d0; font-size: 15px;">新北市新庄区中正路721巷11号</li>
-<li style="color: #a0b0d0; font-size: 15px;"></li>
-<li style="color: #a0b0d0; font-size: 15px;"><a href="mailto:YS@yehsheng.com">YS@yehsheng.com</a></li>
-<li style="color: #a0b0d0; font-size: 15px;">+886-2-2901-8266</li>
-</ul>
-</div>
-</div>
-<div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 30px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
-<p style="color: #667; font-size: 13px; margin: 0;">© 2024 Yeh Sheng Powder Parts Ind. Co. Ltd. All
-                    Rights Reserved.</p>
-<div style="display: flex; gap: 20px;">
-<a href="#" style="color: #667; font-size: 13px;">Privacy Policy</a>
-<a href="#" style="color: #667; font-size: 13px;">Terms of Service</a>
-</div>
-</div>
-</div>
-</footer>
-<script>
-        function toggleMenu() {
-            var menu = document.getElementById('mobileMenu');
-            if (menu.style.display === 'flex') {
-                menu.style.display = 'none';
-            } else {
-                menu.style.display = 'flex';
-            }
-        }
-    </script>
-<script>
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement({
-                pageLanguage: 'en',
-                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-                autoDisplay: false
-            }, 'google_translate_element');
-        }
-    </script>
-<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" type="text/javascript"></script>
-<script>
-        function resetLanguage() {
-            // Clear Google Translate cookies
-            document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-            document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=." + document.domain;
 
-            // Reload the page
-            window.location.reload();
-        }
+<body>
+    <div class="hidden-mobile" style="background:#002FA7;color:white;padding:10px 0">
+        <div class="container" style="display:flex;justify-content:flex-end;gap:25px;font-size:13px">
+            <a href="about.html" style="color:#ddd">关于我们</a>
+            <a href="contact.html" style="color:#ddd">联络我们</a>
+            <div style="position:relative;display:inline-block">
+                <span style="color:#C5A059;font-weight:600;cursor:pointer" onclick="toggleLangMenu()">简体中文 ▼</span>
+                <div id="langMenu"
+                    style="display:none;position:absolute;right:0;top:100%;background:white;box-shadow:0 4px 12px rgba(0,0,0,0.15);border-radius:4px;min-width:120px;z-index:100">
+                    <a href="../applications.html"
+                        style="display:block;padding:10px 15px;color:#333;font-size:13px">English</a>
+                    <a href="../zh/applications.html"
+                        style="display:block;padding:10px 15px;color:#333;font-size:13px">繁體中文</a>
+                    <a href="../zh-cn/applications.html"
+                        style="display:block;padding:10px 15px;color:#C5A059;font-size:13px;background:#f5f5f5">简体中文</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav style="background:white;box-shadow:0 2px 10px rgba(0,0,0,0.05);position:sticky;top:0;z-index:100">
+        <div class="container"
+            style="padding:15px 20px;display:flex;justify-content:space-between;align-items:center;position:relative">
+            <a href="index.html" style="display:flex;align-items:center;gap:15px">
+                <img alt="Logo" src="../images/logo.png" style="height:40px" />
+                <div><span style="font-size:18px;font-weight:700;color:#111;display:block">冶圣工业股份有限公司</span><span
+                        style="font-size:10px;font-weight:600;color:#C5A059">粉末冶金专家</span></div>
+            </a>
+            <div class="hidden-mobile" style="display:flex;gap:35px;align-items:center">
+                <a href="products.html" style="font-size:15px;color:#333">产品介绍</a>
+                <a href="solutions.html" style="font-size:15px;color:#333">服务流程</a>
+                <a href="capabilities.html" style="font-size:15px;color:#333">制程能力</a>
+                <a href="applications.html" style="font-size:15px;color:#C5A059;font-weight:700">应用领域</a>
+                <a href="resources.html" style="font-size:15px;color:#333">资源中心</a>
+                <a href="contact.html"
+                    style="background:#C5A059;color:white;padding:8px 20px;border-radius:4px">联络我们</a>
+            </div>
+            <div class="mobile-menu-btn" onclick="toggleMenu()">☰</div>
+            <div class="mobile-menu" id="mobileMenu">
+                <a href="products.html" style="padding:10px 0;border-bottom:1px solid #eee">产品介绍</a>
+                <a href="applications.html" style="padding:10px 0;border-bottom:1px solid #eee;color:#C5A059">应用领域</a>
+                <a href="contact.html" style="padding:10px 0;color:#C5A059">联络我们</a>
+            </div>
+        </div>
+    </nav>
+    <section style="padding:80px 0;background:#f9fafb">
+        <div class="container">
+            <div style="max-width:800px;margin:0 auto 50px;text-align:center">
+                <h1
+                    style="font-family:'Playfair Display',serif;font-size:42px;font-weight:700;color:#111;margin-bottom:20px">
+                    产业应用</h1>
+                <p style="color:#555;line-height:1.8">
+                    粉末冶金是一种高效率的金属成形制程，透过加热压缩的金属粉末来创造精密零件。因其材料效率高、近净形能力佳以及大量生产的成本效益，而备受青睐。</p>
+            </div>
+            <div id="industry-grid">
+                <div class="industry-card">
+                    <div class="card-image"><img alt="汽机车零件" src="../images/automotive_parts_v2.png" />
+                        <div class="card-overlay"></div>
+                        <div class="card-title">汽机车零件</div>
+                    </div>
+                    <div class="card-content">
+                        <p>汽车产业是PM零件的最大消费者。随着车辆趋向更高燃油效率和轻量化设计，PM技术对于生产复杂、高性能组件至关重要。</p>
+                        <div style="border-top:1px solid #eee;padding-top:0.75rem">
+                            <h4>主要应用</h4>
+                            <p class="apps">引擎正时链轮、油泵齿轮、变速器同步环、避震器组件。</p>
+                            <h4>优势</h4>
+                            <p class="apps">创造具有独特耐磨特性的组件，减轻车辆重量。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="industry-card">
+                    <div class="card-image"><img alt="机械零件" src="../images/1002680619b_refined.png" />
+                        <div class="card-overlay"></div>
+                        <div class="card-title">机械零件</div>
+                    </div>
+                    <div class="card-content">
+                        <p>对于一般工业机械，PM是需要高精度和耐用性结构零件的首选。</p>
+                        <div style="border-top:1px solid #eee;padding-top:0.75rem">
+                            <h4>主要应用</h4>
+                            <p class="apps">正齿轮和斜齿轮、自润滑轴承（含油）、轴套、联轴器。</p>
+                            <h4>优势</h4>
+                            <p class="apps">生产「自润滑」零件可降低维护需求和噪音。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="industry-card">
+                    <div class="card-image"><img alt="电动工具零件" src="../images/power_tool_parts_v2.png" />
+                        <div class="card-overlay"></div>
+                        <div class="card-title">电动工具零件</div>
+                    </div>
+                    <div class="card-content">
+                        <p>电动工具需要紧凑、高扭力和抗冲击的组件。PM技术非常适合这些手持设备的驱动系统。</p>
+                        <div style="border-top:1px solid #eee;padding-top:0.75rem">
+                            <h4>主要应用</h4>
+                            <p class="apps">行星齿轮系统、冲击块、钻头夹头组件和齿轮箱。</p>
+                            <h4>优势</h4>
+                            <p class="apps">优异的尺寸一致性和高疲劳强度。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="industry-card">
+                    <div class="card-image"><img alt="五金与电子" src="../images/hardware_parts_v2.png" />
+                        <div class="card-overlay"></div>
+                        <div class="card-title">五金与电子</div>
+                    </div>
+                    <div class="card-content">
+                        <p>在消费电子产品中，零件变得更小且更具美观要求。PM和MIM提供所需的精度。</p>
+                        <div style="border-top:1px solid #eee;padding-top:0.75rem">
+                            <h4>主要应用</h4>
+                            <p class="apps">智能手机铰链机构、穿戴式装置框架、光纤连接器。</p>
+                            <h4>优势</h4>
+                            <p class="apps">能加工硬质材料，具有卓越的表面光洁度。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="industry-card">
+                    <div class="card-image"><img alt="绿色能源与电动车" src="../images/InnerandOuterRotor_optimized.png" />
+                        <div class="card-overlay"></div>
+                        <div class="card-title">绿色能源与电动车</div>
+                    </div>
+                    <div class="card-content">
+                        <p>电动车和再生能源系统所需的高效率磁性零件和结构组件。</p>
+                        <div style="border-top:1px solid #eee;padding-top:0.75rem">
+                            <h4>主要应用</h4>
+                            <p class="apps">电动车马达铁芯、风力发电机齿轮、太阳能追踪器组件。</p>
+                            <h4>优势</h4>
+                            <p class="apps">以针对磁性能和耐久性优化的材料支持清洁能源。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="industry-card">
+                    <div class="card-image"><img alt="医疗设备" src="../images/medical_parts_v2.png" />
+                        <div class="card-overlay"></div>
+                        <div class="card-title">医疗设备</div>
+                    </div>
+                    <div class="card-content">
+                        <p>用于手术器械和医疗机器人的生物相容性高精度不锈钢零件。</p>
+                        <div style="border-top:1px solid #eee;padding-top:0.75rem">
+                            <h4>主要应用</h4>
+                            <p class="apps">手术缝合器、腹腔镜夹具、牙科植入工具。</p>
+                            <h4>优势</h4>
+                            <p class="apps">MIM技术允许大量生产复杂的无菌级不锈钢器械。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="industry-card">
+                    <div class="card-image"><img alt="工业机械" src="../images/industrial_parts_v2.png" />
+                        <div class="card-overlay"></div>
+                        <div class="card-title">工业机械</div>
+                    </div>
+                    <div class="card-content">
+                        <p>专为重型工业自动化设备设计的耐磨齿轮、轴套和凸轮。</p>
+                        <div style="border-top:1px solid #eee;padding-top:0.75rem">
+                            <h4>主要应用</h4>
+                            <p class="apps">输送系统齿轮、液压泵零件、纺织机械组件。</p>
+                            <h4>优势</h4>
+                            <p class="apps">为持续工业运作提供卓越的耐磨性和承载能力。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="industry-card">
+                    <div class="card-image"><img alt="锁具与安防" src="../images/lock_parts_v2.png" />
+                        <div class="card-overlay"></div>
+                        <div class="card-title">锁具与安防</div>
+                    </div>
+                    <div class="card-content">
+                        <p>以高安全标准生产的复杂近净形锁芯、闩锁和安防组件。</p>
+                        <div style="border-top:1px solid #eee;padding-top:0.75rem">
+                            <h4>主要应用</h4>
+                            <p class="apps">高安全锁芯、门栓闩锁、挂锁本体、电子锁齿轮。</p>
+                            <h4>优势</h4>
+                            <p class="apps">近净形制造可防止篡改漏洞，确保安全机构的一致精度。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div
+                style="background:white;border-radius:12px;padding:40px;margin-top:60px;box-shadow:0 4px 20px rgba(0,0,0,0.05);text-align:center;max-width:900px;margin-left:auto;margin-right:auto">
+                <h3 style="font-family:'Playfair Display',serif;font-size:28px;color:#002FA7;margin-bottom:20px">总结</h3>
+                <p style="color:#555;line-height:1.8;font-size:16px">
+                    粉末冶金不再仅仅是一种节省成本的替代方案；它是现代工程的主要设计解决方案。无论是引擎所需的耐久性还是智能手机铰链所需的微精度，PM都提供了多功能且可持续的制造途径。</p>
+            </div>
+        </div>
+    </section>
+    <footer style="background:#002FA7;color:white;padding:60px 0 30px">
+        <div class="container" style="text-align:center">
+            <h3 style="color:#C5A059;margin-bottom:15px">冶圣工业股份有限公司</h3>
+            <p style="color:#a0b0d0;font-size:14px;margin-bottom:30px">新北市新庄区中正路721巷11号 | YS@yehsheng.com</p>
+            <p style="color:#667;font-size:13px">© 2024 冶圣工业股份有限公司 版权所有。</p>
+        </div>
+    </footer>
+    <script>
+        function toggleMenu() { document.getElementById('mobileMenu').classList.toggle('active') }
+        function toggleLangMenu() { var m = document.getElementById("langMenu"); m.style.display = (m.style.display === "none" || m.style.display === "") ? "block" : "none" }
+        document.addEventListener('click', function (e) { var m = document.getElementById("langMenu"); if (!e.target.closest('#langMenu') && !e.target.matches('[onclick="toggleLangMenu()"]')) { if (m) m.style.display = "none" } });
     </script>
 </body>
+
 </html>

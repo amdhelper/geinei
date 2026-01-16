@@ -1,216 +1,52 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
+<html lang="zh-Hant">
 
-<html lang="zh">
 <head>
-<!-- Google Analytics -->
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-XS5ZTZGF2Y"></script>
-<script>
+    <meta name="google-site-verification" content="YUhT_jRF5sxYfCWMMcB08B38K6MB2yAEv4wEo1fjdXg" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XS5ZTZGF2Y"></script>
+    <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
         gtag('config', 'G-XS5ZTZGF2Y');
     </script>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="Browse Yeh Sheng's extensive range of powder metallurgy products, including transmission gears, stainless steel parts, and shock absorber components." name="description"/>
-<meta content="powder metallurgy products, transmission gears, stainless steel parts, shock absorber components, oil pump rotors, sewing machine parts" name="keywords"/>
-<meta content="Products - Yeh Sheng Powder Parts Ind. Co. Ltd." property="og:title"/>
-<meta content="High-quality sintered parts for various industries. Gears, stainless steel, and custom components." property="og:description"/>
-<meta content="https://yehsheng.com/images/logo.png" property="og:image"/>
-<meta content="https://yehsheng.com/products.html" property="og:url"/>
-<meta content="website" property="og:type"/>
-<title>Products - Yeh Sheng Powder Parts Ind. Co. Ltd.</title>
-<!-- Import Google Fonts: Playfair Display (Serif) for Headings, Inter (Sans) for Body -->
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
-<style>
-        /* Global Reset */
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>產品介紹 - 冶聖工業股份有限公司</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&amp;family=Noto+Sans+TC:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <style>
         body {
+            font-family: 'Noto Sans TC', sans-serif;
             margin: 0;
             padding: 0;
-            font-family: 'Inter', sans-serif;
-            color: #333;
-            background-color: #fcfcfc;
-            overflow-x: hidden;
-        }
-
-        /* Modal Styles */
-        .modal-overlay {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.7);
-            z-index: 1000;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-        }
-
-        .modal-content {
-            background: white;
-            border-radius: 12px;
-            max-width: 800px;
-            width: 100%;
-            max-height: 90vh;
-            overflow-y: auto;
-            position: relative;
-            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
-            animation: modalFadeIn 0.3s ease;
-        }
-
-        @keyframes modalFadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .modal-close {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            font-size: 28px;
-            color: #666;
-            cursor: pointer;
-            z-index: 10;
-            line-height: 1;
-        }
-
-        .modal-close:hover {
-            color: #000;
-        }
-
-        .modal-body {
-            padding: 40px;
-        }
-
-        .modal-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-        }
-
-        @media (max-width: 768px) {
-            .modal-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .modal-body {
-                padding: 25px;
-            }
-        }
-
-        .spec-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-
-        .spec-table th,
-        .spec-table td {
-            padding: 12px;
-            border-bottom: 1px solid #eee;
-            text-align: left;
-            font-size: 14px;
-        }
-
-        .spec-table th {
-            color: #002FA7;
-            font-weight: 600;
-            width: 40%;
-        }
-
-        .spec-table td {
-            color: #555;
+            background: #fcfcfc;
+            color: #333
         }
 
         a {
             text-decoration: none;
-            color: inherit;
-            transition: all 0.3s ease;
+            color: inherit
         }
 
-        * {
-            box-sizing: border-box;
-        }
-
-        /* Utility Classes */
         .container {
-            max-width: 1400px;
+            max-width: 1200px;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 0 20px
         }
 
-        /* Premium Card Style */
-        .premium-card {
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-            padding: 40px 30px;
-            text-align: center;
-            border-bottom: 4px solid #C5A059;
-            /* Gold Accent */
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            height: 100%;
+        .hidden-mobile {
+            display: block
         }
 
-        .premium-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 40px rgba(197, 160, 89, 0.15);
-        }
-
-        /* Gold Button Style */
-        .btn-gold {
-            background-color: #C5A059;
-            color: white;
-            padding: 16px 32px;
-            border-radius: 6px;
-            font-weight: 500;
-            letter-spacing: 0.5px;
-            display: inline-block;
-            border: 1px solid #C5A059;
-            text-align: center;
-            cursor: pointer;
-        }
-
-        .btn-gold:hover {
-            background-color: #b08d4d;
-            border-color: #b08d4d;
-        }
-
-        .btn-outline-gold {
-            background-color: transparent;
-            color: #C5A059;
-            padding: 16px 32px;
-            border-radius: 6px;
-            font-weight: 500;
-            letter-spacing: 0.5px;
-            display: inline-block;
-            border: 1px solid #C5A059;
-            text-align: center;
-            cursor: pointer;
-        }
-
-        .btn-outline-gold:hover {
-            background-color: #C5A059;
-            color: white;
-        }
-
-        /* Mobile Menu Styles */
         .mobile-menu-btn {
             display: none;
             cursor: pointer;
-            font-size: 24px;
-            color: #333;
+            font-size: 24px
         }
 
         .mobile-menu {
@@ -222,603 +58,186 @@
             background: white;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
             padding: 20px;
-            flex-direction: column;
-            gap: 15px;
-            z-index: 99;
+            z-index: 99
         }
 
         .mobile-menu.active {
-            display: flex;
+            display: block
         }
 
-        /* Responsive Styles */
-        @media (max-width: 768px) {
+        .product-card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+            transition: transform 0.3s
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px)
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: contain;
+            background: #f8f9fa;
+            padding: 20px
+        }
+
+        .product-card h3 {
+            font-size: 18px;
+            color: #111;
+            margin: 15px 20px 10px
+        }
+
+        .product-card p {
+            font-size: 14px;
+            color: #666;
+            margin: 0 20px 20px;
+            line-height: 1.5
+        }
+
+        @media(max-width:768px) {
             .hidden-mobile {
-                display: none !important;
+                display: none !important
             }
 
             .mobile-menu-btn {
-                display: block;
+                display: block
             }
 
-            /* Layout Adjustments */
-            .flex-col-mobile {
-                flex-direction: column !important;
-                gap: 40px !important;
-            }
-
-            .w-full-mobile {
-                width: 100% !important;
-            }
-
-            .mt-mobile {
-                margin-top: 20px !important;
-            }
-
-            /* Typography Adjustments */
             h1 {
-                font-size: 42px !important;
-                line-height: 1.2 !important;
-            }
-
-            h2 {
-                font-size: 32px !important;
-            }
-
-            p {
-                font-size: 16px !important;
-            }
-
-            /* Spacing Adjustments */
-            section {
-                padding: 60px 0 !important;
-            }
-
-            .container {
-                padding: 0 20px;
-            }
-
-            /* Button Adjustments */
-            .btn-gold,
-            .btn-outline-gold {
-                width: 100%;
-                box-sizing: border-box;
-            }
-
-            /* Grid Adjustments */
-            .grid-mobile {
-                grid-template-columns: 1fr !important;
+                font-size: 32px !important
             }
         }
     </style>
-<link href="https://yehsheng.com/products.html" rel="canonical"/>
-<!-- hreflang tags for multilingual SEO -->
-<link href="https://yehsheng.com/products.html" hreflang="en" rel="alternate"/>
-<link href="https://yehsheng.com/zh/products.html" hreflang="zh-Hant" rel="alternate"/>
-<link href="https://yehsheng.com/zh-cn/products.html" hreflang="zh-Hans" rel="alternate"/>
-<link href="https://yehsheng.com/de/products.html" hreflang="de" rel="alternate"/>
-<link href="https://yehsheng.com/jp/products.html" hreflang="ja" rel="alternate"/>
-<link href="https://yehsheng.com/products.html" hreflang="x-default" rel="alternate"/>
-<style id="google-translate-style">
-        /* Google Translate Customization */
-        .goog-te-gadget-simple {
-            background-color: transparent !important;
-            border: none !important;
-            padding: 0 !important;
-            font-size: 13px !important;
-        }
-
-        .goog-te-gadget-simple .goog-te-menu-value {
-            color: #C5A059 !important;
-            /* Match the Gold color */
-            font-weight: 500;
-        }
-
-        .goog-te-gadget-simple .goog-te-menu-value span {
-            color: #C5A059 !important;
-            border-left: none !important;
-        }
-
-        .goog-te-gadget-simple .goog-te-menu-value img {
-            display: none !important;
-            /* Hide Google Icon */
-        }
-
-        /* Hide the Google Top Bar */
-        .goog-te-banner-frame.skiptranslate {
-            display: none !important;
-        }
-
-        body {
-            top: 0px !important;
-        }
-
-        /* Hide tooltips */
-        .goog-tooltip {
-            display: none !important;
-        }
-
-        .goog-tooltip:hover {
-            display: none !important;
-        }
-
-        .goog-text-highlight {
-            background-color: transparent !important;
-            border: none !important;
-            box-shadow: none !important;
-        }
-    </style>
-<link href="../images/logo.png" rel="icon" type="image/png"/>
+    <link href="https://yehsheng.com/zh/products.html" rel="canonical" />
+    <link rel="icon" href="../images/logo.png" type="image/png">
 </head>
+
 <body>
-<!-- Top Bar (Klein Blue) -->
-<div class="hidden-mobile" style="background-color: #002FA7; color: white; padding: 10px 0;">
-<div class="container" style="display: flex; justify-content: flex-end; gap: 25px; font-size: 13px; font-weight: 500; letter-spacing: 0.5px; align-items: center;">
-<a href="about.html" style="color: #ddd;">關於我們</a>
-<a href="contact.html" style="color: #ddd;">聯絡我們</a>
-<!-- Language Dropdown -->
-<div style="position: relative; display: inline-block;">
-<button onclick="toggleLangDropdown()" style="background: transparent; border: 1px solid #C5A059; color: #C5A059; padding: 6px 15px; border-radius: 4px; cursor: pointer; font-size: 13px; font-weight: 600; display: flex; align-items: center; gap: 8px;">
-                    🌐 English ▼
-                </button>
-<div id="langDropdown" style="display: none; position: absolute; right: 0; top: 100%; margin-top: 5px; background: white; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); min-width: 160px; z-index: 1000; overflow: hidden;">
-<a href="products.html" style="display: block; padding: 12px 20px; color: #333; font-size: 14px; border-bottom: 1px solid #eee; font-weight: 600; background: #f8f9fa;">🇺🇸
-                        English</a>
-<a href="zh/products.html" style="display: block; padding: 12px 20px; color: #333; font-size: 14px; border-bottom: 1px solid #eee;">🇹🇼
-                        繁體中文</a>
-<a href="zh-cn/products.html" style="display: block; padding: 12px 20px; color: #333; font-size: 14px; border-bottom: 1px solid #eee;">🇨🇳
-                        简体中文</a>
-<a href="de/products.html" style="display: block; padding: 12px 20px; color: #333; font-size: 14px; border-bottom: 1px solid #eee;">🇩🇪
-                        Deutsch</a>
-<a href="jp/products.html" style="display: block; padding: 12px 20px; color: #333; font-size: 14px;">🇯🇵 日本語</a>
-</div>
-</div>
-</div>
-</div>
-<!-- Navigation -->
-<nav style="background: white; box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 100;">
-<div class="container" style="padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; position: relative;">
-<div style="display: flex; align-items: center; gap: 15px;">
-<a href="index.html" style="display: flex; align-items: center; gap: 15px;">
-<img alt="Logo" src="../images/logo.png" style="height: 40px;"/>
-<div style="display: flex; flex-direction: column;">
-<span style="font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; color: #111; line-height: 1.2;">Yeh Sheng Powder Parts Ind. Co. Ltd.</span>
-<span style="font-size: 10px; font-weight: 600; color: #C5A059; letter-spacing: 1px; text-transform: uppercase;">Powder
-                            Metallurgy</span>
-</div>
-</a>
-</div>
-<!-- Desktop Menu -->
-<div class="hidden-mobile" style="display: flex; gap: 35px; align-items: center;">
-<a href="products.html" style="font-size: 15px; font-weight: 500; color: #C5A059; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 700;">產品介紹</a>
-<a href="solutions.html" style="font-size: 15px; font-weight: 500; color: #333; text-transform: uppercase; letter-spacing: 0.5px;">Service
-                    Workflow</a>
-<a href="capabilities.html" style="font-size: 15px; font-weight: 500; color: #333; text-transform: uppercase; letter-spacing: 0.5px;">製程能力</a>
-<a href="applications.html" style="font-size: 15px; font-weight: 500; color: #333; text-transform: uppercase; letter-spacing: 0.5px;">應用領域</a>
-<a href="resources.html" style="font-size: 15px; font-weight: 500; color: #333; text-transform: uppercase; letter-spacing: 0.5px;">Resources</a>
-<a href="contact.html" style="background: #C5A059; color: white; padding: 8px 20px; border-radius: 4px; font-size: 14px; font-weight: 500;">聯絡我們</a>
-</div>
-<!-- Mobile Menu Button -->
-<div class="mobile-menu-btn" onclick="toggleMenu()">
-                ☰
-            </div>
-<!-- Mobile Menu Dropdown -->
-<div class="mobile-menu" id="mobileMenu">
-<a href="products.html" style="font-size: 16px; font-weight: 500; color: #C5A059; padding: 10px 0; border-bottom: 1px solid #eee; font-weight: 700;">產品介紹</a>
-<a href="solutions.html" style="font-size: 16px; font-weight: 500; color: #333; padding: 10px 0; border-bottom: 1px solid #eee;">Service
-                    Workflow</a>
-<a href="capabilities.html" style="font-size: 16px; font-weight: 500; color: #333; padding: 10px 0; border-bottom: 1px solid #eee;">製程能力</a>
-<a href="applications.html" style="font-size: 16px; font-weight: 500; color: #333; padding: 10px 0; border-bottom: 1px solid #eee;">應用領域</a>
-<a href="resources.html" style="font-size: 16px; font-weight: 500; color: #333; padding: 10px 0; border-bottom: 1px solid #eee;">Resources</a>
-<a href="about.html" style="font-size: 16px; font-weight: 500; color: #333; padding: 10px 0; border-bottom: 1px solid #eee;">關於我們</a>
-<a href="contact.html" style="font-size: 16px; font-weight: 500; color: #C5A059; padding: 10px 0;">聯絡我們</a>
-</div>
-</div>
-</nav>
-<section style="padding: 80px 0;">
-<div class="container">
-<!-- Breadcrumb Navigation -->
-<nav aria-label="Breadcrumb" style="margin-bottom: 30px;">
-<ol style="display: flex; list-style: none; padding: 0; margin: 0; font-size: 14px; color: #666;">
-<li><a href="index.html" style="color: #C5A059;">首頁</a></li>
-<li style="margin: 0 10px;">›</li>
-<li style="color: #333; font-weight: 500;">產品介紹</li>
-</ol>
-</nav>
-<h1 style="font-family: 'Playfair Display', serif; font-size: 42px; font-weight: 700; color: #111; margin-bottom: 40px; text-align: center;">
-                Our Products</h1>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px;">
-<!-- Category 1: Precision Gears -->
-<div class="premium-card" style="text-align: left; padding: 0; overflow: hidden;">
-<img alt="精密齒輪" src="../images/Gears_refined.png" style="width: 100%; height: 250px; object-fit: contain; padding: 20px; background-color: #f8f9fa; max-width: 100%;"/>
-<div style="padding: 30px;">
-<h3 style="font-family: 'Playfair Display', serif; font-size: 24px; margin-bottom: 15px;">精密齒輪</h3>
-<p style="color: #666; line-height: 1.6; margin-bottom: 20px;">High-strength sintered gears with
-                            complex geometries. AGMA class 8-9 precision achievable without secondary machining.</p>
-<a href="javascript:void(0)" onclick="openModal('gears')" style="color: #C5A059; font-weight: 600; font-size: 14px;">View Specifications →</a>
-</div>
-</div>
-<!-- Category 2: Rotors -->
-<div class="premium-card" style="text-align: left; padding: 0; overflow: hidden;">
-<img alt="油泵轉子" src="../images/InnerandOuterRotor_optimized.png" style="width: 100%; height: 250px; object-fit: contain; padding: 20px; background-color: #f8f9fa; max-width: 100%;"/>
-<div style="padding: 30px;">
-<h3 style="font-family: 'Playfair Display', serif; font-size: 24px; margin-bottom: 15px;">油泵轉子</h3>
-<p style="color: #666; line-height: 1.6; margin-bottom: 20px;">High-precision Gerotor sets
-                            (Inner &amp; Outer Rotors) for automotive oil pumps. Engineered for optimal volumetric
-                            efficiency.</p>
-<a href="javascript:void(0)" onclick="openModal('rotors')" style="color: #C5A059; font-weight: 600; font-size: 14px;">View Specifications →</a>
-</div>
-</div>
-<!-- Category 3: Structural Parts -->
-<div class="premium-card" style="text-align: left; padding: 0; overflow: hidden;">
-<img alt="Structural Parts" src="../images/ComputerandOtherParts_refined.png" style="width: 100%; height: 250px; object-fit: contain; padding: 20px; background-color: #f8f9fa; max-width: 100%;"/>
-<div style="padding: 30px;">
-<h3 style="font-family: 'Playfair Display', serif; font-size: 24px; margin-bottom: 15px;">
-                            Structural Parts</h3>
-<p style="color: #666; line-height: 1.6; margin-bottom: 20px;">Complex structural components for
-                            machinery, locks, and electronics. Net-shape manufacturing reduces waste.</p>
-<a href="javascript:void(0)" onclick="openModal('structural')" style="color: #C5A059; font-weight: 600; font-size: 14px;">View Specifications →</a>
-</div>
-</div>
-<!-- Category 4: Stainless Steel Parts -->
-<div class="premium-card" style="text-align: left; padding: 0; overflow: hidden;">
-<img alt="Stainless Steel Parts" src="../images/stainless_parts_v3.png" style="width: 100%; height: 250px; object-fit: contain; padding: 20px; background-color: #f8f9fa; max-width: 100%;"/>
-<div style="padding: 30px;">
-<h3 style="font-family: 'Playfair Display', serif; font-size: 24px; margin-bottom: 15px;">
-                            Stainless Steel Parts</h3>
-<p style="color: #666; line-height: 1.6; margin-bottom: 20px;">Corrosion-resistant components
-                            for medical devices and food processing equipment.</p>
-<a href="javascript:void(0)" onclick="openModal('stainless')" style="color: #C5A059; font-weight: 600; font-size: 14px;">View Specifications →</a>
-</div>
-</div>
-<!-- Category 5: Robotics & Automation -->
-<div class="premium-card" style="text-align: left; padding: 0; overflow: hidden;">
-<img alt="Robotics Parts" src="../images/1002680619b_refined.png" style="width: 100%; height: 250px; object-fit: contain; padding: 20px; background-color: #f8f9fa; max-width: 100%;"/>
-<div style="padding: 30px;">
-<h3 style="font-family: 'Playfair Display', serif; font-size: 24px; margin-bottom: 15px;">機器人與自動化</h3>
-<p style="color: #666; line-height: 1.6; margin-bottom: 20px;">High-precision planetary gear
-                            sets and self-lubricating bushings for robotic arms and servo motors.</p>
-<a href="javascript:void(0)" onclick="openModal('robotics')" style="color: #C5A059; font-weight: 600; font-size: 14px;">View Specifications →</a>
-</div>
-</div>
-<!-- Category 6: Drone & UAV Components -->
-<div class="premium-card" style="text-align: left; padding: 0; overflow: hidden;">
-<img alt="Drone Components" src="../images/1002680622b_refined.png" style="width: 100%; height: 250px; object-fit: contain; padding: 20px; background-color: #f8f9fa; max-width: 100%;"/>
-<div style="padding: 30px;">
-<h3 style="font-family: 'Playfair Display', serif; font-size: 24px; margin-bottom: 15px;">Drone
-                            &amp; UAV Components</h3>
-<p style="color: #666; line-height: 1.6; margin-bottom: 20px;">Lightweight motor housings and
-                            propeller adapters. High strength-to-weight ratio for aerial efficiency.</p>
-<a href="javascript:void(0)" onclick="openModal('drone')" style="color: #C5A059; font-weight: 600; font-size: 14px;">View Specifications →</a>
-</div>
-</div>
-<!-- Category 7: Shock Absorber Components -->
-<div class="premium-card" style="text-align: left; padding: 0; overflow: hidden;">
-<img alt="Shock Absorber Parts" src="../images/shock_absorber_optimized.png" style="width: 100%; height: 250px; object-fit: contain; padding: 20px; background-color: #f8f9fa; max-width: 100%;"/>
-<div style="padding: 30px;">
-<h3 style="font-family: 'Playfair Display', serif; font-size: 24px; margin-bottom: 15px;">Shock
-                            Absorber Parts</h3>
-<p style="color: #666; line-height: 1.6; margin-bottom: 20px;">High-wear-resistance pistons and
-                            rod guides for automotive suspension systems. Steam treated for surface hardness.</p>
-<a href="javascript:void(0)" onclick="openModal('shock')" style="color: #C5A059; font-weight: 600; font-size: 14px;">View Specifications →</a>
-</div>
-</div>
-<!-- Category 8: Industrial & Sewing Parts -->
-<div class="premium-card" style="text-align: left; padding: 0; overflow: hidden;">
-<img alt="Industrial &amp; Sewing Parts" src="../images/industrial_sewing_final.png" style="width: 100%; height: 250px; object-fit: contain; padding: 20px; background-color: #f8f9fa; max-width: 100%;"/>
-<div style="padding: 30px;">
-<h3 style="font-family: 'Playfair Display', serif; font-size: 24px; margin-bottom: 15px;">
-                            Industrial &amp; Sewing Parts</h3>
-<p style="color: #666; line-height: 1.6; margin-bottom: 20px;">Complex net-shape components for
-                            sewing machines and industrial equipment. High precision without secondary machining.</p>
-<a href="javascript:void(0)" onclick="openModal('industrial')" style="color: #C5A059; font-weight: 600; font-size: 14px;">View Specifications →</a>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Footer (Klein Blue) -->
-<!-- Footer (Klein Blue) -->
-<footer style="background: #002FA7; color: white; padding: 80px 0 40px 0;">
-<div class="container">
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 50px; margin-bottom: 60px;">
-<!-- Brand -->
-<div>
-<div style="display: flex; align-items: center; gap: 15px; margin-bottom: 25px;">
-<img alt="Logo" src="../images/logo.png" style="height: 50px;"/>
-<div style="display: flex; flex-direction: column;">
-<h3 style="font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 700; color: #C5A059; margin: 0 0 5px 0;">Yeh Sheng Powder Parts Ind. Co. Ltd.</h3>
-</div>
-</div>
-<p style="font-family: 'Inter', sans-serif; color: #a0b0d0; line-height: 1.6; font-size: 14px;">
-                        Premier manufacturer of high-precision powder metallurgy components since 1984.
-                    </p>
-</div>
-<!-- Links -->
-<div>
-<h4 style="font-family: 'Playfair Display', serif; color: #C5A059; font-size: 18px; font-weight: 700; margin-bottom: 25px; letter-spacing: 1px;">
-                        COMPANY</h4>
-<ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 15px;">
-<li><a href="about.html" style="color: #a0b0d0; font-size: 15px;">關於我們</a></li>
-<li><a href="products.html" style="color: #a0b0d0; font-size: 15px;">所有產品</a></li>
-<li><a href="capabilities.html" style="color: #a0b0d0; font-size: 15px;">製程能力</a></li>
-<li><a href="resources.html" style="color: #a0b0d0; font-size: 15px;">Resources</a></li>
-<li><a href="contact.html" style="color: #a0b0d0; font-size: 15px;">聯絡我們</a></li>
-</ul>
-</div>
-聯絡我們
-<div>
-<h4 style="font-family: 'Playfair Display', serif; color: #C5A059; font-size: 18px; font-weight: 700; margin-bottom: 25px; letter-spacing: 1px;">
-                        CONTACT US</h4>
-<ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 15px;">
-<li style="color: #a0b0d0; font-size: 15px;">新北市新莊區中正路721巷11號</li>
-<li style="color: #a0b0d0; font-size: 15px;"></li>
-<li style="color: #a0b0d0; font-size: 15px;"><a href="mailto:YS@yehsheng.com">YS@yehsheng.com</a></li>
-<li style="color: #a0b0d0; font-size: 15px;">+886-2-2901-8266</li>
-</ul>
-</div>
-</div>
-<div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 30px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
-<p style="color: #667; font-size: 13px; margin: 0;">© 2024 Yeh Sheng Powder Parts Ind. Co. Ltd. All
-                    Rights Reserved.</p>
-<div style="display: flex; gap: 20px;">
-<a href="#" style="color: #667; font-size: 13px;">Privacy Policy</a>
-<a href="#" style="color: #667; font-size: 13px;">Terms of Service</a>
-</div>
-</div>
-</div>
-</footer>
-<!-- Modal Container -->
-<div class="modal-overlay" id="productModal" onclick="closeModal(event)">
-<div class="modal-content" onclick="event.stopPropagation()">
-<span class="modal-close" onclick="closeModal()">×</span>
-<div class="modal-body" id="modalBody">
-<!-- Content will be injected here -->
-</div>
-</div>
-</div>
-<script>
-        function toggleMenu() {
-            var menu = document.getElementById('mobileMenu');
-            if (menu.style.display === 'flex') {
-                menu.style.display = 'none';
-            } else {
-                menu.style.display = 'flex';
-            }
-        }
-
-        // Product Data
-        const productData = {
-            gears: {
-                title: "Precision Gears",
-                images: ["images/precision_gears_transparent.png", "images/gear_assembly.jpg"],
-                description: "Our core competency lies in manufacturing high-precision sintered gears. From spur gears to helical and bevel gears, we deliver AGMA Class 8-9 quality directly from the sintering furnace.",
-                specs: [
-                    { label: "Material", value: "Iron-Copper-Carbon (FC-0208), Nickel Steel (FN-0205)" },
-                    { label: "Density", value: "6.8 - 7.0 g/cm³" },
-                    { label: "Hardness", value: "Sintered: HRB < 60 | Heat Treated: HRC 40 | Steam Treated: HRB ≥ 65 (Varies by powder composition)" },
-                    { label: "Accuracy", value: "JIS Grade 4-5" },
-                    { label: "Tolerance", value: "+/- 0.01mm" },
-                    { label: "Applications", value: "Automotive transmission, Power tools, Home appliances" }
-                ]
-            },
-            rotors: {
-                title: "Oil Pump Rotors (Gerotor)",
-                image: "images/InnerandOuterRotor_optimized.png",
-                description: "Yeh Sheng specializes in manufacturing high-precision Gerotor sets (Generated Rotors). Our PM process is ideal for producing these complex trochoidal profiles, ensuring perfect meshing between the inner and outer rotors for maximum volumetric efficiency and minimal noise.",
-                specs: [
-                    { label: "Type", value: "Gerotor (Inner & Outer Rotor Set)" },
-                    { label: "Material", value: "Iron-Copper-Carbon (FC-0208)" },
-                    { label: "Density", value: "6.6 - 7.0 g/cm³" },
-                    { label: "Hardness", value: "Sintered: HRB < 60 | Heat Treated: HRC 40 | Steam Treated: HRB ≥ 65 (Varies by powder composition)" },
-                    { label: "Tolerance", value: "+/- 0.01mm" },
-                    { label: "Applications", value: "Engine oil pumps, Transmission oil pumps, Fuel pumps" }
-                ]
-            },
-            structural: {
-                title: "Structural Parts",
-                image: "images/ComputerandOtherParts_refined.png",
-                description: "We produce complex structural components that replace castings and machined parts. Our net-shape capability allows for intricate geometries like holes, slots, and steps to be formed directly, minimizing secondary operations.",
-                specs: [
-                    { label: "Material", value: "Iron-Carbon, Copper-Steel, Stainless Steel" },
-                    { label: "Density", value: "6.4 - 7.1 g/cm³" },
-                    { label: "Surface Finish", value: "Ra 1.6 - 3.2 µm" },
-                    { label: "Plating", value: "Zinc, Nickel, Black Oxide available" },
-                    { label: "Tolerance", value: "+/- 0.01mm" },
-                    { label: "Applications", value: "Lock mechanisms, Shock absorbers, Office equipment" }
-                ]
-            },
-            stainless: {
-                title: "Stainless Steel Parts",
-                images: ["images/stainless_parts_v3.png", "images/water_meter_assembly_v4.png"],
-                description: "Designed for harsh environments, our stainless steel PM parts offer excellent corrosion resistance and mechanical strength. Ideal for medical devices, food processing, and marine applications.",
-                specs: [
-                    { label: "Material", value: "SS304, SS316, SS410, 17-4PH" },
-                    { label: "Density", value: "6.5 - 7.0 g/cm³" },
-
-                    { label: "Process", value: "High-temperature sintering in Hydrogen/Nitrogen atmosphere" },
-                    { label: "Tolerance", value: "+/- 0.01mm" },
-                    { label: "Applications", value: "Medical instruments, Food machinery, Marine hardware" }
-                ]
-            },
-            robotics: {
-                title: "Robotics & Automation",
-                image: "images/robotics_wireframe_white.jpg",
-                description: "Precision components for the next generation of automation. We provide lightweight, high-strength planetary gear sets and joints for robotic arms, as well as self-lubricating bushings for maintenance-free operation.",
-                specs: [
-                    { label: "Material", value: "High-strength Alloy Steel, Bronze" },
-                    { label: "Features", value: "Self-lubricating, Low friction coefficient" },
-                    { label: "Precision", value: "Micro-gear capability module < 0.5" },
-                    { label: "Tolerance", value: "+/- 0.01mm" },
-                    { label: "Applications", value: "Robotic joints, Servo motors, Linear actuators" }
-                ]
-            },
-            drone: {
-                title: "Drone & UAV Components",
-                image: "images/drone_wireframe_white.jpg",
-                description: "Our lightweight PM solutions are critical for UAV performance. We manufacture motor housings, propeller adapters, and camera gimbal parts that balance strength with weight reduction.",
-                specs: [
-                    { label: "Material", value: "Aluminum Alloys, Titanium Alloys" },
-                    { label: "Weight Reduction", value: "Up to 30% lighter than machined equivalents" },
-                    { label: "Strength", value: "High fatigue resistance for dynamic loads" },
-                    { label: "Tolerance", value: "+/- 0.01mm" },
-                    { label: "Applications", value: "Drone motors, Gimbal systems, Landing gear mechanisms" }
-                ]
-            },
-            shock: {
-                title: "Shock Absorber Parts",
-                image: "images/shock_absorber_optimized.png",
-                description: "Yeh Sheng manufactures critical suspension components including pistons, rod guides, and base valves. These parts are engineered for high durability and precise fitment in automotive and motorcycle suspension systems.",
-                specs: [
-                    { label: "Material", value: "Iron-Carbon (FC-0205, FC-0208)" },
-                    { label: "Density", value: "6.4 - 6.8 g/cm³ (Controlled Porosity)" },
-                    { label: "Surface Treatment", value: "None (As Sintered)" },
-                    { label: "Wear Resistance", value: "High hardness for sliding contact" },
-                    { label: "Tolerance", value: "+/- 0.01mm" },
-                    { label: "Applications", value: "Automotive shock absorbers, Motorcycle suspension, Industrial dampers" }
-                ]
-            },
-            industrial: {
-                title: "Industrial & Sewing Parts",
-                image: "images/industrial_sewing_final.png",
-                description: "We produce intricate components for sewing machines and industrial equipment. The PM process allows for complex geometries like cams, levers, and bushings to be formed in a single step, offering significant cost savings over machining.",
-                specs: [
-                    { label: "Material", value: "Iron-Copper, Bronze, Stainless Steel" },
-                    { label: "Precision", value: "Net-shape forming with minimal secondary machining" },
-                    { label: "Features", value: "Complex 3D geometries, Self-lubricating options" },
-                    { label: "Cost Efficiency", value: "High material utilization (>95%)" },
-                    { label: "Tolerance", value: "+/- 0.01mm" },
-                    { label: "Applications", value: "Industrial sewing machines, Textile machinery, Power tools" }
-                ]
-            }
-        };
-
-        function openModal(productId) {
-            const data = productData[productId];
-            if (!data) return;
-
-            const modalBody = document.getElementById('modalBody');
-            const modal = document.getElementById('productModal');
-
-            // Build Specs Table HTML
-            let specsHtml = '<table class="spec-table"><tbody>';
-            data.specs.forEach(spec => {
-                specsHtml += `<tr><th>${spec.label}</th><td>${spec.value}</td></tr>`;
-            });
-            specsHtml += '</tbody></table>';
-
-            // Handle images (single or multiple)
-            let imagesHtml = '';
-            if (data.images && data.images.length > 0) {
-                imagesHtml = data.images.map(imgSrc => `
-                    <img src="${imgSrc}" alt="${data.title}" style="width: 100%; border-radius: 8px; object-fit: contain; max-height: 300px; margin-bottom: 10px; background-color: #f8f9fa; padding: 10px;">
-                `).join('');
-            } else {
-                imagesHtml = `<img src="${data.image}" alt="${data.title}" style="width: 100%; border-radius: 8px; object-fit: contain; max-height: 300px; background-color: #f8f9fa; padding: 10px;">`;
-            }
-
-            // Inject Content
-            modalBody.innerHTML = `
-                <div class="modal-grid">
-                    <div style="display: flex; flex-direction: column; gap: 15px;">
-                        ${imagesHtml}
-                    </div>
-                    <div>
-                        <h2 style="font-family: 'Playfair Display', serif; font-size: 32px; color: #111; margin-top: 0; margin-bottom: 20px;">${data.title}</h2>
-                        <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">${data.description}</p>
-                        ${specsHtml}
-                    </div>
+    <div class="hidden-mobile" style="background:#002FA7;color:white;padding:10px 0">
+        <div class="container" style="display:flex;justify-content:flex-end;gap:25px;font-size:13px">
+            <a href="about.html" style="color:#ddd">關於我們</a>
+            <a href="contact.html" style="color:#ddd">聯絡我們</a>
+            <div style="position:relative;display:inline-block">
+                <span style="color:#C5A059;font-weight:600;cursor:pointer" onclick="toggleLangMenu()">繁體中文 ▼</span>
+                <div id="langMenu"
+                    style="display:none;position:absolute;right:0;top:100%;background:white;box-shadow:0 4px 12px rgba(0,0,0,0.15);border-radius:4px;min-width:120px;z-index:100">
+                    <a href="../products.html"
+                        style="display:block;padding:10px 15px;color:#333;font-size:13px">English</a>
+                    <a href="../zh/products.html"
+                        style="display:block;padding:10px 15px;color:#C5A059;font-size:13px;background:#f5f5f5">繁體中文</a>
+                    <a href="../zh-cn/products.html"
+                        style="display:block;padding:10px 15px;color:#333;font-size:13px">简体中文</a>
                 </div>
-            `;
-
-            modal.style.display = 'flex';
-            document.body.style.overflow = 'hidden'; // Prevent background scrolling
-        }
-
-        function closeModal(event) {
-            if (event && event.target !== event.currentTarget) return;
-            document.getElementById('productModal').style.display = 'none';
-            document.body.style.overflow = 'auto'; // Restore scrolling
-        }
-    </script>
-<script>
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement({
-                pageLanguage: 'en',
-                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-                autoDisplay: false
-            }, 'google_translate_element');
-        }
-    </script>
-<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" type="text/javascript"></script>
-<script>
-        function resetLanguage() {
-            // Clear Google Translate cookies
-            document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-            document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=." + document.domain;
-
-            // Reload the page
-            window.location.reload();
-        }
+            </div>
+        </div>
+    </div>
+    <nav style="background:white;box-shadow:0 2px 10px rgba(0,0,0,0.05);position:sticky;top:0;z-index:100">
+        <div class="container"
+            style="padding:15px 20px;display:flex;justify-content:space-between;align-items:center;position:relative">
+            <a href="index.html" style="display:flex;align-items:center;gap:15px">
+                <img alt="Logo" src="../images/logo.png" style="height:40px" />
+                <div><span style="font-size:18px;font-weight:700;color:#111;display:block">冶聖工業股份有限公司</span><span
+                        style="font-size:10px;font-weight:600;color:#C5A059">粉末冶金專家</span></div>
+            </a>
+            <div class="hidden-mobile" style="display:flex;gap:35px;align-items:center">
+                <a href="products.html" style="font-size:15px;color:#C5A059;font-weight:700">產品介紹</a>
+                <a href="solutions.html" style="font-size:15px;color:#333">服務流程</a>
+                <a href="capabilities.html" style="font-size:15px;color:#333">製程能力</a>
+                <a href="applications.html" style="font-size:15px;color:#333">應用領域</a>
+                <a href="contact.html"
+                    style="background:#C5A059;color:white;padding:8px 20px;border-radius:4px">聯絡我們</a>
+            </div>
+            <div class="mobile-menu-btn" onclick="document.getElementById('mobileMenu').classList.toggle('active')">☰
+            </div>
+            <div class="mobile-menu" id="mobileMenu">
+                <a href="products.html"
+                    style="display:block;padding:10px 0;border-bottom:1px solid #eee;color:#C5A059">產品介紹</a>
+                <a href="solutions.html" style="display:block;padding:10px 0;border-bottom:1px solid #eee">服務流程</a>
+                <a href="about.html" style="display:block;padding:10px 0;border-bottom:1px solid #eee">關於我們</a>
+                <a href="contact.html" style="display:block;padding:10px 0;color:#C5A059">聯絡我們</a>
+            </div>
+        </div>
+    </nav>
+    <header style="background:white;padding:80px 0;border-bottom:1px solid #eee">
+        <meta name="google-site-verification" content="YUhT_jRF5sxYfCWMMcB08B38K6MB2yAEv4wEo1fjdXg" />
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XS5ZTZGF2Y"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+            gtag('config', 'G-XS5ZTZGF2Y');
+        </script>
+        <div class="container" style="text-align:center">
+            <h1 style="font-family:'Playfair Display',serif;font-size:48px;color:#111;margin-bottom:15px">產品介紹</h1>
+            <p style="font-size:18px;color:#666;max-width:600px;margin:0 auto">滿足您多樣需求的精密粉末冶金零件</p>
+        </div>
+    </header>
+    <section style="padding:80px 0;background:#f8f9fa">
+        <div class="container">
+            <p style="text-align:center;color:#666;max-width:800px;margin:0 auto 50px;line-height:1.8">
+                冶聖粉末冶金擁有超過40年的精密製造經驗，專精於粉末冶金零件的設計與生產。我們的產品可達±0.01mm的公差，廣泛應用於汽車、工業設備、醫療器材、航空航天等高精密領域。</p>
+            <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:30px">
+                <div class="product-card"><img alt="精密齒輪" src="../images/Gears_refined.png" />
+                    <h3>精密齒輪</h3>
+                    <p>用於傳動系統的高強度燒結齒輪</p>
+                </div>
+                <div class="product-card"><img alt="醫療組件" src="../images/medical_components.png" />
+                    <h3>醫療組件</h3>
+                    <p>用於醫療設備的生物相容性不鏽鋼零件</p>
+                </div>
+                <div class="product-card"><img alt="齒輪組件" src="../images/gear_assembly_nobg.png" />
+                    <h3>齒輪組件</h3>
+                    <p>具有精密配合的複雜多部件組件</p>
+                </div>
+                <div class="product-card"><img alt="油泵轉子" src="../images/1002680619b_refined.png" />
+                    <h3>油泵轉子</h3>
+                    <p>用於汽車油泵的高效率轉子</p>
+                </div>
+                <div class="product-card"><img alt="電腦零件" src="../images/ComputerandOtherParts_refined.png" />
+                    <h3>電腦零件</h3>
+                    <p>用於電腦和電子產品的小型精密零件</p>
+                </div>
+                <div class="product-card"><img alt="複雜形狀" src="../images/1002680621b_refined.png" />
+                    <h3>複雜形狀</h3>
+                    <p>具有高結構完整性的複雜幾何形狀零件</p>
+                </div>
+                <div class="product-card"><img alt="手術組件" src="../images/medical_gear_1_clean.png" />
+                    <h3>手術組件</h3>
+                    <p>用於手術的精密不鏽鋼組件</p>
+                </div>
+                <div class="product-card"><img alt="動力傳輸" src="../images/1002680622b_refined.png" />
+                    <h3>動力傳輸</h3>
+                    <p>用於動力傳輸的耐用齒輪和鏈輪</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="padding:80px 0;background:#111;color:white;text-align:center">
+        <div class="container">
+            <h2 style="font-family:'Playfair Display',serif;font-size:36px;margin-bottom:20px">需要客製化解決方案？</h2>
+            <p style="color:#999;margin-bottom:40px;max-width:600px;margin-left:auto;margin-right:auto">
+                我們的工程團隊隨時準備協助您進行材料選擇、設計優化和打樣。</p>
+            <a href="contact.html"
+                style="background:#C5A059;color:white;padding:15px 40px;border-radius:6px;font-weight:600;display:inline-block">索取報價</a>
+        </div>
+    </section>
+    <footer style="background:#002FA7;color:white;padding:60px 0 30px">
+        <div class="container" style="text-align:center">
+            <h3 style="color:#C5A059;margin-bottom:15px">冶聖工業股份有限公司</h3>
+            <p style="color:#a0b0d0;font-size:14px;margin-bottom:30px">新北市新莊區中正路721巷11號 | YS@yehsheng.com |
+                +886-2-2901-8266</p>
+            <p style="color:#667;font-size:13px">© 2024 冶聖工業股份有限公司 版權所有。</p>
+        </div>
+    </footer>
+    <script>
+        function toggleLangMenu() { var m = document.getElementById("langMenu"); m.style.display = (m.style.display === "none" || m.style.display === "") ? "block" : "none" }
+        document.addEventListener('click', function (e) { var m = document.getElementById("langMenu"); if (!e.target.closest('#langMenu') && !e.target.matches('[onclick="toggleLangMenu()"]')) { if (m) m.style.display = "none" } });
     </script>
 </body>
+
 </html>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ItemList",
-  "name": "Powder Metallurgy Product Categories",
-  "description": "Browse Yeh Sheng's extensive range of powder metallurgy products including precision gears, oil pump rotors, and stainless steel parts.",
-  "numberOfItems": 8,
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Precision Gears",
-      "url": "https://yehsheng.com/products.html#gears"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Oil Pump Rotors",
-      "url": "https://yehsheng.com/products.html#rotors"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "Structural Parts",
-      "url": "https://yehsheng.com/products.html#structural"
-    },
-    {
-      "@type": "ListItem",
-      "position": 4,
-      "name": "Stainless Steel Parts",
-      "url": "https://yehsheng.com/products.html#stainless"
-    },
-    {
-      "@type": "ListItem",
-      "position": 5,
-      "name": "Robotics & Automation",
-      "url": "https://yehsheng.com/products.html#robotics"
-    },
-    {
-      "@type": "ListItem",
-      "position": 6,
-      "name": "Drone & UAV Components",
-      "url": "https://yehsheng.com/products.html#drone"
-    },
-    {
-      "@type": "ListItem",
-      "position": 7,
-      "name": "Shock Absorber Parts",
-      "url": "https://yehsheng.com/products.html#shock"
-    },
-    {
-      "@type": "ListItem",
-      "position": 8,
-      "name": "Industrial & Sewing Parts",
-      "url": "https://yehsheng.com/products.html#industrial"
-    }
-  ]
-}
-</script>
