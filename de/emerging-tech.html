@@ -1,111 +1,48 @@
 <!DOCTYPE html>
-
 <html lang="de">
+
 <head>
-<!-- Google Analytics -->
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-XS5ZTZGF2Y"></script>
-<script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-XS5ZTZGF2Y');
-    </script>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Emerging Tech - Yeh Sheng Powder Parts Ind. Co. Ltd.</title>
-<!-- Import Google Fonts: Playfair Display (Serif) for Headings, Inter (Sans) for Body -->
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
-<style>
-        /* Global Reset */
+    <meta name="google-site-verification" content="YUhT_jRF5sxYfCWMMcB08B38K6MB2yAEv4wEo1fjdXg" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XS5ZTZGF2Y"></script>
+    <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments) } gtag('js', new Date()); gtag('config', 'G-XS5ZTZGF2Y');</script>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Aufstrebende Technologien - Yeh Sheng Powder Parts</title>
+    <meta content="Pulvermetallurgie für Robotik, Drohnen, E-Mobilität und andere aufstrebende Technologien."
+        name="description" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <style>
         body {
+            font-family: 'Inter', sans-serif;
             margin: 0;
             padding: 0;
-            font-family: 'Inter', sans-serif;
-            color: #333;
-            background-color: #fcfcfc;
-            overflow-x: hidden;
+            background: #fcfcfc;
+            color: #333
         }
 
         a {
             text-decoration: none;
-            color: inherit;
-            transition: all 0.3s ease;
+            color: inherit
         }
 
-        * {
-            box-sizing: border-box;
-        }
-
-        /* Utility Classes */
         .container {
-            max-width: 1400px;
+            max-width: 1200px;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 0 20px
         }
 
-        /* Premium Card Style */
-        .premium-card {
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-            padding: 40px 30px;
-            text-align: center;
-            border-bottom: 4px solid #C5A059;
-            /* Gold Accent */
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            height: 100%;
+        .hidden-mobile {
+            display: block
         }
 
-        .premium-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 40px rgba(197, 160, 89, 0.15);
-        }
-
-        /* Gold Button Style */
-        .btn-gold {
-            background-color: #C5A059;
-            color: white;
-            padding: 16px 32px;
-            border-radius: 6px;
-            font-weight: 500;
-            letter-spacing: 0.5px;
-            display: inline-block;
-            border: 1px solid #C5A059;
-            text-align: center;
-            cursor: pointer;
-        }
-
-        .btn-gold:hover {
-            background-color: #b08d4d;
-            border-color: #b08d4d;
-        }
-
-        .btn-outline-gold {
-            background-color: transparent;
-            color: #C5A059;
-            padding: 16px 32px;
-            border-radius: 6px;
-            font-weight: 500;
-            letter-spacing: 0.5px;
-            display: inline-block;
-            border: 1px solid #C5A059;
-            text-align: center;
-            cursor: pointer;
-        }
-
-        .btn-outline-gold:hover {
-            background-color: #C5A059;
-            color: white;
-        }
-
-        /* Mobile Menu Styles */
         .mobile-menu-btn {
             display: none;
             cursor: pointer;
-            font-size: 24px;
-            color: #333;
+            font-size: 24px
         }
 
         .mobile-menu {
@@ -117,353 +54,150 @@
             background: white;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
             padding: 20px;
-            flex-direction: column;
-            gap: 15px;
-            z-index: 99;
+            z-index: 99
         }
 
         .mobile-menu.active {
-            display: flex;
+            display: block
         }
 
-        /* Responsive Styles */
-        @media (max-width: 768px) {
+        .tech-card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            padding: 40px;
+            text-align: center;
+            border-bottom: 4px solid #C5A059
+        }
+
+        @media(max-width:768px) {
             .hidden-mobile {
-                display: none !important;
+                display: none !important
             }
 
             .mobile-menu-btn {
-                display: block;
+                display: block
             }
 
-            /* Layout Adjustments */
-            .flex-col-mobile {
-                flex-direction: column !important;
-                gap: 40px !important;
-            }
-
-            .w-full-mobile {
-                width: 100% !important;
-            }
-
-            .mt-mobile {
-                margin-top: 20px !important;
-            }
-
-            /* Typography Adjustments */
             h1 {
-                font-size: 42px !important;
-                line-height: 1.2 !important;
-            }
-
-            h2 {
-                font-size: 32px !important;
-            }
-
-            p {
-                font-size: 16px !important;
-            }
-
-            /* Spacing Adjustments */
-            section {
-                padding: 60px 0 !important;
-            }
-
-            .container {
-                padding: 0 20px;
-            }
-
-            /* Button Adjustments */
-            .btn-gold,
-            .btn-outline-gold {
-                width: 100%;
-                box-sizing: border-box;
-            }
-
-            /* Grid Adjustments */
-            .grid-mobile {
-                grid-template-columns: 1fr !important;
+                font-size: 32px !important
             }
         }
     </style>
-<link href="https://yehsheng.com/emerging-tech.html" rel="canonical"/>
-<!-- hreflang tags for multilingual SEO -->
-<link href="https://yehsheng.com/emerging-tech.html" hreflang="en" rel="alternate"/>
-<link href="https://yehsheng.com/zh/emerging-tech.html" hreflang="zh-Hant" rel="alternate"/>
-<link href="https://yehsheng.com/zh-cn/emerging-tech.html" hreflang="zh-Hans" rel="alternate"/>
-<link href="https://yehsheng.com/de/emerging-tech.html" hreflang="de" rel="alternate"/>
-<link href="https://yehsheng.com/jp/emerging-tech.html" hreflang="ja" rel="alternate"/>
-<link href="https://yehsheng.com/emerging-tech.html" hreflang="x-default" rel="alternate"/>
-<style id="google-translate-style">
-        /* Google Translate Customization */
-        .goog-te-gadget-simple {
-            background-color: transparent !important;
-            border: none !important;
-            padding: 0 !important;
-            font-size: 13px !important;
-        }
-
-        .goog-te-gadget-simple .goog-te-menu-value {
-            color: #C5A059 !important;
-            /* Match the Gold color */
-            font-weight: 500;
-        }
-
-        .goog-te-gadget-simple .goog-te-menu-value span {
-            color: #C5A059 !important;
-            border-left: none !important;
-        }
-
-        .goog-te-gadget-simple .goog-te-menu-value img {
-            display: none !important;
-            /* Hide Google Icon */
-        }
-
-        /* Hide the Google Top Bar */
-        .goog-te-banner-frame.skiptranslate {
-            display: none !important;
-        }
-
-        body {
-            top: 0px !important;
-        }
-
-        /* Hide tooltips */
-        .goog-tooltip {
-            display: none !important;
-        }
-
-        .goog-tooltip:hover {
-            display: none !important;
-        }
-
-        .goog-text-highlight {
-            background-color: transparent !important;
-            border: none !important;
-            box-shadow: none !important;
-        }
-    </style>
+    <link href="https://yehsheng.com/de/emerging-tech.html" rel="canonical" />
+    <link rel="icon" href="../images/logo.png" type="image/png">
 </head>
-<body>
-<!-- Top Bar (Klein Blue) -->
-<div class="hidden-mobile" style="background-color: #002FA7; color: white; padding: 10px 0;">
-<div class="container" style="display: flex; justify-content: flex-end; gap: 25px; font-size: 13px; font-weight: 500; letter-spacing: 0.5px;">
-<h1 style="font-family: 'Playfair Display', serif; font-size: 42px; font-weight: 700; color: #111; margin-bottom: 40px; text-align: center;">
-                Emerging Technologies &amp; Innovation</h1>
-<a href="about.html" style="color: #ddd;">Über uns</a>
-<a href="contact.html" style="color: #ddd;">Kontakt</a>
-<a href="javascript:void(0)" id="reset-lang-btn" onclick="resetLanguage()" style="color: #C5A059; margin-right: 15px; font-weight: 600; cursor: pointer; text-decoration: none;">English</a>
-<div id="google_translate_element" style="display: inline-block; vertical-align: middle;"></div>
-</div>
-</div>
-<!-- Navigation -->
-<nav style="background: white; box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 100;">
-<div class="container" style="padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; position: relative;">
-<div style="display: flex; align-items: center; gap: 15px;">
-<a href="index.html" style="display: flex; align-items: center; gap: 15px;">
-<img alt="Logo" src="../images/logo.png" style="height: 40px;"/>
-<div style="display: flex; flex-direction: column;">
-<span style="font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; color: #111; line-height: 1.2;">Yeh Sheng Powder Parts Ind. Co. Ltd.</span>
-<span style="font-size: 10px; font-weight: 600; color: #C5A059; letter-spacing: 1px; text-transform: uppercase;">Powder
-                            Metallurgy</span>
-</div>
-</a>
-</div>
-<!-- Desktop Menu -->
-<div class="hidden-mobile" style="display: flex; gap: 35px; align-items: center;">
-<a href="products.html" style="font-size: 15px; font-weight: 500; color: #333; text-transform: uppercase; letter-spacing: 0.5px;">Produkte</a>
-<a href="solutions.html" style="font-size: 15px; font-weight: 500; color: #333; text-transform: uppercase; letter-spacing: 0.5px;">Service
-                    Workflow</a>
-<a href="capabilities.html" style="font-size: 15px; font-weight: 500; color: #333; text-transform: uppercase; letter-spacing: 0.5px;">Fertigung</a>
-<a href="applications.html" style="font-size: 15px; font-weight: 500; color: #333; text-transform: uppercase; letter-spacing: 0.5px;">Branchen</a>
-<a href="contact.html" style="background: #C5A059; color: white; padding: 8px 20px; border-radius: 4px; font-size: 14px; font-weight: 500;">Kontakt</a>
-</div>
-<!-- Mobile Menu Button -->
-<div class="mobile-menu-btn" onclick="toggleMenu()">
-                ☰
-            </div>
-<!-- Mobile Menu Dropdown -->
-<div class="mobile-menu" id="mobileMenu">
-<a href="products.html" style="font-size: 16px; font-weight: 500; color: #333; padding: 10px 0; border-bottom: 1px solid #eee;">Produkte</a>
-<a href="solutions.html" style="font-size: 16px; font-weight: 500; color: #333; padding: 10px 0; border-bottom: 1px solid #eee;">Service
-                    Workflow</a>
-<a href="capabilities.html" style="font-size: 16px; font-weight: 500; color: #333; padding: 10px 0; border-bottom: 1px solid #eee;">Fertigung</a>
-<a href="applications.html" style="font-size: 16px; font-weight: 500; color: #333; padding: 10px 0; border-bottom: 1px solid #eee;">Branchen</a>
-<a href="about.html" style="font-size: 16px; font-weight: 500; color: #333; padding: 10px 0; border-bottom: 1px solid #eee;">Über uns</a>
-<a href="contact.html" style="font-size: 16px; font-weight: 500; color: #C5A059; padding: 10px 0;">Kontakt</a>
-</div>
-</div>
-</nav>
-<section class="py-20 bg-gray-50">
-<div class="container mx-auto px-6">
-<div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-<!-- EV -->
-<div class="industry-card-3d group">
-<div class="card-image-container">
-<img alt="Electric Vehicles" src="../images/tech-ev.jpg"/>
-<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60"></div>
-<div class="absolute bottom-4 left-4 text-white font-bold text-xl">Elektrofahrzeuge (EV)</div>
-</div>
-<div class="card-content">
-<p class="text-gray-600 mb-6 flex-grow">
-                            Developing soft magnetic composites (SMC) for high-efficiency motors and lightweight
-                            structural parts to extend EV range and performance.
-                        </p>
-<div class="border-t border-gray-100 pt-4">
-<h4 class="font-bold text-gray-800 mb-2 text-sm uppercase tracking-wide">Innovationen</h4>
-<ul class="text-sm text-gray-500 space-y-1">
-<li>• High-Flux Motor Cores</li>
-<li>• Thermal Management Parts</li>
-<li>• Silent Gear Systems</li>
-</ul>
-</div>
-</div>
-</div>
-<!-- Robotics -->
-<div class="industry-card-3d group">
-<div class="card-image-container">
-<img alt="Robotik &amp; Automatisierung" src="../images/tech-robotics.jpg"/>
-<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60"></div>
-<div class="absolute bottom-4 left-4 text-white font-bold text-xl">Robotik &amp; Automatisierung</div>
-</div>
-<div class="card-content">
-<p class="text-gray-600 mb-6 flex-grow">
-                            Precision micro-gears and actuators for robotic joints and industrial automation arms,
-                            requiring zero-backlash and high wear resistance.
-                        </p>
-<div class="border-t border-gray-100 pt-4">
-<h4 class="font-bold text-gray-800 mb-2 text-sm uppercase tracking-wide">Innovationen</h4>
-<ul class="text-sm text-gray-500 space-y-1">
-<li>• Harmonic Drive Components</li>
-<li>• Micro-Planetary Gears</li>
-<li>• Self-Lubricating Bearings</li>
-</ul>
-</div>
-</div>
-</div>
-Grüne Energie
-<div class="industry-card-3d group">
-<div class="card-image-container">
-<img alt="Grüne Energie" src="../images/tech-green.jpg"/>
-<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60"></div>
-<div class="absolute bottom-4 left-4 text-white font-bold text-xl">Grüne Energie</div>
-</div>
-<div class="card-content">
-<p class="text-gray-600 mb-6 flex-grow">
-                            Supporting the renewable energy sector with durable components for wind turbines and solid
-                            oxide fuel cell (SOFC) interconnects.
-                        </p>
-<div class="border-t border-gray-100 pt-4">
-<h4 class="font-bold text-gray-800 mb-2 text-sm uppercase tracking-wide">Innovationen</h4>
-<ul class="text-sm text-gray-500 space-y-1">
-<li>• Wind Turbine Yaw Gears</li>
-<li>• SOFC Interconnect Plates</li>
-<li>• Solar Tracker Parts</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Footer -->
-<!-- Footer -->
-<!-- Footer (Klein Blue) -->
-<!-- Footer (Klein Blue) -->
-<footer style="background: #002FA7; color: white; padding: 80px 0 40px 0;">
-<div class="container">
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 50px; margin-bottom: 60px;">
-<!-- Brand -->
-<div>
-<div style="display: flex; align-items: center; gap: 15px; margin-bottom: 25px;">
-<img alt="Logo" src="../images/logo.png" style="height: 50px;"/>
-<div style="display: flex; flex-direction: column;">
-<h3 style="font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 700; color: #C5A059; margin: 0 0 5px 0;">Yeh Sheng Powder Parts Ind. Co. Ltd.</h3>
-</div>
-</div>
-<p style="font-family: 'Inter', sans-serif; color: #a0b0d0; line-height: 1.6; font-size: 14px;">
-                        Premier manufacturer of high-precision powder metallurgy components since 1984.
-                    </p>
-</div>
-<!-- Links -->
-<div>
-<h4 style="font-family: 'Playfair Display', serif; color: #C5A059; font-size: 18px; font-weight: 700; margin-bottom: 25px; letter-spacing: 1px;">
-                        COMPANY</h4>
-<ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 15px;">
-<li><a href="about.html" style="color: #a0b0d0; font-size: 15px;">Über uns</a></li>
-<li><a href="products.html" style="color: #a0b0d0; font-size: 15px;">Alle Produkte</a></li>
-<li><a href="capabilities.html" style="color: #a0b0d0; font-size: 15px;">Fertigung</a></li>
-<li><a href="resources.html" style="color: #a0b0d0; font-size: 15px;">Resources</a></li>
-<li><a href="contact.html" style="color: #a0b0d0; font-size: 15px;">Kontakt</a></li>
-</ul>
-</div>
-Kontakt
-<div>
-<h4 style="font-family: 'Playfair Display', serif; color: #C5A059; font-size: 18px; font-weight: 700; margin-bottom: 25px; letter-spacing: 1px;">
-                        CONTACT US</h4>
-<ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 15px;">
-<li style="color: #a0b0d0; font-size: 15px;">No. 11, Ln. 721, Zhong Zheng Rd.</li>
-<li style="color: #a0b0d0; font-size: 15px;">Xin Zhuang Dist., New Taipei City</li>
-<li style="color: #a0b0d0; font-size: 15px;"><a href="mailto:YS@yehsheng.com">YS@yehsheng.com</a></li>
-<li style="color: #a0b0d0; font-size: 15px;">+886-2-2901-8266</li>
-</ul>
-</div>
-</div>
-<div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 30px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
-<p style="color: #667; font-size: 13px; margin: 0;">© 2024 Yeh Sheng Powder Parts Ind. Co. Ltd. All
-                    Rights Reserved.</p>
-<div style="display: flex; gap: 20px;">
-<a href="#" style="color: #667; font-size: 13px;">Privacy Policy</a>
-<a href="#" style="color: #667; font-size: 13px;">Terms of Service</a>
-</div>
-</div>
-</div>
-</footer>
-<script>
-        function toggleMenu() {
-            var menu = document.getElementById('mobileMenu');
-            if (menu.style.display === 'flex') {
-                menu.style.display = 'none';
-            } else {
-                menu.style.display = 'flex';
-            }
-        }
-    </script>
-<script>
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement({
-                pageLanguage: 'en',
-                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-                autoDisplay: false
-            }, 'google_translate_element');
-        }
-    </script>
-<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" type="text/javascript"></script>
-<script>
-        function resetLanguage() {
-            // Clear Google Translate cookies
-            document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-            document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=." + document.domain;
 
-            // Reload the page
-            window.location.reload();
-        }
-    </script>
-<script>
-        // Language Dropdown Toggle
-        function toggleLangDropdown() {
-            var dropdown = document.getElementById("langDropdown");
-            dropdown.style.display = dropdown.style.display === "none" ? "block" : "none";
-        }
-        
-        // Close dropdown when clicking outside
-        document.addEventListener('click', function(e) {
-            var dropdown = document.getElementById("langDropdown");
-            var button = e.target.closest('button');
-            if (dropdown && !e.target.closest('#langDropdown') && (!button || !button.onclick || button.onclick.toString().indexOf('toggleLangDropdown') === -1)) {
-                dropdown.style.display = "none";
-            }
-        });
+<body>
+    <div class="hidden-mobile" style="background:#002FA7;color:white;padding:10px 0">
+        <div class="container" style="display:flex;justify-content:flex-end;gap:25px;font-size:13px">
+            <a href="about.html" style="color:#ddd">Über uns</a>
+            <a href="contact.html" style="color:#ddd">Kontakt</a>
+            <div style="position:relative;display:inline-block">
+                <span style="color:#C5A059;font-weight:600;cursor:pointer" onclick="toggleLangMenu()">Deutsch ▼</span>
+                <div id="langMenu"
+                    style="display:none;position:absolute;right:0;top:100%;background:white;box-shadow:0 4px 12px rgba(0,0,0,0.15);border-radius:4px;min-width:120px;z-index:100">
+                    <a href="../emerging-tech.html"
+                        style="display:block;padding:10px 15px;color:#333;font-size:13px">English</a>
+                    <a href="../zh/emerging-tech.html"
+                        style="display:block;padding:10px 15px;color:#333;font-size:13px">繁體中文</a>
+                    <a href="../zh-cn/emerging-tech.html"
+                        style="display:block;padding:10px 15px;color:#333;font-size:13px">简体中文</a>
+                    <a href="../de/emerging-tech.html"
+                        style="display:block;padding:10px 15px;color:#C5A059;font-size:13px;background:#f5f5f5">Deutsch</a>
+                    <a href="../jp/emerging-tech.html"
+                        style="display:block;padding:10px 15px;color:#333;font-size:13px">日本語</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav style="background:white;box-shadow:0 2px 10px rgba(0,0,0,0.05);position:sticky;top:0;z-index:100">
+        <div class="container"
+            style="padding:15px 20px;display:flex;justify-content:space-between;align-items:center;position:relative">
+            <a href="index.html" style="display:flex;align-items:center;gap:15px">
+                <img alt="Logo" src="../images/logo.png" style="height:40px" />
+                <div><span style="font-size:18px;font-weight:700;color:#111;display:block">Yeh Sheng Powder
+                        Parts</span><span
+                        style="font-size:10px;font-weight:600;color:#C5A059">Pulvermetallurgie-Experten</span></div>
+            </a>
+            <div class="hidden-mobile" style="display:flex;gap:35px;align-items:center">
+                <a href="products.html" style="font-size:15px;color:#333">Produkte</a>
+                <a href="solutions.html" style="font-size:15px;color:#333">Service</a>
+                <a href="emerging-tech.html" style="font-size:15px;color:#C5A059;font-weight:700">Neue Tech</a>
+                <a href="contact.html"
+                    style="background:#C5A059;color:white;padding:8px 20px;border-radius:4px">Kontakt</a>
+            </div>
+            <div class="mobile-menu-btn" onclick="document.getElementById('mobileMenu').classList.toggle('active')">☰
+            </div>
+            <div class="mobile-menu" id="mobileMenu">
+                <a href="products.html" style="display:block;padding:10px 0;border-bottom:1px solid #eee">Produkte</a>
+                <a href="emerging-tech.html"
+                    style="display:block;padding:10px 0;border-bottom:1px solid #eee;color:#C5A059">Neue Tech</a>
+                <a href="about.html" style="display:block;padding:10px 0;border-bottom:1px solid #eee">Über uns</a>
+                <a href="contact.html" style="display:block;padding:10px 0;color:#C5A059">Kontakt</a>
+            </div>
+        </div>
+    </nav>
+    <header style="background:white;padding:80px 0;border-bottom:1px solid #eee">
+        <div class="container" style="text-align:center">
+            <h1 style="font-family:'Playfair Display',serif;font-size:48px;color:#111;margin-bottom:15px">Aufstrebende
+                Technologien</h1>
+            <p style="font-size:18px;color:#666;max-width:700px;margin:0 auto">Pulvermetallurgie-Lösungen für die
+                Industrien von morgen</p>
+        </div>
+    </header>
+    <section style="padding:80px 0;background:#f8f9fa">
+        <div class="container">
+            <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(350px,1fr));gap:30px">
+                <div class="tech-card">
+                    <div style="font-size:48px;margin-bottom:20px">🤖</div>
+                    <h3 style="font-size:22px;color:#002FA7;margin-bottom:15px">Robotik & Automatisierung</h3>
+                    <p style="color:#666;line-height:1.6">Hochpräzise Zahnräder und Antriebskomponenten für Roboterarme,
+                        Cobots und automatisierte Fertigungssysteme mit überlegener Maßkonsistenz.</p>
+                </div>
+                <div class="tech-card">
+                    <div style="font-size:48px;margin-bottom:20px">🚁</div>
+                    <h3 style="font-size:22px;color:#002FA7;margin-bottom:15px">Drohnen & UAV</h3>
+                    <p style="color:#666;line-height:1.6">Leichte, hochfeste Komponenten für Motorrotoren, Getriebe und
+                        Antriebssysteme unbemannter Luftfahrzeuge.</p>
+                </div>
+                <div class="tech-card">
+                    <div style="font-size:48px;margin-bottom:20px">⚡</div>
+                    <h3 style="font-size:22px;color:#002FA7;margin-bottom:15px">Elektromobilität</h3>
+                    <p style="color:#666;line-height:1.6">Komponenten für Elektrofahrzeuge: Motorenteile, Getriebe für
+                        E-Antriebe und Batteriemanagementsysteme.</p>
+                </div>
+                <div class="tech-card">
+                    <div style="font-size:48px;margin-bottom:20px">🏭</div>
+                    <h3 style="font-size:22px;color:#002FA7;margin-bottom:15px">Industrie 4.0</h3>
+                    <p style="color:#666;line-height:1.6">Präzisionsteile für intelligente Fertigung, IoT-Geräte und
+                        vernetzte Produktionssysteme.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="padding:80px 0;background:#111;color:white;text-align:center">
+        <div class="container">
+            <h2 style="font-family:'Playfair Display',serif;font-size:36px;margin-bottom:20px">Entwickeln Sie innovative
+                Produkte?</h2>
+            <p style="color:#999;margin-bottom:40px">Lassen Sie uns gemeinsam die Zukunft gestalten.</p>
+            <a href="contact.html"
+                style="background:#C5A059;color:white;padding:15px 40px;border-radius:6px;font-weight:600;display:inline-block">Kontaktieren
+                Sie uns</a>
+        </div>
+    </section>
+    <footer style="background:#002FA7;color:white;padding:60px 0 30px">
+        <div class="container" style="text-align:center">
+            <h3 style="color:#C5A059;margin-bottom:15px">Yeh Sheng Powder Parts Ind. Co. Ltd.</h3>
+            <p style="color:#a0b0d0;font-size:14px;margin-bottom:30px">Nr. 11, Ln. 721, Zhong Zheng Rd., New Taipei
+                City, Taiwan | YS@yehsheng.com | +886-2-2901-8266</p>
+            <p style="color:#667;font-size:13px">© 2024 Yeh Sheng Powder Parts. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+    <script>
+        function toggleLangMenu() { var m = document.getElementById("langMenu"); m.style.display = (m.style.display === "none" || m.style.display === "") ? "block" : "none" }
+        document.addEventListener('click', function (e) { var m = document.getElementById("langMenu"); if (!e.target.closest('#langMenu') && !e.target.matches('[onclick="toggleLangMenu()"]')) { if (m) m.style.display = "none" } });
     </script>
 </body>
+
 </html>

@@ -1,58 +1,45 @@
 <!DOCTYPE html>
+<html lang="ja">
 
-<html lang="jp">
 <head>
-<!-- Google Analytics -->
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-XS5ZTZGF2Y"></script>
-<script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-XS5ZTZGF2Y');
-    </script>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="Explore Yeh Sheng's service workflow for powder metallurgy projects. From inquiry and engineering evaluation to prototyping and mass production." name="description"/>
-<meta content="powder metallurgy workflow, PM inquiry process, engineering evaluation, DFM, prototyping, mass production" name="keywords"/>
-<meta content="Service Workflow - Yeh Sheng Powder Parts Ind. Co. Ltd." property="og:title"/>
-<meta content="Step-by-step guide to working with Yeh Sheng on your powder metallurgy projects. Inquiry, DFM, tooling, and production." property="og:description"/>
-<meta content="https://yehsheng.com/images/logo.png" property="og:image"/>
-<meta content="https://yehsheng.com/solutions.html" property="og:url"/>
-<meta content="website" property="og:type"/>
-<title>Service Workflow - Yeh Sheng Powder Parts Ind. Co. Ltd.</title>
-<!-- Import Google Fonts: Playfair Display (Serif) for Headings, Inter (Sans) for Body -->
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
-<style>
-        /* Global Reset */
+    <meta name="google-site-verification" content="YUhT_jRF5sxYfCWMMcB08B38K6MB2yAEv4wEo1fjdXg" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XS5ZTZGF2Y"></script>
+    <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments) } gtag('js', new Date()); gtag('config', 'G-XS5ZTZGF2Y');</script>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="お問い合わせからエンジニアリング評価、量産までのサービスフローをご紹介します。" name="description" />
+    <title>サービスフロー - Yeh Sheng Powder Parts</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <style>
         body {
             margin: 0;
             padding: 0;
-            font-family: 'Inter', sans-serif;
+            font-family: 'Noto Sans JP', 'Inter', sans-serif;
             color: #333;
-            background-color: #fcfcfc;
-            overflow-x: hidden;
+            background: #fcfcfc;
+            overflow-x: hidden
         }
 
         a {
             text-decoration: none;
             color: inherit;
-            transition: all 0.3s ease;
+            transition: all 0.3s ease
         }
 
         * {
-            box-sizing: border-box;
+            box-sizing: border-box
         }
 
-        /* Utility Classes */
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 0 20px
         }
 
-        /* Workflow Step Style */
         .workflow-step {
             position: relative;
             padding: 40px;
@@ -61,11 +48,11 @@
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
             border-left: 5px solid #C5A059;
             margin-bottom: 30px;
-            transition: transform 0.3s ease;
+            transition: transform 0.3s ease
         }
 
         .workflow-step:hover {
-            transform: translateX(10px);
+            transform: translateX(10px)
         }
 
         .step-number {
@@ -76,29 +63,42 @@
             position: absolute;
             top: 20px;
             right: 30px;
-            line-height: 1;
+            line-height: 1
         }
 
-        /* Checklist Style */
         .checklist-item {
             display: flex;
             align-items: flex-start;
-            margin-bottom: 15px;
+            margin-bottom: 15px
         }
 
         .checklist-icon {
             color: #C5A059;
             margin-right: 15px;
             font-weight: bold;
-            font-size: 18px;
+            font-size: 18px
         }
 
-        /* Mobile Menu Styles */
+        .btn-gold {
+            background: #C5A059;
+            color: white;
+            padding: 16px 32px;
+            border-radius: 6px;
+            font-weight: 500;
+            display: inline-block;
+            border: 1px solid #C5A059;
+            cursor: pointer
+        }
+
+        .btn-gold:hover {
+            background: #b08d4d
+        }
+
         .mobile-menu-btn {
             display: none;
             cursor: pointer;
             font-size: 24px;
-            color: #333;
+            color: #333
         }
 
         .mobile-menu {
@@ -112,340 +112,180 @@
             padding: 20px;
             flex-direction: column;
             gap: 15px;
-            z-index: 99;
+            z-index: 99
         }
 
         .mobile-menu.active {
-            display: flex;
+            display: flex
         }
 
-        /* Responsive Styles */
-        @media (max-width: 768px) {
+        @media(max-width:768px) {
             .hidden-mobile {
-                display: none !important;
+                display: none !important
             }
 
             .mobile-menu-btn {
-                display: block;
+                display: block
             }
 
             .workflow-step:hover {
-                transform: none;
+                transform: none
             }
 
             h1 {
-                font-size: 36px !important;
+                font-size: 36px !important
             }
         }
     </style>
-<link href="https://yehsheng.com/solutions.html" rel="canonical"/>
-<!-- hreflang tags for multilingual SEO -->
-<link href="https://yehsheng.com/solutions.html" hreflang="en" rel="alternate"/>
-<link href="https://yehsheng.com/zh/solutions.html" hreflang="zh-Hant" rel="alternate"/>
-<link href="https://yehsheng.com/zh-cn/solutions.html" hreflang="zh-Hans" rel="alternate"/>
-<link href="https://yehsheng.com/de/solutions.html" hreflang="de" rel="alternate"/>
-<link href="https://yehsheng.com/jp/solutions.html" hreflang="ja" rel="alternate"/>
-<link href="https://yehsheng.com/solutions.html" hreflang="x-default" rel="alternate"/>
-<style id="google-translate-style">
-        /* Google Translate Customization */
-        .goog-te-gadget-simple {
-            background-color: transparent !important;
-            border: none !important;
-            padding: 0 !important;
-            font-size: 13px !important;
-        }
-
-        .goog-te-gadget-simple .goog-te-menu-value {
-            color: #C5A059 !important;
-            /* Match the Gold color */
-            font-weight: 500;
-        }
-
-        .goog-te-gadget-simple .goog-te-menu-value span {
-            color: #C5A059 !important;
-            border-left: none !important;
-        }
-
-        .goog-te-gadget-simple .goog-te-menu-value img {
-            display: none !important;
-            /* Hide Google Icon */
-        }
-
-        /* Hide the Google Top Bar */
-        .goog-te-banner-frame.skiptranslate {
-            display: none !important;
-        }
-
-        body {
-            top: 0px !important;
-        }
-
-        /* Hide tooltips */
-        .goog-tooltip {
-            display: none !important;
-        }
-
-        .goog-tooltip:hover {
-            display: none !important;
-        }
-
-        .goog-text-highlight {
-            background-color: transparent !important;
-            border: none !important;
-            box-shadow: none !important;
-        }
-    </style>
-<link href="../images/logo.png" rel="icon" type="image/png"/>
+    <link href="https://yehsheng.com/jp/solutions.html" rel="canonical" />
+    <link rel="icon" href="../images/logo.png" type="image/png">
 </head>
-<body>
-<!-- Top Bar (Klein Blue #002FA7) -->
-<div class="hidden-mobile" style="background-color: #002FA7; color: white; padding: 10px 0;">
-<div class="container" style="display: flex; justify-content: flex-end; gap: 25px; font-size: 13px; font-weight: 500; letter-spacing: 0.5px; align-items: center;">
-<a href="about.html" style="color: #ddd;">会社概要</a>
-<a href="contact.html" style="color: #ddd;">お問い合わせ</a>
-<!-- Language Dropdown -->
-<div style="position: relative; display: inline-block;">
-<button onclick="toggleLangDropdown()" style="background: transparent; border: 1px solid #C5A059; color: #C5A059; padding: 6px 15px; border-radius: 4px; cursor: pointer; font-size: 13px; font-weight: 600; display: flex; align-items: center; gap: 8px;">
-                    🌐 English ▼
-                </button>
-<div id="langDropdown" style="display: none; position: absolute; right: 0; top: 100%; margin-top: 5px; background: white; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); min-width: 160px; z-index: 1000; overflow: hidden;">
-<a href="solutions.html" style="display: block; padding: 12px 20px; color: #333; font-size: 14px; border-bottom: 1px solid #eee; font-weight: 600; background: #f8f9fa;">🇺🇸 English</a>
-<a href="zh/solutions.html" style="display: block; padding: 12px 20px; color: #333; font-size: 14px; border-bottom: 1px solid #eee;">🇹🇼 繁體中文</a>
-<a href="zh-cn/solutions.html" style="display: block; padding: 12px 20px; color: #333; font-size: 14px; border-bottom: 1px solid #eee;">🇨🇳 简体中文</a>
-<a href="de/solutions.html" style="display: block; padding: 12px 20px; color: #333; font-size: 14px; border-bottom: 1px solid #eee;">🇩🇪 Deutsch</a>
-<a href="jp/solutions.html" style="display: block; padding: 12px 20px; color: #333; font-size: 14px;">🇯🇵 日本語</a>
-</div>
-</div>
-</div>
-</div>
-<!-- Navigation -->
-<nav style="background: white; box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 100;">
-<div class="container" style="padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; position: relative;">
-<div style="display: flex; align-items: center; gap: 15px;">
-<a href="index.html" style="display: flex; align-items: center; gap: 15px;">
-<img alt="Logo" src="../images/logo.png" style="height: 40px;"/>
-<div style="display: flex; flex-direction: column;">
-<span style="font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; color: #111; line-height: 1.2;">Yeh Sheng Powder Parts Ind. Co. Ltd.</span>
-<span style="font-size: 10px; font-weight: 600; color: #C5A059; letter-spacing: 1px; text-transform: uppercase;">Powder
-                            Metallurgy</span>
-</div>
-</a>
-</div>
-<!-- Desktop Menu -->
-<div class="hidden-mobile" style="display: flex; gap: 35px; align-items: center;">
-<a href="products.html" style="font-size: 15px; font-weight: 500; color: #333; text-transform: uppercase; letter-spacing: 0.5px;">製品紹介</a>
-<a href="solutions.html" style="font-size: 15px; font-weight: 500; color: #C5A059; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 700;">Service
-                    Workflow</a>
-<a href="capabilities.html" style="font-size: 15px; font-weight: 500; color: #333; text-transform: uppercase; letter-spacing: 0.5px;">製造能力</a>
-<a href="applications.html" style="font-size: 15px; font-weight: 500; color: #333; text-transform: uppercase; letter-spacing: 0.5px;">産業分野</a>
-<a href="resources.html" style="font-size: 15px; font-weight: 500; color: #333; text-transform: uppercase; letter-spacing: 0.5px;">Resources</a>
-<a href="contact.html" style="background: #C5A059; color: white; padding: 8px 20px; border-radius: 4px; font-size: 14px; font-weight: 500;">お問い合わせ</a>
-</div>
-<!-- Mobile Menu Button -->
-<div class="mobile-menu-btn" onclick="toggleMenu()">
-                ☰
-            </div>
-<!-- Mobile Menu Dropdown -->
-<div class="mobile-menu" id="mobileMenu">
-<a href="products.html" style="font-size: 16px; font-weight: 500; color: #333; padding: 10px 0; border-bottom: 1px solid #eee;">製品紹介</a>
-<a href="solutions.html" style="font-size: 16px; font-weight: 500; color: #C5A059; padding: 10px 0; border-bottom: 1px solid #eee; font-weight: 700;">Service
-                    Workflow</a>
-<a href="capabilities.html" style="font-size: 16px; font-weight: 500; color: #333; padding: 10px 0; border-bottom: 1px solid #eee;">製造能力</a>
-<a href="applications.html" style="font-size: 16px; font-weight: 500; color: #333; padding: 10px 0; border-bottom: 1px solid #eee;">産業分野</a>
-<a href="resources.html" style="font-size: 16px; font-weight: 500; color: #333; padding: 10px 0; border-bottom: 1px solid #eee;">Resources</a>
-<a href="about.html" style="font-size: 16px; font-weight: 500; color: #333; padding: 10px 0; border-bottom: 1px solid #eee;">会社概要</a>
-<a href="contact.html" style="font-size: 16px; font-weight: 500; color: #C5A059; padding: 10px 0;">お問い合わせ</a>
-</div>
-</div>
-</nav>
-<!-- Header Section -->
-<section style="padding: 80px 0 40px 0; background: #f8f9fa;">
-<div class="container">
-<div style="max-width: 800px; margin: 0 auto; text-align: center;">
-<h1 style="font-family: 'Playfair Display', serif; font-size: 48px; font-weight: 700; color: #111; margin-bottom: 20px;">
-                    How We Work With You
-                </h1>
-<p style="font-size: 18px; color: #666; line-height: 1.6;">
-                    From initial concept to mass production, Yeh Sheng provides comprehensive engineering support. Our
-                    transparent workflow ensures your project is delivered on time, on budget, and to your exact
-                    specifications.
-                </p>
-</div>
-</div>
-</section>
-<!-- Workflow Steps -->
-<section style="padding: 60px 0; background: #f8f9fa;">
-<div class="container">
-<div style="max-width: 900px; margin: 0 auto;">
-<!-- Step 1 -->
-<div class="workflow-step">
-<div class="step-number">01</div>
-<h2 style="font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 700; color: #002FA7; margin-bottom: 15px;">
-                        Inquiry &amp; Requirement Analysis
-                    </h2>
-<p style="color: #555; line-height: 1.6; margin-bottom: 20px;">
-                        The process begins when you send us your project details. To provide an accurate quotation and
-                        feasibility assessment, please provide:
-                    </p>
-<div style="background: #f0f4f8; padding: 20px; border-radius: 8px;">
-<div class="checklist-item">
-<span class="checklist-icon">✓</span>
-<span><strong>Drawings:</strong> 2D (PDF) with tolerances and 3D (STEP/IGES) files.</span>
-</div>
-<div class="checklist-item">
-<span class="checklist-icon">✓</span>
-<span><strong>Material Specifications:</strong> Required hardness, density, or specific
-                                alloy standards (e.g., MPIF, JIS).</span>
-</div>
-<div class="checklist-item">
-<span class="checklist-icon">✓</span>
-<span><strong>Quantity:</strong> Estimated annual usage (EAU) or batch size.</span>
-</div>
-</div>
-</div>
-<!-- Step 2 -->
-<div class="workflow-step">
-<div class="step-number">02</div>
-<h2 style="font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 700; color: #002FA7; margin-bottom: 15px;">
-                        Engineering Evaluation &amp; DFM
-                    </h2>
-<p style="color: #555; line-height: 1.6;">
-                        Our engineering team reviews your design for <strong>Design for Manufacturability
-                            (DFM)</strong>. We may suggest minor design modifications to optimize the part for the
-                        powder metallurgy process, helping you reduce tooling costs and improve part strength.
-                    </p>
-</div>
-<!-- Step 3 -->
-<div class="workflow-step">
-<div class="step-number">03</div>
-<h2 style="font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 700; color: #002FA7; margin-bottom: 15px;">
-                        Quotation &amp; Tooling Development
-                    </h2>
-<p style="color: #555; line-height: 1.6;">
-                        Once the design is finalized, we provide a formal quotation including tooling costs and unit
-                        prices. Upon approval, we proceed with mold design and fabrication. Our in-house tooling
-                        capabilities ensure precision and faster lead times.
-                    </p>
-</div>
-<!-- Step 4 -->
-<div class="workflow-step">
-<div class="step-number">04</div>
-<h2 style="font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 700; color: #002FA7; margin-bottom: 15px;">
-                        Prototyping &amp; Sample Approval
-                    </h2>
-<p style="color: #555; line-height: 1.6;">
-                        We produce T1 samples for your verification. We provide a full dimensional inspection report
-                        with the samples. Mass production begins only after you have approved the samples.
-                    </p>
-</div>
-<!-- Step 5 -->
-<div class="workflow-step">
-<div class="step-number">05</div>
-<h2 style="font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 700; color: #002FA7; margin-bottom: 15px;">
-                        Mass Production &amp; Quality Control
-                    </h2>
-<p style="color: #555; line-height: 1.6;">
-                        Our ISO 9001 certified production line handles compacting, sintering, sizing, and any necessary
-                        secondary operations (machining, heat treatment, plating). Rigorous QC checks are performed at
-                        every stage.
-                    </p>
-</div>
-</div>
-</div>
-</section>
-<!-- CTA Section -->
-<section style="padding: 80px 0; background: white; text-align: center;">
-<div class="container">
-<h2 style="font-family: 'Playfair Display', serif; font-size: 36px; font-weight: 700; color: #111; margin-bottom: 20px;">
-                Ready to Start Your Project?
-            </h2>
-<p style="font-size: 18px; color: #666; margin-bottom: 40px; max-width: 600px; margin-left: auto; margin-right: auto;">
-                Send us your drawings today for a free engineering evaluation and quotation.
-            </p>
-<a class="btn-gold" href="contact.html" style="font-size: 18px; padding: 15px 40px;">
-                Request a Quote
-            </a>
-</div>
-</section>
-<!-- Footer -->
-<footer style="background: #002FA7; color: white; padding: 80px 0 40px 0;">
-<div class="container">
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 50px; margin-bottom: 60px;">
-<!-- Brand -->
-<div>
-<div style="display: flex; align-items: center; gap: 15px; margin-bottom: 25px;">
-<img alt="Logo" src="../images/logo.png" style="height: 50px;"/>
-<div style="display: flex; flex-direction: column;">
-<h3 style="font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 700; color: #C5A059; margin: 0 0 5px 0;">Yeh Sheng Powder Parts Ind. Co. Ltd.</h3>
-</div>
-</div>
-<p style="font-family: 'Inter', sans-serif; color: #a0b0d0; line-height: 1.6; font-size: 14px;">
-                        Premier manufacturer of high-precision powder metallurgy components since 1984.
-                    </p>
-</div>
-<!-- Links -->
-<div>
-<h4 style="font-family: 'Playfair Display', serif; color: #C5A059; font-size: 18px; font-weight: 700; margin-bottom: 25px; letter-spacing: 1px;">
-                        COMPANY</h4>
-<ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 15px;">
-<li><a href="about.html" style="color: #a0b0d0; font-size: 15px;">会社概要</a></li>
-<li><a href="products.html" style="color: #a0b0d0; font-size: 15px;">すべての製品</a></li>
-<li><a href="capabilities.html" style="color: #a0b0d0; font-size: 15px;">製造能力</a></li>
-<li><a href="resources.html" style="color: #a0b0d0; font-size: 15px;">Resources</a></li>
-<li><a href="contact.html" style="color: #a0b0d0; font-size: 15px;">お問い合わせ</a></li>
-</ul>
-</div>
-お問い合わせ
-<div>
-<h4 style="font-family: 'Playfair Display', serif; color: #C5A059; font-size: 18px; font-weight: 700; margin-bottom: 25px; letter-spacing: 1px;">
-                        CONTACT US</h4>
-<ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 15px;">
-<li style="color: #a0b0d0; font-size: 15px;">新北市新荘区中正路721巷11号</li>
-<li style="color: #a0b0d0; font-size: 15px;"></li>
-<li style="color: #a0b0d0; font-size: 15px;"><a href="mailto:YS@yehsheng.com">YS@yehsheng.com</a></li>
-<li style="color: #a0b0d0; font-size: 15px;">+886-2-2901-8266</li>
-</ul>
-</div>
-</div>
-<div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 30px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
-<p style="color: #667; font-size: 13px; margin: 0;">© 2024 Yeh Sheng Powder Parts Ind. Co. Ltd. All
-                    Rights Reserved.</p>
-<div style="display: flex; gap: 20px;">
-<a href="#" style="color: #667; font-size: 13px;">Privacy Policy</a>
-<a href="#" style="color: #667; font-size: 13px;">Terms of Service</a>
-</div>
-</div>
-</div>
-</footer>
-<script>
-        function toggleMenu() {
-            var menu = document.getElementById('mobileMenu');
-            if (menu.style.display === 'flex') {
-                menu.style.display = 'none';
-            } else {
-                menu.style.display = 'flex';
-            }
-        }
-    </script>
-<script>
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement({
-                pageLanguage: 'en',
-                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-                autoDisplay: false
-            }, 'google_translate_element');
-        }
-    </script>
-<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" type="text/javascript"></script>
-<script>
-        function resetLanguage() {
-            // Clear Google Translate cookies
-            document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-            document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=." + document.domain;
 
-            // Reload the page
-            window.location.reload();
-        }
+<body>
+    <div class="hidden-mobile" style="background:#002FA7;color:white;padding:10px 0">
+        <div class="container" style="display:flex;justify-content:flex-end;gap:25px;font-size:13px;font-weight:500">
+            <a href="about.html" style="color:#ddd">会社概要</a>
+            <a href="contact.html" style="color:#ddd">お問い合わせ</a>
+            <div style="position:relative;display:inline-block">
+                <span style="color:#C5A059;font-weight:600;cursor:pointer" onclick="toggleLangMenu()">日本語 ▼</span>
+                <div id="langMenu"
+                    style="display:none;position:absolute;right:0;top:100%;background:white;box-shadow:0 4px 12px rgba(0,0,0,0.15);border-radius:4px;min-width:120px;z-index:100">
+                    <a href="../solutions.html"
+                        style="display:block;padding:10px 15px;color:#333;font-size:13px">English</a>
+                    <a href="../zh/solutions.html"
+                        style="display:block;padding:10px 15px;color:#333;font-size:13px">繁體中文</a>
+                    <a href="../zh-cn/solutions.html"
+                        style="display:block;padding:10px 15px;color:#333;font-size:13px">简体中文</a>
+                    <a href="../de/solutions.html"
+                        style="display:block;padding:10px 15px;color:#333;font-size:13px">Deutsch</a>
+                    <a href="../jp/solutions.html"
+                        style="display:block;padding:10px 15px;color:#C5A059;font-size:13px;background:#f5f5f5">日本語</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav style="background:white;box-shadow:0 2px 10px rgba(0,0,0,0.05);position:sticky;top:0;z-index:100">
+        <div class="container"
+            style="padding:15px 20px;display:flex;justify-content:space-between;align-items:center;position:relative">
+            <a href="index.html" style="display:flex;align-items:center;gap:15px">
+                <img alt="Logo" src="../images/logo.png" style="height:40px" />
+                <div style="display:flex;flex-direction:column">
+                    <span style="font-size:18px;font-weight:700;color:#111;line-height:1.2">Yeh Sheng Powder
+                        Parts</span>
+                    <span style="font-size:10px;font-weight:600;color:#C5A059">粉末冶金エキスパート</span>
+                </div>
+            </a>
+            <div class="hidden-mobile" style="display:flex;gap:35px;align-items:center">
+                <a href="products.html" style="font-size:15px;font-weight:500;color:#333">製品紹介</a>
+                <a href="solutions.html" style="font-size:15px;font-weight:700;color:#C5A059">サービス</a>
+                <a href="capabilities.html" style="font-size:15px;font-weight:500;color:#333">製造能力</a>
+                <a href="applications.html" style="font-size:15px;font-weight:500;color:#333">産業分野</a>
+                <a href="contact.html"
+                    style="background:#C5A059;color:white;padding:8px 20px;border-radius:4px;font-size:14px;font-weight:500">お問い合わせ</a>
+            </div>
+            <div class="mobile-menu-btn" onclick="toggleMenu()">☰</div>
+            <div class="mobile-menu" id="mobileMenu">
+                <a href="products.html" style="padding:10px 0;border-bottom:1px solid #eee">製品紹介</a>
+                <a href="solutions.html"
+                    style="padding:10px 0;border-bottom:1px solid #eee;color:#C5A059;font-weight:700">サービス</a>
+                <a href="capabilities.html" style="padding:10px 0;border-bottom:1px solid #eee">製造能力</a>
+                <a href="about.html" style="padding:10px 0;border-bottom:1px solid #eee">会社概要</a>
+                <a href="contact.html" style="padding:10px 0;color:#C5A059">お問い合わせ</a>
+            </div>
+        </div>
+    </nav>
+    <section style="padding:80px 0 40px 0;background:#f8f9fa">
+        <div class="container">
+            <div style="max-width:800px;margin:0 auto;text-align:center">
+                <h1
+                    style="font-family:'Playfair Display',serif;font-size:48px;font-weight:700;color:#111;margin-bottom:20px">
+                    私たちの協力プロセス</h1>
+                <p style="font-size:18px;color:#666;line-height:1.6">初期コンセプトから量産まで、Yeh
+                    Shengは包括的なエンジニアリングサポートを提供します。透明性のあるワークフローにより、プロジェクトが予定通り、予算内で、仕様に完全に準拠して納品されることを保証します。</p>
+            </div>
+        </div>
+    </section>
+    <section style="padding:60px 0;background:#f8f9fa">
+        <div class="container">
+            <div style="max-width:900px;margin:0 auto">
+                <div class="workflow-step">
+                    <div class="step-number">01</div>
+                    <h2
+                        style="font-family:'Playfair Display',serif;font-size:24px;font-weight:700;color:#002FA7;margin-bottom:15px">
+                        お問い合わせ＆要件分析</h2>
+                    <p style="color:#555;line-height:1.6;margin-bottom:20px">
+                        プロジェクトの詳細をお知らせいただくことからプロセスが始まります。正確な見積もりには以下が必要です：</p>
+                    <div style="background:#f0f4f8;padding:20px;border-radius:8px">
+                        <div class="checklist-item"><span
+                                class="checklist-icon">✓</span><span><strong>図面：</strong>公差を含む2D（PDF）および3D（STEP/IGES）ファイル。</span>
+                        </div>
+                        <div class="checklist-item"><span
+                                class="checklist-icon">✓</span><span><strong>材料仕様：</strong>必要な硬度、密度、または合金規格（MPIF、JIS）。</span>
+                        </div>
+                        <div class="checklist-item"><span
+                                class="checklist-icon">✓</span><span><strong>数量：</strong>推定年間使用量（EAU）またはロットサイズ。</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="workflow-step">
+                    <div class="step-number">02</div>
+                    <h2
+                        style="font-family:'Playfair Display',serif;font-size:24px;font-weight:700;color:#002FA7;margin-bottom:15px">
+                        エンジニアリング評価＆DFM</h2>
+                    <p style="color:#555;line-height:1.6">
+                        当社のエンジニアリングチームが<strong>製造性設計（DFM）</strong>の観点からデザインをレビューします。粉末冶金プロセスに最適化するための軽微なデザイン変更を提案し、金型コストの削減と部品強度の向上を図ります。
+                    </p>
+                </div>
+                <div class="workflow-step">
+                    <div class="step-number">03</div>
+                    <h2
+                        style="font-family:'Playfair Display',serif;font-size:24px;font-weight:700;color:#002FA7;margin-bottom:15px">
+                        見積もり＆金型開発</h2>
+                    <p style="color:#555;line-height:1.6">
+                        デザイン確定後、金型費用と単価を含む正式な見積もりを提出します。ご承認後、金型の設計と製造を開始します。社内金型製造能力により、精度と迅速な納期を確保します。</p>
+                </div>
+                <div class="workflow-step">
+                    <div class="step-number">04</div>
+                    <h2
+                        style="font-family:'Playfair Display',serif;font-size:24px;font-weight:700;color:#002FA7;margin-bottom:15px">
+                        試作＆サンプル承認</h2>
+                    <p style="color:#555;line-height:1.6">
+                        検証用のT1サンプルを製造します。サンプルには完全な寸法検査レポートを添付します。お客様のサンプル承認後にのみ量産を開始します。</p>
+                </div>
+                <div class="workflow-step">
+                    <div class="step-number">05</div>
+                    <h2
+                        style="font-family:'Playfair Display',serif;font-size:24px;font-weight:700;color:#002FA7;margin-bottom:15px">
+                        量産＆品質管理</h2>
+                    <p style="color:#555;line-height:1.6">ISO
+                        9001認証の生産ラインで、成形、焼結、整形、および必要な二次加工（機械加工、熱処理、めっき）を行います。各段階で厳格な品質管理検査を実施します。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="padding:80px 0;background:white;text-align:center">
+        <div class="container">
+            <h2
+                style="font-family:'Playfair Display',serif;font-size:36px;font-weight:700;color:#111;margin-bottom:20px">
+                プロジェクトを始める準備はできましたか？</h2>
+            <p style="font-size:18px;color:#666;margin-bottom:40px;max-width:600px;margin-left:auto;margin-right:auto">
+                今日、図面をお送りいただき、無料のエンジニアリング評価と見積もりを受け取りましょう。</p>
+            <a class="btn-gold" href="contact.html" style="font-size:18px;padding:15px 40px">見積もりを依頼</a>
+        </div>
+    </section>
+    <footer style="background:#002FA7;color:white;padding:60px 0 30px">
+        <div class="container" style="text-align:center">
+            <h3 style="color:#C5A059;margin-bottom:15px">Yeh Sheng Powder Parts Ind. Co. Ltd.</h3>
+            <p style="color:#a0b0d0;font-size:14px;margin-bottom:30px">台湾 新北市 新荘区 中正路721巷11号 | YS@yehsheng.com |
+                +886-2-2901-8266</p>
+            <p style="color:#667;font-size:13px">© 2024 Yeh Sheng Powder Parts Ind. Co. Ltd. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script>
+        function toggleMenu() { document.getElementById('mobileMenu').classList.toggle('active') }
+        function toggleLangMenu() { var m = document.getElementById("langMenu"); m.style.display = (m.style.display === "none" || m.style.display === "") ? "block" : "none" }
+        document.addEventListener('click', function (e) { var m = document.getElementById("langMenu"); if (!e.target.closest('#langMenu') && !e.target.matches('[onclick="toggleLangMenu()"]')) { if (m) m.style.display = "none" } });
     </script>
 </body>
+
 </html>
