@@ -114,14 +114,14 @@
 </head>
 
 <body>
-    <div class="hidden-mobile" style="background:#002FA7;color:white;padding:10px 0">
+    <div class="hidden-mobile" style="background:#002FA7;color:white;padding:10px 0;position:relative;z-index:200">
         <div class="container" style="display:flex;justify-content:flex-end;gap:25px;font-size:13px">
             <a href="about.html" style="color:#ddd">Über uns</a>
             <a href="contact.html" style="color:#ddd">Kontakt</a>
             <div style="position:relative;display:inline-block">
                 <span style="color:#C5A059;font-weight:600;cursor:pointer" onclick="toggleLangMenu()">Deutsch ▼</span>
                 <div id="langMenu"
-                    style="display:none;position:absolute;right:0;top:100%;background:white;box-shadow:0 4px 12px rgba(0,0,0,0.15);border-radius:4px;min-width:120px;z-index:100">
+                    style="display:none;position:absolute;right:0;top:100%;background:white;box-shadow:0 4px 12px rgba(0,0,0,0.15);border-radius:4px;min-width:120px;z-index:10000">
                     <a href="../products.html"
                         style="display:block;padding:10px 15px;color:#333;font-size:13px">English</a>
                     <a href="../zh/products.html"
