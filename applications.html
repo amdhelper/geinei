@@ -855,6 +855,21 @@
             window.location.reload();
         }
     </script>
+
+    <script>
+        function toggleLangDropdown() {
+            var dropdown = document.getElementById("langDropdown");
+            if (dropdown) {
+                dropdown.style.display = (dropdown.style.display === "none" || dropdown.style.display === "") ? "block" : "none";
+            }
+        }
+        document.addEventListener('click', function(e) {
+            var dropdown = document.getElementById("langDropdown");
+            if (dropdown && !e.target.closest('#langDropdown') && !e.target.matches('[onclick="toggleLangDropdown()"]')) {
+                dropdown.style.display = "none";
+            }
+        });
+    </script>
 </body>
 
 </html>
