@@ -79,7 +79,10 @@
             height: 200px;
             object-fit: contain;
             background: #f8f9fa;
-            padding: 20px
+            padding: 20px;
+            display: block;
+            margin: 0 auto;
+            box-sizing: border-box
         }
 
         .product-card h3 {
@@ -106,6 +109,10 @@
 
             h1 {
                 font-size: 32px !important
+            }
+
+            .products-grid {
+                grid-template-columns: repeat(2, 1fr) !important
             }
         }
     </style>
@@ -178,12 +185,12 @@
                 Mit über 40 Jahren Erfahrung in der Präzisionsfertigung spezialisiert sich Yeh Sheng auf Design und
                 Produktion von Pulvermetallurgie-Teilen. Unsere Produkte erreichen Toleranzen von ±0,01mm und werden in
                 Automobil-, Industrie-, Medizin- und Luft- und Raumfahrtbereichen eingesetzt.</p>
-            <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:30px">
+            <div class="products-grid" style="display:grid;grid-template-columns:repeat(4,1fr);gap:30px">
                 <div class="product-card"><img alt="Präzisionszahnräder" src="../images/Gears_refined.png" />
                     <h3>Präzisionszahnräder</h3>
                     <p>Hochfeste Sinterzahnräder für Antriebssysteme</p>
                 </div>
-                <div class="product-card"><img alt="Medizinische Komponenten" src="../images/medical_components.png" />
+                <div class="product-card"><img alt="Medizinische Komponenten" src="../images/medical-components.png" />
                     <h3>Medizinische Komponenten</h3>
                     <p>Biokompatible Edelstahlteile für medizinische Geräte</p>
                 </div>
