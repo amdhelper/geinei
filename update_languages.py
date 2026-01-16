@@ -2,9 +2,10 @@ import os
 import re
 from bs4 import BeautifulSoup
 
-# Define base directory
-BASE_DIR = '/home/ubuntu/pure_html'
-LANGUAGES = ['zh', 'de', 'jp']
+# Define base directory - use current working directory
+import sys
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+LANGUAGES = ['zh', 'zh-cn', 'de', 'jp']
 
 # Translation dictionary
 TRANSLATIONS = {
@@ -133,6 +134,131 @@ TRANSLATIONS = {
         'Address': '地址',
         'Business Hours': '營業時間',
         'Monday - Friday: 8:00 AM - 5:00 PM': '週一至週五：上午 8:00 - 下午 5:00',
+    },
+    'zh-cn': {
+        # Navigation - Simplified Chinese
+        'Home': '首页',
+        'Solutions': '解决方案',
+        'Applications': '应用领域',
+        'Industries': '应用领域',
+        'Emerging Tech': '新兴技术',
+        'Innovation': '创新技术',
+        'Capabilities': '制程能力',
+        'Products': '产品介绍',
+        'About': '关于我们',
+        'About Us': '关于我们',
+        'Contact': '联系我们',
+        'Contact Us': '联系我们',
+        'Language': '语言',
+        
+        # Common
+        'Yeh Sheng Powder Parts Ind. Co. Ltd.': 'Yeh Sheng Powder Parts Ind. Co. Ltd.',
+        'Yeh Sheng': '治圣工业',
+        'All rights reserved.': '版权所有',
+        'No. 11, Ln. 721, Zhong Zheng Rd., Xin Zhuang Dist., New Taipei City, 24265, Taiwan': '24265 新北市新庄区中正路721巷11号',
+        'No. 11, Ln. 721, Zhong Zheng Rd.': '新北市新庄区中正路721巷11号',
+        'Xin Zhuang Dist., New Taipei City': '',
+        'Taiwan 24265': '',
+        'Phone': '电话',
+        'Mobile': '手机',
+        'Email': '电子邮件',
+        'Company': '公司信息',
+        'Premier manufacturer of high-precision powder metallurgy components since 1980.': '自1980年以来的高精密粉末冶金组件领导制造商。',
+        
+        # Homepage Hero
+        'ISO 9001:2015 Certified': 'ISO 9001:2015 认证',
+        'Precision in': '精确至',
+        'Every Particle': '每一微粒',
+        'Precision in Every Particle': '精确至每一微粒',
+        'Engineering high-performance sintered components with micron-level precision for the automotive and industrial future.': '为汽车与工业的未来，打造微米级精度的工程高性能烧结组件。',
+        'Explore Products': '探索产品',
+        'Contact Engineering': '联系工程团队',
+        
+        # Homepage Stats
+        'Years Experience': '年丰富经验',
+        'Tolerance': '精密公差',
+        '9001 Certified': '9001 认证',
+        'Export Reach': '出口范围',
+        
+        # Key Industries Section
+        'Our Expertise': '专业领域',
+        'Key Industries': '关键产业',
+        'View All Industries': '查看所有产业',
+        'Automotive': '汽机车产业',
+        'High-precision rotors and structural parts for next-gen mobility.': '用于下一代移动科技的高精密转子与结构零件。',
+        'Industrial': '工业机械',
+        'Robust gears and transmission components for heavy-duty machinery.': '用于重型机械的坚固齿轮与传动组件。',
+        'Medical': '医疗器材',
+        'Biocompatible stainless steel parts for surgical and diagnostic devices.': '用于手术与诊断设备的生物相容性不锈钢零件。',
+        'Learn more': '了解更多',
+        
+        # Technology Section
+        'Pioneering the Future of Metallurgy': '开创粉末冶金的未来',
+        'From Soft Magnetic Composites (SMC) for EVs to high-precision micro-gears for robotics, we are pushing the boundaries of what\'s possible with sintered metal.': '从电动车用的软磁复合材料 (SMC) 到机器人用的高精密微型齿轮，我们正在拓展烧结金属的无限可能。',
+        'Discover Technologies': '探索创新技术',
+        
+        # Other Pages
+        'Precision Powder Metallurgy Parts for Your Diverse Needs': '满足您多样化需求的精密粉末冶金零件',
+        'All Products': '所有产品',
+        'Precision Gears': '精密齿轮',
+        'Automotive & Motorcycle': '汽机车零件',
+        'Industrial Parts': '工业零件',
+        'Industrial Components': '工业组件',
+        'High Precision Applications': '高精密应用',
+        'High-strength sintered gears for transmission systems': '用于传动系统的高强度烧结齿轮',
+        'Medical Components': '医疗器材零件',
+        'Biocompatible stainless steel parts for medical devices': '用于医疗设备的生物相容性不锈钢零件',
+        'Gear Assemblies': '齿轮组件',
+        'Complex multi-part assemblies with precise fit': '精密配合的复杂多零件组件',
+        'Oil Pump Rotors': '油泵转子',
+        'High-efficiency rotors for automotive oil pumps': '用于汽车油泵的高效率转子',
+        'Computer Parts': '电脑零件',
+        'Small precision parts for computer and electronics': '用于电脑和电子产品的小型精密零件',
+        'Complex Shapes': '复杂形状零件',
+        'Complex geometry parts with high structural integrity': '具有高结构完整性的复杂几何形状零件',
+        'Surgical Components': '手术器械零件',
+        'Precision stainless steel components for surgery': '用于手术的精密不锈钢组件',
+        'Power Transmission': '动力传输零件',
+        'Durable gears and sprockets for power transmission': '用于动力传输的耐用齿轮和链轮',
+        'Engineering Solutions': '工程解决方案',
+        'Solving complex challenges with powder metallurgy': '利用粉末冶金技术解决复杂挑战',
+        'Cost Reduction': '成本降低',
+        'Complex Geometries': '复杂几何形状',
+        'Material Versatility': '材料多样性',
+        'Industry Applications': '产业应用',
+        'Serving diverse sectors with high-performance sintered components': '以高性能烧结组件服务多元产业',
+        'Automotive & Motorcycle Parts': '汽机车零件',
+        'Key Components': '关键组件',
+        'Mechanical Parts': '机械零件',
+        'Power Tool Parts': '电动工具零件',
+        'Hardware & Electronics': '五金与电子',
+        'Emerging Technologies': '新兴技术',
+        'Pioneering the future with advanced powder metallurgy solutions': '以先进粉末冶金解决方案开创未来',
+        'Electric Vehicles (EV)': '电动车 (EV)',
+        'Innovations': '创新技术',
+        'Robotics & Automation': '机器人与自动化',
+        'Green Energy': '绿色能源',
+        'Manufacturing Capabilities': '制程能力',
+        'State-of-the-art facilities ensuring precision and quality': '确保精密与品质的最先进设施',
+        'Compacting': '成型',
+        'Sintering': '烧结',
+        'Secondary Operations': '二次加工',
+        'Quality Control': '品质控制',
+        'A Legacy of Precision and Innovation': '传承精密与创新的卓越工艺',
+        'Company Profile': '公司简介',
+        'Our Mission': '我们的使命',
+        'Our Vision': '我们的愿景',
+        'Get in touch with our team for inquiries and support': '与我们的团队联系以获取咨询和支援',
+        'Send us a Message': '发送讯息',
+        'Name': '姓名',
+        'Email Address': '电子邮件地址',
+        'Subject': '主旨',
+        'Message': '讯息',
+        'Send Message': '发送讯息',
+        'Contact Information': '联系资讯',
+        'Address': '地址',
+        'Business Hours': '营业时间',
+        'Monday - Friday: 8:00 AM - 5:00 PM': '周一至周五：上午 8:00 - 下午 5:00',
     },
     'de': {
         # Navigation
@@ -445,7 +571,8 @@ def update_language_pages():
                 dropdown_div.clear()
                 all_langs = [
                     {'code': 'en', 'name': 'English', 'path': '../' + filename},
-                    {'code': 'zh', 'name': '中文', 'path': filename},
+                    {'code': 'zh', 'name': '繁體中文', 'path': filename},
+                    {'code': 'zh-cn', 'name': '简体中文', 'path': filename},
                     {'code': 'de', 'name': 'Deutsch', 'path': filename},
                     {'code': 'jp', 'name': '日本語', 'path': filename}
                 ]
@@ -466,7 +593,7 @@ def update_language_pages():
                 if button:
                     for child in button.children:
                         if child.name is None and child.string.strip():
-                            display_name = {'zh': '中文', 'de': 'Deutsch', 'jp': '日本語'}.get(lang, lang.upper())
+                            display_name = {'zh': '繁體中文', 'zh-cn': '简体中文', 'de': 'Deutsch', 'jp': '日本語'}.get(lang, lang.upper())
                             child.replace_with(f' {display_name} ')
                             break
 
