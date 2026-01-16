@@ -449,5 +449,21 @@ Kontakt
             window.location.reload();
         }
     </script>
+<script>
+        // Language Dropdown Toggle
+        function toggleLangDropdown() {
+            var dropdown = document.getElementById("langDropdown");
+            dropdown.style.display = dropdown.style.display === "none" ? "block" : "none";
+        }
+        
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function(e) {
+            var dropdown = document.getElementById("langDropdown");
+            var button = e.target.closest('button');
+            if (dropdown && !e.target.closest('#langDropdown') && (!button || !button.onclick || button.onclick.toString().indexOf('toggleLangDropdown') === -1)) {
+                dropdown.style.display = "none";
+            }
+        });
+    </script>
 </body>
 </html>

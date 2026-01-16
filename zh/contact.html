@@ -248,13 +248,24 @@
 <link href="../images/logo.png" rel="icon" type="image/png"/>
 </head>
 <body>
-<!-- Top Bar (Klein Blue) -->
+<!-- Top Bar (Klein Blue #002FA7) -->
 <div class="hidden-mobile" style="background-color: #002FA7; color: white; padding: 10px 0;">
-<div class="container" style="display: flex; justify-content: flex-end; gap: 25px; font-size: 13px; font-weight: 500; letter-spacing: 0.5px;">
+<div class="container" style="display: flex; justify-content: flex-end; gap: 25px; font-size: 13px; font-weight: 500; letter-spacing: 0.5px; align-items: center;">
 <a href="about.html" style="color: #ddd;">關於我們</a>
 <a href="contact.html" style="color: #ddd;">聯絡我們</a>
-<a href="javascript:void(0)" id="reset-lang-btn" onclick="resetLanguage()" style="color: #C5A059; margin-right: 15px; font-weight: 600; cursor: pointer; text-decoration: none;">English</a>
-<div id="google_translate_element" style="display: inline-block; vertical-align: middle;"></div>
+<!-- Language Dropdown -->
+<div style="position: relative; display: inline-block;">
+<button onclick="toggleLangDropdown()" style="background: transparent; border: 1px solid #C5A059; color: #C5A059; padding: 6px 15px; border-radius: 4px; cursor: pointer; font-size: 13px; font-weight: 600; display: flex; align-items: center; gap: 8px;">
+                    🌐 English ▼
+                </button>
+<div id="langDropdown" style="display: none; position: absolute; right: 0; top: 100%; margin-top: 5px; background: white; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); min-width: 160px; z-index: 1000; overflow: hidden;">
+<a href="contact.html" style="display: block; padding: 12px 20px; color: #333; font-size: 14px; border-bottom: 1px solid #eee; font-weight: 600; background: #f8f9fa;">🇺🇸 English</a>
+<a href="zh/contact.html" style="display: block; padding: 12px 20px; color: #333; font-size: 14px; border-bottom: 1px solid #eee;">🇹🇼 繁體中文</a>
+<a href="zh-cn/contact.html" style="display: block; padding: 12px 20px; color: #333; font-size: 14px; border-bottom: 1px solid #eee;">🇨🇳 简体中文</a>
+<a href="de/contact.html" style="display: block; padding: 12px 20px; color: #333; font-size: 14px; border-bottom: 1px solid #eee;">🇩🇪 Deutsch</a>
+<a href="jp/contact.html" style="display: block; padding: 12px 20px; color: #333; font-size: 14px;">🇯🇵 日本語</a>
+</div>
+</div>
 </div>
 </div>
 <!-- Navigation -->
