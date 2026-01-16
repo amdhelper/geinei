@@ -14,24 +14,45 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
 <style>
         /* Global Reset */
-        body { margin: 0; padding: 0; font-family: 'Inter', sans-serif; color: #333; background-color: #fcfcfc; overflow-x: hidden; }
-        a { text-decoration: none; color: inherit; transition: all 0.3s ease; }
-        * { box-sizing: border-box; }
-        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+            color: #333;
+            background-color: #fcfcfc;
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
         /* Utility Classes */
-        .container { max-width: 1400px; margin: 0 auto; padding: 0 20px; }
-        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
         /* Premium Card Style */
         .premium-card {
             background: white;
             border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
             padding: 40px 30px;
             text-align: center;
-            border-bottom: 4px solid #C5A059; /* Gold Accent */
+            border-bottom: 4px solid #C5A059;
+            /* Gold Accent */
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             height: 100%;
         }
+
         .premium-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 15px 40px rgba(197, 160, 89, 0.15);
@@ -50,6 +71,7 @@
             text-align: center;
             cursor: pointer;
         }
+
         .btn-gold:hover {
             background-color: #b08d4d;
             border-color: #b08d4d;
@@ -67,55 +89,100 @@
             text-align: center;
             cursor: pointer;
         }
+
         .btn-outline-gold:hover {
             background-color: #C5A059;
             color: white;
         }
 
         /* Mobile Menu Styles */
-        .mobile-menu-btn { display: none; cursor: pointer; font-size: 24px; color: #333; }
-        .mobile-menu { 
-            display: none; 
-            position: absolute; 
-            top: 100%; 
-            left: 0; 
-            width: 100%; 
-            background: white; 
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1); 
-            padding: 20px; 
-            flex-direction: column; 
-            gap: 15px; 
+        .mobile-menu-btn {
+            display: none;
+            cursor: pointer;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .mobile-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background: white;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            flex-direction: column;
+            gap: 15px;
             z-index: 99;
         }
-        .mobile-menu.active { display: flex; }
-        
+
+        .mobile-menu.active {
+            display: flex;
+        }
+
         /* Responsive Styles */
         @media (max-width: 768px) {
-            .hidden-mobile { display: none !important; }
-            .mobile-menu-btn { display: block; }
-            
+            .hidden-mobile {
+                display: none !important;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
             /* Layout Adjustments */
-            .flex-col-mobile { flex-direction: column !important; gap: 40px !important; }
-            .w-full-mobile { width: 100% !important; }
-            .mt-mobile { margin-top: 20px !important; }
-            
+            .flex-col-mobile {
+                flex-direction: column !important;
+                gap: 40px !important;
+            }
+
+            .w-full-mobile {
+                width: 100% !important;
+            }
+
+            .mt-mobile {
+                margin-top: 20px !important;
+            }
+
             /* Typography Adjustments */
-            h1 { font-size: 42px !important; line-height: 1.2 !important; }
-            h2 { font-size: 32px !important; }
-            p { font-size: 16px !important; }
-            
+            h1 {
+                font-size: 42px !important;
+                line-height: 1.2 !important;
+            }
+
+            h2 {
+                font-size: 32px !important;
+            }
+
+            p {
+                font-size: 16px !important;
+            }
+
             /* Spacing Adjustments */
-            section { padding: 60px 0 !important; }
-            .container { padding: 0 20px; }
-            
+            section {
+                padding: 60px 0 !important;
+            }
+
+            .container {
+                padding: 0 20px;
+            }
+
             /* Button Adjustments */
-            .btn-gold, .btn-outline-gold { width: 100%; box-sizing: border-box; }
-            
+            .btn-gold,
+            .btn-outline-gold {
+                width: 100%;
+                box-sizing: border-box;
+            }
+
             /* Grid Adjustments */
-            .grid-mobile { grid-template-columns: 1fr !important; }
+            .grid-mobile {
+                grid-template-columns: 1fr !important;
+            }
         }
     </style>
-<link href="https://yehsheng.com/capabilities.html" rel="canonical"/><style id="google-translate-style">
+<link href="https://yehsheng.com/capabilities.html" rel="canonical"/>
+<style id="google-translate-style">
         /* Google Translate Customization */
         .goog-te-gadget-simple {
             background-color: transparent !important;
@@ -123,37 +190,48 @@
             padding: 0 !important;
             font-size: 13px !important;
         }
+
         .goog-te-gadget-simple .goog-te-menu-value {
-            color: #C5A059 !important; /* Match the Gold color */
+            color: #C5A059 !important;
+            /* Match the Gold color */
             font-weight: 500;
         }
+
         .goog-te-gadget-simple .goog-te-menu-value span {
             color: #C5A059 !important;
             border-left: none !important;
         }
+
         .goog-te-gadget-simple .goog-te-menu-value img {
-            display: none !important; /* Hide Google Icon */
+            display: none !important;
+            /* Hide Google Icon */
         }
+
         /* Hide the Google Top Bar */
         .goog-te-banner-frame.skiptranslate {
             display: none !important;
         }
+
         body {
             top: 0px !important;
         }
+
         /* Hide tooltips */
         .goog-tooltip {
             display: none !important;
         }
+
         .goog-tooltip:hover {
             display: none !important;
         }
+
         .goog-text-highlight {
             background-color: transparent !important;
-            border: none !important; 
+            border: none !important;
             box-shadow: none !important;
         }
-    </style><link href="../images/logo.png" rel="icon" type="image/png"/>
+    </style>
+<link href="../images/logo.png" rel="icon" type="image/png"/>
 </head>
 <body>
 <!-- Top Bar (Klein Blue) -->
@@ -161,7 +239,8 @@
 <div class="container" style="display: flex; justify-content: flex-end; gap: 25px; font-size: 13px; font-weight: 500; letter-spacing: 0.5px;">
 <a href="about.html" style="color: #ddd;">会社概要</a>
 <a href="contact.html" style="color: #ddd;">お問い合わせ</a>
-<a href="javascript:void(0)" id="reset-lang-btn" onclick="resetLanguage()" style="color: #C5A059; margin-right: 15px; font-weight: 600; cursor: pointer; text-decoration: none;">English</a><div id="google_translate_element" style="display: inline-block; vertical-align: middle;"></div>
+<a href="javascript:void(0)" id="reset-lang-btn" onclick="resetLanguage()" style="color: #C5A059; margin-right: 15px; font-weight: 600; cursor: pointer; text-decoration: none;">English</a>
+<div id="google_translate_element" style="display: inline-block; vertical-align: middle;"></div>
 </div>
 </div>
 <!-- Navigation -->
@@ -172,14 +251,16 @@
 <img alt="Logo" src="../images/logo.png" style="height: 40px;"/>
 <div style="display: flex; flex-direction: column;">
 <span style="font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; color: #111; line-height: 1.2;">Yeh Sheng Powder Parts Ind. Co. Ltd.</span>
-<span style="font-size: 10px; font-weight: 600; color: #C5A059; letter-spacing: 1px; text-transform: uppercase;">Powder Metallurgy</span>
+<span style="font-size: 10px; font-weight: 600; color: #C5A059; letter-spacing: 1px; text-transform: uppercase;">Powder
+                            Metallurgy</span>
 </div>
 </a>
 </div>
 <!-- Desktop Menu -->
 <div class="hidden-mobile" style="display: flex; gap: 35px; align-items: center;">
 <a href="products.html" style="font-size: 15px; font-weight: 500; color: #333; text-transform: uppercase; letter-spacing: 0.5px;">製品紹介</a>
-<a href="solutions.html" style="font-size: 15px; font-weight: 500; color: #333; text-transform: uppercase; letter-spacing: 0.5px;">Service Workflow</a>
+<a href="solutions.html" style="font-size: 15px; font-weight: 500; color: #333; text-transform: uppercase; letter-spacing: 0.5px;">Service
+                    Workflow</a>
 <a href="capabilities.html" style="font-size: 15px; font-weight: 500; color: #C5A059; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 700;">製造能力</a>
 <a href="applications.html" style="font-size: 15px; font-weight: 500; color: #333; text-transform: uppercase; letter-spacing: 0.5px;">産業分野</a>
 <a href="resources.html" style="font-size: 15px; font-weight: 500; color: #333; text-transform: uppercase; letter-spacing: 0.5px;">Resources</a>
@@ -192,7 +273,8 @@
 <!-- Mobile Menu Dropdown -->
 <div class="mobile-menu" id="mobileMenu">
 <a href="products.html" style="font-size: 16px; font-weight: 500; color: #333; padding: 10px 0; border-bottom: 1px solid #eee;">製品紹介</a>
-<a href="solutions.html" style="font-size: 16px; font-weight: 500; color: #333; padding: 10px 0; border-bottom: 1px solid #eee;">Service Workflow</a>
+<a href="solutions.html" style="font-size: 16px; font-weight: 500; color: #333; padding: 10px 0; border-bottom: 1px solid #eee;">Service
+                    Workflow</a>
 <a href="capabilities.html" style="font-size: 16px; font-weight: 500; color: #C5A059; padding: 10px 0; border-bottom: 1px solid #eee; font-weight: 700;">製造能力</a>
 <a href="applications.html" style="font-size: 16px; font-weight: 500; color: #333; padding: 10px 0; border-bottom: 1px solid #eee;">産業分野</a>
 <a href="resources.html" style="font-size: 16px; font-weight: 500; color: #333; padding: 10px 0; border-bottom: 1px solid #eee;">Resources</a>
@@ -206,7 +288,8 @@
 <div class="container">
 <div style="text-align: center; margin-bottom: 60px;">
 <h1 style="font-family: 'Playfair Display', serif; font-size: 42px; font-weight: 700; color: #111; margin-bottom: 20px;">製造能力</h1>
-<h2 style="font-family: 'Playfair Display', serif; font-size: 32px; font-weight: 700; color: #555; margin-bottom: 20px;">Our Production Process</h2>
+<h2 style="font-family: 'Playfair Display', serif; font-size: 32px; font-weight: 700; color: #555; margin-bottom: 20px;">
+                    Our Production Process</h2>
 <div style="width: 80px; height: 4px; background-color: #C5A059; margin: 0 auto 30px auto;"></div>
 <p style="font-size: 18px; color: #666; max-width: 800px; margin: 0 auto; line-height: 1.6;">
                     We control every step of the manufacturing process to ensure the highest quality and consistency.
@@ -224,7 +307,11 @@
                         What is the Powder Metallurgy Process?
                     </h3>
 <p style="font-size: 16px; color: #555; line-height: 1.8;">
-                        Powder Metallurgy is a manufacturing technique that transforms metal powders into solid components. Unlike traditional casting or machining, PM utilizes thermal energy and high pressure to bond particles, making it ideal for creating complex shapes with minimal material waste. As a highly efficient metal-forming technology, it has become the go-to solution for industries requiring precision, sustainability, and cost-effectiveness.
+                        Powder Metallurgy is a manufacturing technique that transforms metal powders into solid
+                        components. Unlike traditional casting or machining, PM utilizes thermal energy and high
+                        pressure to bond particles, making it ideal for creating complex shapes with minimal material
+                        waste. As a highly efficient metal-forming technology, it has become the go-to solution for
+                        industries requiring precision, sustainability, and cost-effectiveness.
                     </p>
 </div>
 <!-- 5 Steps -->
@@ -233,35 +320,48 @@
                         The 5 Key Steps of the Powder Metallurgy Manufacturing Flow
                     </h3>
 <div style="margin-bottom: 25px;">
-<h4 style="font-size: 20px; font-weight: 700; color: #333; margin-bottom: 10px;">Step 1: Metal Powder Production</h4>
+<h4 style="font-size: 20px; font-weight: 700; color: #333; margin-bottom: 10px;">Step 1: Metal
+                            Powder Production</h4>
 <p style="font-size: 16px; color: #555; line-height: 1.8;">
                             The quality of the final part begins with the raw material. Common methods include:
                         </p>
 <ul style="margin-top: 10px; padding-left: 20px; color: #555; line-height: 1.8;">
-<li><strong>Atomization:</strong> Uses gas or water to break molten metal into fine droplets.</li>
-<li><strong>Reduction:</strong> Extracts pure metal from oxides using chemical reactions.</li>
+<li><strong>Atomization:</strong> Uses gas or water to break molten metal into fine
+                                droplets.</li>
+<li><strong>Reduction:</strong> Extracts pure metal from oxides using chemical reactions.
+                            </li>
 </ul>
 </div>
 <div style="margin-bottom: 25px;">
-<h4 style="font-size: 20px; font-weight: 700; color: #333; margin-bottom: 10px;">Step 2: Mixing and Blending</h4>
+<h4 style="font-size: 20px; font-weight: 700; color: #333; margin-bottom: 10px;">Step 2: Mixing
+                            and Blending</h4>
 <p style="font-size: 16px; color: #555; line-height: 1.8;">
-                            Pure metal powders are mixed with alloying elements (like copper or graphite) and lubricants. This ensures uniformity in chemical composition and reduces friction during the pressing stage.
+                            Pure metal powders are mixed with alloying elements (like copper or graphite) and
+                            lubricants. This ensures uniformity in chemical composition and reduces friction during the
+                            pressing stage.
                         </p>
 </div>
 <div style="margin-bottom: 25px;">
-<h4 style="font-size: 20px; font-weight: 700; color: #333; margin-bottom: 10px;">Step 3: Compacting (Pressing)</h4>
+<h4 style="font-size: 20px; font-weight: 700; color: #333; margin-bottom: 10px;">Step 3:
+                            Compacting (Pressing)</h4>
 <p style="font-size: 16px; color: #555; line-height: 1.8;">
-                            The mixture is fed into a precision die and compressed under massive pressure. This creates a "Green Compact"—a part that has the final shape but is still held together only by mechanical interlocking.
+                            The mixture is fed into a precision die and compressed under massive pressure. This creates
+                            a "Green Compact"—a part that has the final shape but is still held together only by
+                            mechanical interlocking.
                         </p>
 </div>
 <div style="margin-bottom: 25px;">
-<h4 style="font-size: 20px; font-weight: 700; color: #333; margin-bottom: 10px;">Step 4: Sintering (The Critical Phase)</h4>
+<h4 style="font-size: 20px; font-weight: 700; color: #333; margin-bottom: 10px;">Step 4:
+                            Sintering (The Critical Phase)</h4>
 <p style="font-size: 16px; color: #555; line-height: 1.8;">
-                            The green parts are heated in a controlled-atmosphere furnace to a temperature just below the melting point. This causes atomic diffusion, fusing the particles together to achieve structural integrity.
+                            The green parts are heated in a controlled-atmosphere furnace to a temperature just below
+                            the melting point. This causes atomic diffusion, fusing the particles together to achieve
+                            structural integrity.
                         </p>
 </div>
 <div style="margin-bottom: 25px;">
-<h4 style="font-size: 20px; font-weight: 700; color: #333; margin-bottom: 10px;">Step 5: Secondary Operations &amp; Finishing</h4>
+<h4 style="font-size: 20px; font-weight: 700; color: #333; margin-bottom: 10px;">Step 5:
+                            Secondary Operations &amp; Finishing</h4>
 <p style="font-size: 16px; color: #555; line-height: 1.8;">
                             To meet specific engineering requirements, parts may undergo:
                         </p>
@@ -283,7 +383,8 @@
 <tr style="background-color: #002FA7; color: white;">
 <th style="padding: 15px; text-align: left; border-radius: 8px 0 0 0;">Feature</th>
 <th style="padding: 15px; text-align: left;">Conventional PM</th>
-<th style="padding: 15px; text-align: left; border-radius: 0 8px 0 0;">Metal Injection Molding (MIM)</th>
+<th style="padding: 15px; text-align: left; border-radius: 0 8px 0 0;">Metal
+                                        Injection Molding (MIM)</th>
 </tr>
 </thead>
 <tbody>
@@ -295,7 +396,8 @@
 <tr style="border-bottom: 1px solid #eee; background-color: #f9f9f9;">
 <td style="padding: 15px; font-weight: 600; color: #333;">Complexity</td>
 <td style="padding: 15px;">Moderate (Best for 2D or simple 3D)</td>
-<td style="padding: 15px;">Extreme (Complex 3D geometries like plastic injection)</td>
+<td style="padding: 15px;">Extreme (Complex 3D geometries like plastic injection)
+                                    </td>
 </tr>
 <tr style="border-bottom: 1px solid #eee;">
 <td style="padding: 15px; font-weight: 600; color: #333;">Part Weight</td>
@@ -325,10 +427,14 @@
                         Why choose PM over CNC machining or casting? Here are the primary benefits:
                     </p>
 <ul style="padding-left: 20px; color: #555; line-height: 1.8;">
-<li style="margin-bottom: 10px;"><strong>Near-Net Shape Production:</strong> Most parts require zero secondary machining.</li>
-<li style="margin-bottom: 10px;"><strong>High Material Utilization:</strong> Reduces scrap metal waste by over 95%.</li>
-<li style="margin-bottom: 10px;"><strong>Unique Material Blends:</strong> Allows for the creation of alloys that are impossible to melt together.</li>
-<li style="margin-bottom: 10px;"><strong>Cost-Efficiency:</strong> Best suited for high-volume production (Automotive, Aerospace, Medical).</li>
+<li style="margin-bottom: 10px;"><strong>Near-Net Shape Production:</strong> Most parts require
+                            zero secondary machining.</li>
+<li style="margin-bottom: 10px;"><strong>High Material Utilization:</strong> Reduces scrap metal
+                            waste by over 95%.</li>
+<li style="margin-bottom: 10px;"><strong>Unique Material Blends:</strong> Allows for the
+                            creation of alloys that are impossible to melt together.</li>
+<li style="margin-bottom: 10px;"><strong>Cost-Efficiency:</strong> Best suited for high-volume
+                            production (Automotive, Aerospace, Medical).</li>
 </ul>
 </div>
 <!-- Material Recommendations -->
@@ -337,49 +443,61 @@
                         Material Recommendations by Industry
                     </h3>
 <p style="font-size: 16px; color: #555; line-height: 1.8; margin-bottom: 25px;">
-                        When consulting with clients, recommending the right material can demonstrate your expertise. Here are the common choices:
+                        When consulting with clients, recommending the right material can demonstrate your expertise.
+                        Here are the common choices:
                     </p>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px;">
 <!-- Card 1 -->
 <div style="background: #f8f9fa; padding: 25px; border-radius: 8px; border-left: 4px solid #002FA7;">
-<h4 style="font-size: 18px; font-weight: 700; color: #333; margin-bottom: 10px;">Automotive &amp; Mechanical</h4>
+<h4 style="font-size: 18px; font-weight: 700; color: #333; margin-bottom: 10px;">Automotive
+                                &amp; Mechanical</h4>
 <p style="font-size: 15px; color: #555; line-height: 1.6;">
-<strong>Iron-Copper &amp; Steel Alloys:</strong> Used for high-strength gears and structural parts where load-bearing capacity is key.
+<strong>Iron-Copper &amp; Steel Alloys:</strong> Used for high-strength gears and
+                                structural parts where load-bearing capacity is key.
                             </p>
 </div>
 <!-- Card 2 -->
 <div style="background: #f8f9fa; padding: 25px; border-radius: 8px; border-left: 4px solid #002FA7;">
-<h4 style="font-size: 18px; font-weight: 700; color: #333; margin-bottom: 10px;">Power Tools</h4>
+<h4 style="font-size: 18px; font-weight: 700; color: #333; margin-bottom: 10px;">Power Tools
+                            </h4>
 <p style="font-size: 15px; color: #555; line-height: 1.6;">
-<strong>Nickel Steel (Fe-Ni):</strong> Offers excellent toughness and impact resistance to handle high-torque stress.
+<strong>Nickel Steel (Fe-Ni):</strong> Offers excellent toughness and impact resistance
+                                to handle high-torque stress.
                             </p>
 </div>
 <!-- Card 3 -->
 <div style="background: #f8f9fa; padding: 25px; border-radius: 8px; border-left: 4px solid #002FA7;">
-<h4 style="font-size: 18px; font-weight: 700; color: #333; margin-bottom: 10px;">Electronics &amp; Drones</h4>
+<h4 style="font-size: 18px; font-weight: 700; color: #333; margin-bottom: 10px;">Electronics
+                                &amp; Drones</h4>
 <p style="font-size: 15px; color: #555; line-height: 1.6;">
-<strong>Stainless Steel (316L, 17-4PH):</strong> Provides superior corrosion resistance and a high-quality aesthetic finish.
+<strong>Stainless Steel (316L, 17-4PH):</strong> Provides superior corrosion resistance
+                                and a high-quality aesthetic finish.
                             </p>
 </div>
 <!-- Card 4 -->
 <div style="background: #f8f9fa; padding: 25px; border-radius: 8px; border-left: 4px solid #002FA7;">
 <h4 style="font-size: 18px; font-weight: 700; color: #333; margin-bottom: 10px;">ロボット工学・自動化</h4>
 <p style="font-size: 15px; color: #555; line-height: 1.6;">
-<strong>Diffusion Alloyed Steel:</strong> Provides exceptional fatigue strength and impact toughness, ideal for high-load robotic transmission gears.
+<strong>Diffusion Alloyed Steel:</strong> Provides exceptional fatigue strength and
+                                impact toughness, ideal for high-load robotic transmission gears.
                             </p>
 </div>
 <!-- Card 5 -->
 <div style="background: #f8f9fa; padding: 25px; border-radius: 8px; border-left: 4px solid #002FA7;">
-<h4 style="font-size: 18px; font-weight: 700; color: #333; margin-bottom: 10px;">Hardware &amp; Locks</h4>
+<h4 style="font-size: 18px; font-weight: 700; color: #333; margin-bottom: 10px;">Hardware
+                                &amp; Locks</h4>
 <p style="font-size: 15px; color: #555; line-height: 1.6;">
-<strong>Brass &amp; Bronze Alloys:</strong> Selected for their natural self-lubricating properties and corrosion resistance, perfect for lock cylinders and cams.
+<strong>Brass &amp; Bronze Alloys:</strong> Selected for their natural self-lubricating
+                                properties and corrosion resistance, perfect for lock cylinders and cams.
                             </p>
 </div>
 <!-- Card 6 -->
 <div style="background: #f8f9fa; padding: 25px; border-radius: 8px; border-left: 4px solid #002FA7;">
-<h4 style="font-size: 18px; font-weight: 700; color: #333; margin-bottom: 10px;">Shock Absorber &amp; Hydraulics</h4>
+<h4 style="font-size: 18px; font-weight: 700; color: #333; margin-bottom: 10px;">Shock
+                                Absorber &amp; Hydraulics</h4>
 <p style="font-size: 15px; color: #555; line-height: 1.6;">
-<strong>Steam Treated Iron:</strong> The steam treatment process seals surface porosity, creating gas-tight components with enhanced surface hardness.
+<strong>Steam Treated Iron:</strong> The steam treatment process seals surface porosity,
+                                creating gas-tight components with enhanced surface hardness.
                             </p>
 </div>
 </div>
@@ -390,7 +508,9 @@
                         Is Powder Metallurgy Right for Your Project?
                     </h3>
 <p style="font-size: 16px; color: #555; line-height: 1.8;">
-                        Powder Metallurgy offers a perfect balance between complexity and cost. If you are looking to mass-produce small, intricate metal parts with high precision and low waste, the PM process is an excellent choice.
+                        Powder Metallurgy offers a perfect balance between complexity and cost. If you are looking to
+                        mass-produce small, intricate metal parts with high precision and low waste, the PM process is
+                        an excellent choice.
                     </p>
 </div>
 </div>
@@ -406,16 +526,20 @@
                         Rigorous Quality Control
                     </h2>
 <p style="font-size: 16px; color: #555; line-height: 1.8; margin-bottom: 20px;">
-                        Quality is the cornerstone of our manufacturing. We employ advanced inspection equipment including CMM (Coordinate Measuring Machines), density testers, and hardness testers to ensure every part meets strict specifications.
+                        Quality is the cornerstone of our manufacturing. We employ advanced inspection equipment
+                        including CMM (Coordinate Measuring Machines), density testers, and hardness testers to ensure
+                        every part meets strict specifications.
                     </p>
 <ul style="list-style: none; padding: 0; margin: 0;">
 <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">
 <span style="color: #C5A059; position: absolute; left: 0;">✓</span>ISO 9001:2015 認証</li>
 <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">
-<span style="color: #C5A059; position: absolute; left: 0;">✓</span> 100% Dimensional Inspection
+<span style="color: #C5A059; position: absolute; left: 0;">✓</span> 100% Dimensional
+                            Inspection
                         </li>
 <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">
-<span style="color: #C5A059; position: absolute; left: 0;">✓</span> Material Composition Analysis
+<span style="color: #C5A059; position: absolute; left: 0;">✓</span> Material Composition
+                            Analysis
                         </li>
 </ul>
 </div>
@@ -425,7 +549,9 @@
                         Engineering &amp; R&amp;D
                     </h2>
 <p style="font-size: 16px; color: #555; line-height: 1.8; margin-bottom: 20px;">
-                        Our engineering team works closely with clients from the initial design phase. We provide DFM (Design for Manufacturability) feedback to optimize part geometry for the PM process, reducing costs and improving performance.
+                        Our engineering team works closely with clients from the initial design phase. We provide DFM
+                        (Design for Manufacturability) feedback to optimize part geometry for the PM process, reducing
+                        costs and improving performance.
                     </p>
 <ul style="list-style: none; padding: 0; margin: 0;">
 <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">
@@ -445,7 +571,8 @@
 <!-- CTA Section -->
 <section style="padding: 80px 0; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../images/hero-bg-v2.jpg') center/cover fixed; text-align: center; color: white;">
 <div class="container">
-<h2 style="font-family: 'Playfair Display', serif; font-size: 36px; font-weight: 700; margin-bottom: 20px;">Ready to Start Your Project?</h2>
+<h2 style="font-family: 'Playfair Display', serif; font-size: 36px; font-weight: 700; margin-bottom: 20px;">
+                Ready to Start Your Project?</h2>
 <p style="font-size: 18px; margin-bottom: 40px; max-width: 600px; margin-left: auto; margin-right: auto; opacity: 0.9;">
                 Contact our engineering team today for a consultation or quotation.
             </p>
@@ -470,7 +597,8 @@
 </div>
 <!-- Links -->
 <div>
-<h4 style="font-family: 'Playfair Display', serif; color: #C5A059; font-size: 18px; font-weight: 700; margin-bottom: 25px; letter-spacing: 1px;">COMPANY</h4>
+<h4 style="font-family: 'Playfair Display', serif; color: #C5A059; font-size: 18px; font-weight: 700; margin-bottom: 25px; letter-spacing: 1px;">
+                        COMPANY</h4>
 <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 15px;">
 <li><a href="about.html" style="color: #a0b0d0; font-size: 15px;">会社概要</a></li>
 <li><a href="products.html" style="color: #a0b0d0; font-size: 15px;">すべての製品</a></li>
@@ -481,7 +609,8 @@
 </div>
 お問い合わせ
 <div>
-<h4 style="font-family: 'Playfair Display', serif; color: #C5A059; font-size: 18px; font-weight: 700; margin-bottom: 25px; letter-spacing: 1px;">CONTACT US</h4>
+<h4 style="font-family: 'Playfair Display', serif; color: #C5A059; font-size: 18px; font-weight: 700; margin-bottom: 25px; letter-spacing: 1px;">
+                        CONTACT US</h4>
 <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 15px;">
 <li style="color: #a0b0d0; font-size: 15px;">新北市新荘区中正路721巷11号</li>
 <li style="color: #a0b0d0; font-size: 15px;"></li>
@@ -491,7 +620,8 @@
 </div>
 </div>
 <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 30px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
-<p style="color: #667; font-size: 13px; margin: 0;">© 2024 Yeh Sheng Powder Parts Ind. Co. Ltd. All Rights Reserved.</p>
+<p style="color: #667; font-size: 13px; margin: 0;">© 2024 Yeh Sheng Powder Parts Ind. Co. Ltd. All
+                    Rights Reserved.</p>
 <div style="display: flex; gap: 20px;">
 <a href="#" style="color: #667; font-size: 13px;">Privacy Policy</a>
 <a href="#" style="color: #667; font-size: 13px;">Terms of Service</a>
@@ -507,36 +637,41 @@
     </script>
 <script>
         function googleTranslateElementInit() {
-          new google.translate.TranslateElement({
-            pageLanguage: 'en', 
-            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-            autoDisplay: false
-          }, 'google_translate_element');
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+                autoDisplay: false
+            }, 'google_translate_element');
         }
-        </script><script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" type="text/javascript"></script><script>
+    </script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" type="text/javascript"></script>
+<script>
         function resetLanguage() {
             // Clear Google Translate cookies
             document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
             document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=." + document.domain;
-            
+
             // Reload the page
             window.location.reload();
         }
-        </script></body>
+    </script>
+</body>
 </html>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Service",
-  "name": "Precision Powder Metallurgy Manufacturing",
-  "provider": {
-    "@type": "Organization",
+  "@type": "WebPage",
+  "name": "Manufacturing Capabilities - Powder Metallurgy Process",
+  "description": "Explore Yeh Sheng's advanced Powder Metallurgy manufacturing process including metal powder production, compacting, sintering, and secondary operations.",
+  "url": "https://yehsheng.com/capabilities.html",
+  "isPartOf": {
+    "@type": "WebSite",
     "name": "Yeh Sheng Powder Parts Ind. Co. Ltd.",
-    "url": "https://yehsheng.com",
-    "logo": "https://yehsheng.com/images/logo.png"
+    "url": "https://yehsheng.com"
   },
-  "description": "Custom powder metallurgy manufacturing services including mixing, compacting, sintering, and secondary operations for automotive, medical, and industrial parts.",
-  "areaServed": "Worldwide",
-  "serviceType": "Custom Manufacturing"
+  "about": {
+    "@type": "Thing",
+    "name": "Powder Metallurgy Manufacturing Process"
+  }
 }
 </script>
