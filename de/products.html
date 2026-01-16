@@ -2,6 +2,14 @@
 
 <html lang="de">
 <head>
+<!-- Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-XS5ZTZGF2Y"></script>
+<script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-XS5ZTZGF2Y');
+    </script>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <meta content="Browse Yeh Sheng's extensive range of powder metallurgy products, including transmission gears, stainless steel parts, and shock absorber components." name="description"/>
@@ -18,8 +26,15 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
 <style>
         /* Global Reset */
-        body { margin: 0; padding: 0; font-family: 'Inter', sans-serif; color: #333; background-color: #fcfcfc; overflow-x: hidden; }
-        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+            color: #333;
+            background-color: #fcfcfc;
+            overflow-x: hidden;
+        }
+
         /* Modal Styles */
         .modal-overlay {
             display: none;
@@ -34,6 +49,7 @@
             align-items: center;
             padding: 20px;
         }
+
         .modal-content {
             background: white;
             border-radius: 12px;
@@ -42,13 +58,22 @@
             max-height: 90vh;
             overflow-y: auto;
             position: relative;
-            box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
             animation: modalFadeIn 0.3s ease;
         }
+
         @keyframes modalFadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
+
         .modal-close {
             position: absolute;
             top: 20px;
@@ -59,47 +84,85 @@
             z-index: 10;
             line-height: 1;
         }
-        .modal-close:hover { color: #000; }
-        .modal-body { padding: 40px; }
+
+        .modal-close:hover {
+            color: #000;
+        }
+
+        .modal-body {
+            padding: 40px;
+        }
+
         .modal-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 40px;
         }
+
         @media (max-width: 768px) {
-            .modal-grid { grid-template-columns: 1fr; }
-            .modal-body { padding: 25px; }
+            .modal-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .modal-body {
+                padding: 25px;
+            }
         }
+
         .spec-table {
             width: 100%;
             border-collapse: collapse;
             margin-top: 20px;
         }
-        .spec-table th, .spec-table td {
+
+        .spec-table th,
+        .spec-table td {
             padding: 12px;
             border-bottom: 1px solid #eee;
             text-align: left;
             font-size: 14px;
         }
-        .spec-table th { color: #002FA7; font-weight: 600; width: 40%; }
-        .spec-table td { color: #555; }
-        a { text-decoration: none; color: inherit; transition: all 0.3s ease; }
-        * { box-sizing: border-box; }
-        
+
+        .spec-table th {
+            color: #002FA7;
+            font-weight: 600;
+            width: 40%;
+        }
+
+        .spec-table td {
+            color: #555;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
         /* Utility Classes */
-        .container { max-width: 1400px; margin: 0 auto; padding: 0 20px; }
-        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
         /* Premium Card Style */
         .premium-card {
             background: white;
             border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
             padding: 40px 30px;
             text-align: center;
-            border-bottom: 4px solid #C5A059; /* Gold Accent */
+            border-bottom: 4px solid #C5A059;
+            /* Gold Accent */
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             height: 100%;
         }
+
         .premium-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 15px 40px rgba(197, 160, 89, 0.15);
@@ -118,6 +181,7 @@
             text-align: center;
             cursor: pointer;
         }
+
         .btn-gold:hover {
             background-color: #b08d4d;
             border-color: #b08d4d;
@@ -135,55 +199,100 @@
             text-align: center;
             cursor: pointer;
         }
+
         .btn-outline-gold:hover {
             background-color: #C5A059;
             color: white;
         }
 
         /* Mobile Menu Styles */
-        .mobile-menu-btn { display: none; cursor: pointer; font-size: 24px; color: #333; }
-        .mobile-menu { 
-            display: none; 
-            position: absolute; 
-            top: 100%; 
-            left: 0; 
-            width: 100%; 
-            background: white; 
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1); 
-            padding: 20px; 
-            flex-direction: column; 
-            gap: 15px; 
+        .mobile-menu-btn {
+            display: none;
+            cursor: pointer;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .mobile-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background: white;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            flex-direction: column;
+            gap: 15px;
             z-index: 99;
         }
-        .mobile-menu.active { display: flex; }
-        
+
+        .mobile-menu.active {
+            display: flex;
+        }
+
         /* Responsive Styles */
         @media (max-width: 768px) {
-            .hidden-mobile { display: none !important; }
-            .mobile-menu-btn { display: block; }
-            
+            .hidden-mobile {
+                display: none !important;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
             /* Layout Adjustments */
-            .flex-col-mobile { flex-direction: column !important; gap: 40px !important; }
-            .w-full-mobile { width: 100% !important; }
-            .mt-mobile { margin-top: 20px !important; }
-            
+            .flex-col-mobile {
+                flex-direction: column !important;
+                gap: 40px !important;
+            }
+
+            .w-full-mobile {
+                width: 100% !important;
+            }
+
+            .mt-mobile {
+                margin-top: 20px !important;
+            }
+
             /* Typography Adjustments */
-            h1 { font-size: 42px !important; line-height: 1.2 !important; }
-            h2 { font-size: 32px !important; }
-            p { font-size: 16px !important; }
-            
+            h1 {
+                font-size: 42px !important;
+                line-height: 1.2 !important;
+            }
+
+            h2 {
+                font-size: 32px !important;
+            }
+
+            p {
+                font-size: 16px !important;
+            }
+
             /* Spacing Adjustments */
-            section { padding: 60px 0 !important; }
-            .container { padding: 0 20px; }
-            
+            section {
+                padding: 60px 0 !important;
+            }
+
+            .container {
+                padding: 0 20px;
+            }
+
             /* Button Adjustments */
-            .btn-gold, .btn-outline-gold { width: 100%; box-sizing: border-box; }
-            
+            .btn-gold,
+            .btn-outline-gold {
+                width: 100%;
+                box-sizing: border-box;
+            }
+
             /* Grid Adjustments */
-            .grid-mobile { grid-template-columns: 1fr !important; }
+            .grid-mobile {
+                grid-template-columns: 1fr !important;
+            }
         }
     </style>
-<link href="https://yehsheng.com/products.html" rel="canonical"/><style id="google-translate-style">
+<link href="https://yehsheng.com/products.html" rel="canonical"/>
+<style id="google-translate-style">
         /* Google Translate Customization */
         .goog-te-gadget-simple {
             background-color: transparent !important;
@@ -191,37 +300,48 @@
             padding: 0 !important;
             font-size: 13px !important;
         }
+
         .goog-te-gadget-simple .goog-te-menu-value {
-            color: #C5A059 !important; /* Match the Gold color */
+            color: #C5A059 !important;
+            /* Match the Gold color */
             font-weight: 500;
         }
+
         .goog-te-gadget-simple .goog-te-menu-value span {
             color: #C5A059 !important;
             border-left: none !important;
         }
+
         .goog-te-gadget-simple .goog-te-menu-value img {
-            display: none !important; /* Hide Google Icon */
+            display: none !important;
+            /* Hide Google Icon */
         }
+
         /* Hide the Google Top Bar */
         .goog-te-banner-frame.skiptranslate {
             display: none !important;
         }
+
         body {
             top: 0px !important;
         }
+
         /* Hide tooltips */
         .goog-tooltip {
             display: none !important;
         }
+
         .goog-tooltip:hover {
             display: none !important;
         }
+
         .goog-text-highlight {
             background-color: transparent !important;
-            border: none !important; 
+            border: none !important;
             box-shadow: none !important;
         }
-    </style><link href="../images/logo.png" rel="icon" type="image/png"/>
+    </style>
+<link href="../images/logo.png" rel="icon" type="image/png"/>
 </head>
 <body>
 <!-- Top Bar (Klein Blue) -->
@@ -229,7 +349,8 @@
 <div class="container" style="display: flex; justify-content: flex-end; gap: 25px; font-size: 13px; font-weight: 500; letter-spacing: 0.5px;">
 <a href="about.html" style="color: #ddd;">Über uns</a>
 <a href="contact.html" style="color: #ddd;">Kontakt</a>
-<a href="javascript:void(0)" id="reset-lang-btn" onclick="resetLanguage()" style="color: #C5A059; margin-right: 15px; font-weight: 600; cursor: pointer; text-decoration: none;">English</a><div id="google_translate_element" style="display: inline-block; vertical-align: middle;"></div>
+<a href="javascript:void(0)" id="reset-lang-btn" onclick="resetLanguage()" style="color: #C5A059; margin-right: 15px; font-weight: 600; cursor: pointer; text-decoration: none;">English</a>
+<div id="google_translate_element" style="display: inline-block; vertical-align: middle;"></div>
 </div>
 </div>
 <!-- Navigation -->
@@ -240,14 +361,16 @@
 <img alt="Logo" src="../images/logo.png" style="height: 40px;"/>
 <div style="display: flex; flex-direction: column;">
 <span style="font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; color: #111; line-height: 1.2;">Yeh Sheng Powder Parts Ind. Co. Ltd.</span>
-<span style="font-size: 10px; font-weight: 600; color: #C5A059; letter-spacing: 1px; text-transform: uppercase;">Powder Metallurgy</span>
+<span style="font-size: 10px; font-weight: 600; color: #C5A059; letter-spacing: 1px; text-transform: uppercase;">Powder
+                            Metallurgy</span>
 </div>
 </a>
 </div>
 <!-- Desktop Menu -->
 <div class="hidden-mobile" style="display: flex; gap: 35px; align-items: center;">
 <a href="products.html" style="font-size: 15px; font-weight: 500; color: #C5A059; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 700;">Produkte</a>
-<a href="solutions.html" style="font-size: 15px; font-weight: 500; color: #333; text-transform: uppercase; letter-spacing: 0.5px;">Service Workflow</a>
+<a href="solutions.html" style="font-size: 15px; font-weight: 500; color: #333; text-transform: uppercase; letter-spacing: 0.5px;">Service
+                    Workflow</a>
 <a href="capabilities.html" style="font-size: 15px; font-weight: 500; color: #333; text-transform: uppercase; letter-spacing: 0.5px;">Fertigung</a>
 <a href="applications.html" style="font-size: 15px; font-weight: 500; color: #333; text-transform: uppercase; letter-spacing: 0.5px;">Branchen</a>
 <a href="resources.html" style="font-size: 15px; font-weight: 500; color: #333; text-transform: uppercase; letter-spacing: 0.5px;">Resources</a>
@@ -260,7 +383,8 @@
 <!-- Mobile Menu Dropdown -->
 <div class="mobile-menu" id="mobileMenu">
 <a href="products.html" style="font-size: 16px; font-weight: 500; color: #C5A059; padding: 10px 0; border-bottom: 1px solid #eee; font-weight: 700;">Produkte</a>
-<a href="solutions.html" style="font-size: 16px; font-weight: 500; color: #333; padding: 10px 0; border-bottom: 1px solid #eee;">Service Workflow</a>
+<a href="solutions.html" style="font-size: 16px; font-weight: 500; color: #333; padding: 10px 0; border-bottom: 1px solid #eee;">Service
+                    Workflow</a>
 <a href="capabilities.html" style="font-size: 16px; font-weight: 500; color: #333; padding: 10px 0; border-bottom: 1px solid #eee;">Fertigung</a>
 <a href="applications.html" style="font-size: 16px; font-weight: 500; color: #333; padding: 10px 0; border-bottom: 1px solid #eee;">Branchen</a>
 <a href="resources.html" style="font-size: 16px; font-weight: 500; color: #333; padding: 10px 0; border-bottom: 1px solid #eee;">Resources</a>
@@ -271,14 +395,16 @@
 </nav>
 <section style="padding: 80px 0;">
 <div class="container">
-<h1 style="font-family: 'Playfair Display', serif; font-size: 42px; font-weight: 700; color: #111; margin-bottom: 40px; text-align: center;">Our Products</h1>
+<h1 style="font-family: 'Playfair Display', serif; font-size: 42px; font-weight: 700; color: #111; margin-bottom: 40px; text-align: center;">
+                Our Products</h1>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px;">
 <!-- Category 1: Precision Gears -->
 <div class="premium-card" style="text-align: left; padding: 0; overflow: hidden;">
 <img alt="Präzisionszahnräder" src="../images/Gears_refined.png" style="width: 100%; height: 250px; object-fit: contain; padding: 20px; background-color: #f8f9fa; max-width: 100%;"/>
 <div style="padding: 30px;">
 <h3 style="font-family: 'Playfair Display', serif; font-size: 24px; margin-bottom: 15px;">Präzisionszahnräder</h3>
-<p style="color: #666; line-height: 1.6; margin-bottom: 20px;">High-strength sintered gears with complex geometries. AGMA class 8-9 precision achievable without secondary machining.</p>
+<p style="color: #666; line-height: 1.6; margin-bottom: 20px;">High-strength sintered gears with
+                            complex geometries. AGMA class 8-9 precision achievable without secondary machining.</p>
 <a href="javascript:void(0)" onclick="openModal('gears')" style="color: #C5A059; font-weight: 600; font-size: 14px;">View Specifications →</a>
 </div>
 </div>
@@ -287,7 +413,9 @@
 <img alt="Ölpumpenrotoren" src="../images/InnerandOuterRotor_optimized.png" style="width: 100%; height: 250px; object-fit: contain; padding: 20px; background-color: #f8f9fa; max-width: 100%;"/>
 <div style="padding: 30px;">
 <h3 style="font-family: 'Playfair Display', serif; font-size: 24px; margin-bottom: 15px;">Ölpumpenrotoren</h3>
-<p style="color: #666; line-height: 1.6; margin-bottom: 20px;">High-precision Gerotor sets (Inner &amp; Outer Rotors) for automotive oil pumps. Engineered for optimal volumetric efficiency.</p>
+<p style="color: #666; line-height: 1.6; margin-bottom: 20px;">High-precision Gerotor sets
+                            (Inner &amp; Outer Rotors) for automotive oil pumps. Engineered for optimal volumetric
+                            efficiency.</p>
 <a href="javascript:void(0)" onclick="openModal('rotors')" style="color: #C5A059; font-weight: 600; font-size: 14px;">View Specifications →</a>
 </div>
 </div>
@@ -295,8 +423,10 @@
 <div class="premium-card" style="text-align: left; padding: 0; overflow: hidden;">
 <img alt="Structural Parts" src="../images/ComputerandOtherParts_refined.png" style="width: 100%; height: 250px; object-fit: contain; padding: 20px; background-color: #f8f9fa; max-width: 100%;"/>
 <div style="padding: 30px;">
-<h3 style="font-family: 'Playfair Display', serif; font-size: 24px; margin-bottom: 15px;">Structural Parts</h3>
-<p style="color: #666; line-height: 1.6; margin-bottom: 20px;">Complex structural components for machinery, locks, and electronics. Net-shape manufacturing reduces waste.</p>
+<h3 style="font-family: 'Playfair Display', serif; font-size: 24px; margin-bottom: 15px;">
+                            Structural Parts</h3>
+<p style="color: #666; line-height: 1.6; margin-bottom: 20px;">Complex structural components for
+                            machinery, locks, and electronics. Net-shape manufacturing reduces waste.</p>
 <a href="javascript:void(0)" onclick="openModal('structural')" style="color: #C5A059; font-weight: 600; font-size: 14px;">View Specifications →</a>
 </div>
 </div>
@@ -304,8 +434,10 @@
 <div class="premium-card" style="text-align: left; padding: 0; overflow: hidden;">
 <img alt="Stainless Steel Parts" src="../images/stainless_parts_v3.png" style="width: 100%; height: 250px; object-fit: contain; padding: 20px; background-color: #f8f9fa; max-width: 100%;"/>
 <div style="padding: 30px;">
-<h3 style="font-family: 'Playfair Display', serif; font-size: 24px; margin-bottom: 15px;">Stainless Steel Parts</h3>
-<p style="color: #666; line-height: 1.6; margin-bottom: 20px;">Corrosion-resistant components for medical devices and food processing equipment.</p>
+<h3 style="font-family: 'Playfair Display', serif; font-size: 24px; margin-bottom: 15px;">
+                            Stainless Steel Parts</h3>
+<p style="color: #666; line-height: 1.6; margin-bottom: 20px;">Corrosion-resistant components
+                            for medical devices and food processing equipment.</p>
 <a href="javascript:void(0)" onclick="openModal('stainless')" style="color: #C5A059; font-weight: 600; font-size: 14px;">View Specifications →</a>
 </div>
 </div>
@@ -314,15 +446,19 @@
 <img alt="Robotics Parts" src="../images/1002680619b_refined.png" style="width: 100%; height: 250px; object-fit: contain; padding: 20px; background-color: #f8f9fa; max-width: 100%;"/>
 <div style="padding: 30px;">
 <h3 style="font-family: 'Playfair Display', serif; font-size: 24px; margin-bottom: 15px;">Robotik &amp; Automatisierung</h3>
-<p style="color: #666; line-height: 1.6; margin-bottom: 20px;">High-precision planetary gear sets and self-lubricating bushings for robotic arms and servo motors.</p>
+<p style="color: #666; line-height: 1.6; margin-bottom: 20px;">High-precision planetary gear
+                            sets and self-lubricating bushings for robotic arms and servo motors.</p>
 <a href="javascript:void(0)" onclick="openModal('robotics')" style="color: #C5A059; font-weight: 600; font-size: 14px;">View Specifications →</a>
 </div>
 </div>
 <!-- Category 6: Drone & UAV Components -->
 <div class="premium-card" style="text-align: left; padding: 0; overflow: hidden;">
-<img alt="Drone Components" src="../images/1002680622b_refined.png" style="width: 100%; height: 250px; object-fit: contain; padding: 20px; background-color: #f8f9fa; max-width: 100%;"/> <div style="padding: 30px;">
-<h3 style="font-family: 'Playfair Display', serif; font-size: 24px; margin-bottom: 15px;">Drone &amp; UAV Components</h3>
-<p style="color: #666; line-height: 1.6; margin-bottom: 20px;">Lightweight motor housings and propeller adapters. High strength-to-weight ratio for aerial efficiency.</p>
+<img alt="Drone Components" src="../images/1002680622b_refined.png" style="width: 100%; height: 250px; object-fit: contain; padding: 20px; background-color: #f8f9fa; max-width: 100%;"/>
+<div style="padding: 30px;">
+<h3 style="font-family: 'Playfair Display', serif; font-size: 24px; margin-bottom: 15px;">Drone
+                            &amp; UAV Components</h3>
+<p style="color: #666; line-height: 1.6; margin-bottom: 20px;">Lightweight motor housings and
+                            propeller adapters. High strength-to-weight ratio for aerial efficiency.</p>
 <a href="javascript:void(0)" onclick="openModal('drone')" style="color: #C5A059; font-weight: 600; font-size: 14px;">View Specifications →</a>
 </div>
 </div>
@@ -330,8 +466,10 @@
 <div class="premium-card" style="text-align: left; padding: 0; overflow: hidden;">
 <img alt="Shock Absorber Parts" src="../images/shock_absorber_optimized.png" style="width: 100%; height: 250px; object-fit: contain; padding: 20px; background-color: #f8f9fa; max-width: 100%;"/>
 <div style="padding: 30px;">
-<h3 style="font-family: 'Playfair Display', serif; font-size: 24px; margin-bottom: 15px;">Shock Absorber Parts</h3>
-<p style="color: #666; line-height: 1.6; margin-bottom: 20px;">High-wear-resistance pistons and rod guides for automotive suspension systems. Steam treated for surface hardness.</p>
+<h3 style="font-family: 'Playfair Display', serif; font-size: 24px; margin-bottom: 15px;">Shock
+                            Absorber Parts</h3>
+<p style="color: #666; line-height: 1.6; margin-bottom: 20px;">High-wear-resistance pistons and
+                            rod guides for automotive suspension systems. Steam treated for surface hardness.</p>
 <a href="javascript:void(0)" onclick="openModal('shock')" style="color: #C5A059; font-weight: 600; font-size: 14px;">View Specifications →</a>
 </div>
 </div>
@@ -339,8 +477,10 @@
 <div class="premium-card" style="text-align: left; padding: 0; overflow: hidden;">
 <img alt="Industrial &amp; Sewing Parts" src="../images/industrial_sewing_final.png" style="width: 100%; height: 250px; object-fit: contain; padding: 20px; background-color: #f8f9fa; max-width: 100%;"/>
 <div style="padding: 30px;">
-<h3 style="font-family: 'Playfair Display', serif; font-size: 24px; margin-bottom: 15px;">Industrial &amp; Sewing Parts</h3>
-<p style="color: #666; line-height: 1.6; margin-bottom: 20px;">Complex net-shape components for sewing machines and industrial equipment. High precision without secondary machining.</p>
+<h3 style="font-family: 'Playfair Display', serif; font-size: 24px; margin-bottom: 15px;">
+                            Industrial &amp; Sewing Parts</h3>
+<p style="color: #666; line-height: 1.6; margin-bottom: 20px;">Complex net-shape components for
+                            sewing machines and industrial equipment. High precision without secondary machining.</p>
 <a href="javascript:void(0)" onclick="openModal('industrial')" style="color: #C5A059; font-weight: 600; font-size: 14px;">View Specifications →</a>
 </div>
 </div>
@@ -366,7 +506,8 @@
 </div>
 <!-- Links -->
 <div>
-<h4 style="font-family: 'Playfair Display', serif; color: #C5A059; font-size: 18px; font-weight: 700; margin-bottom: 25px; letter-spacing: 1px;">COMPANY</h4>
+<h4 style="font-family: 'Playfair Display', serif; color: #C5A059; font-size: 18px; font-weight: 700; margin-bottom: 25px; letter-spacing: 1px;">
+                        COMPANY</h4>
 <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 15px;">
 <li><a href="about.html" style="color: #a0b0d0; font-size: 15px;">Über uns</a></li>
 <li><a href="products.html" style="color: #a0b0d0; font-size: 15px;">Alle Produkte</a></li>
@@ -377,7 +518,8 @@
 </div>
 Kontakt
 <div>
-<h4 style="font-family: 'Playfair Display', serif; color: #C5A059; font-size: 18px; font-weight: 700; margin-bottom: 25px; letter-spacing: 1px;">CONTACT US</h4>
+<h4 style="font-family: 'Playfair Display', serif; color: #C5A059; font-size: 18px; font-weight: 700; margin-bottom: 25px; letter-spacing: 1px;">
+                        CONTACT US</h4>
 <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 15px;">
 <li style="color: #a0b0d0; font-size: 15px;">No. 11, Ln. 721, Zhong Zheng Rd.</li>
 <li style="color: #a0b0d0; font-size: 15px;">Xin Zhuang Dist., New Taipei City</li>
@@ -387,7 +529,8 @@ Kontakt
 </div>
 </div>
 <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 30px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
-<p style="color: #667; font-size: 13px; margin: 0;">© 2024 Yeh Sheng Powder Parts Ind. Co. Ltd. All Rights Reserved.</p>
+<p style="color: #667; font-size: 13px; margin: 0;">© 2024 Yeh Sheng Powder Parts Ind. Co. Ltd. All
+                    Rights Reserved.</p>
 <div style="display: flex; gap: 20px;">
 <a href="#" style="color: #667; font-size: 13px;">Privacy Policy</a>
 <a href="#" style="color: #667; font-size: 13px;">Terms of Service</a>
@@ -462,7 +605,7 @@ Kontakt
                 specs: [
                     { label: "Material", value: "SS304, SS316, SS410, 17-4PH" },
                     { label: "Density", value: "6.5 - 7.0 g/cm³" },
-                    
+
                     { label: "Process", value: "High-temperature sintering in Hydrogen/Nitrogen atmosphere" },
                     { label: "Tolerance", value: "+/- 0.01mm" },
                     { label: "Applications", value: "Medical instruments, Food machinery, Marine hardware" }
@@ -570,22 +713,25 @@ Kontakt
     </script>
 <script>
         function googleTranslateElementInit() {
-          new google.translate.TranslateElement({
-            pageLanguage: 'en', 
-            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-            autoDisplay: false
-          }, 'google_translate_element');
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+                autoDisplay: false
+            }, 'google_translate_element');
         }
-        </script><script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" type="text/javascript"></script><script>
+    </script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" type="text/javascript"></script>
+<script>
         function resetLanguage() {
             // Clear Google Translate cookies
             document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
             document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=." + document.domain;
-            
+
             // Reload the page
             window.location.reload();
         }
-        </script></body>
+    </script>
+</body>
 </html>
 <script type="application/ld+json">
 {

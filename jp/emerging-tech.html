@@ -2,6 +2,14 @@
 
 <html lang="jp">
 <head>
+<!-- Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-XS5ZTZGF2Y"></script>
+<script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-XS5ZTZGF2Y');
+    </script>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Emerging Tech - Yeh Sheng Powder Parts Ind. Co. Ltd.</title>
@@ -11,24 +19,45 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
 <style>
         /* Global Reset */
-        body { margin: 0; padding: 0; font-family: 'Inter', sans-serif; color: #333; background-color: #fcfcfc; overflow-x: hidden; }
-        a { text-decoration: none; color: inherit; transition: all 0.3s ease; }
-        * { box-sizing: border-box; }
-        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+            color: #333;
+            background-color: #fcfcfc;
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
         /* Utility Classes */
-        .container { max-width: 1400px; margin: 0 auto; padding: 0 20px; }
-        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
         /* Premium Card Style */
         .premium-card {
             background: white;
             border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
             padding: 40px 30px;
             text-align: center;
-            border-bottom: 4px solid #C5A059; /* Gold Accent */
+            border-bottom: 4px solid #C5A059;
+            /* Gold Accent */
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             height: 100%;
         }
+
         .premium-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 15px 40px rgba(197, 160, 89, 0.15);
@@ -47,6 +76,7 @@
             text-align: center;
             cursor: pointer;
         }
+
         .btn-gold:hover {
             background-color: #b08d4d;
             border-color: #b08d4d;
@@ -64,55 +94,100 @@
             text-align: center;
             cursor: pointer;
         }
+
         .btn-outline-gold:hover {
             background-color: #C5A059;
             color: white;
         }
 
         /* Mobile Menu Styles */
-        .mobile-menu-btn { display: none; cursor: pointer; font-size: 24px; color: #333; }
-        .mobile-menu { 
-            display: none; 
-            position: absolute; 
-            top: 100%; 
-            left: 0; 
-            width: 100%; 
-            background: white; 
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1); 
-            padding: 20px; 
-            flex-direction: column; 
-            gap: 15px; 
+        .mobile-menu-btn {
+            display: none;
+            cursor: pointer;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .mobile-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background: white;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            flex-direction: column;
+            gap: 15px;
             z-index: 99;
         }
-        .mobile-menu.active { display: flex; }
-        
+
+        .mobile-menu.active {
+            display: flex;
+        }
+
         /* Responsive Styles */
         @media (max-width: 768px) {
-            .hidden-mobile { display: none !important; }
-            .mobile-menu-btn { display: block; }
-            
+            .hidden-mobile {
+                display: none !important;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
             /* Layout Adjustments */
-            .flex-col-mobile { flex-direction: column !important; gap: 40px !important; }
-            .w-full-mobile { width: 100% !important; }
-            .mt-mobile { margin-top: 20px !important; }
-            
+            .flex-col-mobile {
+                flex-direction: column !important;
+                gap: 40px !important;
+            }
+
+            .w-full-mobile {
+                width: 100% !important;
+            }
+
+            .mt-mobile {
+                margin-top: 20px !important;
+            }
+
             /* Typography Adjustments */
-            h1 { font-size: 42px !important; line-height: 1.2 !important; }
-            h2 { font-size: 32px !important; }
-            p { font-size: 16px !important; }
-            
+            h1 {
+                font-size: 42px !important;
+                line-height: 1.2 !important;
+            }
+
+            h2 {
+                font-size: 32px !important;
+            }
+
+            p {
+                font-size: 16px !important;
+            }
+
             /* Spacing Adjustments */
-            section { padding: 60px 0 !important; }
-            .container { padding: 0 20px; }
-            
+            section {
+                padding: 60px 0 !important;
+            }
+
+            .container {
+                padding: 0 20px;
+            }
+
             /* Button Adjustments */
-            .btn-gold, .btn-outline-gold { width: 100%; box-sizing: border-box; }
-            
+            .btn-gold,
+            .btn-outline-gold {
+                width: 100%;
+                box-sizing: border-box;
+            }
+
             /* Grid Adjustments */
-            .grid-mobile { grid-template-columns: 1fr !important; }
+            .grid-mobile {
+                grid-template-columns: 1fr !important;
+            }
         }
     </style>
-<link href="https://yehsheng.com/emerging-tech.html" rel="canonical"/><style id="google-translate-style">
+<link href="https://yehsheng.com/emerging-tech.html" rel="canonical"/>
+<style id="google-translate-style">
         /* Google Translate Customization */
         .goog-te-gadget-simple {
             background-color: transparent !important;
@@ -120,44 +195,58 @@
             padding: 0 !important;
             font-size: 13px !important;
         }
+
         .goog-te-gadget-simple .goog-te-menu-value {
-            color: #C5A059 !important; /* Match the Gold color */
+            color: #C5A059 !important;
+            /* Match the Gold color */
             font-weight: 500;
         }
+
         .goog-te-gadget-simple .goog-te-menu-value span {
             color: #C5A059 !important;
             border-left: none !important;
         }
+
         .goog-te-gadget-simple .goog-te-menu-value img {
-            display: none !important; /* Hide Google Icon */
+            display: none !important;
+            /* Hide Google Icon */
         }
+
         /* Hide the Google Top Bar */
         .goog-te-banner-frame.skiptranslate {
             display: none !important;
         }
+
         body {
             top: 0px !important;
         }
+
         /* Hide tooltips */
         .goog-tooltip {
             display: none !important;
         }
+
         .goog-tooltip:hover {
             display: none !important;
         }
+
         .goog-text-highlight {
             background-color: transparent !important;
-            border: none !important; 
+            border: none !important;
             box-shadow: none !important;
         }
-    </style></head>
+    </style>
+</head>
 <body>
 <!-- Top Bar (Klein Blue) -->
 <div class="hidden-mobile" style="background-color: #002FA7; color: white; padding: 10px 0;">
-<div class="container" style="display: flex; justify-content: flex-end; gap: 25px; font-size: 13px; font-weight: 500; letter-spacing: 0.5px;"><h1 style="font-family: 'Playfair Display', serif; font-size: 42px; font-weight: 700; color: #111; margin-bottom: 40px; text-align: center;">Emerging Technologies &amp; Innovation</h1>
+<div class="container" style="display: flex; justify-content: flex-end; gap: 25px; font-size: 13px; font-weight: 500; letter-spacing: 0.5px;">
+<h1 style="font-family: 'Playfair Display', serif; font-size: 42px; font-weight: 700; color: #111; margin-bottom: 40px; text-align: center;">
+                Emerging Technologies &amp; Innovation</h1>
 <a href="about.html" style="color: #ddd;">会社概要</a>
 <a href="contact.html" style="color: #ddd;">お問い合わせ</a>
-<a href="javascript:void(0)" id="reset-lang-btn" onclick="resetLanguage()" style="color: #C5A059; margin-right: 15px; font-weight: 600; cursor: pointer; text-decoration: none;">English</a><div id="google_translate_element" style="display: inline-block; vertical-align: middle;"></div>
+<a href="javascript:void(0)" id="reset-lang-btn" onclick="resetLanguage()" style="color: #C5A059; margin-right: 15px; font-weight: 600; cursor: pointer; text-decoration: none;">English</a>
+<div id="google_translate_element" style="display: inline-block; vertical-align: middle;"></div>
 </div>
 </div>
 <!-- Navigation -->
@@ -168,14 +257,16 @@
 <img alt="Logo" src="../images/logo.png" style="height: 40px;"/>
 <div style="display: flex; flex-direction: column;">
 <span style="font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; color: #111; line-height: 1.2;">Yeh Sheng Powder Parts Ind. Co. Ltd.</span>
-<span style="font-size: 10px; font-weight: 600; color: #C5A059; letter-spacing: 1px; text-transform: uppercase;">Powder Metallurgy</span>
+<span style="font-size: 10px; font-weight: 600; color: #C5A059; letter-spacing: 1px; text-transform: uppercase;">Powder
+                            Metallurgy</span>
 </div>
 </a>
 </div>
 <!-- Desktop Menu -->
 <div class="hidden-mobile" style="display: flex; gap: 35px; align-items: center;">
 <a href="products.html" style="font-size: 15px; font-weight: 500; color: #333; text-transform: uppercase; letter-spacing: 0.5px;">製品紹介</a>
-<a href="solutions.html" style="font-size: 15px; font-weight: 500; color: #333; text-transform: uppercase; letter-spacing: 0.5px;">Service Workflow</a>
+<a href="solutions.html" style="font-size: 15px; font-weight: 500; color: #333; text-transform: uppercase; letter-spacing: 0.5px;">Service
+                    Workflow</a>
 <a href="capabilities.html" style="font-size: 15px; font-weight: 500; color: #333; text-transform: uppercase; letter-spacing: 0.5px;">製造能力</a>
 <a href="applications.html" style="font-size: 15px; font-weight: 500; color: #333; text-transform: uppercase; letter-spacing: 0.5px;">産業分野</a>
 <a href="contact.html" style="background: #C5A059; color: white; padding: 8px 20px; border-radius: 4px; font-size: 14px; font-weight: 500;">お問い合わせ</a>
@@ -187,7 +278,8 @@
 <!-- Mobile Menu Dropdown -->
 <div class="mobile-menu" id="mobileMenu">
 <a href="products.html" style="font-size: 16px; font-weight: 500; color: #333; padding: 10px 0; border-bottom: 1px solid #eee;">製品紹介</a>
-<a href="solutions.html" style="font-size: 16px; font-weight: 500; color: #333; padding: 10px 0; border-bottom: 1px solid #eee;">Service Workflow</a>
+<a href="solutions.html" style="font-size: 16px; font-weight: 500; color: #333; padding: 10px 0; border-bottom: 1px solid #eee;">Service
+                    Workflow</a>
 <a href="capabilities.html" style="font-size: 16px; font-weight: 500; color: #333; padding: 10px 0; border-bottom: 1px solid #eee;">製造能力</a>
 <a href="applications.html" style="font-size: 16px; font-weight: 500; color: #333; padding: 10px 0; border-bottom: 1px solid #eee;">産業分野</a>
 <a href="about.html" style="font-size: 16px; font-weight: 500; color: #333; padding: 10px 0; border-bottom: 1px solid #eee;">会社概要</a>
@@ -207,7 +299,8 @@
 </div>
 <div class="card-content">
 <p class="text-gray-600 mb-6 flex-grow">
-                            Developing soft magnetic composites (SMC) for high-efficiency motors and lightweight structural parts to extend EV range and performance.
+                            Developing soft magnetic composites (SMC) for high-efficiency motors and lightweight
+                            structural parts to extend EV range and performance.
                         </p>
 <div class="border-t border-gray-100 pt-4">
 <h4 class="font-bold text-gray-800 mb-2 text-sm uppercase tracking-wide">イノベーション</h4>
@@ -228,7 +321,8 @@
 </div>
 <div class="card-content">
 <p class="text-gray-600 mb-6 flex-grow">
-                            Precision micro-gears and actuators for robotic joints and industrial automation arms, requiring zero-backlash and high wear resistance.
+                            Precision micro-gears and actuators for robotic joints and industrial automation arms,
+                            requiring zero-backlash and high wear resistance.
                         </p>
 <div class="border-t border-gray-100 pt-4">
 <h4 class="font-bold text-gray-800 mb-2 text-sm uppercase tracking-wide">イノベーション</h4>
@@ -249,7 +343,8 @@
 </div>
 <div class="card-content">
 <p class="text-gray-600 mb-6 flex-grow">
-                            Supporting the renewable energy sector with durable components for wind turbines and solid oxide fuel cell (SOFC) interconnects.
+                            Supporting the renewable energy sector with durable components for wind turbines and solid
+                            oxide fuel cell (SOFC) interconnects.
                         </p>
 <div class="border-t border-gray-100 pt-4">
 <h4 class="font-bold text-gray-800 mb-2 text-sm uppercase tracking-wide">イノベーション</h4>
@@ -285,7 +380,8 @@
 </div>
 <!-- Links -->
 <div>
-<h4 style="font-family: 'Playfair Display', serif; color: #C5A059; font-size: 18px; font-weight: 700; margin-bottom: 25px; letter-spacing: 1px;">COMPANY</h4>
+<h4 style="font-family: 'Playfair Display', serif; color: #C5A059; font-size: 18px; font-weight: 700; margin-bottom: 25px; letter-spacing: 1px;">
+                        COMPANY</h4>
 <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 15px;">
 <li><a href="about.html" style="color: #a0b0d0; font-size: 15px;">会社概要</a></li>
 <li><a href="products.html" style="color: #a0b0d0; font-size: 15px;">すべての製品</a></li>
@@ -296,7 +392,8 @@
 </div>
 お問い合わせ
 <div>
-<h4 style="font-family: 'Playfair Display', serif; color: #C5A059; font-size: 18px; font-weight: 700; margin-bottom: 25px; letter-spacing: 1px;">CONTACT US</h4>
+<h4 style="font-family: 'Playfair Display', serif; color: #C5A059; font-size: 18px; font-weight: 700; margin-bottom: 25px; letter-spacing: 1px;">
+                        CONTACT US</h4>
 <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 15px;">
 <li style="color: #a0b0d0; font-size: 15px;">新北市新荘区中正路721巷11号</li>
 <li style="color: #a0b0d0; font-size: 15px;"></li>
@@ -306,7 +403,8 @@
 </div>
 </div>
 <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 30px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
-<p style="color: #667; font-size: 13px; margin: 0;">© 2024 Yeh Sheng Powder Parts Ind. Co. Ltd. All Rights Reserved.</p>
+<p style="color: #667; font-size: 13px; margin: 0;">© 2024 Yeh Sheng Powder Parts Ind. Co. Ltd. All
+                    Rights Reserved.</p>
 <div style="display: flex; gap: 20px;">
 <a href="#" style="color: #667; font-size: 13px;">Privacy Policy</a>
 <a href="#" style="color: #667; font-size: 13px;">Terms of Service</a>
@@ -326,20 +424,23 @@
     </script>
 <script>
         function googleTranslateElementInit() {
-          new google.translate.TranslateElement({
-            pageLanguage: 'en', 
-            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-            autoDisplay: false
-          }, 'google_translate_element');
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+                autoDisplay: false
+            }, 'google_translate_element');
         }
-        </script><script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" type="text/javascript"></script><script>
+    </script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" type="text/javascript"></script>
+<script>
         function resetLanguage() {
             // Clear Google Translate cookies
             document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
             document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=." + document.domain;
-            
+
             // Reload the page
             window.location.reload();
         }
-        </script></body>
+    </script>
+</body>
 </html>

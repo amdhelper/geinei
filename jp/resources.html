@@ -2,6 +2,14 @@
 
 <html lang="jp">
 <head>
+<!-- Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-XS5ZTZGF2Y"></script>
+<script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-XS5ZTZGF2Y');
+    </script>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Technical Resources - Yeh Sheng Powder Parts Ind. Co. Ltd.</title>
@@ -14,22 +22,42 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
 <style>
         /* Global Reset */
-        body { margin: 0; padding: 0; font-family: 'Inter', sans-serif; color: #333; background-color: #fcfcfc; overflow-x: hidden; }
-        a { text-decoration: none; color: inherit; transition: all 0.3s ease; }
-        * { box-sizing: border-box; }
-        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+            color: #333;
+            background-color: #fcfcfc;
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
         /* Utility Classes */
-        .container { max-width: 1400px; margin: 0 auto; padding: 0 20px; }
-        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
         /* FAQ Styles */
         .faq-item {
             background: white;
             border-radius: 8px;
             padding: 25px;
             margin-bottom: 20px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
             border-left: 4px solid #002FA7;
         }
+
         .faq-question {
             font-family: 'Playfair Display', serif;
             font-size: 20px;
@@ -37,21 +65,23 @@
             color: #002FA7;
             margin-bottom: 15px;
         }
+
         .faq-answer {
             font-size: 16px;
             color: #555;
             line-height: 1.8;
         }
-        
+
         /* Table Styles */
         .term-table {
             width: 100%;
             border-collapse: collapse;
             background: white;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
             border-radius: 8px;
             overflow: hidden;
         }
+
         .term-table th {
             background-color: #002FA7;
             color: white;
@@ -60,6 +90,7 @@
             font-family: 'Playfair Display', serif;
             font-size: 18px;
         }
+
         .term-table td {
             padding: 15px 20px;
             border-bottom: 1px solid #eee;
@@ -67,52 +98,108 @@
             line-height: 1.6;
             color: #555;
         }
-        .term-table tr:last-child td { border-bottom: none; }
-        .term-table tr:hover { background-color: #f8f9fa; }
-        .term-name { font-weight: 600; color: #333; white-space: nowrap; }
+
+        .term-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .term-table tr:hover {
+            background-color: #f8f9fa;
+        }
+
+        .term-name {
+            font-weight: 600;
+            color: #333;
+            white-space: nowrap;
+        }
 
         /* Mobile Menu Styles */
-        .mobile-menu-btn { display: none; cursor: pointer; font-size: 24px; color: #333; }
-        .mobile-menu { 
-            display: none; 
-            position: absolute; 
-            top: 100%; 
-            left: 0; 
-            width: 100%; 
-            background: white; 
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1); 
-            padding: 20px; 
-            flex-direction: column; 
-            gap: 15px; 
+        .mobile-menu-btn {
+            display: none;
+            cursor: pointer;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .mobile-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background: white;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            flex-direction: column;
+            gap: 15px;
             z-index: 99;
         }
-        .mobile-menu.active { display: flex; }
-        
+
+        .mobile-menu.active {
+            display: flex;
+        }
+
         /* Responsive Styles */
         @media (max-width: 768px) {
-            .hidden-mobile { display: none !important; }
-            .mobile-menu-btn { display: block; }
-            
+            .hidden-mobile {
+                display: none !important;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
             /* Layout Adjustments */
-            .flex-col-mobile { flex-direction: column !important; gap: 40px !important; }
-            .w-full-mobile { width: 100% !important; }
-            .mt-mobile { margin-top: 20px !important; }
-            
+            .flex-col-mobile {
+                flex-direction: column !important;
+                gap: 40px !important;
+            }
+
+            .w-full-mobile {
+                width: 100% !important;
+            }
+
+            .mt-mobile {
+                margin-top: 20px !important;
+            }
+
             /* Typography Adjustments */
-            h1 { font-size: 42px !important; line-height: 1.2 !important; }
-            h2 { font-size: 32px !important; }
-            p { font-size: 16px !important; }
-            
+            h1 {
+                font-size: 42px !important;
+                line-height: 1.2 !important;
+            }
+
+            h2 {
+                font-size: 32px !important;
+            }
+
+            p {
+                font-size: 16px !important;
+            }
+
             /* Spacing Adjustments */
-            section { padding: 60px 0 !important; }
-            .container { padding: 0 20px; }
-            
+            section {
+                padding: 60px 0 !important;
+            }
+
+            .container {
+                padding: 0 20px;
+            }
+
             /* Table Adjustments */
-            .term-table th, .term-table td { padding: 10px; font-size: 14px; }
-            .term-name { white-space: normal; }
+            .term-table th,
+            .term-table td {
+                padding: 10px;
+                font-size: 14px;
+            }
+
+            .term-name {
+                white-space: normal;
+            }
         }
     </style>
-<link href="https://yehsheng.com/resources.html" rel="canonical"/><style id="google-translate-style">
+<link href="https://yehsheng.com/resources.html" rel="canonical"/>
+<style id="google-translate-style">
         /* Google Translate Customization */
         .goog-te-gadget-simple {
             background-color: transparent !important;
@@ -120,37 +207,48 @@
             padding: 0 !important;
             font-size: 13px !important;
         }
+
         .goog-te-gadget-simple .goog-te-menu-value {
-            color: #C5A059 !important; /* Match the Gold color */
+            color: #C5A059 !important;
+            /* Match the Gold color */
             font-weight: 500;
         }
+
         .goog-te-gadget-simple .goog-te-menu-value span {
             color: #C5A059 !important;
             border-left: none !important;
         }
+
         .goog-te-gadget-simple .goog-te-menu-value img {
-            display: none !important; /* Hide Google Icon */
+            display: none !important;
+            /* Hide Google Icon */
         }
+
         /* Hide the Google Top Bar */
         .goog-te-banner-frame.skiptranslate {
             display: none !important;
         }
+
         body {
             top: 0px !important;
         }
+
         /* Hide tooltips */
         .goog-tooltip {
             display: none !important;
         }
+
         .goog-tooltip:hover {
             display: none !important;
         }
+
         .goog-text-highlight {
             background-color: transparent !important;
-            border: none !important; 
+            border: none !important;
             box-shadow: none !important;
         }
-    </style><link href="../images/logo.png" rel="icon" type="image/png"/>
+    </style>
+<link href="../images/logo.png" rel="icon" type="image/png"/>
 </head>
 <body>
 <!-- Top Bar (Klein Blue) -->
@@ -158,7 +256,8 @@
 <div class="container" style="display: flex; justify-content: flex-end; gap: 25px; font-size: 13px; font-weight: 500; letter-spacing: 0.5px;">
 <a href="about.html" style="color: #ddd;">会社概要</a>
 <a href="contact.html" style="color: #ddd;">お問い合わせ</a>
-<a href="javascript:void(0)" id="reset-lang-btn" onclick="resetLanguage()" style="color: #C5A059; margin-right: 15px; font-weight: 600; cursor: pointer; text-decoration: none;">English</a><div id="google_translate_element" style="display: inline-block; vertical-align: middle;"></div>
+<a href="javascript:void(0)" id="reset-lang-btn" onclick="resetLanguage()" style="color: #C5A059; margin-right: 15px; font-weight: 600; cursor: pointer; text-decoration: none;">English</a>
+<div id="google_translate_element" style="display: inline-block; vertical-align: middle;"></div>
 </div>
 </div>
 <!-- Navigation -->
@@ -169,14 +268,16 @@
 <img alt="Logo" src="../images/logo.png" style="height: 40px;"/>
 <div style="display: flex; flex-direction: column;">
 <span style="font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; color: #111; line-height: 1.2;">Yeh Sheng Powder Parts Ind. Co. Ltd.</span>
-<span style="font-size: 10px; font-weight: 600; color: #C5A059; letter-spacing: 1px; text-transform: uppercase;">Powder Metallurgy</span>
+<span style="font-size: 10px; font-weight: 600; color: #C5A059; letter-spacing: 1px; text-transform: uppercase;">Powder
+                            Metallurgy</span>
 </div>
 </a>
 </div>
 <!-- Desktop Menu -->
 <div class="hidden-mobile" style="display: flex; gap: 35px; align-items: center;">
 <a href="products.html" style="font-size: 15px; font-weight: 500; color: #333; text-transform: uppercase; letter-spacing: 0.5px;">製品紹介</a>
-<a href="solutions.html" style="font-size: 15px; font-weight: 500; color: #333; text-transform: uppercase; letter-spacing: 0.5px;">Service Workflow</a>
+<a href="solutions.html" style="font-size: 15px; font-weight: 500; color: #333; text-transform: uppercase; letter-spacing: 0.5px;">Service
+                    Workflow</a>
 <a href="capabilities.html" style="font-size: 15px; font-weight: 500; color: #333; text-transform: uppercase; letter-spacing: 0.5px;">製造能力</a>
 <a href="applications.html" style="font-size: 15px; font-weight: 500; color: #333; text-transform: uppercase; letter-spacing: 0.5px;">産業分野</a>
 <a href="resources.html" style="font-size: 15px; font-weight: 500; color: #C5A059; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 700;">Resources</a>
@@ -189,7 +290,8 @@
 <!-- Mobile Menu Dropdown -->
 <div class="mobile-menu" id="mobileMenu">
 <a href="products.html" style="font-size: 16px; font-weight: 500; color: #333; padding: 10px 0; border-bottom: 1px solid #eee;">製品紹介</a>
-<a href="solutions.html" style="font-size: 16px; font-weight: 500; color: #333; padding: 10px 0; border-bottom: 1px solid #eee;">Service Workflow</a>
+<a href="solutions.html" style="font-size: 16px; font-weight: 500; color: #333; padding: 10px 0; border-bottom: 1px solid #eee;">Service
+                    Workflow</a>
 <a href="capabilities.html" style="font-size: 16px; font-weight: 500; color: #333; padding: 10px 0; border-bottom: 1px solid #eee;">製造能力</a>
 <a href="applications.html" style="font-size: 16px; font-weight: 500; color: #333; padding: 10px 0; border-bottom: 1px solid #eee;">産業分野</a>
 <a href="resources.html" style="font-size: 16px; font-weight: 500; color: #C5A059; padding: 10px 0; border-bottom: 1px solid #eee; font-weight: 700;">Resources</a>
@@ -202,11 +304,14 @@
 <section style="padding: 80px 0; background: white;">
 <div class="container">
 <div style="text-align: center; margin-bottom: 60px;">
-<h1 style="font-family: 'Playfair Display', serif; font-size: 42px; font-weight: 700; color: #111; margin-bottom: 20px;">Technical Resources</h1>
-<h2 style="font-family: 'Playfair Display', serif; font-size: 32px; font-weight: 700; color: #555; margin-bottom: 20px;">Knowledge Base &amp; FAQ</h2>
+<h1 style="font-family: 'Playfair Display', serif; font-size: 42px; font-weight: 700; color: #111; margin-bottom: 20px;">
+                    Technical Resources</h1>
+<h2 style="font-family: 'Playfair Display', serif; font-size: 32px; font-weight: 700; color: #555; margin-bottom: 20px;">
+                    Knowledge Base &amp; FAQ</h2>
 <div style="width: 80px; height: 4px; background-color: #C5A059; margin: 0 auto 30px auto;"></div>
 <p style="font-size: 18px; color: #666; max-width: 800px; margin: 0 auto; line-height: 1.6;">
-                    Explore common questions about Powder Metallurgy and a comprehensive glossary of industry terms to help you make informed engineering decisions.
+                    Explore common questions about Powder Metallurgy and a comprehensive glossary of industry terms to
+                    help you make informed engineering decisions.
                 </p>
 </div>
 <!-- FAQ Section -->
@@ -215,15 +320,23 @@
                     Frequently Asked Questions (FAQ)
                 </h3>
 <div class="faq-item">
-<div class="faq-question">Q1: Is the strength of Powder Metallurgy parts sufficient for high-load applications?</div>
+<div class="faq-question">Q1: Is the strength of Powder Metallurgy parts sufficient for high-load
+                        applications?</div>
 <div class="faq-answer">
-                        Absolutely. While PM parts have inherent micro-porosity, their strength can be engineered to meet or exceed that of cast iron or even forged steel. By adjusting alloy compositions, increasing compacting density, or using Secondary Forging, PM parts are now widely used in high-stress environments like automotive engines, transmission gears, and connecting rods.
+                        Absolutely. While PM parts have inherent micro-porosity, their strength can be engineered to
+                        meet or exceed that of cast iron or even forged steel. By adjusting alloy compositions,
+                        increasing compacting density, or using Secondary Forging, PM parts are now widely used in
+                        high-stress environments like automotive engines, transmission gears, and connecting rods.
                     </div>
 </div>
 <div class="faq-item">
-<div class="faq-question">Q2: Which is more cost-effective: Powder Metallurgy or CNC Machining?</div>
+<div class="faq-question">Q2: Which is more cost-effective: Powder Metallurgy or CNC Machining?
+                    </div>
 <div class="faq-answer">
-                        It depends on the production volume. CNC Machining is better for low-volume prototyping because it doesn't require expensive tooling. However, for mass production (typically 5,000+ units), Powder Metallurgy is significantly cheaper. PM reduces costs by minimizing material waste (Near-Net Shape) and eliminating the labor-intensive steps of traditional cutting.
+                        It depends on the production volume. CNC Machining is better for low-volume prototyping because
+                        it doesn't require expensive tooling. However, for mass production (typically 5,000+ units),
+                        Powder Metallurgy is significantly cheaper. PM reduces costs by minimizing material waste
+                        (Near-Net Shape) and eliminating the labor-intensive steps of traditional cutting.
                     </div>
 </div>
 <div class="faq-item">
@@ -233,47 +346,65 @@
                         <ul style="margin-top: 10px; padding-left: 20px;">
 <li><strong>Ferrous Alloys:</strong> Iron and steel (most common).</li>
 <li><strong>Non-Ferrous:</strong> Copper, aluminum, and brass.</li>
-<li><strong>Refractory Metals:</strong> Tungsten and Molybdenum (which are difficult to melt).</li>
-<li><strong>Specialty Materials:</strong> Stainless steel and superalloys for aerospace and medical use.</li>
+<li><strong>Refractory Metals:</strong> Tungsten and Molybdenum (which are difficult to
+                                melt).</li>
+<li><strong>Specialty Materials:</strong> Stainless steel and superalloys for aerospace and
+                                medical use.</li>
 </ul>
 </div>
 </div>
 <div class="faq-item">
 <div class="faq-question">Q4: Why is Powder Metallurgy considered a "Green" technology?</div>
 <div class="faq-answer">
-                        PM is one of the most sustainable manufacturing methods. It boasts a material utilization rate of over 95%, meaning almost no scrap metal is produced. Additionally, because the sintering process occurs below the melting point, it often requires less energy than traditional melting and casting operations.
+                        PM is one of the most sustainable manufacturing methods. It boasts a material utilization rate
+                        of over 95%, meaning almost no scrap metal is produced. Additionally, because the sintering
+                        process occurs below the melting point, it often requires less energy than traditional melting
+                        and casting operations.
                     </div>
 </div>
 <div class="faq-item">
 <div class="faq-question">Q5: How do "Self-Lubricating" bearings work in Powder Metallurgy?</div>
 <div class="faq-answer">
-                        This is a unique advantage of PM. Because the parts are naturally porous, they can be vacuum-impregnated with oil. When the bearing heats up during operation, the oil expands and flows to the surface. When it cools down, the oil is re-absorbed into the pores by capillary action. This makes them ideal for "maintenance-free" applications.
+                        This is a unique advantage of PM. Because the parts are naturally porous, they can be
+                        vacuum-impregnated with oil. When the bearing heats up during operation, the oil expands and
+                        flows to the surface. When it cools down, the oil is re-absorbed into the pores by capillary
+                        action. This makes them ideal for "maintenance-free" applications.
                     </div>
 </div>
 <div class="faq-item">
-<div class="faq-question">Q6: What is the difference between traditional PM and Metal Injection Molding (MIM)?</div>
+<div class="faq-question">Q6: What is the difference between traditional PM and Metal Injection
+                        Molding (MIM)?</div>
 <div class="faq-answer">
                         While both use metal powders:
                         <ul style="margin-top: 10px; padding-left: 20px;">
-<li><strong>Traditional PM</strong> is like "pressing a tablet." It is best for larger, simpler shapes.</li>
-<li><strong>MIM</strong> involves mixing powder with a plastic binder to "inject" it into a mold. It is designed for extremely small, highly complex parts (like those in smartphones or surgical tools) that would be impossible to press.</li>
+<li><strong>Traditional PM</strong> is like "pressing a tablet." It is best for larger,
+                                simpler shapes.</li>
+<li><strong>MIM</strong> involves mixing powder with a plastic binder to "inject" it into a
+                                mold. It is designed for extremely small, highly complex parts (like those in
+                                smartphones or surgical tools) that would be impossible to press.</li>
 </ul>
 </div>
 </div>
 <div class="faq-item">
 <div class="faq-question">Q7: Can PM parts be plated or welded?</div>
 <div class="faq-answer">
-                        Yes, but they require preparation. Due to the porosity, PM parts are usually steam-treated or resin-sealed before plating to prevent chemicals from getting trapped in the pores. For welding, laser welding is preferred to minimize the heat-affected zone.
+                        Yes, but they require preparation. Due to the porosity, PM parts are usually steam-treated or
+                        resin-sealed before plating to prevent chemicals from getting trapped in the pores. For welding,
+                        laser welding is preferred to minimize the heat-affected zone.
                     </div>
 </div>
 <div class="faq-item">
 <div class="faq-question">Q8: What are the design limitations for PM parts?</div>
 <div class="faq-answer">
-                        Engineers should avoid features that prevent the part from being ejected from the die. This includes:
+                        Engineers should avoid features that prevent the part from being ejected from the die. This
+                        includes:
                         <ul style="margin-top: 10px; padding-left: 20px;">
-<li><strong>Side Undercuts:</strong> Holes or grooves on the side must be machined later.</li>
-<li><strong>Wall Thickness:</strong> Walls should generally be thicker than 1.5mm to ensure even powder flow.</li>
-<li><strong>Sharp Corners:</strong> Rounded edges (fillets) are preferred to extend tool life and improve strength.</li>
+<li><strong>Side Undercuts:</strong> Holes or grooves on the side must be machined later.
+                            </li>
+<li><strong>Wall Thickness:</strong> Walls should generally be thicker than 1.5mm to ensure
+                                even powder flow.</li>
+<li><strong>Sharp Corners:</strong> Rounded edges (fillets) are preferred to extend tool
+                                life and improve strength.</li>
 </ul>
 </div>
 </div>
@@ -294,71 +425,89 @@
 <tbody>
 <tr>
 <td class="term-name">Gerotor</td>
-<td>Short for "Generated Rotor". A positive displacement pumping unit consisting of an inner and outer rotor. PM is the most efficient method for manufacturing these complex trochoidal shapes used in oil pumps.</td>
+<td>Short for "Generated Rotor". A positive displacement pumping unit consisting of an
+                                    inner and outer rotor. PM is the most efficient method for manufacturing these
+                                    complex trochoidal shapes used in oil pumps.</td>
 </tr>
 <tr>
 <td class="term-name">Green Strength</td>
-<td>The mechanical strength of a compact before sintering. It must be high enough to handle transportation to the furnace without breaking.</td>
+<td>The mechanical strength of a compact before sintering. It must be high enough to
+                                    handle transportation to the furnace without breaking.</td>
 </tr>
 <tr>
 <td class="term-name">Sintered Density</td>
-<td>The mass per unit volume of a part after sintering. This is the primary indicator of the part's final mechanical properties.</td>
+<td>The mass per unit volume of a part after sintering. This is the primary indicator of
+                                    the part's final mechanical properties.</td>
 </tr>
 <tr>
 <td class="term-name">Diffusion Bonding</td>
-<td>The process where atoms migrate across particle boundaries due to heat, fusing the metal particles into a solid mass.</td>
+<td>The process where atoms migrate across particle boundaries due to heat, fusing the
+                                    metal particles into a solid mass.</td>
 </tr>
 <tr>
 <td class="term-name">Near-Net Shape</td>
-<td>A manufacturing technique where the initial part is created very close to its final geometry, reducing the need for secondary machining.</td>
+<td>A manufacturing technique where the initial part is created very close to its final
+                                    geometry, reducing the need for secondary machining.</td>
 </tr>
 <tr>
 <td class="term-name">Oil Impregnation</td>
-<td>The process of filling the interconnected pores of a sintered part with lubricant, typically used to create self-lubricating bearings.</td>
+<td>The process of filling the interconnected pores of a sintered part with lubricant,
+                                    typically used to create self-lubricating bearings.</td>
 </tr>
 <tr>
 <td class="term-name">Metal Injection Molding (MIM)</td>
-<td>A process where fine metal powder is mixed with a binder and "injected" into a mold. Best for small, extremely complex 3D shapes.</td>
+<td>A process where fine metal powder is mixed with a binder and "injected" into a mold.
+                                    Best for small, extremely complex 3D shapes.</td>
 </tr>
 <tr>
 <td class="term-name">Steam Treatment</td>
-<td>A process that creates a layer of black iron oxide (Fe3O4) on the surface to improve wear resistance and provide a decorative finish.</td>
+<td>A process that creates a layer of black iron oxide (Fe3O4) on the surface to improve
+                                    wear resistance and provide a decorative finish.</td>
 </tr>
 <tr>
 <td class="term-name">Infiltration</td>
-<td>Filling the pores of a sintered part with a lower-melting-point metal (e.g., copper into an iron part) to increase strength and density.</td>
+<td>Filling the pores of a sintered part with a lower-melting-point metal (e.g., copper
+                                    into an iron part) to increase strength and density.</td>
 </tr>
 <tr>
 <td class="term-name">Porosity</td>
-<td>The volume of pores (voids) expressed as a percentage of the total volume. It can be "open" (connected) or "closed" (isolated).</td>
+<td>The volume of pores (voids) expressed as a percentage of the total volume. It can be
+                                    "open" (connected) or "closed" (isolated).</td>
 </tr>
 <tr>
 <td class="term-name">Debinding</td>
-<td>The critical step (especially in MIM) of removing the polymer or wax binders from the part before the final sintering stage.</td>
+<td>The critical step (especially in MIM) of removing the polymer or wax binders from
+                                    the part before the final sintering stage.</td>
 </tr>
 <tr>
 <td class="term-name">Reduced Powder</td>
-<td>Metal powder produced by chemical reduction of an oxide. These particles are usually spongy and irregular, providing good green strength.</td>
+<td>Metal powder produced by chemical reduction of an oxide. These particles are usually
+                                    spongy and irregular, providing good green strength.</td>
 </tr>
 <tr>
 <td class="term-name">Sizing / Coining</td>
-<td>A secondary pressing operation used to improve the dimensional accuracy of a sintered part or to increase its surface density.</td>
+<td>A secondary pressing operation used to improve the dimensional accuracy of a
+                                    sintered part or to increase its surface density.</td>
 </tr>
 <tr>
 <td class="term-name">Segregation</td>
-<td>An undesirable effect where different powder particles separate during mixing or feeding due to differences in size or density.</td>
+<td>An undesirable effect where different powder particles separate during mixing or
+                                    feeding due to differences in size or density.</td>
 </tr>
 <tr>
 <td class="term-name">Spherical Powder</td>
-<td>Powder particles produced by gas atomization that are perfectly round. They offer excellent flowability for 3D printing and MIM.</td>
+<td>Powder particles produced by gas atomization that are perfectly round. They offer
+                                    excellent flowability for 3D printing and MIM.</td>
 </tr>
 <tr>
 <td class="term-name">Isostatic Pressing</td>
-<td>Applying pressure from all directions using a fluid (water or gas) to achieve uniform density in large or complex shapes.</td>
+<td>Applying pressure from all directions using a fluid (water or gas) to achieve
+                                    uniform density in large or complex shapes.</td>
 </tr>
 <tr>
 <td class="term-name">Apparent Density</td>
-<td>The weight of a unit volume of loose powder. It is crucial for determining the "fill depth" of the die during the compacting stage.</td>
+<td>The weight of a unit volume of loose powder. It is crucial for determining the "fill
+                                    depth" of the die during the compacting stage.</td>
 </tr>
 </tbody>
 </table>
@@ -384,7 +533,8 @@
 </div>
 <!-- Links -->
 <div>
-<h4 style="font-family: 'Playfair Display', serif; color: #C5A059; font-size: 18px; font-weight: 700; margin-bottom: 25px; letter-spacing: 1px;">COMPANY</h4>
+<h4 style="font-family: 'Playfair Display', serif; color: #C5A059; font-size: 18px; font-weight: 700; margin-bottom: 25px; letter-spacing: 1px;">
+                        COMPANY</h4>
 <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 15px;">
 <li><a href="about.html" style="color: #a0b0d0; font-size: 15px;">会社概要</a></li>
 <li><a href="products.html" style="color: #a0b0d0; font-size: 15px;">すべての製品</a></li>
@@ -395,7 +545,8 @@
 </div>
 お問い合わせ
 <div>
-<h4 style="font-family: 'Playfair Display', serif; color: #C5A059; font-size: 18px; font-weight: 700; margin-bottom: 25px; letter-spacing: 1px;">CONTACT US</h4>
+<h4 style="font-family: 'Playfair Display', serif; color: #C5A059; font-size: 18px; font-weight: 700; margin-bottom: 25px; letter-spacing: 1px;">
+                        CONTACT US</h4>
 <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 15px;">
 <li style="color: #a0b0d0; font-size: 15px;">新北市新荘区中正路721巷11号</li>
 <li style="color: #a0b0d0; font-size: 15px;"></li>
@@ -405,7 +556,8 @@
 </div>
 </div>
 <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 30px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
-<p style="color: #667; font-size: 13px; margin: 0;">© 2024 Yeh Sheng Powder Parts Ind. Co. Ltd. All Rights Reserved.</p>
+<p style="color: #667; font-size: 13px; margin: 0;">© 2024 Yeh Sheng Powder Parts Ind. Co. Ltd. All
+                    Rights Reserved.</p>
 <div style="display: flex; gap: 20px;">
 <a href="#" style="color: #667; font-size: 13px;">Privacy Policy</a>
 <a href="#" style="color: #667; font-size: 13px;">Terms of Service</a>
@@ -421,20 +573,23 @@
     </script>
 <script>
         function googleTranslateElementInit() {
-          new google.translate.TranslateElement({
-            pageLanguage: 'en', 
-            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-            autoDisplay: false
-          }, 'google_translate_element');
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+                autoDisplay: false
+            }, 'google_translate_element');
         }
-        </script><script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" type="text/javascript"></script><script>
+    </script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" type="text/javascript"></script>
+<script>
         function resetLanguage() {
             // Clear Google Translate cookies
             document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
             document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=." + document.domain;
-            
+
             // Reload the page
             window.location.reload();
         }
-        </script></body>
+    </script>
+</body>
 </html>
