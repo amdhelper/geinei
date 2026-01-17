@@ -263,27 +263,111 @@
         }
     </style>
     <link rel="icon" href="images/logo.png" type="image/png">
+    <!-- FAQPage Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is the strength of Powder Metallurgy parts sufficient for high-load applications?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. While PM parts have inherent micro-porosity, their strength can be engineered to meet or exceed that of cast iron or even forged steel. By adjusting alloy compositions, increasing compacting density, or using Secondary Forging, PM parts are now widely used in high-stress environments like automotive engines, transmission gears, and connecting rods."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which is more cost-effective: Powder Metallurgy or CNC Machining?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends on the production volume. CNC Machining is better for low-volume prototyping because it doesn't require expensive tooling. However, for mass production (typically 5,000+ units), Powder Metallurgy is significantly cheaper. PM reduces costs by minimizing material waste (Near-Net Shape) and eliminating the labor-intensive steps of traditional cutting."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What materials can be used in the PM process?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "PM is incredibly versatile. It can process almost all metals, including: Ferrous Alloys (Iron and steel), Non-Ferrous (Copper, aluminum, and brass), Refractory Metals (Tungsten and Molybdenum), and Specialty Materials (Stainless steel and superalloys for aerospace and medical use)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is Powder Metallurgy considered a 'Green' technology?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "PM is one of the most sustainable manufacturing methods. It boasts a material utilization rate of over 95%, meaning almost no scrap metal is produced. Additionally, because the sintering process occurs below the melting point, it often requires less energy than traditional melting and casting operations."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do 'Self-Lubricating' bearings work in Powder Metallurgy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "This is a unique advantage of PM. Because the parts are naturally porous, they can be vacuum-impregnated with oil. When the bearing heats up during operation, the oil expands and flows to the surface. When it cools down, the oil is re-absorbed into the pores by capillary action. This makes them ideal for 'maintenance-free' applications."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between traditional PM and Metal Injection Molding (MIM)?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "While both use metal powders: Traditional PM is like 'pressing a tablet' and is best for larger, simpler shapes. MIM involves mixing powder with a plastic binder to 'inject' it into a mold and is designed for extremely small, highly complex parts (like those in smartphones or surgical tools) that would be impossible to press."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can PM parts be plated or welded?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, but they require preparation. Due to the porosity, PM parts are usually steam-treated or resin-sealed before plating to prevent chemicals from getting trapped in the pores. For welding, laser welding is preferred to minimize the heat-affected zone."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the design limitations for PM parts?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Engineers should avoid features that prevent the part from being ejected from the die. This includes: Side Undercuts (holes or grooves on the side must be machined later), Wall Thickness (walls should generally be thicker than 1.5mm to ensure even powder flow), and Sharp Corners (rounded edges/fillets are preferred to extend tool life and improve strength)."
+          }
+        }
+      ]
+    }
+    </script>
 </head>
 
 <body>
     <!-- Top Bar (Klein Blue #002FA7) -->
-    <div class="hidden-mobile" style="background-color: #002FA7; color: white; padding: 10px 0;;position:relative;z-index:200">
+    <div class="hidden-mobile"
+        style="background-color: #002FA7; color: white; padding: 10px 0;;position:relative;z-index:200">
         <div class="container"
             style="display: flex; justify-content: flex-end; gap: 25px; font-size: 13px; font-weight: 500; letter-spacing: 0.5px; align-items: center;">
             <a href="about.html" style="color: #ddd;">About Us</a>
             <a href="contact.html" style="color: #ddd;">Contact</a>
             <!-- Language Dropdown -->
             <div style="position: relative; display: inline-block;">
-                <button onclick="toggleLangDropdown()" 
+                <button onclick="toggleLangDropdown()"
                     style="background: transparent; border: 1px solid #C5A059; color: #C5A059; padding: 6px 15px; border-radius: 4px; cursor: pointer; font-size: 13px; font-weight: 600; display: flex; align-items: center; gap: 8px;">
                     🌐 English ▼
                 </button>
-                <div id="langDropdown" style="display: none; position: absolute; right: 0; top: 100%; margin-top: 5px; background: white; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); min-width: 160px; z-index:10000; overflow: hidden;">
-                    <a href="resources.html" style="display: block; padding: 12px 20px; color: #333; font-size: 14px; border-bottom: 1px solid #eee; font-weight: 600; background: #f8f9fa;">🇺🇸 English</a>
-                    <a href="zh/resources.html" style="display: block; padding: 12px 20px; color: #333; font-size: 14px; border-bottom: 1px solid #eee;">🇹🇼 繁體中文</a>
-                    <a href="zh-cn/resources.html" style="display: block; padding: 12px 20px; color: #333; font-size: 14px; border-bottom: 1px solid #eee;">🇨🇳 简体中文</a>
-                    <a href="de/resources.html" style="display: block; padding: 12px 20px; color: #333; font-size: 14px; border-bottom: 1px solid #eee;">🇩🇪 Deutsch</a>
-                    <a href="jp/resources.html" style="display: block; padding: 12px 20px; color: #333; font-size: 14px;">🇯🇵 日本語</a>
+                <div id="langDropdown"
+                    style="display: none; position: absolute; right: 0; top: 100%; margin-top: 5px; background: white; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); min-width: 160px; z-index:10000; overflow: hidden;">
+                    <a href="resources.html"
+                        style="display: block; padding: 12px 20px; color: #333; font-size: 14px; border-bottom: 1px solid #eee; font-weight: 600; background: #f8f9fa;">🇺🇸
+                        English</a>
+                    <a href="zh/resources.html"
+                        style="display: block; padding: 12px 20px; color: #333; font-size: 14px; border-bottom: 1px solid #eee;">🇹🇼
+                        繁體中文</a>
+                    <a href="zh-cn/resources.html"
+                        style="display: block; padding: 12px 20px; color: #333; font-size: 14px; border-bottom: 1px solid #eee;">🇨🇳
+                        简体中文</a>
+                    <a href="de/resources.html"
+                        style="display: block; padding: 12px 20px; color: #333; font-size: 14px; border-bottom: 1px solid #eee;">🇩🇪
+                        Deutsch</a>
+                    <a href="jp/resources.html"
+                        style="display: block; padding: 12px 20px; color: #333; font-size: 14px;">🇯🇵 日本語</a>
                 </div>
             </div>
         </div>
@@ -343,11 +427,12 @@
                     Us</a>
                 <a href="contact.html"
                     style="font-size: 16px; font-weight: 500; color: #C5A059; padding: 10px 0;">Contact Us</a>
-            
+
                 <!-- Mobile Language Selector -->
                 <div style="border-top:2px solid #C5A059;margin-top:10px;padding-top:15px;">
                     <div style="font-size:14px;font-weight:600;color:#C5A059;margin-bottom:10px;">🌐 Language</div>
-                    <a href="resources.html" style="display:block;padding:8px 0;color:#C5A059;font-weight:600;">🇺🇸 English</a>
+                    <a href="resources.html" style="display:block;padding:8px 0;color:#C5A059;font-weight:600;">🇺🇸
+                        English</a>
                     <a href="zh/resources.html" style="display:block;padding:8px 0;color:#333;">🇹🇼 繁體中文</a>
                     <a href="zh-cn/resources.html" style="display:block;padding:8px 0;color:#333;">🇨🇳 简体中文</a>
                     <a href="de/resources.html" style="display:block;padding:8px 0;color:#333;">🇩🇪 Deutsch</a>
@@ -669,7 +754,7 @@
                 dropdown.style.display = (dropdown.style.display === "none" || dropdown.style.display === "") ? "block" : "none";
             }
         }
-        document.addEventListener('click', function(e) {
+        document.addEventListener('click', function (e) {
             var dropdown = document.getElementById("langDropdown");
             if (dropdown && !e.target.closest('#langDropdown') && !e.target.matches('[onclick="toggleLangDropdown()"]')) {
                 dropdown.style.display = "none";
