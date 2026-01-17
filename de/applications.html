@@ -61,22 +61,101 @@
             display: block
         }
 
-        .industry-card {
+        .industry-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            margin-bottom: 40px
+        }
+
+        .industry-card-3d {
             background: white;
             border-radius: 12px;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-            padding: 40px;
-            text-align: center;
-            transition: transform 0.3s
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            height: 100%
         }
 
-        .industry-card:hover {
-            transform: translateY(-5px)
+        .industry-card-3d:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1)
         }
 
-        .industry-icon {
-            font-size: 48px;
-            margin-bottom: 20px
+        .card-image-container {
+            position: relative;
+            height: 200px;
+            background-color: #f3f4f6;
+            overflow: hidden
+        }
+
+        .card-image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            padding: 1.5rem;
+            transition: transform 0.5s ease
+        }
+
+        .industry-card-3d:hover .card-image-container img {
+            transform: scale(1.05)
+        }
+
+        .card-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+            padding: 15px;
+            color: white
+        }
+
+        .card-title {
+            font-weight: 700;
+            font-size: 16px
+        }
+
+        .card-content {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1
+        }
+
+        .card-content p {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 15px
+        }
+
+        .card-section {
+            border-top: 1px solid #eee;
+            padding-top: 15px;
+            margin-top: auto
+        }
+
+        .card-section h4 {
+            font-size: 12px;
+            color: #333;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin: 0 0 8px 0
+        }
+
+        .card-section p {
+            font-size: 13px;
+            color: #888;
+            margin: 0 0 12px 0
+        }
+
+        @media(max-width:1024px) {
+            .industry-grid {
+                grid-template-columns: repeat(2, 1fr)
+            }
         }
 
         @media(max-width:768px) {
@@ -90,6 +169,10 @@
 
             h1 {
                 font-size: 32px !important
+            }
+
+            .industry-grid {
+                grid-template-columns: 1fr
             }
         }
     </style>
@@ -145,59 +228,205 @@
                     style="display:block;padding:10px 0;border-bottom:1px solid #eee;color:#C5A059">Branchen</a>
                 <a href="about.html" style="display:block;padding:10px 0;border-bottom:1px solid #eee">Über uns</a>
                 <a href="contact.html" style="display:block;padding:10px 0;color:#C5A059">Kontakt</a>
+            
+                <!-- Mobile Language Selector -->
+                <div style="border-top:2px solid #C5A059;margin-top:10px;padding-top:15px;">
+                    <div style="font-size:14px;font-weight:600;color:#C5A059;margin-bottom:10px;">🌐 Sprache / Language</div>
+                    <a href="../applications.html" style="display:block;padding:8px 0;color:#333;">🇺🇸 English</a>
+                    <a href="../zh/applications.html" style="display:block;padding:8px 0;color:#333;">🇹🇼 繁體中文</a>
+                    <a href="../zh-cn/applications.html" style="display:block;padding:8px 0;color:#333;">🇨🇳 简体中文</a>
+                    <a href="../de/applications.html" style="display:block;padding:8px 0;color:#C5A059;font-weight:600;">🇩🇪 Deutsch</a>
+                    <a href="../jp/applications.html" style="display:block;padding:8px 0;color:#333;">🇯🇵 日本語</a>
+                </div>
             </div>
         </div>
     </nav>
-    <header style="background:white;padding:80px 0;border-bottom:1px solid #eee">
+
+    <header style="background:white;padding:60px 0;border-bottom:1px solid #eee">
         <div class="container" style="text-align:center">
             <h1 style="font-family:'Playfair Display',serif;font-size:48px;color:#111;margin-bottom:15px">Branchen &
                 Anwendungen</h1>
-            <p style="font-size:18px;color:#666;max-width:700px;margin:0 auto">Pulvermetallurgie-Lösungen für
-                vielfältige Industriezweige</p>
+            <p style="font-size:18px;color:#666;max-width:800px;margin:0 auto;line-height:1.8">
+                Pulvermetallurgie ist ein hocheffizienter Metallumformprozess, der Präzisionskomponenten durch Erhitzen
+                von verdichtetem Metallpulver erzeugt. Es wird wegen seiner Materialeffizienz, Net-Shape-Fähigkeit und
+                Kosteneffektivität in der Großserienproduktion bevorzugt.
+            </p>
         </div>
     </header>
+
     <section style="padding:80px 0;background:#f8f9fa">
         <div class="container">
-            <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:30px">
-                <div class="industry-card">
-                    <div class="industry-icon">🚗</div>
-                    <h3 style="font-size:22px;color:#002FA7;margin-bottom:15px">Automobilindustrie</h3>
-                    <p style="color:#666;line-height:1.6">Getriebeteile, Motorkomponenten, Ölpumpenrotoren und
-                        Lenkungsteile für führende Automobilhersteller.</p>
+            <div class="industry-grid">
+                <!-- Automotive -->
+                <div class="industry-card-3d">
+                    <div class="card-image-container">
+                        <img alt="Automobil & Motorrad" src="../images/automotive_parts_v2.png" />
+                        <div class="card-overlay"><span class="card-title">Automobil & Motorrad</span></div>
+                    </div>
+                    <div class="card-content">
+                        <p>Die Automobilindustrie ist der größte Abnehmer von PM-Teilen. Mit dem Trend zu mehr
+                            Kraftstoffeffizienz und Leichtbauweise ist die PM-Technologie für die Herstellung komplexer,
+                            leistungsstarker Komponenten unerlässlich.</p>
+                        <div class="card-section">
+                            <h4>Hauptanwendungen</h4>
+                            <p>Motor-Steuerkettenräder, Ölpumpengetriebe, Getriebe-Synchronringe, Stoßdämpferkomponenten
+                                und ABS-Sensorringe.</p>
+                            <h4>Vorteile</h4>
+                            <p>Komponenten mit einzigartigen verschleißfesten Eigenschaften bei reduziertem
+                                Fahrzeuggewicht.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="industry-card">
-                    <div class="industry-icon">🏥</div>
-                    <h3 style="font-size:22px;color:#002FA7;margin-bottom:15px">Medizintechnik</h3>
-                    <p style="color:#666;line-height:1.6">Biokompatible Edelstahlkomponenten für chirurgische
-                        Instrumente und medizinische Geräte.</p>
+
+                <!-- Mechanical -->
+                <div class="industry-card-3d">
+                    <div class="card-image-container">
+                        <img alt="Mechanische Teile" src="../images/1002680619b_refined.png" />
+                        <div class="card-overlay"><span class="card-title">Mechanische Teile</span></div>
+                    </div>
+                    <div class="card-content">
+                        <p>Für allgemeine Industriemaschinen ist PM die bevorzugte Wahl für Strukturteile, die hohe
+                            Präzision und Haltbarkeit erfordern.</p>
+                        <div class="card-section">
+                            <h4>Hauptanwendungen</h4>
+                            <p>Stirn- und Schrägverzahnungen, selbstschmierende Lager, Buchsen, Kupplungen und Flansche.
+                            </p>
+                            <h4>Vorteile</h4>
+                            <p>Selbstschmierende Teile reduzieren Wartungsbedarf und Lärm in industriellen Umgebungen.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="industry-card">
-                    <div class="industry-icon">🏭</div>
-                    <h3 style="font-size:22px;color:#002FA7;margin-bottom:15px">Industrieausrüstung</h3>
-                    <p style="color:#666;line-height:1.6">Lager, Getriebe und Strukturkomponenten für Maschinen und
-                        Werkzeuge.</p>
+
+                <!-- Power Tools -->
+                <div class="industry-card-3d">
+                    <div class="card-image-container">
+                        <img alt="Elektrowerkzeuge" src="../images/power_tool_parts_v2.png" />
+                        <div class="card-overlay"><span class="card-title">Elektrowerkzeuge</span></div>
+                    </div>
+                    <div class="card-content">
+                        <p>Elektrowerkzeuge erfordern kompakte, drehmomentstarke und stoßfeste Komponenten.
+                            PM-Technologie ist ideal für die komplexen internen Antriebssysteme.</p>
+                        <div class="card-section">
+                            <h4>Hauptanwendungen</h4>
+                            <p>Planetengetriebesysteme, Schlagblöcke, Bohrfutterkomponenten und Getriebe.</p>
+                            <h4>Vorteile</h4>
+                            <p>Hervorragende Maßkonsistenz und hohe Ermüdungsfestigkeit für professionelle Werkzeuge.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="industry-card">
-                    <div class="industry-icon">🤖</div>
-                    <h3 style="font-size:22px;color:#002FA7;margin-bottom:15px">Robotik & Automatisierung</h3>
-                    <p style="color:#666;line-height:1.6">Präzisionszahnräder und Antriebskomponenten für Roboterarme
-                        und Automatisierungssysteme.</p>
+
+                <!-- Hardware & Electronics -->
+                <div class="industry-card-3d">
+                    <div class="card-image-container">
+                        <img alt="Hardware & Elektronik" src="../images/hardware_parts_v2.png" />
+                        <div class="card-overlay"><span class="card-title">Hardware & Elektronik</span></div>
+                    </div>
+                    <div class="card-content">
+                        <p>In der schnelllebigen Welt der Unterhaltungselektronik werden Teile immer kleiner und
+                            ästhetisch anspruchsvoller. PM und MIM bieten die erforderliche Präzision.</p>
+                        <div class="card-section">
+                            <h4>Hauptanwendungen</h4>
+                            <p>Smartphone-Scharniermechanismen, Wearable-Geräterahmen, Glasfaseranschlüsse,
+                                Smart-Lock-Komponenten.</p>
+                            <h4>Vorteile</h4>
+                            <p>Verarbeitung harter Materialien wie Edelstahl mit überlegenen Oberflächen.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="industry-card">
-                    <div class="industry-icon">💻</div>
-                    <h3 style="font-size:22px;color:#002FA7;margin-bottom:15px">Elektronik & IT</h3>
-                    <p style="color:#666;line-height:1.6">Kleine Präzisionsteile für Computer, Drucker und elektronische
-                        Geräte.</p>
+
+                <!-- Green Energy & EV -->
+                <div class="industry-card-3d">
+                    <div class="card-image-container">
+                        <img alt="Grüne Energie & EV" src="../images/InnerandOuterRotor_optimized.png" />
+                        <div class="card-overlay"><span class="card-title">Grüne Energie & EV</span></div>
+                    </div>
+                    <div class="card-content">
+                        <p>Hocheffiziente magnetische Teile und Strukturkomponenten für Elektrofahrzeuge und erneuerbare
+                            Energiesysteme.</p>
+                        <div class="card-section">
+                            <h4>Hauptanwendungen</h4>
+                            <p>EV-Motorkerne, Windturbinengetriebe, Solartracker-Komponenten, magnetische Kupplungen.
+                            </p>
+                            <h4>Vorteile</h4>
+                            <p>Unterstützt den Übergang zu sauberer Energie mit optimierten magnetischen Materialien.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="industry-card">
-                    <div class="industry-icon">✈️</div>
-                    <h3 style="font-size:22px;color:#002FA7;margin-bottom:15px">Luft- & Raumfahrt</h3>
-                    <p style="color:#666;line-height:1.6">Hochleistungskomponenten aus Speziallegierungen für kritische
-                        Anwendungen.</p>
+
+                <!-- Medical -->
+                <div class="industry-card-3d">
+                    <div class="card-image-container">
+                        <img alt="Medizintechnik" src="../images/medical_parts_v2.png" />
+                        <div class="card-overlay"><span class="card-title">Medizintechnik</span></div>
+                    </div>
+                    <div class="card-content">
+                        <p>Biokompatible, hochpräzise Edelstahlteile für chirurgische Instrumente und medizinische
+                            Robotik.</p>
+                        <div class="card-section">
+                            <h4>Hauptanwendungen</h4>
+                            <p>Chirurgische Klammergeräte, laparoskopische Greifer, Dentalimplantat-Werkzeuge.</p>
+                            <h4>Vorteile</h4>
+                            <p>MIM ermöglicht Massenproduktion komplexer, sterilisierbarer Edelstahlinstrumente.</p>
+                        </div>
+                    </div>
                 </div>
+
+                <!-- Industrial -->
+                <div class="industry-card-3d">
+                    <div class="card-image-container">
+                        <img alt="Industriemaschinen" src="../images/industrial_parts_v2.png" />
+                        <div class="card-overlay"><span class="card-title">Industriemaschinen</span></div>
+                    </div>
+                    <div class="card-content">
+                        <p>Verschleißfeste Zahnräder, Buchsen und Nocken für schwere industrielle
+                            Automatisierungsanlagen.</p>
+                        <div class="card-section">
+                            <h4>Hauptanwendungen</h4>
+                            <p>Fördersystemgetriebe, Hydraulikpumpenteile, Textilmaschinenkomponenten.</p>
+                            <h4>Vorteile</h4>
+                            <p>Überlegene Verschleißfestigkeit und Tragfähigkeit für Dauerbetrieb.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lock & Security -->
+                <div class="industry-card-3d">
+                    <div class="card-image-container">
+                        <img alt="Schloss & Sicherheit" src="../images/lock_parts_v2.png" />
+                        <div class="card-overlay"><span class="card-title">Schloss & Sicherheit</span></div>
+                    </div>
+                    <div class="card-content">
+                        <p>Komplexe Net-Shape-Schließzylinder, Riegel und Sicherheitskomponenten mit hohen
+                            Sicherheitsstandards.</p>
+                        <div class="card-section">
+                            <h4>Hauptanwendungen</h4>
+                            <p>Hochsicherheits-Schließzylinder, Riegelschlösser, Vorhängeschlossgehäuse, elektronische
+                                Schlossgetriebe.</p>
+                            <h4>Vorteile</h4>
+                            <p>Net-Shape-Fertigung verhindert Manipulationsschwachstellen und gewährleistet Präzision.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Summary -->
+            <div
+                style="background:#fff;border-radius:12px;padding:40px;margin-top:40px;box-shadow:0 4px 20px rgba(0,0,0,0.05);text-align:center;max-width:900px;margin-left:auto;margin-right:auto">
+                <h3 style="font-family:'Playfair Display',serif;font-size:28px;color:#002FA7;margin-bottom:20px">
+                    Zusammenfassung</h3>
+                <p style="color:#555;line-height:1.8;font-size:16px">
+                    Pulvermetallurgie ist nicht mehr nur eine kostensparende Alternative; sie ist eine primäre
+                    Designlösung für moderne Technik. Ob es die Haltbarkeit für einen Motor oder die Mikropräzision für
+                    ein Smartphone-Scharnier ist – PM bietet einen vielseitigen und nachhaltigen Fertigungsweg.
+                </p>
             </div>
         </div>
     </section>
+
     <section style="padding:80px 0;background:#111;color:white;text-align:center">
         <div class="container">
             <h2 style="font-family:'Playfair Display',serif;font-size:36px;margin-bottom:20px">Brauchen Sie
@@ -208,6 +437,7 @@
                 Sie uns</a>
         </div>
     </section>
+
     <footer style="background:#002FA7;color:white;padding:60px 0 30px">
         <div class="container" style="text-align:center">
             <h3 style="color:#C5A059;margin-bottom:15px">Yeh Sheng Powder Parts Ind. Co. Ltd.</h3>
@@ -216,6 +446,7 @@
             <p style="color:#667;font-size:13px">© 2024 Yeh Sheng Powder Parts. Alle Rechte vorbehalten.</p>
         </div>
     </footer>
+
     <script>
         function toggleLangMenu() { var m = document.getElementById("langMenu"); m.style.display = (m.style.display === "none" || m.style.display === "") ? "block" : "none" }
         document.addEventListener('click', function (e) { var m = document.getElementById("langMenu"); if (!e.target.closest('#langMenu') && !e.target.matches('[onclick="toggleLangMenu()"]')) { if (m) m.style.display = "none" } });
