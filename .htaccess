@@ -8,6 +8,10 @@ RedirectPermanent /gears /products.html
 RedirectPermanent /news /resources.html
 RedirectPermanent /about-us /about.html
 
+# Redirect index.html to root for canonical consistency (Fix duplicate content)
+RewriteCond %{THE_REQUEST} /index\.html [NC]
+RewriteRule ^(.*)index\.html$ /$1 [R=301,L]
+
 # Custom 404 Error Page
 ErrorDocument 404 /404.html
 
