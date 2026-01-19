@@ -1,3 +1,13 @@
+# 301 Redirects for old/broken URLs (Fix Google Search Console 404 errors)
+RewriteEngine On
+
+# Redirect old product/service URLs to appropriate pages
+RedirectPermanent /powder-metal-parts /capabilities.html
+RedirectPermanent /sintered-brake-pad /applications.html
+RedirectPermanent /gears /products.html
+RedirectPermanent /news /resources.html
+RedirectPermanent /about-us /about.html
+
 # Custom 404 Error Page
 ErrorDocument 404 /404.html
 
