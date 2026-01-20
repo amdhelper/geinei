@@ -1,4 +1,44 @@
+# Yeh Sheng Powder Parts - robots.txt
+# https://yehsheng.com
+
 User-agent: *
 Allow: /
+Disallow: /private/
+Disallow: /*.py$
 
+# Google
+User-agent: Googlebot
+Allow: /
+
+# Bing
+User-agent: Bingbot
+Allow: /
+
+# OpenAI GPT
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Anthropic Claude
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+# Google Gemini
+User-agent: Google-Extended
+Allow: /
+
+# Common Crawl (used by many AI models)
+User-agent: CCBot
+Allow: /
+
+# Sitemap
 Sitemap: https://yehsheng.com/sitemap.xml
