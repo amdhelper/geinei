@@ -4,23 +4,28 @@
 <head>
     <meta name="google-site-verification" content="YUhT_jRF5sxYfCWMMcB08B38K6MB2yAEv4wEo1fjdXg" />
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XS5ZTZGF2Y"></script>
-    <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments) } gtag('js', new Date()); gtag('config', 'G-XS5ZTZGF2Y');</script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-XS5ZTZGF2Y');
+    </script>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>リソースセンター - Yeh Sheng Powder Parts</title>
-    <meta content="粉末冶金に関する技術リソースと情報。" name="description" />
+    <title>技術リソース - Yeh Sheng Powder Parts Ind. Co. Ltd.</title>
+    <meta content="粉末冶金（PM）の技術リソース。PM強度、コスト、材料に関するFAQ、焼結、グリーン強度、MIMなどの業界用語集をご覧ください。" name="description" />
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Noto+Sans+JP:wght@400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap"
         rel="stylesheet" />
     <style>
         body {
-            font-family: 'Noto Sans JP', sans-serif;
             margin: 0;
             padding: 0;
-            background: #fcfcfc;
-            color: #333
+            font-family: 'Noto Sans JP', sans-serif;
+            color: #333;
+            background: #fcfcfc
         }
 
         a {
@@ -29,19 +34,79 @@
         }
 
         .container {
-            max-width: 1200px;
+            max-width: 1400px;
             margin: 0 auto;
             padding: 0 20px
         }
 
-        .hidden-mobile {
-            display: block
+        .faq-item {
+            background: white;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+            border-left: 4px solid #002FA7
+        }
+
+        .faq-question {
+            font-family: 'Playfair Display', serif;
+            font-size: 20px;
+            font-weight: 700;
+            color: #002FA7;
+            margin-bottom: 15px
+        }
+
+        .faq-answer {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.8
+        }
+
+        .term-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            border-radius: 8px;
+            overflow: hidden
+        }
+
+        .term-table th {
+            background: #002FA7;
+            color: white;
+            padding: 15px 20px;
+            text-align: left;
+            font-family: 'Playfair Display', serif;
+            font-size: 18px
+        }
+
+        .term-table td {
+            padding: 15px 20px;
+            border-bottom: 1px solid #eee;
+            font-size: 15px;
+            line-height: 1.6;
+            color: #555
+        }
+
+        .term-table tr:last-child td {
+            border-bottom: none
+        }
+
+        .term-table tr:hover {
+            background: #f8f9fa
+        }
+
+        .term-name {
+            font-weight: 600;
+            color: #333;
+            white-space: nowrap
         }
 
         .mobile-menu-btn {
             display: none;
             cursor: pointer;
-            font-size: 24px
+            font-size: 24px;
+            color: #333
         }
 
         .mobile-menu {
@@ -53,19 +118,13 @@
             background: white;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
             padding: 20px;
+            flex-direction: column;
+            gap: 15px;
             z-index: 99
         }
 
         .mobile-menu.active {
-            display: block
-        }
-
-        .resource-card {
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-            padding: 30px;
-            border-top: 4px solid #C5A059
+            display: flex
         }
 
         @media(max-width:768px) {
@@ -78,12 +137,29 @@
             }
 
             h1 {
-                font-size: 32px !important
+                font-size: 36px !important
+            }
+
+            h2 {
+                font-size: 28px !important
+            }
+
+            section {
+                padding: 60px 0 !important
+            }
+
+            .term-table th,
+            .term-table td {
+                padding: 10px;
+                font-size: 14px
+            }
+
+            .term-name {
+                white-space: normal
             }
         }
     </style>
     <link href="https://yehsheng.com/jp/resources.html" rel="canonical" />
-    <!-- hreflang tags for multilingual SEO -->
     <link rel="alternate" hreflang="en" href="https://yehsheng.com/resources.html" />
     <link rel="alternate" hreflang="zh-Hant" href="https://yehsheng.com/zh/resources.html" />
     <link rel="alternate" hreflang="zh-Hans" href="https://yehsheng.com/zh-cn/resources.html" />
@@ -91,61 +167,24 @@
     <link rel="alternate" hreflang="ja" href="https://yehsheng.com/jp/resources.html" />
     <link rel="alternate" hreflang="x-default" href="https://yehsheng.com/resources.html" />
     <link rel="icon" href="../images/logo.png" type="image/png">
-    <!-- FAQPage Schema.org Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",
       "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Powder Metallurgy零件的強度是否足以應對高負載應用？",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "絕對可以。雖然PM零件有固有的微孔隙，但其強度可以通過調整合金成分、增加壓製密度或使用二次鍛造來達到或超過鑄鐵甚至鍛鋼的水平。PM零件現已廣泛用於汽車引擎、變速箱齒輪和連桿等高應力環境。"
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Powder Metallurgy和CNC加工哪個更具成本效益？",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "這取決於生產量。CNC加工適合小批量原型製作，因為不需要昂貴的模具。然而，對於大規模生產（通常5,000件以上），Powder Metallurgy明顯更便宜。PM通過近淨成形減少材料浪費，並消除傳統切削的勞動密集步驟來降低成本。"
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "PM製程可以使用哪些材料？",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "PM非常靈活，幾乎可以加工所有金屬，包括：鐵基合金（鐵和鋼）、非鐵金屬（銅、鋁和黃銅）、難熔金屬（鎢和鉬）、以及航太和醫療用途的特殊材料（不鏽鋼和超合金）。"
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "為什麼Powder Metallurgy被認為是「綠色」技術？",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "PM是最環保的製造方法之一。其材料利用率超過95%，幾乎不產生廢金屬。此外，由於燒結過程在熔點以下進行，通常比傳統的熔化和鑄造操作需要更少的能源。"
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Powder Metallurgy中的「自潤滑」軸承如何工作？",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "這是PM的獨特優勢。由於零件天然多孔，可以真空浸漬油。當軸承在運行中發熱時，油會膨脹並流到表面。冷卻後，油會通過毛細作用重新被吸收到孔隙中。這使它們非常適合「免維護」應用。"
-          }
-        }
+        {"@type": "Question", "name": "粉末冶金部品の強度は高負荷用途に十分ですか？", "acceptedAnswer": {"@type": "Answer", "text": "はい、十分です。PM部品には固有の微小気孔がありますが、合金組成の調整、圧縮密度の増加、二次鍛造の使用により、鋳鉄や鍛造鋼に匹敵または超える強度に設計できます。PM部品は現在、自動車エンジン、トランスミッションギア、コネクティングロッドなどの高応力環境で広く使用されています。"}},
+        {"@type": "Question", "name": "粉末冶金とCNC加工、どちらがコスト効率が良いですか？", "acceptedAnswer": {"@type": "Answer", "text": "生産量によって異なります。CNC加工は高価な金型が不要なため、少量試作に適しています。しかし、大量生産（通常5,000個以上）では、粉末冶金の方が大幅にコスト効率が良くなります。PMは材料廃棄を最小限に抑え（ニアネットシェイプ）、従来の切削加工の労働集約的な工程を排除することでコストを削減します。"}},
+        {"@type": "Question", "name": "PMプロセスではどのような材料が使用できますか？", "acceptedAnswer": {"@type": "Answer", "text": "PMは非常に汎用性が高く、ほぼすべての金属を加工できます：鉄系合金（鉄と鋼）、非鉄金属（銅、アルミニウム、真鍮）、耐火金属（タングステンとモリブデン）、航空宇宙・医療用特殊材料（ステンレス鋼とスーパーアロイ）。"}},
+        {"@type": "Question", "name": "なぜ粉末冶金は「グリーン」技術と考えられていますか？", "acceptedAnswer": {"@type": "Answer", "text": "PMは最も持続可能な製造方法の一つです。材料利用率は95%以上で、金属スクラップがほとんど発生しません。また、焼結プロセスは融点以下で行われるため、従来の溶融・鋳造作業よりも少ないエネルギーで済むことが多いです。"}},
+        {"@type": "Question", "name": "粉末冶金の「自己潤滑」軸受はどのように機能しますか？", "acceptedAnswer": {"@type": "Answer", "text": "これはPMの独自の利点です。部品は自然に多孔質であるため、真空含浸でオイルを染み込ませることができます。軸受が運転中に加熱されると、オイルが膨張して表面に流れ出します。冷却すると、毛細管作用によりオイルが気孔に再吸収されます。「メンテナンスフリー」用途に最適です。"}}
       ]
     }
     </script>
-
 </head>
 
 <body>
     <div class="hidden-mobile" style="background:#002FA7;color:white;padding:10px 0;position:relative;z-index:200">
-        <div class="container" style="display:flex;justify-content:flex-end;gap:25px;font-size:13px">
+        <div class="container" style="display:flex;justify-content:flex-end;gap:25px;font-size:13px;font-weight:500">
             <a href="about.html" style="color:#ddd">会社概要</a>
             <a href="contact.html" style="color:#ddd">お問い合わせ</a>
             <div style="position:relative;display:inline-block">
@@ -175,25 +214,28 @@
                         Parts</span><span style="font-size:10px;font-weight:600;color:#C5A059">粉末冶金エキスパート</span></div>
             </a>
             <div class="hidden-mobile" style="display:flex;gap:35px;align-items:center">
-                <a href="products.html" style="font-size:15px;color:#333">製品紹介</a>
-                <a href="solutions.html" style="font-size:15px;color:#333">サービス</a>
-                <a href="capabilities.html" style="font-size:15px;color:#333">製造能力</a>
-                <a href="resources.html" style="font-size:15px;color:#C5A059;font-weight:700">リソース</a>
+                <a href="products.html" style="font-size:15px;font-weight:500;color:#333">製品紹介</a>
+                <a href="solutions.html" style="font-size:15px;font-weight:500;color:#333">サービス</a>
+                <a href="capabilities.html" style="font-size:15px;font-weight:500;color:#333">製造能力</a>
+                <a href="applications.html" style="font-size:15px;font-weight:500;color:#333">産業分野</a>
+                <a href="resources.html" style="font-size:15px;font-weight:700;color:#C5A059">リソース</a>
                 <a href="contact.html"
-                    style="background:#C5A059;color:white;padding:8px 20px;border-radius:4px">お問い合わせ</a>
+                    style="background:#C5A059;color:white;padding:8px 20px;border-radius:4px;font-size:14px;font-weight:500">お問い合わせ</a>
             </div>
-            <div class="mobile-menu-btn" onclick="document.getElementById('mobileMenu').classList.toggle('active')">☰
-            </div>
+            <div class="mobile-menu-btn" onclick="toggleMenu()">☰</div>
             <div class="mobile-menu" id="mobileMenu">
-                <a href="products.html" style="display:block;padding:10px 0;border-bottom:1px solid #eee">製品紹介</a>
+                <div onclick="toggleMenu()"
+                    style="text-align:right;padding:5px 0 15px;cursor:pointer;font-size:24px;color:#333;">✕</div>
+                <a href="products.html" style="padding:10px 0;border-bottom:1px solid #eee">製品紹介</a>
+                <a href="solutions.html" style="padding:10px 0;border-bottom:1px solid #eee">サービス</a>
+                <a href="capabilities.html" style="padding:10px 0;border-bottom:1px solid #eee">製造能力</a>
+                <a href="applications.html" style="padding:10px 0;border-bottom:1px solid #eee">産業分野</a>
                 <a href="resources.html"
-                    style="display:block;padding:10px 0;border-bottom:1px solid #eee;color:#C5A059">リソース</a>
-                <a href="about.html" style="display:block;padding:10px 0;border-bottom:1px solid #eee">会社概要</a>
-                <a href="contact.html" style="display:block;padding:10px 0;color:#C5A059">お問い合わせ</a>
-
-                <!-- Mobile Language Selector -->
+                    style="padding:10px 0;border-bottom:1px solid #eee;color:#C5A059;font-weight:700">リソース</a>
+                <a href="about.html" style="padding:10px 0;border-bottom:1px solid #eee">会社概要</a>
+                <a href="contact.html" style="padding:10px 0;color:#C5A059">お問い合わせ</a>
                 <div style="border-top:2px solid #C5A059;margin-top:10px;padding-top:15px;">
-                    <div style="font-size:14px;font-weight:600;color:#C5A059;margin-bottom:10px;">🌐 言語 / Language</div>
+                    <div style="font-size:14px;font-weight:600;color:#C5A059;margin-bottom:10px;">🌐 言語</div>
                     <a href="../resources.html" style="display:block;padding:8px 0;color:#333;">🇺🇸 English</a>
                     <a href="../zh/resources.html" style="display:block;padding:8px 0;color:#333;">🇹🇼 繁體中文</a>
                     <a href="../zh-cn/resources.html" style="display:block;padding:8px 0;color:#333;">🇨🇳 简体中文</a>
@@ -204,94 +246,386 @@
             </div>
         </div>
     </nav>
-    <header style="background:white;padding:80px 0;border-bottom:1px solid #eee">
-        <div class="container" style="text-align:center">
-            <h1 style="font-family:'Playfair Display',serif;font-size:48px;color:#111;margin-bottom:15px">リソースセンター</h1>
-            <p style="font-size:18px;color:#666;max-width:700px;margin:0 auto">粉末冶金に関する技術情報と知識</p>
-        </div>
-    </header>
-    <section style="padding:80px 0;background:#f8f9fa">
-        <div class="container">
-            <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(350px,1fr));gap:30px">
-                <div class="resource-card">
-                    <h3 style="font-size:22px;color:#002FA7;margin-bottom:15px">粉末冶金とは？</h3>
-                    <p style="color:#666;line-height:1.6">PMプロセス、その利点、典型的なアプリケーションの紹介。金属粉末が精密部品にどのように成形されるかを学びましょう。</p>
-                </div>
-                <div class="resource-card">
-                    <h3 style="font-size:22px;color:#002FA7;margin-bottom:15px">材料選択ガイド</h3>
-                    <p style="color:#666;line-height:1.6">さまざまなPM材料の比較：鉄系、ステンレス鋼、青銅、特殊合金。用途別の推奨事項。</p>
-                </div>
-                <div class="resource-card">
-                    <h3 style="font-size:22px;color:#002FA7;margin-bottom:15px">設計ガイドライン</h3>
-                    <p style="color:#666;line-height:1.6">PM対応設計のベストプラクティス：肉厚、アンダーカット、公差、後処理オプション。</p>
-                </div>
-                <div class="resource-card">
-                    <h3 style="font-size:22px;color:#002FA7;margin-bottom:15px">品質基準</h3>
-                    <p style="color:#666;line-height:1.6">ISO 9001:2015認証、MPIF規格、自動車・医療分野向けの業界固有要件。</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- 材料仕様 -->
     <section style="padding:80px 0;background:white">
         <div class="container">
-            <h2
-                style="font-family:'Playfair Display',serif;font-size:32px;color:#111;margin-bottom:15px;text-align:center">
-                材料仕様ガイド</h2>
-            <p style="color:#666;text-align:center;max-width:800px;margin:0 auto 40px">
-                当社は国際規格に準拠しています：<strong>MPIF Standard 35</strong>（米国）、<strong>JIS Z 2550</strong>（日本）、<strong>DIN
-                    30910</strong>（ドイツ）。
-            </p>
-
-            <div
-                style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px;margin-bottom:40px">
-                <div style="background:#f8f9fa;padding:25px;border-radius:8px;border-top:3px solid #002FA7">
-                    <h4 style="color:#002FA7;margin-bottom:10px">1. 鉄銅炭素鋼</h4>
-                    <p style="font-size:14px;color:#555;margin-bottom:15px"><strong>FC-0205、FC-0208、FN-0205</strong></p>
-                    <p style="font-size:13px;color:#666;line-height:1.6">歯車、スプロケット、構造部品向け。高強度と耐摩耗性。</p>
+            <div style="text-align:center;margin-bottom:60px">
+                <h1
+                    style="font-family:'Playfair Display',serif;font-size:42px;font-weight:700;color:#111;margin-bottom:20px">
+                    技術リソース</h1>
+                <h2
+                    style="font-family:'Playfair Display',serif;font-size:32px;font-weight:700;color:#555;margin-bottom:20px">
+                    ナレッジベース & FAQ</h2>
+                <div style="width:80px;height:4px;background:#C5A059;margin:0 auto 30px"></div>
+                <p style="font-size:18px;color:#666;max-width:800px;margin:0 auto;line-height:1.6">
+                    粉末冶金に関するよくある質問と、業界用語の包括的な用語集をご覧ください。</p>
+            </div>
+            <!-- FAQ Section -->
+            <div style="max-width:1000px;margin:0 auto 80px">
+                <h3
+                    style="font-family:'Playfair Display',serif;font-size:28px;font-weight:700;color:#333;margin-bottom:30px;border-bottom:2px solid #eee;padding-bottom:10px">
+                    よくある質問（FAQ）</h3>
+                <div class="faq-item">
+                    <div class="faq-question">Q1：粉末冶金部品の強度は高負荷用途に十分ですか？</div>
+                    <div class="faq-answer">
+                        はい、十分です。PM部品には固有の微小気孔がありますが、合金組成の調整、圧縮密度の増加、二次鍛造の使用により、鋳鉄や鍛造鋼に匹敵または超える強度に設計できます。PM部品は現在、自動車エンジン、トランスミッションギア、コネクティングロッドなどの高応力環境で広く使用されています。
+                    </div>
                 </div>
-                <div style="background:#f8f9fa;padding:25px;border-radius:8px;border-top:3px solid #002FA7">
-                    <h4 style="color:#002FA7;margin-bottom:10px">2. ステンレス鋼</h4>
-                    <p style="font-size:14px;color:#555;margin-bottom:15px"><strong>SS-316、SS-304、SS-410</strong></p>
-                    <p style="font-size:13px;color:#666;line-height:1.6">食品機械、医療機器、海洋用途向け。耐食性に優れています。</p>
+                <div class="faq-item">
+                    <div class="faq-question">Q2：粉末冶金とCNC加工、どちらがコスト効率が良いですか？</div>
+                    <div class="faq-answer">
+                        生産量によって異なります。CNC加工は高価な金型が不要なため、少量試作に適しています。しかし、大量生産（通常5,000個以上）では、粉末冶金の方が大幅にコスト効率が良くなります。PMは材料廃棄を最小限に抑え（ニアネットシェイプ）、従来の切削加工の労働集約的な工程を排除することでコストを削減します。
+                    </div>
                 </div>
-                <div style="background:#f8f9fa;padding:25px;border-radius:8px;border-top:3px solid #002FA7">
-                    <h4 style="color:#002FA7;margin-bottom:10px">3. 軟磁性材料</h4>
-                    <p style="font-size:14px;color:#555;margin-bottom:15px"><strong>F-0000、FY-4500、Fe-Si</strong></p>
-                    <p style="font-size:13px;color:#666;line-height:1.6">モーターケース、ポールピース、ソレノイド向け。高透磁率。</p>
+                <div class="faq-item">
+                    <div class="faq-question">Q3：PMプロセスではどのような材料が使用できますか？</div>
+                    <div class="faq-answer">PMは非常に汎用性が高く、ほぼすべての金属を加工できます：
+                        <ul style="margin-top:10px;padding-left:20px">
+                            <li><strong>鉄系合金：</strong>鉄と鋼（最も一般的）。</li>
+                            <li><strong>非鉄金属：</strong>銅、アルミニウム、真鍮。</li>
+                            <li><strong>耐火金属：</strong>タングステンとモリブデン（溶融が困難）。</li>
+                            <li><strong>特殊材料：</strong>航空宇宙・医療用ステンレス鋼とスーパーアロイ。</li>
+                        </ul>
+                    </div>
                 </div>
-                <div style="background:#f8f9fa;padding:25px;border-radius:8px;border-top:3px solid #002FA7">
-                    <h4 style="color:#002FA7;margin-bottom:10px">4. 青銅・黄銅</h4>
-                    <p style="font-size:14px;color:#555;margin-bottom:15px"><strong>CT-1000、CZ-1000</strong></p>
-                    <p style="font-size:13px;color:#666;line-height:1.6">自己潤滑軸受、装飾金具向け。自己潤滑性。</p>
+                <div class="faq-item">
+                    <div class="faq-question">Q4：なぜ粉末冶金は「グリーン」技術と考えられていますか？</div>
+                    <div class="faq-answer">
+                        PMは最も持続可能な製造方法の一つです。材料利用率は95%以上で、金属スクラップがほとんど発生しません。また、焼結プロセスは融点以下で行われるため、従来の溶融・鋳造作業よりも少ないエネルギーで済むことが多いです。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Q5：粉末冶金の「自己潤滑」軸受はどのように機能しますか？</div>
+                    <div class="faq-answer">
+                        これはPMの独自の利点です。部品は自然に多孔質であるため、真空含浸でオイルを染み込ませることができます。軸受が運転中に加熱されると、オイルが膨張して表面に流れ出します。冷却すると、毛細管作用によりオイルが気孔に再吸収されます—「メンテナンスフリー」用途に最適です。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Q6：従来のPMと金属射出成形（MIM）の違いは何ですか？</div>
+                    <div class="faq-answer">どちらも金属粉末を使用します：
+                        <ul style="margin-top:10px;padding-left:20px">
+                            <li><strong>従来のPM</strong>は「錠剤を圧縮する」ようなもので、大きくシンプルな形状に最適です。</li>
+                            <li><strong>MIM</strong>は粉末をプラスチックバインダーと混合し、金型に「射出」します。スマートフォンや手術器具などの極めて小さく複雑な部品向けです。</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Q7：PM部品はめっきや溶接ができますか？</div>
+                    <div class="faq-answer">
+                        はい、ただし準備が必要です。多孔質性のため、PM部品はめっき前に蒸気処理や樹脂シールを行い、化学薬品が気孔に入り込むのを防ぎます。溶接には、熱影響部を最小限にするためレーザー溶接が推奨されます。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Q8：PM部品の設計上の制限は何ですか？</div>
+                    <div class="faq-answer">エンジニアは金型からの離型を妨げる特徴を避けるべきです：
+                        <ul style="margin-top:10px;padding-left:20px">
+                            <li><strong>側面アンダーカット：</strong>側面の穴や溝は後加工が必要です。</li>
+                            <li><strong>肉厚：</strong>粉末の均一な流れを確保するため、一般的に1.5mm以上が必要です。</li>
+                            <li><strong>鋭角：</strong>工具寿命の延長と強度向上のため、丸みを帯びたエッジ（フィレット）が推奨されます。</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
+            <!-- Glossary Section -->
+            <div style="max-width:1000px;margin:0 auto">
+                <h3
+                    style="font-family:'Playfair Display',serif;font-size:28px;font-weight:700;color:#333;margin-bottom:30px;border-bottom:2px solid #eee;padding-bottom:10px">
+                    粉末冶金用語集</h3>
+                <div style="overflow-x:auto">
+                    <table class="term-table">
+                        <thead>
+                            <tr>
+                                <th style="width:25%">用語</th>
+                                <th>定義</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="term-name">ジェロータ</td>
+                                <td>「Generated
+                                    Rotor」の略。内ローターと外ローターで構成される容積式ポンプユニット。PMはオイルポンプ用のこれらの複雑なトロコイド形状を製造する最も効率的な方法です。</td>
+                            </tr>
+                            <tr>
+                                <td class="term-name">グリーン強度</td>
+                                <td>焼結前の圧粉体の機械的強度。炉への搬送中に破損しないよう十分な強度が必要です。</td>
+                            </tr>
+                            <tr>
+                                <td class="term-name">焼結密度</td>
+                                <td>焼結後の部品の単位体積あたりの質量。最終的な機械的特性の主要指標です。</td>
+                            </tr>
+                            <tr>
+                                <td class="term-name">拡散接合</td>
+                                <td>熱により原子が粒子境界を越えて移動し、金属粒子を固体に融合させるプロセス。</td>
+                            </tr>
+                            <tr>
+                                <td class="term-name">ニアネットシェイプ</td>
+                                <td>初期部品を最終形状に非常に近い状態で製造し、二次加工の必要性を減らす製造技術。</td>
+                            </tr>
+                            <tr>
+                                <td class="term-name">含油処理</td>
+                                <td>焼結部品の連通気孔に潤滑剤を充填するプロセス。自己潤滑軸受の製造に使用されます。</td>
+                            </tr>
+                            <tr>
+                                <td class="term-name">金属射出成形（MIM）</td>
+                                <td>微細な金属粉末をバインダーと混合し、金型に「射出」するプロセス。小型で非常に複雑な3D形状に最適です。</td>
+                            </tr>
+                            <tr>
+                                <td class="term-name">蒸気処理</td>
+                                <td>表面に黒色酸化鉄（Fe3O4）層を形成し、耐摩耗性を向上させ、装飾的な仕上げを提供するプロセス。</td>
+                            </tr>
+                            <tr>
+                                <td class="term-name">溶浸</td>
+                                <td>焼結部品の気孔を低融点金属（例：鉄部品への銅）で充填し、強度と密度を向上させること。</td>
+                            </tr>
+                            <tr>
+                                <td class="term-name">気孔率</td>
+                                <td>総体積に対する気孔（空隙）の体積の割合。「開放」（連通）または「閉鎖」（孤立）があります。</td>
+                            </tr>
+                            <tr>
+                                <td class="term-name">脱バインダー</td>
+                                <td>最終焼結前にポリマーまたはワックスバインダーを除去する重要なステップ（特にMIMで）。</td>
+                            </tr>
+                            <tr>
+                                <td class="term-name">還元粉末</td>
+                                <td>酸化物の化学還元によって製造される金属粉末。これらの粒子は通常スポンジ状で不規則な形状で、良好なグリーン強度を提供します。</td>
+                            </tr>
+                            <tr>
+                                <td class="term-name">サイジング/コイニング</td>
+                                <td>焼結部品の寸法精度を向上させたり、表面密度を増加させるための二次プレス操作。</td>
+                            </tr>
+                            <tr>
+                                <td class="term-name">偏析</td>
+                                <td>サイズや密度の違いにより、混合または供給中に異なる粉末粒子が分離する望ましくない効果。</td>
+                            </tr>
+                            <tr>
+                                <td class="term-name">球状粉末</td>
+                                <td>ガスアトマイズによって製造される完全に丸い粉末粒子。3DプリンティングやMIM向けの優れた流動性を提供します。</td>
+                            </tr>
+                            <tr>
+                                <td class="term-name">等方圧プレス</td>
+                                <td>流体（水またはガス）を使用してあらゆる方向から圧力をかけ、大型または複雑な形状で均一な密度を達成します。</td>
+                            </tr>
+                            <tr>
+                                <td class="term-name">見掛け密度</td>
+                                <td>ルーズな粉末の単位体積あたりの重量。プレス段階での金型の「充填深さ」を決定するために重要です。</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- Material Specifications -->
+            <div style="max-width:1200px;margin:80px auto 0">
+                <h3
+                    style="font-family:'Playfair Display',serif;font-size:28px;font-weight:700;color:#333;margin-bottom:15px;border-bottom:2px solid #eee;padding-bottom:10px">
+                    材料仕様 & 選定ガイド</h3>
+                <p style="font-size:16px;color:#555;line-height:1.8;margin-bottom:30px">当社は国際規格に準拠しています：<strong>MPIF
+                        Standard 35</strong>（米国）、<strong>JIS Z 2550</strong>（日本）、<strong>DIN 30910</strong>（ドイツ）。</p>
+                <p
+                    style="font-size:14px;color:#888;background:#f8f9fa;padding:15px;border-radius:6px;margin-bottom:40px">
+                    <strong>お客様へのご案内：</strong>以下の値は典型的な参考値です。お客様の具体的な用途要件に合わせて材料密度と組成をカスタマイズできます。</p>
 
-            <div style="background:#f0f4f8;padding:20px;border-radius:8px;border-left:4px solid #002FA7">
-                <p style="font-size:13px;color:#555;margin:0">
-                    <strong>🛡️
-                        ご注意：</strong>材料記号は公開業界規格（MPIF、JIS、DIN）に基づいています。数値は参考値です。詳細な仕様については当社エンジニアリングチームにお問い合わせください。
+                <h4
+                    style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:#002FA7;margin-bottom:10px">
+                    1. 鉄銅炭素鋼（構造部品）</h4>
+                <p style="font-size:15px;color:#555;margin-bottom:20px">
+                    <strong>最適用途：</strong>ギア、スプロケット、カム、高強度・耐摩耗性が必要な構造部品。<br><strong>一般的な応用：</strong>自動車トランスミッション、電動工具、産業機械。
                 </p>
+                <div style="overflow-x:auto;margin-bottom:40px">
+                    <table class="term-table">
+                        <thead>
+                            <tr>
+                                <th>材料コード（MPIF）</th>
+                                <th>JIS相当</th>
+                                <th>組成（公称）</th>
+                                <th>密度（g/cm³）</th>
+                                <th>典型的硬度</th>
+                                <th>主な特性</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="term-name">FC-0205</td>
+                                <td>SMF 4030</td>
+                                <td>Fe + 1.5-3.9% Cu + 0.3-0.6% C</td>
+                                <td>6.4 - 6.8</td>
+                                <td>HRB 60-80</td>
+                                <td>強度と精度のバランス。一般構造部品の標準。</td>
+                            </tr>
+                            <tr>
+                                <td class="term-name">FC-0208</td>
+                                <td>SMF 4040</td>
+                                <td>Fe + 1.5-3.9% Cu + 0.6-0.9% C</td>
+                                <td>6.6 - 7.0</td>
+                                <td>HRB 70-90</td>
+                                <td>高強度・高耐摩耗性。ギア業界標準。</td>
+                            </tr>
+                            <tr>
+                                <td class="term-name">FN-0205</td>
+                                <td>SMF 5030</td>
+                                <td>Fe + 1.0-3.0% Ni + 0.3-0.6% C</td>
+                                <td>6.8 - 7.2</td>
+                                <td>HRB 70-90</td>
+                                <td>高靭性。ニッケル添加で耐衝撃性向上。</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h4
+                    style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:#002FA7;margin-bottom:10px">
+                    2. ステンレス鋼（耐食性）</h4>
+                <p style="font-size:15px;color:#555;margin-bottom:20px"><strong>最適用途：</strong>食品機械、医療機器、船舶用途。</p>
+                <div style="overflow-x:auto;margin-bottom:40px">
+                    <table class="term-table">
+                        <thead>
+                            <tr>
+                                <th>材料コード</th>
+                                <th>JIS相当</th>
+                                <th>組成</th>
+                                <th>密度</th>
+                                <th>主な特性</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="term-name">SS-316</td>
+                                <td>SUS 316L</td>
+                                <td>Fe + 16-18% Cr + 10-14% Ni + 2-3% Mo</td>
+                                <td>6.4 - 6.9</td>
+                                <td>優れた耐食性。非磁性。</td>
+                            </tr>
+                            <tr>
+                                <td class="term-name">SS-304</td>
+                                <td>SUS 304L</td>
+                                <td>Fe + 18-20% Cr + 8-12% Ni</td>
+                                <td>6.4 - 6.8</td>
+                                <td>良好な耐食性。標準グレード。</td>
+                            </tr>
+                            <tr>
+                                <td class="term-name">SS-410</td>
+                                <td>SUS 410</td>
+                                <td>Fe + 11.5-13.5% Cr</td>
+                                <td>6.5 - 7.0</td>
+                                <td>マルテンサイト系。熱処理可能。磁性あり。</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h4
+                    style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:#002FA7;margin-bottom:10px">
+                    3. 軟磁性材料（モーター部品）</h4>
+                <p style="font-size:15px;color:#555;margin-bottom:20px">
+                    <strong>最適用途：</strong>DCモーターケース、ポールピース、アーマチュア、ソレノイド。</p>
+                <div style="overflow-x:auto;margin-bottom:40px">
+                    <table class="term-table">
+                        <thead>
+                            <tr>
+                                <th>材料コード</th>
+                                <th>組成</th>
+                                <th>磁気特性</th>
+                                <th>主な特性</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="term-name">F-0000（純鉄）</td>
+                                <td>Fe > 99%</td>
+                                <td>高飽和磁束密度</td>
+                                <td>高飽和磁束密度。コスト効率が高い。</td>
+                            </tr>
+                            <tr>
+                                <td class="term-name">FY-4500（Fe-P）</td>
+                                <td>Fe + 0.45% P</td>
+                                <td>高透磁率</td>
+                                <td>低鉄損。高効率モーターに最適。</td>
+                            </tr>
+                            <tr>
+                                <td class="term-name">Fe-Si（ケイ素鋼）</td>
+                                <td>Fe + 3% Si</td>
+                                <td>低保磁力</td>
+                                <td>AC用途での渦電流損失を低減。</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h4
+                    style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:#002FA7;margin-bottom:10px">
+                    4. 青銅・真鍮（軸受・金物）</h4>
+                <p style="font-size:15px;color:#555;margin-bottom:20px"><strong>最適用途：</strong>自己潤滑軸受、装飾金物、錠前部品。</p>
+                <div style="overflow-x:auto;margin-bottom:40px">
+                    <table class="term-table">
+                        <thead>
+                            <tr>
+                                <th>材料コード</th>
+                                <th>組成</th>
+                                <th>密度</th>
+                                <th>主な特性</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="term-name">CT-1000（青銅）</td>
+                                <td>90% Cu + 10% Sn</td>
+                                <td>6.0 - 6.4</td>
+                                <td>自己潤滑性。ブッシュの標準材料。</td>
+                            </tr>
+                            <tr>
+                                <td class="term-name">CZ-1000（真鍮）</td>
+                                <td>80% Cu + 20% Zn</td>
+                                <td>7.6 - 8.0</td>
+                                <td>耐食性。良好な被削性。</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div style="background:#f0f4f8;padding:20px;border-radius:8px;border-left:4px solid #002FA7">
+                    <p style="font-size:14px;color:#555;margin:0;line-height:1.7"><strong>🛡️
+                            法的免責事項：</strong>材料記号および特性データは公開業界規格（MPIF、JIS、DIN）に基づいています。数値は参考値であり、保証を構成するものではありません。具体的な設計検証については、当社エンジニアリングチームにお問い合わせください。
+                    </p>
+                </div>
             </div>
         </div>
     </section>
-    <section style="padding:80px 0;background:#111;color:white;text-align:center">
+    <footer style="background:#002FA7;color:white;padding:80px 0 40px">
         <div class="container">
-            <h2 style="font-family:'Playfair Display',serif;font-size:36px;margin-bottom:20px">技術的なご質問はありますか？</h2>
-            <p style="color:#999;margin-bottom:40px">当社のエンジニアリングチームがアドバイスいたします。</p>
-            <a href="contact.html"
-                style="background:#C5A059;color:white;padding:15px 40px;border-radius:6px;font-weight:600;display:inline-block">お問い合わせ</a>
-        </div>
-    </section>
-    <footer style="background:#002FA7;color:white;padding:60px 0 30px">
-        <div class="container" style="text-align:center">
-            <h3 style="color:#C5A059;margin-bottom:15px">Yeh Sheng Powder Parts Ind. Co. Ltd.</h3>
-            <p style="color:#a0b0d0;font-size:14px;margin-bottom:30px">台湾 新北市 新荘区 中正路721巷11号 | YS@yehsheng.com |
-                +886-2-2901-8266</p>
-            <p style="color:#667;font-size:13px">© 2024 Yeh Sheng Powder Parts. All Rights Reserved.</p>
+            <div
+                style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:50px;margin-bottom:60px">
+                <div>
+                    <div style="display:flex;align-items:center;gap:15px;margin-bottom:25px">
+                        <img alt="Logo" src="../images/logo.png" style="height:50px" />
+                        <h3 style="font-size:20px;font-weight:700;color:#C5A059;margin:0">Yeh Sheng Powder Parts</h3>
+                    </div>
+                    <p style="color:#a0b0d0;line-height:1.6;font-size:14px">1984年創業の高精度粉末冶金部品の先進メーカー。</p>
+                </div>
+                <div>
+                    <h4 style="color:#C5A059;font-size:18px;font-weight:700;margin-bottom:25px">会社情報</h4>
+                    <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:15px">
+                        <li><a href="about.html" style="color:#a0b0d0;font-size:15px">会社概要</a></li>
+                        <li><a href="products.html" style="color:#a0b0d0;font-size:15px">製品一覧</a></li>
+                        <li><a href="capabilities.html" style="color:#a0b0d0;font-size:15px">製造能力</a></li>
+                        <li><a href="contact.html" style="color:#a0b0d0;font-size:15px">お問い合わせ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="color:#C5A059;font-size:18px;font-weight:700;margin-bottom:25px">お問い合わせ</h4>
+                    <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:15px">
+                        <li style="color:#a0b0d0;font-size:15px">台湾 新北市 新荘区 中正路721巷11号</li>
+                        <li style="color:#a0b0d0;font-size:15px"><a href="mailto:YS@yehsheng.com">YS@yehsheng.com</a>
+                        </li>
+                        <li style="color:#a0b0d0;font-size:15px">+886-2-2901-8266</li>
+                    </ul>
+                </div>
+            </div>
+            <div style="border-top:1px solid rgba(255,255,255,0.1);padding-top:30px;text-align:center">
+                <p style="color:#667;font-size:13px;margin:0">© 2024 Yeh Sheng Powder Parts Ind. Co. Ltd. All Rights
+                    Reserved.</p>
+            </div>
         </div>
     </footer>
     <script>
+        function toggleMenu() { document.getElementById('mobileMenu').classList.toggle('active') }
         function toggleLangMenu() { var m = document.getElementById("langMenu"); m.style.display = (m.style.display === "none" || m.style.display === "") ? "block" : "none" }
         document.addEventListener('click', function (e) { var m = document.getElementById("langMenu"); if (!e.target.closest('#langMenu') && !e.target.matches('[onclick="toggleLangMenu()"]')) { if (m) m.style.display = "none" } });
     </script>

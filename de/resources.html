@@ -4,23 +4,30 @@
 <head>
     <meta name="google-site-verification" content="YUhT_jRF5sxYfCWMMcB08B38K6MB2yAEv4wEo1fjdXg" />
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XS5ZTZGF2Y"></script>
-    <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments) } gtag('js', new Date()); gtag('config', 'G-XS5ZTZGF2Y');</script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-XS5ZTZGF2Y');
+    </script>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Ressourcen - Yeh Sheng Powder Parts</title>
-    <meta content="Technische Ressourcen und Informationen zur Pulvermetallurgie." name="description" />
+    <title>Technische Ressourcen - Yeh Sheng Powder Parts Ind. Co. Ltd.</title>
+    <meta
+        content="Technische Ressourcen zur Pulvermetallurgie (PM). Finden Sie FAQs zu PM-Festigkeit, Kosten und Materialien sowie ein umfassendes Glossar der Branchenbegriffe wie Sintern, Grünfestigkeit und MIM."
+        name="description" />
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap"
         rel="stylesheet" />
     <style>
         body {
-            font-family: 'Inter', sans-serif;
             margin: 0;
             padding: 0;
-            background: #fcfcfc;
-            color: #333
+            font-family: 'Inter', sans-serif;
+            color: #333;
+            background: #fcfcfc
         }
 
         a {
@@ -29,19 +36,79 @@
         }
 
         .container {
-            max-width: 1200px;
+            max-width: 1400px;
             margin: 0 auto;
             padding: 0 20px
         }
 
-        .hidden-mobile {
-            display: block
+        .faq-item {
+            background: white;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+            border-left: 4px solid #002FA7
+        }
+
+        .faq-question {
+            font-family: 'Playfair Display', serif;
+            font-size: 20px;
+            font-weight: 700;
+            color: #002FA7;
+            margin-bottom: 15px
+        }
+
+        .faq-answer {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.8
+        }
+
+        .term-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            border-radius: 8px;
+            overflow: hidden
+        }
+
+        .term-table th {
+            background: #002FA7;
+            color: white;
+            padding: 15px 20px;
+            text-align: left;
+            font-family: 'Playfair Display', serif;
+            font-size: 18px
+        }
+
+        .term-table td {
+            padding: 15px 20px;
+            border-bottom: 1px solid #eee;
+            font-size: 15px;
+            line-height: 1.6;
+            color: #555
+        }
+
+        .term-table tr:last-child td {
+            border-bottom: none
+        }
+
+        .term-table tr:hover {
+            background: #f8f9fa
+        }
+
+        .term-name {
+            font-weight: 600;
+            color: #333;
+            white-space: nowrap
         }
 
         .mobile-menu-btn {
             display: none;
             cursor: pointer;
-            font-size: 24px
+            font-size: 24px;
+            color: #333
         }
 
         .mobile-menu {
@@ -53,19 +120,13 @@
             background: white;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
             padding: 20px;
+            flex-direction: column;
+            gap: 15px;
             z-index: 99
         }
 
         .mobile-menu.active {
-            display: block
-        }
-
-        .resource-card {
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-            padding: 30px;
-            border-top: 4px solid #C5A059
+            display: flex
         }
 
         @media(max-width:768px) {
@@ -78,12 +139,29 @@
             }
 
             h1 {
-                font-size: 32px !important
+                font-size: 36px !important
+            }
+
+            h2 {
+                font-size: 28px !important
+            }
+
+            section {
+                padding: 60px 0 !important
+            }
+
+            .term-table th,
+            .term-table td {
+                padding: 10px;
+                font-size: 14px
+            }
+
+            .term-name {
+                white-space: normal
             }
         }
     </style>
     <link href="https://yehsheng.com/de/resources.html" rel="canonical" />
-    <!-- hreflang tags for multilingual SEO -->
     <link rel="alternate" hreflang="en" href="https://yehsheng.com/resources.html" />
     <link rel="alternate" hreflang="zh-Hant" href="https://yehsheng.com/zh/resources.html" />
     <link rel="alternate" hreflang="zh-Hans" href="https://yehsheng.com/zh-cn/resources.html" />
@@ -91,61 +169,24 @@
     <link rel="alternate" hreflang="ja" href="https://yehsheng.com/jp/resources.html" />
     <link rel="alternate" hreflang="x-default" href="https://yehsheng.com/resources.html" />
     <link rel="icon" href="../images/logo.png" type="image/png">
-    <!-- FAQPage Schema.org Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",
       "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Powder Metallurgy零件的強度是否足以應對高負載應用？",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "絕對可以。雖然PM零件有固有的微孔隙，但其強度可以通過調整合金成分、增加壓製密度或使用二次鍛造來達到或超過鑄鐵甚至鍛鋼的水平。PM零件現已廣泛用於汽車引擎、變速箱齒輪和連桿等高應力環境。"
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Powder Metallurgy和CNC加工哪個更具成本效益？",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "這取決於生產量。CNC加工適合小批量原型製作，因為不需要昂貴的模具。然而，對於大規模生產（通常5,000件以上），Powder Metallurgy明顯更便宜。PM通過近淨成形減少材料浪費，並消除傳統切削的勞動密集步驟來降低成本。"
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "PM製程可以使用哪些材料？",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "PM非常靈活，幾乎可以加工所有金屬，包括：鐵基合金（鐵和鋼）、非鐵金屬（銅、鋁和黃銅）、難熔金屬（鎢和鉬）、以及航太和醫療用途的特殊材料（不鏽鋼和超合金）。"
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "為什麼Powder Metallurgy被認為是「綠色」技術？",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "PM是最環保的製造方法之一。其材料利用率超過95%，幾乎不產生廢金屬。此外，由於燒結過程在熔點以下進行，通常比傳統的熔化和鑄造操作需要更少的能源。"
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Powder Metallurgy中的「自潤滑」軸承如何工作？",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "這是PM的獨特優勢。由於零件天然多孔，可以真空浸漬油。當軸承在運行中發熱時，油會膨脹並流到表面。冷卻後，油會通過毛細作用重新被吸收到孔隙中。這使它們非常適合「免維護」應用。"
-          }
-        }
+        {"@type": "Question", "name": "Ist die Festigkeit von Pulvermetallurgie-Teilen ausreichend für Hochlastanwendungen?", "acceptedAnswer": {"@type": "Answer", "text": "Absolut. Obwohl PM-Teile eine inhärente Mikroporosität aufweisen, kann ihre Festigkeit so konstruiert werden, dass sie Gusseisen oder sogar Schmiedestahl erreicht oder übertrifft. Durch Anpassung der Legierungszusammensetzung, Erhöhung der Pressdichte oder Verwendung von Sekundärschmieden werden PM-Teile heute in Hochbeanspruchungsumgebungen wie Automobilmotoren, Getrieberädern und Pleuelstangen eingesetzt."}},
+        {"@type": "Question", "name": "Was ist kosteneffektiver: Pulvermetallurgie oder CNC-Bearbeitung?", "acceptedAnswer": {"@type": "Answer", "text": "Das hängt vom Produktionsvolumen ab. CNC-Bearbeitung eignet sich besser für Kleinserienprototypen, da keine teuren Werkzeuge erforderlich sind. Bei Massenproduktion (typischerweise 5.000+ Einheiten) ist Pulvermetallurgie jedoch deutlich günstiger. PM senkt die Kosten durch Minimierung des Materialabfalls (Near-Net-Shape) und Eliminierung der arbeitsintensiven Schritte des traditionellen Zerspanens."}},
+        {"@type": "Question", "name": "Welche Materialien können im PM-Prozess verwendet werden?", "acceptedAnswer": {"@type": "Answer", "text": "PM ist äußerst vielseitig. Es kann fast alle Metalle verarbeiten, darunter: Eisenbasislegierungen (Eisen und Stahl), Nichteisenmetalle (Kupfer, Aluminium und Messing), Refraktärmetalle (Wolfram und Molybdän) sowie Spezialwerkstoffe (Edelstahl und Superlegierungen für Luft- und Raumfahrt sowie Medizin)."}},
+        {"@type": "Question", "name": "Warum gilt Pulvermetallurgie als 'grüne' Technologie?", "acceptedAnswer": {"@type": "Answer", "text": "PM ist eine der nachhaltigsten Fertigungsmethoden. Sie erreicht eine Materialausnutzung von über 95%, was bedeutet, dass fast kein Metallabfall entsteht. Da der Sinterprozess zudem unterhalb des Schmelzpunkts stattfindet, benötigt er oft weniger Energie als traditionelle Schmelz- und Gießverfahren."}},
+        {"@type": "Question", "name": "Wie funktionieren 'selbstschmierende' Lager in der Pulvermetallurgie?", "acceptedAnswer": {"@type": "Answer", "text": "Dies ist ein einzigartiger Vorteil von PM. Da die Teile natürlich porös sind, können sie vakuumimprägniert mit Öl werden. Wenn das Lager im Betrieb erwärmt wird, dehnt sich das Öl aus und fließt an die Oberfläche. Beim Abkühlen wird das Öl durch Kapillarwirkung zurück in die Poren gesogen. Ideal für 'wartungsfreie' Anwendungen."}}
       ]
     }
     </script>
-
 </head>
 
 <body>
     <div class="hidden-mobile" style="background:#002FA7;color:white;padding:10px 0;position:relative;z-index:200">
-        <div class="container" style="display:flex;justify-content:flex-end;gap:25px;font-size:13px">
+        <div class="container" style="display:flex;justify-content:flex-end;gap:25px;font-size:13px;font-weight:500">
             <a href="about.html" style="color:#ddd">Über uns</a>
             <a href="contact.html" style="color:#ddd">Kontakt</a>
             <div style="position:relative;display:inline-block">
@@ -176,26 +217,28 @@
                         style="font-size:10px;font-weight:600;color:#C5A059">Pulvermetallurgie-Experten</span></div>
             </a>
             <div class="hidden-mobile" style="display:flex;gap:35px;align-items:center">
-                <a href="products.html" style="font-size:15px;color:#333">Produkte</a>
-                <a href="solutions.html" style="font-size:15px;color:#333">Service</a>
-                <a href="capabilities.html" style="font-size:15px;color:#333">Fähigkeiten</a>
-                <a href="resources.html" style="font-size:15px;color:#C5A059;font-weight:700">Ressourcen</a>
+                <a href="products.html" style="font-size:15px;font-weight:500;color:#333">Produkte</a>
+                <a href="solutions.html" style="font-size:15px;font-weight:500;color:#333">Service</a>
+                <a href="capabilities.html" style="font-size:15px;font-weight:500;color:#333">Fähigkeiten</a>
+                <a href="applications.html" style="font-size:15px;font-weight:500;color:#333">Branchen</a>
+                <a href="resources.html" style="font-size:15px;font-weight:700;color:#C5A059">Ressourcen</a>
                 <a href="contact.html"
-                    style="background:#C5A059;color:white;padding:8px 20px;border-radius:4px">Kontakt</a>
+                    style="background:#C5A059;color:white;padding:8px 20px;border-radius:4px;font-size:14px;font-weight:500">Kontakt</a>
             </div>
-            <div class="mobile-menu-btn" onclick="document.getElementById('mobileMenu').classList.toggle('active')">☰
-            </div>
+            <div class="mobile-menu-btn" onclick="toggleMenu()">☰</div>
             <div class="mobile-menu" id="mobileMenu">
-                <a href="products.html" style="display:block;padding:10px 0;border-bottom:1px solid #eee">Produkte</a>
+                <div onclick="toggleMenu()"
+                    style="text-align:right;padding:5px 0 15px;cursor:pointer;font-size:24px;color:#333;">✕</div>
+                <a href="products.html" style="padding:10px 0;border-bottom:1px solid #eee">Produkte</a>
+                <a href="solutions.html" style="padding:10px 0;border-bottom:1px solid #eee">Service</a>
+                <a href="capabilities.html" style="padding:10px 0;border-bottom:1px solid #eee">Fähigkeiten</a>
+                <a href="applications.html" style="padding:10px 0;border-bottom:1px solid #eee">Branchen</a>
                 <a href="resources.html"
-                    style="display:block;padding:10px 0;border-bottom:1px solid #eee;color:#C5A059">Ressourcen</a>
-                <a href="about.html" style="display:block;padding:10px 0;border-bottom:1px solid #eee">Über uns</a>
-                <a href="contact.html" style="display:block;padding:10px 0;color:#C5A059">Kontakt</a>
-
-                <!-- Mobile Language Selector -->
+                    style="padding:10px 0;border-bottom:1px solid #eee;color:#C5A059;font-weight:700">Ressourcen</a>
+                <a href="about.html" style="padding:10px 0;border-bottom:1px solid #eee">Über uns</a>
+                <a href="contact.html" style="padding:10px 0;color:#C5A059">Kontakt</a>
                 <div style="border-top:2px solid #C5A059;margin-top:10px;padding-top:15px;">
-                    <div style="font-size:14px;font-weight:600;color:#C5A059;margin-bottom:10px;">🌐 Sprache / Language
-                    </div>
+                    <div style="font-size:14px;font-weight:600;color:#C5A059;margin-bottom:10px;">🌐 Sprache</div>
                     <a href="../resources.html" style="display:block;padding:8px 0;color:#333;">🇺🇸 English</a>
                     <a href="../zh/resources.html" style="display:block;padding:8px 0;color:#333;">🇹🇼 繁體中文</a>
                     <a href="../zh-cn/resources.html" style="display:block;padding:8px 0;color:#333;">🇨🇳 简体中文</a>
@@ -206,108 +249,427 @@
             </div>
         </div>
     </nav>
-    <header style="background:white;padding:80px 0;border-bottom:1px solid #eee">
-        <div class="container" style="text-align:center">
-            <h1 style="font-family:'Playfair Display',serif;font-size:48px;color:#111;margin-bottom:15px">Ressourcen
-            </h1>
-            <p style="font-size:18px;color:#666;max-width:700px;margin:0 auto">Technische Informationen und Wissen zur
-                Pulvermetallurgie</p>
-        </div>
-    </header>
-    <section style="padding:80px 0;background:#f8f9fa">
-        <div class="container">
-            <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(350px,1fr));gap:30px">
-                <div class="resource-card">
-                    <h3 style="font-size:22px;color:#002FA7;margin-bottom:15px">Was ist Pulvermetallurgie?</h3>
-                    <p style="color:#666;line-height:1.6">Eine Einführung in den PM-Prozess, seine Vorteile und typische
-                        Anwendungen. Erfahren Sie, wie Metallpulver zu präzisen Komponenten geformt werden.</p>
-                </div>
-                <div class="resource-card">
-                    <h3 style="font-size:22px;color:#002FA7;margin-bottom:15px">Materialauswahl-Leitfaden</h3>
-                    <p style="color:#666;line-height:1.6">Vergleich verschiedener PM-Materialien: Eisenbasis, Edelstahl,
-                        Bronze und Speziallegierungen. Empfehlungen für verschiedene Anwendungen.</p>
-                </div>
-                <div class="resource-card">
-                    <h3 style="font-size:22px;color:#002FA7;margin-bottom:15px">Design-Richtlinien</h3>
-                    <p style="color:#666;line-height:1.6">Best Practices für PM-gerechtes Design: Wandstärken,
-                        Hinterschneidungen, Toleranzen und Nachbearbeitungsoptionen.</p>
-                </div>
-                <div class="resource-card">
-                    <h3 style="font-size:22px;color:#002FA7;margin-bottom:15px">Qualitätsstandards</h3>
-                    <p style="color:#666;line-height:1.6">ISO 9001:2015 Zertifizierung, MPIF-Standards und
-                        branchenspezifische Anforderungen für Automobil und Medizin.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Material Specifications -->
     <section style="padding:80px 0;background:white">
         <div class="container">
-            <h2
-                style="font-family:'Playfair Display',serif;font-size:32px;color:#111;margin-bottom:15px;text-align:center">
-                Werkstoffspezifikationen</h2>
-            <p style="color:#666;text-align:center;max-width:800px;margin:0 auto 40px">
-                Wir folgen globalen Industriestandards: <strong>MPIF Standard 35</strong> (USA), <strong>JIS Z
-                    2550</strong> (Japan) und <strong>DIN 30910</strong> (Deutschland).
-            </p>
-
-            <div
-                style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px;margin-bottom:40px">
-                <div style="background:#f8f9fa;padding:25px;border-radius:8px;border-top:3px solid #002FA7">
-                    <h4 style="color:#002FA7;margin-bottom:10px">1. Eisen-Kupfer-Stähle</h4>
-                    <p style="font-size:14px;color:#555;margin-bottom:15px"><strong>FC-0205, FC-0208, FN-0205</strong>
-                    </p>
-                    <p style="font-size:13px;color:#666;line-height:1.6">Für Zahnräder, Kettenräder und Strukturteile.
-                        Hohe Festigkeit und Verschleißfestigkeit.</p>
+            <div style="text-align:center;margin-bottom:60px">
+                <h1
+                    style="font-family:'Playfair Display',serif;font-size:42px;font-weight:700;color:#111;margin-bottom:20px">
+                    Technische Ressourcen</h1>
+                <h2
+                    style="font-family:'Playfair Display',serif;font-size:32px;font-weight:700;color:#555;margin-bottom:20px">
+                    Wissensdatenbank & FAQ</h2>
+                <div style="width:80px;height:4px;background:#C5A059;margin:0 auto 30px"></div>
+                <p style="font-size:18px;color:#666;max-width:800px;margin:0 auto;line-height:1.6">Entdecken Sie häufig
+                    gestellte Fragen zur Pulvermetallurgie und ein umfassendes Glossar der Fachbegriffe.</p>
+            </div>
+            <!-- FAQ Section -->
+            <div style="max-width:1000px;margin:0 auto 80px">
+                <h3
+                    style="font-family:'Playfair Display',serif;font-size:28px;font-weight:700;color:#333;margin-bottom:30px;border-bottom:2px solid #eee;padding-bottom:10px">
+                    Häufig gestellte Fragen (FAQ)</h3>
+                <div class="faq-item">
+                    <div class="faq-question">F1: Ist die Festigkeit von Pulvermetallurgie-Teilen ausreichend für
+                        Hochlastanwendungen?</div>
+                    <div class="faq-answer">Absolut. Obwohl PM-Teile eine inhärente Mikroporosität aufweisen, kann ihre
+                        Festigkeit durch Anpassung der Legierungszusammensetzung, Erhöhung der Pressdichte oder
+                        Sekundärschmieden so konstruiert werden, dass sie Gusseisen oder Schmiedestahl erreicht oder
+                        übertrifft. PM-Teile werden heute in Hochbeanspruchungsumgebungen wie Automobilmotoren,
+                        Getrieberädern und Pleuelstangen eingesetzt.</div>
                 </div>
-                <div style="background:#f8f9fa;padding:25px;border-radius:8px;border-top:3px solid #002FA7">
-                    <h4 style="color:#002FA7;margin-bottom:10px">2. Edelstähle</h4>
-                    <p style="font-size:14px;color:#555;margin-bottom:15px"><strong>SS-316, SS-304, SS-410</strong></p>
-                    <p style="font-size:13px;color:#666;line-height:1.6">Für Lebensmittelmaschinen, Medizinprodukte und
-                        Marineanwendungen. Korrosionsbeständig.</p>
+                <div class="faq-item">
+                    <div class="faq-question">F2: Was ist kosteneffektiver: Pulvermetallurgie oder CNC-Bearbeitung?
+                    </div>
+                    <div class="faq-answer">Das hängt vom Produktionsvolumen ab. CNC-Bearbeitung eignet sich besser für
+                        Kleinserienprototypen, da keine teuren Werkzeuge erforderlich sind. Bei Massenproduktion
+                        (typischerweise 5.000+ Einheiten) ist Pulvermetallurgie jedoch deutlich günstiger durch
+                        minimalen Materialabfall (Near-Net-Shape) und Eliminierung arbeitsintensiver
+                        Bearbeitungsschritte.</div>
                 </div>
-                <div style="background:#f8f9fa;padding:25px;border-radius:8px;border-top:3px solid #002FA7">
-                    <h4 style="color:#002FA7;margin-bottom:10px">3. Weichmagnetische Werkstoffe</h4>
-                    <p style="font-size:14px;color:#555;margin-bottom:15px"><strong>F-0000, FY-4500, Fe-Si</strong></p>
-                    <p style="font-size:13px;color:#666;line-height:1.6">Für Motorgehäuse, Polstücke und Magnetventile.
-                        Hohe Permeabilität.</p>
+                <div class="faq-item">
+                    <div class="faq-question">F3: Welche Materialien können im PM-Prozess verwendet werden?</div>
+                    <div class="faq-answer">PM ist äußerst vielseitig und kann fast alle Metalle verarbeiten:
+                        <ul style="margin-top:10px;padding-left:20px">
+                            <li><strong>Eisenbasislegierungen:</strong> Eisen und Stahl (am häufigsten).</li>
+                            <li><strong>Nichteisenmetalle:</strong> Kupfer, Aluminium und Messing.</li>
+                            <li><strong>Refraktärmetalle:</strong> Wolfram und Molybdän (schwer zu schmelzen).</li>
+                            <li><strong>Spezialwerkstoffe:</strong> Edelstahl und Superlegierungen für Luft- und
+                                Raumfahrt sowie Medizin.</li>
+                        </ul>
+                    </div>
                 </div>
-                <div style="background:#f8f9fa;padding:25px;border-radius:8px;border-top:3px solid #002FA7">
-                    <h4 style="color:#002FA7;margin-bottom:10px">4. Bronze & Messing</h4>
-                    <p style="font-size:14px;color:#555;margin-bottom:15px"><strong>CT-1000, CZ-1000</strong></p>
-                    <p style="font-size:13px;color:#666;line-height:1.6">Für selbstschmierende Lager und dekorative
-                        Beschläge. Selbstschmierend.</p>
+                <div class="faq-item">
+                    <div class="faq-question">F4: Warum gilt Pulvermetallurgie als "grüne" Technologie?</div>
+                    <div class="faq-answer">PM ist eine der nachhaltigsten Fertigungsmethoden mit einer
+                        Materialausnutzung von über 95%. Da der Sinterprozess unterhalb des Schmelzpunkts stattfindet,
+                        benötigt er oft weniger Energie als traditionelle Schmelz- und Gießverfahren.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">F5: Wie funktionieren "selbstschmierende" Lager in der Pulvermetallurgie?
+                    </div>
+                    <div class="faq-answer">Dies ist ein einzigartiger Vorteil von PM. Da die Teile natürlich porös
+                        sind, können sie vakuumimprägniert mit Öl werden. Bei Erwärmung im Betrieb dehnt sich das Öl aus
+                        und fließt an die Oberfläche. Beim Abkühlen wird es durch Kapillarwirkung zurück in die Poren
+                        gesogen — ideal für "wartungsfreie" Anwendungen.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">F6: Was ist der Unterschied zwischen traditionellem PM und Metal Injection
+                        Molding (MIM)?</div>
+                    <div class="faq-answer">Beide verwenden Metallpulver:
+                        <ul style="margin-top:10px;padding-left:20px">
+                            <li><strong>Traditionelles PM</strong> funktioniert wie "Tabletten pressen" — ideal für
+                                größere, einfachere Formen.</li>
+                            <li><strong>MIM</strong> mischt Pulver mit einem Kunststoffbinder und "spritzt" es in eine
+                                Form — für extrem kleine, hochkomplexe Teile (wie in Smartphones oder chirurgischen
+                                Instrumenten).</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">F7: Können PM-Teile galvanisiert oder geschweißt werden?</div>
+                    <div class="faq-answer">Ja, aber sie erfordern Vorbereitung. Aufgrund der Porosität werden PM-Teile
+                        vor dem Galvanisieren meist dampfbehandelt oder harzversiegelt. Für das Schweißen wird
+                        Laserschweißen bevorzugt, um die Wärmeeinflusszone zu minimieren.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">F8: Welche Designbeschränkungen gibt es für PM-Teile?</div>
+                    <div class="faq-answer">Ingenieure sollten Merkmale vermeiden, die das Auswerfen aus der Form
+                        verhindern:
+                        <ul style="margin-top:10px;padding-left:20px">
+                            <li><strong>Seitliche Hinterschneidungen:</strong> Löcher oder Nuten an der Seite müssen
+                                nachbearbeitet werden.</li>
+                            <li><strong>Wandstärke:</strong> Wände sollten generell dicker als 1,5mm sein für
+                                gleichmäßigen Pulverfluss.</li>
+                            <li><strong>Scharfe Ecken:</strong> Abgerundete Kanten (Radien) verlängern die
+                                Werkzeuglebensdauer und verbessern die Festigkeit.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
+            <!-- Glossary Section -->
+            <div style="max-width:1000px;margin:0 auto">
+                <h3
+                    style="font-family:'Playfair Display',serif;font-size:28px;font-weight:700;color:#333;margin-bottom:30px;border-bottom:2px solid #eee;padding-bottom:10px">
+                    Pulvermetallurgie-Glossar</h3>
+                <div style="overflow-x:auto">
+                    <table class="term-table">
+                        <thead>
+                            <tr>
+                                <th style="width:25%">Begriff</th>
+                                <th>Definition</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="term-name">Gerotor</td>
+                                <td>Kurzform für "Generated Rotor". Eine verdrängerpumpende Einheit aus Innen- und
+                                    Außenrotor. PM ist die effizienteste Methode zur Herstellung dieser komplexen
+                                    Trochoidenformen für Ölpumpen.</td>
+                            </tr>
+                            <tr>
+                                <td class="term-name">Grünfestigkeit</td>
+                                <td>Die mechanische Festigkeit eines Presslings vor dem Sintern. Sie muss hoch genug
+                                    sein, um den Transport zum Ofen ohne Bruch zu überstehen.</td>
+                            </tr>
+                            <tr>
+                                <td class="term-name">Sinterdichte</td>
+                                <td>Die Masse pro Volumeneinheit nach dem Sintern. Hauptindikator für die endgültigen
+                                    mechanischen Eigenschaften.</td>
+                            </tr>
+                            <tr>
+                                <td class="term-name">Diffusionsbindung</td>
+                                <td>Der Prozess, bei dem Atome durch Wärme über Partikelgrenzen wandern und die
+                                    Metallpartikel zu einer festen Masse verschmelzen.</td>
+                            </tr>
+                            <tr>
+                                <td class="term-name">Near-Net-Shape</td>
+                                <td>Fertigungstechnik, bei der das Ausgangsteil sehr nah an der Endgeometrie erstellt
+                                    wird, wodurch Nachbearbeitung minimiert wird.</td>
+                            </tr>
+                            <tr>
+                                <td class="term-name">Ölimprägnierung</td>
+                                <td>Das Füllen der verbundenen Poren eines Sinterteils mit Schmiermittel, typisch für
+                                    selbstschmierende Lager.</td>
+                            </tr>
+                            <tr>
+                                <td class="term-name">Metal Injection Molding (MIM)</td>
+                                <td>Ein Verfahren, bei dem feines Metallpulver mit einem Binder gemischt und in eine
+                                    Form "gespritzt" wird. Ideal für kleine, hochkomplexe 3D-Formen.</td>
+                            </tr>
+                            <tr>
+                                <td class="term-name">Dampfbehandlung</td>
+                                <td>Erzeugt eine schwarze Eisenoxidschicht (Fe3O4) zur Verbesserung der
+                                    Verschleißfestigkeit und als dekorative Oberfläche.</td>
+                            </tr>
+                            <tr>
+                                <td class="term-name">Infiltration</td>
+                                <td>Füllen der Poren mit einem niedrigschmelzenden Metall (z.B. Kupfer in Eisenteile)
+                                    zur Erhöhung von Festigkeit und Dichte.</td>
+                            </tr>
+                            <tr>
+                                <td class="term-name">Porosität</td>
+                                <td>Das Volumen der Poren (Hohlräume) als Prozentsatz des Gesamtvolumens. Kann "offen"
+                                    (verbunden) oder "geschlossen" (isoliert) sein.</td>
+                            </tr>
+                            <tr>
+                                <td class="term-name">Entbindern</td>
+                                <td>Der kritische Schritt (besonders bei MIM), bei dem Polymer- oder Wachsbinder vor dem
+                                    Sintern entfernt werden.</td>
+                            </tr>
+                            <tr>
+                                <td class="term-name">Reduziertes Pulver</td>
+                                <td>Metallpulver, das durch chemische Reduktion eines Oxids hergestellt wird. Diese
+                                    Partikel sind meist schwammig und unregelmäßig und bieten gute Grünfestigkeit.</td>
+                            </tr>
+                            <tr>
+                                <td class="term-name">Kalibrieren / Prägen</td>
+                                <td>Ein sekundärer Pressvorgang zur Verbesserung der Maßgenauigkeit oder Erhöhung der
+                                    Oberflächendichte.</td>
+                            </tr>
+                            <tr>
+                                <td class="term-name">Segregation</td>
+                                <td>Ein unerwünschter Effekt, bei dem verschiedene Pulverpartikel sich beim Mischen oder
+                                    Zuführen aufgrund von Größen- oder Dichteunterschieden trennen.</td>
+                            </tr>
+                            <tr>
+                                <td class="term-name">Sphärisches Pulver</td>
+                                <td>Pulverpartikel, die durch Gasverdüsung hergestellt werden und perfekt rund sind.
+                                    Ausgezeichnete Fließfähigkeit für 3D-Druck und MIM.</td>
+                            </tr>
+                            <tr>
+                                <td class="term-name">Isostatisches Pressen</td>
+                                <td>Druckausübung aus allen Richtungen mit einem Fluid (Wasser oder Gas) für
+                                    gleichmäßige Dichte in großen oder komplexen Formen.</td>
+                            </tr>
+                            <tr>
+                                <td class="term-name">Schüttdichte</td>
+                                <td>Das Gewicht pro Volumeneinheit von losem Pulver. Entscheidend für die "Fülltiefe"
+                                    der Matrize beim Pressen.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- Material Specifications -->
+            <div style="max-width:1200px;margin:80px auto 0">
+                <h3
+                    style="font-family:'Playfair Display',serif;font-size:28px;font-weight:700;color:#333;margin-bottom:15px;border-bottom:2px solid #eee;padding-bottom:10px">
+                    Werkstoffspezifikationen & Auswahlhilfe</h3>
+                <p style="font-size:16px;color:#555;line-height:1.8;margin-bottom:30px">Wir folgen globalen
+                    Industriestandards: <strong>MPIF Standard 35</strong> (USA), <strong>JIS Z 2550</strong> (Japan) und
+                    <strong>DIN 30910</strong> (Deutschland).</p>
+                <p
+                    style="font-size:14px;color:#888;background:#f8f9fa;padding:15px;border-radius:6px;margin-bottom:40px">
+                    <strong>Hinweis:</strong> Die folgenden Werte sind typische Referenzwerte. Wir können Materialdichte
+                    und Zusammensetzung nach Ihren Anforderungen anpassen.</p>
 
-            <div style="background:#f0f4f8;padding:20px;border-radius:8px;border-left:4px solid #002FA7">
-                <p style="font-size:13px;color:#555;margin:0">
-                    <strong>🛡️ Hinweis:</strong> Die Werkstoffbezeichnungen basieren auf öffentlichen
-                    Industriestandards (MPIF, JIS, DIN). Werte dienen nur als Referenz. Kontaktieren Sie unser
-                    Engineering-Team für spezifische Anforderungen.
-                </p>
+                <h4
+                    style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:#002FA7;margin-bottom:10px">
+                    1. Eisen-Kupfer-Kohlenstoff-Stähle (Strukturteile)</h4>
+                <p style="font-size:15px;color:#555;margin-bottom:20px"><strong>Ideal für:</strong> Zahnräder,
+                    Kettenräder, Nocken und Strukturkomponenten.<br><strong>Anwendungen:</strong> Automobilgetriebe,
+                    Elektrowerkzeuge, Industriemaschinen.</p>
+                <div style="overflow-x:auto;margin-bottom:40px">
+                    <table class="term-table">
+                        <thead>
+                            <tr>
+                                <th>Materialcode (MPIF)</th>
+                                <th>JIS-Äquivalent</th>
+                                <th>Zusammensetzung</th>
+                                <th>Dichte (g/cm³)</th>
+                                <th>Typische Härte</th>
+                                <th>Eigenschaften</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="term-name">FC-0205</td>
+                                <td>SMF 4030</td>
+                                <td>Fe + 1,5-3,9% Cu + 0,3-0,6% C</td>
+                                <td>6,4 - 6,8</td>
+                                <td>HRB 60-80</td>
+                                <td>Ausgewogene Festigkeit und Präzision. Standard für Strukturteile.</td>
+                            </tr>
+                            <tr>
+                                <td class="term-name">FC-0208</td>
+                                <td>SMF 4040</td>
+                                <td>Fe + 1,5-3,9% Cu + 0,6-0,9% C</td>
+                                <td>6,6 - 7,0</td>
+                                <td>HRB 70-90</td>
+                                <td>Hohe Festigkeit & Verschleißfestigkeit. Industriestandard für Zahnräder.</td>
+                            </tr>
+                            <tr>
+                                <td class="term-name">FN-0205</td>
+                                <td>SMF 5030</td>
+                                <td>Fe + 1,0-3,0% Ni + 0,3-0,6% C</td>
+                                <td>6,8 - 7,2</td>
+                                <td>HRB 70-90</td>
+                                <td>Hohe Zähigkeit. Nickel verbessert Schlagfestigkeit.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h4
+                    style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:#002FA7;margin-bottom:10px">
+                    2. Edelstähle (Korrosionsbeständig)</h4>
+                <p style="font-size:15px;color:#555;margin-bottom:20px"><strong>Ideal für:</strong>
+                    Lebensmittelmaschinen, Medizinprodukte, Marineanwendungen.</p>
+                <div style="overflow-x:auto;margin-bottom:40px">
+                    <table class="term-table">
+                        <thead>
+                            <tr>
+                                <th>Materialcode</th>
+                                <th>JIS-Äquivalent</th>
+                                <th>Zusammensetzung</th>
+                                <th>Dichte</th>
+                                <th>Eigenschaften</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="term-name">SS-316</td>
+                                <td>SUS 316L</td>
+                                <td>Fe + 16-18% Cr + 10-14% Ni + 2-3% Mo</td>
+                                <td>6,4 - 6,9</td>
+                                <td>Überlegene Korrosionsbeständigkeit. Nicht magnetisch.</td>
+                            </tr>
+                            <tr>
+                                <td class="term-name">SS-304</td>
+                                <td>SUS 304L</td>
+                                <td>Fe + 18-20% Cr + 8-12% Ni</td>
+                                <td>6,4 - 6,8</td>
+                                <td>Gute Korrosionsbeständigkeit. Standardgüte.</td>
+                            </tr>
+                            <tr>
+                                <td class="term-name">SS-410</td>
+                                <td>SUS 410</td>
+                                <td>Fe + 11,5-13,5% Cr</td>
+                                <td>6,5 - 7,0</td>
+                                <td>Martensitisch. Wärmebehandelbar. Magnetisch.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h4
+                    style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:#002FA7;margin-bottom:10px">
+                    3. Weichmagnetische Werkstoffe (Motorkomponenten)</h4>
+                <p style="font-size:15px;color:#555;margin-bottom:20px"><strong>Ideal für:</strong> DC-Motorgehäuse,
+                    Polstücke, Anker, Magnetventile.</p>
+                <div style="overflow-x:auto;margin-bottom:40px">
+                    <table class="term-table">
+                        <thead>
+                            <tr>
+                                <th>Materialcode</th>
+                                <th>Zusammensetzung</th>
+                                <th>Magnetische Eigenschaften</th>
+                                <th>Eigenschaften</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="term-name">F-0000 (Reineisen)</td>
+                                <td>Fe > 99%</td>
+                                <td>Hohe Induktion</td>
+                                <td>Hohe Sättigungsinduktion. Kosteneffektiv.</td>
+                            </tr>
+                            <tr>
+                                <td class="term-name">FY-4500 (Fe-P)</td>
+                                <td>Fe + 0,45% P</td>
+                                <td>Hohe Permeabilität</td>
+                                <td>Niedrige Kernverluste. Ideal für hocheffiziente Motoren.</td>
+                            </tr>
+                            <tr>
+                                <td class="term-name">Fe-Si (Siliziumeisen)</td>
+                                <td>Fe + 3% Si</td>
+                                <td>Niedrige Koerzitivität</td>
+                                <td>Reduziert Wirbelstromverluste in AC-Anwendungen.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h4
+                    style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:#002FA7;margin-bottom:10px">
+                    4. Bronze & Messing (Lager & Hardware)</h4>
+                <p style="font-size:15px;color:#555;margin-bottom:20px"><strong>Ideal für:</strong> Selbstschmierende
+                    Lager, dekorative Hardware, Schließkomponenten.</p>
+                <div style="overflow-x:auto;margin-bottom:40px">
+                    <table class="term-table">
+                        <thead>
+                            <tr>
+                                <th>Materialcode</th>
+                                <th>Zusammensetzung</th>
+                                <th>Dichte</th>
+                                <th>Eigenschaften</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="term-name">CT-1000 (Bronze)</td>
+                                <td>90% Cu + 10% Sn</td>
+                                <td>6,0 - 6,4</td>
+                                <td>Selbstschmierend. Standard für Buchsen.</td>
+                            </tr>
+                            <tr>
+                                <td class="term-name">CZ-1000 (Messing)</td>
+                                <td>80% Cu + 20% Zn</td>
+                                <td>7,6 - 8,0</td>
+                                <td>Korrosionsbeständig. Gute Bearbeitbarkeit.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div style="background:#f0f4f8;padding:20px;border-radius:8px;border-left:4px solid #002FA7">
+                    <p style="font-size:14px;color:#555;margin:0;line-height:1.7"><strong>🛡️ Rechtlicher
+                            Hinweis:</strong> Materialbezeichnungen und Daten basieren auf öffentlichen
+                        Industriestandards (MPIF, JIS, DIN). Werte dienen nur als Referenz. Für Designvalidierung
+                        kontaktieren Sie unser Engineering-Team.</p>
+                </div>
             </div>
         </div>
     </section>
-    <section style="padding:80px 0;background:#111;color:white;text-align:center">
+    <footer style="background:#002FA7;color:white;padding:80px 0 40px">
         <div class="container">
-            <h2 style="font-family:'Playfair Display',serif;font-size:36px;margin-bottom:20px">Haben Sie technische
-                Fragen?</h2>
-            <p style="color:#999;margin-bottom:40px">Unser Engineering-Team berät Sie gerne.</p>
-            <a href="contact.html"
-                style="background:#C5A059;color:white;padding:15px 40px;border-radius:6px;font-weight:600;display:inline-block">Kontaktieren
-                Sie uns</a>
-        </div>
-    </section>
-    <footer style="background:#002FA7;color:white;padding:60px 0 30px">
-        <div class="container" style="text-align:center">
-            <h3 style="color:#C5A059;margin-bottom:15px">Yeh Sheng Powder Parts Ind. Co. Ltd.</h3>
-            <p style="color:#a0b0d0;font-size:14px;margin-bottom:30px">Nr. 11, Ln. 721, Zhong Zheng Rd., New Taipei
-                City, Taiwan | YS@yehsheng.com | +886-2-2901-8266</p>
-            <p style="color:#667;font-size:13px">© 2024 Yeh Sheng Powder Parts. Alle Rechte vorbehalten.</p>
+            <div
+                style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:50px;margin-bottom:60px">
+                <div>
+                    <div style="display:flex;align-items:center;gap:15px;margin-bottom:25px">
+                        <img alt="Logo" src="../images/logo.png" style="height:50px" />
+                        <h3 style="font-size:20px;font-weight:700;color:#C5A059;margin:0">Yeh Sheng Powder Parts</h3>
+                    </div>
+                    <p style="color:#a0b0d0;line-height:1.6;font-size:14px">Führender Hersteller von hochpräzisen
+                        Pulvermetallurgie-Komponenten seit 1984.</p>
+                </div>
+                <div>
+                    <h4 style="color:#C5A059;font-size:18px;font-weight:700;margin-bottom:25px">Unternehmen</h4>
+                    <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:15px">
+                        <li><a href="about.html" style="color:#a0b0d0;font-size:15px">Über uns</a></li>
+                        <li><a href="products.html" style="color:#a0b0d0;font-size:15px">Produkte</a></li>
+                        <li><a href="capabilities.html" style="color:#a0b0d0;font-size:15px">Fähigkeiten</a></li>
+                        <li><a href="contact.html" style="color:#a0b0d0;font-size:15px">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="color:#C5A059;font-size:18px;font-weight:700;margin-bottom:25px">Kontakt</h4>
+                    <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:15px">
+                        <li style="color:#a0b0d0;font-size:15px">Nr. 11, Ln. 721, Zhong Zheng Rd.</li>
+                        <li style="color:#a0b0d0;font-size:15px">New Taipei City, Taiwan</li>
+                        <li style="color:#a0b0d0;font-size:15px"><a href="mailto:YS@yehsheng.com">YS@yehsheng.com</a>
+                        </li>
+                        <li style="color:#a0b0d0;font-size:15px">+886-2-2901-8266</li>
+                    </ul>
+                </div>
+            </div>
+            <div style="border-top:1px solid rgba(255,255,255,0.1);padding-top:30px;text-align:center">
+                <p style="color:#667;font-size:13px;margin:0">© 2024 Yeh Sheng Powder Parts Ind. Co. Ltd. Alle Rechte
+                    vorbehalten.</p>
+            </div>
         </div>
     </footer>
     <script>
+        function toggleMenu() { document.getElementById('mobileMenu').classList.toggle('active') }
         function toggleLangMenu() { var m = document.getElementById("langMenu"); m.style.display = (m.style.display === "none" || m.style.display === "") ? "block" : "none" }
         document.addEventListener('click', function (e) { var m = document.getElementById("langMenu"); if (!e.target.closest('#langMenu') && !e.target.matches('[onclick="toggleLangMenu()"]')) { if (m) m.style.display = "none" } });
     </script>
