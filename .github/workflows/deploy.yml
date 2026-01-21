@@ -21,8 +21,8 @@ jobs:
       - name: Add host key to known_hosts
         run: |
           mkdir -p ~/.ssh
-          ssh-keyscan -p 333 -H 119.29.236.51 >> ~/.ssh/known_hosts
+          ssh-keyscan -p 333 -H 132.226.110.180 >> ~/.ssh/known_hosts
 
       - name: Deploy via rsync
         run: |
-          rsync -avzr --delete --exclude='.git' --exclude='.github' -e "ssh -p 333 -o StrictHostKeyChecking=no" ./ root@119.29.236.51:/www/xray_web/
+          rsync -avzr --delete --exclude='.git' --exclude='.github' -e "ssh -p 333 -o StrictHostKeyChecking=no" ./ root@132.226.110.180:/www/xray_web/
