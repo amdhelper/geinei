@@ -7,10 +7,10 @@
     <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments) } gtag('js', new Date()); gtag('config', 'G-XS5ZTZGF2Y');</script>
     <!-- Microsoft Clarity -->
     <script type="text/javascript">
-        (function(c,l,a,r,i,t,y){
-            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        (function (c, l, a, r, i, t, y) {
+            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
         })(window, document, "clarity", "script", "q46c2dab8f");
     </script>
     <meta charset="utf-8" />
@@ -37,7 +37,7 @@
         }
 
         .container {
-            max-width: 1200px;
+            max-width: 1400px;
             margin: 0 auto;
             padding: 0 20px
         }
@@ -68,22 +68,71 @@
             display: block
         }
 
-        .industry-card {
+        .industry-card-3d {
             background: white;
             border-radius: 12px;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-            padding: 40px;
-            text-align: center;
-            transition: transform 0.3s
+            overflow: hidden;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
         }
 
-        .industry-card:hover {
-            transform: translateY(-5px)
+        .industry-card-3d:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
         }
 
-        .industry-icon {
-            font-size: 48px;
-            margin-bottom: 20px
+        .card-image-container {
+            position: relative;
+            height: 250px;
+            background-color: #f3f4f6;
+            overflow: hidden;
+        }
+
+        .card-image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            padding: 2rem;
+            transition: transform 0.5s ease;
+        }
+
+        .industry-card-3d:hover .card-image-container img {
+            transform: scale(1.05);
+        }
+
+        .card-content {
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        #industry-grid-container {
+            display: grid !important;
+            grid-template-columns: 1fr !important;
+            gap: 2rem !important;
+            width: 100% !important;
+        }
+
+        @media (min-width: 768px) {
+            #industry-grid-container {
+                grid-template-columns: repeat(2, 1fr) !important;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            #industry-grid-container {
+                grid-template-columns: repeat(4, 1fr) !important;
+            }
+        }
+
+        .industry-card-3d {
+            width: 100% !important;
+            height: auto !important;
+            min-height: 400px;
         }
 
         @media(max-width:768px) {
@@ -98,10 +147,13 @@
             h1 {
                 font-size: 32px !important
             }
+
+            section {
+                padding: 60px 0 !important
+            }
         }
     </style>
     <link href="https://yehsheng.com/jp/applications.html" rel="canonical" />
-    <!-- hreflang tags for multilingual SEO -->
     <link rel="alternate" hreflang="en" href="https://yehsheng.com/applications.html" />
     <link rel="alternate" hreflang="zh-Hant" href="https://yehsheng.com/zh/applications.html" />
     <link rel="alternate" hreflang="zh-Hans" href="https://yehsheng.com/zh-cn/applications.html" />
@@ -109,26 +161,24 @@
     <link rel="alternate" hreflang="ja" href="https://yehsheng.com/jp/applications.html" />
     <link rel="alternate" hreflang="x-default" href="https://yehsheng.com/applications.html" />
     <link rel="icon" href="../images/logo.png" type="image/png">
-    <!-- ItemList Schema.org Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "ItemList",
-      "name": "Powder Metallurgy Industry Applications",
-      "description": "Industries served by Yeh Sheng powder metallurgy manufacturing",
+      "name": "粉末冶金産業アプリケーション",
+      "description": "冶聖の粉末冶金製造が対応する産業分野",
       "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "Automotive & Motorcycle Parts", "url": "https://yehsheng.com/applications.html#automotive"},
-        {"@type": "ListItem", "position": 2, "name": "Mechanical Parts", "url": "https://yehsheng.com/applications.html#mechanical"},
-        {"@type": "ListItem", "position": 3, "name": "Power Tool Parts", "url": "https://yehsheng.com/applications.html#powertools"},
-        {"@type": "ListItem", "position": 4, "name": "Hardware & Electronics", "url": "https://yehsheng.com/applications.html#hardware"},
-        {"@type": "ListItem", "position": 5, "name": "Green Energy & EV", "url": "https://yehsheng.com/applications.html#green-energy"},
-        {"@type": "ListItem", "position": 6, "name": "Medical Devices", "url": "https://yehsheng.com/applications.html#medical"},
-        {"@type": "ListItem", "position": 7, "name": "Industrial Machinery", "url": "https://yehsheng.com/applications.html#industrial"},
-        {"@type": "ListItem", "position": 8, "name": "Lock & Security", "url": "https://yehsheng.com/applications.html#security"}
+        {"@type": "ListItem", "position": 1, "name": "自動車・バイク部品", "url": "https://yehsheng.com/jp/applications.html#automotive"},
+        {"@type": "ListItem", "position": 2, "name": "機械部品", "url": "https://yehsheng.com/jp/applications.html#mechanical"},
+        {"@type": "ListItem", "position": 3, "name": "電動工具部品", "url": "https://yehsheng.com/jp/applications.html#powertools"},
+        {"@type": "ListItem", "position": 4, "name": "ハードウェア・電子機器", "url": "https://yehsheng.com/jp/applications.html#hardware"},
+        {"@type": "ListItem", "position": 5, "name": "グリーンエネルギー・EV", "url": "https://yehsheng.com/jp/applications.html#green-energy"},
+        {"@type": "ListItem", "position": 6, "name": "医療機器", "url": "https://yehsheng.com/jp/applications.html#medical"},
+        {"@type": "ListItem", "position": 7, "name": "産業機械", "url": "https://yehsheng.com/jp/applications.html#industrial"},
+        {"@type": "ListItem", "position": 8, "name": "錠前・セキュリティ", "url": "https://yehsheng.com/jp/applications.html#security"}
       ]
     }
     </script>
-
 </head>
 
 <body>
@@ -167,75 +217,188 @@
                 <a href="solutions.html" style="font-size:15px;color:#333">サービス</a>
                 <a href="capabilities.html" style="font-size:15px;color:#333">製造能力</a>
                 <a href="applications.html" style="font-size:15px;color:#C5A059;font-weight:700">産業分野</a>
+                <a href="resources.html" style="font-size:15px;color:#333">リソース</a>
                 <a href="contact.html"
                     style="background:#C5A059;color:white;padding:8px 20px;border-radius:4px">お問い合わせ</a>
             </div>
-            <div class="mobile-menu-btn" onclick="document.getElementById('mobileMenu').classList.toggle('active')">☰
-            </div>
+            <div class="mobile-menu-btn" onclick="toggleMenu()">☰</div>
             <div class="mobile-menu" id="mobileMenu">
-<!-- Close Button -->
-                <div onclick="toggleMenu()" style="text-align:right;padding:5px 0 15px;cursor:pointer;font-size:24px;color:#333;">✕</div>
+                <div onclick="toggleMenu()"
+                    style="text-align:right;padding:5px 0 15px;cursor:pointer;font-size:24px;color:#333;">✕</div>
                 <a href="products.html" style="display:block;padding:10px 0;border-bottom:1px solid #eee">製品紹介</a>
+                <a href="solutions.html" style="display:block;padding:10px 0;border-bottom:1px solid #eee">サービス</a>
+                <a href="capabilities.html" style="display:block;padding:10px 0;border-bottom:1px solid #eee">製造能力</a>
                 <a href="applications.html"
-                    style="display:block;padding:10px 0;border-bottom:1px solid #eee;color:#C5A059">産業分野</a>
+                    style="display:block;padding:10px 0;border-bottom:1px solid #eee;color:#C5A059;font-weight:700">産業分野</a>
+                <a href="resources.html" style="display:block;padding:10px 0;border-bottom:1px solid #eee">リソース</a>
                 <a href="about.html" style="display:block;padding:10px 0;border-bottom:1px solid #eee">会社概要</a>
                 <a href="contact.html" style="display:block;padding:10px 0;color:#C5A059">お問い合わせ</a>
-            
-                <!-- Mobile Language Selector -->
                 <div style="border-top:2px solid #C5A059;margin-top:10px;padding-top:15px;">
-                    <div style="font-size:14px;font-weight:600;color:#C5A059;margin-bottom:10px;">🌐 言語 / Language</div>
+                    <div style="font-size:14px;font-weight:600;color:#C5A059;margin-bottom:10px;">🌐 言語</div>
                     <a href="../applications.html" style="display:block;padding:8px 0;color:#333;">🇺🇸 English</a>
                     <a href="../zh/applications.html" style="display:block;padding:8px 0;color:#333;">🇹🇼 繁體中文</a>
                     <a href="../zh-cn/applications.html" style="display:block;padding:8px 0;color:#333;">🇨🇳 简体中文</a>
                     <a href="../de/applications.html" style="display:block;padding:8px 0;color:#333;">🇩🇪 Deutsch</a>
-                    <a href="../jp/applications.html" style="display:block;padding:8px 0;color:#C5A059;font-weight:600;">🇯🇵 日本語</a>
+                    <a href="../jp/applications.html"
+                        style="display:block;padding:8px 0;color:#C5A059;font-weight:600;">🇯🇵 日本語</a>
                 </div>
             </div>
         </div>
     </nav>
-    <header style="background:white;padding:80px 0;border-bottom:1px solid #eee">
-        <div class="container" style="text-align:center">
-            <h1 style="font-family:'Playfair Display',serif;font-size:48px;color:#111;margin-bottom:15px">産業分野＆アプリケーション
-            </h1>
-            <p style="font-size:18px;color:#666;max-width:700px;margin:0 auto">多様な産業向けの粉末冶金ソリューション</p>
-        </div>
-    </header>
+
     <section style="padding:80px 0;background:#f8f9fa">
         <div class="container">
-            <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:30px">
-                <div class="industry-card">
-                    <div class="industry-icon">🚗</div>
-                    <h3 style="font-size:22px;color:#002FA7;margin-bottom:15px">自動車産業</h3>
-                    <p style="color:#666;line-height:1.6">大手自動車メーカー向けのギアボックス部品、エンジンコンポーネント、オイルポンプローター、ステアリング部品。</p>
+            <div style="text-align:center;margin-bottom:50px">
+                <h1 style="font-family:'Playfair Display',serif;font-size:48px;color:#111;margin-bottom:15px">
+                    産業分野＆アプリケーション</h1>
+                <p style="font-size:18px;color:#666;max-width:700px;margin:0 auto">
+                    粉末冶金は、圧縮された金属粉末を加熱することで精密部品を製造する高効率な金属成形プロセスです。材料効率、ニアネットシェイプ能力、大量生産におけるコスト効率の高さで選ばれています。</p>
+            </div>
+
+            <div id="industry-grid-container">
+                <!-- 1. 自動車・バイク -->
+                <div class="industry-card-3d" id="automotive">
+                    <div class="card-image-container">
+                        <img alt="自動車・バイク部品" src="../images/automotive_parts_v2.png" />
+                    </div>
+                    <div class="card-content">
+                        <h3 style="font-size:20px;color:#002FA7;margin-bottom:10px;font-weight:700">自動車・バイク</h3>
+                        <p style="color:#666;line-height:1.6;font-size:14px;flex-grow:1">
+                            自動車産業はPM部品の最大の消費者です。燃費向上と軽量化設計が進む中、PM技術は複雑で高性能な部品の製造に不可欠です。</p>
+                        <div style="border-top:1px solid #eee;padding-top:15px;margin-top:15px">
+                            <h4 style="font-size:12px;color:#333;font-weight:700;margin-bottom:8px">主な用途</h4>
+                            <p style="font-size:13px;color:#888">
+                                エンジンタイミングスプロケット、オイルポンプギア、トランスミッションシンクロナイザーリング、ショックアブソーバー部品、ABSセンサーリング。</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="industry-card">
-                    <div class="industry-icon">🏥</div>
-                    <h3 style="font-size:22px;color:#002FA7;margin-bottom:15px">医療機器</h3>
-                    <p style="color:#666;line-height:1.6">手術器具や医療機器向けの生体適合性ステンレス鋼部品。</p>
+
+                <!-- 2. 機械部品 -->
+                <div class="industry-card-3d" id="mechanical">
+                    <div class="card-image-container">
+                        <img alt="機械部品" src="../images/1002680619b_refined.png" />
+                    </div>
+                    <div class="card-content">
+                        <h3 style="font-size:20px;color:#002FA7;margin-bottom:10px;font-weight:700">機械部品</h3>
+                        <p style="color:#666;line-height:1.6;font-size:14px;flex-grow:1">
+                            一般産業機械において、PMは高精度と耐久性が求められる構造部品の製造に最適で、従来の機械加工による高いスクラップ率を回避できます。</p>
+                        <div style="border-top:1px solid #eee;padding-top:15px;margin-top:15px">
+                            <h4 style="font-size:12px;color:#333;font-weight:700;margin-bottom:8px">主な用途</h4>
+                            <p style="font-size:13px;color:#888">平歯車、はすば歯車、自己潤滑軸受（含油）、ブッシュ、カップリング、フランジ。</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="industry-card">
-                    <div class="industry-icon">🏭</div>
-                    <h3 style="font-size:22px;color:#002FA7;margin-bottom:15px">産業機器</h3>
-                    <p style="color:#666;line-height:1.6">機械や工具向けのベアリング、ギア、構造部品。</p>
+
+                <!-- 3. 電動工具部品 -->
+                <div class="industry-card-3d" id="powertools">
+                    <div class="card-image-container">
+                        <img alt="電動工具部品" src="../images/power_tool_parts_v2.png" />
+                    </div>
+                    <div class="card-content">
+                        <h3 style="font-size:20px;color:#002FA7;margin-bottom:10px;font-weight:700">電動工具部品</h3>
+                        <p style="color:#666;line-height:1.6;font-size:14px;flex-grow:1">
+                            電動工具はコンパクトで高トルク、耐衝撃性のある部品を必要とします。PM技術はこれらのハンドヘルドデバイスの精密な内部駆動システムに最適です。</p>
+                        <div style="border-top:1px solid #eee;padding-top:15px;margin-top:15px">
+                            <h4 style="font-size:12px;color:#333;font-weight:700;margin-bottom:8px">主な用途</h4>
+                            <p style="font-size:13px;color:#888">遊星歯車システム、インパクトブロック、ドリルチャック部品、ギアボックス。</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="industry-card">
-                    <div class="industry-icon">🤖</div>
-                    <h3 style="font-size:22px;color:#002FA7;margin-bottom:15px">ロボティクス＆オートメーション</h3>
-                    <p style="color:#666;line-height:1.6">ロボットアームや自動化システム向けの精密ギアと駆動部品。</p>
+
+                <!-- 4. ハードウェア・電子機器 -->
+                <div class="industry-card-3d" id="hardware">
+                    <div class="card-image-container">
+                        <img alt="ハードウェア・電子機器" src="../images/hardware_parts_v2.png" />
+                    </div>
+                    <div class="card-content">
+                        <h3 style="font-size:20px;color:#002FA7;margin-bottom:10px;font-weight:700">ハードウェア・電子機器</h3>
+                        <p style="color:#666;line-height:1.6;font-size:14px;flex-grow:1">
+                            急速に発展する家電業界では、部品はより小型化し、美観への要求も高まっています。PMとMIMは現代のガジェットに必要な精度を提供します。</p>
+                        <div style="border-top:1px solid #eee;padding-top:15px;margin-top:15px">
+                            <h4 style="font-size:12px;color:#333;font-weight:700;margin-bottom:8px">主な用途</h4>
+                            <p style="font-size:13px;color:#888">
+                                スマートフォンヒンジ機構（折りたたみ式）、ウェアラブルデバイスフレーム、光ファイバーコネクタ、スマートロック内部部品。</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="industry-card">
-                    <div class="industry-icon">💻</div>
-                    <h3 style="font-size:22px;color:#002FA7;margin-bottom:15px">電子機器＆IT</h3>
-                    <p style="color:#666;line-height:1.6">コンピューター、プリンター、電子機器向けの小型精密部品。</p>
+
+                <!-- 5. グリーンエネルギー・EV -->
+                <div class="industry-card-3d" id="green-energy">
+                    <div class="card-image-container">
+                        <img alt="グリーンエネルギー・EV" src="../images/InnerandOuterRotor_optimized.png?v=2" />
+                    </div>
+                    <div class="card-content">
+                        <h3 style="font-size:20px;color:#002FA7;margin-bottom:10px;font-weight:700">グリーンエネルギー・EV</h3>
+                        <p style="color:#666;line-height:1.6;font-size:14px;flex-grow:1">
+                            電気自動車や再生可能エネルギーシステム向けの高効率磁性部品と構造部品。</p>
+                        <div style="border-top:1px solid #eee;padding-top:15px;margin-top:15px">
+                            <h4 style="font-size:12px;color:#333;font-weight:700;margin-bottom:8px">主な用途</h4>
+                            <p style="font-size:13px;color:#888">EVモーターコア、風力タービンギア、ソーラートラッカー部品、高効率磁気カップリング。</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="industry-card">
-                    <div class="industry-icon">✈️</div>
-                    <h3 style="font-size:22px;color:#002FA7;margin-bottom:15px">航空宇宙</h3>
-                    <p style="color:#666;line-height:1.6">重要なアプリケーション向けの特殊合金製高性能部品。</p>
+
+                <!-- 6. 医療機器 -->
+                <div class="industry-card-3d" id="medical">
+                    <div class="card-image-container">
+                        <img alt="医療機器" src="../images/medical_parts_v2.png" />
+                    </div>
+                    <div class="card-content">
+                        <h3 style="font-size:20px;color:#002FA7;margin-bottom:10px;font-weight:700">医療機器</h3>
+                        <p style="color:#666;line-height:1.6;font-size:14px;flex-grow:1">
+                            手術器具や医療ロボット向けの生体適合性・高精度ステンレス鋼部品。</p>
+                        <div style="border-top:1px solid #eee;padding-top:15px;margin-top:15px">
+                            <h4 style="font-size:12px;color:#333;font-weight:700;margin-bottom:8px">主な用途</h4>
+                            <p style="font-size:13px;color:#888">手術用ステープラー、腹腔鏡ジョー、歯科インプラントツール、薬物送達システム部品。</p>
+                        </div>
+                    </div>
                 </div>
+
+                <!-- 7. 産業機械 -->
+                <div class="industry-card-3d" id="industrial">
+                    <div class="card-image-container">
+                        <img alt="産業機械" src="../images/industrial_parts_v2.png" />
+                    </div>
+                    <div class="card-content">
+                        <h3 style="font-size:20px;color:#002FA7;margin-bottom:10px;font-weight:700">産業機械</h3>
+                        <p style="color:#666;line-height:1.6;font-size:14px;flex-grow:1">重工業オートメーション機器向けの耐摩耗性ギア、ブッシュ、カム。
+                        </p>
+                        <div style="border-top:1px solid #eee;padding-top:15px;margin-top:15px">
+                            <h4 style="font-size:12px;color:#333;font-weight:700;margin-bottom:8px">主な用途</h4>
+                            <p style="font-size:13px;color:#888">コンベアシステムギア、油圧ポンプ部品、繊維機械部品、ヘビーデューティブッシュ。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 8. 錠前・セキュリティ -->
+                <div class="industry-card-3d" id="security">
+                    <div class="card-image-container">
+                        <img alt="錠前・セキュリティ" src="../images/lock_parts_v2.png" />
+                    </div>
+                    <div class="card-content">
+                        <h3 style="font-size:20px;color:#002FA7;margin-bottom:10px;font-weight:700">錠前・セキュリティ</h3>
+                        <p style="color:#666;line-height:1.6;font-size:14px;flex-grow:1">
+                            高セキュリティ基準で製造された複雑なニアネットシェイプのロックシリンダー、ラッチ、セキュリティ部品。</p>
+                        <div style="border-top:1px solid #eee;padding-top:15px;margin-top:15px">
+                            <h4 style="font-size:12px;color:#333;font-weight:700;margin-bottom:8px">主な用途</h4>
+                            <p style="font-size:13px;color:#888">高セキュリティロックシリンダー、デッドボルトラッチ、南京錠本体、電子ロックギア。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Summary Section -->
+            <div
+                style="background-color:#fff;border-radius:12px;padding:40px;margin-top:60px;box-shadow:0 4px 20px rgba(0,0,0,0.05);text-align:center;max-width:900px;margin-left:auto;margin-right:auto;">
+                <h3 style="font-family:'Playfair Display',serif;font-size:28px;color:#002FA7;margin-bottom:20px;">まとめ
+                </h3>
+                <p style="color:#555;line-height:1.8;font-size:16px;">
+                    粉末冶金はもはやコスト削減の代替手段にとどまらず、現代エンジニアリングの主要な設計ソリューションです。エンジンに求められる耐久性から、スマートフォンヒンジに必要な微細精度まで、PMは多用途で持続可能な製造パスを提供します。
+                </p>
             </div>
         </div>
     </section>
+
     <section style="padding:80px 0;background:#111;color:white;text-align:center">
         <div class="container">
             <h2 style="font-family:'Playfair Display',serif;font-size:36px;margin-bottom:20px">業界固有のソリューションが必要ですか？</h2>
@@ -244,15 +407,46 @@
                 style="background:#C5A059;color:white;padding:15px 40px;border-radius:6px;font-weight:600;display:inline-block">お問い合わせ</a>
         </div>
     </section>
-    <footer style="background:#002FA7;color:white;padding:60px 0 30px">
-        <div class="container" style="text-align:center">
-            <h3 style="color:#C5A059;margin-bottom:15px">Yeh Sheng Powder Parts Ind. Co. Ltd.</h3>
-            <p style="color:#a0b0d0;font-size:14px;margin-bottom:30px">台湾 新北市 新荘区 中正路721巷11号 | YS@yehsheng.com |
-                +886-2-2901-8266</p>
-            <p style="color:#667;font-size:13px">© 2024 Yeh Sheng Powder Parts. All Rights Reserved.</p>
+
+    <footer style="background:#002FA7;color:white;padding:80px 0 40px">
+        <div class="container">
+            <div
+                style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:50px;margin-bottom:60px">
+                <div>
+                    <div style="display:flex;align-items:center;gap:15px;margin-bottom:25px">
+                        <img alt="Logo" src="../images/logo.png" style="height:50px" />
+                        <h3 style="font-size:20px;font-weight:700;color:#C5A059;margin:0">Yeh Sheng Powder Parts</h3>
+                    </div>
+                    <p style="color:#a0b0d0;line-height:1.6;font-size:14px">1984年創業の高精度粉末冶金部品の先進メーカー。</p>
+                </div>
+                <div>
+                    <h4 style="color:#C5A059;font-size:18px;font-weight:700;margin-bottom:25px">会社情報</h4>
+                    <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:15px">
+                        <li><a href="about.html" style="color:#a0b0d0;font-size:15px">会社概要</a></li>
+                        <li><a href="products.html" style="color:#a0b0d0;font-size:15px">製品一覧</a></li>
+                        <li><a href="capabilities.html" style="color:#a0b0d0;font-size:15px">製造能力</a></li>
+                        <li><a href="contact.html" style="color:#a0b0d0;font-size:15px">お問い合わせ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="color:#C5A059;font-size:18px;font-weight:700;margin-bottom:25px">お問い合わせ</h4>
+                    <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:15px">
+                        <li style="color:#a0b0d0;font-size:15px">台湾 新北市 新荘区 中正路721巷11号</li>
+                        <li style="color:#a0b0d0;font-size:15px"><a href="mailto:YS@yehsheng.com">YS@yehsheng.com</a>
+                        </li>
+                        <li style="color:#a0b0d0;font-size:15px">+886-2-2901-8266</li>
+                    </ul>
+                </div>
+            </div>
+            <div style="border-top:1px solid rgba(255,255,255,0.1);padding-top:30px;text-align:center">
+                <p style="color:#667;font-size:13px;margin:0">© 2024 Yeh Sheng Powder Parts Ind. Co. Ltd. All Rights
+                    Reserved.</p>
+            </div>
         </div>
     </footer>
+
     <script>
+        function toggleMenu() { document.getElementById('mobileMenu').classList.toggle('active') }
         function toggleLangMenu() { var m = document.getElementById("langMenu"); m.style.display = (m.style.display === "none" || m.style.display === "") ? "block" : "none" }
         document.addEventListener('click', function (e) { var m = document.getElementById("langMenu"); if (!e.target.closest('#langMenu') && !e.target.matches('[onclick="toggleLangMenu()"]')) { if (m) m.style.display = "none" } });
     </script>
