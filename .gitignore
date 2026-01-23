@@ -1,0 +1,15 @@
+# Backup folders
+images_backup/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyc
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
