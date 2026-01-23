@@ -133,7 +133,7 @@
         <div class="container"
             style="padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; position: relative;">
             <div style="display: flex; align-items: center; gap: 15px;">
-                <a href="index.html" style="display: flex; align-items: center; gap: 15px;">
+                <a href="index.html" style="display: flex; align-items: center; gap: 15px;" aria-label="Go to homepage">
                     <img alt="Logo" src="images/logo.png" style="height:   40px;" width="49" height="40">
                     <div style="display: flex; flex-direction: column;">
                         <span
@@ -162,11 +162,11 @@
                     style="background: #C5A059; color: white; padding: 8px 20px; border-radius: 4px; font-size: 14px; font-weight: 500;">Contact</a>
             </div>
             <!-- Mobile Menu Button -->
-            <div class="mobile-menu-btn" onclick="toggleMenu()">☰</div>
+            <div class="mobile-menu-btn" onclick="toggleMenu()" aria-label="Toggle menu" role="button" tabindex="0">☰</div>
             <!-- Mobile Menu Dropdown -->
             <div class="mobile-menu" id="mobileMenu">
 <!-- Close Button -->
-                <div onclick="toggleMenu()" style="text-align:right;padding:5px 0 15px;cursor:pointer;font-size:24px;color:#333;">✕</div>
+                <div onclick="toggleMenu()" style="text-align:right;padding:5px 0 15px;cursor:pointer;font-size:24px;color:#333;" aria-label="Close menu" role="button" tabindex="0">✕</div>
                 <a href="index.html"
                     style="font-size: 16px; font-weight: 500; color: #333; padding: 10px 0; border-bottom: 1px solid #eee;">Home</a>
                 <a href="products.html"

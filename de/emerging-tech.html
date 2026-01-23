@@ -129,7 +129,7 @@
     <nav style="background:white;box-shadow:0 2px 10px rgba(0,0,0,0.05);position:sticky;top:0;z-index:100">
         <div class="container"
             style="padding:15px 20px;display:flex;justify-content:space-between;align-items:center;position:relative">
-            <a href="index.html" style="display:flex;align-items:center;gap:15px">
+            <a href="index.html" style="display:flex;align-items:center;gap:15px" aria-label="Go to homepage">
                 <img alt="Logo" src="../images/logo.png" style="height:  40px;" width="49" height="40">
                 <div><span style="font-size:18px;font-weight:700;color:#111;display:block">Yeh Sheng Powder
                         Parts</span><span
@@ -146,7 +146,7 @@
             </div>
             <div class="mobile-menu" id="mobileMenu">
 <!-- Close Button -->
-                <div onclick="toggleMenu()" style="text-align:right;padding:5px 0 15px;cursor:pointer;font-size:24px;color:#333;">✕</div>
+                <div onclick="toggleMenu()" style="text-align:right;padding:5px 0 15px;cursor:pointer;font-size:24px;color:#333;" aria-label="Close menu" role="button" tabindex="0">✕</div>
                 <a href="products.html" style="display:block;padding:10px 0;border-bottom:1px solid #eee">Produkte</a>
                 <a href="emerging-tech.html"
                     style="display:block;padding:10px 0;border-bottom:1px solid #eee;color: #996B1D">Neue Tech</a>
