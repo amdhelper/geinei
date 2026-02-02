@@ -8,9 +8,18 @@ RedirectPermanent /gears /products.html
 RedirectPermanent /news /resources.html
 RedirectPermanent /about-us /about.html
 
+# Set default directory index
+DirectoryIndex index.html
+
 # Redirect index.html to root for canonical consistency (Fix duplicate content)
 RewriteCond %{THE_REQUEST} /index\.html [NC]
 RewriteRule ^(.*)index\.html$ /$1 [R=301,L]
+
+# Ensure trailing slash for language directories (Fix 404 errors)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !/$
+RewriteCond %{REQUEST_URI} ^/(zh|zh-cn|de|jp)$
+RewriteRule ^(.*)$ /$1/ [R=301,L]
 
 # Custom 404 Error Page
 ErrorDocument 404 /404.html

@@ -2,8 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- English (Default) -->
   <url>
-    <loc>https://yehsheng.com/index.html</loc>
-    <lastmod>2026-01-16</lastmod>
+    <loc>https://yehsheng.com/</loc>
+    <lastmod>2026-02-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -58,8 +58,8 @@
 
   <!-- Traditional Chinese (繁體中文) -->
   <url>
-    <loc>https://yehsheng.com/zh/index.html</loc>
-    <lastmod>2026-01-16</lastmod>
+    <loc>https://yehsheng.com/zh/</loc>
+    <lastmod>2026-02-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -114,8 +114,8 @@
 
   <!-- Simplified Chinese (简体中文) -->
   <url>
-    <loc>https://yehsheng.com/zh-cn/index.html</loc>
-    <lastmod>2026-01-16</lastmod>
+    <loc>https://yehsheng.com/zh-cn/</loc>
+    <lastmod>2026-02-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -170,8 +170,8 @@
 
   <!-- German (Deutsch) -->
   <url>
-    <loc>https://yehsheng.com/de/index.html</loc>
-    <lastmod>2026-01-16</lastmod>
+    <loc>https://yehsheng.com/de/</loc>
+    <lastmod>2026-02-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -226,8 +226,8 @@
 
   <!-- Japanese (日本語) -->
   <url>
-    <loc>https://yehsheng.com/jp/index.html</loc>
-    <lastmod>2026-01-16</lastmod>
+    <loc>https://yehsheng.com/jp/</loc>
+    <lastmod>2026-02-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
