@@ -166,6 +166,150 @@
             .term-name {
                 white-space: normal
             }
+
+            .resource-sidebar {
+                display: none !important
+            }
+
+            .resource-content {
+                margin-left: 0 !important
+            }
+        }
+
+        /* Sidebar Navigation Styles */
+        .resource-layout {
+            display: flex;
+            gap: 40px;
+            max-width: 1400px;
+            margin: 0 auto
+        }
+
+        .resource-sidebar {
+            width: 240px;
+            flex-shrink: 0;
+            position: sticky;
+            top: 100px;
+            height: fit-content;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            padding: 20px
+        }
+
+        .sidebar-title {
+            font-family: 'Noto Sans TC', sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            color: #002FA7;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #C5A059
+        }
+
+        .sidebar-nav {
+            list-style: none;
+            padding: 0;
+            margin: 0
+        }
+
+        .sidebar-nav li {
+            margin-bottom: 5px
+        }
+
+        .sidebar-nav a {
+            display: block;
+            padding: 10px 12px;
+            color: #555;
+            font-size: 14px;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+            border-left: 3px solid transparent
+        }
+
+        .sidebar-nav a:hover {
+            background: #f8f9fa;
+            color: #002FA7
+        }
+
+        .sidebar-nav a.active {
+            background: #f0f4ff;
+            color: #002FA7;
+            font-weight: 600;
+            border-left-color: #C5A059
+        }
+
+        .sidebar-nav .sub-item a {
+            padding-left: 24px;
+            font-size: 13px
+        }
+
+        .resource-content {
+            flex: 1;
+            min-width: 0
+        }
+
+        /* Process Guide Table */
+        .process-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 30px
+        }
+
+        .process-table th {
+            background: linear-gradient(135deg, #002FA7 0%, #001d66 100%);
+            color: white;
+            padding: 15px 12px;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 600
+        }
+
+        .process-table td {
+            padding: 12px;
+            border-bottom: 1px solid #eee;
+            text-align: center;
+            font-size: 14px
+        }
+
+        .process-table tr:nth-child(even) {
+            background: #f8f9fa
+        }
+
+        .process-table .highlight-pm {
+            background: #e8f5e9 !important;
+            color: #2e7d32;
+            font-weight: 600
+        }
+
+        .decision-box {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e8f4fd 100%);
+            border: 2px solid #C5A059;
+            border-radius: 12px;
+            padding: 25px;
+            margin-top: 30px
+        }
+
+        .decision-box h4 {
+            color: #002FA7;
+            margin: 0 0 15px 0;
+            font-size: 18px
+        }
+
+        .decision-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px 0;
+            font-size: 15px
+        }
+
+        .decision-item .arrow {
+            color: #C5A059;
+            font-weight: bold
         }
     </style>
     <link href="https://yehsheng.com/zh/resources.html" rel="canonical" />
@@ -319,363 +463,519 @@
                 <p style="font-size:18px;color:#666;max-width:800px;margin:0 auto;line-height:1.6">
                     探索有關粉末冶金的常見問題，以及行業術語的完整詞彙表，幫助您做出明智的工程決策。</p>
             </div>
-            <!-- FAQ Section -->
-            <div style="max-width:1000px;margin:0 auto 80px">
-                <h3
-                    style="font-family:'Playfair Display',serif;font-size:28px;font-weight:700;color:#333;margin-bottom:30px;border-bottom:2px solid #eee;padding-bottom:10px">
-                    常見問題 (FAQ)</h3>
 
-                <div class="faq-item">
-                    <div class="faq-question">Q1：粉末冶金零件的強度是否足以承受高負載應用？</div>
-                    <div class="faq-answer">
-                        絕對可以。雖然PM零件具有固有的微孔隙，但其強度可以工程設計為達到或超過鑄鐵甚至鍛鋼。通過調整合金成分、增加壓製密度或使用二次鍛造，PM零件現已廣泛用於高應力環境，如汽車引擎、變速器齒輪和連桿。
+            <!-- Layout with Sidebar -->
+            <div class="resource-layout">
+                <!-- Sidebar Navigation -->
+                <aside class="resource-sidebar">
+                    <div class="sidebar-title">📋 快速導航</div>
+                    <ul class="sidebar-nav">
+                        <li><a href="#process-guide">🔄 製程選擇指南</a></li>
+                        <li><a href="#faq">❓ 常見問題</a></li>
+                        <li><a href="#glossary">📖 術語表</a></li>
+                        <li><a href="#materials">🔧 材料規格</a></li>
+                        <li class="sub-item"><a href="#iron-steel">• 鐵銅碳鋼</a></li>
+                        <li class="sub-item"><a href="#stainless">• 不鏽鋼</a></li>
+                        <li class="sub-item"><a href="#magnetic">• 軟磁材料</a></li>
+                        <li class="sub-item"><a href="#bronze-brass">• 青銅/黃銅</a></li>
+                    </ul>
+                </aside>
+
+                <!-- Main Content -->
+                <div class="resource-content">
+                    <!-- NEW: Process Selection Guide Section -->
+                    <div id="process-guide" style="margin-bottom:80px">
+                        <h3
+                            style="font-family:'Playfair Display',serif;font-size:28px;font-weight:700;color:#333;margin-bottom:15px;border-bottom:2px solid #eee;padding-bottom:10px">
+                            🔄 製程選擇指南
+                        </h3>
+                        <p style="font-size:16px;color:#555;line-height:1.7;margin-bottom:25px">
+                            不確定粉末冶金是否適合您的專案？使用此指南比較 PM、CNC 加工和鑄造，找到最適合您需求的製造製程。
+                        </p>
+
+                        <table class="process-table">
+                            <thead>
+                                <tr>
+                                    <th>比較項目</th>
+                                    <th>粉末冶金</th>
+                                    <th>CNC 加工</th>
+                                    <th>鑄造</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>最適合</strong></td>
+                                    <td class="highlight-pm">複雜形狀、大量生產</td>
+                                    <td>原型製作、高精度</td>
+                                    <td>大型件、簡單形狀</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>最小數量</strong></td>
+                                    <td>5,000+ 件</td>
+                                    <td>1+ 件</td>
+                                    <td>500+ 件</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>典型公差</strong></td>
+                                    <td>±0.01 ~ 0.05mm</td>
+                                    <td>±0.005mm</td>
+                                    <td>±0.5mm</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>材料浪費</strong></td>
+                                    <td class="highlight-pm">&lt;5%</td>
+                                    <td>30-60%</td>
+                                    <td>10-20%</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>模具成本</strong></td>
+                                    <td>中高</td>
+                                    <td>無</td>
+                                    <td>高</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>單件成本(量產)</strong></td>
+                                    <td class="highlight-pm">⭐ 最低</td>
+                                    <td>最高</td>
+                                    <td>中等</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>前置時間(模具)</strong></td>
+                                    <td>45-60 天</td>
+                                    <td>1-3 天</td>
+                                    <td>30-45 天</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="decision-box">
+                            <h4>🎯 快速決策指南</h4>
+                            <div class="decision-item">
+                                <span>需要 <strong>1-100 件</strong> 且公差要求高？</span>
+                                <span class="arrow">→</span>
+                                <span><strong>CNC 加工</strong></span>
+                            </div>
+                            <div class="decision-item">
+                                <span>需要 <strong>100-5,000 件</strong> + 簡單形狀？</span>
+                                <span class="arrow">→</span>
+                                <span><strong>鑄造</strong></span>
+                            </div>
+                            <div class="decision-item">
+                                <span>需要 <strong>5,000+ 件</strong> + 複雜形狀？</span>
+                                <span class="arrow">→</span>
+                                <span style="color:#2e7d32;font-weight:700">✅ 粉末冶金</span>
+                            </div>
+                            <p style="margin-top:20px;font-size:14px;color:#666">
+                                <strong>💡 專業建議：</strong>即使數量較少，如果您計劃未來擴大生產，PM 仍可能具有成本效益。<a href="contact.html"
+                                    style="color:#002FA7">聯絡我們</a>獲取免費諮詢！
+                            </p>
+                        </div>
                     </div>
-                </div>
 
-                <div class="faq-item">
-                    <div class="faq-question">Q2：粉末冶金和CNC加工哪個更具成本效益？</div>
-                    <div class="faq-answer">
-                        這取決於生產量。CNC加工更適合小量原型製作，因為它不需要昂貴的模具。然而，對於大量生產（通常5,000件以上），粉末冶金成本顯著更低。PM通過減少材料浪費（近淨形）並消除傳統切削的勞動密集步驟來降低成本。
+                    <!-- FAQ Section -->
+                    <div id="faq" style="margin-bottom:80px">
+                        <h3
+                            style="font-family:'Playfair Display',serif;font-size:28px;font-weight:700;color:#333;margin-bottom:30px;border-bottom:2px solid #eee;padding-bottom:10px">
+                            常見問題 (FAQ)</h3>
+
+                        <div class="faq-item">
+                            <div class="faq-question">Q1：粉末冶金零件的強度是否足以承受高負載應用？</div>
+                            <div class="faq-answer">
+                                絕對可以。雖然PM零件具有固有的微孔隙，但其強度可以工程設計為達到或超過鑄鐵甚至鍛鋼。通過調整合金成分、增加壓製密度或使用二次鍛造，PM零件現已廣泛用於高應力環境，如汽車引擎、變速器齒輪和連桿。
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">Q2：粉末冶金和CNC加工哪個更具成本效益？</div>
+                            <div class="faq-answer">
+                                這取決於生產量。CNC加工更適合小量原型製作，因為它不需要昂貴的模具。然而，對於大量生產（通常5,000件以上），粉末冶金成本顯著更低。PM通過減少材料浪費（近淨形）並消除傳統切削的勞動密集步驟來降低成本。
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">Q3：PM製程可以使用哪些材料？</div>
+                            <div class="faq-answer">PM用途極為廣泛。它可以加工幾乎所有金屬，包括：
+                                <ul style="margin-top:10px;padding-left:20px">
+                                    <li><strong>鐵基合金：</strong>鐵和鋼（最常見）。</li>
+                                    <li><strong>非鐵金屬：</strong>銅、鋁和黃銅。</li>
+                                    <li><strong>難熔金屬：</strong>鎢和鉬（難以熔化）。</li>
+                                    <li><strong>特殊材料：</strong>不鏽鋼和航空航天及醫療用超合金。</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">Q4：為什麼粉末冶金被認為是「綠色」技術？</div>
+                            <div class="faq-answer">
+                                PM是最可持續的製造方法之一。它擁有超過95%的材料利用率，這意味著幾乎沒有廢金屬產生。此外，由於燒結過程發生在熔點以下，通常比傳統的熔化和鑄造操作需要更少的能源。</div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">Q5：粉末冶金中的「自潤滑」軸承如何運作？</div>
+                            <div class="faq-answer">
+                                這是PM的獨特優勢。由於零件天然具有多孔性，可以真空浸油。當軸承在運轉中加熱時，油會膨脹並流向表面。當它冷卻時，油通過毛細作用重新吸回孔隙中。這使它們非常適合「免維護」應用。
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">Q6：傳統PM和金屬射出成型（MIM）有什麼區別？</div>
+                            <div class="faq-answer">雖然兩者都使用金屬粉末：
+                                <ul style="margin-top:10px;padding-left:20px">
+                                    <li><strong>傳統PM</strong>就像「壓製藥片」。它最適合較大、較簡單的形狀。</li>
+                                    <li><strong>MIM</strong>涉及將粉末與塑料黏合劑混合後「注射」到模具中。它專為極小、高度複雜的零件（如智慧型手機或手術工具中的零件）設計，這些零件無法壓製成型。
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">Q7：PM零件可以電鍍或焊接嗎？</div>
+                            <div class="faq-answer">
+                                可以，但需要準備工作。由於多孔性，PM零件通常在電鍍前進行蒸氣處理或樹脂密封，以防止化學品滯留在孔隙中。對於焊接，首選激光焊接以最小化熱影響區。
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">Q8：PM零件的設計限制是什麼？</div>
+                            <div class="faq-answer">工程師應避免使用阻止零件從模具中脫出的特徵。這包括：
+                                <ul style="margin-top:10px;padding-left:20px">
+                                    <li><strong>側壁倒扣：</strong>側面的孔或凹槽必須後續加工。</li>
+                                    <li><strong>壁厚：</strong>壁厚通常應大於1.5mm，以確保粉末均勻流動。</li>
+                                    <li><strong>銳角：</strong>首選圓角（倒角）以延長模具壽命並提高強度。</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                </div>
 
-                <div class="faq-item">
-                    <div class="faq-question">Q3：PM製程可以使用哪些材料？</div>
-                    <div class="faq-answer">PM用途極為廣泛。它可以加工幾乎所有金屬，包括：
-                        <ul style="margin-top:10px;padding-left:20px">
-                            <li><strong>鐵基合金：</strong>鐵和鋼（最常見）。</li>
-                            <li><strong>非鐵金屬：</strong>銅、鋁和黃銅。</li>
-                            <li><strong>難熔金屬：</strong>鎢和鉬（難以熔化）。</li>
-                            <li><strong>特殊材料：</strong>不鏽鋼和航空航天及醫療用超合金。</li>
-                        </ul>
+                    <!-- Glossary Section -->
+                    <div id="glossary" style="margin-bottom:80px">
+                        <h3
+                            style="font-family:'Playfair Display',serif;font-size:28px;font-weight:700;color:#333;margin-bottom:30px;border-bottom:2px solid #eee;padding-bottom:10px">
+                            粉末冶金詞彙表</h3>
+                        <div style="overflow-x:auto">
+                            <table class="term-table">
+                                <thead>
+                                    <tr>
+                                        <th style="width:25%">術語</th>
+                                        <th>定義</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="term-name">Gerotor 內外轉子</td>
+                                        <td>「Generated Rotor」的縮寫。一種由內轉子和外轉子組成的正位移泵送單元。PM是製造這些用於油泵的複雜次擺線形狀最有效的方法。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="term-name">Green Strength 生坯強度</td>
+                                        <td>燒結前壓坯的機械強度。它必須足夠高，以便在運輸到燒結爐時不會破碎。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="term-name">Sintered Density 燒結密度</td>
+                                        <td>燒結後零件的單位體積質量。這是零件最終機械性能的主要指標。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="term-name">Diffusion Bonding 擴散結合</td>
+                                        <td>由於熱量導致原子跨越顆粒邊界遷移，將金屬顆粒熔合成固體塊的過程。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="term-name">Near-Net Shape 近淨形</td>
+                                        <td>一種製造技術，初始零件創建時非常接近其最終幾何形狀，減少了二次加工的需要。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="term-name">Oil Impregnation 含油處理</td>
+                                        <td>用潤滑劑填充燒結零件互連孔隙的過程，通常用於製造自潤滑軸承。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="term-name">Metal Injection Molding (MIM) 金屬射出成型</td>
+                                        <td>將細金屬粉末與黏合劑混合後「注射」到模具中的過程。最適合小型、極其複雜的3D形狀。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="term-name">Steam Treatment 蒸氣處理</td>
+                                        <td>在表面形成一層黑色氧化鐵（Fe3O4）以提高耐磨性並提供裝飾性表面的過程。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="term-name">Infiltration 滲透</td>
+                                        <td>用低熔點金屬（如將銅滲入鐵件）填充燒結零件的孔隙，以增加強度和密度。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="term-name">Porosity 孔隙率</td>
+                                        <td>孔隙（空洞）的體積佔總體積的百分比。可以是「開放」（連通）或「封閉」（孤立）的。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="term-name">Debinding 脫脂</td>
+                                        <td>在最終燒結階段之前從零件中去除聚合物或蠟黏合劑的關鍵步驟（尤其是在MIM中）。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="term-name">Reduced Powder 還原粉</td>
+                                        <td>通過氧化物的化學還原生產的金屬粉末。這些顆粒通常呈海綿狀和不規則狀，提供良好的生坯強度。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="term-name">Sizing / Coining 整形/壓印</td>
+                                        <td>用於提高燒結零件尺寸精度或增加其表面密度的二次壓製操作。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="term-name">Segregation 偏析</td>
+                                        <td>由於尺寸或密度差異，不同粉末顆粒在混合或送料過程中分離的不良效果。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="term-name">Spherical Powder 球形粉末</td>
+                                        <td>通過氣體霧化產生的完美圓形粉末顆粒。它們為3D列印和MIM提供出色的流動性。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="term-name">Isostatic Pressing 等靜壓</td>
+                                        <td>使用流體（水或氣體）從各個方向施加壓力，以在大型或複雜形狀中實現均勻密度。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="term-name">Apparent Density 鬆裝密度</td>
+                                        <td>鬆散粉末單位體積的重量。對於確定壓製階段模具的「填充深度」至關重要。</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
-                </div>
+                    <!-- 材料規格區塊 -->
+                    <div id="materials" style="margin-top: 80px;">
+                        <h3
+                            style="font-family:'Playfair Display',serif;font-size:28px;font-weight:700;color:#333;margin-bottom:15px;border-bottom:2px solid #eee;padding-bottom:10px">
+                            材料規格與選擇指南
+                        </h3>
+                        <p style="font-size:16px;color:#555;line-height:1.8;margin-bottom:30px">
+                            冶聖遵循全球業界標準，確保零件的最高品質與一致性。我們的材料符合 <strong>MPIF Standard 35</strong>（美國）、<strong>JIS Z
+                                2550</strong>（日本）及 <strong>DIN 30910</strong>（德國）標準。
+                        </p>
+                        <p
+                            style="font-size:14px;color:#888;background:#f8f9fa;padding:15px;border-radius:6px;margin-bottom:40px">
+                            <strong>客戶須知：</strong>以下數值為典型參考值。我們可依您的具體應用需求客製化材料密度與成分。
+                        </p>
 
-                <div class="faq-item">
-                    <div class="faq-question">Q4：為什麼粉末冶金被認為是「綠色」技術？</div>
-                    <div class="faq-answer">
-                        PM是最可持續的製造方法之一。它擁有超過95%的材料利用率，這意味著幾乎沒有廢金屬產生。此外，由於燒結過程發生在熔點以下，通常比傳統的熔化和鑄造操作需要更少的能源。</div>
-                </div>
+                        <!-- 1. 鐵銅碳鋼 -->
+                        <h4 id="iron-steel"
+                            style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:#002FA7;margin-bottom:10px">
+                            1. 鐵銅碳鋼（結構零件）
+                        </h4>
+                        <p style="font-size:15px;color:#555;margin-bottom:20px">
+                            <strong>最適用於：</strong>齒輪、鏈輪、凸輪，及需要高強度與耐磨性的結構零件。<br>
+                            <strong>常見應用：</strong>汽車變速器、電動工具、工業機械。
+                        </p>
+                        <div style="overflow-x:auto;margin-bottom:40px">
+                            <table class="term-table">
+                                <thead>
+                                    <tr>
+                                        <th>材料編碼 (MPIF)</th>
+                                        <th>JIS 對照</th>
+                                        <th>成分（標稱值）</th>
+                                        <th>密度 (g/cm³)</th>
+                                        <th>典型硬度</th>
+                                        <th>主要特性</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="term-name">FC-0205</td>
+                                        <td>SMF 4030</td>
+                                        <td>Fe + 1.5-3.9% Cu + 0.3-0.6% C</td>
+                                        <td>6.4 - 6.8</td>
+                                        <td>HRB 60-80</td>
+                                        <td>強度與精度平衡，適合一般結構件。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="term-name">FC-0208</td>
+                                        <td>SMF 4040</td>
+                                        <td>Fe + 1.5-3.9% Cu + 0.6-0.9% C</td>
+                                        <td>6.6 - 7.0</td>
+                                        <td>HRB 70-90</td>
+                                        <td>高強度耐磨，齒輪業界標準。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="term-name">FN-0205</td>
+                                        <td>SMF 5030</td>
+                                        <td>Fe + 1.0-3.0% Ni + 0.3-0.6% C</td>
+                                        <td>6.8 - 7.2</td>
+                                        <td>HRB 70-90</td>
+                                        <td>高韌性，鎳添加提升抗衝擊性。</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
 
-                <div class="faq-item">
-                    <div class="faq-question">Q5：粉末冶金中的「自潤滑」軸承如何運作？</div>
-                    <div class="faq-answer">
-                        這是PM的獨特優勢。由於零件天然具有多孔性，可以真空浸油。當軸承在運轉中加熱時，油會膨脹並流向表面。當它冷卻時，油通過毛細作用重新吸回孔隙中。這使它們非常適合「免維護」應用。</div>
-                </div>
+                        <!-- 2. 不鏽鋼 -->
+                        <h4 id="stainless"
+                            style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:#002FA7;margin-bottom:10px">
+                            2. 不鏽鋼（耐腐蝕）
+                        </h4>
+                        <p style="font-size:15px;color:#555;margin-bottom:20px">
+                            <strong>最適用於：</strong>食品機械、醫療器材、船舶應用。<br>
+                            <strong>常見應用：</strong>泵葉輪、感測器殼體、醫療器械。
+                        </p>
+                        <div style="overflow-x:auto;margin-bottom:40px">
+                            <table class="term-table">
+                                <thead>
+                                    <tr>
+                                        <th>材料編碼</th>
+                                        <th>JIS 對照</th>
+                                        <th>成分</th>
+                                        <th>密度</th>
+                                        <th>主要特性</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="term-name">SS-316</td>
+                                        <td>SUS 316L</td>
+                                        <td>Fe + 16-18% Cr + 10-14% Ni + 2-3% Mo</td>
+                                        <td>6.4 - 6.9</td>
+                                        <td>優異耐腐蝕性，非磁性。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="term-name">SS-304</td>
+                                        <td>SUS 304L</td>
+                                        <td>Fe + 18-20% Cr + 8-12% Ni</td>
+                                        <td>6.4 - 6.8</td>
+                                        <td>良好耐腐蝕性，通用標準等級。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="term-name">SS-410</td>
+                                        <td>SUS 410</td>
+                                        <td>Fe + 11.5-13.5% Cr</td>
+                                        <td>6.5 - 7.0</td>
+                                        <td>麻田散鐵系，可熱處理，具磁性。</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
 
-                <div class="faq-item">
-                    <div class="faq-question">Q6：傳統PM和金屬射出成型（MIM）有什麼區別？</div>
-                    <div class="faq-answer">雖然兩者都使用金屬粉末：
-                        <ul style="margin-top:10px;padding-left:20px">
-                            <li><strong>傳統PM</strong>就像「壓製藥片」。它最適合較大、較簡單的形狀。</li>
-                            <li><strong>MIM</strong>涉及將粉末與塑料黏合劑混合後「注射」到模具中。它專為極小、高度複雜的零件（如智慧型手機或手術工具中的零件）設計，這些零件無法壓製成型。
-                            </li>
-                        </ul>
+                        <!-- 3. 軟磁材料 -->
+                        <h4 id="magnetic"
+                            style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:#002FA7;margin-bottom:10px">
+                            3. 軟磁材料（馬達零件）
+                        </h4>
+                        <p style="font-size:15px;color:#555;margin-bottom:20px">
+                            <strong>最適用於：</strong>直流馬達外殼、極片、電樞、電磁閥。<br>
+                            <strong>常見應用：</strong>電動車馬達、致動器、感測器。
+                        </p>
+                        <div style="overflow-x:auto;margin-bottom:40px">
+                            <table class="term-table">
+                                <thead>
+                                    <tr>
+                                        <th>材料編碼</th>
+                                        <th>成分</th>
+                                        <th>磁性特性</th>
+                                        <th>主要特性</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="term-name">F-0000（純鐵）</td>
+                                        <td>Fe > 99%</td>
+                                        <td>高飽和磁感</td>
+                                        <td>高飽和磁感應強度，成本效益高。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="term-name">FY-4500（Fe-P）</td>
+                                        <td>Fe + 0.45% P</td>
+                                        <td>高磁導率</td>
+                                        <td>低鐵損，適合高效率馬達。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="term-name">Fe-Si（矽鋼）</td>
+                                        <td>Fe + 3% Si</td>
+                                        <td>低矯頑力</td>
+                                        <td>降低交流應用中的渦電流損耗。</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- 4. 青銅與黃銅 -->
+                        <h4 id="bronze-brass"
+                            style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:#002FA7;margin-bottom:10px">
+                            4. 青銅與黃銅（軸承與五金）
+                        </h4>
+                        <p style="font-size:15px;color:#555;margin-bottom:20px">
+                            <strong>最適用於：</strong>自潤滑軸承、裝飾五金、鎖具零件。
+                        </p>
+                        <div style="overflow-x:auto;margin-bottom:40px">
+                            <table class="term-table">
+                                <thead>
+                                    <tr>
+                                        <th>材料編碼</th>
+                                        <th>成分</th>
+                                        <th>密度</th>
+                                        <th>主要特性</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="term-name">CT-1000（青銅）</td>
+                                        <td>90% Cu + 10% Sn</td>
+                                        <td>6.0 - 6.4</td>
+                                        <td>自潤滑，軸承標準材料。</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="term-name">CZ-1000（黃銅）</td>
+                                        <td>80% Cu + 20% Zn</td>
+                                        <td>7.6 - 8.0</td>
+                                        <td>耐腐蝕，加工性良好。</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- 法律聲明 -->
+                        <div style="background:#f0f4f8;padding:20px;border-radius:8px;border-left:4px solid #002FA7">
+                            <p style="font-size:14px;color:#555;margin:0;line-height:1.7">
+                                <strong>🛡️ 法律與合規聲明：</strong>上述材料編碼（如 FC-0208、SS-316）及性能數據係依據公開業界標準（MPIF Standard 35、JIS
+                                Z
+                                2550）。數值僅供參考，不構成性能保證。具體設計驗證請洽詢冶聖工程團隊。
+                            </p>
+                        </div>
                     </div>
-                </div>
-
-                <div class="faq-item">
-                    <div class="faq-question">Q7：PM零件可以電鍍或焊接嗎？</div>
-                    <div class="faq-answer">可以，但需要準備工作。由於多孔性，PM零件通常在電鍍前進行蒸氣處理或樹脂密封，以防止化學品滯留在孔隙中。對於焊接，首選激光焊接以最小化熱影響區。
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <div class="faq-question">Q8：PM零件的設計限制是什麼？</div>
-                    <div class="faq-answer">工程師應避免使用阻止零件從模具中脫出的特徵。這包括：
-                        <ul style="margin-top:10px;padding-left:20px">
-                            <li><strong>側壁倒扣：</strong>側面的孔或凹槽必須後續加工。</li>
-                            <li><strong>壁厚：</strong>壁厚通常應大於1.5mm，以確保粉末均勻流動。</li>
-                            <li><strong>銳角：</strong>首選圓角（倒角）以延長模具壽命並提高強度。</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Glossary Section -->
-            <div style="max-width:1000px;margin:0 auto">
-                <h3
-                    style="font-family:'Playfair Display',serif;font-size:28px;font-weight:700;color:#333;margin-bottom:30px;border-bottom:2px solid #eee;padding-bottom:10px">
-                    粉末冶金詞彙表</h3>
-                <div style="overflow-x:auto">
-                    <table class="term-table">
-                        <thead>
-                            <tr>
-                                <th style="width:25%">術語</th>
-                                <th>定義</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="term-name">Gerotor 內外轉子</td>
-                                <td>「Generated Rotor」的縮寫。一種由內轉子和外轉子組成的正位移泵送單元。PM是製造這些用於油泵的複雜次擺線形狀最有效的方法。</td>
-                            </tr>
-                            <tr>
-                                <td class="term-name">Green Strength 生坯強度</td>
-                                <td>燒結前壓坯的機械強度。它必須足夠高，以便在運輸到燒結爐時不會破碎。</td>
-                            </tr>
-                            <tr>
-                                <td class="term-name">Sintered Density 燒結密度</td>
-                                <td>燒結後零件的單位體積質量。這是零件最終機械性能的主要指標。</td>
-                            </tr>
-                            <tr>
-                                <td class="term-name">Diffusion Bonding 擴散結合</td>
-                                <td>由於熱量導致原子跨越顆粒邊界遷移，將金屬顆粒熔合成固體塊的過程。</td>
-                            </tr>
-                            <tr>
-                                <td class="term-name">Near-Net Shape 近淨形</td>
-                                <td>一種製造技術，初始零件創建時非常接近其最終幾何形狀，減少了二次加工的需要。</td>
-                            </tr>
-                            <tr>
-                                <td class="term-name">Oil Impregnation 含油處理</td>
-                                <td>用潤滑劑填充燒結零件互連孔隙的過程，通常用於製造自潤滑軸承。</td>
-                            </tr>
-                            <tr>
-                                <td class="term-name">Metal Injection Molding (MIM) 金屬射出成型</td>
-                                <td>將細金屬粉末與黏合劑混合後「注射」到模具中的過程。最適合小型、極其複雜的3D形狀。</td>
-                            </tr>
-                            <tr>
-                                <td class="term-name">Steam Treatment 蒸氣處理</td>
-                                <td>在表面形成一層黑色氧化鐵（Fe3O4）以提高耐磨性並提供裝飾性表面的過程。</td>
-                            </tr>
-                            <tr>
-                                <td class="term-name">Infiltration 滲透</td>
-                                <td>用低熔點金屬（如將銅滲入鐵件）填充燒結零件的孔隙，以增加強度和密度。</td>
-                            </tr>
-                            <tr>
-                                <td class="term-name">Porosity 孔隙率</td>
-                                <td>孔隙（空洞）的體積佔總體積的百分比。可以是「開放」（連通）或「封閉」（孤立）的。</td>
-                            </tr>
-                            <tr>
-                                <td class="term-name">Debinding 脫脂</td>
-                                <td>在最終燒結階段之前從零件中去除聚合物或蠟黏合劑的關鍵步驟（尤其是在MIM中）。</td>
-                            </tr>
-                            <tr>
-                                <td class="term-name">Reduced Powder 還原粉</td>
-                                <td>通過氧化物的化學還原生產的金屬粉末。這些顆粒通常呈海綿狀和不規則狀，提供良好的生坯強度。</td>
-                            </tr>
-                            <tr>
-                                <td class="term-name">Sizing / Coining 整形/壓印</td>
-                                <td>用於提高燒結零件尺寸精度或增加其表面密度的二次壓製操作。</td>
-                            </tr>
-                            <tr>
-                                <td class="term-name">Segregation 偏析</td>
-                                <td>由於尺寸或密度差異，不同粉末顆粒在混合或送料過程中分離的不良效果。</td>
-                            </tr>
-                            <tr>
-                                <td class="term-name">Spherical Powder 球形粉末</td>
-                                <td>通過氣體霧化產生的完美圓形粉末顆粒。它們為3D列印和MIM提供出色的流動性。</td>
-                            </tr>
-                            <tr>
-                                <td class="term-name">Isostatic Pressing 等靜壓</td>
-                                <td>使用流體（水或氣體）從各個方向施加壓力，以在大型或複雜形狀中實現均勻密度。</td>
-                            </tr>
-                            <tr>
-                                <td class="term-name">Apparent Density 鬆裝密度</td>
-                                <td>鬆散粉末單位體積的重量。對於確定壓製階段模具的「填充深度」至關重要。</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <!-- 材料規格區塊 -->
-            <div style="max-width: 1200px; margin: 80px auto 0 auto;">
-                <h3
-                    style="font-family:'Playfair Display',serif;font-size:28px;font-weight:700;color:#333;margin-bottom:15px;border-bottom:2px solid #eee;padding-bottom:10px">
-                    材料規格與選擇指南
-                </h3>
-                <p style="font-size:16px;color:#555;line-height:1.8;margin-bottom:30px">
-                    冶聖遵循全球業界標準，確保零件的最高品質與一致性。我們的材料符合 <strong>MPIF Standard 35</strong>（美國）、<strong>JIS Z
-                        2550</strong>（日本）及 <strong>DIN 30910</strong>（德國）標準。
-                </p>
-                <p
-                    style="font-size:14px;color:#888;background:#f8f9fa;padding:15px;border-radius:6px;margin-bottom:40px">
-                    <strong>客戶須知：</strong>以下數值為典型參考值。我們可依您的具體應用需求客製化材料密度與成分。
-                </p>
-
-                <!-- 1. 鐵銅碳鋼 -->
-                <h4
-                    style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:#002FA7;margin-bottom:10px">
-                    1. 鐵銅碳鋼（結構零件）
-                </h4>
-                <p style="font-size:15px;color:#555;margin-bottom:20px">
-                    <strong>最適用於：</strong>齒輪、鏈輪、凸輪，及需要高強度與耐磨性的結構零件。<br>
-                    <strong>常見應用：</strong>汽車變速器、電動工具、工業機械。
-                </p>
-                <div style="overflow-x:auto;margin-bottom:40px">
-                    <table class="term-table">
-                        <thead>
-                            <tr>
-                                <th>材料編碼 (MPIF)</th>
-                                <th>JIS 對照</th>
-                                <th>成分（標稱值）</th>
-                                <th>密度 (g/cm³)</th>
-                                <th>典型硬度</th>
-                                <th>主要特性</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="term-name">FC-0205</td>
-                                <td>SMF 4030</td>
-                                <td>Fe + 1.5-3.9% Cu + 0.3-0.6% C</td>
-                                <td>6.4 - 6.8</td>
-                                <td>HRB 60-80</td>
-                                <td>強度與精度平衡，適合一般結構件。</td>
-                            </tr>
-                            <tr>
-                                <td class="term-name">FC-0208</td>
-                                <td>SMF 4040</td>
-                                <td>Fe + 1.5-3.9% Cu + 0.6-0.9% C</td>
-                                <td>6.6 - 7.0</td>
-                                <td>HRB 70-90</td>
-                                <td>高強度耐磨，齒輪業界標準。</td>
-                            </tr>
-                            <tr>
-                                <td class="term-name">FN-0205</td>
-                                <td>SMF 5030</td>
-                                <td>Fe + 1.0-3.0% Ni + 0.3-0.6% C</td>
-                                <td>6.8 - 7.2</td>
-                                <td>HRB 70-90</td>
-                                <td>高韌性，鎳添加提升抗衝擊性。</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <!-- 2. 不鏽鋼 -->
-                <h4
-                    style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:#002FA7;margin-bottom:10px">
-                    2. 不鏽鋼（耐腐蝕）
-                </h4>
-                <p style="font-size:15px;color:#555;margin-bottom:20px">
-                    <strong>最適用於：</strong>食品機械、醫療器材、船舶應用。<br>
-                    <strong>常見應用：</strong>泵葉輪、感測器殼體、醫療器械。
-                </p>
-                <div style="overflow-x:auto;margin-bottom:40px">
-                    <table class="term-table">
-                        <thead>
-                            <tr>
-                                <th>材料編碼</th>
-                                <th>JIS 對照</th>
-                                <th>成分</th>
-                                <th>密度</th>
-                                <th>主要特性</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="term-name">SS-316</td>
-                                <td>SUS 316L</td>
-                                <td>Fe + 16-18% Cr + 10-14% Ni + 2-3% Mo</td>
-                                <td>6.4 - 6.9</td>
-                                <td>優異耐腐蝕性，非磁性。</td>
-                            </tr>
-                            <tr>
-                                <td class="term-name">SS-304</td>
-                                <td>SUS 304L</td>
-                                <td>Fe + 18-20% Cr + 8-12% Ni</td>
-                                <td>6.4 - 6.8</td>
-                                <td>良好耐腐蝕性，通用標準等級。</td>
-                            </tr>
-                            <tr>
-                                <td class="term-name">SS-410</td>
-                                <td>SUS 410</td>
-                                <td>Fe + 11.5-13.5% Cr</td>
-                                <td>6.5 - 7.0</td>
-                                <td>麻田散鐵系，可熱處理，具磁性。</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <!-- 3. 軟磁材料 -->
-                <h4
-                    style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:#002FA7;margin-bottom:10px">
-                    3. 軟磁材料（馬達零件）
-                </h4>
-                <p style="font-size:15px;color:#555;margin-bottom:20px">
-                    <strong>最適用於：</strong>直流馬達外殼、極片、電樞、電磁閥。<br>
-                    <strong>常見應用：</strong>電動車馬達、致動器、感測器。
-                </p>
-                <div style="overflow-x:auto;margin-bottom:40px">
-                    <table class="term-table">
-                        <thead>
-                            <tr>
-                                <th>材料編碼</th>
-                                <th>成分</th>
-                                <th>磁性特性</th>
-                                <th>主要特性</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="term-name">F-0000（純鐵）</td>
-                                <td>Fe > 99%</td>
-                                <td>高飽和磁感</td>
-                                <td>高飽和磁感應強度，成本效益高。</td>
-                            </tr>
-                            <tr>
-                                <td class="term-name">FY-4500（Fe-P）</td>
-                                <td>Fe + 0.45% P</td>
-                                <td>高磁導率</td>
-                                <td>低鐵損，適合高效率馬達。</td>
-                            </tr>
-                            <tr>
-                                <td class="term-name">Fe-Si（矽鋼）</td>
-                                <td>Fe + 3% Si</td>
-                                <td>低矯頑力</td>
-                                <td>降低交流應用中的渦電流損耗。</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <!-- 4. 青銅與黃銅 -->
-                <h4
-                    style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:#002FA7;margin-bottom:10px">
-                    4. 青銅與黃銅（軸承與五金）
-                </h4>
-                <p style="font-size:15px;color:#555;margin-bottom:20px">
-                    <strong>最適用於：</strong>自潤滑軸承、裝飾五金、鎖具零件。
-                </p>
-                <div style="overflow-x:auto;margin-bottom:40px">
-                    <table class="term-table">
-                        <thead>
-                            <tr>
-                                <th>材料編碼</th>
-                                <th>成分</th>
-                                <th>密度</th>
-                                <th>主要特性</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="term-name">CT-1000（青銅）</td>
-                                <td>90% Cu + 10% Sn</td>
-                                <td>6.0 - 6.4</td>
-                                <td>自潤滑，軸承標準材料。</td>
-                            </tr>
-                            <tr>
-                                <td class="term-name">CZ-1000（黃銅）</td>
-                                <td>80% Cu + 20% Zn</td>
-                                <td>7.6 - 8.0</td>
-                                <td>耐腐蝕，加工性良好。</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <!-- 法律聲明 -->
-                <div style="background:#f0f4f8;padding:20px;border-radius:8px;border-left:4px solid #002FA7">
-                    <p style="font-size:14px;color:#555;margin:0;line-height:1.7">
-                        <strong>🛡️ 法律與合規聲明：</strong>上述材料編碼（如 FC-0208、SS-316）及性能數據係依據公開業界標準（MPIF Standard 35、JIS Z
-                        2550）。數值僅供參考，不構成性能保證。具體設計驗證請洽詢冶聖工程團隊。
-                    </p>
-                </div>
-            </div>
+                </div> <!-- End resource-content -->
+            </div> <!-- End resource-layout -->
         </div>
     </section>
+
+    <!-- Smooth Scroll JavaScript -->
+    <script>
+        // Smooth scroll for sidebar navigation
+        document.querySelectorAll('.sidebar-nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    const offsetTop = targetElement.offsetTop - 120;
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Highlight active section in sidebar
+        window.addEventListener('scroll', function () {
+            const sections = ['process-guide', 'faq', 'glossary', 'materials', 'iron-steel', 'stainless', 'magnetic', 'bronze-brass'];
+            let currentSection = '';
+
+            sections.forEach(id => {
+                const element = document.getElementById(id);
+                if (element) {
+                    const rect = element.getBoundingClientRect();
+                    if (rect.top <= 150) {
+                        currentSection = id;
+                    }
+                }
+            });
+
+            document.querySelectorAll('.sidebar-nav a').forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + currentSection) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
     <!-- Footer -->
     <footer style="background:#002FA7;color:white;padding:80px 0 40px">
         <div class="container">
