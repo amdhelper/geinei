@@ -8,6 +8,18 @@ RedirectPermanent /gears /products.html
 RedirectPermanent /news /resources.html
 RedirectPermanent /about-us /about.html
 
+# Redirect URLs without .html extension to .html version
+RedirectPermanent /capabilities /capabilities.html
+RedirectPermanent /products /products.html
+RedirectPermanent /applications /applications.html
+RedirectPermanent /about /about.html
+RedirectPermanent /contact /contact.html
+RedirectPermanent /resources /resources.html
+RedirectPermanent /solutions /solutions.html
+RedirectPermanent /emerging-tech /emerging-tech.html
+RedirectPermanent /privacy-policy /privacy-policy.html
+RedirectPermanent /terms-of-service /terms-of-service.html
+
 # Set default directory index
 DirectoryIndex index.html
 
