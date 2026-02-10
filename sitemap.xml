@@ -51,9 +51,27 @@
   </url>
   <url>
     <loc>https://yehsheng.com/emerging-tech.html</loc>
-    <lastmod>2026-02-05</lastmod>
+    <lastmod>2026-02-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yehsheng.com/gears.html</loc>
+    <lastmod>2026-02-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://yehsheng.com/privacy-policy.html</loc>
+    <lastmod>2026-02-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://yehsheng.com/terms-of-service.html</loc>
+    <lastmod>2026-02-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
 
   <!-- Traditional Chinese (繁體中文) -->
@@ -107,9 +125,15 @@
   </url>
   <url>
     <loc>https://yehsheng.com/zh/emerging-tech.html</loc>
-    <lastmod>2026-02-05</lastmod>
+    <lastmod>2026-02-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://yehsheng.com/zh/gears.html</loc>
+    <lastmod>2026-02-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 
   <!-- Simplified Chinese (简体中文) -->
@@ -163,9 +187,15 @@
   </url>
   <url>
     <loc>https://yehsheng.com/zh-cn/emerging-tech.html</loc>
-    <lastmod>2026-02-05</lastmod>
+    <lastmod>2026-02-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://yehsheng.com/zh-cn/gears.html</loc>
+    <lastmod>2026-02-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 
   <!-- German (Deutsch) -->
@@ -219,9 +249,15 @@
   </url>
   <url>
     <loc>https://yehsheng.com/de/emerging-tech.html</loc>
-    <lastmod>2026-02-05</lastmod>
+    <lastmod>2026-02-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://yehsheng.com/de/gears.html</loc>
+    <lastmod>2026-02-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 
   <!-- Japanese (日本語) -->
@@ -275,8 +311,14 @@
   </url>
   <url>
     <loc>https://yehsheng.com/jp/emerging-tech.html</loc>
-    <lastmod>2026-02-05</lastmod>
+    <lastmod>2026-02-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://yehsheng.com/jp/gears.html</loc>
+    <lastmod>2026-02-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>

@@ -4,7 +4,7 @@ RewriteEngine On
 # Redirect old product/service URLs to appropriate pages
 RedirectPermanent /powder-metal-parts /capabilities.html
 RedirectPermanent /sintered-brake-pad /applications.html
-RedirectPermanent /gears /products.html
+RedirectPermanent /gears /gears.html
 RedirectPermanent /news /resources.html
 RedirectPermanent /about-us /about.html
 
