@@ -1,0 +1,235 @@
+# Yeh Sheng Powder Parts Ind. Co. Ltd. — Full Technical Reference
+
+> This is the detailed version of llms.txt. For a summary, see: [llms.txt](https://yehsheng.com/llms.txt)
+
+---
+
+## 1. Company Profile
+
+- **Company Name:** Yeh Sheng Powder Parts Ind. Co. Ltd. (冶圣工业股份有限公司)
+- **Founded:** 1984
+- **Headquarters:** No. 11, Ln. 721, Zhong Zheng Rd., Xin Zhuang Dist., New Taipei City 242, Taiwan
+- **Certification:** ISO 9001:2015
+- **Core Business:** OEM/ODM powder metallurgy (PM) manufacturer
+- **Core Process:** Conventional press & sinter
+- **Employees:** Manufacturing facility with full in-house capabilities
+- **Global Partners:** 100+ across automotive, medical, industrial sectors
+- **Website:** https://yehsheng.com
+- **Email:** YS@yehsheng.com
+- **Phone:** +886-2-2901-8266
+
+---
+
+## 2. Manufacturing Capabilities
+
+### 2.1 Core Process: Press & Sinter
+- **Pressing pressure:** 400–700 MPa
+- **Sintering temperature:** 1100–1300°C (controlled atmosphere)
+- **Tolerance:** ±0.01mm achievable
+- **Part weight range:** 1g – 2kg
+- **Production volume:** 5,000 to 1,000,000+ pcs/month
+- **Material utilization:** 95%+ (near-net-shape)
+
+### 2.2 Secondary Operations
+| Operation | Description | Purpose |
+|-----------|-------------|---------|
+| Steam Treatment | Heat in steam at 500–570°C, forms Fe₃O₄ layer | Seals pores, wear resistance, decorative black finish |
+| Oil Impregnation | Vacuum-immerse in lubricating oil | Self-lubricating bearings, zero maintenance |
+| Heat Treatment (Carburizing) | Carbon-rich atmosphere + quench | Surface hardness HRC 58–62 |
+| Sizing / Coining | Re-strike in precision die | Accuracy to ±0.01mm |
+| Plating (Zn/Ni/Cr) | Electroplating after resin sealing | Corrosion protection |
+| CNC Machining | Drilling, tapping, grinding | Add features not possible in die |
+| Copper Infiltration | Copper fills pores during sintering | Density to ~7.3 g/cm³, +30–40% strength |
+
+---
+
+## 3. Material Specifications (MPIF Standard 35)
+
+### 3.1 Iron-Copper-Carbon Steels (Structural Parts)
+- **FC-0205** (JIS: SMF 4030): Fe + 1.5-3.9% Cu + 0.3-0.6% C, Density 6.4-6.8 g/cm³, HRB 60-80. Balanced strength, general structural use.
+- **FC-0208** (JIS: SMF 4040): Fe + 1.5-3.9% Cu + 0.6-0.9% C, Density 6.6-7.0 g/cm³, HRB 70-90. Industry standard for gears.
+- **FN-0205** (JIS: SMF 5030): Fe + 1.0-3.0% Ni + 0.3-0.6% C, Density 6.8-7.2 g/cm³, HRB 70-90. High toughness, impact resistance.
+
+### 3.2 Stainless Steels (Corrosion Resistant)
+- **SS-316** (JIS: SUS 316L): Fe + 16-18% Cr + 10-14% Ni + 2-3% Mo, Density 6.4-6.9 g/cm³. Superior corrosion resistance, non-magnetic.
+- **SS-304** (JIS: SUS 304L): Fe + 18-20% Cr + 8-12% Ni, Density 6.4-6.8 g/cm³. Good corrosion resistance.
+- **SS-410** (JIS: SUS 410): Fe + 11.5-13.5% Cr, Density 6.5-7.0 g/cm³. Martensitic, heat-treatable, magnetic.
+
+### 3.3 Soft Magnetic Materials (Motor Components)
+- **F-0000 (Pure Iron):** Fe > 99%, High saturation induction, cost-effective.
+- **FY-4500 (Fe-P):** Fe + 0.45% P, High permeability, low core loss.
+- **Fe-Si (Silicon Iron):** Fe + 3% Si, Low coercivity, reduces eddy current losses.
+
+### 3.4 Bronze & Brass (Bearings & Hardware)
+- **CT-1000 (Bronze):** 90% Cu + 10% Sn, Density 6.0-6.4 g/cm³. Self-lubricating, standard for bushings.
+- **CZ-1000 (Brass):** 80% Cu + 20% Zn, Density 7.6-8.0 g/cm³. Corrosion resistant, good machinability.
+
+Standards compliance: MPIF Standard 35 (USA), JIS Z 2550 (Japan), DIN 30910 (Germany).
+
+---
+
+## 4. Product Categories
+
+### 4.1 Gears (Core Product)
+- Spur gears, helical gears, internal gears, planetary gear components
+- AGMA 8-9 grade achievable
+- Self-lubricating option via oil impregnation
+- Materials: FC-0208 (most common), FN-0205 for high-impact
+
+### 4.2 Automotive & Motorcycle Parts
+- Transmission gears and sprockets
+- Oil pump rotors (Gerotors) — trochoidal profiles
+- Shock absorber pistons and valves
+- Engine timing sprockets and camshaft components
+- VVT (Variable Valve Timing) components
+
+### 4.3 Industrial Machinery
+- Wear-resistant gears and bushings
+- Cams and structural parts
+- Self-lubricating bearings (maintenance-free)
+
+### 4.4 Medical Devices
+- Biocompatible components (SS-316L)
+- Surgical instrument parts
+- Medical robotics components
+
+### 4.5 Power Tools
+- High-torque gears for drills, saws, grinders
+- Structural components
+
+### 4.6 Electronics & Hardware
+- Drone motor components
+- Hinge mechanisms
+- Lock & security components
+
+### 4.7 Green Energy & EV
+- Soft magnetic motor components (Fe-P, Fe-Si)
+- EV drivetrain gears
+
+---
+
+## 5. PM vs Other Manufacturing Processes
+
+### 5.1 PM vs CNC Machining
+| Factor | PM | CNC |
+|--------|-----|-----|
+| Ideal Volume | 5,000–1,000,000+ | 1–5,000 |
+| Tolerance | ±0.01–0.05mm | ±0.005mm |
+| Material Waste | <5% | 30–60% |
+| Tooling Cost | $5,000–$30,000 | None |
+| Unit Cost (high vol) | Very Low | High |
+| Self-Lubricating | Yes (oil impregnation) | No |
+| Lead Time (first run) | 45–60 days | 1–3 days |
+
+### 5.2 PM vs Die Casting
+| Factor | PM | Die Casting |
+|--------|-----|-------------|
+| Ideal Volume | 5,000+ | 10,000+ |
+| Materials | Iron, steel, copper, stainless | Aluminum, zinc, magnesium |
+| Tolerance | ±0.01–0.05mm | ±0.1–0.3mm |
+| Tooling Cost | $5,000–$30,000 | $20,000–$100,000+ |
+| Ferrous metals | Yes | No |
+
+### 5.3 Cost Savings Example
+A power tool gear: CNC cost $3.50/pc → PM cost $1.20/pc at 50,000 annual volume = 66% cost reduction, $115,000 annual savings.
+
+---
+
+## 6. PM Design Guidelines (for Engineers)
+
+| Rule | Guideline | Reason |
+|------|-----------|--------|
+| Wall Thickness | Min 1.5mm (recommended ≥2.0mm) | Uneven powder flow risk |
+| Draft Angles | Not required (unlike casting) | Axial ejection from die |
+| Fillets & Radii | R ≥ 0.3mm on all edges | Stress concentration, tooling life |
+| Length-to-Diameter | ≤ 3:1 ratio | Density uniformity |
+| Holes | Through-holes ≥ 1.5mm in die | Smaller holes via secondary drilling |
+| Undercuts | Avoid side undercuts | Two-part die ejection constraint |
+| Threads | Secondary tapping only | Perpendicular to pressing direction |
+| Max Levels | Up to 4 stepped levels | Stepped punch capability |
+
+**Free DFM (Design for Manufacturability) review available — send 2D/3D drawings to YS@yehsheng.com.**
+
+---
+
+## 7. PM Forming Methods Overview
+
+### 7.1 Conventional Press & Sinter ⭐ (Yeh Sheng's Core Process)
+- Most established PM process, 40+ years experience
+- Best for: gears, sprockets, bushings, structural parts
+- Volume: 5,000–1,000,000+ pcs
+- Unit cost: Lowest of all PM methods
+- Density: 85–92%
+
+### 7.2 Metal Injection Molding (MIM)
+- For very small, complex 3D parts (<100g)
+- Density: 96–99%
+- Applications: smartphone hinges, surgical tools
+
+### 7.3 Hot Isostatic Pressing (HIP)
+- Near 100% density for aerospace/medical
+- Very high cost
+
+### 7.4 Powder Forging
+- PM preform + forging → wrought-like properties
+- Automotive connecting rods
+
+### 7.5 Metal 3D Printing (Additive Manufacturing)
+- For prototyping (1–100 pcs)
+- Highest unit cost, no tooling needed
+
+---
+
+## 8. Frequently Asked Questions
+
+**Q: Is PM strong enough for high-load applications?**
+A: Yes. PM parts achieve strength comparable to cast iron or forged steel through alloy optimization, density control, and secondary forging. Widely used in automotive transmissions and engine components.
+
+**Q: What is the minimum order quantity?**
+A: Typically 5,000 pieces per production run due to tooling investment. We offer prototype quantities for new development projects.
+
+**Q: How long does tooling take?**
+A: 45–60 days for new tooling. Production samples available 2–3 weeks after tooling completion.
+
+**Q: Can PM parts be self-lubricating?**
+A: Yes. PM's natural porosity allows oil impregnation, creating maintenance-free self-lubricating bearings. Oil expands to surface during operation and reabsorbs when cool via capillary action.
+
+**Q: What tolerances are achievable?**
+A: ±0.01mm with sizing/coining operations. As-sintered tolerances are typically ±0.03–0.05mm.
+
+**Q: Can PM parts be plated or welded?**
+A: Yes. Parts are resin-sealed or steam-treated before plating. Laser welding preferred to minimize heat-affected zone.
+
+**Q: What is the density of PM parts?**
+A: Conventional press & sinter: 85–92% of theoretical density. With copper infiltration: up to ~7.3 g/cm³. With secondary forging: near 100%.
+
+**Q: What standards does Yeh Sheng follow?**
+A: MPIF Standard 35 (USA), JIS Z 2550 (Japan), DIN 30910 (Germany). ISO 9001:2015 certified.
+
+---
+
+## 9. Glossary of Key PM Terms
+
+- **Sintering:** Heating compacted powder below melting point to bond particles via diffusion
+- **Green Strength:** Mechanical strength of a compact before sintering
+- **Near-Net Shape:** Part geometry close to final shape, minimal post-processing
+- **Gerotor:** Generated rotor — trochoidal pump element, ideal for PM
+- **Oil Impregnation:** Filling pores with lubricant for self-lubrication
+- **Steam Treatment:** Black oxide (Fe₃O₄) coating for wear/corrosion resistance
+- **Sizing/Coining:** Secondary pressing for dimensional accuracy
+- **Infiltration:** Filling pores with lower-melting metal (typically copper)
+- **Porosity:** Volume fraction of voids; can be "open" or "closed"
+- **Apparent Density:** Weight of loose powder per unit volume
+- **Debinding:** Removing polymer binder before sintering (critical in MIM)
+
+---
+
+## 10. Contact & Inquiry
+
+For quotes, DFM review, or technical questions:
+- **Email:** YS@yehsheng.com
+- **Phone:** +886-2-2901-8266
+- **Mobile/WhatsApp:** +886-910-641-172
+- **LINE ID:** geinei
+- **WeChat:** geinei
+- **Address:** No. 11, Ln. 721, Zhong Zheng Rd., Xin Zhuang Dist., New Taipei City 242, Taiwan

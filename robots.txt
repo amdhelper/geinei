@@ -40,5 +40,10 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
+# AI-readable company information
+# https://llmstxt.org/
+LLMs-Txt: https://yehsheng.com/llms.txt
+LLMs-Full-Txt: https://yehsheng.com/llms-full.txt
+
 # Sitemap
 Sitemap: https://yehsheng.com/sitemap.xml
