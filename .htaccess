@@ -42,8 +42,13 @@ RedirectPermanent /emerging-tech /emerging-tech.html
 RedirectPermanent /privacy-policy /privacy-policy.html
 RedirectPermanent /terms-of-service /terms-of-service.html
 
-# Redirect wrong file extensions (Fix /products.htm 404)
+# Redirect wrong file extensions (Fix old .htm URLs)
 RedirectPermanent /products.htm /products.html
+RedirectPermanent /aboutus.htm /about.html
+RedirectPermanent /contactus.htm /contact.html
+
+# Redirect old URL patterns
+RedirectPermanent /application/gears.html /gears.html
 
 # Redirect non-existent pages (Fix spam/bot-generated 404s)
 RedirectPermanent /reset-password /
