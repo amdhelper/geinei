@@ -1,6 +1,28 @@
 # 301 Redirects for old/broken URLs (Fix Google Search Console 404 errors)
 RewriteEngine On
 
+# ============================================
+# CRITICAL: Force HTTPS (Fix http:// 404 errors)
+# ============================================
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# ============================================
+# CRITICAL: Redirect www to non-www (Fix www.yehsheng.com 404 errors)
+# ============================================
+RewriteCond %{HTTP_HOST} ^www\.yehsheng\.com$ [NC]
+RewriteRule ^(.*)$ https://yehsheng.com/$1 [L,R=301]
+
+# Redirect index.html to root for canonical consistency (Fix duplicate content)
+RewriteCond %{THE_REQUEST} /index\.html [NC]
+RewriteRule ^(.*)index\.html$ /$1 [R=301,L]
+
+# Ensure trailing slash for language directories (Fix 404 errors)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !/$
+RewriteCond %{REQUEST_URI} ^/(zh|zh-cn|de|jp)$
+RewriteRule ^(.*)$ /$1/ [R=301,L]
+
 # Redirect old product/service URLs to appropriate pages
 RedirectPermanent /powder-metal-parts /capabilities.html
 RedirectPermanent /sintered-brake-pad /applications.html
@@ -20,26 +42,17 @@ RedirectPermanent /emerging-tech /emerging-tech.html
 RedirectPermanent /privacy-policy /privacy-policy.html
 RedirectPermanent /terms-of-service /terms-of-service.html
 
+# Redirect wrong file extensions (Fix /products.htm 404)
+RedirectPermanent /products.htm /products.html
+
+# Redirect non-existent pages (Fix spam/bot-generated 404s)
+RedirectPermanent /reset-password /
+
 # Set default directory index
 DirectoryIndex index.html
 
-# Redirect index.html to root for canonical consistency (Fix duplicate content)
-RewriteCond %{THE_REQUEST} /index\.html [NC]
-RewriteRule ^(.*)index\.html$ /$1 [R=301,L]
-
-# Ensure trailing slash for language directories (Fix 404 errors)
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_URI} !/$
-RewriteCond %{REQUEST_URI} ^/(zh|zh-cn|de|jp)$
-RewriteRule ^(.*)$ /$1/ [R=301,L]
-
 # Custom 404 Error Page
 ErrorDocument 404 /404.html
-
-# Force HTTPS (Optional - Uncomment if needed)
-# RewriteEngine On
-# RewriteCond %{HTTPS} off
-# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 # ============================================
 # PERFORMANCE: Browser Caching
