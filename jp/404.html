@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>404 - ページが見つかりません | Yeh Sheng</title>
+    <meta content="noindex, follow" name="robots" />
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
     <link
@@ -40,10 +41,10 @@
     <link rel="icon" href="../images/logo.png" type="image/png">
     <!-- Microsoft Clarity -->
     <script type="text/javascript">
-        (function(c,l,a,r,i,t,y){
-            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        (function (c, l, a, r, i, t, y) {
+            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
         })(window, document, "clarity", "script", "q46c2dab8f");
     </script>
 </head>
@@ -68,6 +69,30 @@
             <p style="color:#a0b0d0;font-size:13px;margin:0">© 2024 Yeh Sheng Powder Parts Ind. Co. Ltd.</p>
         </div>
     </footer>
+
+    <!-- Floating CTA Button -->
+    <a id="floating-cta" href="contact.html" style="
+        position: fixed;
+        bottom: 28px;
+        right: 28px;
+        background: linear-gradient(135deg, #C5A059, #a8853a);
+        color: white;
+        padding: 14px 24px;
+        border-radius: 50px;
+        font-family: 'Inter', sans-serif;
+        font-size: 15px;
+        font-weight: 600;
+        text-decoration: none;
+        box-shadow: 0 4px 20px rgba(197, 160, 89, 0.4);
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        transition: all 0.3s ease;
+    " onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 6px 25px rgba(197,160,89,0.5)'"
+        onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 20px rgba(197,160,89,0.4)'">💬
+        お見積り</a>
+
 </body>
 
 </html>

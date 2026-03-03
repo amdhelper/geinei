@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <!-- Google Analytics (only on production domain) -->
+    <script>
+        if (window.location.hostname === 'yehsheng.com') {
+            var gaScript = document.createElement('script');
+            gaScript.async = true;
+            gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-XS5ZTZGF2Y';
+            document.head.appendChild(gaScript);
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+            gtag('config', 'G-XS5ZTZGF2Y');
+            (function (c, l, a, r, i, t, y) {
+                c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+                t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+                y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+            })(window, document, "clarity", "script", "q46c2dab8f");
+        }
+    </script>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>PM-Fallstudien — Echte Kosteneinsparungen mit Pulvermetallurgie | Yeh Sheng</title>
+    <meta
+        content="Echte Fallstudien: Japanischer Dental-OEM wechselte zu kundenspezifischen PM-Zahnrädern, japanischer Autoteile-Zulieferer lokalisierte Import-Teile in Taiwan."
+        name="description" />
+    <meta
+        content="Pulvermetallurgie Fallstudie, PM Kosteneinsparung, Dental-Zahnräder, kundenspezifische Sinterteile, Import-Substitution, Automotive PM-Teile, Lokalisierung"
+        name="keywords" />
+    <meta content="PM-Fallstudien — Echte Kosteneinsparungen | Yeh Sheng" property="og:title" />
+    <meta content="Echte Fallstudien zeigen, wie PM Bearbeitung und Importteile ersetzt, um Kosten zu senken und Qualität zu verbessern."
+        property="og:description" />
+    <meta content="https://yehsheng.com/images/logo.png" property="og:image" />
+    <meta content="https://yehsheng.com/case-studies.html" property="og:url" />
+    <meta content="website" property="og:type" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .mobile-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            z-index: 100;
+        }
+
+        .mobile-menu.active {
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .desktop-nav {
+                display: none !important;
+            }
+
+            .mobile-menu-btn {
+                display: block !important;
+            }
+
+            h1 {
+                font-size: 32px !important;
+            }
+
+            .case-card {
+                padding: 30px !important;
+            }
+
+            .case-grid {
+                grid-template-columns: 1fr !important;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr 1fr !important;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hidden-mobile {
+                display: none !important;
+            }
+        }
+
+        /* Case Study Styles */
+        .case-card {
+            background: white;
+            border-radius: 16px;
+            padding: 50px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+            margin-bottom: 40px;
+            border: 1px solid #eee;
+        }
+
+        .case-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #002FA7, #0040d0);
+            color: white;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .case-tag {
+            display: inline-block;
+            background: #f0f4f8;
+            color: #002FA7;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 500;
+            margin-right: 8px;
+            margin-bottom: 8px;
+        }
+
+        .phase-card {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 25px;
+            border-left: 4px solid #C5A059;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .stat-card {
+            background: linear-gradient(135deg, #f0f4ff 0%, #e8f4fd 100%);
+            border: 2px solid #C5A059;
+            border-radius: 12px;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 36px;
+            font-weight: 700;
+            color: #002FA7;
+            line-height: 1;
+        }
+
+        .stat-label {
+            font-size: 13px;
+            color: #555;
+            margin-top: 8px;
+            font-weight: 500;
+        }
+
+        .timeline {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 8px;
+            top: 5px;
+            bottom: 5px;
+            width: 3px;
+            background: linear-gradient(to bottom, #002FA7, #C5A059);
+            border-radius: 3px;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 25px;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -26px;
+            top: 6px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #002FA7;
+            border: 3px solid white;
+            box-shadow: 0 0 0 2px #002FA7;
+        }
+    </style>
+    <link href="https://yehsheng.com/de/case-studies.html" rel="canonical" />
+    <link rel="alternate" hreflang="en" href="https://yehsheng.com/case-studies.html" />
+    <link rel="alternate" hreflang="zh-Hant" href="https://yehsheng.com/zh/case-studies.html" />
+    <link rel="alternate" hreflang="zh-Hans" href="https://yehsheng.com/zh-cn/case-studies.html" />
+    <link rel="alternate" hreflang="de" href="https://yehsheng.com/de/case-studies.html" />
+    <link rel="alternate" hreflang="ja" href="https://yehsheng.com/jp/case-studies.html" />
+    <link rel="alternate" hreflang="x-default" href="https://yehsheng.com/case-studies.html" />
+    <link rel="icon" href="../images/logo.png" type="image/png">
+    <!-- Schema.org CaseStudy -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "PM-Fallstudien — Echte Kosteneinsparungen mit Pulvermetallurgie",
+      "description": "Praxisnahe Fallstudien zeigen, wie Unternehmen durch Pulvermetallurgie Kosten sparten und Qualität verbesserten.",
+      "url": "https://yehsheng.com/case-studies.html",
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://yehsheng.com/#organization",
+        "name": "Yeh Sheng Powder Parts Ind. Co. Ltd."
+      },
+      "mainEntity": [{
+        "@type": "Article",
+        "headline": "Japanischer Dental-OEM: Von Standardteile-Bearbeitung zu kundenspezifischen PM-Zahnrädern",
+        "description": "Ein japanischer Dentalgeräte-Hersteller reduzierte die Nachbearbeitung drastisch und verbesserte die Zahnradkonsistenz durch kundenspezifische PM-Produktion.",
+        "author": { "@id": "https://yehsheng.com/#organization" }
+      },{
+        "@type": "Article",
+        "headline": "Japanischer Fahrzeugkomponenten-Hersteller: Lokalisierung importierter Komponenten mit in Taiwan gefertigten PM-Teilen",
+        "description": "Ein japanischer Fahrzeugkomponenten-Hersteller hat erfolgreich eine importierte Komponente durch lokal in Taiwan produzierte PM-Teile ersetzt.",
+        "author": { "@id": "https://yehsheng.com/#organization" }
+      }]
+    }
+    </script>
+</head>
+
+<body>
+    <!-- Top Bar -->
+    <div class="hidden-mobile"
+        style="background-color: #002FA7; color: white; padding: 10px 0; position:relative; z-index:200">
+        <div class="container"
+            style="display: flex; justify-content: flex-end; gap: 25px; font-size: 13px; font-weight: 500; letter-spacing: 0.5px; align-items: center;">
+            <a href="about.html" style="color: #e8e8e8;">Über Uns</a>
+            <a href="contact.html" style="color: #e8e8e8;">Kontakt</a>
+            <div style="position: relative; display: inline-block;">
+                <button onclick="toggleLangDropdown()"
+                    style="background: transparent; border: 1px solid #C5A059; color: #7A5F12; padding: 6px 15px; border-radius: 4px; cursor: pointer; font-size: 13px; font-weight: 600; display: flex; align-items: center; gap: 8px;"
+                    aria-label="Select language">
+                    🌐 Deutsch ▼
+                </button>
+                <div id="langDropdown"
+                    style="display: none; position: absolute; right: 0; top: 100%; margin-top: 5px; background: white; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); min-width: 160px; z-index:10000; overflow: hidden;">
+                    <a href="case-studies.html"
+                        style="display: block; padding: 12px 20px; color: #333; font-size: 14px; border-bottom: 1px solid #eee; font-weight: 600; background: #f8f9fa;">🇺🇸
+                        English</a>
+                    <a href="zh/case-studies.html"
+                        style="display: block; padding: 12px 20px; color: #333; font-size: 14px; border-bottom: 1px solid #eee;">🇹🇼
+                        繁體中文</a>
+                    <a href="zh-cn/case-studies.html"
+                        style="display: block; padding: 12px 20px; color: #333; font-size: 14px; border-bottom: 1px solid #eee;">🇨🇳
+                        简体中文</a>
+                    <a href="de/case-studies.html"
+                        style="display: block; padding: 12px 20px; color: #333; font-size: 14px; border-bottom: 1px solid #eee;">🇩🇪
+                        Deutsch</a>
+                    <a href="jp/case-studies.html"
+                        style="display: block; padding: 12px 20px; color: #333; font-size: 14px;">🇯🇵 日本語</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav style="background: white; box-shadow: 0 2px 4px rgba(0,0,0,0.05); position: relative;">
+        <div class="container"
+            style="height: 80px; display: flex; align-items: center; justify-content: space-between;">
+            <a href="index.html" style="display: flex; align-items: center; gap: 12px;">
+                <img alt="Yeh Sheng Logo" src="../images/logo.png" style="height: 40px;" width="48" height="40">
+                <div style="display: flex; flex-direction: column;">
+                    <span
+                        style="font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; color: #111; line-height: 1.2;">Yeh
+                        Sheng Powder Parts Ind. Co. Ltd.</span>
+                    <span
+                        style="font-size: 10px; font-weight: 600; color: #7A5F12; letter-spacing: 1px; text-transform: uppercase;">Powder
+                        Metallurgy</span>
+                </div>
+            </a>
+            <div class="desktop-nav" style="display: flex; gap: 30px; align-items: center;">
+                <a href="products.html"
+                    style="font-size: 14px; font-weight: 500; color: #555; text-transform: uppercase; letter-spacing: 1px;">Produkte</a>
+                <a href="about.html"
+                    style="font-size: 14px; font-weight: 500; color: #555; text-transform: uppercase; letter-spacing: 1px;">Über Uns</a>
+                <a href="solutions.html"
+                    style="font-size: 14px; font-weight: 500; color: #555; text-transform: uppercase; letter-spacing: 1px;">Service-Ablauf</a>
+                <a href="capabilities.html"
+                    style="font-size: 14px; font-weight: 500; color: #555; text-transform: uppercase; letter-spacing: 1px;">Fähigkeiten</a>
+                <a href="applications.html"
+                    style="font-size: 14px; font-weight: 500; color: #555; text-transform: uppercase; letter-spacing: 1px;">Branchen</a>
+                <a href="resources.html"
+                    style="font-size: 14px; font-weight: 500; color: #555; text-transform: uppercase; letter-spacing: 1px;">Ressourcen</a>
+                <a href="contact.html"
+                    style="background: #C5A059; color: white; padding: 10px 24px; border-radius: 4px; font-weight: 500; font-size: 14px;">Kontakt</a>
+            </div>
+            <button class="mobile-menu-btn"
+                onclick="document.querySelector('.mobile-menu').classList.toggle('active')">☰</button>
+            <div class="mobile-menu">
+                <a href="products.html"
+                    style="display: block; padding: 10px 0; border-bottom: 1px solid #eee;">Produkte</a>
+                <a href="about.html" style="display: block; padding: 10px 0; border-bottom: 1px solid #eee;">Über Uns</a>
+                <a href="solutions.html" style="display: block; padding: 10px 0; border-bottom: 1px solid #eee;">Service
+                    Workflow</a>
+                <a href="capabilities.html"
+                    style="display: block; padding: 10px 0; border-bottom: 1px solid #eee;">Fähigkeiten</a>
+                <a href="applications.html"
+                    style="display: block; padding: 10px 0; border-bottom: 1px solid #eee;">Branchen</a>
+                <a href="resources.html"
+                    style="display: block; padding: 10px 0; border-bottom: 1px solid #eee;">Ressourcen</a>
+                <a href="contact.html"
+                    style="font-size: 16px; font-weight: 500; color: #996B1D; padding: 10px 0; border-bottom: 1px solid #eee;">Contact
+                    Us</a>
+                <div style="border-top:2px solid #C5A059;margin-top:10px;padding-top:15px;">
+                    <div style="font-size:14px;font-weight:600;color: #996B1D;margin-bottom:10px;">🌐 Sprache</div>
+                    <a href="case-studies.html" style="display:block;padding:8px 0;color: #996B1D;font-weight:600;">🇺🇸
+                        English</a>
+                    <a href="zh/case-studies.html" style="display:block;padding:8px 0;color:#333;">🇹🇼 繁體中文</a>
+                    <a href="zh-cn/case-studies.html" style="display:block;padding:8px 0;color:#333;">🇨🇳 简体中文</a>
+                    <a href="de/case-studies.html" style="display:block;padding:8px 0;color:#333;">🇩🇪 Deutsch</a>
+                    <a href="jp/case-studies.html" style="display:block;padding:8px 0;color:#333;">🇯🇵 日本語</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+        style="background: linear-gradient(135deg, #002FA7 0%, #001a6e 100%); padding: 80px 0; text-align: center;">
+        <div class="container">
+            <h1
+                style="font-family: 'Playfair Display', serif; font-size: 48px; font-weight: 700; color: white; margin-bottom: 20px;">
+                Fallstudien
+            </h1>
+            <p style="font-size: 20px; color: #a0b0d0; max-width: 700px; margin: 0 auto; line-height: 1.6;">
+                Echte Ergebnisse aus echten Partnerschaften — erfahren Sie, wie unsere Kunden mit Pulvermetallurgie Qualität verbesserten, Kosten senkten und ihre Lieferkette vereinfachten.
+            </p>
+        </div>
+    </section>
+
+    <!-- Fallstudie #1 -->
+    <section style="padding: 80px 0;">
+        <div class="container" style="max-width: 900px;">
+
+            <div class="case-card">
+                <!-- Badge & Tags -->
+                <div class="case-badge">Fallstudie #1</div>
+                <h2
+                    style="font-family: 'Playfair Display', serif; font-size: 32px; font-weight: 700; color: #111; margin-bottom: 15px; line-height: 1.3;">
+                    Japanischer Dental-OEM:<br>Von Standardteile-Bearbeitung zu kundenspezifischen PM-Zahnrädern
+                </h2>
+                <div style="margin-bottom: 30px;">
+                    <span class="case-tag">🦷 Medizin / Dental</span>
+                    <span class="case-tag">⚙️ Präzisionszahnräder</span>
+                    <span class="case-tag">🇯🇵 Japan</span>
+                    <span class="case-tag">📦 High-Mix Low-Volume</span>
+                </div>
+
+                <!-- Overview -->
+                <p style="font-size: 17px; color: #555; line-height: 1.8; margin-bottom: 35px;">
+                    Ein japanischer Hersteller von Dentalgeräten kaufte generische Standardzahnräder von Kataloglieferanten und bearbeitete jedes Stück intern per CNC, um die Zeichnungsspezifikationen zu erfüllen. Nach Kenntnis der PM-Fähigkeit, Teile direkt nach Zeichnung zu fertigen, entschied er sich für eine Partnerschaft mit Yeh Sheng.
+                </p>
+
+                <!-- The Challenge -->
+                <h3
+                    style="font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 700; color: #002FA7; margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
+                    🔴 Die Herausforderung
+                </h3>
+                <div class="phase-card" style="margin-bottom: 35px; border-left-color: #e53935;">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <h4 style="font-size: 16px; font-weight: 600; color: #333; margin: 0 0 5px 0;">Ungefähre Spezifikationen ≠ Exakte Spezifikationen</h4>
+                            <p style="font-size: 14px; color: #555; margin: 0; line-height: 1.6;">
+                                Standardzahnräder entsprachen den Abmessungen nur „annähernd". Jedes Stück benötigte eine sekundäre CNC-Bearbeitung, um die engen Toleranzen für Dental-Handstücke zu erreichen.
+                            </p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4 style="font-size: 16px; font-weight: 600; color: #333; margin: 0 0 5px 0;">Hohe Stückkosten</h4>
+                            <p style="font-size: 14px; color: #555; margin: 0; line-height: 1.6;">
+                                Jedes Zahnrad erforderte individuelles Einrichten, Spannen und CNC-Bearbeitungszeit — besonders kostspielig bei den für Dentalgeräte typischen kleinen Chargen.
+                            </p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4 style="font-size: 16px; font-weight: 600; color: #333; margin: 0 0 5px 0;">Inkonsistente Qualität</h4>
+                            <p style="font-size: 14px; color: #555; margin: 0; line-height: 1.6;">
+                                Verschiedene Chargen von Standardzahnrädern wiesen leichte Variationen in Material und Abmessungen auf, was die Qualitätskontrolle für ein medizinisches Produkt erschwerte.
+                            </p>
+                        </div>
+                        <div class="timeline-item" style="margin-bottom: 0;">
+                            <h4 style="font-size: 16px; font-weight: 600; color: #333; margin: 0 0 5px 0;">Komplexe Lieferkette</h4>
+                            <p style="font-size: 14px; color: #555; margin: 0; line-height: 1.6;">
+                                Lagerbestand verwalten, CNC-Zeit einplanen, Prüfungen koordinieren — unnötiger Aufwand für ein Bauteil, das einfach einbaufertig geliefert werden sollte.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- The Solution -->
+                <h3
+                    style="font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 700; color: #002FA7; margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
+                    🟢 Die PM-Lösung
+                </h3>
+                <div class="phase-card" style="margin-bottom: 35px; border-left-color: #2e7d32;">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <h4 style="font-size: 16px; font-weight: 600; color: #333; margin: 0 0 5px 0;">Kundenspezifischer Werkzeugbau</h4>
+                            <p style="font-size: 14px; color: #555; margin: 0; line-height: 1.6;">
+                                Yeh Shengs Ingenieurteam entwarf ein PM-Werkzeug nach den exakten Zahnradzeichnungen, unter Berücksichtigung der Sinterschrumpfung für die Endabmessungen direkt ab Presse.
+                            </p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4 style="font-size: 16px; font-weight: 600; color: #333; margin: 0 0 5px 0;">Near-Net-Shape-Fertigung</h4>
+                            <p style="font-size: 14px; color: #555; margin: 0; line-height: 1.6;">
+                                Gears are pressed and sintered to near-final dimensions with tolerances of ±0.02mm. Only
+                                minimal secondary operations like tapping remain — eliminating the bulk of CNC machining
+                                previously required.
+                            </p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4 style="font-size: 16px; font-weight: 600; color: #333; margin: 0 0 5px 0;">High-Mix-Low-Volume-Flexibilität</h4>
+                            <p style="font-size: 14px; color: #555; margin: 0; line-height: 1.6;">
+                                Yeh Sheng ist auf Kleinserienfertigung mit hoher Variantenvielfalt spezialisiert — perfekt für Dentalhersteller, die mehrere Zahnradvarianten in Hunderten statt Tausenden benötigen.
+                            </p>
+                        </div>
+                        <div class="timeline-item" style="margin-bottom: 0;">
+                            <h4 style="font-size: 16px; font-weight: 600; color: #333; margin: 0 0 5px 0;">Konstantes Material & Qualität</h4>
+                            <p style="font-size: 14px; color: #555; margin: 0; line-height: 1.6;">
+                                Jedes Zahnrad wird aus derselben kontrollierten Pulverformulierung gefertigt, mit SPC-überwachter Gewichts- und Maßkonsistenz — entscheidend für die Rückverfolgbarkeit von Medizinprodukten.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Results -->
+                <h3
+                    style="font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 700; color: #002FA7; margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
+                    📊 Die Ergebnisse
+                </h3>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">~90%</div>
+                        <div class="stat-label">Reduktion der<br>Bearbeitungsschritte</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">±0.02<small style="font-size: 18px;">mm</small></div>
+                        <div class="stat-label">Maßgenauigkeit<br>direkt ab Presse</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Chargen-zu-Chargen-<br>Konsistenz</div>
+                    </div>
+                </div>
+
+                <div class="phase-card" style="border-left-color: #002FA7; margin-top: 25px;">
+                    <h4 style="font-size: 16px; font-weight: 600; color: #002FA7; margin: 0 0 10px 0;">💡 Kernaussage
+                    </h4>
+                    <p style="font-size: 15px; color: #555; margin: 0; line-height: 1.7;">
+                        By switching from "buy generic + machine to fit" to "custom PM from drawing," the customer
+                        simplified their supply chain from a multi-step process to a streamlined solution. Parts now
+                        arrive near-net shape with only minimal finishing (e.g., tapping) needed — dramatically reducing
+                        machining time, rework, and quality variability.
+                    </p>
+                </div>
+            </div>
+
+                        <!-- Case Study #2 -->
+            <div class="case-card">
+                <!-- Badge & Tags -->
+                <div class="case-badge">Fallstudie #2</div>
+                <h2
+                    style="font-family: 'Playfair Display', serif; font-size: 32px; font-weight: 700; color: #111; margin-bottom: 15px; line-height: 1.3;">
+                    Japanischer Fahrzeugkomponenten-Hersteller:<br>Lokalisierung importierter Fahrwerkskomponenten mit Taiwan-PM-Teilen
+                </h2>
+                <div style="margin-bottom: 30px;">
+                    <span class="case-tag">🚗 Automotive / Motorrad</span>
+                    <span class="case-tag">🔧 Fahrwerkskomponenten</span>
+                    <span class="case-tag">🇯🇵 Japan → 🇹🇼 Taiwan</span>
+                    <span class="case-tag">🔄 Import-Substitution</span>
+                </div>
+
+                <!-- Overview -->
+                <p style="font-size: 17px; color: #555; line-height: 1.8; margin-bottom: 35px;">
+                    Ein japanischer Fahrzeugkomponenten-Hersteller betreibt ein Produktionswerk in Taiwan. Jahrelang wurde eine wichtige Fahrwerkskomponente für die Produktionslinie ausschließlich aus Japan importiert. Um Lieferzeiten zu verkürzen, Logistikkosten zu senken und die Lieferketten-Resilienz zu stärken, begann man mit der Suche nach lokalen Bezugsquellen — und ging eine Partnerschaft mit Yeh Sheng ein, um das Teil lokal mittels Pulvermetallurgie herzustellen.
+                </p>
+
+                <!-- The Challenge -->
+                <h3
+                    style="font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 700; color: #002FA7; margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
+                    🔴 Die Herausforderung
+                </h3>
+                <div class="phase-card" style="margin-bottom: 35px; border-left-color: #e53935;">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <h4 style="font-size: 16px; font-weight: 600; color: #333; margin: 0 0 5px 0;">Lange internationale Lieferzeiten</h4>
+                            <p style="font-size: 14px; color: #555; margin: 0; line-height: 1.6;">
+                                Der Import der Komponente aus Japan erforderte wochenlangen Versand, Zollabfertigung und Bestandsplanung — was Pufferlagerkosten verursachte und die Reaktionsfähigkeit auf Nachfrageänderungen verlangsamte.
+                            </p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4 style="font-size: 16px; font-weight: 600; color: #333; margin: 0 0 5px 0;">Verwundbarkeit der Lieferkette</h4>
+                            <p style="font-size: 14px; color: #555; margin: 0; line-height: 1.6;">
+                                Die Abhängigkeit von einer einzigen Übersee-Quelle für eine kritische Produktionskomponente setzte das Taiwan-Werk Störungsrisiken aus — insbesondere durch Logistikverzögerungen, Naturkatastrophen oder Handelsschwankungen.
+                            </p>
+                        </div>
+                        <div class="timeline-item" style="margin-bottom: 0;">
+                            <h4 style="font-size: 16px; font-weight: 600; color: #333; margin: 0 0 5px 0;">Strenge japanische Qualitätsstandards</h4>
+                            <p style="font-size: 14px; color: #555; margin: 0; line-height: 1.6;">
+                                Jeder lokale Lieferant musste die exakten Materialspezifikationen, Maßtoleranzen und Leistungsanforderungen des japanischen Originalteils erfüllen — eine hohe Hürde, die nur wenige lokale Hersteller nehmen konnten.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- The Solution -->
+                <h3
+                    style="font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 700; color: #002FA7; margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
+                    🟢 Die PM-Lösung
+                </h3>
+                <div class="phase-card" style="margin-bottom: 35px; border-left-color: #2e7d32;">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <h4 style="font-size: 16px; font-weight: 600; color: #333; margin: 0 0 5px 0;">Reverse Engineering & Werkzeugentwicklung</h4>
+                            <p style="font-size: 14px; color: #555; margin: 0; line-height: 1.6;">
+                                Das Ingenieurteam von Yeh Sheng arbeitete eng mit dem Kunden zusammen, um die Spezifikationen des japanischen Originalteils zu analysieren und ein dediziertes PM-Werkzeug zu entwickeln, das Geometrie, Dichte und mechanische Eigenschaften exakt repliziert.
+                            </p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4 style="font-size: 16px; font-weight: 600; color: #333; margin: 0 0 5px 0;">Alternative Materialauswahl & Validierung</h4>
+                            <p style="font-size: 14px; color: #555; margin: 0; line-height: 1.6;">
+                                Yeh Sheng identifizierte eine geeignete alternative Pulverformulierung, die sich vom japanischen Originalmaterial unterscheidet, aber eine gleichwertige funktionale Leistung liefert. Der Kunde führte unabhängige Tests durch und genehmigte das lokal gefertigte Teil für den Produktionseinsatz.
+                            </p>
+                        </div>
+                        <div class="timeline-item" style="margin-bottom: 0;">
+                            <h4 style="font-size: 16px; font-weight: 600; color: #333; margin: 0 0 5px 0;">Dual-Source-Qualifikation</h4>
+                            <p style="font-size: 14px; color: #555; margin: 0; line-height: 1.6;">
+                                Der Kunde unterhält nun sowohl japanische als auch taiwanesische Teile als qualifizierte Quellen. Diese Dual-Source-Strategie bietet Versorgungssicherheit bei gleichzeitiger schrittweiser Verlagerung des Volumens zur lokalen Produktion.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Results -->
+                <h3
+                    style="font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 700; color: #002FA7; margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
+                    📊 Die Ergebnisse
+                </h3>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">✓</div>
+                        <div class="stat-label">Deutlich kürzere<br>Lieferzeit</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">2</div>
+                        <div class="stat-label">Qualifizierte<br>Quellen (JP + TW)</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">3+</div>
+                        <div class="stat-label">Jahre stabile<br>Lieferpartnerschaft</div>
+                    </div>
+                </div>
+
+                <div class="phase-card" style="border-left-color: #002FA7; margin-top: 25px;">
+                    <h4 style="font-size: 16px; font-weight: 600; color: #002FA7; margin: 0 0 10px 0;">💡 Kernaussage
+                    </h4>
+                    <p style="font-size: 15px; color: #555; margin: 0; line-height: 1.7;">
+                        Die Import-Substitution durch Pulvermetallurgie ermöglichte es diesem Hersteller, eine kritische Komponente zu lokalisieren, ohne die Qualität zu kompromittieren. Durch die Etablierung einer qualifizierten lokalen Quelle in Taiwan reduzierten sie die Abhängigkeit von internationaler Logistik, verkürzten die Lieferzeiten erheblich und gewannen Flexibilität in der Lieferkette — bei Beibehaltung der exakt gleichen, vom japanischen Hauptquartier genehmigten Teilespezifikationen.
+                    </p>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div
+                style="background: linear-gradient(135deg, #002FA7 0%, #001a6e 100%); border-radius: 16px; padding: 50px; text-align: center;">
+                <h2
+                    style="font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 700; color: white; margin-bottom: 15px;">
+                    Haben Sie eine ähnliche Herausforderung?
+                </h2>
+                <p style="font-size: 16px; color: #a0b0d0; max-width: 500px; margin: 0 auto 25px; line-height: 1.6;">
+                    Wenn Sie derzeit Standardteile bearbeiten, um Ihre Spezifikationen zu erfüllen, kann Pulvermetallurgie Zeit, Kosten und Komplexität einsparen. Sprechen Sie mit uns.
+                </p>
+                <a href="contact.html"
+                    style="display: inline-block; background: #C5A059; color: white; padding: 14px 40px; border-radius: 6px; font-weight: 600; font-size: 16px; transition: background 0.3s;">
+                    Kontaktieren Sie unser Ingenieurteam →
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background: #002FA7; color: white; padding: 80px 0 40px 0;">
+        <div class="container">
+            <div
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 50px; margin-bottom: 60px;">
+                <div>
+                    <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 25px;">
+                        <img alt="Logo" src="../images/logo.png" style="height: 50px;" width="61" height="50">
+                        <h3
+                            style="font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 700; color: #8B6914; margin: 0;">
+                            Yeh Sheng Powder Parts</h3>
+                    </div>
+                    <p style="color: #a0b0d0; line-height: 1.6; font-size: 14px;">Führender Hersteller hochpräziser Pulvermetallurgie-Komponenten seit 1984.</p>
+                </div>
+                <div>
+                    <h4
+                        style="font-family: 'Playfair Display', serif; color: #996B1D; font-size: 18px; font-weight: 700; margin-bottom: 25px;">
+                        UNTERNEHMEN</h4>
+                    <ul
+                        style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 15px;">
+                        <li><a href="about.html" style="color: #a0b0d0; font-size: 15px;">About Us</a></li>
+                        <li><a href="products.html" style="color: #a0b0d0; font-size: 15px;">Alle Produkte</a></li>
+                        <li><a href="capabilities.html" style="color: #a0b0d0; font-size: 15px;">Fähigkeiten</a></li>
+                        <li><a href="resources.html" style="color: #a0b0d0; font-size: 15px;">Resources</a></li>
+                        <li><a href="case-studies.html" style="color: #C5A059; font-size: 15px; font-weight: 600;">📋 Fallstudien</a></li>
+                        <li><a href="contact.html" style="color: #a0b0d0; font-size: 15px;">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4
+                        style="font-family: 'Playfair Display', serif; color: #996B1D; font-size: 18px; font-weight: 700; margin-bottom: 25px;">
+                        KONTAKT</h4>
+                    <ul
+                        style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 15px;">
+                        <li style="color: #a0b0d0; font-size: 15px;">No. 11, Ln. 721, Zhong Zheng Rd.</li>
+                        <li style="color: #a0b0d0; font-size: 15px;">Xin Zhuang Dist., New Taipei City, Taiwan</li>
+                        <li style="color: #a0b0d0; font-size: 15px;"><a
+                                href="mailto:YS@yehsheng.com">YS@yehsheng.com</a></li>
+                        <li style="color: #a0b0d0; font-size: 15px;">+886-2-2901-8266</li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 30px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
+                <p style="color: #e0e0e0; font-size: 13px; margin: 0;">© 2024 Yeh Sheng Powder Parts Ind. Co. Ltd. All
+                    Rights Reserved.</p>
+                <div style="display: flex; gap: 20px;">
+                    <a href="privacy-policy.html" style="color: #e0e0e0; font-size: 13px;">Datenschutz</a>
+                    <a href="terms-of-service.html" style="color: #e0e0e0; font-size: 13px;">AGB</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function toggleLangDropdown() {
+            var dropdown = document.getElementById("langDropdown");
+            if (dropdown) {
+                dropdown.style.display = (dropdown.style.display === "none" || dropdown.style.display === "") ? "block" : "none";
+            }
+        }
+        document.addEventListener('click', function (e) {
+            var dropdown = document.getElementById("langDropdown");
+            if (dropdown && !e.target.closest('#langDropdown') && !e.target.matches('[onclick="toggleLangDropdown()"]')) {
+                dropdown.style.display = "none";
+            }
+        });
+    </script>
+
+    <!-- Floating CTA Button -->
+    <a id="floating-cta" href="contact.html" style="
+        position: fixed;
+        bottom: 28px;
+        right: 28px;
+        background: linear-gradient(135deg, #C5A059, #a8853a);
+        color: white;
+        padding: 14px 24px;
+        border-radius: 50px;
+        font-family: 'Inter', sans-serif;
+        font-size: 15px;
+        font-weight: 600;
+        text-decoration: none;
+        box-shadow: 0 4px 20px rgba(197, 160, 89, 0.4);
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        transition: all 0.3s ease;
+    " onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 6px 25px rgba(197,160,89,0.5)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 20px rgba(197,160,89,0.4)'">💬 Angebot anfordern</a>
+
+</body>
+
+</html>
