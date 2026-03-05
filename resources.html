@@ -238,7 +238,8 @@
             flex-shrink: 0;
             position: sticky;
             top: 100px;
-            height: fit-content;
+            max-height: calc(100vh - 120px);
+            overflow-y: auto;
             background: white;
             border-radius: 12px;
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
@@ -3165,7 +3166,9 @@
         align-items: center;
         gap: 6px;
         transition: all 0.3s ease;
-    " onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 6px 25px rgba(197,160,89,0.5)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 20px rgba(197,160,89,0.4)'">💬 Get a Quote</a>
+    " onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 6px 25px rgba(197,160,89,0.5)'"
+        onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 20px rgba(197,160,89,0.4)'">💬 Get
+        a Quote</a>
 
 </body>
 
