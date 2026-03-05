@@ -1892,8 +1892,9 @@
         // Smooth scroll for sidebar navigation
         document.querySelectorAll('.sidebar-nav a').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
-                e.preventDefault();
                 const targetId = this.getAttribute('href');
+                if (!targetId.startsWith('#')) return;
+                e.preventDefault();
                 const targetElement = document.querySelector(targetId);
                 if (targetElement) {
                     const offsetTop = targetElement.offsetTop - 120;
