@@ -2039,9 +2039,10 @@
         // Smooth scroll for sidebar navigation
         document.querySelectorAll('.sidebar-nav a').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (!href.startsWith('#')) return; // Allow external links to navigate normally
                 e.preventDefault();
-                const targetId = this.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
+                const targetElement = document.querySelector(href);
                 if (targetElement) {
                     const offsetTop = targetElement.offsetTop - 120;
                     window.scrollTo({
