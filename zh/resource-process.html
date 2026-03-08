@@ -1,8 +1,9 @@
 ﻿<!DOCTYPE html>
-<html lang="ja">
+<html lang="zh-Hant">
 
 <head>
     <meta name="google-site-verification" content="YUhT_jRF5sxYfCWMMcB08B38K6MB2yAEv4wEo1fjdXg" />
+    <!-- Google tag (gtag.js) -->
     <!-- Google Analytics & Clarity (production only) -->
     <script>
         if (window.location.hostname === 'yehsheng.com') {
@@ -23,18 +24,18 @@
     </script>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>【技術資料】粉末冶金FAQ、材料規格、MPIF基準</title>
-    <meta content="粉末冶金（PM）に関する技術リソース。PM部品の強度、コスト、材料に関するよくある質問（FAQ）や、業界用語集、MPIF規格などをご案内します。" name="description" />
+    <title>粉末冶金是什麼？PM vs CNC比較、材料規格、FAQ完整指南</title>
+    <meta content="粉末冶金入門指南：什麼是PM？和CNC/鑄造差在哪？材料怎麼選？40年專家整理的FAQ與MPIF材料規格表。新手必讀→" name="description" />
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&amp;family=Noto+Sans+TC:wght@300;400;500;600;700&amp;display=swap"
         rel="stylesheet" />
     <style>
         body {
             margin: 0;
             padding: 0;
-            font-family: 'Noto Sans JP', sans-serif;
+            font-family: 'Noto Sans TC', sans-serif;
             color: #333;
             background: #fcfcfc
         }
@@ -257,7 +258,7 @@
         }
 
         .sidebar-title {
-            font-family: 'Noto Sans JP', sans-serif;
+            font-family: 'Noto Sans TC', sans-serif;
             font-size: 16px;
             font-weight: 700;
             color: #002FA7;
@@ -372,7 +373,8 @@
             font-weight: bold
         }
     </style>
-    <link href="https://yehsheng.com/jp/resources.html" rel="canonical" />
+    <link href="https://yehsheng.com/zh/resources.html" rel="canonical" />
+    <!-- hreflang tags for multilingual SEO -->
     <link rel="alternate" hreflang="en" href="https://yehsheng.com/resources.html" />
     <link rel="alternate" hreflang="zh-Hant" href="https://yehsheng.com/zh/resources.html" />
     <link rel="alternate" hreflang="zh-Hans" href="https://yehsheng.com/zh-cn/resources.html" />
@@ -380,190 +382,280 @@
     <link rel="alternate" hreflang="ja" href="https://yehsheng.com/jp/resources.html" />
     <link rel="alternate" hreflang="x-default" href="https://yehsheng.com/resources.html" />
     <link rel="icon" href="../images/logo.png" type="image/png">
+    <!-- FAQPage Schema.org Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",
       "mainEntity": [
-        {"@type": "Question", "name": "粉末冶金部品の強度は高負荷用途に十分ですか？", "acceptedAnswer": {"@type": "Answer", "text": "はい、十分です。PM部品には固有の微小気孔がありますが、合金組成の調整、圧縮密度の増加、二次鍛造の使用により、鋳鉄や鍛造鋼に匹敵または超える強度に設計できます。PM部品は現在、自動車エンジン、トランスミッションギア、コネクティングロッドなどの高応力環境で広く使用されています。"}},
-        {"@type": "Question", "name": "粉末冶金とCNC加工、どちらがコスト効率が良いですか？", "acceptedAnswer": {"@type": "Answer", "text": "生産量によって異なります。CNC加工は高価な金型が不要なため、少量試作に適しています。しかし、大量生産（通常5,000個以上）では、粉末冶金の方が大幅にコスト効率が良くなります。PMは材料廃棄を最小限に抑え（ニアネットシェイプ）、従来の切削加工の労働集約的な工程を排除することでコストを削減します。"}},
-        {"@type": "Question", "name": "PMプロセスではどのような材料が使用できますか？", "acceptedAnswer": {"@type": "Answer", "text": "PMは非常に汎用性が高く、ほぼすべての金属を加工できます：鉄系合金（鉄と鋼）、非鉄金属（銅、アルミニウム、真鍮）、耐火金属（タングステンとモリブデン）、航空宇宙・医療用特殊材料（ステンレス鋼とスーパーアロイ）。"}},
-        {"@type": "Question", "name": "なぜ粉末冶金は「グリーン」技術と考えられていますか？", "acceptedAnswer": {"@type": "Answer", "text": "PMは最も持続可能な製造方法の一つです。材料利用率は95%以上で、金属スクラップがほとんど発生しません。また、焼結プロセスは融点以下で行われるため、従来の溶融・鋳造作業よりも少ないエネルギーで済むことが多いです。"}},
-        {"@type": "Question", "name": "粉末冶金の「自己潤滑」軸受はどのように機能しますか？", "acceptedAnswer": {"@type": "Answer", "text": "これはPMの独自の利点です。部品は自然に多孔質であるため、真空含浸でオイルを染み込ませることができます。軸受が運転中に加熱されると、オイルが膨張して表面に流れ出します。冷却すると、毛細管作用によりオイルが気孔に再吸収されます。「メンテナンスフリー」用途に最適です。"}}
+        {
+          "@type": "Question",
+          "name": "粉末冶金零件的強度是否足以應對高負載應用？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "絕對可以。雖然PM零件有固有的微孔隙，但其強度可以通過調整合金成分、增加壓製密度或使用二次鍛造來達到或超過鑄鐵甚至鍛鋼的水平。PM零件現已廣泛用於汽車引擎、變速箱齒輪和連桿等高應力環境。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "粉末冶金和CNC加工哪個更具成本效益？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "這取決於生產量。CNC加工適合小批量原型製作，因為不需要昂貴的模具。然而，對於大規模生產（通常5,000件以上），粉末冶金明顯更便宜。PM通過近淨成形減少材料浪費，並消除傳統切削的勞動密集步驟來降低成本。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "PM製程可以使用哪些材料？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "PM非常靈活，幾乎可以加工所有金屬，包括：鐵基合金（鐵和鋼）、非鐵金屬（銅、鋁和黃銅）、難熔金屬（鎢和鉬）、以及航太和醫療用途的特殊材料（不鏽鋼和超合金）。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "為什麼粉末冶金被認為是「綠色」技術？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "PM是最環保的製造方法之一。其材料利用率超過95%，幾乎不產生廢金屬。此外，由於燒結過程在熔點以下進行，通常比傳統的熔化和鑄造操作需要更少的能源。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "粉末冶金中的「自潤滑」軸承如何工作？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "這是PM的獨特優勢。由於零件天然多孔，可以真空浸漬油。當軸承在運行中發熱時，油會膨脹並流到表面。冷卻後，油會通過毛細作用重新被吸收到孔隙中。這使它們非常適合「免維護」應用。"
+          }
+        }
       ]
     }
     </script>
+
 </head>
 
 <body>
+    <!-- Top Bar -->
     <div class="hidden-mobile" style="background:#002FA7;color:white;padding:10px 0;position:relative;z-index:200">
         <div class="container" style="display:flex;justify-content:flex-end;gap:25px;font-size:13px;font-weight:500">
-            <a href="about.html" style="color:#e8e8e8">会社概要</a>
-            <a href="contact.html" style="color:#e8e8e8">お問い合わせ</a>
+            <a href="about.html" style="color:#e8e8e8">關於我們</a>
+            <a href="contact.html" style="color:#e8e8e8">聯絡我們</a>
             <div style="position:relative;display:inline-block">
-                <span style="color: #996B1D;font-weight:600;cursor:pointer" onclick="toggleLangMenu()">日本語 ▼</span>
+                <span style="color: #996B1D;font-weight:600;cursor:pointer" onclick="toggleLangMenu()">繁體中文 ▼</span>
                 <div id="langMenu"
                     style="display:none;position:absolute;right:0;top:100%;background:white;box-shadow:0 4px 12px rgba(0,0,0,0.15);border-radius:4px;min-width:120px;z-index:10000">
                     <a href="../resources.html"
                         style="display:block;padding:10px 15px;color:#333;font-size:13px">English</a>
                     <a href="../zh/resources.html"
-                        style="display:block;padding:10px 15px;color:#333;font-size:13px">繁體中文</a>
+                        style="display:block;padding:10px 15px;color: #996B1D;font-size:13px;background:#f5f5f5">繁體中文</a>
                     <a href="../zh-cn/resources.html"
                         style="display:block;padding:10px 15px;color:#333;font-size:13px">简体中文</a>
                     <a href="../de/resources.html"
                         style="display:block;padding:10px 15px;color:#333;font-size:13px">Deutsch</a>
                     <a href="../jp/resources.html"
-                        style="display:block;padding:10px 15px;color: #996B1D;font-size:13px;background:#f5f5f5">日本語</a>
+                        style="display:block;padding:10px 15px;color:#333;font-size:13px">日本語</a>
                 </div>
             </div>
         </div>
     </div>
+    <!-- Navigation -->
     <nav style="background:white;box-shadow:0 2px 10px rgba(0,0,0,0.05);position:sticky;top:0;z-index:100">
         <div class="container"
             style="padding:15px 20px;display:flex;justify-content:space-between;align-items:center;position:relative">
-            <a href="index.html" style="display:flex;align-items:center;gap:15px" aria-label="Go to homepage">
-                <img alt="Logo" src="../images/logo.png" style="height:  40px;" width="49" height="40">
-                <div><span style="font-size:18px;font-weight:700;color:#111;display:block">Yeh Sheng Powder
-                        Parts</span><span style="font-size:10px;font-weight:600;color: #996B1D">粉末冶金エキスパート</span></div>
-            </a>
+            <div style="display:flex;align-items:center;gap:15px">
+                <a href="index.html" style="display:flex;align-items:center;gap:15px" aria-label="Go to homepage">
+                    <img alt="Logo" src="../images/logo.png" style="height:  40px;" width="49" height="40">
+                    <div style="display:flex;flex-direction:column">
+                        <span style="font-size:18px;font-weight:700;color:#111;line-height:1.2">冶聖工業股份有限公司</span>
+                        <span style="font-size:10px;font-weight:600;color: #996B1D;letter-spacing:1px">粉末冶金專家</span>
+                    </div>
+                </a>
+            </div>
             <div class="hidden-mobile" style="display:flex;gap:35px;align-items:center">
-                <a href="products.html" style="font-size:15px;font-weight:500;color:#333">製品紹介</a>
-                <a href="solutions.html" style="font-size:15px;font-weight:500;color:#333">サービス</a>
-                <a href="capabilities.html" style="font-size:15px;font-weight:500;color:#333">製造能力</a>
-                <a href="applications.html" style="font-size:15px;font-weight:500;color:#333">産業分野</a>
-                <a href="case-studies.html" style="font-size:15px;color:#555">導入事例</a>
-                <a href="resources.html" style="font-size:15px;font-weight:700;color: #996B1D">リソース</a>
+                <a href="products.html" style="font-size:15px;font-weight:500;color:#333">產品介紹</a>
+                <a href="solutions.html" style="font-size:15px;font-weight:500;color:#333">服務流程</a>
+                <a href="capabilities.html" style="font-size:15px;font-weight:500;color:#333">製程能力</a>
+                <a href="applications.html" style="font-size:15px;font-weight:500;color:#333">應用領域</a>
+                <a href="case-studies.html" style="font-size:15px;color:#555">成功案例</a>
+                <a href="resources.html" style="font-size:15px;font-weight:700;color: #996B1D">資源中心</a>
                 <a href="contact.html"
-                    style="background:#C5A059;color:white;padding:8px 20px;border-radius:4px;font-size:14px;font-weight:500">お問い合わせ</a>
+                    style="background:#C5A059;color:white;padding:8px 20px;border-radius:4px;font-size:14px;font-weight:500">聯絡我們</a>
             </div>
             <div class="mobile-menu-btn" onclick="toggleMenu()" aria-label="Toggle menu" role="button" tabindex="0">☰
             </div>
             <div class="mobile-menu" id="mobileMenu">
+                <!-- Close Button -->
                 <div onclick="toggleMenu()"
                     style="text-align:right;padding:5px 0 15px;cursor:pointer;font-size:24px;color:#333;"
                     aria-label="Close menu" role="button" tabindex="0">✕</div>
-                <a href="products.html" style="padding:10px 0;border-bottom:1px solid #eee">製品紹介</a>
-                <a href="solutions.html" style="padding:10px 0;border-bottom:1px solid #eee">サービス</a>
-                <a href="capabilities.html" style="padding:10px 0;border-bottom:1px solid #eee">製造能力</a>
-                <a href="applications.html" style="padding:10px 0;border-bottom:1px solid #eee">産業分野</a>
-                <a href="case-studies.html" style="font-size:14px;color:#555">導入事例</a>
+                <a href="products.html" style="padding:10px 0;border-bottom:1px solid #eee">產品介紹</a>
+                <a href="solutions.html" style="padding:10px 0;border-bottom:1px solid #eee">服務流程</a>
+                <a href="capabilities.html" style="padding:10px 0;border-bottom:1px solid #eee">製程能力</a>
+                <a href="applications.html" style="padding:10px 0;border-bottom:1px solid #eee">應用領域</a>
+                <a href="case-studies.html" style="font-size:14px;color:#555">成功案例</a>
                 <a href="resources.html"
-                    style="padding:10px 0;border-bottom:1px solid #eee;color: #996B1D;font-weight:700">リソース</a>
-                <a href="about.html" style="padding:10px 0;border-bottom:1px solid #eee">会社概要</a>
-                <a href="contact.html" style="padding:10px 0;color: #996B1D">お問い合わせ</a>
+                    style="padding:10px 0;border-bottom:1px solid #eee;color: #996B1D;font-weight:700">資源中心</a>
+                <a href="about.html" style="padding:10px 0;border-bottom:1px solid #eee">關於我們</a>
+                <a href="contact.html" style="padding:10px 0;color: #996B1D">聯絡我們</a>
+
+                <!-- Mobile Language Selector -->
                 <div style="border-top:2px solid #C5A059;margin-top:10px;padding-top:15px;">
-                    <div style="font-size:14px;font-weight:600;color: #996B1D;margin-bottom:10px;">🌐 言語</div>
+                    <div style="font-size:14px;font-weight:600;color: #996B1D;margin-bottom:10px;">🌐 語言 / Language
+                    </div>
                     <a href="../resources.html" style="display:block;padding:8px 0;color:#333;">🇺🇸 English</a>
-                    <a href="../zh/resources.html" style="display:block;padding:8px 0;color:#333;">🇹🇼 繁體中文</a>
+                    <a href="../zh/resources.html"
+                        style="display:block;padding:8px 0;color: #996B1D;font-weight:600;">🇹🇼 繁體中文</a>
                     <a href="../zh-cn/resources.html" style="display:block;padding:8px 0;color:#333;">🇨🇳 简体中文</a>
                     <a href="../de/resources.html" style="display:block;padding:8px 0;color:#333;">🇩🇪 Deutsch</a>
-                    <a href="../jp/resources.html"
-                        style="display:block;padding:8px 0;color: #996B1D;font-weight:600;">🇯🇵 日本語</a>
+                    <a href="../jp/resources.html" style="display:block;padding:8px 0;color:#333;">🇯🇵 日本語</a>
                 </div>
             </div>
         </div>
     </nav>
-    <!-- Hero Section -->
-    <section style="background: linear-gradient(135deg, #002FA7 0%, #001a6e 100%); padding: 80px 0; text-align: center;">
+    <!-- Header Section -->
+    <section role="main" style="padding:80px 0;background:white">
         <div class="container">
-            <h1 style="font-family: 'Playfair Display', serif; font-size: 48px; font-weight: 700; color: white; margin-bottom: 20px;">
-                技術リソース
-            </h1>
-            <p style="font-size: 20px; color: #a0b0d0; max-width: 700px; margin: 0 auto; line-height: 1.6;">
-                ナレッジベース＆FAQ。粉末冶金のプロセス選択、材料仕様、設計ガイドをご覧ください。
-            </p>
-        </div>
-    </section>
-
-    <!-- Resources Grid -->
-    <section style="padding: 80px 0; background: #f8f9fa;">
-        <div class="container">
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px;">
-
-                <!-- Card 1: Process -->
-                <a href="resource-process.html" class="case-card-link" style="display: block; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s ease; text-decoration: none; color: inherit;">
-                    <div style="height: 200px; background-image: url('../images/thumb_res_process.png'); background-size: cover; background-position: center; border-bottom: 3px solid #C5A059;"></div>
-                    <div style="padding: 30px;">
-                        <span style="display: inline-block; background: #f0f4f8; color: #002FA7; padding: 4px 10px; border-radius: 4px; font-size: 11px; font-weight: 600; text-transform: uppercase; margin-bottom: 15px;">比較と選択</span>
-                        <h3 style="font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; color: #111; margin-bottom: 15px; line-height: 1.3;">プロセス選択ガイド</h3>
-                        <p style="font-size: 15px; color: #666; line-height: 1.6; margin-bottom: 20px;">
-                            PMとCNC加工、鋳造の比較。プレス＆焼結、MIMなどの成形方法について。
-                        </p>
-                        <span style="color: #002FA7; font-weight: 600; font-size: 14px;">見る →</span>
-                    </div>
-                </a>
-
-                <!-- Card 2: Design -->
-                <a href="resource-design.html" class="case-card-link" style="display: block; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s ease; text-decoration: none; color: inherit;">
-                    <div style="height: 200px; background-image: url('../images/thumb_res_design.png'); background-size: cover; background-position: center; border-bottom: 3px solid #C5A059;"></div>
-                    <div style="padding: 30px;">
-                        <span style="display: inline-block; background: #f0f4f8; color: #002FA7; padding: 4px 10px; border-radius: 4px; font-size: 11px; font-weight: 600; text-transform: uppercase; margin-bottom: 15px;">エンジニアリング</span>
-                        <h3 style="font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; color: #111; margin-bottom: 15px; line-height: 1.3;">設計＆歯車ガイド</h3>
-                        <p style="font-size: 15px; color: #666; line-height: 1.6; margin-bottom: 20px;">
-                            歯車の種類、PM用の設計、含油軸受の用途に関する完全ガイド。
-                        </p>
-                        <span style="color: #002FA7; font-weight: 600; font-size: 14px;">見る →</span>
-                    </div>
-                </a>
-
-                <!-- Card 3: Materials -->
-                <a href="resource-materials.html" class="case-card-link" style="display: block; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s ease; text-decoration: none; color: inherit;">
-                    <div style="height: 200px; background-image: url('../images/thumb_res_material.png'); background-size: cover; background-position: center; border-bottom: 3px solid #C5A059;"></div>
-                    <div style="padding: 30px;">
-                        <span style="display: inline-block; background: #f0f4f8; color: #002FA7; padding: 4px 10px; border-radius: 4px; font-size: 11px; font-weight: 600; text-transform: uppercase; margin-bottom: 15px;">仕様と処理</span>
-                        <h3 style="font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; color: #111; margin-bottom: 15px; line-height: 1.3;">材料仕様</h3>
-                        <p style="font-size: 15px; color: #666; line-height: 1.6; margin-bottom: 20px;">
-                            鉄、鋼、真鍮、ステンレス。密度、気孔率、表面処理に関する詳細。
-                        </p>
-                        <span style="color: #002FA7; font-weight: 600; font-size: 14px;">見る →</span>
-                    </div>
-                </a>
-
-                <!-- Card 4: Quality -->
-                <a href="resource-quality.html" class="case-card-link" style="display: block; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s ease; text-decoration: none; color: inherit;">
-                    <div style="height: 200px; background-image: url('../images/thumb_res_quality.png'); background-size: cover; background-position: center; border-bottom: 3px solid #C5A059;"></div>
-                    <div style="padding: 30px;">
-                        <span style="display: inline-block; background: #f0f4f8; color: #002FA7; padding: 4px 10px; border-radius: 4px; font-size: 11px; font-weight: 600; text-transform: uppercase; margin-bottom: 15px;">検査</span>
-                        <h3 style="font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; color: #111; margin-bottom: 15px; line-height: 1.3;">品質管理</h3>
-                        <p style="font-size: 15px; color: #666; line-height: 1.6; margin-bottom: 20px;">
-                            精度を確保するためのCMMや材料試験などの体系的なアプローチ。
-                        </p>
-                        <span style="color: #002FA7; font-weight: 600; font-size: 14px;">見る →</span>
-                    </div>
-                </a>
-
-                <!-- Card 5: FAQ & Glossary -->
-                <a href="resource-faq.html" class="case-card-link" style="display: block; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s ease; text-decoration: none; color: inherit;">
-                    <div style="height: 200px; background-image: url('../images/thumb_res_faq.png'); background-size: cover; background-position: center; border-bottom: 3px solid #C5A059;"></div>
-                    <div style="padding: 30px;">
-                        <span style="display: inline-block; background: #f0f4f8; color: #002FA7; padding: 4px 10px; border-radius: 4px; font-size: 11px; font-weight: 600; text-transform: uppercase; margin-bottom: 15px;">ナレッジベース</span>
-                        <h3 style="font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; color: #111; margin-bottom: 15px; line-height: 1.3;">FAQ & 用語集</h3>
-                        <p style="font-size: 15px; color: #666; line-height: 1.6; margin-bottom: 20px;">
-                            PMの強度やコストに関するよくある質問と、専門用語の包括的な用語集。
-                        </p>
-                        <span style="color: #002FA7; font-weight: 600; font-size: 14px;">見る →</span>
-                    </div>
-                </a>
-                
+            <div style="text-align:center;margin-bottom:60px">
+                <h1
+                    style="font-family:'Playfair Display',serif;font-size:42px;font-weight:700;color:#111;margin-bottom:20px">
+                    技術資源</h1>
+                <h2
+                    style="font-family:'Playfair Display',serif;font-size:32px;font-weight:700;color:#555;margin-bottom:20px">
+                    知識庫與常見問題</h2>
+                <div style="width:80px;height:4px;background:#C5A059;margin:0 auto 30px"></div>
+                <p style="font-size:18px;color:#666;max-width:800px;margin:0 auto;line-height:1.6">
+                    探索有關粉末冶金的常見問題，以及行業術語的完整詞彙表，幫助您做出明智的工程決策。</p>
             </div>
-            
-            <style>
-            .case-card-link:hover {
-                transform: translateY(-5px) !important;
-                box-shadow: 0 10px 25px rgba(0,0,0,0.1) !important;
-            }
-            </style>
+
+            <!-- Layout with Sidebar -->
+            <div class="resource-layout"><aside class="resource-sidebar">
+                    <div class="sidebar-title">📋 快速導航</div>
+                    <ul class="sidebar-nav">
+                        <li><a href="case-studies.html">📋 成功案例</a></li>
+                        <li><a href="resource-process.html#process-guide">🔄 製程選擇指南</a></li>
+                        <li><a href="resource-design.html#gear-types">⚙️ 齒輪種類大全</a></li>
+                        <li class="sub-item"><a href="resource-design.html#spur-helical">• 正/螺旋齒輪</a></li>
+                        <li class="sub-item"><a href="resource-design.html#bevel-worm">• 傘/蝸輪</a></li>
+                        <li class="sub-item"><a href="resource-design.html#planetary">• 行星/諧波</a></li>
+                        <li><a href="resource-design.html#bearings-guide">🔩 含油軸承</a></li>
+                        <li><a href="resource-materials.html#sintering-guide">🔥 燒結製程</a></li>
+                        <li><a href="resource-materials.html#powder-production">🔬 粉末生產方法</a></li>
+                        <li><a href="resource-quality.html#quality-control">📊 品質控制</a></li>
+                        <li><a href="resource-materials.html#density-porosity">⚡ 密度與孔隙率</a></li>
+                        <li><a href="resource-faq.html#faq">❓ 常見問題</a></li>
+                        <li><a href="resource-faq.html#glossary">📖 術語表</a></li>
+                        <li><a href="resource-materials.html#materials">🔧 材料規格</a></li>
+                        <li class="sub-item"><a href="resource-materials.html#iron-steel">• 鐵銅碳鋼</a></li>
+                        <li class="sub-item"><a href="resource-materials.html#stainless">• 不鏽鋼</a></li>
+                        <li class="sub-item"><a href="resource-materials.html#magnetic">• 軟磁材料</a></li>
+                        <li class="sub-item"><a href="resource-materials.html#bronze-brass">• 青銅/黃銅</a></li>
+                    </ul>
+                </aside>
+
+                <!-- Main Content -->
+                <div class="resource-content">
+<!-- NEW: Process Selection Guide Section -->
+                    <div id="process-guide" style="margin-bottom:80px">
+                        <h3
+                            style="font-family:'Playfair Display',serif;font-size:28px;font-weight:700;color:#333;margin-bottom:15px;border-bottom:2px solid #eee;padding-bottom:10px">
+                            🔄 製程選擇指南
+                        </h3>
+                        <p style="font-size:16px;color:#555;line-height:1.7;margin-bottom:25px">
+                            不確定粉末冶金是否適合您的專案？使用此指南比較 PM、CNC 加工和鑄造，找到最適合您需求的製造製程。
+                        </p>
+
+                        <table class="process-table">
+                            <thead>
+                                <tr>
+                                    <th>比較項目</th>
+                                    <th>粉末冶金</th>
+                                    <th>CNC 加工</th>
+                                    <th>鑄造</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>最適合</strong></td>
+                                    <td class="highlight-pm">複雜形狀、大量生產</td>
+                                    <td>原型製作、高精度</td>
+                                    <td>大型件、簡單形狀</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>最小數量</strong></td>
+                                    <td>5,000+ 件</td>
+                                    <td>1+ 件</td>
+                                    <td>500+ 件</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>典型公差</strong></td>
+                                    <td>±0.01 ~ 0.05mm</td>
+                                    <td>±0.005mm</td>
+                                    <td>±0.5mm</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>材料浪費</strong></td>
+                                    <td class="highlight-pm">&lt;5%</td>
+                                    <td>30-60%</td>
+                                    <td>10-20%</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>模具成本</strong></td>
+                                    <td>中高</td>
+                                    <td>無</td>
+                                    <td>高</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>單件成本(量產)</strong></td>
+                                    <td class="highlight-pm">⭐ 最低</td>
+                                    <td>最高</td>
+                                    <td>中等</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>前置時間(模具)</strong></td>
+                                    <td>45-60 天</td>
+                                    <td>1-3 天</td>
+                                    <td>30-45 天</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="decision-box">
+                            <h4>🎯 快速決策指南</h4>
+                            <div class="decision-item">
+                                <span>需要 <strong>1-100 件</strong> 且公差要求高？</span>
+                                <span class="arrow">→</span>
+                                <span><strong>CNC 加工</strong></span>
+                            </div>
+                            <div class="decision-item">
+                                <span>需要 <strong>100-5,000 件</strong> + 簡單形狀？</span>
+                                <span class="arrow">→</span>
+                                <span><strong>鑄造</strong></span>
+                            </div>
+                            <div class="decision-item">
+                                <span>需要 <strong>5,000+ 件</strong> + 複雜形狀？</span>
+                                <span class="arrow">→</span>
+                                <span style="color:#2e7d32;font-weight:700">✅ 粉末冶金</span>
+                            </div>
+                            <p style="margin-top:20px;font-size:14px;color:#666">
+                                <strong>💡 專業建議：</strong>即使數量較少，如果您計劃未來擴大生產，PM 仍可能具有成本效益。<a href="contact.html"
+                                    style="color:#002FA7">聯絡我們</a>獲取免費諮詢！
+                            </p>
+                        </div>
+                    </div>
+</div> <!-- End resource-content -->
+            </div> <!-- End resource-layout -->
         </div>
     </section>
-<!-- Smooth Scroll JavaScript -->
+
+    <!-- Smooth Scroll JavaScript -->
     <script>
         // Smooth scroll for sidebar navigation
         document.querySelectorAll('.sidebar-nav a').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
-                const targetId = this.getAttribute('href');
-                if (!targetId.startsWith('#')) return;
+                const href = this.getAttribute('href');
+                if (!href.startsWith('#')) return; // Allow external links to navigate normally
                 e.preventDefault();
-                const targetElement = document.querySelector(targetId);
+                const targetElement = document.querySelector(href);
                 if (targetElement) {
                     const offsetTop = targetElement.offsetTop - 120;
                     window.scrollTo({
@@ -576,7 +668,7 @@
 
         // Highlight active section in sidebar
         window.addEventListener('scroll', function () {
-            const sections = ['process-guide', 'powder-production', 'quality-control', 'density-porosity', 'faq', 'glossary', 'materials', 'iron-steel', 'stainless', 'magnetic', 'bronze-brass'];
+            const sections = ['process-guide', 'gear-types', 'bearings-guide', 'sintering-guide', 'powder-production', 'quality-control', 'density-porosity', 'faq', 'glossary', 'materials', 'iron-steel', 'stainless', 'magnetic', 'bronze-brass'];
             let currentSection = '';
 
             sections.forEach(id => {
@@ -597,6 +689,7 @@
             });
         });
     </script>
+    <!-- Footer -->
     <footer style="background:#002FA7;color:white;padding:80px 0 40px">
         <div class="container">
             <div
@@ -604,23 +697,25 @@
                 <div>
                     <div style="display:flex;align-items:center;gap:15px;margin-bottom:25px">
                         <img alt="Logo" src="../images/logo.png" style="height:  50px;" width="61" height="50">
-                        <h3 style="font-size:20px;font-weight:700;color:#8B6914;margin:0">Yeh Sheng Powder Parts</h3>
+                        <h3
+                            style="font-family:'Noto Sans TC',sans-serif;font-size:20px;font-weight:700;color:#8B6914;margin:0">
+                            冶聖工業股份有限公司</h3>
                     </div>
-                    <p style="color:#a0b0d0;line-height:1.6;font-size:14px">1984年創業の高精度粉末冶金部品の先進メーカー。</p>
+                    <p style="color:#a0b0d0;line-height:1.6;font-size:14px">自 1984 年起的高精密粉末冶金零件領導製造商。</p>
                 </div>
                 <div>
-                    <h4 style="color: #996B1D;font-size:18px;font-weight:700;margin-bottom:25px">会社情報</h4>
+                    <h4 style="color: #996B1D;font-size:18px;font-weight:700;margin-bottom:25px">公司資訊</h4>
                     <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:15px">
-                        <li><a href="about.html" style="color:#a0b0d0;font-size:15px">会社概要</a></li>
-                        <li><a href="products.html" style="color:#a0b0d0;font-size:15px">製品一覧</a></li>
-                        <li><a href="capabilities.html" style="color:#a0b0d0;font-size:15px">製造能力</a></li>
-                        <li><a href="contact.html" style="color:#a0b0d0;font-size:15px">お問い合わせ</a></li>
+                        <li><a href="about.html" style="color:#a0b0d0;font-size:15px">關於我們</a></li>
+                        <li><a href="products.html" style="color:#a0b0d0;font-size:15px">所有產品</a></li>
+                        <li><a href="capabilities.html" style="color:#a0b0d0;font-size:15px">製程能力</a></li>
+                        <li><a href="contact.html" style="color:#a0b0d0;font-size:15px">聯絡我們</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 style="color: #996B1D;font-size:18px;font-weight:700;margin-bottom:25px">お問い合わせ</h4>
+                    <h4 style="color: #996B1D;font-size:18px;font-weight:700;margin-bottom:25px">聯絡方式</h4>
                     <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:15px">
-                        <li style="color:#a0b0d0;font-size:15px">台湾 新北市 新荘区 中正路721巷11号</li>
+                        <li style="color:#a0b0d0;font-size:15px">新北市新莊區中正路721巷11號</li>
                         <li style="color:#a0b0d0;font-size:15px"><a href="mailto:YS@yehsheng.com">YS@yehsheng.com</a>
                         </li>
                         <li style="color:#a0b0d0;font-size:15px">+886-2-2901-8266</li>
@@ -628,8 +723,7 @@
                 </div>
             </div>
             <div style="border-top:1px solid rgba(255,255,255,0.1);padding-top:30px;text-align:center">
-                <p style="color:#e0e0e0;font-size:13px;margin:0">© 2024 Yeh Sheng Powder Parts Ind. Co. Ltd. All Rights
-                    Reserved.</p>
+                <p style="color:#e0e0e0;font-size:13px;margin:0">© 2024 冶聖工業股份有限公司 版權所有。</p>
             </div>
         </div>
     </footer>
@@ -660,7 +754,7 @@
         transition: all 0.3s ease;
     " onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 6px 25px rgba(197,160,89,0.5)'"
         onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 20px rgba(197,160,89,0.4)'">💬
-        お見積り</a>
+        免費報價</a>
 
 </body>
 

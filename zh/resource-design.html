@@ -1,0 +1,1020 @@
+﻿<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta name="google-site-verification" content="YUhT_jRF5sxYfCWMMcB08B38K6MB2yAEv4wEo1fjdXg" />
+    <!-- Google tag (gtag.js) -->
+    <!-- Google Analytics & Clarity (production only) -->
+    <script>
+        if (window.location.hostname === 'yehsheng.com') {
+            var gaScript = document.createElement('script');
+            gaScript.async = true;
+            gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-XS5ZTZGF2Y';
+            document.head.appendChild(gaScript);
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+            gtag('config', 'G-XS5ZTZGF2Y');
+            (function (c, l, a, r, i, t, y) {
+                c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+                t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+                y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+            })(window, document, "clarity", "script", "q46c2dab8f");
+        }
+    </script>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>粉末冶金是什麼？PM vs CNC比較、材料規格、FAQ完整指南</title>
+    <meta content="粉末冶金入門指南：什麼是PM？和CNC/鑄造差在哪？材料怎麼選？40年專家整理的FAQ與MPIF材料規格表。新手必讀→" name="description" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&amp;family=Noto+Sans+TC:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Noto Sans TC', sans-serif;
+            color: #333;
+            background: #fcfcfc
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px
+        }
+
+        .faq-item {
+            background: white;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+            border-left: 4px solid #002FA7
+        }
+
+        .faq-question {
+            font-family: 'Playfair Display', serif;
+            font-size: 20px;
+            font-weight: 700;
+            color: #002FA7;
+            margin-bottom: 15px
+        }
+
+        .faq-answer {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.8
+        }
+
+        .term-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            border-radius: 8px;
+            overflow: hidden
+        }
+
+        .term-table th {
+            background: #002FA7;
+            color: white;
+            padding: 15px 20px;
+            text-align: left;
+            font-family: 'Playfair Display', serif;
+            font-size: 18px
+        }
+
+        .term-table td {
+            padding: 15px 20px;
+            border-bottom: 1px solid #eee;
+            font-size: 15px;
+            line-height: 1.6;
+            color: #555
+        }
+
+        .term-table tr:last-child td {
+            border-bottom: none
+        }
+
+        .term-table tr:hover {
+            background: #f8f9fa
+        }
+
+        .term-name {
+            font-weight: 600;
+            color: #333;
+            white-space: nowrap
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            cursor: pointer;
+            font-size: 24px;
+            color: #333
+        }
+
+        .mobile-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background: white;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            flex-direction: column;
+            gap: 15px;
+            z-index: 99
+        }
+
+        .mobile-menu.active {
+            display: flex
+        }
+
+        @media(max-width:768px) {
+            .hidden-mobile {
+                display: none !important
+            }
+
+            .mobile-menu-btn {
+                display: block
+            }
+
+            h1 {
+                font-size: 36px !important
+            }
+
+            h2 {
+                font-size: 28px !important
+            }
+
+            section {
+                padding: 60px 0 !important
+            }
+
+            .term-table th,
+            .term-table td {
+                padding: 10px;
+                font-size: 14px
+            }
+
+            .term-name {
+                white-space: normal
+            }
+
+            .resource-layout {
+                flex-direction: column !important;
+                gap: 20px !important;
+            }
+
+            .resource-sidebar {
+                width: 100% !important;
+                position: relative !important;
+                top: 0 !important;
+                max-height: none !important;
+                padding: 15px 15px 5px 15px !important;
+                margin-bottom: 20px;
+                display: flex !important;
+                flex-direction: column;
+            }
+
+            .sidebar-title {
+                margin-bottom: 10px !important;
+                padding-bottom: 5px !important;
+            }
+
+            .sidebar-nav {
+                display: flex !important;
+                overflow-x: auto !important;
+                padding-bottom: 10px !important;
+                gap: 10px !important;
+                margin: 0 -15px !important;
+                padding: 0 15px 15px 15px !important;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            .sidebar-nav::-webkit-scrollbar {
+                display: none;
+            }
+            .sidebar-nav {
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+            }
+
+            .sidebar-nav li {
+                margin-bottom: 0 !important;
+            }
+
+            .sidebar-nav a {
+                white-space: nowrap !important;
+                padding: 8px 16px !important;
+                background: #f8f9fa !important;
+                border: 1px solid #eee !important;
+                border-radius: 20px !important;
+                border-left: none !important;
+            }
+
+            .sidebar-nav a.active {
+                background: #f0f4ff !important;
+                border: 1px solid #C5A059 !important;
+            }
+
+            .sidebar-nav .sub-item {
+                display: none !important;
+            }
+            
+            .resource-content {
+                margin-left: 0 !important;
+            }
+        }
+
+        /* Sidebar Navigation Styles */
+        .resource-layout {
+            display: flex;
+            gap: 40px;
+            max-width: 1400px;
+            margin: 0 auto
+        }
+
+        .resource-sidebar {
+            width: 240px;
+            flex-shrink: 0;
+            position: sticky;
+            top: 100px;
+            max-height: calc(100vh - 120px);
+            overflow-y: auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            padding: 20px
+        }
+
+        .sidebar-title {
+            font-family: 'Noto Sans TC', sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            color: #002FA7;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #C5A059
+        }
+
+        .sidebar-nav {
+            list-style: none;
+            padding: 0;
+            margin: 0
+        }
+
+        .sidebar-nav li {
+            margin-bottom: 5px
+        }
+
+        .sidebar-nav a {
+            display: block;
+            padding: 10px 12px;
+            color: #555;
+            font-size: 14px;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+            border-left: 3px solid transparent
+        }
+
+        .sidebar-nav a:hover {
+            background: #f8f9fa;
+            color: #002FA7
+        }
+
+        .sidebar-nav a.active {
+            background: #f0f4ff;
+            color: #002FA7;
+            font-weight: 600;
+            border-left-color: #C5A059
+        }
+
+        .sidebar-nav .sub-item a {
+            padding-left: 24px;
+            font-size: 13px
+        }
+
+        .resource-content {
+            flex: 1;
+            min-width: 0
+        }
+
+        /* Process Guide Table */
+        .process-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 30px
+        }
+
+        .process-table th {
+            background: linear-gradient(135deg, #002FA7 0%, #001d66 100%);
+            color: white;
+            padding: 15px 12px;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 600
+        }
+
+        .process-table td {
+            padding: 12px;
+            border-bottom: 1px solid #eee;
+            text-align: center;
+            font-size: 14px
+        }
+
+        .process-table tr:nth-child(even) {
+            background: #f8f9fa
+        }
+
+        .process-table .highlight-pm {
+            background: #e8f5e9 !important;
+            color: #2e7d32;
+            font-weight: 600
+        }
+
+        .decision-box {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e8f4fd 100%);
+            border: 2px solid #C5A059;
+            border-radius: 12px;
+            padding: 25px;
+            margin-top: 30px
+        }
+
+        .decision-box h4 {
+            color: #002FA7;
+            margin: 0 0 15px 0;
+            font-size: 18px
+        }
+
+        .decision-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px 0;
+            font-size: 15px
+        }
+
+        .decision-item .arrow {
+            color: #C5A059;
+            font-weight: bold
+        }
+    </style>
+    <link href="https://yehsheng.com/zh/resources.html" rel="canonical" />
+    <!-- hreflang tags for multilingual SEO -->
+    <link rel="alternate" hreflang="en" href="https://yehsheng.com/resources.html" />
+    <link rel="alternate" hreflang="zh-Hant" href="https://yehsheng.com/zh/resources.html" />
+    <link rel="alternate" hreflang="zh-Hans" href="https://yehsheng.com/zh-cn/resources.html" />
+    <link rel="alternate" hreflang="de" href="https://yehsheng.com/de/resources.html" />
+    <link rel="alternate" hreflang="ja" href="https://yehsheng.com/jp/resources.html" />
+    <link rel="alternate" hreflang="x-default" href="https://yehsheng.com/resources.html" />
+    <link rel="icon" href="../images/logo.png" type="image/png">
+    <!-- FAQPage Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "粉末冶金零件的強度是否足以應對高負載應用？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "絕對可以。雖然PM零件有固有的微孔隙，但其強度可以通過調整合金成分、增加壓製密度或使用二次鍛造來達到或超過鑄鐵甚至鍛鋼的水平。PM零件現已廣泛用於汽車引擎、變速箱齒輪和連桿等高應力環境。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "粉末冶金和CNC加工哪個更具成本效益？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "這取決於生產量。CNC加工適合小批量原型製作，因為不需要昂貴的模具。然而，對於大規模生產（通常5,000件以上），粉末冶金明顯更便宜。PM通過近淨成形減少材料浪費，並消除傳統切削的勞動密集步驟來降低成本。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "PM製程可以使用哪些材料？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "PM非常靈活，幾乎可以加工所有金屬，包括：鐵基合金（鐵和鋼）、非鐵金屬（銅、鋁和黃銅）、難熔金屬（鎢和鉬）、以及航太和醫療用途的特殊材料（不鏽鋼和超合金）。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "為什麼粉末冶金被認為是「綠色」技術？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "PM是最環保的製造方法之一。其材料利用率超過95%，幾乎不產生廢金屬。此外，由於燒結過程在熔點以下進行，通常比傳統的熔化和鑄造操作需要更少的能源。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "粉末冶金中的「自潤滑」軸承如何工作？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "這是PM的獨特優勢。由於零件天然多孔，可以真空浸漬油。當軸承在運行中發熱時，油會膨脹並流到表面。冷卻後，油會通過毛細作用重新被吸收到孔隙中。這使它們非常適合「免維護」應用。"
+          }
+        }
+      ]
+    }
+    </script>
+
+</head>
+
+<body>
+    <!-- Top Bar -->
+    <div class="hidden-mobile" style="background:#002FA7;color:white;padding:10px 0;position:relative;z-index:200">
+        <div class="container" style="display:flex;justify-content:flex-end;gap:25px;font-size:13px;font-weight:500">
+            <a href="about.html" style="color:#e8e8e8">關於我們</a>
+            <a href="contact.html" style="color:#e8e8e8">聯絡我們</a>
+            <div style="position:relative;display:inline-block">
+                <span style="color: #996B1D;font-weight:600;cursor:pointer" onclick="toggleLangMenu()">繁體中文 ▼</span>
+                <div id="langMenu"
+                    style="display:none;position:absolute;right:0;top:100%;background:white;box-shadow:0 4px 12px rgba(0,0,0,0.15);border-radius:4px;min-width:120px;z-index:10000">
+                    <a href="../resources.html"
+                        style="display:block;padding:10px 15px;color:#333;font-size:13px">English</a>
+                    <a href="../zh/resources.html"
+                        style="display:block;padding:10px 15px;color: #996B1D;font-size:13px;background:#f5f5f5">繁體中文</a>
+                    <a href="../zh-cn/resources.html"
+                        style="display:block;padding:10px 15px;color:#333;font-size:13px">简体中文</a>
+                    <a href="../de/resources.html"
+                        style="display:block;padding:10px 15px;color:#333;font-size:13px">Deutsch</a>
+                    <a href="../jp/resources.html"
+                        style="display:block;padding:10px 15px;color:#333;font-size:13px">日本語</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navigation -->
+    <nav style="background:white;box-shadow:0 2px 10px rgba(0,0,0,0.05);position:sticky;top:0;z-index:100">
+        <div class="container"
+            style="padding:15px 20px;display:flex;justify-content:space-between;align-items:center;position:relative">
+            <div style="display:flex;align-items:center;gap:15px">
+                <a href="index.html" style="display:flex;align-items:center;gap:15px" aria-label="Go to homepage">
+                    <img alt="Logo" src="../images/logo.png" style="height:  40px;" width="49" height="40">
+                    <div style="display:flex;flex-direction:column">
+                        <span style="font-size:18px;font-weight:700;color:#111;line-height:1.2">冶聖工業股份有限公司</span>
+                        <span style="font-size:10px;font-weight:600;color: #996B1D;letter-spacing:1px">粉末冶金專家</span>
+                    </div>
+                </a>
+            </div>
+            <div class="hidden-mobile" style="display:flex;gap:35px;align-items:center">
+                <a href="products.html" style="font-size:15px;font-weight:500;color:#333">產品介紹</a>
+                <a href="solutions.html" style="font-size:15px;font-weight:500;color:#333">服務流程</a>
+                <a href="capabilities.html" style="font-size:15px;font-weight:500;color:#333">製程能力</a>
+                <a href="applications.html" style="font-size:15px;font-weight:500;color:#333">應用領域</a>
+                <a href="case-studies.html" style="font-size:15px;color:#555">成功案例</a>
+                <a href="resources.html" style="font-size:15px;font-weight:700;color: #996B1D">資源中心</a>
+                <a href="contact.html"
+                    style="background:#C5A059;color:white;padding:8px 20px;border-radius:4px;font-size:14px;font-weight:500">聯絡我們</a>
+            </div>
+            <div class="mobile-menu-btn" onclick="toggleMenu()" aria-label="Toggle menu" role="button" tabindex="0">☰
+            </div>
+            <div class="mobile-menu" id="mobileMenu">
+                <!-- Close Button -->
+                <div onclick="toggleMenu()"
+                    style="text-align:right;padding:5px 0 15px;cursor:pointer;font-size:24px;color:#333;"
+                    aria-label="Close menu" role="button" tabindex="0">✕</div>
+                <a href="products.html" style="padding:10px 0;border-bottom:1px solid #eee">產品介紹</a>
+                <a href="solutions.html" style="padding:10px 0;border-bottom:1px solid #eee">服務流程</a>
+                <a href="capabilities.html" style="padding:10px 0;border-bottom:1px solid #eee">製程能力</a>
+                <a href="applications.html" style="padding:10px 0;border-bottom:1px solid #eee">應用領域</a>
+                <a href="case-studies.html" style="font-size:14px;color:#555">成功案例</a>
+                <a href="resources.html"
+                    style="padding:10px 0;border-bottom:1px solid #eee;color: #996B1D;font-weight:700">資源中心</a>
+                <a href="about.html" style="padding:10px 0;border-bottom:1px solid #eee">關於我們</a>
+                <a href="contact.html" style="padding:10px 0;color: #996B1D">聯絡我們</a>
+
+                <!-- Mobile Language Selector -->
+                <div style="border-top:2px solid #C5A059;margin-top:10px;padding-top:15px;">
+                    <div style="font-size:14px;font-weight:600;color: #996B1D;margin-bottom:10px;">🌐 語言 / Language
+                    </div>
+                    <a href="../resources.html" style="display:block;padding:8px 0;color:#333;">🇺🇸 English</a>
+                    <a href="../zh/resources.html"
+                        style="display:block;padding:8px 0;color: #996B1D;font-weight:600;">🇹🇼 繁體中文</a>
+                    <a href="../zh-cn/resources.html" style="display:block;padding:8px 0;color:#333;">🇨🇳 简体中文</a>
+                    <a href="../de/resources.html" style="display:block;padding:8px 0;color:#333;">🇩🇪 Deutsch</a>
+                    <a href="../jp/resources.html" style="display:block;padding:8px 0;color:#333;">🇯🇵 日本語</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Header Section -->
+    <section role="main" style="padding:80px 0;background:white">
+        <div class="container">
+            <div style="text-align:center;margin-bottom:60px">
+                <h1
+                    style="font-family:'Playfair Display',serif;font-size:42px;font-weight:700;color:#111;margin-bottom:20px">
+                    技術資源</h1>
+                <h2
+                    style="font-family:'Playfair Display',serif;font-size:32px;font-weight:700;color:#555;margin-bottom:20px">
+                    知識庫與常見問題</h2>
+                <div style="width:80px;height:4px;background:#C5A059;margin:0 auto 30px"></div>
+                <p style="font-size:18px;color:#666;max-width:800px;margin:0 auto;line-height:1.6">
+                    探索有關粉末冶金的常見問題，以及行業術語的完整詞彙表，幫助您做出明智的工程決策。</p>
+            </div>
+
+            <!-- Layout with Sidebar -->
+            <div class="resource-layout"><aside class="resource-sidebar">
+                    <div class="sidebar-title">📋 快速導航</div>
+                    <ul class="sidebar-nav">
+                        <li><a href="case-studies.html">📋 成功案例</a></li>
+                        <li><a href="resource-process.html#process-guide">🔄 製程選擇指南</a></li>
+                        <li><a href="resource-design.html#gear-types">⚙️ 齒輪種類大全</a></li>
+                        <li class="sub-item"><a href="resource-design.html#spur-helical">• 正/螺旋齒輪</a></li>
+                        <li class="sub-item"><a href="resource-design.html#bevel-worm">• 傘/蝸輪</a></li>
+                        <li class="sub-item"><a href="resource-design.html#planetary">• 行星/諧波</a></li>
+                        <li><a href="resource-design.html#bearings-guide">🔩 含油軸承</a></li>
+                        <li><a href="resource-materials.html#sintering-guide">🔥 燒結製程</a></li>
+                        <li><a href="resource-materials.html#powder-production">🔬 粉末生產方法</a></li>
+                        <li><a href="resource-quality.html#quality-control">📊 品質控制</a></li>
+                        <li><a href="resource-materials.html#density-porosity">⚡ 密度與孔隙率</a></li>
+                        <li><a href="resource-faq.html#faq">❓ 常見問題</a></li>
+                        <li><a href="resource-faq.html#glossary">📖 術語表</a></li>
+                        <li><a href="resource-materials.html#materials">🔧 材料規格</a></li>
+                        <li class="sub-item"><a href="resource-materials.html#iron-steel">• 鐵銅碳鋼</a></li>
+                        <li class="sub-item"><a href="resource-materials.html#stainless">• 不鏽鋼</a></li>
+                        <li class="sub-item"><a href="resource-materials.html#magnetic">• 軟磁材料</a></li>
+                        <li class="sub-item"><a href="resource-materials.html#bronze-brass">• 青銅/黃銅</a></li>
+                    </ul>
+                </aside>
+
+                <!-- Main Content -->
+                <div class="resource-content">
+<!-- 齒輪種類大全 -->
+                    <div id="gear-types" style="margin-bottom:80px">
+                        <h3
+                            style="font-family:'Playfair Display',serif;font-size:28px;font-weight:700;color:#333;margin-bottom:15px;border-bottom:2px solid #eee;padding-bottom:10px">
+                            ⚙️ 齒輪種類完整指南
+                        </h3>
+                        <p style="font-size:16px;color:#555;line-height:1.7;margin-bottom:30px">
+                            齒輪是用於傳遞動力和運動的基本機械元件。了解不同類型的齒輪有助於工程師為其應用選擇正確的解決方案。本指南涵蓋現代工程中使用的所有主要齒輪類型。
+                        </p>
+
+                        <!-- 平行軸齒輪 -->
+                        <div id="spur-helical" style="margin-bottom:40px">
+                            <h4
+                                style="font-size:22px;font-weight:600;color:#002FA7;margin-bottom:15px;padding-left:15px;border-left:4px solid #C5A059">
+                                平行軸齒輪：正齒輪與螺旋齒輪
+                            </h4>
+                            <table class="term-table">
+                                <thead>
+                                    <tr>
+                                        <th style="width:150px">齒輪類型</th>
+                                        <th>描述</th>
+                                        <th>優點</th>
+                                        <th>常見應用</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="term-name">正齒輪<br>(Spur Gear)</td>
+                                        <td>輪齒與旋轉軸平行。最簡單且最常見的齒輪類型。</td>
+                                        <td>高效率（高達99%）、製造容易、無軸向推力</td>
+                                        <td>時鐘、洗衣機、輸送帶、電動工具</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="term-name">螺旋齒輪<br>(Helical Gear)</td>
+                                        <td>輪齒呈傾斜螺旋狀切割。多個輪齒同時囙合。</td>
+                                        <td>運轉更安靜、傳動更平順、載荷能力更高</td>
+                                        <td>汽車變速箱、電梯、工業減速機</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="term-name">雙螺旋齒輪<br>(Herringbone)</td>
+                                        <td>兩組方向相反的螺旋齒在同一齒輪上。</td>
+                                        <td>消除軸向推力、結合螺旋齒輪優點且無需推力軸承</td>
+                                        <td>重型工業設備、船舶推進</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="term-name">內齒輪<br>(Internal Gear)</td>
+                                        <td>輪齒切割在圓筒內側。與較小的外齒輪囙合。</td>
+                                        <td>緊湊設計、同心軸佈置</td>
+                                        <td>行星齒輪組、內嚇齒輪泵</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="term-name">齒條與齒輪<br>(Rack & Pinion)</td>
+                                        <td>將旋轉運動轉換為直線運動。小齒輪（圓形）與齒條（直線）囙合。</td>
+                                        <td>簡單的直線傳動、高精度定位</td>
+                                        <td>轉向系統、CNC機床、滑動門</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- 相交軸齒輪 -->
+                        <div id="bevel-worm" style="margin-bottom:40px">
+                            <h4
+                                style="font-size:22px;font-weight:600;color:#002FA7;margin-bottom:15px;padding-left:15px;border-left:4px solid #C5A059">
+                                相交軸與非平行軸齒輪
+                            </h4>
+                            <table class="term-table">
+                                <thead>
+                                    <tr>
+                                        <th style="width:150px">齒輪類型</th>
+                                        <th>描述</th>
+                                        <th>優點</th>
+                                        <th>常見應用</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="term-name">直齒傘齒輪<br>(Straight Bevel)</td>
+                                        <td>圓錐形齒輪，輪齒為直線狀。軸線通常相交90°。</td>
+                                        <td>設計簡單、適合低速應用</td>
+                                        <td>差速器齒輪、手持鎑頭</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="term-name">螺旋傘齒輪<br>(Spiral Bevel)</td>
+                                        <td>傘齒輪帶有弧形輪齒，囙合更平順。</td>
+                                        <td>更安靜、載荷能力高於直齒傘齒輪</td>
+                                        <td>汽車車軸、航空減速箱</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="term-name">渦輪齒輪<br>(Hypoid Gear)</td>
+                                        <td>類似螺旋傘齒輪，但軸線不相交（偶置）。</td>
+                                        <td>允許非相交軸、平順安靜</td>
+                                        <td>車輛後軸驅動</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="term-name">蠑輪蠑桿<br>(Worm Gear)</td>
+                                        <td>蠑桿（螺旋狀）與蠑輪囙合。軸線非平行且不相交。</td>
+                                        <td>高減速比（高達100:1）、自鎖功能</td>
+                                        <td>輸送系統、調音機構、轉向系統</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="term-name">交叉螺旋齒輪<br>(Crossed Helical)</td>
+                                        <td>兩個螺旋齒輪軸線交叉（通常為90°）。</td>
+                                        <td>安裝靈活、中等載荷</td>
+                                        <td>輕負載傳動、車速表</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- 行星齒輪與特殊齒輪 -->
+                        <div id="planetary" style="margin-bottom:40px">
+                            <h4
+                                style="font-size:22px;font-weight:600;color:#002FA7;margin-bottom:15px;padding-left:15px;border-left:4px solid #C5A059">
+                                行星齒輪與專用齒輪系統
+                            </h4>
+                            <table class="term-table">
+                                <thead>
+                                    <tr>
+                                        <th style="width:150px">齒輪類型</th>
+                                        <th>描述</th>
+                                        <th>優點</th>
+                                        <th>常見應用</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="term-name">行星齒輪組<br>(Planetary)</td>
+                                        <td>太陽齒輪 + 行星齒輪 + 環齒輪。行星齒輪圍繞太陽齒輪公轉。</td>
+                                        <td>緊湊、高扣矩密度、單一單元可提供多種傳動比</td>
+                                        <td>自動變速箱、機器人、風力發電機</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="term-name">諧波減速機<br>(Harmonic Drive)</td>
+                                        <td>使用柔性花鍵、剛性花鍵和波異異產生器。零背隽。</td>
+                                        <td>極高精度、高減速比（30:1至320:1）、零背隽</td>
+                                        <td>機器人關節、衛星天線、半導體設備</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="term-name">擺線減速機<br>(Cycloidal)</td>
+                                        <td>偵心凸輪驅動擺線盤與環銷囙合。</td>
+                                        <td>高抗衝擊性、緊湊、高減速比</td>
+                                        <td>重型機械、工業機器人、伺服馬達</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="term-name">非圓形齒輪<br>(Non-Circular)</td>
+                                        <td>具有非圓形節圓曲線（橢圓形、偵心等）的齒輪。</td>
+                                        <td>從恆定輸入產生變速輸出</td>
+                                        <td>包裝機、紡織機械、特殊機構</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="term-name">端面齒輪<br>(Face Gear)</td>
+                                        <td>盤形齒輪，輪齒在端面上，與正齒輪或螺旋齒輪囙合。</td>
+                                        <td>不相交軸線的直角傳動</td>
+                                        <td>航空致動器、差速器</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- PM 優勢註解 -->
+                        <div class="decision-box" style="background:linear-gradient(135deg,#f0f4ff 0%,#e8f4fd 100%)">
+                            <h4>✨ 為何選擇粉末冶金製造齒輪？</h4>
+                            <p style="font-size:15px;line-height:1.7;color:#555;margin-bottom:15px">
+                                上述許多齒輪類型都可以使用<strong>粉末冶金 (PM)</strong>製造，具有顯著優勢：
+                            </p>
+                            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:15px">
+                                <div
+                                    style="background:white;padding:15px;border-radius:8px;border-left:3px solid #C5A059">
+                                    <strong style="color:#002FA7">💰 成本降低30%</strong>
+                                    <p style="font-size:13px;margin:8px 0 0;color:#666">大量生產時單件成本低於CNC加工</p>
+                                </div>
+                                <div
+                                    style="background:white;padding:15px;border-radius:8px;border-left:3px solid #C5A059">
+                                    <strong style="color:#002FA7">🎯 ±0.01mm精度</strong>
+                                    <p style="font-size:13px;margin:8px 0 0;color:#666">可達AGMA 8-9級精度</p>
+                                </div>
+                                <div
+                                    style="background:white;padding:15px;border-radius:8px;border-left:3px solid #C5A059">
+                                    <strong style="color:#002FA7">🌱 材料利用率95%+</strong>
+                                    <p style="font-size:13px;margin:8px 0 0;color:#666">近淨成形製程最大程度減少浪費</p>
+                                </div>
+                                <div
+                                    style="background:white;padding:15px;border-radius:8px;border-left:3px solid #C5A059">
+                                    <strong style="color:#002FA7">🛠️ 自潤滑特性</strong>
+                                    <p style="font-size:13px;margin:8px 0 0;color:#666">多孔結構可浸油處理</p>
+                                </div>
+                            </div>
+                            <p style="margin-top:20px;font-size:14px;color:#666">
+                                <strong>👉 最適合PM製造的齒輪：</strong>正齒輪、螺旋齒輪、內齒輪及行星齒輪組件是粉末冶金製造的理想選擇。
+                                <a href="gears.html" style="color:#002FA7;font-weight:600">瞭解更多我們的PM齒輪製造能力 →</a>
+                            </p>
+                        </div>
+                    </div>
+
+<!-- 含油軸承指南 -->
+                        <div id="bearings-guide" style="margin-bottom:80px">
+                            <h3
+                                style="font-family:'Playfair Display',serif;font-size:28px;font-weight:700;color:#333;margin-bottom:15px;border-bottom:2px solid #eee;padding-bottom:10px">
+                                🔩 含油軸承（自潤滑軸承）指南
+                            </h3>
+                            <p style="font-size:16px;color:#555;line-height:1.7;margin-bottom:25px">
+                                含油軸承是粉末冶金最成功的應用之一。其獨特的多孔結構能夠自動儲存和釋放潤滑油，使其成為免維護應用的理想選擇。
+                            </p>
+
+                            <h4
+                                style="font-size:22px;font-weight:600;color:#002FA7;margin-bottom:15px;padding-left:15px;border-left:4px solid #C5A059">
+                                含油軸承的工作原理
+                            </h4>
+                            <div
+                                style="background:linear-gradient(135deg,#f0f4ff 0%,#e8f4fd 100%);border:2px solid #C5A059;border-radius:12px;padding:25px;margin-bottom:25px">
+                                <p style="font-size:15px;line-height:1.8;color:#333;margin:0 0 15px 0">
+                                    PM軸承以<strong>可控孔隙率（體積15-25%）</strong>製造。燒結後進行真空浸油處理。運轉過程中：
+                                </p>
+                                <div
+                                    style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px">
+                                    <div style="background:white;padding:15px;border-radius:8px;text-align:center">
+                                        <div style="font-size:32px;margin-bottom:8px">🔄</div>
+                                        <strong style="font-size:14px;color:#002FA7">1. 熱膨脹</strong>
+                                        <p style="font-size:13px;color:#666;margin:5px 0 0">摩擦產生熱量 → 油膨脹滲出至表面</p>
+                                    </div>
+                                    <div style="background:white;padding:15px;border-radius:8px;text-align:center">
+                                        <div style="font-size:32px;margin-bottom:8px">💧</div>
+                                        <strong style="font-size:14px;color:#002FA7">2. 潤滑</strong>
+                                        <p style="font-size:13px;color:#666;margin:5px 0 0">油膜在軸承與軸之間形成 → 降低摩擦</p>
+                                    </div>
+                                    <div style="background:white;padding:15px;border-radius:8px;text-align:center">
+                                        <div style="font-size:32px;margin-bottom:8px">🧲</div>
+                                        <strong style="font-size:14px;color:#002FA7">3. 回吸</strong>
+                                        <p style="font-size:13px;color:#666;margin:5px 0 0">停止時，毛細作用將油吸回孔隙中</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h4
+                                style="font-size:22px;font-weight:600;color:#002FA7;margin-bottom:15px;padding-left:15px;border-left:4px solid #C5A059">
+                                軸承類型比較
+                            </h4>
+                            <table class="process-table">
+                                <thead>
+                                    <tr>
+                                        <th>比較項目</th>
+                                        <th>PM含油軸承</th>
+                                        <th>滾珠軸承</th>
+                                        <th>滑動軸承</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>維護需求</strong></td>
+                                        <td class="highlight-pm">免維護</td>
+                                        <td>需定期潤滑</td>
+                                        <td>需潤滑</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>噪音</strong></td>
+                                        <td class="highlight-pm">非常安靜</td>
+                                        <td>中等</td>
+                                        <td>安靜</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>量產成本</strong></td>
+                                        <td class="highlight-pm">⭐ 最低</td>
+                                        <td>高</td>
+                                        <td>中等</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>轉速範圍</strong></td>
+                                        <td>低-中速</td>
+                                        <td>高速</td>
+                                        <td>低速</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>承載能力</strong></td>
+                                        <td>輕-中載</td>
+                                        <td>高載</td>
+                                        <td>中載</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>使用壽命</strong></td>
+                                        <td class="highlight-pm">10,000+ 小時</td>
+                                        <td>20,000+ 小時</td>
+                                        <td>5,000+ 小時</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <h4
+                                style="font-size:22px;font-weight:600;color:#002FA7;margin-bottom:15px;margin-top:30px;padding-left:15px;border-left:4px solid #C5A059">
+                                PM軸承常用材料
+                            </h4>
+                            <table class="term-table">
+                                <thead>
+                                    <tr>
+                                        <th style="width:180px">材料</th>
+                                        <th>MPIF編碼</th>
+                                        <th>PV極限 (MPa·m/s)</th>
+                                        <th>適用場合</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="term-name">青銅 (90Cu-10Sn)</td>
+                                        <td>CT-1000</td>
+                                        <td>1.8</td>
+                                        <td>低速輕載。家電、風扇、玩具</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="term-name">鐵銅合金</td>
+                                        <td>FC-0208</td>
+                                        <td>3.5</td>
+                                        <td>中等負載。汽車配件、電動工具</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="term-name">鐵青銅複合</td>
+                                        <td>FC-0800</td>
+                                        <td>2.5</td>
+                                        <td>均衡性能。馬達、泵浦</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <div class="decision-box"
+                                style="background:linear-gradient(135deg,#f0f4ff 0%,#e8f4fd 100%)">
+                                <h4>🏭 常見應用領域</h4>
+                                <div
+                                    style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px">
+                                    <div style="background:white;padding:12px;border-radius:8px;text-align:center">
+                                        <div style="font-size:28px">🖥️</div><strong
+                                            style="font-size:13px">電腦散熱風扇</strong>
+                                    </div>
+                                    <div style="background:white;padding:12px;border-radius:8px;text-align:center">
+                                        <div style="font-size:28px">🚗</div><strong style="font-size:13px">汽車馬達</strong>
+                                    </div>
+                                    <div style="background:white;padding:12px;border-radius:8px;text-align:center">
+                                        <div style="font-size:28px">🏠</div><strong style="font-size:13px">家用電器</strong>
+                                    </div>
+                                    <div style="background:white;padding:12px;border-radius:8px;text-align:center">
+                                        <div style="font-size:28px">🔧</div><strong style="font-size:13px">電動工具</strong>
+                                    </div>
+                                </div>
+                                <p style="margin-top:15px;font-size:14px;color:#666">
+                                    <strong>💡 設計建議：</strong>為獲最佳性能，軸與軸承間隙建議維持0.02-0.05mm。<a href="contact.html"
+                                        style="color:#002FA7">聯絡我們</a>獲取軸承設計支援！
+                                </p>
+                            </div>
+                        </div>
+</div> <!-- End resource-content -->
+            </div> <!-- End resource-layout -->
+        </div>
+    </section>
+
+    <!-- Smooth Scroll JavaScript -->
+    <script>
+        // Smooth scroll for sidebar navigation
+        document.querySelectorAll('.sidebar-nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (!href.startsWith('#')) return; // Allow external links to navigate normally
+                e.preventDefault();
+                const targetElement = document.querySelector(href);
+                if (targetElement) {
+                    const offsetTop = targetElement.offsetTop - 120;
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Highlight active section in sidebar
+        window.addEventListener('scroll', function () {
+            const sections = ['process-guide', 'gear-types', 'bearings-guide', 'sintering-guide', 'powder-production', 'quality-control', 'density-porosity', 'faq', 'glossary', 'materials', 'iron-steel', 'stainless', 'magnetic', 'bronze-brass'];
+            let currentSection = '';
+
+            sections.forEach(id => {
+                const element = document.getElementById(id);
+                if (element) {
+                    const rect = element.getBoundingClientRect();
+                    if (rect.top <= 150) {
+                        currentSection = id;
+                    }
+                }
+            });
+
+            document.querySelectorAll('.sidebar-nav a').forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + currentSection) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+    <!-- Footer -->
+    <footer style="background:#002FA7;color:white;padding:80px 0 40px">
+        <div class="container">
+            <div
+                style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:50px;margin-bottom:60px">
+                <div>
+                    <div style="display:flex;align-items:center;gap:15px;margin-bottom:25px">
+                        <img alt="Logo" src="../images/logo.png" style="height:  50px;" width="61" height="50">
+                        <h3
+                            style="font-family:'Noto Sans TC',sans-serif;font-size:20px;font-weight:700;color:#8B6914;margin:0">
+                            冶聖工業股份有限公司</h3>
+                    </div>
+                    <p style="color:#a0b0d0;line-height:1.6;font-size:14px">自 1984 年起的高精密粉末冶金零件領導製造商。</p>
+                </div>
+                <div>
+                    <h4 style="color: #996B1D;font-size:18px;font-weight:700;margin-bottom:25px">公司資訊</h4>
+                    <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:15px">
+                        <li><a href="about.html" style="color:#a0b0d0;font-size:15px">關於我們</a></li>
+                        <li><a href="products.html" style="color:#a0b0d0;font-size:15px">所有產品</a></li>
+                        <li><a href="capabilities.html" style="color:#a0b0d0;font-size:15px">製程能力</a></li>
+                        <li><a href="contact.html" style="color:#a0b0d0;font-size:15px">聯絡我們</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="color: #996B1D;font-size:18px;font-weight:700;margin-bottom:25px">聯絡方式</h4>
+                    <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:15px">
+                        <li style="color:#a0b0d0;font-size:15px">新北市新莊區中正路721巷11號</li>
+                        <li style="color:#a0b0d0;font-size:15px"><a href="mailto:YS@yehsheng.com">YS@yehsheng.com</a>
+                        </li>
+                        <li style="color:#a0b0d0;font-size:15px">+886-2-2901-8266</li>
+                    </ul>
+                </div>
+            </div>
+            <div style="border-top:1px solid rgba(255,255,255,0.1);padding-top:30px;text-align:center">
+                <p style="color:#e0e0e0;font-size:13px;margin:0">© 2024 冶聖工業股份有限公司 版權所有。</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function toggleMenu() { document.getElementById('mobileMenu').classList.toggle('active') }
+        function toggleLangMenu() { var m = document.getElementById("langMenu"); m.style.display = (m.style.display === "none" || m.style.display === "") ? "block" : "none" }
+        document.addEventListener('click', function (e) { var m = document.getElementById("langMenu"); if (!e.target.closest('#langMenu') && !e.target.matches('[onclick="toggleLangMenu()"]')) { if (m) m.style.display = "none" } });
+    </script>
+
+    <!-- Floating CTA Button -->
+    <a id="floating-cta" href="contact.html" style="
+        position: fixed;
+        bottom: 28px;
+        right: 28px;
+        background: linear-gradient(135deg, #C5A059, #a8853a);
+        color: white;
+        padding: 14px 24px;
+        border-radius: 50px;
+        font-family: 'Inter', sans-serif;
+        font-size: 15px;
+        font-weight: 600;
+        text-decoration: none;
+        box-shadow: 0 4px 20px rgba(197, 160, 89, 0.4);
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        transition: all 0.3s ease;
+    " onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 6px 25px rgba(197,160,89,0.5)'"
+        onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 20px rgba(197,160,89,0.4)'">💬
+        免費報價</a>
+
+</body>
+
+</html>
