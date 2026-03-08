@@ -544,67 +544,67 @@
     }
     </script>
 <style>
-            .accordion-card {
-                background: #fff;
-                border-radius: 12px;
-                box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-                margin-bottom: 25px;
-                overflow: hidden;
-                border: 1px solid #eee;
-                transition: all 0.3s ease;
-            }
-            .accordion-card:hover {
-                box-shadow: 0 8px 25px rgba(0,0,0,0.08);
-                transform: translateY(-2px);
-            }
-            .accordion-header {
-                padding: 15px 30px;
-                cursor: pointer;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                background: #fdfbf7;
-                border-bottom: 1px solid transparent;
-                transition: all 0.3s ease;
-            }
-            .accordion-card.active .accordion-header {
-                border-bottom: 1px solid #eee;
-                background: #fff;
-            }
-            .accordion-icon {
-                font-size: 20px;
-                color: #C5A059;
-                transition: transform 0.3s ease;
-            }
-            .accordion-card.active .accordion-icon {
-                transform: rotate(180deg);
-            }
-            .accordion-body-wrapper {
-                display: grid;
-                grid-template-rows: 0fr;
-                transition: grid-template-rows 0.3s ease-out;
-            }
-            .accordion-card.active .accordion-body-wrapper {
-                grid-template-rows: 1fr;
-            }
-            .accordion-body-inner {
-                overflow: hidden;
-                padding: 0 30px;
-                opacity: 0;
-                transition: opacity 0.3s ease-out, padding 0.3s ease;
-            }
-            .accordion-card.active .accordion-body-inner {
-                padding: 30px 30px 30px 30px;
-                opacity: 1;
-            }
-            /* Mobile adjustment */
-            @media (max-width: 768px) {
-                .accordion-header { padding: 15px 20px; }
-                .accordion-body-inner { padding: 0 20px; }
-                .accordion-card.active .accordion-body-inner { padding: 20px; }
-                .accordion-header h3 { font-size: 20px !important; }
-            }
-            </style></head>
+        .accordion-card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-bottom: 25px;
+            overflow: hidden;
+            border: 1px solid #eee;
+            transition: all 0.3s ease;
+        }
+        .accordion-card:hover {
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+            transform: translateY(-2px);
+        }
+        .accordion-header {
+            padding: 20px 30px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #fdfbf7;
+            border-bottom: 1px solid transparent;
+            transition: all 0.3s ease;
+        }
+        .accordion-card.active .accordion-header {
+            border-bottom: 1px solid #eee;
+            background: #fff;
+        }
+        .accordion-icon {
+            font-size: 20px;
+            color: #C5A059;
+            transition: transform 0.3s ease;
+        }
+        .accordion-card.active .accordion-icon {
+            transform: rotate(180deg);
+        }
+        .accordion-body-wrapper {
+            display: grid;
+            grid-template-rows: 0fr;
+            transition: grid-template-rows 0.3s ease-out;
+        }
+        .accordion-card.active .accordion-body-wrapper {
+            grid-template-rows: 1fr;
+        }
+        .accordion-body-inner {
+            overflow: hidden;
+            padding: 0 30px;
+            opacity: 0;
+            transition: opacity 0.3s ease-out, padding 0.3s ease;
+        }
+        .accordion-card.active .accordion-body-inner {
+            padding: 0 30px 30px 30px;
+            opacity: 1;
+        }
+        /* Mobile adjustment */
+        @media (max-width: 768px) {
+            .accordion-header { padding: 15px 20px; }
+            .accordion-body-inner { padding: 0 20px; }
+            .accordion-card.active .accordion-body-inner { padding: 0 20px 20px 20px; }
+            .accordion-header h3 { font-size: 20px !important; }
+        }
+        </style></head>
 <body>
 <!-- Top Bar (Klein Blue #002FA7) -->
 <div class="hidden-mobile" style="background-color: #002FA7; color: white; padding: 10px 0;;position:relative;z-index:200">
@@ -724,7 +724,7 @@
 </ul>
 </aside>
 <div class="resource-content"><!-- NEW: Process Selection Guide Section -->
-<div class="accordion-card" id="process-guide"><div class="accordion-header" onclick="toggleAccordion(this)"><h3 style="font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 700; color: #333; margin-bottom: 15px; border-bottom: 2px solid #eee; padding-bottom: 10px;; margin: 0 !important; border: none; padding: 0; font-size: 24px;">
+<div class="accordion-card" id="process-guide"><div class="accordion-header" onclick="toggleAccordion(this)"><h3 style="font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 700; color: #333; margin-bottom: 15px; border-bottom: 2px solid #eee; padding-bottom: 10px;; margin: 0; border: none; padding: 0; font-size: 24px;">
                             🔄 Process Selection Guide
                         </h3><span class="accordion-icon">🔽</span></div><div class="accordion-body-wrapper"><div class="accordion-body-inner">
 
@@ -809,7 +809,7 @@
                             </p>
 </div>
 </div></div></div><!-- NEW: PM Forming Methods Section -->
-<div class="accordion-card" id="forming-methods"><div class="accordion-header" onclick="toggleAccordion(this)"><h3 style="font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 700; color: #333; margin-bottom: 15px; border-bottom: 2px solid #eee; padding-bottom: 10px;; margin: 0 !important; border: none; padding: 0; font-size: 24px;">
+<div class="accordion-card" id="forming-methods"><div class="accordion-header" onclick="toggleAccordion(this)"><h3 style="font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 700; color: #333; margin-bottom: 15px; border-bottom: 2px solid #eee; padding-bottom: 10px;; margin: 0; border: none; padding: 0; font-size: 24px;">
                             🏭 Powder Metallurgy Forming Methods
                         </h3><span class="accordion-icon">🔽</span></div><div class="accordion-body-wrapper"><div class="accordion-body-inner">
 
@@ -1017,7 +1017,7 @@
                             </p>
 </div>
 </div></div></div><!-- NEW: PM vs CNC vs Casting Section -->
-<div class="accordion-card" id="pm-vs-cnc"><div class="accordion-header" onclick="toggleAccordion(this)"><h3 style="font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 700; color: #333; margin-bottom: 15px; border-bottom: 2px solid #eee; padding-bottom: 10px;; margin: 0 !important; border: none; padding: 0; font-size: 24px;">
+<div class="accordion-card" id="pm-vs-cnc"><div class="accordion-header" onclick="toggleAccordion(this)"><h3 style="font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 700; color: #333; margin-bottom: 15px; border-bottom: 2px solid #eee; padding-bottom: 10px;; margin: 0; border: none; padding: 0; font-size: 24px;">
                             ⚔️ PM vs CNC Machining vs Casting — When to Use Which?
                         </h3><span class="accordion-icon">🔽</span></div><div class="accordion-body-wrapper"><div class="accordion-body-inner">
 
@@ -1132,40 +1132,14 @@
 </p>
 </div>
 </div></div></div></div></div></div></section><script>
-            function toggleAccordion(header) {
-                const card = header.closest('.accordion-card');
-                card.classList.toggle('active');
-            }
+        function toggleAccordion(header) {
+            const card = header.closest('.accordion-card');
             
-            function openAccordionFromHash() {
-                if (window.location.hash) {
-                    const target = document.querySelector(window.location.hash);
-                    if (target && target.classList.contains('accordion-card')) {
-                        target.classList.add('active');
-                        setTimeout(() => {
-                            const offsetTop = target.getBoundingClientRect().top + window.scrollY - 120;
-                            window.scrollTo({ top: offsetTop, behavior: 'smooth' });
-                        }, 300); // Wait for transition
-                    }
-                }
-            }
+            // Optional: Close others
+            // document.querySelectorAll('.accordion-card').forEach(c => {
+            //     if (c !== card) c.classList.remove('active');
+            // });
             
-            window.addEventListener('hashchange', openAccordionFromHash);
-            document.addEventListener('DOMContentLoaded', function() {
-                openAccordionFromHash();
-                
-                // Intercept sidebar clicks
-                document.querySelectorAll('.sidebar-nav a').forEach(anchor => {
-                    anchor.addEventListener('click', function (e) {
-                        const href = this.getAttribute('href');
-                        if (href && href.includes('#')) {
-                            const targetId = href.split('#')[1];
-                            const targetElement = document.getElementById(targetId);
-                            if (targetElement && targetElement.classList.contains('accordion-card')) {
-                                targetElement.classList.add('active');
-                            }
-                        }
-                    });
-                });
-            });
-            </script></body></html>
+            card.classList.toggle('active');
+        }
+        </script></body></html>

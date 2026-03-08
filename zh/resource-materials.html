@@ -1,11 +1,11 @@
 ﻿<!DOCTYPE html>
-<html lang="zh-Hant">
 
+<html lang="zh-Hant">
 <head>
-    <meta name="google-site-verification" content="YUhT_jRF5sxYfCWMMcB08B38K6MB2yAEv4wEo1fjdXg" />
-    <!-- Google tag (gtag.js) -->
-    <!-- Google Analytics & Clarity (production only) -->
-    <script>
+<meta content="YUhT_jRF5sxYfCWMMcB08B38K6MB2yAEv4wEo1fjdXg" name="google-site-verification"/>
+<!-- Google tag (gtag.js) -->
+<!-- Google Analytics & Clarity (production only) -->
+<script>
         if (window.location.hostname === 'yehsheng.com') {
             var gaScript = document.createElement('script');
             gaScript.async = true;
@@ -22,16 +22,14 @@
             })(window, document, "clarity", "script", "q46c2dab8f");
         }
     </script>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>粉末冶金是什麼？PM vs CNC比較、材料規格、FAQ完整指南</title>
-    <meta content="粉末冶金入門指南：什麼是PM？和CNC/鑄造差在哪？材料怎麼選？40年專家整理的FAQ與MPIF材料規格表。新手必讀→" name="description" />
-    <link href="https://fonts.googleapis.com" rel="preconnect" />
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&amp;family=Noto+Sans+TC:wght@300;400;500;600;700&amp;display=swap"
-        rel="stylesheet" />
-    <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>粉末冶金是什麼？PM vs CNC比較、材料規格、FAQ完整指南</title>
+<meta content="粉末冶金入門指南：什麼是PM？和CNC/鑄造差在哪？材料怎麼選？40年專家整理的FAQ與MPIF材料規格表。新手必讀→" name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&amp;family=Noto+Sans+TC:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<style>
         body {
             margin: 0;
             padding: 0;
@@ -373,17 +371,17 @@
             font-weight: bold
         }
     </style>
-    <link href="https://yehsheng.com/zh/resources.html" rel="canonical" />
-    <!-- hreflang tags for multilingual SEO -->
-    <link rel="alternate" hreflang="en" href="https://yehsheng.com/resources.html" />
-    <link rel="alternate" hreflang="zh-Hant" href="https://yehsheng.com/zh/resources.html" />
-    <link rel="alternate" hreflang="zh-Hans" href="https://yehsheng.com/zh-cn/resources.html" />
-    <link rel="alternate" hreflang="de" href="https://yehsheng.com/de/resources.html" />
-    <link rel="alternate" hreflang="ja" href="https://yehsheng.com/jp/resources.html" />
-    <link rel="alternate" hreflang="x-default" href="https://yehsheng.com/resources.html" />
-    <link rel="icon" href="../images/logo.png" type="image/png">
-    <!-- FAQPage Schema.org Structured Data -->
-    <script type="application/ld+json">
+<link href="https://yehsheng.com/zh/resources.html" rel="canonical"/>
+<!-- hreflang tags for multilingual SEO -->
+<link href="https://yehsheng.com/resources.html" hreflang="en" rel="alternate"/>
+<link href="https://yehsheng.com/zh/resources.html" hreflang="zh-Hant" rel="alternate"/>
+<link href="https://yehsheng.com/zh-cn/resources.html" hreflang="zh-Hans" rel="alternate"/>
+<link href="https://yehsheng.com/de/resources.html" hreflang="de" rel="alternate"/>
+<link href="https://yehsheng.com/jp/resources.html" hreflang="ja" rel="alternate"/>
+<link href="https://yehsheng.com/resources.html" hreflang="x-default" rel="alternate"/>
+<link href="../images/logo.png" rel="icon" type="image/png"/>
+<!-- FAQPage Schema.org Structured Data -->
+<script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",
@@ -431,1220 +429,1144 @@
       ]
     }
     </script>
-
-</head>
-
+<style>
+            .accordion-card {
+                background: #fff;
+                border-radius: 12px;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+                margin-bottom: 25px;
+                overflow: hidden;
+                border: 1px solid #eee;
+                transition: all 0.3s ease;
+            }
+            .accordion-card:hover {
+                box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+                transform: translateY(-2px);
+            }
+            .accordion-header {
+                padding: 15px 30px;
+                cursor: pointer;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background: #fdfbf7;
+                border-bottom: 1px solid transparent;
+                transition: all 0.3s ease;
+            }
+            .accordion-card.active .accordion-header {
+                border-bottom: 1px solid #eee;
+                background: #fff;
+            }
+            .accordion-icon {
+                font-size: 20px;
+                color: #C5A059;
+                transition: transform 0.3s ease;
+            }
+            .accordion-card.active .accordion-icon {
+                transform: rotate(180deg);
+            }
+            .accordion-body-wrapper {
+                display: grid;
+                grid-template-rows: 0fr;
+                transition: grid-template-rows 0.3s ease-out;
+            }
+            .accordion-card.active .accordion-body-wrapper {
+                grid-template-rows: 1fr;
+            }
+            .accordion-body-inner {
+                overflow: hidden;
+                padding: 0 30px;
+                opacity: 0;
+                transition: opacity 0.3s ease-out, padding 0.3s ease;
+            }
+            .accordion-card.active .accordion-body-inner {
+                padding: 30px 30px 30px 30px;
+                opacity: 1;
+            }
+            /* Mobile adjustment */
+            @media (max-width: 768px) {
+                .accordion-header { padding: 15px 20px; }
+                .accordion-body-inner { padding: 0 20px; }
+                .accordion-card.active .accordion-body-inner { padding: 20px; }
+                .accordion-header h3 { font-size: 20px !important; }
+            }
+            </style></head>
 <body>
-    <!-- Top Bar -->
-    <div class="hidden-mobile" style="background:#002FA7;color:white;padding:10px 0;position:relative;z-index:200">
-        <div class="container" style="display:flex;justify-content:flex-end;gap:25px;font-size:13px;font-weight:500">
-            <a href="about.html" style="color:#e8e8e8">關於我們</a>
-            <a href="contact.html" style="color:#e8e8e8">聯絡我們</a>
-            <div style="position:relative;display:inline-block">
-                <span style="color: #996B1D;font-weight:600;cursor:pointer" onclick="toggleLangMenu()">繁體中文 ▼</span>
-                <div id="langMenu"
-                    style="display:none;position:absolute;right:0;top:100%;background:white;box-shadow:0 4px 12px rgba(0,0,0,0.15);border-radius:4px;min-width:120px;z-index:10000">
-                    <a href="../resources.html"
-                        style="display:block;padding:10px 15px;color:#333;font-size:13px">English</a>
-                    <a href="../zh/resources.html"
-                        style="display:block;padding:10px 15px;color: #996B1D;font-size:13px;background:#f5f5f5">繁體中文</a>
-                    <a href="../zh-cn/resources.html"
-                        style="display:block;padding:10px 15px;color:#333;font-size:13px">简体中文</a>
-                    <a href="../de/resources.html"
-                        style="display:block;padding:10px 15px;color:#333;font-size:13px">Deutsch</a>
-                    <a href="../jp/resources.html"
-                        style="display:block;padding:10px 15px;color:#333;font-size:13px">日本語</a>
-                </div>
+<!-- Top Bar -->
+<div class="hidden-mobile" style="background:#002FA7;color:white;padding:10px 0;position:relative;z-index:200">
+<div class="container" style="display:flex;justify-content:flex-end;gap:25px;font-size:13px;font-weight:500">
+<a href="about.html" style="color:#e8e8e8">關於我們</a>
+<a href="contact.html" style="color:#e8e8e8">聯絡我們</a>
+<div style="position:relative;display:inline-block">
+<span onclick="toggleLangMenu()" style="color: #996B1D;font-weight:600;cursor:pointer">繁體中文 ▼</span>
+<div id="langMenu" style="display:none;position:absolute;right:0;top:100%;background:white;box-shadow:0 4px 12px rgba(0,0,0,0.15);border-radius:4px;min-width:120px;z-index:10000">
+<a href="../resources.html" style="display:block;padding:10px 15px;color:#333;font-size:13px">English</a>
+<a href="../zh/resources.html" style="display:block;padding:10px 15px;color: #996B1D;font-size:13px;background:#f5f5f5">繁體中文</a>
+<a href="../zh-cn/resources.html" style="display:block;padding:10px 15px;color:#333;font-size:13px">简体中文</a>
+<a href="../de/resources.html" style="display:block;padding:10px 15px;color:#333;font-size:13px">Deutsch</a>
+<a href="../jp/resources.html" style="display:block;padding:10px 15px;color:#333;font-size:13px">日本語</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Navigation -->
+<nav style="background:white;box-shadow:0 2px 10px rgba(0,0,0,0.05);position:sticky;top:0;z-index:100">
+<div class="container" style="padding:15px 20px;display:flex;justify-content:space-between;align-items:center;position:relative">
+<div style="display:flex;align-items:center;gap:15px">
+<a aria-label="Go to homepage" href="index.html" style="display:flex;align-items:center;gap:15px">
+<img alt="Logo" height="40" src="../images/logo.png" style="height:  40px;" width="49"/>
+<div style="display:flex;flex-direction:column">
+<span style="font-size:18px;font-weight:700;color:#111;line-height:1.2">冶聖工業股份有限公司</span>
+<span style="font-size:10px;font-weight:600;color: #996B1D;letter-spacing:1px">粉末冶金專家</span>
+</div>
+</a>
+</div>
+<div class="hidden-mobile" style="display:flex;gap:35px;align-items:center">
+<a href="products.html" style="font-size:15px;font-weight:500;color:#333">產品介紹</a>
+<a href="solutions.html" style="font-size:15px;font-weight:500;color:#333">服務流程</a>
+<a href="capabilities.html" style="font-size:15px;font-weight:500;color:#333">製程能力</a>
+<a href="applications.html" style="font-size:15px;font-weight:500;color:#333">應用領域</a>
+<a href="case-studies.html" style="font-size:15px;color:#555">成功案例</a>
+<a href="resources.html" style="font-size:15px;font-weight:700;color: #996B1D">資源中心</a>
+<a href="contact.html" style="background:#C5A059;color:white;padding:8px 20px;border-radius:4px;font-size:14px;font-weight:500">聯絡我們</a>
+</div>
+<div aria-label="Toggle menu" class="mobile-menu-btn" onclick="toggleMenu()" role="button" tabindex="0">☰
             </div>
-        </div>
-    </div>
-    <!-- Navigation -->
-    <nav style="background:white;box-shadow:0 2px 10px rgba(0,0,0,0.05);position:sticky;top:0;z-index:100">
-        <div class="container"
-            style="padding:15px 20px;display:flex;justify-content:space-between;align-items:center;position:relative">
-            <div style="display:flex;align-items:center;gap:15px">
-                <a href="index.html" style="display:flex;align-items:center;gap:15px" aria-label="Go to homepage">
-                    <img alt="Logo" src="../images/logo.png" style="height:  40px;" width="49" height="40">
-                    <div style="display:flex;flex-direction:column">
-                        <span style="font-size:18px;font-weight:700;color:#111;line-height:1.2">冶聖工業股份有限公司</span>
-                        <span style="font-size:10px;font-weight:600;color: #996B1D;letter-spacing:1px">粉末冶金專家</span>
+<div class="mobile-menu" id="mobileMenu">
+<!-- Close Button -->
+<div aria-label="Close menu" onclick="toggleMenu()" role="button" style="text-align:right;padding:5px 0 15px;cursor:pointer;font-size:24px;color:#333;" tabindex="0">✕</div>
+<a href="products.html" style="padding:10px 0;border-bottom:1px solid #eee">產品介紹</a>
+<a href="solutions.html" style="padding:10px 0;border-bottom:1px solid #eee">服務流程</a>
+<a href="capabilities.html" style="padding:10px 0;border-bottom:1px solid #eee">製程能力</a>
+<a href="applications.html" style="padding:10px 0;border-bottom:1px solid #eee">應用領域</a>
+<a href="case-studies.html" style="font-size:14px;color:#555">成功案例</a>
+<a href="resources.html" style="padding:10px 0;border-bottom:1px solid #eee;color: #996B1D;font-weight:700">資源中心</a>
+<a href="about.html" style="padding:10px 0;border-bottom:1px solid #eee">關於我們</a>
+<a href="contact.html" style="padding:10px 0;color: #996B1D">聯絡我們</a>
+<!-- Mobile Language Selector -->
+<div style="border-top:2px solid #C5A059;margin-top:10px;padding-top:15px;">
+<div style="font-size:14px;font-weight:600;color: #996B1D;margin-bottom:10px;">🌐 語言 / Language
                     </div>
-                </a>
-            </div>
-            <div class="hidden-mobile" style="display:flex;gap:35px;align-items:center">
-                <a href="products.html" style="font-size:15px;font-weight:500;color:#333">產品介紹</a>
-                <a href="solutions.html" style="font-size:15px;font-weight:500;color:#333">服務流程</a>
-                <a href="capabilities.html" style="font-size:15px;font-weight:500;color:#333">製程能力</a>
-                <a href="applications.html" style="font-size:15px;font-weight:500;color:#333">應用領域</a>
-                <a href="case-studies.html" style="font-size:15px;color:#555">成功案例</a>
-                <a href="resources.html" style="font-size:15px;font-weight:700;color: #996B1D">資源中心</a>
-                <a href="contact.html"
-                    style="background:#C5A059;color:white;padding:8px 20px;border-radius:4px;font-size:14px;font-weight:500">聯絡我們</a>
-            </div>
-            <div class="mobile-menu-btn" onclick="toggleMenu()" aria-label="Toggle menu" role="button" tabindex="0">☰
-            </div>
-            <div class="mobile-menu" id="mobileMenu">
-                <!-- Close Button -->
-                <div onclick="toggleMenu()"
-                    style="text-align:right;padding:5px 0 15px;cursor:pointer;font-size:24px;color:#333;"
-                    aria-label="Close menu" role="button" tabindex="0">✕</div>
-                <a href="products.html" style="padding:10px 0;border-bottom:1px solid #eee">產品介紹</a>
-                <a href="solutions.html" style="padding:10px 0;border-bottom:1px solid #eee">服務流程</a>
-                <a href="capabilities.html" style="padding:10px 0;border-bottom:1px solid #eee">製程能力</a>
-                <a href="applications.html" style="padding:10px 0;border-bottom:1px solid #eee">應用領域</a>
-                <a href="case-studies.html" style="font-size:14px;color:#555">成功案例</a>
-                <a href="resources.html"
-                    style="padding:10px 0;border-bottom:1px solid #eee;color: #996B1D;font-weight:700">資源中心</a>
-                <a href="about.html" style="padding:10px 0;border-bottom:1px solid #eee">關於我們</a>
-                <a href="contact.html" style="padding:10px 0;color: #996B1D">聯絡我們</a>
-
-                <!-- Mobile Language Selector -->
-                <div style="border-top:2px solid #C5A059;margin-top:10px;padding-top:15px;">
-                    <div style="font-size:14px;font-weight:600;color: #996B1D;margin-bottom:10px;">🌐 語言 / Language
-                    </div>
-                    <a href="../resources.html" style="display:block;padding:8px 0;color:#333;">🇺🇸 English</a>
-                    <a href="../zh/resources.html"
-                        style="display:block;padding:8px 0;color: #996B1D;font-weight:600;">🇹🇼 繁體中文</a>
-                    <a href="../zh-cn/resources.html" style="display:block;padding:8px 0;color:#333;">🇨🇳 简体中文</a>
-                    <a href="../de/resources.html" style="display:block;padding:8px 0;color:#333;">🇩🇪 Deutsch</a>
-                    <a href="../jp/resources.html" style="display:block;padding:8px 0;color:#333;">🇯🇵 日本語</a>
-                </div>
-            </div>
-        </div>
-    </nav>
-    <!-- Header Section -->
-    <section role="main" style="padding:80px 0;background:white">
-        <div class="container">
-            <div style="text-align:center;margin-bottom:60px">
-                <h1
-                    style="font-family:'Playfair Display',serif;font-size:42px;font-weight:700;color:#111;margin-bottom:20px">
+<a href="../resources.html" style="display:block;padding:8px 0;color:#333;">🇺🇸 English</a>
+<a href="../zh/resources.html" style="display:block;padding:8px 0;color: #996B1D;font-weight:600;">🇹🇼 繁體中文</a>
+<a href="../zh-cn/resources.html" style="display:block;padding:8px 0;color:#333;">🇨🇳 简体中文</a>
+<a href="../de/resources.html" style="display:block;padding:8px 0;color:#333;">🇩🇪 Deutsch</a>
+<a href="../jp/resources.html" style="display:block;padding:8px 0;color:#333;">🇯🇵 日本語</a>
+</div>
+</div>
+</div>
+</nav>
+<!-- Header Section -->
+<section role="main" style="padding:80px 0;background:white">
+<div class="container">
+<div style="text-align:center;margin-bottom:60px">
+<h1 style="font-family:'Playfair Display',serif;font-size:42px;font-weight:700;color:#111;margin-bottom:20px">
                     技術資源</h1>
-                <h2
-                    style="font-family:'Playfair Display',serif;font-size:32px;font-weight:700;color:#555;margin-bottom:20px">
+<h2 style="font-family:'Playfair Display',serif;font-size:32px;font-weight:700;color:#555;margin-bottom:20px">
                     知識庫與常見問題</h2>
-                <div style="width:80px;height:4px;background:#C5A059;margin:0 auto 30px"></div>
-                <p style="font-size:18px;color:#666;max-width:800px;margin:0 auto;line-height:1.6">
+<div style="width:80px;height:4px;background:#C5A059;margin:0 auto 30px"></div>
+<p style="font-size:18px;color:#666;max-width:800px;margin:0 auto;line-height:1.6">
                     探索有關粉末冶金的常見問題，以及行業術語的完整詞彙表，幫助您做出明智的工程決策。</p>
-            </div>
-
-            <!-- Layout with Sidebar -->
-            <div class="resource-layout"><aside class="resource-sidebar">
-                    <div class="sidebar-title">📋 快速導航</div>
-                    <ul class="sidebar-nav">
-                        <li><a href="case-studies.html">📋 成功案例</a></li>
-                        <li><a href="resource-process.html#process-guide">🔄 製程選擇指南</a></li>
-                        <li><a href="resource-design.html#gear-types">⚙️ 齒輪種類大全</a></li>
-                        <li class="sub-item"><a href="resource-design.html#spur-helical">• 正/螺旋齒輪</a></li>
-                        <li class="sub-item"><a href="resource-design.html#bevel-worm">• 傘/蝸輪</a></li>
-                        <li class="sub-item"><a href="resource-design.html#planetary">• 行星/諧波</a></li>
-                        <li><a href="resource-design.html#bearings-guide">🔩 含油軸承</a></li>
-                        <li><a href="resource-materials.html#sintering-guide">🔥 燒結製程</a></li>
-                        <li><a href="resource-materials.html#powder-production">🔬 粉末生產方法</a></li>
-                        <li><a href="resource-quality.html#quality-control">📊 品質控制</a></li>
-                        <li><a href="resource-materials.html#density-porosity">⚡ 密度與孔隙率</a></li>
-                        <li><a href="resource-faq.html#faq">❓ 常見問題</a></li>
-                        <li><a href="resource-faq.html#glossary">📖 術語表</a></li>
-                        <li><a href="resource-materials.html#materials">🔧 材料規格</a></li>
-                        <li class="sub-item"><a href="resource-materials.html#iron-steel">• 鐵銅碳鋼</a></li>
-                        <li class="sub-item"><a href="resource-materials.html#stainless">• 不鏽鋼</a></li>
-                        <li class="sub-item"><a href="resource-materials.html#magnetic">• 軟磁材料</a></li>
-                        <li class="sub-item"><a href="resource-materials.html#bronze-brass">• 青銅/黃銅</a></li>
-                    </ul>
-                </aside>
-
-                <!-- Main Content -->
-                <div class="resource-content">
+</div>
+<!-- Layout with Sidebar -->
+<div class="resource-layout"><aside class="resource-sidebar">
+<div class="sidebar-title">📋 快速導航</div>
+<ul class="sidebar-nav">
+<li><a href="case-studies.html">📋 成功案例</a></li>
+<li><a href="resource-process.html#process-guide">🔄 製程選擇指南</a></li>
+<li><a href="resource-design.html#gear-types">⚙️ 齒輪種類大全</a></li>
+<li class="sub-item"><a href="resource-design.html#spur-helical">• 正/螺旋齒輪</a></li>
+<li class="sub-item"><a href="resource-design.html#bevel-worm">• 傘/蝸輪</a></li>
+<li class="sub-item"><a href="resource-design.html#planetary">• 行星/諧波</a></li>
+<li><a href="resource-design.html#bearings-guide">🔩 含油軸承</a></li>
+<li><a href="resource-materials.html#sintering-guide">🔥 燒結製程</a></li>
+<li><a href="resource-materials.html#powder-production">🔬 粉末生產方法</a></li>
+<li><a href="resource-quality.html#quality-control">📊 品質控制</a></li>
+<li><a href="resource-materials.html#density-porosity">⚡ 密度與孔隙率</a></li>
+<li><a href="resource-faq.html#faq">❓ 常見問題</a></li>
+<li><a href="resource-faq.html#glossary">📖 術語表</a></li>
+<li><a href="resource-materials.html#materials">🔧 材料規格</a></li>
+<li class="sub-item"><a href="resource-materials.html#iron-steel">• 鐵銅碳鋼</a></li>
+<li class="sub-item"><a href="resource-materials.html#stainless">• 不鏽鋼</a></li>
+<li class="sub-item"><a href="resource-materials.html#magnetic">• 軟磁材料</a></li>
+<li class="sub-item"><a href="resource-materials.html#bronze-brass">• 青銅/黃銅</a></li>
+</ul>
+</aside>
+<!-- Main Content -->
+<div class="resource-content">
 <!-- 燒結製程解析 -->
-                        <div id="sintering-guide" style="margin-bottom:80px">
-                            <h3
-                                style="font-family:'Playfair Display',serif;font-size:28px;font-weight:700;color:#333;margin-bottom:15px;border-bottom:2px solid #eee;padding-bottom:10px">
+<div class="accordion-card" id="sintering-guide"><div class="accordion-header" onclick="toggleAccordion(this)"><h3 style="font-family:'Playfair Display',serif;font-size:28px;font-weight:700;color:#333;margin-bottom:15px;border-bottom:2px solid #eee;padding-bottom:10px; margin: 0 !important; border: none; padding: 0; font-size: 24px;">
                                 🔥 燒結製程解析
-                            </h3>
-                            <p style="font-size:16px;color:#555;line-height:1.7;margin-bottom:25px">
+                            </h3><span class="accordion-icon">🔽</span></div><div class="accordion-body-wrapper"><div class="accordion-body-inner">
+
+<p style="font-size:16px;color:#555;line-height:1.7;margin-bottom:25px">
                                 燒結是將壓製成形的金屬粉末（「生坯」）轉變為高強度功能性零件的關鍵熱處理步驟。了解燒結製程有助於工程師優化零件性能與品質。
                             </p>
-
-                            <h4
-                                style="font-size:22px;font-weight:600;color:#002FA7;margin-bottom:15px;padding-left:15px;border-left:4px solid #C5A059">
+<h4 style="font-size:22px;font-weight:600;color:#002FA7;margin-bottom:15px;padding-left:15px;border-left:4px solid #C5A059">
                                 PM製造流程
                             </h4>
-                            <div style="display:flex;flex-wrap:wrap;gap:0;margin-bottom:30px;justify-content:center">
-                                <div
-                                    style="background:#002FA7;color:white;padding:20px 15px;text-align:center;min-width:140px;flex:1;border-radius:8px 0 0 8px">
-                                    <div style="font-size:28px;margin-bottom:8px">⚗️</div>
-                                    <strong style="font-size:14px">1. 粉末混合</strong>
-                                    <p style="font-size:12px;opacity:0.85;margin:5px 0 0">金屬粉末＋添加劑依配方混合</p>
-                                </div>
-                                <div
-                                    style="background:#1a47b8;color:white;padding:20px 15px;text-align:center;min-width:140px;flex:1">
-                                    <div style="font-size:28px;margin-bottom:8px">🔨</div>
-                                    <strong style="font-size:14px">2. 壓製成形</strong>
-                                    <p style="font-size:12px;opacity:0.85;margin:5px 0 0">400-700 MPa壓力在精密模具中成形</p>
-                                </div>
-                                <div
-                                    style="background:#C5A059;color:white;padding:20px 15px;text-align:center;min-width:140px;flex:1;border:3px solid #8B6914">
-                                    <div style="font-size:28px;margin-bottom:8px">🔥</div>
-                                    <strong style="font-size:14px">3. 燒結</strong>
-                                    <p style="font-size:12px;opacity:0.95;margin:5px 0 0">1100-1300°C控制氣氛爐</p>
-                                </div>
-                                <div
-                                    style="background:#1a47b8;color:white;padding:20px 15px;text-align:center;min-width:140px;flex:1;border-radius:0 8px 8px 0">
-                                    <div style="font-size:28px;margin-bottom:8px">✨</div>
-                                    <strong style="font-size:14px">4. 後處理</strong>
-                                    <p style="font-size:12px;opacity:0.85;margin:5px 0 0">整形、熱處理、電鍍等</p>
-                                </div>
-                            </div>
-
-                            <h4
-                                style="font-size:22px;font-weight:600;color:#002FA7;margin-bottom:15px;padding-left:15px;border-left:4px solid #C5A059">
+<div style="display:flex;flex-wrap:wrap;gap:0;margin-bottom:30px;justify-content:center">
+<div style="background:#002FA7;color:white;padding:20px 15px;text-align:center;min-width:140px;flex:1;border-radius:8px 0 0 8px">
+<div style="font-size:28px;margin-bottom:8px">⚗️</div>
+<strong style="font-size:14px">1. 粉末混合</strong>
+<p style="font-size:12px;opacity:0.85;margin:5px 0 0">金屬粉末＋添加劑依配方混合</p>
+</div>
+<div style="background:#1a47b8;color:white;padding:20px 15px;text-align:center;min-width:140px;flex:1">
+<div style="font-size:28px;margin-bottom:8px">🔨</div>
+<strong style="font-size:14px">2. 壓製成形</strong>
+<p style="font-size:12px;opacity:0.85;margin:5px 0 0">400-700 MPa壓力在精密模具中成形</p>
+</div>
+<div style="background:#C5A059;color:white;padding:20px 15px;text-align:center;min-width:140px;flex:1;border:3px solid #8B6914">
+<div style="font-size:28px;margin-bottom:8px">🔥</div>
+<strong style="font-size:14px">3. 燒結</strong>
+<p style="font-size:12px;opacity:0.95;margin:5px 0 0">1100-1300°C控制氣氛爐</p>
+</div>
+<div style="background:#1a47b8;color:white;padding:20px 15px;text-align:center;min-width:140px;flex:1;border-radius:0 8px 8px 0">
+<div style="font-size:28px;margin-bottom:8px">✨</div>
+<strong style="font-size:14px">4. 後處理</strong>
+<p style="font-size:12px;opacity:0.85;margin:5px 0 0">整形、熱處理、電鍍等</p>
+</div>
+</div>
+<h4 style="font-size:22px;font-weight:600;color:#002FA7;margin-bottom:15px;padding-left:15px;border-left:4px solid #C5A059">
                                 燒結溫度與氣氛對照表
                             </h4>
-                            <table class="term-table">
-                                <thead>
-                                    <tr>
-                                        <th style="width:180px">材料</th>
-                                        <th>溫度 (°C)</th>
-                                        <th>氣氛</th>
-                                        <th>時間 (分)</th>
-                                        <th>要點</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="term-name">鐵碳鋼<br>(FC-0208)</td>
-                                        <td>1120 - 1150</td>
-                                        <td>N₂/H₂ (90/10)</td>
-                                        <td>20 - 30</td>
-                                        <td>最常用。碳含量控制是硬度的關鍵。</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="term-name">鐵鎳鋼<br>(FN-0205)</td>
-                                        <td>1120 - 1150</td>
-                                        <td>N₂/H₂ (90/10)</td>
-                                        <td>25 - 35</td>
-                                        <td>更高強度。鎳提升韌性和淬透性。</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="term-name">不鏽鋼<br>(SS-316L)</td>
-                                        <td>1250 - 1350</td>
-                                        <td>真空或H₂</td>
-                                        <td>30 - 60</td>
-                                        <td>需高溫。必須避免鉻氧化。</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="term-name">青銅<br>(CT-1000)</td>
-                                        <td>800 - 850</td>
-                                        <td>N₂/H₂ 或吸熱式</td>
-                                        <td>15 - 25</td>
-                                        <td>較低溫度。用於軸承和襯套。</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="term-name">軟磁材料<br>(純鐵)</td>
-                                        <td>1120 - 1150</td>
-                                        <td>H₂ 或分解氨</td>
-                                        <td>30 - 45</td>
-                                        <td>需高純度氣氛以確保磁性能。</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-
-                            <h4
-                                style="font-size:22px;font-weight:600;color:#002FA7;margin-bottom:15px;margin-top:30px;padding-left:15px;border-left:4px solid #C5A059">
+<table class="term-table">
+<thead>
+<tr>
+<th style="width:180px">材料</th>
+<th>溫度 (°C)</th>
+<th>氣氛</th>
+<th>時間 (分)</th>
+<th>要點</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="term-name">鐵碳鋼<br/>(FC-0208)</td>
+<td>1120 - 1150</td>
+<td>N₂/H₂ (90/10)</td>
+<td>20 - 30</td>
+<td>最常用。碳含量控制是硬度的關鍵。</td>
+</tr>
+<tr>
+<td class="term-name">鐵鎳鋼<br/>(FN-0205)</td>
+<td>1120 - 1150</td>
+<td>N₂/H₂ (90/10)</td>
+<td>25 - 35</td>
+<td>更高強度。鎳提升韌性和淬透性。</td>
+</tr>
+<tr>
+<td class="term-name">不鏽鋼<br/>(SS-316L)</td>
+<td>1250 - 1350</td>
+<td>真空或H₂</td>
+<td>30 - 60</td>
+<td>需高溫。必須避免鉻氧化。</td>
+</tr>
+<tr>
+<td class="term-name">青銅<br/>(CT-1000)</td>
+<td>800 - 850</td>
+<td>N₂/H₂ 或吸熱式</td>
+<td>15 - 25</td>
+<td>較低溫度。用於軸承和襯套。</td>
+</tr>
+<tr>
+<td class="term-name">軟磁材料<br/>(純鐵)</td>
+<td>1120 - 1150</td>
+<td>H₂ 或分解氨</td>
+<td>30 - 45</td>
+<td>需高純度氣氛以確保磁性能。</td>
+</tr>
+</tbody>
+</table>
+<h4 style="font-size:22px;font-weight:600;color:#002FA7;margin-bottom:15px;margin-top:30px;padding-left:15px;border-left:4px solid #C5A059">
                                 燒結過程中發生什麼？
                             </h4>
-                            <table class="term-table">
-                                <thead>
-                                    <tr>
-                                        <th style="width:180px">階段</th>
-                                        <th>溫度範圍</th>
-                                        <th>發生的變化</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="term-name">脫蠟階段</td>
-                                        <td>150 - 600°C</td>
-                                        <td>潤滑劑（硬脂酸鋅）蒸發。需控制升溫速率以避免起泡。</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="term-name">還原氧化物</td>
-                                        <td>600 - 900°C</td>
-                                        <td>氫氣還原粉末顆粒表面氧化物，使金屬鍵結成為可能。</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="term-name">顆粒結合</td>
-                                        <td>900 - 1150°C</td>
-                                        <td>原子擴散在顆粒間形成頸部。強度大幅提升。</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="term-name">緻密化</td>
-                                        <td>峰值溫度</td>
-                                        <td>孔隙縮小，晶粒長大。零件達到最終密度（6.4-7.2 g/cm³）。</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="term-name">冷卻</td>
-                                        <td>峰值 → 室溫</td>
-                                        <td>控制冷卻速率決定最終微觀組織和硬度。</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-
-                            <div class="decision-box"
-                                style="background:linear-gradient(135deg,#fff8e1 0%,#fff3e0 100%)">
-                                <h4>🔬 冶聖的燒結品質管控</h4>
-                                <div
-                                    style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px">
-                                    <div
-                                        style="background:white;padding:15px;border-radius:8px;border-left:3px solid #C5A059">
-                                        <strong style="color:#002FA7">🌡️ 溫度監控</strong>
-                                        <p style="font-size:13px;margin:8px 0 0;color:#666">爐區全程±5°C精度</p>
-                                    </div>
-                                    <div
-                                        style="background:white;padding:15px;border-radius:8px;border-left:3px solid #C5A059">
-                                        <strong style="color:#002FA7">💨 氣氛控制</strong>
-                                        <p style="font-size:13px;margin:8px 0 0;color:#666">露點和氣體成分持續監測</p>
-                                    </div>
-                                    <div
-                                        style="background:white;padding:15px;border-radius:8px;border-left:3px solid #C5A059">
-                                        <strong style="color:#002FA7">📊 密度檢測</strong>
-                                        <p style="font-size:13px;margin:8px 0 0;color:#666">每批次依MPIF Standard 42驗證</p>
-                                    </div>
-                                </div>
-                                <p style="margin-top:15px;font-size:14px;color:#666">
-                                    <strong>📧 對燒結有疑問？</strong>我們的工程團隊可以幫助您選擇正確的參數。<a href="contact.html"
-                                        style="color:#002FA7;font-weight:600">聯絡我們 →</a>
-                                </p>
-                            </div>
-                        </div>
-
+<table class="term-table">
+<thead>
+<tr>
+<th style="width:180px">階段</th>
+<th>溫度範圍</th>
+<th>發生的變化</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="term-name">脫蠟階段</td>
+<td>150 - 600°C</td>
+<td>潤滑劑（硬脂酸鋅）蒸發。需控制升溫速率以避免起泡。</td>
+</tr>
+<tr>
+<td class="term-name">還原氧化物</td>
+<td>600 - 900°C</td>
+<td>氫氣還原粉末顆粒表面氧化物，使金屬鍵結成為可能。</td>
+</tr>
+<tr>
+<td class="term-name">顆粒結合</td>
+<td>900 - 1150°C</td>
+<td>原子擴散在顆粒間形成頸部。強度大幅提升。</td>
+</tr>
+<tr>
+<td class="term-name">緻密化</td>
+<td>峰值溫度</td>
+<td>孔隙縮小，晶粒長大。零件達到最終密度（6.4-7.2 g/cm³）。</td>
+</tr>
+<tr>
+<td class="term-name">冷卻</td>
+<td>峰值 → 室溫</td>
+<td>控制冷卻速率決定最終微觀組織和硬度。</td>
+</tr>
+</tbody>
+</table>
+<div class="decision-box" style="background:linear-gradient(135deg,#fff8e1 0%,#fff3e0 100%)">
+<h4>🔬 冶聖的燒結品質管控</h4>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px">
+<div style="background:white;padding:15px;border-radius:8px;border-left:3px solid #C5A059">
+<strong style="color:#002FA7">🌡️ 溫度監控</strong>
+<p style="font-size:13px;margin:8px 0 0;color:#666">爐區全程±5°C精度</p>
+</div>
+<div style="background:white;padding:15px;border-radius:8px;border-left:3px solid #C5A059">
+<strong style="color:#002FA7">💨 氣氛控制</strong>
+<p style="font-size:13px;margin:8px 0 0;color:#666">露點和氣體成分持續監測</p>
+</div>
+<div style="background:white;padding:15px;border-radius:8px;border-left:3px solid #C5A059">
+<strong style="color:#002FA7">📊 密度檢測</strong>
+<p style="font-size:13px;margin:8px 0 0;color:#666">每批次依MPIF Standard 42驗證</p>
+</div>
+</div>
+<p style="margin-top:15px;font-size:14px;color:#666">
+<strong>📧 對燒結有疑問？</strong>我們的工程團隊可以幫助您選擇正確的參數。<a href="contact.html" style="color:#002FA7;font-weight:600">聯絡我們 →</a>
+</p>
+</div>
+</div></div></div>
 <!-- NEW: Powder Production Methods -->
-                    <div id="powder-production" style="margin-bottom: 80px;">
-                        <h3
-                            style="font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 700; color: #333; margin-bottom: 15px; border-bottom: 2px solid #eee; padding-bottom: 10px;">
+<div class="accordion-card" id="powder-production"><div class="accordion-header" onclick="toggleAccordion(this)"><h3 style="font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 700; color: #333; margin-bottom: 15px; border-bottom: 2px solid #eee; padding-bottom: 10px;; margin: 0 !important; border: none; padding: 0; font-size: 24px;">
                             🔬 金屬粉末的製造方法 — 粉末生產技術
-                        </h3>
-                        <p style="font-size: 16px; color: #555; line-height: 1.7; margin-bottom: 25px;">
+                        </h3><span class="accordion-icon">🔽</span></div><div class="accordion-body-wrapper"><div class="accordion-body-inner">
+
+<p style="font-size: 16px; color: #555; line-height: 1.7; margin-bottom: 25px;">
                             任何粉末冶金零件的品質都始於原材料 —
                             金屬粉末。不同的生產方法產生的粉末具有獨特的特性，直接影響壓縮性、生坯強度、燒結性能和最終零件品質。了解這些方法有助於工程師為其應用指定正確的粉末。
                         </p>
-                        <h4
-                            style="font-size: 22px; font-weight: 600; color: #002FA7; margin-bottom: 15px; padding-left: 15px; border-left: 4px solid #C5A059;">
+<h4 style="font-size: 22px; font-weight: 600; color: #002FA7; margin-bottom: 15px; padding-left: 15px; border-left: 4px solid #C5A059;">
                             主要粉末生產製程
                         </h4>
-                        <div
-                            style="background: linear-gradient(135deg, #f0f4ff 0%, #e8f4fd 100%); border: 2px solid #C5A059; border-radius: 12px; padding: 25px; margin-bottom: 20px;">
-                            <h5 style="font-size: 18px; font-weight: 700; color: #002FA7; margin: 0 0 12px 0;">
+<div style="background: linear-gradient(135deg, #f0f4ff 0%, #e8f4fd 100%); border: 2px solid #C5A059; border-radius: 12px; padding: 25px; margin-bottom: 20px;">
+<h5 style="font-size: 18px; font-weight: 700; color: #002FA7; margin: 0 0 12px 0;">
                                 💧 水霧化法
-                                <span
-                                    style="background: #e8f5e9; color: #2e7d32; font-size: 12px; padding: 3px 10px; border-radius: 12px; margin-left: 10px; font-weight: 700;">最常用</span>
-                            </h5>
-                            <p style="font-size: 15px; line-height: 1.8; color: #333; margin: 0 0 15px 0;">
+                                <span style="background: #e8f5e9; color: #2e7d32; font-size: 12px; padding: 3px 10px; border-radius: 12px; margin-left: 10px; font-weight: 700;">最常用</span>
+</h5>
+<p style="font-size: 15px; line-height: 1.8; color: #333; margin: 0 0 15px 0;">
                                 熔融金屬通過噴嘴後，被高壓水射流（100-150 MPa）撞擊，分裂成細小液滴並快速凝固。所得顆粒<strong>形狀不規則、結構呈海綿狀</strong>，提供優異的生坯強度
                                 — 這對零件在燒結前需承受搬運至關重要。</p>
-                            <div
-                                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px;">
-                                <div style="background: white; padding: 10px; border-radius: 8px; text-align: center;">
-                                    <strong style="font-size: 13px; color: #002FA7;">顆粒形態</strong>
-                                    <p style="font-size: 12px; color: #666; margin: 5px 0 0;">不規則</p>
-                                </div>
-                                <div style="background: white; padding: 10px; border-radius: 8px; text-align: center;">
-                                    <strong style="font-size: 13px; color: #002FA7;">Size</strong>
-                                    <p style="font-size: 12px; color: #666; margin: 5px 0 0;">40–150 μm</p>
-                                </div>
-                                <div style="background: white; padding: 10px; border-radius: 8px; text-align: center;">
-                                    <strong style="font-size: 13px; color: #002FA7;">主要用途</strong>
-                                    <p style="font-size: 12px; color: #666; margin: 5px 0 0;">壓製燒結</p>
-                                </div>
-                                <div style="background: white; padding: 10px; border-radius: 8px; text-align: center;">
-                                    <strong style="font-size: 13px; color: #002FA7;">成本</strong>
-                                    <p style="font-size: 12px; color: #666; margin: 5px 0 0;">⭐ 最低</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div
-                            style="background: white; border: 1px solid #e0e0e0; border-radius: 12px; padding: 25px; margin-bottom: 20px;">
-                            <h5 style="font-size: 18px; font-weight: 700; color: #002FA7; margin: 0 0 12px 0;">💨 氣霧化法
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px;">
+<div style="background: white; padding: 10px; border-radius: 8px; text-align: center;">
+<strong style="font-size: 13px; color: #002FA7;">顆粒形態</strong>
+<p style="font-size: 12px; color: #666; margin: 5px 0 0;">不規則</p>
+</div>
+<div style="background: white; padding: 10px; border-radius: 8px; text-align: center;">
+<strong style="font-size: 13px; color: #002FA7;">Size</strong>
+<p style="font-size: 12px; color: #666; margin: 5px 0 0;">40–150 μm</p>
+</div>
+<div style="background: white; padding: 10px; border-radius: 8px; text-align: center;">
+<strong style="font-size: 13px; color: #002FA7;">主要用途</strong>
+<p style="font-size: 12px; color: #666; margin: 5px 0 0;">壓製燒結</p>
+</div>
+<div style="background: white; padding: 10px; border-radius: 8px; text-align: center;">
+<strong style="font-size: 13px; color: #002FA7;">成本</strong>
+<p style="font-size: 12px; color: #666; margin: 5px 0 0;">⭐ 最低</p>
+</div>
+</div>
+</div>
+<div style="background: white; border: 1px solid #e0e0e0; border-radius: 12px; padding: 25px; margin-bottom: 20px;">
+<h5 style="font-size: 18px; font-weight: 700; color: #002FA7; margin: 0 0 12px 0;">💨 氣霧化法
                             </h5>
-                            <p style="font-size: 15px; line-height: 1.8; color: #333; margin: 0 0 15px 0;">
+<p style="font-size: 15px; line-height: 1.8; color: #333; margin: 0 0 15px 0;">
                                 類似水霧化，但使用惰性氣體射流（氮氣或氬氣）代替水。較溫和的冷卻產生<strong>球形顆粒</strong>，具有優異的流動性。這使氣霧化粉末成為金屬射出成型（MIM）和積層製造（3D列印）的理想選擇。
                             </p>
-                            <div
-                                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px;">
-                                <div
-                                    style="background: #f8f9fa; padding: 10px; border-radius: 8px; text-align: center;">
-                                    <strong style="font-size: 13px; color: #002FA7;">顆粒形態</strong>
-                                    <p style="font-size: 12px; color: #666; margin: 5px 0 0;">球形</p>
-                                </div>
-                                <div
-                                    style="background: #f8f9fa; padding: 10px; border-radius: 8px; text-align: center;">
-                                    <strong style="font-size: 13px; color: #002FA7;">Size</strong>
-                                    <p style="font-size: 12px; color: #666; margin: 5px 0 0;">10–100 μm</p>
-                                </div>
-                                <div
-                                    style="background: #f8f9fa; padding: 10px; border-radius: 8px; text-align: center;">
-                                    <strong style="font-size: 13px; color: #002FA7;">主要用途</strong>
-                                    <p style="font-size: 12px; color: #666; margin: 5px 0 0;">MIM、3D列印</p>
-                                </div>
-                                <div
-                                    style="background: #f8f9fa; padding: 10px; border-radius: 8px; text-align: center;">
-                                    <strong style="font-size: 13px; color: #002FA7;">成本</strong>
-                                    <p style="font-size: 12px; color: #666; margin: 5px 0 0;">中高</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div
-                            style="background: white; border: 1px solid #e0e0e0; border-radius: 12px; padding: 25px; margin-bottom: 20px;">
-                            <h5 style="font-size: 18px; font-weight: 700; color: #002FA7; margin: 0 0 12px 0;">⚗️ 化學還原法
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px;">
+<div style="background: #f8f9fa; padding: 10px; border-radius: 8px; text-align: center;">
+<strong style="font-size: 13px; color: #002FA7;">顆粒形態</strong>
+<p style="font-size: 12px; color: #666; margin: 5px 0 0;">球形</p>
+</div>
+<div style="background: #f8f9fa; padding: 10px; border-radius: 8px; text-align: center;">
+<strong style="font-size: 13px; color: #002FA7;">Size</strong>
+<p style="font-size: 12px; color: #666; margin: 5px 0 0;">10–100 μm</p>
+</div>
+<div style="background: #f8f9fa; padding: 10px; border-radius: 8px; text-align: center;">
+<strong style="font-size: 13px; color: #002FA7;">主要用途</strong>
+<p style="font-size: 12px; color: #666; margin: 5px 0 0;">MIM、3D列印</p>
+</div>
+<div style="background: #f8f9fa; padding: 10px; border-radius: 8px; text-align: center;">
+<strong style="font-size: 13px; color: #002FA7;">成本</strong>
+<p style="font-size: 12px; color: #666; margin: 5px 0 0;">中高</p>
+</div>
+</div>
+</div>
+<div style="background: white; border: 1px solid #e0e0e0; border-radius: 12px; padding: 25px; margin-bottom: 20px;">
+<h5 style="font-size: 18px; font-weight: 700; color: #002FA7; margin: 0 0 12px 0;">⚗️ 化學還原法
                             </h5>
-                            <p style="font-size: 15px; line-height: 1.8; color: #333; margin: 0 0 15px 0;">
+<p style="font-size: 15px; line-height: 1.8; color: #333; margin: 0 0 15px 0;">
                                 金屬氧化物（如鐵礦石）在高溫下使用氫氣或一氧化碳還原。所得粉末保留原始氧化物的海綿狀結構，提供<strong>高生坯強度</strong>和良好的壓縮性。這是生產鐵粉最古老且最經濟的方法。
                             </p>
-                            <div
-                                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px;">
-                                <div
-                                    style="background: #f8f9fa; padding: 10px; border-radius: 8px; text-align: center;">
-                                    <strong style="font-size: 13px; color: #002FA7;">顆粒形態</strong>
-                                    <p style="font-size: 12px; color: #666; margin: 5px 0 0;">海綿狀</p>
-                                </div>
-                                <div
-                                    style="background: #f8f9fa; padding: 10px; border-radius: 8px; text-align: center;">
-                                    <strong style="font-size: 13px; color: #002FA7;">Size</strong>
-                                    <p style="font-size: 12px; color: #666; margin: 5px 0 0;">40–200 μm</p>
-                                </div>
-                                <div
-                                    style="background: #f8f9fa; padding: 10px; border-radius: 8px; text-align: center;">
-                                    <strong style="font-size: 13px; color: #002FA7;">主要用途</strong>
-                                    <p style="font-size: 12px; color: #666; margin: 5px 0 0;">鐵軸承、結構件</p>
-                                </div>
-                                <div
-                                    style="background: #f8f9fa; padding: 10px; border-radius: 8px; text-align: center;">
-                                    <strong style="font-size: 13px; color: #002FA7;">成本</strong>
-                                    <p style="font-size: 12px; color: #666; margin: 5px 0 0;">低</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div
-                            style="background: white; border: 1px solid #e0e0e0; border-radius: 12px; padding: 25px; margin-bottom: 20px;">
-                            <h5 style="font-size: 18px; font-weight: 700; color: #002FA7; margin: 0 0 12px 0;">⚡ 電解法
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px;">
+<div style="background: #f8f9fa; padding: 10px; border-radius: 8px; text-align: center;">
+<strong style="font-size: 13px; color: #002FA7;">顆粒形態</strong>
+<p style="font-size: 12px; color: #666; margin: 5px 0 0;">海綿狀</p>
+</div>
+<div style="background: #f8f9fa; padding: 10px; border-radius: 8px; text-align: center;">
+<strong style="font-size: 13px; color: #002FA7;">Size</strong>
+<p style="font-size: 12px; color: #666; margin: 5px 0 0;">40–200 μm</p>
+</div>
+<div style="background: #f8f9fa; padding: 10px; border-radius: 8px; text-align: center;">
+<strong style="font-size: 13px; color: #002FA7;">主要用途</strong>
+<p style="font-size: 12px; color: #666; margin: 5px 0 0;">鐵軸承、結構件</p>
+</div>
+<div style="background: #f8f9fa; padding: 10px; border-radius: 8px; text-align: center;">
+<strong style="font-size: 13px; color: #002FA7;">成本</strong>
+<p style="font-size: 12px; color: #666; margin: 5px 0 0;">低</p>
+</div>
+</div>
+</div>
+<div style="background: white; border: 1px solid #e0e0e0; border-radius: 12px; padding: 25px; margin-bottom: 20px;">
+<h5 style="font-size: 18px; font-weight: 700; color: #002FA7; margin: 0 0 12px 0;">⚡ 電解法
                             </h5>
-                            <p style="font-size: 15px; line-height: 1.8; color: #333; margin: 0;">
+<p style="font-size: 15px; line-height: 1.8; color: #333; margin: 0;">
                                 金屬從溶液中電沉積，然後將脆性沉積物研磨成粉末。產生<strong>超高純度粉末</strong>（99.5%+），具有樹枝狀顆粒形態。主要用於高純度銅和鐵粉。</p>
-                        </div>
-                        <div
-                            style="background: white; border: 1px solid #e0e0e0; border-radius: 12px; padding: 25px; margin-bottom: 20px;">
-                            <h5 style="font-size: 18px; font-weight: 700; color: #002FA7; margin: 0 0 12px 0;">🔨 機械合金化
+</div>
+<div style="background: white; border: 1px solid #e0e0e0; border-radius: 12px; padding: 25px; margin-bottom: 20px;">
+<h5 style="font-size: 18px; font-weight: 700; color: #002FA7; margin: 0 0 12px 0;">🔨 機械合金化
                                 / 研磨</h5>
-                            <p style="font-size: 15px; line-height: 1.8; color: #333; margin: 0;">
+<p style="font-size: 15px; line-height: 1.8; color: #333; margin: 0;">
                                 金屬碎片或顆粒在高能球磨機中研磨至所需粒度。此方法可製造<strong>預合金粉末</strong>，用於航空航天和核能應用的特殊材料。</p>
-                        </div>
-                        <h4
-                            style="font-size: 22px; font-weight: 600; color: #002FA7; margin-bottom: 15px; margin-top: 30px; padding-left: 15px; border-left: 4px solid #C5A059;">
+</div>
+<h4 style="font-size: 22px; font-weight: 600; color: #002FA7; margin-bottom: 15px; margin-top: 30px; padding-left: 15px; border-left: 4px solid #C5A059;">
                             粉末生產方法比較</h4>
-                        <table class="process-table">
-                            <thead>
-                                <tr>
-                                    <th>方法</th>
-                                    <th>顆粒形態</th>
-                                    <th>純度</th>
-                                    <th>生坯強度</th>
-                                    <th>成本</th>
-                                    <th>主要用途</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><strong>水霧化</strong></td>
-                                    <td>不規則</td>
-                                    <td>良好</td>
-                                    <td class="highlight-pm">⭐ 高</td>
-                                    <td class="highlight-pm">⭐ 低</td>
-                                    <td>壓製燒結</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>氣霧化</strong></td>
-                                    <td>球形</td>
-                                    <td>高</td>
-                                    <td>低</td>
-                                    <td>高</td>
-                                    <td>MIM、3D列印</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>化學還原</strong></td>
-                                    <td>海綿狀</td>
-                                    <td>良好</td>
-                                    <td class="highlight-pm">⭐ 最高</td>
-                                    <td class="highlight-pm">⭐ 最低</td>
-                                    <td>鐵軸承、結構件</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>電解法</strong></td>
-                                    <td>樹枝狀</td>
-                                    <td>超高 (99.5%+)</td>
-                                    <td>中等</td>
-                                    <td>高</td>
-                                    <td>高純度銅、鐵</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>機械研磨</strong></td>
-                                    <td>片狀/不規則</td>
-                                    <td>視情況</td>
-                                    <td>低</td>
-                                    <td>中等</td>
-                                    <td>特殊合金、ODS</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <div class="decision-box"
-                            style="background: linear-gradient(135deg, #f0f4ff 0%, #e8f4fd 100%);">
-                            <h4>💡 粉末選擇如何影響您的零件</h4>
-                            <div class="decision-item"><span><strong>不規則粉末</strong> （水霧化）</span><span
-                                    class="arrow">→</span><span>更高的生坯強度，燒結前更易搬運</span></div>
-                            <div class="decision-item"><span><strong>球形粉末</strong> （氣霧化）</span><span
-                                    class="arrow">→</span><span>更好的流動性，更均勻的模腔填充</span></div>
-                            <div class="decision-item"><span><strong>海綿狀粉末</strong> （還原法）</span><span
-                                    class="arrow">→</span><span>非常適合含油軸承（高互連孔隙率）</span></div>
-                            <p style="margin-top: 15px; font-size: 14px; color: #666;"><strong>🏭 在冶聖：</strong>
-                                我們主要使用領先供應商（Höganäs、JFE）的優質水霧化和還原鐵粉，確保每批生產的品質一致。 <a href="contact.html"
-                                    style="color: #002FA7; font-weight: 600;">諮詢粉末選擇 →</a></p>
-                        </div>
-                    </div>
-
+<table class="process-table">
+<thead>
+<tr>
+<th>方法</th>
+<th>顆粒形態</th>
+<th>純度</th>
+<th>生坯強度</th>
+<th>成本</th>
+<th>主要用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>水霧化</strong></td>
+<td>不規則</td>
+<td>良好</td>
+<td class="highlight-pm">⭐ 高</td>
+<td class="highlight-pm">⭐ 低</td>
+<td>壓製燒結</td>
+</tr>
+<tr>
+<td><strong>氣霧化</strong></td>
+<td>球形</td>
+<td>高</td>
+<td>低</td>
+<td>高</td>
+<td>MIM、3D列印</td>
+</tr>
+<tr>
+<td><strong>化學還原</strong></td>
+<td>海綿狀</td>
+<td>良好</td>
+<td class="highlight-pm">⭐ 最高</td>
+<td class="highlight-pm">⭐ 最低</td>
+<td>鐵軸承、結構件</td>
+</tr>
+<tr>
+<td><strong>電解法</strong></td>
+<td>樹枝狀</td>
+<td>超高 (99.5%+)</td>
+<td>中等</td>
+<td>高</td>
+<td>高純度銅、鐵</td>
+</tr>
+<tr>
+<td><strong>機械研磨</strong></td>
+<td>片狀/不規則</td>
+<td>視情況</td>
+<td>低</td>
+<td>中等</td>
+<td>特殊合金、ODS</td>
+</tr>
+</tbody>
+</table>
+<div class="decision-box" style="background: linear-gradient(135deg, #f0f4ff 0%, #e8f4fd 100%);">
+<h4>💡 粉末選擇如何影響您的零件</h4>
+<div class="decision-item"><span><strong>不規則粉末</strong> （水霧化）</span><span class="arrow">→</span><span>更高的生坯強度，燒結前更易搬運</span></div>
+<div class="decision-item"><span><strong>球形粉末</strong> （氣霧化）</span><span class="arrow">→</span><span>更好的流動性，更均勻的模腔填充</span></div>
+<div class="decision-item"><span><strong>海綿狀粉末</strong> （還原法）</span><span class="arrow">→</span><span>非常適合含油軸承（高互連孔隙率）</span></div>
+<p style="margin-top: 15px; font-size: 14px; color: #666;"><strong>🏭 在冶聖：</strong>
+                                我們主要使用領先供應商（Höganäs、JFE）的優質水霧化和還原鐵粉，確保每批生產的品質一致。 <a href="contact.html" style="color: #002FA7; font-weight: 600;">諮詢粉末選擇 →</a></p>
+</div>
+</div></div></div>
 <!-- NEW: Density & Porosity Engineering Guide -->
-                    <div id="density-porosity" style="margin-bottom: 80px;">
-                        <h3
-                            style="font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 700; color: #333; margin-bottom: 15px; border-bottom: 2px solid #eee; padding-bottom: 10px;">
-                            ⚡ PM密度與孔隙率 — 工程指南</h3>
-                        <p style="font-size: 16px; color: #555; line-height: 1.7; margin-bottom: 25px;">
-                            密度是粉末冶金中最重要的單一參數。它直接控制機械強度、硬度、耐磨性和疲勞壽命。與鍛造金屬不同，PM工程師可以精確控制密度和孔隙率，以平衡性能、成本和獨特的功能特性。</p>
-                        <h4
-                            style="font-size: 22px; font-weight: 600; color: #002FA7; margin-bottom: 15px; padding-left: 15px; border-left: 4px solid #C5A059;">
-                            密度與機械性能的關係</h4>
-                        <div
-                            style="background: linear-gradient(135deg, #f0f4ff 0%, #e8f4fd 100%); border: 2px solid #C5A059; border-radius: 12px; padding: 25px; margin-bottom: 25px;">
-                            <p style="font-size: 15px; line-height: 1.8; color: #333; margin: 0 0 15px 0;">
-                                對於鐵基PM零件，每<strong>增加0.1 g/cm³密度</strong>通常可獲得：</p>
-                            <div
-                                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px;">
-                                <div style="background: white; padding: 15px; border-radius: 8px; text-align: center;">
-                                    <div style="font-size: 28px; font-weight: 700; color: #002FA7;">+7%</div><strong
-                                        style="font-size: 13px; color: #333;">抗拉強度</strong>
-                                </div>
-                                <div style="background: white; padding: 15px; border-radius: 8px; text-align: center;">
-                                    <div style="font-size: 28px; font-weight: 700; color: #002FA7;">+5%</div><strong
-                                        style="font-size: 13px; color: #333;">硬度</strong>
-                                </div>
-                                <div style="background: white; padding: 15px; border-radius: 8px; text-align: center;">
-                                    <div style="font-size: 28px; font-weight: 700; color: #002FA7;">+10%</div><strong
-                                        style="font-size: 13px; color: #333;">疲勞強度</strong>
-                                </div>
-                                <div style="background: white; padding: 15px; border-radius: 8px; text-align: center;">
-                                    <div style="font-size: 28px; font-weight: 700; color: #002FA7;">+8%</div><strong
-                                        style="font-size: 13px; color: #333;">衝擊能量</strong>
-                                </div>
-                            </div>
-                            <p style="font-size: 14px; color: #666; margin: 15px 0 0 0;">
-                                <strong>注意：</strong>此關係並非線性。超過7.0 g/cm³時，隨著孔隙變為封閉（封閉孔隙率），性能改善更為顯著。純鐵的理論密度為7.87 g/cm³。
-                            </p>
-                        </div>
-                        <h4
-                            style="font-size: 22px; font-weight: 600; color: #002FA7; margin-bottom: 15px; padding-left: 15px; border-left: 4px solid #C5A059;">
-                            不同應用的密度範圍</h4>
-                        <table class="process-table">
-                            <thead>
-                                <tr>
-                                    <th>密度範圍<br>(g/cm³)</th>
-                                    <th>理論密度%</th>
-                                    <th>典型應用</th>
-                                    <th>製程方法</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><strong>5.0 – 6.0</strong></td>
-                                    <td>64 – 76%</td>
-                                    <td>含油軸承、過濾器、阻尼器</td>
-                                    <td>低壓壓製</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>6.0 – 6.6</strong></td>
-                                    <td>76 – 84%</td>
-                                    <td>一般結構件、墊片、非關鍵零件</td>
-                                    <td>標準壓製燒結</td>
-                                </tr>
-                                <tr>
-                                    <td class="highlight-pm"><strong>6.6 – 7.0</strong></td>
-                                    <td class="highlight-pm">84 – 89%</td>
-                                    <td class="highlight-pm">齒輪、鏈輪、凸輪 — 標準工程零件</td>
-                                    <td class="highlight-pm">高壓壓製</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>7.0 – 7.4</strong></td>
-                                    <td>89 – 94%</td>
-                                    <td>高性能齒輪、結構零件</td>
-                                    <td>二次壓製、溫壓或銅浸透</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>7.4 – 7.8</strong></td>
-                                    <td>94 – 99%</td>
-                                    <td>連桿、關鍵航空零件</td>
-                                    <td>粉末鍛造、HIP或MIM</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <h4
-                            style="font-size: 22px; font-weight: 600; color: #002FA7; margin-bottom: 15px; margin-top: 30px; padding-left: 15px; border-left: 4px solid #C5A059;">
-                            提高密度的方法</h4>
-                        <table class="term-table">
-                            <thead>
-                                <tr>
-                                    <th style="width: 200px;">方法</th>
-                                    <th>可達密度</th>
-                                    <th>工作原理</th>
-                                    <th>成本影響</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="term-name">高壓壓製</td>
-                                    <td>最高 7.1 g/cm³</td>
-                                    <td>將壓製壓力從500 MPa提高到700+ MPa</td>
-                                    <td>低 — 主要需要更大噸位壓機</td>
-                                </tr>
-                                <tr>
-                                    <td class="term-name">二次壓製<br>二次燒結 (DPDS)</td>
-                                    <td>最高 7.3 g/cm³</td>
-                                    <td>零件壓製、預燒結，然後再壓製和完全燒結。預燒結軟化粉末，允許第二次壓製達到更高密度。</td>
-                                    <td>中等 — 加工步驟增倍</td>
-                                </tr>
-                                <tr>
-                                    <td class="term-name">溫壓成型</td>
-                                    <td>最高 7.25 g/cm³</td>
-                                    <td>壓製時模具和粉末加熱至120-150°C。降低粉末降伏強度→相同壓力下更高密度。</td>
-                                    <td>中等 — 需要加熱模具</td>
-                                </tr>
-                                <tr>
-                                    <td class="term-name">銅浸透</td>
-                                    <td>最高 7.3 g/cm³</td>
-                                    <td>銅塊放置在零件上，在燒結過程中熔化，通過毛細作用填充開放孔隙。同時提高強度30-40%。</td>
-                                    <td>中低 — 增加銅材料成本</td>
-                                </tr>
-                                <tr>
-                                    <td class="term-name">粉末鍛造</td>
-                                    <td>最高 7.8 g/cm³ (~100%)</td>
-                                    <td>PM預成形件加熱後在封閉模具中鍛造。達到等同鍛鋼的性能。</td>
-                                    <td>高 — 需要鍛造壓機和加熱預成形件</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <h4
-                            style="font-size: 22px; font-weight: 600; color: #002FA7; margin-bottom: 15px; margin-top: 30px; padding-left: 15px; border-left: 4px solid #C5A059;">
-                            孔隙率作為功能 — 不僅僅是限制</h4>
-                        <p style="font-size: 15px; color: #555; line-height: 1.7; margin-bottom: 20px;">
-                            雖然更高的密度意味著更好的機械性能，但控制孔隙率實際上是PM的<strong>獨特優勢</strong>，沒有其他製造製程可以輕易複製：</p>
-                        <div
-                            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; margin-bottom: 25px;">
-                            <div
-                                style="background: white; padding: 20px; border-radius: 8px; border-left: 3px solid #C5A059; box-shadow: 0 2px 10px rgba(0,0,0,0.03);">
-                                <strong style="color: #002FA7; font-size: 16px;">🛢️ 儲油功能</strong>
-                                <p style="font-size: 14px; color: #555; margin: 10px 0 0; line-height: 1.6;">
-                                    15-25%的孔隙率可儲存潤滑油用於自潤滑軸承。油在運轉時釋出，停止時重新吸收 — 實現<strong>免維護運行10,000+小時</strong>。</p>
-                            </div>
-                            <div
-                                style="background: white; padding: 20px; border-radius: 8px; border-left: 3px solid #C5A059; box-shadow: 0 2px 10px rgba(0,0,0,0.03);">
-                                <strong style="color: #002FA7; font-size: 16px;">🫧 過濾功能</strong>
-                                <p style="font-size: 14px; color: #555; margin: 10px 0 0; line-height: 1.6;">
-                                    控制孔隙率（30-50%）製造具有精確孔徑的燒結金屬過濾器。用於液壓系統、化工處理和燃料過濾。</p>
-                            </div>
-                            <div
-                                style="background: white; padding: 20px; border-radius: 8px; border-left: 3px solid #C5A059; box-shadow: 0 2px 10px rgba(0,0,0,0.03);">
-                                <strong style="color: #002FA7; font-size: 16px;">🔇 減振功能</strong>
-                                <p style="font-size: 14px; color: #555; margin: 10px 0 0; line-height: 1.6;">
-                                    多孔PM零件比實心金屬更好地吸收振動和噪音。非常適合辦公設備和家用電器等需要降噪的應用。</p>
-                            </div>
-                        </div>
-                        <h4
-                            style="font-size: 22px; font-weight: 600; color: #002FA7; margin-bottom: 15px; padding-left: 15px; border-left: 4px solid #C5A059;">
-                            密度量測方法</h4>
-                        <table class="term-table">
-                            <thead>
-                                <tr>
-                                    <th style="width: 200px;">方法</th>
-                                    <th>原理</th>
-                                    <th>適用場合</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="term-name">阿基米德法<br>（水置換法）</td>
-                                    <td>零件在空氣中和水中秤重。浮力差得出體積，密度 = 質量 ÷ 體積。開放孔隙需油封或蠟封。</td>
-                                    <td>燒結件標準方法（MPIF 42）。生產品質控制最準確。</td>
-                                </tr>
-                                <tr>
-                                    <td class="term-name">幾何法</td>
-                                    <td>簡單計算：質量 ÷（高×寬×長或π×r²×h）。快速但複雜形狀精度較低。</td>
-                                    <td>簡單圓柱或矩形零件的快速現場檢查。</td>
-                                </tr>
-                                <tr>
-                                    <td class="term-name">氣體比重法</td>
-                                    <td>使用氦氣量測真實體積，滲入開放孔隙，得到「骨架密度」。</td>
-                                    <td>研發用途。區分開放和封閉孔隙率。</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <div class="decision-box"
-                            style="background: linear-gradient(135deg, #fff8e1 0%, #fff3e0 100%); border-color: #C5A059;">
-                            <h4>🎯 密度選擇指南</h4>
-                            <div class="decision-item"><span>需要<strong>自潤滑軸承</strong>？</span><span
-                                    class="arrow">→</span><span>目標 <strong>5.5 – 6.2 g/cm³</strong>（高孔隙率儲油）</span></div>
-                            <div class="decision-item"><span>需要<strong>標準結構件</strong>？</span><span
-                                    class="arrow">→</span><span style="color: #2e7d32; font-weight: 700;">✅ 目標
-                                    <strong>6.6 – 7.0 g/cm³</strong>（我們的最佳範圍）</span></div>
-                            <div class="decision-item"><span>需要<strong>最大強度</strong>（高負載齒輪）？</span><span
-                                    class="arrow">→</span><span>目標 <strong>7.0 – 7.3 g/cm³</strong>（二次壓製或銅浸透）</span>
-                            </div>
-                            <div class="decision-item"><span>需要<strong>等同鍛造</strong>性能？</span><span
-                                    class="arrow">→</span><span>目標 <strong>7.4+ g/cm³</strong>（需粉末鍛造或HIP）</span></div>
-                            <p style="margin-top: 20px; font-size: 14px; color: #666;"><strong>💡 省錢建議：</strong>
-                                不要過度指定密度。更高密度 = 更高成本。我們的工程團隊可幫助您找到平衡性能和預算的最佳密度。 <a href="contact.html"
-                                    style="color: #002FA7; font-weight: 600;">免費諮詢 →</a></p>
-                        </div>
-                    </div>
+<div class="accordion-card" id="density-porosity"><div class="accordion-header" onclick="toggleAccordion(this)"><h3 style="font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 700; color: #333; margin-bottom: 15px; border-bottom: 2px solid #eee; padding-bottom: 10px;; margin: 0 !important; border: none; padding: 0; font-size: 24px;">
+                            ⚡ PM密度與孔隙率 — 工程指南</h3><span class="accordion-icon">🔽</span></div><div class="accordion-body-wrapper"><div class="accordion-body-inner">
 
+<p style="font-size: 16px; color: #555; line-height: 1.7; margin-bottom: 25px;">
+                            密度是粉末冶金中最重要的單一參數。它直接控制機械強度、硬度、耐磨性和疲勞壽命。與鍛造金屬不同，PM工程師可以精確控制密度和孔隙率，以平衡性能、成本和獨特的功能特性。</p>
+<h4 style="font-size: 22px; font-weight: 600; color: #002FA7; margin-bottom: 15px; padding-left: 15px; border-left: 4px solid #C5A059;">
+                            密度與機械性能的關係</h4>
+<div style="background: linear-gradient(135deg, #f0f4ff 0%, #e8f4fd 100%); border: 2px solid #C5A059; border-radius: 12px; padding: 25px; margin-bottom: 25px;">
+<p style="font-size: 15px; line-height: 1.8; color: #333; margin: 0 0 15px 0;">
+                                對於鐵基PM零件，每<strong>增加0.1 g/cm³密度</strong>通常可獲得：</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px;">
+<div style="background: white; padding: 15px; border-radius: 8px; text-align: center;">
+<div style="font-size: 28px; font-weight: 700; color: #002FA7;">+7%</div><strong style="font-size: 13px; color: #333;">抗拉強度</strong>
+</div>
+<div style="background: white; padding: 15px; border-radius: 8px; text-align: center;">
+<div style="font-size: 28px; font-weight: 700; color: #002FA7;">+5%</div><strong style="font-size: 13px; color: #333;">硬度</strong>
+</div>
+<div style="background: white; padding: 15px; border-radius: 8px; text-align: center;">
+<div style="font-size: 28px; font-weight: 700; color: #002FA7;">+10%</div><strong style="font-size: 13px; color: #333;">疲勞強度</strong>
+</div>
+<div style="background: white; padding: 15px; border-radius: 8px; text-align: center;">
+<div style="font-size: 28px; font-weight: 700; color: #002FA7;">+8%</div><strong style="font-size: 13px; color: #333;">衝擊能量</strong>
+</div>
+</div>
+<p style="font-size: 14px; color: #666; margin: 15px 0 0 0;">
+<strong>注意：</strong>此關係並非線性。超過7.0 g/cm³時，隨著孔隙變為封閉（封閉孔隙率），性能改善更為顯著。純鐵的理論密度為7.87 g/cm³。
+                            </p>
+</div>
+<h4 style="font-size: 22px; font-weight: 600; color: #002FA7; margin-bottom: 15px; padding-left: 15px; border-left: 4px solid #C5A059;">
+                            不同應用的密度範圍</h4>
+<table class="process-table">
+<thead>
+<tr>
+<th>密度範圍<br/>(g/cm³)</th>
+<th>理論密度%</th>
+<th>典型應用</th>
+<th>製程方法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>5.0 – 6.0</strong></td>
+<td>64 – 76%</td>
+<td>含油軸承、過濾器、阻尼器</td>
+<td>低壓壓製</td>
+</tr>
+<tr>
+<td><strong>6.0 – 6.6</strong></td>
+<td>76 – 84%</td>
+<td>一般結構件、墊片、非關鍵零件</td>
+<td>標準壓製燒結</td>
+</tr>
+<tr>
+<td class="highlight-pm"><strong>6.6 – 7.0</strong></td>
+<td class="highlight-pm">84 – 89%</td>
+<td class="highlight-pm">齒輪、鏈輪、凸輪 — 標準工程零件</td>
+<td class="highlight-pm">高壓壓製</td>
+</tr>
+<tr>
+<td><strong>7.0 – 7.4</strong></td>
+<td>89 – 94%</td>
+<td>高性能齒輪、結構零件</td>
+<td>二次壓製、溫壓或銅浸透</td>
+</tr>
+<tr>
+<td><strong>7.4 – 7.8</strong></td>
+<td>94 – 99%</td>
+<td>連桿、關鍵航空零件</td>
+<td>粉末鍛造、HIP或MIM</td>
+</tr>
+</tbody>
+</table>
+<h4 style="font-size: 22px; font-weight: 600; color: #002FA7; margin-bottom: 15px; margin-top: 30px; padding-left: 15px; border-left: 4px solid #C5A059;">
+                            提高密度的方法</h4>
+<table class="term-table">
+<thead>
+<tr>
+<th style="width: 200px;">方法</th>
+<th>可達密度</th>
+<th>工作原理</th>
+<th>成本影響</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="term-name">高壓壓製</td>
+<td>最高 7.1 g/cm³</td>
+<td>將壓製壓力從500 MPa提高到700+ MPa</td>
+<td>低 — 主要需要更大噸位壓機</td>
+</tr>
+<tr>
+<td class="term-name">二次壓製<br/>二次燒結 (DPDS)</td>
+<td>最高 7.3 g/cm³</td>
+<td>零件壓製、預燒結，然後再壓製和完全燒結。預燒結軟化粉末，允許第二次壓製達到更高密度。</td>
+<td>中等 — 加工步驟增倍</td>
+</tr>
+<tr>
+<td class="term-name">溫壓成型</td>
+<td>最高 7.25 g/cm³</td>
+<td>壓製時模具和粉末加熱至120-150°C。降低粉末降伏強度→相同壓力下更高密度。</td>
+<td>中等 — 需要加熱模具</td>
+</tr>
+<tr>
+<td class="term-name">銅浸透</td>
+<td>最高 7.3 g/cm³</td>
+<td>銅塊放置在零件上，在燒結過程中熔化，通過毛細作用填充開放孔隙。同時提高強度30-40%。</td>
+<td>中低 — 增加銅材料成本</td>
+</tr>
+<tr>
+<td class="term-name">粉末鍛造</td>
+<td>最高 7.8 g/cm³ (~100%)</td>
+<td>PM預成形件加熱後在封閉模具中鍛造。達到等同鍛鋼的性能。</td>
+<td>高 — 需要鍛造壓機和加熱預成形件</td>
+</tr>
+</tbody>
+</table>
+<h4 style="font-size: 22px; font-weight: 600; color: #002FA7; margin-bottom: 15px; margin-top: 30px; padding-left: 15px; border-left: 4px solid #C5A059;">
+                            孔隙率作為功能 — 不僅僅是限制</h4>
+<p style="font-size: 15px; color: #555; line-height: 1.7; margin-bottom: 20px;">
+                            雖然更高的密度意味著更好的機械性能，但控制孔隙率實際上是PM的<strong>獨特優勢</strong>，沒有其他製造製程可以輕易複製：</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; margin-bottom: 25px;">
+<div style="background: white; padding: 20px; border-radius: 8px; border-left: 3px solid #C5A059; box-shadow: 0 2px 10px rgba(0,0,0,0.03);">
+<strong style="color: #002FA7; font-size: 16px;">🛢️ 儲油功能</strong>
+<p style="font-size: 14px; color: #555; margin: 10px 0 0; line-height: 1.6;">
+                                    15-25%的孔隙率可儲存潤滑油用於自潤滑軸承。油在運轉時釋出，停止時重新吸收 — 實現<strong>免維護運行10,000+小時</strong>。</p>
+</div>
+<div style="background: white; padding: 20px; border-radius: 8px; border-left: 3px solid #C5A059; box-shadow: 0 2px 10px rgba(0,0,0,0.03);">
+<strong style="color: #002FA7; font-size: 16px;">🫧 過濾功能</strong>
+<p style="font-size: 14px; color: #555; margin: 10px 0 0; line-height: 1.6;">
+                                    控制孔隙率（30-50%）製造具有精確孔徑的燒結金屬過濾器。用於液壓系統、化工處理和燃料過濾。</p>
+</div>
+<div style="background: white; padding: 20px; border-radius: 8px; border-left: 3px solid #C5A059; box-shadow: 0 2px 10px rgba(0,0,0,0.03);">
+<strong style="color: #002FA7; font-size: 16px;">🔇 減振功能</strong>
+<p style="font-size: 14px; color: #555; margin: 10px 0 0; line-height: 1.6;">
+                                    多孔PM零件比實心金屬更好地吸收振動和噪音。非常適合辦公設備和家用電器等需要降噪的應用。</p>
+</div>
+</div>
+<h4 style="font-size: 22px; font-weight: 600; color: #002FA7; margin-bottom: 15px; padding-left: 15px; border-left: 4px solid #C5A059;">
+                            密度量測方法</h4>
+<table class="term-table">
+<thead>
+<tr>
+<th style="width: 200px;">方法</th>
+<th>原理</th>
+<th>適用場合</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="term-name">阿基米德法<br/>（水置換法）</td>
+<td>零件在空氣中和水中秤重。浮力差得出體積，密度 = 質量 ÷ 體積。開放孔隙需油封或蠟封。</td>
+<td>燒結件標準方法（MPIF 42）。生產品質控制最準確。</td>
+</tr>
+<tr>
+<td class="term-name">幾何法</td>
+<td>簡單計算：質量 ÷（高×寬×長或π×r²×h）。快速但複雜形狀精度較低。</td>
+<td>簡單圓柱或矩形零件的快速現場檢查。</td>
+</tr>
+<tr>
+<td class="term-name">氣體比重法</td>
+<td>使用氦氣量測真實體積，滲入開放孔隙，得到「骨架密度」。</td>
+<td>研發用途。區分開放和封閉孔隙率。</td>
+</tr>
+</tbody>
+</table>
+<div class="decision-box" style="background: linear-gradient(135deg, #fff8e1 0%, #fff3e0 100%); border-color: #C5A059;">
+<h4>🎯 密度選擇指南</h4>
+<div class="decision-item"><span>需要<strong>自潤滑軸承</strong>？</span><span class="arrow">→</span><span>目標 <strong>5.5 – 6.2 g/cm³</strong>（高孔隙率儲油）</span></div>
+<div class="decision-item"><span>需要<strong>標準結構件</strong>？</span><span class="arrow">→</span><span style="color: #2e7d32; font-weight: 700;">✅ 目標
+                                    <strong>6.6 – 7.0 g/cm³</strong>（我們的最佳範圍）</span></div>
+<div class="decision-item"><span>需要<strong>最大強度</strong>（高負載齒輪）？</span><span class="arrow">→</span><span>目標 <strong>7.0 – 7.3 g/cm³</strong>（二次壓製或銅浸透）</span>
+</div>
+<div class="decision-item"><span>需要<strong>等同鍛造</strong>性能？</span><span class="arrow">→</span><span>目標 <strong>7.4+ g/cm³</strong>（需粉末鍛造或HIP）</span></div>
+<p style="margin-top: 20px; font-size: 14px; color: #666;"><strong>💡 省錢建議：</strong>
+                                不要過度指定密度。更高密度 = 更高成本。我們的工程團隊可幫助您找到平衡性能和預算的最佳密度。 <a href="contact.html" style="color: #002FA7; font-weight: 600;">免費諮詢 →</a></p>
+</div>
+</div></div></div>
 <!-- 材料規格區塊 -->
-                    <div id="materials" style="margin-top: 80px;">
-                        <h3
-                            style="font-family:'Playfair Display',serif;font-size:28px;font-weight:700;color:#333;margin-bottom:15px;border-bottom:2px solid #eee;padding-bottom:10px">
+<div class="accordion-card" id="materials" style="margin-top: 80px;"><div class="accordion-header" onclick="toggleAccordion(this)"><h3 style="font-family:'Playfair Display',serif;font-size:28px;font-weight:700;color:#333;margin-bottom:15px;border-bottom:2px solid #eee;padding-bottom:10px; margin: 0 !important; border: none; padding: 0; font-size: 24px;">
                             材料規格與選擇指南
-                        </h3>
-                        <p style="font-size:16px;color:#555;line-height:1.8;margin-bottom:30px">
+                        </h3><span class="accordion-icon">🔽</span></div><div class="accordion-body-wrapper"><div class="accordion-body-inner">
+
+<p style="font-size:16px;color:#555;line-height:1.8;margin-bottom:30px">
                             冶聖遵循全球業界標準，確保零件的最高品質與一致性。我們的材料符合 <strong>MPIF Standard 35</strong>（美國）、<strong>JIS Z
                                 2550</strong>（日本）及 <strong>DIN 30910</strong>（德國）標準。
                         </p>
-                        <p
-                            style="font-size:14px;color:#888;background:#f8f9fa;padding:15px;border-radius:6px;margin-bottom:40px">
-                            <strong>客戶須知：</strong>以下數值為典型參考值。我們可依您的具體應用需求客製化材料密度與成分。
+<p style="font-size:14px;color:#888;background:#f8f9fa;padding:15px;border-radius:6px;margin-bottom:40px">
+<strong>客戶須知：</strong>以下數值為典型參考值。我們可依您的具體應用需求客製化材料密度與成分。
                         </p>
-
-                        <!-- 1. 鐵銅碳鋼 -->
-                        <h4 id="iron-steel"
-                            style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:#002FA7;margin-bottom:10px">
+<!-- 1. 鐵銅碳鋼 -->
+<h4 id="iron-steel" style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:#002FA7;margin-bottom:10px">
                             1. 鐵銅碳鋼（結構零件）
                         </h4>
-                        <p style="font-size:15px;color:#555;margin-bottom:20px">
-                            <strong>最適用於：</strong>齒輪、鏈輪、凸輪，及需要高強度與耐磨性的結構零件。<br>
-                            <strong>常見應用：</strong>汽車變速器、電動工具、工業機械。
+<p style="font-size:15px;color:#555;margin-bottom:20px">
+<strong>最適用於：</strong>齒輪、鏈輪、凸輪，及需要高強度與耐磨性的結構零件。<br/>
+<strong>常見應用：</strong>汽車變速器、電動工具、工業機械。
                         </p>
-                        <div style="overflow-x:auto;margin-bottom:40px">
-                            <table class="term-table">
-                                <thead>
-                                    <tr>
-                                        <th>材料編碼 (MPIF)</th>
-                                        <th>JIS 對照</th>
-                                        <th>成分（標稱值）</th>
-                                        <th>密度 (g/cm³)</th>
-                                        <th>典型硬度</th>
-                                        <th>主要特性</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="term-name">FC-0205</td>
-                                        <td>SMF 4030</td>
-                                        <td>Fe + 1.5-3.9% Cu + 0.3-0.6% C</td>
-                                        <td>6.4 - 6.8</td>
-                                        <td>HRB 60-80</td>
-                                        <td>強度與精度平衡，適合一般結構件。</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="term-name">FC-0208</td>
-                                        <td>SMF 4040</td>
-                                        <td>Fe + 1.5-3.9% Cu + 0.6-0.9% C</td>
-                                        <td>6.6 - 7.0</td>
-                                        <td>HRB 70-90</td>
-                                        <td>高強度耐磨，齒輪業界標準。</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="term-name">FN-0205</td>
-                                        <td>SMF 5030</td>
-                                        <td>Fe + 1.0-3.0% Ni + 0.3-0.6% C</td>
-                                        <td>6.8 - 7.2</td>
-                                        <td>HRB 70-90</td>
-                                        <td>高韌性，鎳添加提升抗衝擊性。</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-
-                        <!-- 2. 不鏽鋼 -->
-                        <h4 id="stainless"
-                            style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:#002FA7;margin-bottom:10px">
+<div style="overflow-x:auto;margin-bottom:40px">
+<table class="term-table">
+<thead>
+<tr>
+<th>材料編碼 (MPIF)</th>
+<th>JIS 對照</th>
+<th>成分（標稱值）</th>
+<th>密度 (g/cm³)</th>
+<th>典型硬度</th>
+<th>主要特性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="term-name">FC-0205</td>
+<td>SMF 4030</td>
+<td>Fe + 1.5-3.9% Cu + 0.3-0.6% C</td>
+<td>6.4 - 6.8</td>
+<td>HRB 60-80</td>
+<td>強度與精度平衡，適合一般結構件。</td>
+</tr>
+<tr>
+<td class="term-name">FC-0208</td>
+<td>SMF 4040</td>
+<td>Fe + 1.5-3.9% Cu + 0.6-0.9% C</td>
+<td>6.6 - 7.0</td>
+<td>HRB 70-90</td>
+<td>高強度耐磨，齒輪業界標準。</td>
+</tr>
+<tr>
+<td class="term-name">FN-0205</td>
+<td>SMF 5030</td>
+<td>Fe + 1.0-3.0% Ni + 0.3-0.6% C</td>
+<td>6.8 - 7.2</td>
+<td>HRB 70-90</td>
+<td>高韌性，鎳添加提升抗衝擊性。</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- 2. 不鏽鋼 -->
+<h4 id="stainless" style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:#002FA7;margin-bottom:10px">
                             2. 不鏽鋼（耐腐蝕）
                         </h4>
-                        <p style="font-size:15px;color:#555;margin-bottom:20px">
-                            <strong>最適用於：</strong>食品機械、醫療器材、船舶應用。<br>
-                            <strong>常見應用：</strong>泵葉輪、感測器殼體、醫療器械。
+<p style="font-size:15px;color:#555;margin-bottom:20px">
+<strong>最適用於：</strong>食品機械、醫療器材、船舶應用。<br/>
+<strong>常見應用：</strong>泵葉輪、感測器殼體、醫療器械。
                         </p>
-                        <div style="overflow-x:auto;margin-bottom:40px">
-                            <table class="term-table">
-                                <thead>
-                                    <tr>
-                                        <th>材料編碼</th>
-                                        <th>JIS 對照</th>
-                                        <th>成分</th>
-                                        <th>密度</th>
-                                        <th>主要特性</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="term-name">SS-316</td>
-                                        <td>SUS 316L</td>
-                                        <td>Fe + 16-18% Cr + 10-14% Ni + 2-3% Mo</td>
-                                        <td>6.4 - 6.9</td>
-                                        <td>優異耐腐蝕性，非磁性。</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="term-name">SS-304</td>
-                                        <td>SUS 304L</td>
-                                        <td>Fe + 18-20% Cr + 8-12% Ni</td>
-                                        <td>6.4 - 6.8</td>
-                                        <td>良好耐腐蝕性，通用標準等級。</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="term-name">SS-410</td>
-                                        <td>SUS 410</td>
-                                        <td>Fe + 11.5-13.5% Cr</td>
-                                        <td>6.5 - 7.0</td>
-                                        <td>麻田散鐵系，可熱處理，具磁性。</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-
-                        <!-- 3. 軟磁材料 -->
-                        <h4 id="magnetic"
-                            style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:#002FA7;margin-bottom:10px">
+<div style="overflow-x:auto;margin-bottom:40px">
+<table class="term-table">
+<thead>
+<tr>
+<th>材料編碼</th>
+<th>JIS 對照</th>
+<th>成分</th>
+<th>密度</th>
+<th>主要特性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="term-name">SS-316</td>
+<td>SUS 316L</td>
+<td>Fe + 16-18% Cr + 10-14% Ni + 2-3% Mo</td>
+<td>6.4 - 6.9</td>
+<td>優異耐腐蝕性，非磁性。</td>
+</tr>
+<tr>
+<td class="term-name">SS-304</td>
+<td>SUS 304L</td>
+<td>Fe + 18-20% Cr + 8-12% Ni</td>
+<td>6.4 - 6.8</td>
+<td>良好耐腐蝕性，通用標準等級。</td>
+</tr>
+<tr>
+<td class="term-name">SS-410</td>
+<td>SUS 410</td>
+<td>Fe + 11.5-13.5% Cr</td>
+<td>6.5 - 7.0</td>
+<td>麻田散鐵系，可熱處理，具磁性。</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- 3. 軟磁材料 -->
+<h4 id="magnetic" style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:#002FA7;margin-bottom:10px">
                             3. 軟磁材料（馬達零件）
                         </h4>
-                        <p style="font-size:15px;color:#555;margin-bottom:20px">
-                            <strong>最適用於：</strong>直流馬達外殼、極片、電樞、電磁閥。<br>
-                            <strong>常見應用：</strong>電動車馬達、致動器、感測器。
+<p style="font-size:15px;color:#555;margin-bottom:20px">
+<strong>最適用於：</strong>直流馬達外殼、極片、電樞、電磁閥。<br/>
+<strong>常見應用：</strong>電動車馬達、致動器、感測器。
                         </p>
-                        <div style="overflow-x:auto;margin-bottom:40px">
-                            <table class="term-table">
-                                <thead>
-                                    <tr>
-                                        <th>材料編碼</th>
-                                        <th>成分</th>
-                                        <th>磁性特性</th>
-                                        <th>主要特性</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="term-name">F-0000（純鐵）</td>
-                                        <td>Fe > 99%</td>
-                                        <td>高飽和磁感</td>
-                                        <td>高飽和磁感應強度，成本效益高。</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="term-name">FY-4500（Fe-P）</td>
-                                        <td>Fe + 0.45% P</td>
-                                        <td>高磁導率</td>
-                                        <td>低鐵損，適合高效率馬達。</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="term-name">Fe-Si（矽鋼）</td>
-                                        <td>Fe + 3% Si</td>
-                                        <td>低矯頑力</td>
-                                        <td>降低交流應用中的渦電流損耗。</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <!-- Disclaimer -->
-                        <div
-                            style="background: #f0f4f8; padding: 20px; border-radius: 8px; border-left: 4px solid #002FA7; margin-top: 40px;">
-                            <p style="font-size: 14px; color: #555; margin: 0 0 10px 0; line-height: 1.7;">
-                                <strong>⚠️ 免責聲明：</strong>
+<div style="overflow-x:auto;margin-bottom:40px">
+<table class="term-table">
+<thead>
+<tr>
+<th>材料編碼</th>
+<th>成分</th>
+<th>磁性特性</th>
+<th>主要特性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="term-name">F-0000（純鐵）</td>
+<td>Fe &gt; 99%</td>
+<td>高飽和磁感</td>
+<td>高飽和磁感應強度，成本效益高。</td>
+</tr>
+<tr>
+<td class="term-name">FY-4500（Fe-P）</td>
+<td>Fe + 0.45% P</td>
+<td>高磁導率</td>
+<td>低鐵損，適合高效率馬達。</td>
+</tr>
+<tr>
+<td class="term-name">Fe-Si（矽鋼）</td>
+<td>Fe + 3% Si</td>
+<td>低矯頑力</td>
+<td>降低交流應用中的渦電流損耗。</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Disclaimer -->
+<div style="background: #f0f4f8; padding: 20px; border-radius: 8px; border-left: 4px solid #002FA7; margin-top: 40px;">
+<p style="font-size: 14px; color: #555; margin: 0 0 10px 0; line-height: 1.7;">
+<strong>⚠️ 免責聲明：</strong>
                                 本頁面所有技術資訊、數據及指南<strong>僅供一般參考之用</strong>。雖然我們力求準確，但實際結果可能因具體應用條件、材料等級、加工參數及其他因素而異。本內容不構成專業工程建議或產品保證。
                             </p>
-                            <p style="font-size: 14px; color: #555; margin: 0; line-height: 1.7;">
-                                <strong>🛡️ 法律與合規：</strong> 材料標準代號（如 FC-0208、SS-316）及性能數據基於公開行業標準（MPIF Standard 35、JIS Z
-                                2550）。建議使用者<strong>自行查證</strong>所有資訊，並在做出設計或採購決策前諮詢合格工程師。如需具體應用指導，請 <a
-                                    href="contact.html" style="color: #002FA7; font-weight: 600;">聯絡我們的工程團隊</a>。
+<p style="font-size: 14px; color: #555; margin: 0; line-height: 1.7;">
+<strong>🛡️ 法律與合規：</strong> 材料標準代號（如 FC-0208、SS-316）及性能數據基於公開行業標準（MPIF Standard 35、JIS Z
+                                2550）。建議使用者<strong>自行查證</strong>所有資訊，並在做出設計或採購決策前諮詢合格工程師。如需具體應用指導，請 <a href="contact.html" style="color: #002FA7; font-weight: 600;">聯絡我們的工程團隊</a>。
                             </p>
-                        </div>
-
-
-                        <!-- 4. 青銅與黃銅 -->
-                        <h4 id="bronze-brass"
-                            style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:#002FA7;margin-bottom:10px">
+</div>
+<!-- 4. 青銅與黃銅 -->
+<h4 id="bronze-brass" style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:#002FA7;margin-bottom:10px">
                             4. 青銅與黃銅（軸承與五金）
                         </h4>
-                        <p style="font-size:15px;color:#555;margin-bottom:20px">
-                            <strong>最適用於：</strong>自潤滑軸承、裝飾五金、鎖具零件。
+<p style="font-size:15px;color:#555;margin-bottom:20px">
+<strong>最適用於：</strong>自潤滑軸承、裝飾五金、鎖具零件。
                         </p>
-                        <div style="overflow-x:auto;margin-bottom:40px">
-                            <table class="term-table">
-                                <thead>
-                                    <tr>
-                                        <th>材料編碼</th>
-                                        <th>成分</th>
-                                        <th>密度</th>
-                                        <th>主要特性</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="term-name">CT-1000（青銅）</td>
-                                        <td>90% Cu + 10% Sn</td>
-                                        <td>6.0 - 6.4</td>
-                                        <td>自潤滑，軸承標準材料。</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="term-name">CZ-1000（黃銅）</td>
-                                        <td>80% Cu + 20% Zn</td>
-                                        <td>7.6 - 8.0</td>
-                                        <td>耐腐蝕，加工性良好。</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-
-
-                        <!-- 含油軸承指南 -->
-                        <div id="bearings-guide" style="margin-bottom:80px">
-                            <h3
-                                style="font-family:'Playfair Display',serif;font-size:28px;font-weight:700;color:#333;margin-bottom:15px;border-bottom:2px solid #eee;padding-bottom:10px">
+<div style="overflow-x:auto;margin-bottom:40px">
+<table class="term-table">
+<thead>
+<tr>
+<th>材料編碼</th>
+<th>成分</th>
+<th>密度</th>
+<th>主要特性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="term-name">CT-1000（青銅）</td>
+<td>90% Cu + 10% Sn</td>
+<td>6.0 - 6.4</td>
+<td>自潤滑，軸承標準材料。</td>
+</tr>
+<tr>
+<td class="term-name">CZ-1000（黃銅）</td>
+<td>80% Cu + 20% Zn</td>
+<td>7.6 - 8.0</td>
+<td>耐腐蝕，加工性良好。</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- 含油軸承指南 -->
+<div id="bearings-guide" style="margin-bottom:80px">
+<h3 style="font-family:'Playfair Display',serif;font-size:28px;font-weight:700;color:#333;margin-bottom:15px;border-bottom:2px solid #eee;padding-bottom:10px">
                                 🔩 含油軸承（自潤滑軸承）指南
                             </h3>
-                            <p style="font-size:16px;color:#555;line-height:1.7;margin-bottom:25px">
+<p style="font-size:16px;color:#555;line-height:1.7;margin-bottom:25px">
                                 含油軸承是粉末冶金最成功的應用之一。其獨特的多孔結構能夠自動儲存和釋放潤滑油，使其成為免維護應用的理想選擇。
                             </p>
-
-                            <h4
-                                style="font-size:22px;font-weight:600;color:#002FA7;margin-bottom:15px;padding-left:15px;border-left:4px solid #C5A059">
+<h4 style="font-size:22px;font-weight:600;color:#002FA7;margin-bottom:15px;padding-left:15px;border-left:4px solid #C5A059">
                                 含油軸承的工作原理
                             </h4>
-                            <div
-                                style="background:linear-gradient(135deg,#f0f4ff 0%,#e8f4fd 100%);border:2px solid #C5A059;border-radius:12px;padding:25px;margin-bottom:25px">
-                                <p style="font-size:15px;line-height:1.8;color:#333;margin:0 0 15px 0">
+<div style="background:linear-gradient(135deg,#f0f4ff 0%,#e8f4fd 100%);border:2px solid #C5A059;border-radius:12px;padding:25px;margin-bottom:25px">
+<p style="font-size:15px;line-height:1.8;color:#333;margin:0 0 15px 0">
                                     PM軸承以<strong>可控孔隙率（體積15-25%）</strong>製造。燒結後進行真空浸油處理。運轉過程中：
                                 </p>
-                                <div
-                                    style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px">
-                                    <div style="background:white;padding:15px;border-radius:8px;text-align:center">
-                                        <div style="font-size:32px;margin-bottom:8px">🔄</div>
-                                        <strong style="font-size:14px;color:#002FA7">1. 熱膨脹</strong>
-                                        <p style="font-size:13px;color:#666;margin:5px 0 0">摩擦產生熱量 → 油膨脹滲出至表面</p>
-                                    </div>
-                                    <div style="background:white;padding:15px;border-radius:8px;text-align:center">
-                                        <div style="font-size:32px;margin-bottom:8px">💧</div>
-                                        <strong style="font-size:14px;color:#002FA7">2. 潤滑</strong>
-                                        <p style="font-size:13px;color:#666;margin:5px 0 0">油膜在軸承與軸之間形成 → 降低摩擦</p>
-                                    </div>
-                                    <div style="background:white;padding:15px;border-radius:8px;text-align:center">
-                                        <div style="font-size:32px;margin-bottom:8px">🧲</div>
-                                        <strong style="font-size:14px;color:#002FA7">3. 回吸</strong>
-                                        <p style="font-size:13px;color:#666;margin:5px 0 0">停止時，毛細作用將油吸回孔隙中</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <h4
-                                style="font-size:22px;font-weight:600;color:#002FA7;margin-bottom:15px;padding-left:15px;border-left:4px solid #C5A059">
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px">
+<div style="background:white;padding:15px;border-radius:8px;text-align:center">
+<div style="font-size:32px;margin-bottom:8px">🔄</div>
+<strong style="font-size:14px;color:#002FA7">1. 熱膨脹</strong>
+<p style="font-size:13px;color:#666;margin:5px 0 0">摩擦產生熱量 → 油膨脹滲出至表面</p>
+</div>
+<div style="background:white;padding:15px;border-radius:8px;text-align:center">
+<div style="font-size:32px;margin-bottom:8px">💧</div>
+<strong style="font-size:14px;color:#002FA7">2. 潤滑</strong>
+<p style="font-size:13px;color:#666;margin:5px 0 0">油膜在軸承與軸之間形成 → 降低摩擦</p>
+</div>
+<div style="background:white;padding:15px;border-radius:8px;text-align:center">
+<div style="font-size:32px;margin-bottom:8px">🧲</div>
+<strong style="font-size:14px;color:#002FA7">3. 回吸</strong>
+<p style="font-size:13px;color:#666;margin:5px 0 0">停止時，毛細作用將油吸回孔隙中</p>
+</div>
+</div>
+</div>
+<h4 style="font-size:22px;font-weight:600;color:#002FA7;margin-bottom:15px;padding-left:15px;border-left:4px solid #C5A059">
                                 軸承類型比較
                             </h4>
-                            <table class="process-table">
-                                <thead>
-                                    <tr>
-                                        <th>比較項目</th>
-                                        <th>PM含油軸承</th>
-                                        <th>滾珠軸承</th>
-                                        <th>滑動軸承</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td><strong>維護需求</strong></td>
-                                        <td class="highlight-pm">免維護</td>
-                                        <td>需定期潤滑</td>
-                                        <td>需潤滑</td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>噪音</strong></td>
-                                        <td class="highlight-pm">非常安靜</td>
-                                        <td>中等</td>
-                                        <td>安靜</td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>量產成本</strong></td>
-                                        <td class="highlight-pm">⭐ 最低</td>
-                                        <td>高</td>
-                                        <td>中等</td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>轉速範圍</strong></td>
-                                        <td>低-中速</td>
-                                        <td>高速</td>
-                                        <td>低速</td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>承載能力</strong></td>
-                                        <td>輕-中載</td>
-                                        <td>高載</td>
-                                        <td>中載</td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>使用壽命</strong></td>
-                                        <td class="highlight-pm">10,000+ 小時</td>
-                                        <td>20,000+ 小時</td>
-                                        <td>5,000+ 小時</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-
-                            <h4
-                                style="font-size:22px;font-weight:600;color:#002FA7;margin-bottom:15px;margin-top:30px;padding-left:15px;border-left:4px solid #C5A059">
+<table class="process-table">
+<thead>
+<tr>
+<th>比較項目</th>
+<th>PM含油軸承</th>
+<th>滾珠軸承</th>
+<th>滑動軸承</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>維護需求</strong></td>
+<td class="highlight-pm">免維護</td>
+<td>需定期潤滑</td>
+<td>需潤滑</td>
+</tr>
+<tr>
+<td><strong>噪音</strong></td>
+<td class="highlight-pm">非常安靜</td>
+<td>中等</td>
+<td>安靜</td>
+</tr>
+<tr>
+<td><strong>量產成本</strong></td>
+<td class="highlight-pm">⭐ 最低</td>
+<td>高</td>
+<td>中等</td>
+</tr>
+<tr>
+<td><strong>轉速範圍</strong></td>
+<td>低-中速</td>
+<td>高速</td>
+<td>低速</td>
+</tr>
+<tr>
+<td><strong>承載能力</strong></td>
+<td>輕-中載</td>
+<td>高載</td>
+<td>中載</td>
+</tr>
+<tr>
+<td><strong>使用壽命</strong></td>
+<td class="highlight-pm">10,000+ 小時</td>
+<td>20,000+ 小時</td>
+<td>5,000+ 小時</td>
+</tr>
+</tbody>
+</table>
+<h4 style="font-size:22px;font-weight:600;color:#002FA7;margin-bottom:15px;margin-top:30px;padding-left:15px;border-left:4px solid #C5A059">
                                 PM軸承常用材料
                             </h4>
-                            <table class="term-table">
-                                <thead>
-                                    <tr>
-                                        <th style="width:180px">材料</th>
-                                        <th>MPIF編碼</th>
-                                        <th>PV極限 (MPa·m/s)</th>
-                                        <th>適用場合</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="term-name">青銅 (90Cu-10Sn)</td>
-                                        <td>CT-1000</td>
-                                        <td>1.8</td>
-                                        <td>低速輕載。家電、風扇、玩具</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="term-name">鐵銅合金</td>
-                                        <td>FC-0208</td>
-                                        <td>3.5</td>
-                                        <td>中等負載。汽車配件、電動工具</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="term-name">鐵青銅複合</td>
-                                        <td>FC-0800</td>
-                                        <td>2.5</td>
-                                        <td>均衡性能。馬達、泵浦</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-
-                            <div class="decision-box"
-                                style="background:linear-gradient(135deg,#f0f4ff 0%,#e8f4fd 100%)">
-                                <h4>🏭 常見應用領域</h4>
-                                <div
-                                    style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px">
-                                    <div style="background:white;padding:12px;border-radius:8px;text-align:center">
-                                        <div style="font-size:28px">🖥️</div><strong
-                                            style="font-size:13px">電腦散熱風扇</strong>
-                                    </div>
-                                    <div style="background:white;padding:12px;border-radius:8px;text-align:center">
-                                        <div style="font-size:28px">🚗</div><strong style="font-size:13px">汽車馬達</strong>
-                                    </div>
-                                    <div style="background:white;padding:12px;border-radius:8px;text-align:center">
-                                        <div style="font-size:28px">🏠</div><strong style="font-size:13px">家用電器</strong>
-                                    </div>
-                                    <div style="background:white;padding:12px;border-radius:8px;text-align:center">
-                                        <div style="font-size:28px">🔧</div><strong style="font-size:13px">電動工具</strong>
-                                    </div>
-                                </div>
-                                <p style="margin-top:15px;font-size:14px;color:#666">
-                                    <strong>💡 設計建議：</strong>為獲最佳性能，軸與軸承間隙建議維持0.02-0.05mm。<a href="contact.html"
-                                        style="color:#002FA7">聯絡我們</a>獲取軸承設計支援！
+<table class="term-table">
+<thead>
+<tr>
+<th style="width:180px">材料</th>
+<th>MPIF編碼</th>
+<th>PV極限 (MPa·m/s)</th>
+<th>適用場合</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="term-name">青銅 (90Cu-10Sn)</td>
+<td>CT-1000</td>
+<td>1.8</td>
+<td>低速輕載。家電、風扇、玩具</td>
+</tr>
+<tr>
+<td class="term-name">鐵銅合金</td>
+<td>FC-0208</td>
+<td>3.5</td>
+<td>中等負載。汽車配件、電動工具</td>
+</tr>
+<tr>
+<td class="term-name">鐵青銅複合</td>
+<td>FC-0800</td>
+<td>2.5</td>
+<td>均衡性能。馬達、泵浦</td>
+</tr>
+</tbody>
+</table>
+<div class="decision-box" style="background:linear-gradient(135deg,#f0f4ff 0%,#e8f4fd 100%)">
+<h4>🏭 常見應用領域</h4>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px">
+<div style="background:white;padding:12px;border-radius:8px;text-align:center">
+<div style="font-size:28px">🖥️</div><strong style="font-size:13px">電腦散熱風扇</strong>
+</div>
+<div style="background:white;padding:12px;border-radius:8px;text-align:center">
+<div style="font-size:28px">🚗</div><strong style="font-size:13px">汽車馬達</strong>
+</div>
+<div style="background:white;padding:12px;border-radius:8px;text-align:center">
+<div style="font-size:28px">🏠</div><strong style="font-size:13px">家用電器</strong>
+</div>
+<div style="background:white;padding:12px;border-radius:8px;text-align:center">
+<div style="font-size:28px">🔧</div><strong style="font-size:13px">電動工具</strong>
+</div>
+</div>
+<p style="margin-top:15px;font-size:14px;color:#666">
+<strong>💡 設計建議：</strong>為獲最佳性能，軸與軸承間隙建議維持0.02-0.05mm。<a href="contact.html" style="color:#002FA7">聯絡我們</a>獲取軸承設計支援！
                                 </p>
-                            </div>
-                        </div>
-
-                        <!-- 燒結製程解析 -->
-                        <div id="sintering-guide" style="margin-bottom:80px">
-                            <h3
-                                style="font-family:'Playfair Display',serif;font-size:28px;font-weight:700;color:#333;margin-bottom:15px;border-bottom:2px solid #eee;padding-bottom:10px">
+</div>
+</div>
+<!-- 燒結製程解析 -->
+<div id="sintering-guide" style="margin-bottom:80px">
+<h3 style="font-family:'Playfair Display',serif;font-size:28px;font-weight:700;color:#333;margin-bottom:15px;border-bottom:2px solid #eee;padding-bottom:10px">
                                 🔥 燒結製程解析
                             </h3>
-                            <p style="font-size:16px;color:#555;line-height:1.7;margin-bottom:25px">
+<p style="font-size:16px;color:#555;line-height:1.7;margin-bottom:25px">
                                 燒結是將壓製成形的金屬粉末（「生坯」）轉變為高強度功能性零件的關鍵熱處理步驟。了解燒結製程有助於工程師優化零件性能與品質。
                             </p>
-
-                            <h4
-                                style="font-size:22px;font-weight:600;color:#002FA7;margin-bottom:15px;padding-left:15px;border-left:4px solid #C5A059">
+<h4 style="font-size:22px;font-weight:600;color:#002FA7;margin-bottom:15px;padding-left:15px;border-left:4px solid #C5A059">
                                 PM製造流程
                             </h4>
-                            <div style="display:flex;flex-wrap:wrap;gap:0;margin-bottom:30px;justify-content:center">
-                                <div
-                                    style="background:#002FA7;color:white;padding:20px 15px;text-align:center;min-width:140px;flex:1;border-radius:8px 0 0 8px">
-                                    <div style="font-size:28px;margin-bottom:8px">⚗️</div>
-                                    <strong style="font-size:14px">1. 粉末混合</strong>
-                                    <p style="font-size:12px;opacity:0.85;margin:5px 0 0">金屬粉末＋添加劑依配方混合</p>
-                                </div>
-                                <div
-                                    style="background:#1a47b8;color:white;padding:20px 15px;text-align:center;min-width:140px;flex:1">
-                                    <div style="font-size:28px;margin-bottom:8px">🔨</div>
-                                    <strong style="font-size:14px">2. 壓製成形</strong>
-                                    <p style="font-size:12px;opacity:0.85;margin:5px 0 0">400-700 MPa壓力在精密模具中成形</p>
-                                </div>
-                                <div
-                                    style="background:#C5A059;color:white;padding:20px 15px;text-align:center;min-width:140px;flex:1;border:3px solid #8B6914">
-                                    <div style="font-size:28px;margin-bottom:8px">🔥</div>
-                                    <strong style="font-size:14px">3. 燒結</strong>
-                                    <p style="font-size:12px;opacity:0.95;margin:5px 0 0">1100-1300°C控制氣氛爐</p>
-                                </div>
-                                <div
-                                    style="background:#1a47b8;color:white;padding:20px 15px;text-align:center;min-width:140px;flex:1;border-radius:0 8px 8px 0">
-                                    <div style="font-size:28px;margin-bottom:8px">✨</div>
-                                    <strong style="font-size:14px">4. 後處理</strong>
-                                    <p style="font-size:12px;opacity:0.85;margin:5px 0 0">整形、熱處理、電鍍等</p>
-                                </div>
-                            </div>
-
-                            <h4
-                                style="font-size:22px;font-weight:600;color:#002FA7;margin-bottom:15px;padding-left:15px;border-left:4px solid #C5A059">
+<div style="display:flex;flex-wrap:wrap;gap:0;margin-bottom:30px;justify-content:center">
+<div style="background:#002FA7;color:white;padding:20px 15px;text-align:center;min-width:140px;flex:1;border-radius:8px 0 0 8px">
+<div style="font-size:28px;margin-bottom:8px">⚗️</div>
+<strong style="font-size:14px">1. 粉末混合</strong>
+<p style="font-size:12px;opacity:0.85;margin:5px 0 0">金屬粉末＋添加劑依配方混合</p>
+</div>
+<div style="background:#1a47b8;color:white;padding:20px 15px;text-align:center;min-width:140px;flex:1">
+<div style="font-size:28px;margin-bottom:8px">🔨</div>
+<strong style="font-size:14px">2. 壓製成形</strong>
+<p style="font-size:12px;opacity:0.85;margin:5px 0 0">400-700 MPa壓力在精密模具中成形</p>
+</div>
+<div style="background:#C5A059;color:white;padding:20px 15px;text-align:center;min-width:140px;flex:1;border:3px solid #8B6914">
+<div style="font-size:28px;margin-bottom:8px">🔥</div>
+<strong style="font-size:14px">3. 燒結</strong>
+<p style="font-size:12px;opacity:0.95;margin:5px 0 0">1100-1300°C控制氣氛爐</p>
+</div>
+<div style="background:#1a47b8;color:white;padding:20px 15px;text-align:center;min-width:140px;flex:1;border-radius:0 8px 8px 0">
+<div style="font-size:28px;margin-bottom:8px">✨</div>
+<strong style="font-size:14px">4. 後處理</strong>
+<p style="font-size:12px;opacity:0.85;margin:5px 0 0">整形、熱處理、電鍍等</p>
+</div>
+</div>
+<h4 style="font-size:22px;font-weight:600;color:#002FA7;margin-bottom:15px;padding-left:15px;border-left:4px solid #C5A059">
                                 燒結溫度與氣氛對照表
                             </h4>
-                            <table class="term-table">
-                                <thead>
-                                    <tr>
-                                        <th style="width:180px">材料</th>
-                                        <th>溫度 (°C)</th>
-                                        <th>氣氛</th>
-                                        <th>時間 (分)</th>
-                                        <th>要點</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="term-name">鐵碳鋼<br>(FC-0208)</td>
-                                        <td>1120 - 1150</td>
-                                        <td>N₂/H₂ (90/10)</td>
-                                        <td>20 - 30</td>
-                                        <td>最常用。碳含量控制是硬度的關鍵。</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="term-name">鐵鎳鋼<br>(FN-0205)</td>
-                                        <td>1120 - 1150</td>
-                                        <td>N₂/H₂ (90/10)</td>
-                                        <td>25 - 35</td>
-                                        <td>更高強度。鎳提升韌性和淬透性。</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="term-name">不鏽鋼<br>(SS-316L)</td>
-                                        <td>1250 - 1350</td>
-                                        <td>真空或H₂</td>
-                                        <td>30 - 60</td>
-                                        <td>需高溫。必須避免鉻氧化。</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="term-name">青銅<br>(CT-1000)</td>
-                                        <td>800 - 850</td>
-                                        <td>N₂/H₂ 或吸熱式</td>
-                                        <td>15 - 25</td>
-                                        <td>較低溫度。用於軸承和襯套。</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="term-name">軟磁材料<br>(純鐵)</td>
-                                        <td>1120 - 1150</td>
-                                        <td>H₂ 或分解氨</td>
-                                        <td>30 - 45</td>
-                                        <td>需高純度氣氛以確保磁性能。</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-
-                            <h4
-                                style="font-size:22px;font-weight:600;color:#002FA7;margin-bottom:15px;margin-top:30px;padding-left:15px;border-left:4px solid #C5A059">
+<table class="term-table">
+<thead>
+<tr>
+<th style="width:180px">材料</th>
+<th>溫度 (°C)</th>
+<th>氣氛</th>
+<th>時間 (分)</th>
+<th>要點</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="term-name">鐵碳鋼<br/>(FC-0208)</td>
+<td>1120 - 1150</td>
+<td>N₂/H₂ (90/10)</td>
+<td>20 - 30</td>
+<td>最常用。碳含量控制是硬度的關鍵。</td>
+</tr>
+<tr>
+<td class="term-name">鐵鎳鋼<br/>(FN-0205)</td>
+<td>1120 - 1150</td>
+<td>N₂/H₂ (90/10)</td>
+<td>25 - 35</td>
+<td>更高強度。鎳提升韌性和淬透性。</td>
+</tr>
+<tr>
+<td class="term-name">不鏽鋼<br/>(SS-316L)</td>
+<td>1250 - 1350</td>
+<td>真空或H₂</td>
+<td>30 - 60</td>
+<td>需高溫。必須避免鉻氧化。</td>
+</tr>
+<tr>
+<td class="term-name">青銅<br/>(CT-1000)</td>
+<td>800 - 850</td>
+<td>N₂/H₂ 或吸熱式</td>
+<td>15 - 25</td>
+<td>較低溫度。用於軸承和襯套。</td>
+</tr>
+<tr>
+<td class="term-name">軟磁材料<br/>(純鐵)</td>
+<td>1120 - 1150</td>
+<td>H₂ 或分解氨</td>
+<td>30 - 45</td>
+<td>需高純度氣氛以確保磁性能。</td>
+</tr>
+</tbody>
+</table>
+<h4 style="font-size:22px;font-weight:600;color:#002FA7;margin-bottom:15px;margin-top:30px;padding-left:15px;border-left:4px solid #C5A059">
                                 燒結過程中發生什麼？
                             </h4>
-                            <table class="term-table">
-                                <thead>
-                                    <tr>
-                                        <th style="width:180px">階段</th>
-                                        <th>溫度範圍</th>
-                                        <th>發生的變化</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="term-name">脫蠟階段</td>
-                                        <td>150 - 600°C</td>
-                                        <td>潤滑劑（硬脂酸鋅）蒸發。需控制升溫速率以避免起泡。</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="term-name">還原氧化物</td>
-                                        <td>600 - 900°C</td>
-                                        <td>氫氣還原粉末顆粒表面氧化物，使金屬鍵結成為可能。</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="term-name">顆粒結合</td>
-                                        <td>900 - 1150°C</td>
-                                        <td>原子擴散在顆粒間形成頸部。強度大幅提升。</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="term-name">緻密化</td>
-                                        <td>峰值溫度</td>
-                                        <td>孔隙縮小，晶粒長大。零件達到最終密度（6.4-7.2 g/cm³）。</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="term-name">冷卻</td>
-                                        <td>峰值 → 室溫</td>
-                                        <td>控制冷卻速率決定最終微觀組織和硬度。</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-
-                            <div class="decision-box"
-                                style="background:linear-gradient(135deg,#fff8e1 0%,#fff3e0 100%)">
-                                <h4>🔬 冶聖的燒結品質管控</h4>
-                                <div
-                                    style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px">
-                                    <div
-                                        style="background:white;padding:15px;border-radius:8px;border-left:3px solid #C5A059">
-                                        <strong style="color:#002FA7">🌡️ 溫度監控</strong>
-                                        <p style="font-size:13px;margin:8px 0 0;color:#666">爐區全程±5°C精度</p>
-                                    </div>
-                                    <div
-                                        style="background:white;padding:15px;border-radius:8px;border-left:3px solid #C5A059">
-                                        <strong style="color:#002FA7">💨 氣氛控制</strong>
-                                        <p style="font-size:13px;margin:8px 0 0;color:#666">露點和氣體成分持續監測</p>
-                                    </div>
-                                    <div
-                                        style="background:white;padding:15px;border-radius:8px;border-left:3px solid #C5A059">
-                                        <strong style="color:#002FA7">📊 密度檢測</strong>
-                                        <p style="font-size:13px;margin:8px 0 0;color:#666">每批次依MPIF Standard 42驗證</p>
-                                    </div>
-                                </div>
-                                <p style="margin-top:15px;font-size:14px;color:#666">
-                                    <strong>📧 對燒結有疑問？</strong>我們的工程團隊可以幫助您選擇正確的參數。<a href="contact.html"
-                                        style="color:#002FA7;font-weight:600">聯絡我們 →</a>
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- 法律聲明 -->
-                        <div style="background:#f0f4f8;padding:20px;border-radius:8px;border-left:4px solid #002FA7">
-                            <p style="font-size:14px;color:#555;margin:0;line-height:1.7">
-                                <strong>🛡️ 法律與合規聲明：</strong>上述材料編碼（如 FC-0208、SS-316）及性能數據係依據公開業界標準（MPIF Standard 35、JIS
+<table class="term-table">
+<thead>
+<tr>
+<th style="width:180px">階段</th>
+<th>溫度範圍</th>
+<th>發生的變化</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="term-name">脫蠟階段</td>
+<td>150 - 600°C</td>
+<td>潤滑劑（硬脂酸鋅）蒸發。需控制升溫速率以避免起泡。</td>
+</tr>
+<tr>
+<td class="term-name">還原氧化物</td>
+<td>600 - 900°C</td>
+<td>氫氣還原粉末顆粒表面氧化物，使金屬鍵結成為可能。</td>
+</tr>
+<tr>
+<td class="term-name">顆粒結合</td>
+<td>900 - 1150°C</td>
+<td>原子擴散在顆粒間形成頸部。強度大幅提升。</td>
+</tr>
+<tr>
+<td class="term-name">緻密化</td>
+<td>峰值溫度</td>
+<td>孔隙縮小，晶粒長大。零件達到最終密度（6.4-7.2 g/cm³）。</td>
+</tr>
+<tr>
+<td class="term-name">冷卻</td>
+<td>峰值 → 室溫</td>
+<td>控制冷卻速率決定最終微觀組織和硬度。</td>
+</tr>
+</tbody>
+</table>
+<div class="decision-box" style="background:linear-gradient(135deg,#fff8e1 0%,#fff3e0 100%)">
+<h4>🔬 冶聖的燒結品質管控</h4>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px">
+<div style="background:white;padding:15px;border-radius:8px;border-left:3px solid #C5A059">
+<strong style="color:#002FA7">🌡️ 溫度監控</strong>
+<p style="font-size:13px;margin:8px 0 0;color:#666">爐區全程±5°C精度</p>
+</div>
+<div style="background:white;padding:15px;border-radius:8px;border-left:3px solid #C5A059">
+<strong style="color:#002FA7">💨 氣氛控制</strong>
+<p style="font-size:13px;margin:8px 0 0;color:#666">露點和氣體成分持續監測</p>
+</div>
+<div style="background:white;padding:15px;border-radius:8px;border-left:3px solid #C5A059">
+<strong style="color:#002FA7">📊 密度檢測</strong>
+<p style="font-size:13px;margin:8px 0 0;color:#666">每批次依MPIF Standard 42驗證</p>
+</div>
+</div>
+<p style="margin-top:15px;font-size:14px;color:#666">
+<strong>📧 對燒結有疑問？</strong>我們的工程團隊可以幫助您選擇正確的參數。<a href="contact.html" style="color:#002FA7;font-weight:600">聯絡我們 →</a>
+</p>
+</div>
+</div>
+<!-- 法律聲明 -->
+<div style="background:#f0f4f8;padding:20px;border-radius:8px;border-left:4px solid #002FA7">
+<p style="font-size:14px;color:#555;margin:0;line-height:1.7">
+<strong>🛡️ 法律與合規聲明：</strong>上述材料編碼（如 FC-0208、SS-316）及性能數據係依據公開業界標準（MPIF Standard 35、JIS
                                 Z
                                 2550）。數值僅供參考，不構成性能保證。具體設計驗證請洽詢冶聖工程團隊。
                             </p>
-                        </div>
-                    </div>
+</div>
+</div></div></div>
 </div> <!-- End resource-content -->
-            </div> <!-- End resource-layout -->
-        </div>
-    </section>
-
-    <!-- Smooth Scroll JavaScript -->
-    <script>
+</div> <!-- End resource-layout -->
+</div>
+</section>
+<!-- Smooth Scroll JavaScript -->
+<script>
         // Smooth scroll for sidebar navigation
         document.querySelectorAll('.sidebar-nav a').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -1685,52 +1607,49 @@
             });
         });
     </script>
-    <!-- Footer -->
-    <footer style="background:#002FA7;color:white;padding:80px 0 40px">
-        <div class="container">
-            <div
-                style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:50px;margin-bottom:60px">
-                <div>
-                    <div style="display:flex;align-items:center;gap:15px;margin-bottom:25px">
-                        <img alt="Logo" src="../images/logo.png" style="height:  50px;" width="61" height="50">
-                        <h3
-                            style="font-family:'Noto Sans TC',sans-serif;font-size:20px;font-weight:700;color:#8B6914;margin:0">
+<!-- Footer -->
+<footer style="background:#002FA7;color:white;padding:80px 0 40px">
+<div class="container">
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:50px;margin-bottom:60px">
+<div>
+<div style="display:flex;align-items:center;gap:15px;margin-bottom:25px">
+<img alt="Logo" height="50" src="../images/logo.png" style="height:  50px;" width="61"/>
+<h3 style="font-family:'Noto Sans TC',sans-serif;font-size:20px;font-weight:700;color:#8B6914;margin:0">
                             冶聖工業股份有限公司</h3>
-                    </div>
-                    <p style="color:#a0b0d0;line-height:1.6;font-size:14px">自 1984 年起的高精密粉末冶金零件領導製造商。</p>
-                </div>
-                <div>
-                    <h4 style="color: #996B1D;font-size:18px;font-weight:700;margin-bottom:25px">公司資訊</h4>
-                    <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:15px">
-                        <li><a href="about.html" style="color:#a0b0d0;font-size:15px">關於我們</a></li>
-                        <li><a href="products.html" style="color:#a0b0d0;font-size:15px">所有產品</a></li>
-                        <li><a href="capabilities.html" style="color:#a0b0d0;font-size:15px">製程能力</a></li>
-                        <li><a href="contact.html" style="color:#a0b0d0;font-size:15px">聯絡我們</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 style="color: #996B1D;font-size:18px;font-weight:700;margin-bottom:25px">聯絡方式</h4>
-                    <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:15px">
-                        <li style="color:#a0b0d0;font-size:15px">新北市新莊區中正路721巷11號</li>
-                        <li style="color:#a0b0d0;font-size:15px"><a href="mailto:YS@yehsheng.com">YS@yehsheng.com</a>
-                        </li>
-                        <li style="color:#a0b0d0;font-size:15px">+886-2-2901-8266</li>
-                    </ul>
-                </div>
-            </div>
-            <div style="border-top:1px solid rgba(255,255,255,0.1);padding-top:30px;text-align:center">
-                <p style="color:#e0e0e0;font-size:13px;margin:0">© 2024 冶聖工業股份有限公司 版權所有。</p>
-            </div>
-        </div>
-    </footer>
-    <script>
+</div>
+<p style="color:#a0b0d0;line-height:1.6;font-size:14px">自 1984 年起的高精密粉末冶金零件領導製造商。</p>
+</div>
+<div>
+<h4 style="color: #996B1D;font-size:18px;font-weight:700;margin-bottom:25px">公司資訊</h4>
+<ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:15px">
+<li><a href="about.html" style="color:#a0b0d0;font-size:15px">關於我們</a></li>
+<li><a href="products.html" style="color:#a0b0d0;font-size:15px">所有產品</a></li>
+<li><a href="capabilities.html" style="color:#a0b0d0;font-size:15px">製程能力</a></li>
+<li><a href="contact.html" style="color:#a0b0d0;font-size:15px">聯絡我們</a></li>
+</ul>
+</div>
+<div>
+<h4 style="color: #996B1D;font-size:18px;font-weight:700;margin-bottom:25px">聯絡方式</h4>
+<ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:15px">
+<li style="color:#a0b0d0;font-size:15px">新北市新莊區中正路721巷11號</li>
+<li style="color:#a0b0d0;font-size:15px"><a href="mailto:YS@yehsheng.com">YS@yehsheng.com</a>
+</li>
+<li style="color:#a0b0d0;font-size:15px">+886-2-2901-8266</li>
+</ul>
+</div>
+</div>
+<div style="border-top:1px solid rgba(255,255,255,0.1);padding-top:30px;text-align:center">
+<p style="color:#e0e0e0;font-size:13px;margin:0">© 2024 冶聖工業股份有限公司 版權所有。</p>
+</div>
+</div>
+</footer>
+<script>
         function toggleMenu() { document.getElementById('mobileMenu').classList.toggle('active') }
         function toggleLangMenu() { var m = document.getElementById("langMenu"); m.style.display = (m.style.display === "none" || m.style.display === "") ? "block" : "none" }
         document.addEventListener('click', function (e) { var m = document.getElementById("langMenu"); if (!e.target.closest('#langMenu') && !e.target.matches('[onclick="toggleLangMenu()"]')) { if (m) m.style.display = "none" } });
     </script>
-
-    <!-- Floating CTA Button -->
-    <a id="floating-cta" href="contact.html" style="
+<!-- Floating CTA Button -->
+<a href="contact.html" id="floating-cta" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 20px rgba(197,160,89,0.4)'" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 6px 25px rgba(197,160,89,0.5)'" style="
         position: fixed;
         bottom: 28px;
         right: 28px;
@@ -1748,10 +1667,44 @@
         align-items: center;
         gap: 6px;
         transition: all 0.3s ease;
-    " onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 6px 25px rgba(197,160,89,0.5)'"
-        onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 20px rgba(197,160,89,0.4)'">💬
+    ">💬
         免費報價</a>
-
-</body>
-
+<script>
+            function toggleAccordion(header) {
+                const card = header.closest('.accordion-card');
+                card.classList.toggle('active');
+            }
+            
+            function openAccordionFromHash() {
+                if (window.location.hash) {
+                    const target = document.querySelector(window.location.hash);
+                    if (target && target.classList.contains('accordion-card')) {
+                        target.classList.add('active');
+                        setTimeout(() => {
+                            const offsetTop = target.getBoundingClientRect().top + window.scrollY - 120;
+                            window.scrollTo({ top: offsetTop, behavior: 'smooth' });
+                        }, 300); // Wait for transition
+                    }
+                }
+            }
+            
+            window.addEventListener('hashchange', openAccordionFromHash);
+            document.addEventListener('DOMContentLoaded', function() {
+                openAccordionFromHash();
+                
+                // Intercept sidebar clicks
+                document.querySelectorAll('.sidebar-nav a').forEach(anchor => {
+                    anchor.addEventListener('click', function (e) {
+                        const href = this.getAttribute('href');
+                        if (href && href.includes('#')) {
+                            const targetId = href.split('#')[1];
+                            const targetElement = document.getElementById(targetId);
+                            if (targetElement && targetElement.classList.contains('accordion-card')) {
+                                targetElement.classList.add('active');
+                            }
+                        }
+                    });
+                });
+            });
+            </script></body>
 </html>

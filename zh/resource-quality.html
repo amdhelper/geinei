@@ -1,11 +1,11 @@
 ﻿<!DOCTYPE html>
-<html lang="zh-Hant">
 
+<html lang="zh-Hant">
 <head>
-    <meta name="google-site-verification" content="YUhT_jRF5sxYfCWMMcB08B38K6MB2yAEv4wEo1fjdXg" />
-    <!-- Google tag (gtag.js) -->
-    <!-- Google Analytics & Clarity (production only) -->
-    <script>
+<meta content="YUhT_jRF5sxYfCWMMcB08B38K6MB2yAEv4wEo1fjdXg" name="google-site-verification"/>
+<!-- Google tag (gtag.js) -->
+<!-- Google Analytics & Clarity (production only) -->
+<script>
         if (window.location.hostname === 'yehsheng.com') {
             var gaScript = document.createElement('script');
             gaScript.async = true;
@@ -22,16 +22,14 @@
             })(window, document, "clarity", "script", "q46c2dab8f");
         }
     </script>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>粉末冶金是什麼？PM vs CNC比較、材料規格、FAQ完整指南</title>
-    <meta content="粉末冶金入門指南：什麼是PM？和CNC/鑄造差在哪？材料怎麼選？40年專家整理的FAQ與MPIF材料規格表。新手必讀→" name="description" />
-    <link href="https://fonts.googleapis.com" rel="preconnect" />
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&amp;family=Noto+Sans+TC:wght@300;400;500;600;700&amp;display=swap"
-        rel="stylesheet" />
-    <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>粉末冶金是什麼？PM vs CNC比較、材料規格、FAQ完整指南</title>
+<meta content="粉末冶金入門指南：什麼是PM？和CNC/鑄造差在哪？材料怎麼選？40年專家整理的FAQ與MPIF材料規格表。新手必讀→" name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&amp;family=Noto+Sans+TC:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<style>
         body {
             margin: 0;
             padding: 0;
@@ -373,17 +371,17 @@
             font-weight: bold
         }
     </style>
-    <link href="https://yehsheng.com/zh/resources.html" rel="canonical" />
-    <!-- hreflang tags for multilingual SEO -->
-    <link rel="alternate" hreflang="en" href="https://yehsheng.com/resources.html" />
-    <link rel="alternate" hreflang="zh-Hant" href="https://yehsheng.com/zh/resources.html" />
-    <link rel="alternate" hreflang="zh-Hans" href="https://yehsheng.com/zh-cn/resources.html" />
-    <link rel="alternate" hreflang="de" href="https://yehsheng.com/de/resources.html" />
-    <link rel="alternate" hreflang="ja" href="https://yehsheng.com/jp/resources.html" />
-    <link rel="alternate" hreflang="x-default" href="https://yehsheng.com/resources.html" />
-    <link rel="icon" href="../images/logo.png" type="image/png">
-    <!-- FAQPage Schema.org Structured Data -->
-    <script type="application/ld+json">
+<link href="https://yehsheng.com/zh/resources.html" rel="canonical"/>
+<!-- hreflang tags for multilingual SEO -->
+<link href="https://yehsheng.com/resources.html" hreflang="en" rel="alternate"/>
+<link href="https://yehsheng.com/zh/resources.html" hreflang="zh-Hant" rel="alternate"/>
+<link href="https://yehsheng.com/zh-cn/resources.html" hreflang="zh-Hans" rel="alternate"/>
+<link href="https://yehsheng.com/de/resources.html" hreflang="de" rel="alternate"/>
+<link href="https://yehsheng.com/jp/resources.html" hreflang="ja" rel="alternate"/>
+<link href="https://yehsheng.com/resources.html" hreflang="x-default" rel="alternate"/>
+<link href="../images/logo.png" rel="icon" type="image/png"/>
+<!-- FAQPage Schema.org Structured Data -->
+<script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",
@@ -431,298 +429,328 @@
       ]
     }
     </script>
-
-</head>
-
+<style>
+            .accordion-card {
+                background: #fff;
+                border-radius: 12px;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+                margin-bottom: 25px;
+                overflow: hidden;
+                border: 1px solid #eee;
+                transition: all 0.3s ease;
+            }
+            .accordion-card:hover {
+                box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+                transform: translateY(-2px);
+            }
+            .accordion-header {
+                padding: 15px 30px;
+                cursor: pointer;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background: #fdfbf7;
+                border-bottom: 1px solid transparent;
+                transition: all 0.3s ease;
+            }
+            .accordion-card.active .accordion-header {
+                border-bottom: 1px solid #eee;
+                background: #fff;
+            }
+            .accordion-icon {
+                font-size: 20px;
+                color: #C5A059;
+                transition: transform 0.3s ease;
+            }
+            .accordion-card.active .accordion-icon {
+                transform: rotate(180deg);
+            }
+            .accordion-body-wrapper {
+                display: grid;
+                grid-template-rows: 0fr;
+                transition: grid-template-rows 0.3s ease-out;
+            }
+            .accordion-card.active .accordion-body-wrapper {
+                grid-template-rows: 1fr;
+            }
+            .accordion-body-inner {
+                overflow: hidden;
+                padding: 0 30px;
+                opacity: 0;
+                transition: opacity 0.3s ease-out, padding 0.3s ease;
+            }
+            .accordion-card.active .accordion-body-inner {
+                padding: 30px 30px 30px 30px;
+                opacity: 1;
+            }
+            /* Mobile adjustment */
+            @media (max-width: 768px) {
+                .accordion-header { padding: 15px 20px; }
+                .accordion-body-inner { padding: 0 20px; }
+                .accordion-card.active .accordion-body-inner { padding: 20px; }
+                .accordion-header h3 { font-size: 20px !important; }
+            }
+            </style></head>
 <body>
-    <!-- Top Bar -->
-    <div class="hidden-mobile" style="background:#002FA7;color:white;padding:10px 0;position:relative;z-index:200">
-        <div class="container" style="display:flex;justify-content:flex-end;gap:25px;font-size:13px;font-weight:500">
-            <a href="about.html" style="color:#e8e8e8">關於我們</a>
-            <a href="contact.html" style="color:#e8e8e8">聯絡我們</a>
-            <div style="position:relative;display:inline-block">
-                <span style="color: #996B1D;font-weight:600;cursor:pointer" onclick="toggleLangMenu()">繁體中文 ▼</span>
-                <div id="langMenu"
-                    style="display:none;position:absolute;right:0;top:100%;background:white;box-shadow:0 4px 12px rgba(0,0,0,0.15);border-radius:4px;min-width:120px;z-index:10000">
-                    <a href="../resources.html"
-                        style="display:block;padding:10px 15px;color:#333;font-size:13px">English</a>
-                    <a href="../zh/resources.html"
-                        style="display:block;padding:10px 15px;color: #996B1D;font-size:13px;background:#f5f5f5">繁體中文</a>
-                    <a href="../zh-cn/resources.html"
-                        style="display:block;padding:10px 15px;color:#333;font-size:13px">简体中文</a>
-                    <a href="../de/resources.html"
-                        style="display:block;padding:10px 15px;color:#333;font-size:13px">Deutsch</a>
-                    <a href="../jp/resources.html"
-                        style="display:block;padding:10px 15px;color:#333;font-size:13px">日本語</a>
-                </div>
+<!-- Top Bar -->
+<div class="hidden-mobile" style="background:#002FA7;color:white;padding:10px 0;position:relative;z-index:200">
+<div class="container" style="display:flex;justify-content:flex-end;gap:25px;font-size:13px;font-weight:500">
+<a href="about.html" style="color:#e8e8e8">關於我們</a>
+<a href="contact.html" style="color:#e8e8e8">聯絡我們</a>
+<div style="position:relative;display:inline-block">
+<span onclick="toggleLangMenu()" style="color: #996B1D;font-weight:600;cursor:pointer">繁體中文 ▼</span>
+<div id="langMenu" style="display:none;position:absolute;right:0;top:100%;background:white;box-shadow:0 4px 12px rgba(0,0,0,0.15);border-radius:4px;min-width:120px;z-index:10000">
+<a href="../resources.html" style="display:block;padding:10px 15px;color:#333;font-size:13px">English</a>
+<a href="../zh/resources.html" style="display:block;padding:10px 15px;color: #996B1D;font-size:13px;background:#f5f5f5">繁體中文</a>
+<a href="../zh-cn/resources.html" style="display:block;padding:10px 15px;color:#333;font-size:13px">简体中文</a>
+<a href="../de/resources.html" style="display:block;padding:10px 15px;color:#333;font-size:13px">Deutsch</a>
+<a href="../jp/resources.html" style="display:block;padding:10px 15px;color:#333;font-size:13px">日本語</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Navigation -->
+<nav style="background:white;box-shadow:0 2px 10px rgba(0,0,0,0.05);position:sticky;top:0;z-index:100">
+<div class="container" style="padding:15px 20px;display:flex;justify-content:space-between;align-items:center;position:relative">
+<div style="display:flex;align-items:center;gap:15px">
+<a aria-label="Go to homepage" href="index.html" style="display:flex;align-items:center;gap:15px">
+<img alt="Logo" height="40" src="../images/logo.png" style="height:  40px;" width="49"/>
+<div style="display:flex;flex-direction:column">
+<span style="font-size:18px;font-weight:700;color:#111;line-height:1.2">冶聖工業股份有限公司</span>
+<span style="font-size:10px;font-weight:600;color: #996B1D;letter-spacing:1px">粉末冶金專家</span>
+</div>
+</a>
+</div>
+<div class="hidden-mobile" style="display:flex;gap:35px;align-items:center">
+<a href="products.html" style="font-size:15px;font-weight:500;color:#333">產品介紹</a>
+<a href="solutions.html" style="font-size:15px;font-weight:500;color:#333">服務流程</a>
+<a href="capabilities.html" style="font-size:15px;font-weight:500;color:#333">製程能力</a>
+<a href="applications.html" style="font-size:15px;font-weight:500;color:#333">應用領域</a>
+<a href="case-studies.html" style="font-size:15px;color:#555">成功案例</a>
+<a href="resources.html" style="font-size:15px;font-weight:700;color: #996B1D">資源中心</a>
+<a href="contact.html" style="background:#C5A059;color:white;padding:8px 20px;border-radius:4px;font-size:14px;font-weight:500">聯絡我們</a>
+</div>
+<div aria-label="Toggle menu" class="mobile-menu-btn" onclick="toggleMenu()" role="button" tabindex="0">☰
             </div>
-        </div>
-    </div>
-    <!-- Navigation -->
-    <nav style="background:white;box-shadow:0 2px 10px rgba(0,0,0,0.05);position:sticky;top:0;z-index:100">
-        <div class="container"
-            style="padding:15px 20px;display:flex;justify-content:space-between;align-items:center;position:relative">
-            <div style="display:flex;align-items:center;gap:15px">
-                <a href="index.html" style="display:flex;align-items:center;gap:15px" aria-label="Go to homepage">
-                    <img alt="Logo" src="../images/logo.png" style="height:  40px;" width="49" height="40">
-                    <div style="display:flex;flex-direction:column">
-                        <span style="font-size:18px;font-weight:700;color:#111;line-height:1.2">冶聖工業股份有限公司</span>
-                        <span style="font-size:10px;font-weight:600;color: #996B1D;letter-spacing:1px">粉末冶金專家</span>
+<div class="mobile-menu" id="mobileMenu">
+<!-- Close Button -->
+<div aria-label="Close menu" onclick="toggleMenu()" role="button" style="text-align:right;padding:5px 0 15px;cursor:pointer;font-size:24px;color:#333;" tabindex="0">✕</div>
+<a href="products.html" style="padding:10px 0;border-bottom:1px solid #eee">產品介紹</a>
+<a href="solutions.html" style="padding:10px 0;border-bottom:1px solid #eee">服務流程</a>
+<a href="capabilities.html" style="padding:10px 0;border-bottom:1px solid #eee">製程能力</a>
+<a href="applications.html" style="padding:10px 0;border-bottom:1px solid #eee">應用領域</a>
+<a href="case-studies.html" style="font-size:14px;color:#555">成功案例</a>
+<a href="resources.html" style="padding:10px 0;border-bottom:1px solid #eee;color: #996B1D;font-weight:700">資源中心</a>
+<a href="about.html" style="padding:10px 0;border-bottom:1px solid #eee">關於我們</a>
+<a href="contact.html" style="padding:10px 0;color: #996B1D">聯絡我們</a>
+<!-- Mobile Language Selector -->
+<div style="border-top:2px solid #C5A059;margin-top:10px;padding-top:15px;">
+<div style="font-size:14px;font-weight:600;color: #996B1D;margin-bottom:10px;">🌐 語言 / Language
                     </div>
-                </a>
-            </div>
-            <div class="hidden-mobile" style="display:flex;gap:35px;align-items:center">
-                <a href="products.html" style="font-size:15px;font-weight:500;color:#333">產品介紹</a>
-                <a href="solutions.html" style="font-size:15px;font-weight:500;color:#333">服務流程</a>
-                <a href="capabilities.html" style="font-size:15px;font-weight:500;color:#333">製程能力</a>
-                <a href="applications.html" style="font-size:15px;font-weight:500;color:#333">應用領域</a>
-                <a href="case-studies.html" style="font-size:15px;color:#555">成功案例</a>
-                <a href="resources.html" style="font-size:15px;font-weight:700;color: #996B1D">資源中心</a>
-                <a href="contact.html"
-                    style="background:#C5A059;color:white;padding:8px 20px;border-radius:4px;font-size:14px;font-weight:500">聯絡我們</a>
-            </div>
-            <div class="mobile-menu-btn" onclick="toggleMenu()" aria-label="Toggle menu" role="button" tabindex="0">☰
-            </div>
-            <div class="mobile-menu" id="mobileMenu">
-                <!-- Close Button -->
-                <div onclick="toggleMenu()"
-                    style="text-align:right;padding:5px 0 15px;cursor:pointer;font-size:24px;color:#333;"
-                    aria-label="Close menu" role="button" tabindex="0">✕</div>
-                <a href="products.html" style="padding:10px 0;border-bottom:1px solid #eee">產品介紹</a>
-                <a href="solutions.html" style="padding:10px 0;border-bottom:1px solid #eee">服務流程</a>
-                <a href="capabilities.html" style="padding:10px 0;border-bottom:1px solid #eee">製程能力</a>
-                <a href="applications.html" style="padding:10px 0;border-bottom:1px solid #eee">應用領域</a>
-                <a href="case-studies.html" style="font-size:14px;color:#555">成功案例</a>
-                <a href="resources.html"
-                    style="padding:10px 0;border-bottom:1px solid #eee;color: #996B1D;font-weight:700">資源中心</a>
-                <a href="about.html" style="padding:10px 0;border-bottom:1px solid #eee">關於我們</a>
-                <a href="contact.html" style="padding:10px 0;color: #996B1D">聯絡我們</a>
-
-                <!-- Mobile Language Selector -->
-                <div style="border-top:2px solid #C5A059;margin-top:10px;padding-top:15px;">
-                    <div style="font-size:14px;font-weight:600;color: #996B1D;margin-bottom:10px;">🌐 語言 / Language
-                    </div>
-                    <a href="../resources.html" style="display:block;padding:8px 0;color:#333;">🇺🇸 English</a>
-                    <a href="../zh/resources.html"
-                        style="display:block;padding:8px 0;color: #996B1D;font-weight:600;">🇹🇼 繁體中文</a>
-                    <a href="../zh-cn/resources.html" style="display:block;padding:8px 0;color:#333;">🇨🇳 简体中文</a>
-                    <a href="../de/resources.html" style="display:block;padding:8px 0;color:#333;">🇩🇪 Deutsch</a>
-                    <a href="../jp/resources.html" style="display:block;padding:8px 0;color:#333;">🇯🇵 日本語</a>
-                </div>
-            </div>
-        </div>
-    </nav>
-    <!-- Header Section -->
-    <section role="main" style="padding:80px 0;background:white">
-        <div class="container">
-            <div style="text-align:center;margin-bottom:60px">
-                <h1
-                    style="font-family:'Playfair Display',serif;font-size:42px;font-weight:700;color:#111;margin-bottom:20px">
+<a href="../resources.html" style="display:block;padding:8px 0;color:#333;">🇺🇸 English</a>
+<a href="../zh/resources.html" style="display:block;padding:8px 0;color: #996B1D;font-weight:600;">🇹🇼 繁體中文</a>
+<a href="../zh-cn/resources.html" style="display:block;padding:8px 0;color:#333;">🇨🇳 简体中文</a>
+<a href="../de/resources.html" style="display:block;padding:8px 0;color:#333;">🇩🇪 Deutsch</a>
+<a href="../jp/resources.html" style="display:block;padding:8px 0;color:#333;">🇯🇵 日本語</a>
+</div>
+</div>
+</div>
+</nav>
+<!-- Header Section -->
+<section role="main" style="padding:80px 0;background:white">
+<div class="container">
+<div style="text-align:center;margin-bottom:60px">
+<h1 style="font-family:'Playfair Display',serif;font-size:42px;font-weight:700;color:#111;margin-bottom:20px">
                     技術資源</h1>
-                <h2
-                    style="font-family:'Playfair Display',serif;font-size:32px;font-weight:700;color:#555;margin-bottom:20px">
+<h2 style="font-family:'Playfair Display',serif;font-size:32px;font-weight:700;color:#555;margin-bottom:20px">
                     知識庫與常見問題</h2>
-                <div style="width:80px;height:4px;background:#C5A059;margin:0 auto 30px"></div>
-                <p style="font-size:18px;color:#666;max-width:800px;margin:0 auto;line-height:1.6">
+<div style="width:80px;height:4px;background:#C5A059;margin:0 auto 30px"></div>
+<p style="font-size:18px;color:#666;max-width:800px;margin:0 auto;line-height:1.6">
                     探索有關粉末冶金的常見問題，以及行業術語的完整詞彙表，幫助您做出明智的工程決策。</p>
-            </div>
-
-            <!-- Layout with Sidebar -->
-            <div class="resource-layout"><aside class="resource-sidebar">
-                    <div class="sidebar-title">📋 快速導航</div>
-                    <ul class="sidebar-nav">
-                        <li><a href="case-studies.html">📋 成功案例</a></li>
-                        <li><a href="resource-process.html#process-guide">🔄 製程選擇指南</a></li>
-                        <li><a href="resource-design.html#gear-types">⚙️ 齒輪種類大全</a></li>
-                        <li class="sub-item"><a href="resource-design.html#spur-helical">• 正/螺旋齒輪</a></li>
-                        <li class="sub-item"><a href="resource-design.html#bevel-worm">• 傘/蝸輪</a></li>
-                        <li class="sub-item"><a href="resource-design.html#planetary">• 行星/諧波</a></li>
-                        <li><a href="resource-design.html#bearings-guide">🔩 含油軸承</a></li>
-                        <li><a href="resource-materials.html#sintering-guide">🔥 燒結製程</a></li>
-                        <li><a href="resource-materials.html#powder-production">🔬 粉末生產方法</a></li>
-                        <li><a href="resource-quality.html#quality-control">📊 品質控制</a></li>
-                        <li><a href="resource-materials.html#density-porosity">⚡ 密度與孔隙率</a></li>
-                        <li><a href="resource-faq.html#faq">❓ 常見問題</a></li>
-                        <li><a href="resource-faq.html#glossary">📖 術語表</a></li>
-                        <li><a href="resource-materials.html#materials">🔧 材料規格</a></li>
-                        <li class="sub-item"><a href="resource-materials.html#iron-steel">• 鐵銅碳鋼</a></li>
-                        <li class="sub-item"><a href="resource-materials.html#stainless">• 不鏽鋼</a></li>
-                        <li class="sub-item"><a href="resource-materials.html#magnetic">• 軟磁材料</a></li>
-                        <li class="sub-item"><a href="resource-materials.html#bronze-brass">• 青銅/黃銅</a></li>
-                    </ul>
-                </aside>
-
-                <!-- Main Content -->
-                <div class="resource-content">
+</div>
+<!-- Layout with Sidebar -->
+<div class="resource-layout"><aside class="resource-sidebar">
+<div class="sidebar-title">📋 快速導航</div>
+<ul class="sidebar-nav">
+<li><a href="case-studies.html">📋 成功案例</a></li>
+<li><a href="resource-process.html#process-guide">🔄 製程選擇指南</a></li>
+<li><a href="resource-design.html#gear-types">⚙️ 齒輪種類大全</a></li>
+<li class="sub-item"><a href="resource-design.html#spur-helical">• 正/螺旋齒輪</a></li>
+<li class="sub-item"><a href="resource-design.html#bevel-worm">• 傘/蝸輪</a></li>
+<li class="sub-item"><a href="resource-design.html#planetary">• 行星/諧波</a></li>
+<li><a href="resource-design.html#bearings-guide">🔩 含油軸承</a></li>
+<li><a href="resource-materials.html#sintering-guide">🔥 燒結製程</a></li>
+<li><a href="resource-materials.html#powder-production">🔬 粉末生產方法</a></li>
+<li><a href="resource-quality.html#quality-control">📊 品質控制</a></li>
+<li><a href="resource-materials.html#density-porosity">⚡ 密度與孔隙率</a></li>
+<li><a href="resource-faq.html#faq">❓ 常見問題</a></li>
+<li><a href="resource-faq.html#glossary">📖 術語表</a></li>
+<li><a href="resource-materials.html#materials">🔧 材料規格</a></li>
+<li class="sub-item"><a href="resource-materials.html#iron-steel">• 鐵銅碳鋼</a></li>
+<li class="sub-item"><a href="resource-materials.html#stainless">• 不鏽鋼</a></li>
+<li class="sub-item"><a href="resource-materials.html#magnetic">• 軟磁材料</a></li>
+<li class="sub-item"><a href="resource-materials.html#bronze-brass">• 青銅/黃銅</a></li>
+</ul>
+</aside>
+<!-- Main Content -->
+<div class="resource-content">
 <!-- NEW: Quality Control & Testing Standards -->
-                    <div id="quality-control" style="margin-bottom: 80px;">
-                        <h3
-                            style="font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 700; color: #333; margin-bottom: 15px; border-bottom: 2px solid #eee; padding-bottom: 10px;">
-                            📊 PM 品質控制與測試標準</h3>
-                        <p style="font-size: 16px; color: #555; line-height: 1.7; margin-bottom: 25px;">
-                            粉末冶金的品質貫穿製造過程的每一個階段 — 從進料粉末檢驗到成品零件驗證。本指南涵蓋確保PM零件符合嚴格工程規範的關鍵測試方法和標準。</p>
-                        <h4
-                            style="font-size: 22px; font-weight: 600; color: #002FA7; margin-bottom: 15px; padding-left: 15px; border-left: 4px solid #C5A059;">
-                            階段1：進料粉末檢驗</h4>
-                        <table class="term-table">
-                            <thead>
-                                <tr>
-                                    <th style="width: 180px;">測試項目</th>
-                                    <th>標準</th>
-                                    <th>方法</th>
-                                    <th>重要性</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="term-name">流動速率</td>
-                                    <td>MPIF 03 / JIS Z 2502</td>
-                                    <td>Hall流量計 — 測量50g粉末通過校準漏斗的時間（秒）</td>
-                                    <td>決定模腔填充的速度和均勻性。流動性差 = 密度不均。</td>
-                                </tr>
-                                <tr>
-                                    <td class="term-name">表觀密度</td>
-                                    <td>MPIF 04 / JIS Z 2504</td>
-                                    <td>Hall流量計杯 — 粉末填充25 cm³杯，秤重計算密度</td>
-                                    <td>控制「填充比」— 模腔需填充多深才能達到目標零件重量。</td>
-                                </tr>
-                                <tr>
-                                    <td class="term-name">篩分析</td>
-                                    <td>MPIF 05 / JIS Z 8801</td>
-                                    <td>標準篩堆疊震動設定時間；記錄每層篩上殘留重量</td>
-                                    <td>粒度分布影響壓縮性、表面光潔度和燒結行為。</td>
-                                </tr>
-                                <tr>
-                                    <td class="term-name">化學成分</td>
-                                    <td>MPIF 02</td>
-                                    <td>XRF光譜儀或濕式化學分析 C、Cu、Ni、Mo含量</td>
-                                    <td>確保合金成分符合目標機械性能的規範。</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <h4
-                            style="font-size: 22px; font-weight: 600; color: #002FA7; margin-bottom: 15px; margin-top: 30px; padding-left: 15px; border-left: 4px solid #C5A059;">
-                            階段2：生坯（燒結前）測試</h4>
-                        <table class="term-table">
-                            <thead>
-                                <tr>
-                                    <th style="width: 180px;">測試項目</th>
-                                    <th>標準</th>
-                                    <th>方法</th>
-                                    <th>典型值</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="term-name">生坯密度</td>
-                                    <td>MPIF 42</td>
-                                    <td>秤重並量測壓坯（未燒結）零件的尺寸</td>
-                                    <td>6.0 – 7.1 g/cm³（鐵基合金）</td>
-                                </tr>
-                                <tr>
-                                    <td class="term-name">生坯強度<br>(Grünfestigkeit)</td>
-                                    <td>MPIF 15</td>
-                                    <td>橫向斷裂試驗 — 矩形試棒三點彎曲斷裂</td>
-                                    <td>10 – 25 MPa（必須承受搬運和運送至爐體）</td>
-                                </tr>
-                                <tr>
-                                    <td class="term-name">重量一致性</td>
-                                    <td>Internal SPC</td>
-                                    <td>每件秤重；統計製程控制（SPC）圖表追蹤變異</td>
-                                    <td>±0.5% 目標重量（表示均勻的粉末填充）</td>
-                                </tr>
-                                <tr>
-                                    <td class="term-name">尺寸檢查</td>
-                                    <td>ISO 286</td>
-                                    <td>CMM或精密量規量測關鍵尺寸</td>
-                                    <td>需考慮約0.1–0.3%的燒結收縮</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <h4
-                            style="font-size: 22px; font-weight: 600; color: #002FA7; margin-bottom: 15px; margin-top: 30px; padding-left: 15px; border-left: 4px solid #C5A059;">
-                            階段3：燒結件驗證</h4>
-                        <table class="term-table">
-                            <thead>
-                                <tr>
-                                    <th style="width: 180px;">測試項目</th>
-                                    <th>標準</th>
-                                    <th>方法</th>
-                                    <th>驗收標準（典型）</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="term-name">燒結密度</td>
-                                    <td>MPIF 42</td>
-                                    <td>阿基米德法 — 零件在空氣和水中秤重以計算體積和密度</td>
-                                    <td>6.4 – 7.2 g/cm³ 視等級而定</td>
-                                </tr>
-                                <tr>
-                                    <td class="term-name">硬度</td>
-                                    <td>MPIF 43 / JIS Z 2245</td>
-                                    <td>洛氏B或C標度；HRB用於燒結態，HRC用於熱處理件</td>
-                                    <td>HRB 60-90（燒結態），HRC 25-45（熱處理）</td>
-                                </tr>
-                                <tr>
-                                    <td class="term-name">尺寸精度</td>
-                                    <td>ISO 286</td>
-                                    <td>CMM（三次元量測儀）全3D輪廓；生產用通/止規</td>
-                                    <td>±0.01 – 0.05mm 視特徵而定</td>
-                                </tr>
-                                <tr>
-                                    <td class="term-name">抗拉強度</td>
-                                    <td>MPIF 10</td>
-                                    <td>平板未加工拉伸試棒在萬能試驗機上測試</td>
-                                    <td>300 – 700 MPa 視材料和密度而定</td>
-                                </tr>
-                                <tr>
-                                    <td class="term-name">表面粗糙度</td>
-                                    <td>JIS B 0601</td>
-                                    <td>輪廓儀量測Ra（平均粗糙度）</td>
-                                    <td>Ra 1.0 – 3.2 μm（燒結態）；Ra 0.4 – 0.8 μm（整形後）</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <div class="decision-box"
-                            style="background: linear-gradient(135deg, #e8f5e9 0%, #f1f8e9 100%); border-color: #2e7d32;">
-                            <h4 style="color: #2e7d32;">🏆 冶聖品質系統</h4>
-                            <div
-                                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px;">
-                                <div
-                                    style="background: white; padding: 15px; border-radius: 8px; border-left: 3px solid #C5A059;">
-                                    <strong style="color: #002FA7;">🏅 ISO 9001:2015</strong>
-                                    <p style="font-size: 13px; margin: 8px 0 0; color: #666;">認證品質管理系統，涵蓋所有生產製程</p>
-                                </div>
-                                <div
-                                    style="background: white; padding: 15px; border-radius: 8px; border-left: 3px solid #C5A059;">
-                                    <strong style="color: #002FA7;">📊 SPC監控</strong>
-                                    <p style="font-size: 13px; margin: 8px 0 0; color: #666;">即時統計製程控制，監控關鍵尺寸和重量</p>
-                                </div>
-                                <div
-                                    style="background: white; padding: 15px; border-radius: 8px; border-left: 3px solid #C5A059;">
-                                    <strong style="color: #002FA7;">📋 完整追溯</strong>
-                                    <p style="font-size: 13px; margin: 8px 0 0; color: #666;">每批次從原料粉末到成品零件均可追溯，附檢驗紀錄
-                                    </p>
-                                </div>
-                                <div
-                                    style="background: white; padding: 15px; border-radius: 8px; border-left: 3px solid #C5A059;">
-                                    <strong style="color: #002FA7;">🔍 全檢</strong>
-                                    <p style="font-size: 13px; margin: 8px 0 0; color: #666;">可用於關鍵應用 — 每件尺寸和外觀檢驗</p>
-                                </div>
-                            </div>
-                            <p style="margin-top: 15px; font-size: 14px; color: #666;"><strong>📧 需要檢驗報告？</strong>
-                                我們提供PPAP（生產件核准程序）文件、材料證明和詳細檢驗報告。 <a href="contact.html"
-                                    style="color: #002FA7; font-weight: 600;">聯絡我們 →</a></p>
-                        </div>
-                    </div>
-</div> <!-- End resource-content -->
-            </div> <!-- End resource-layout -->
-        </div>
-    </section>
+<div class="accordion-card" id="quality-control"><div class="accordion-header" onclick="toggleAccordion(this)"><h3 style="font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 700; color: #333; margin-bottom: 15px; border-bottom: 2px solid #eee; padding-bottom: 10px;; margin: 0 !important; border: none; padding: 0; font-size: 24px;">
+                            📊 PM 品質控制與測試標準</h3><span class="accordion-icon">🔽</span></div><div class="accordion-body-wrapper"><div class="accordion-body-inner">
 
-    <!-- Smooth Scroll JavaScript -->
-    <script>
+<p style="font-size: 16px; color: #555; line-height: 1.7; margin-bottom: 25px;">
+                            粉末冶金的品質貫穿製造過程的每一個階段 — 從進料粉末檢驗到成品零件驗證。本指南涵蓋確保PM零件符合嚴格工程規範的關鍵測試方法和標準。</p>
+<h4 style="font-size: 22px; font-weight: 600; color: #002FA7; margin-bottom: 15px; padding-left: 15px; border-left: 4px solid #C5A059;">
+                            階段1：進料粉末檢驗</h4>
+<table class="term-table">
+<thead>
+<tr>
+<th style="width: 180px;">測試項目</th>
+<th>標準</th>
+<th>方法</th>
+<th>重要性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="term-name">流動速率</td>
+<td>MPIF 03 / JIS Z 2502</td>
+<td>Hall流量計 — 測量50g粉末通過校準漏斗的時間（秒）</td>
+<td>決定模腔填充的速度和均勻性。流動性差 = 密度不均。</td>
+</tr>
+<tr>
+<td class="term-name">表觀密度</td>
+<td>MPIF 04 / JIS Z 2504</td>
+<td>Hall流量計杯 — 粉末填充25 cm³杯，秤重計算密度</td>
+<td>控制「填充比」— 模腔需填充多深才能達到目標零件重量。</td>
+</tr>
+<tr>
+<td class="term-name">篩分析</td>
+<td>MPIF 05 / JIS Z 8801</td>
+<td>標準篩堆疊震動設定時間；記錄每層篩上殘留重量</td>
+<td>粒度分布影響壓縮性、表面光潔度和燒結行為。</td>
+</tr>
+<tr>
+<td class="term-name">化學成分</td>
+<td>MPIF 02</td>
+<td>XRF光譜儀或濕式化學分析 C、Cu、Ni、Mo含量</td>
+<td>確保合金成分符合目標機械性能的規範。</td>
+</tr>
+</tbody>
+</table>
+<h4 style="font-size: 22px; font-weight: 600; color: #002FA7; margin-bottom: 15px; margin-top: 30px; padding-left: 15px; border-left: 4px solid #C5A059;">
+                            階段2：生坯（燒結前）測試</h4>
+<table class="term-table">
+<thead>
+<tr>
+<th style="width: 180px;">測試項目</th>
+<th>標準</th>
+<th>方法</th>
+<th>典型值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="term-name">生坯密度</td>
+<td>MPIF 42</td>
+<td>秤重並量測壓坯（未燒結）零件的尺寸</td>
+<td>6.0 – 7.1 g/cm³（鐵基合金）</td>
+</tr>
+<tr>
+<td class="term-name">生坯強度<br/>(Grünfestigkeit)</td>
+<td>MPIF 15</td>
+<td>橫向斷裂試驗 — 矩形試棒三點彎曲斷裂</td>
+<td>10 – 25 MPa（必須承受搬運和運送至爐體）</td>
+</tr>
+<tr>
+<td class="term-name">重量一致性</td>
+<td>Internal SPC</td>
+<td>每件秤重；統計製程控制（SPC）圖表追蹤變異</td>
+<td>±0.5% 目標重量（表示均勻的粉末填充）</td>
+</tr>
+<tr>
+<td class="term-name">尺寸檢查</td>
+<td>ISO 286</td>
+<td>CMM或精密量規量測關鍵尺寸</td>
+<td>需考慮約0.1–0.3%的燒結收縮</td>
+</tr>
+</tbody>
+</table>
+<h4 style="font-size: 22px; font-weight: 600; color: #002FA7; margin-bottom: 15px; margin-top: 30px; padding-left: 15px; border-left: 4px solid #C5A059;">
+                            階段3：燒結件驗證</h4>
+<table class="term-table">
+<thead>
+<tr>
+<th style="width: 180px;">測試項目</th>
+<th>標準</th>
+<th>方法</th>
+<th>驗收標準（典型）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="term-name">燒結密度</td>
+<td>MPIF 42</td>
+<td>阿基米德法 — 零件在空氣和水中秤重以計算體積和密度</td>
+<td>6.4 – 7.2 g/cm³ 視等級而定</td>
+</tr>
+<tr>
+<td class="term-name">硬度</td>
+<td>MPIF 43 / JIS Z 2245</td>
+<td>洛氏B或C標度；HRB用於燒結態，HRC用於熱處理件</td>
+<td>HRB 60-90（燒結態），HRC 25-45（熱處理）</td>
+</tr>
+<tr>
+<td class="term-name">尺寸精度</td>
+<td>ISO 286</td>
+<td>CMM（三次元量測儀）全3D輪廓；生產用通/止規</td>
+<td>±0.01 – 0.05mm 視特徵而定</td>
+</tr>
+<tr>
+<td class="term-name">抗拉強度</td>
+<td>MPIF 10</td>
+<td>平板未加工拉伸試棒在萬能試驗機上測試</td>
+<td>300 – 700 MPa 視材料和密度而定</td>
+</tr>
+<tr>
+<td class="term-name">表面粗糙度</td>
+<td>JIS B 0601</td>
+<td>輪廓儀量測Ra（平均粗糙度）</td>
+<td>Ra 1.0 – 3.2 μm（燒結態）；Ra 0.4 – 0.8 μm（整形後）</td>
+</tr>
+</tbody>
+</table>
+<div class="decision-box" style="background: linear-gradient(135deg, #e8f5e9 0%, #f1f8e9 100%); border-color: #2e7d32;">
+<h4 style="color: #2e7d32;">🏆 冶聖品質系統</h4>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px;">
+<div style="background: white; padding: 15px; border-radius: 8px; border-left: 3px solid #C5A059;">
+<strong style="color: #002FA7;">🏅 ISO 9001:2015</strong>
+<p style="font-size: 13px; margin: 8px 0 0; color: #666;">認證品質管理系統，涵蓋所有生產製程</p>
+</div>
+<div style="background: white; padding: 15px; border-radius: 8px; border-left: 3px solid #C5A059;">
+<strong style="color: #002FA7;">📊 SPC監控</strong>
+<p style="font-size: 13px; margin: 8px 0 0; color: #666;">即時統計製程控制，監控關鍵尺寸和重量</p>
+</div>
+<div style="background: white; padding: 15px; border-radius: 8px; border-left: 3px solid #C5A059;">
+<strong style="color: #002FA7;">📋 完整追溯</strong>
+<p style="font-size: 13px; margin: 8px 0 0; color: #666;">每批次從原料粉末到成品零件均可追溯，附檢驗紀錄
+                                    </p>
+</div>
+<div style="background: white; padding: 15px; border-radius: 8px; border-left: 3px solid #C5A059;">
+<strong style="color: #002FA7;">🔍 全檢</strong>
+<p style="font-size: 13px; margin: 8px 0 0; color: #666;">可用於關鍵應用 — 每件尺寸和外觀檢驗</p>
+</div>
+</div>
+<p style="margin-top: 15px; font-size: 14px; color: #666;"><strong>📧 需要檢驗報告？</strong>
+                                我們提供PPAP（生產件核准程序）文件、材料證明和詳細檢驗報告。 <a href="contact.html" style="color: #002FA7; font-weight: 600;">聯絡我們 →</a></p>
+</div>
+</div></div></div>
+</div> <!-- End resource-content -->
+</div> <!-- End resource-layout -->
+</div>
+</section>
+<!-- Smooth Scroll JavaScript -->
+<script>
         // Smooth scroll for sidebar navigation
         document.querySelectorAll('.sidebar-nav a').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -763,52 +791,49 @@
             });
         });
     </script>
-    <!-- Footer -->
-    <footer style="background:#002FA7;color:white;padding:80px 0 40px">
-        <div class="container">
-            <div
-                style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:50px;margin-bottom:60px">
-                <div>
-                    <div style="display:flex;align-items:center;gap:15px;margin-bottom:25px">
-                        <img alt="Logo" src="../images/logo.png" style="height:  50px;" width="61" height="50">
-                        <h3
-                            style="font-family:'Noto Sans TC',sans-serif;font-size:20px;font-weight:700;color:#8B6914;margin:0">
+<!-- Footer -->
+<footer style="background:#002FA7;color:white;padding:80px 0 40px">
+<div class="container">
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:50px;margin-bottom:60px">
+<div>
+<div style="display:flex;align-items:center;gap:15px;margin-bottom:25px">
+<img alt="Logo" height="50" src="../images/logo.png" style="height:  50px;" width="61"/>
+<h3 style="font-family:'Noto Sans TC',sans-serif;font-size:20px;font-weight:700;color:#8B6914;margin:0">
                             冶聖工業股份有限公司</h3>
-                    </div>
-                    <p style="color:#a0b0d0;line-height:1.6;font-size:14px">自 1984 年起的高精密粉末冶金零件領導製造商。</p>
-                </div>
-                <div>
-                    <h4 style="color: #996B1D;font-size:18px;font-weight:700;margin-bottom:25px">公司資訊</h4>
-                    <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:15px">
-                        <li><a href="about.html" style="color:#a0b0d0;font-size:15px">關於我們</a></li>
-                        <li><a href="products.html" style="color:#a0b0d0;font-size:15px">所有產品</a></li>
-                        <li><a href="capabilities.html" style="color:#a0b0d0;font-size:15px">製程能力</a></li>
-                        <li><a href="contact.html" style="color:#a0b0d0;font-size:15px">聯絡我們</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 style="color: #996B1D;font-size:18px;font-weight:700;margin-bottom:25px">聯絡方式</h4>
-                    <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:15px">
-                        <li style="color:#a0b0d0;font-size:15px">新北市新莊區中正路721巷11號</li>
-                        <li style="color:#a0b0d0;font-size:15px"><a href="mailto:YS@yehsheng.com">YS@yehsheng.com</a>
-                        </li>
-                        <li style="color:#a0b0d0;font-size:15px">+886-2-2901-8266</li>
-                    </ul>
-                </div>
-            </div>
-            <div style="border-top:1px solid rgba(255,255,255,0.1);padding-top:30px;text-align:center">
-                <p style="color:#e0e0e0;font-size:13px;margin:0">© 2024 冶聖工業股份有限公司 版權所有。</p>
-            </div>
-        </div>
-    </footer>
-    <script>
+</div>
+<p style="color:#a0b0d0;line-height:1.6;font-size:14px">自 1984 年起的高精密粉末冶金零件領導製造商。</p>
+</div>
+<div>
+<h4 style="color: #996B1D;font-size:18px;font-weight:700;margin-bottom:25px">公司資訊</h4>
+<ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:15px">
+<li><a href="about.html" style="color:#a0b0d0;font-size:15px">關於我們</a></li>
+<li><a href="products.html" style="color:#a0b0d0;font-size:15px">所有產品</a></li>
+<li><a href="capabilities.html" style="color:#a0b0d0;font-size:15px">製程能力</a></li>
+<li><a href="contact.html" style="color:#a0b0d0;font-size:15px">聯絡我們</a></li>
+</ul>
+</div>
+<div>
+<h4 style="color: #996B1D;font-size:18px;font-weight:700;margin-bottom:25px">聯絡方式</h4>
+<ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:15px">
+<li style="color:#a0b0d0;font-size:15px">新北市新莊區中正路721巷11號</li>
+<li style="color:#a0b0d0;font-size:15px"><a href="mailto:YS@yehsheng.com">YS@yehsheng.com</a>
+</li>
+<li style="color:#a0b0d0;font-size:15px">+886-2-2901-8266</li>
+</ul>
+</div>
+</div>
+<div style="border-top:1px solid rgba(255,255,255,0.1);padding-top:30px;text-align:center">
+<p style="color:#e0e0e0;font-size:13px;margin:0">© 2024 冶聖工業股份有限公司 版權所有。</p>
+</div>
+</div>
+</footer>
+<script>
         function toggleMenu() { document.getElementById('mobileMenu').classList.toggle('active') }
         function toggleLangMenu() { var m = document.getElementById("langMenu"); m.style.display = (m.style.display === "none" || m.style.display === "") ? "block" : "none" }
         document.addEventListener('click', function (e) { var m = document.getElementById("langMenu"); if (!e.target.closest('#langMenu') && !e.target.matches('[onclick="toggleLangMenu()"]')) { if (m) m.style.display = "none" } });
     </script>
-
-    <!-- Floating CTA Button -->
-    <a id="floating-cta" href="contact.html" style="
+<!-- Floating CTA Button -->
+<a href="contact.html" id="floating-cta" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 20px rgba(197,160,89,0.4)'" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 6px 25px rgba(197,160,89,0.5)'" style="
         position: fixed;
         bottom: 28px;
         right: 28px;
@@ -826,10 +851,44 @@
         align-items: center;
         gap: 6px;
         transition: all 0.3s ease;
-    " onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 6px 25px rgba(197,160,89,0.5)'"
-        onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 20px rgba(197,160,89,0.4)'">💬
+    ">💬
         免費報價</a>
-
-</body>
-
+<script>
+            function toggleAccordion(header) {
+                const card = header.closest('.accordion-card');
+                card.classList.toggle('active');
+            }
+            
+            function openAccordionFromHash() {
+                if (window.location.hash) {
+                    const target = document.querySelector(window.location.hash);
+                    if (target && target.classList.contains('accordion-card')) {
+                        target.classList.add('active');
+                        setTimeout(() => {
+                            const offsetTop = target.getBoundingClientRect().top + window.scrollY - 120;
+                            window.scrollTo({ top: offsetTop, behavior: 'smooth' });
+                        }, 300); // Wait for transition
+                    }
+                }
+            }
+            
+            window.addEventListener('hashchange', openAccordionFromHash);
+            document.addEventListener('DOMContentLoaded', function() {
+                openAccordionFromHash();
+                
+                // Intercept sidebar clicks
+                document.querySelectorAll('.sidebar-nav a').forEach(anchor => {
+                    anchor.addEventListener('click', function (e) {
+                        const href = this.getAttribute('href');
+                        if (href && href.includes('#')) {
+                            const targetId = href.split('#')[1];
+                            const targetElement = document.getElementById(targetId);
+                            if (targetElement && targetElement.classList.contains('accordion-card')) {
+                                targetElement.classList.add('active');
+                            }
+                        }
+                    });
+                });
+            });
+            </script></body>
 </html>

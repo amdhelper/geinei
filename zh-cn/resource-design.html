@@ -1,11 +1,11 @@
 ﻿<!DOCTYPE html>
-<html lang="zh-Hans">
 
+<html lang="zh-Hans">
 <head>
-    <meta name="google-site-verification" content="YUhT_jRF5sxYfCWMMcB08B38K6MB2yAEv4wEo1fjdXg" />
-    <!-- Google tag (gtag.js) -->
-    <!-- Google Analytics & Clarity (production only) -->
-    <script>
+<meta content="YUhT_jRF5sxYfCWMMcB08B38K6MB2yAEv4wEo1fjdXg" name="google-site-verification"/>
+<!-- Google tag (gtag.js) -->
+<!-- Google Analytics & Clarity (production only) -->
+<script>
         if (window.location.hostname === 'yehsheng.com') {
             var gaScript = document.createElement('script');
             gaScript.async = true;
@@ -22,16 +22,14 @@
             })(window, document, "clarity", "script", "q46c2dab8f");
         }
     </script>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>【技术知识库】粉末冶金 FAQ、材料规格与 MPIF 标准</title>
-    <meta content="粉末冶金（PM）技术资源。寻找关于PM强度、成本和材料的常见问题解答，以及烧结、生坯強度和MIM等行業術語的完整詞彙表。" name="description" />
-    <link href="https://fonts.googleapis.com" rel="preconnect" />
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&amp;family=Noto+Sans+SC:wght@300;400;500;600;700&amp;display=swap"
-        rel="stylesheet" />
-    <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>【技术知识库】粉末冶金 FAQ、材料规格与 MPIF 标准</title>
+<meta content="粉末冶金（PM）技术资源。寻找关于PM强度、成本和材料的常见问题解答，以及烧结、生坯強度和MIM等行業術語的完整詞彙表。" name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&amp;family=Noto+Sans+SC:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<style>
         body {
             margin: 0;
             padding: 0;
@@ -366,17 +364,17 @@
             font-weight: bold
         }
     </style>
-    <link href="https://yehsheng.com/zh-cn/resources.html" rel="canonical" />
-    <!-- hreflang tags for multilingual SEO -->
-    <link rel="alternate" hreflang="en" href="https://yehsheng.com/resources.html" />
-    <link rel="alternate" hreflang="zh-Hant" href="https://yehsheng.com/zh/resources.html" />
-    <link rel="alternate" hreflang="zh-Hans" href="https://yehsheng.com/zh-cn/resources.html" />
-    <link rel="alternate" hreflang="de" href="https://yehsheng.com/de/resources.html" />
-    <link rel="alternate" hreflang="ja" href="https://yehsheng.com/jp/resources.html" />
-    <link rel="alternate" hreflang="x-default" href="https://yehsheng.com/resources.html" />
-    <link rel="icon" href="../images/logo.png" type="image/png">
-    <!-- FAQPage Schema.org Structured Data -->
-    <script type="application/ld+json">
+<link href="https://yehsheng.com/zh-cn/resources.html" rel="canonical"/>
+<!-- hreflang tags for multilingual SEO -->
+<link href="https://yehsheng.com/resources.html" hreflang="en" rel="alternate"/>
+<link href="https://yehsheng.com/zh/resources.html" hreflang="zh-Hant" rel="alternate"/>
+<link href="https://yehsheng.com/zh-cn/resources.html" hreflang="zh-Hans" rel="alternate"/>
+<link href="https://yehsheng.com/de/resources.html" hreflang="de" rel="alternate"/>
+<link href="https://yehsheng.com/jp/resources.html" hreflang="ja" rel="alternate"/>
+<link href="https://yehsheng.com/resources.html" hreflang="x-default" rel="alternate"/>
+<link href="../images/logo.png" rel="icon" type="image/png"/>
+<!-- FAQPage Schema.org Structured Data -->
+<script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",
@@ -424,316 +422,345 @@
       ]
     }
     </script>
-
-</head>
-
+<style>
+            .accordion-card {
+                background: #fff;
+                border-radius: 12px;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+                margin-bottom: 25px;
+                overflow: hidden;
+                border: 1px solid #eee;
+                transition: all 0.3s ease;
+            }
+            .accordion-card:hover {
+                box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+                transform: translateY(-2px);
+            }
+            .accordion-header {
+                padding: 15px 30px;
+                cursor: pointer;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background: #fdfbf7;
+                border-bottom: 1px solid transparent;
+                transition: all 0.3s ease;
+            }
+            .accordion-card.active .accordion-header {
+                border-bottom: 1px solid #eee;
+                background: #fff;
+            }
+            .accordion-icon {
+                font-size: 20px;
+                color: #C5A059;
+                transition: transform 0.3s ease;
+            }
+            .accordion-card.active .accordion-icon {
+                transform: rotate(180deg);
+            }
+            .accordion-body-wrapper {
+                display: grid;
+                grid-template-rows: 0fr;
+                transition: grid-template-rows 0.3s ease-out;
+            }
+            .accordion-card.active .accordion-body-wrapper {
+                grid-template-rows: 1fr;
+            }
+            .accordion-body-inner {
+                overflow: hidden;
+                padding: 0 30px;
+                opacity: 0;
+                transition: opacity 0.3s ease-out, padding 0.3s ease;
+            }
+            .accordion-card.active .accordion-body-inner {
+                padding: 30px 30px 30px 30px;
+                opacity: 1;
+            }
+            /* Mobile adjustment */
+            @media (max-width: 768px) {
+                .accordion-header { padding: 15px 20px; }
+                .accordion-body-inner { padding: 0 20px; }
+                .accordion-card.active .accordion-body-inner { padding: 20px; }
+                .accordion-header h3 { font-size: 20px !important; }
+            }
+            </style></head>
 <body>
-    <div class="hidden-mobile" style="background:#002FA7;color:white;padding:10px 0;position:relative;z-index:200">
-        <div class="container" style="display:flex;justify-content:flex-end;gap:25px;font-size:13px">
-            <a href="about.html" style="color:#e8e8e8">关于我们</a>
-            <a href="contact.html" style="color:#e8e8e8">联络我们</a>
-            <div style="position:relative;display:inline-block">
-                <span style="color: #996B1D;font-weight:600;cursor:pointer" onclick="toggleLangMenu()">简体中文 ▼</span>
-                <div id="langMenu"
-                    style="display:none;position:absolute;right:0;top:100%;background:white;box-shadow:0 4px 12px rgba(0,0,0,0.15);border-radius:4px;min-width:120px;z-index:10000">
-                    <a href="../resources.html"
-                        style="display:block;padding:10px 15px;color:#333;font-size:13px">English</a>
-                    <a href="../zh/resources.html"
-                        style="display:block;padding:10px 15px;color:#333;font-size:13px">繁體中文</a>
-                    <a href="../zh-cn/resources.html"
-                        style="display:block;padding:10px 15px;color: #996B1D;font-size:13px;background:#f5f5f5">简体中文</a>
-                    <a href="../de/resources.html"
-                        style="display:block;padding:10px 15px;color:#333;font-size:13px">Deutsch</a>
-                    <a href="../jp/resources.html"
-                        style="display:block;padding:10px 15px;color:#333;font-size:13px">日本語</a>
-                </div>
+<div class="hidden-mobile" style="background:#002FA7;color:white;padding:10px 0;position:relative;z-index:200">
+<div class="container" style="display:flex;justify-content:flex-end;gap:25px;font-size:13px">
+<a href="about.html" style="color:#e8e8e8">关于我们</a>
+<a href="contact.html" style="color:#e8e8e8">联络我们</a>
+<div style="position:relative;display:inline-block">
+<span onclick="toggleLangMenu()" style="color: #996B1D;font-weight:600;cursor:pointer">简体中文 ▼</span>
+<div id="langMenu" style="display:none;position:absolute;right:0;top:100%;background:white;box-shadow:0 4px 12px rgba(0,0,0,0.15);border-radius:4px;min-width:120px;z-index:10000">
+<a href="../resources.html" style="display:block;padding:10px 15px;color:#333;font-size:13px">English</a>
+<a href="../zh/resources.html" style="display:block;padding:10px 15px;color:#333;font-size:13px">繁體中文</a>
+<a href="../zh-cn/resources.html" style="display:block;padding:10px 15px;color: #996B1D;font-size:13px;background:#f5f5f5">简体中文</a>
+<a href="../de/resources.html" style="display:block;padding:10px 15px;color:#333;font-size:13px">Deutsch</a>
+<a href="../jp/resources.html" style="display:block;padding:10px 15px;color:#333;font-size:13px">日本語</a>
+</div>
+</div>
+</div>
+</div>
+<nav style="background:white;box-shadow:0 2px 10px rgba(0,0,0,0.05);position:sticky;top:0;z-index:100">
+<div class="container" style="padding:15px 20px;display:flex;justify-content:space-between;align-items:center;position:relative">
+<a aria-label="Go to homepage" href="index.html" style="display:flex;align-items:center;gap:15px">
+<img alt="Logo" height="40" src="../images/logo.png" style="height:  40px;" width="49"/>
+<div><span style="font-size:18px;font-weight:700;color:#111;display:block">冶圣工业股份有限公司</span><span style="font-size:10px;font-weight:600;color: #996B1D">粉末冶金专家</span></div>
+</a>
+<div class="hidden-mobile" style="display:flex;gap:35px;align-items:center">
+<a href="products.html" style="font-size:15px;color:#333">产品介绍</a>
+<a href="solutions.html" style="font-size:15px;color:#333">服务流程</a>
+<a href="capabilities.html" style="font-size:15px;color:#333">制程能力</a>
+<a href="applications.html" style="font-size:15px;color:#333">应用领域</a>
+<a href="case-studies.html" style="font-size:15px;color:#555">成功案例</a>
+<a href="resources.html" style="font-size:15px;color: #996B1D;font-weight:700">资源中心</a>
+<a href="contact.html" style="background:#C5A059;color:white;padding:8px 20px;border-radius:4px">联络我们</a>
+</div>
+<div aria-label="Toggle menu" class="mobile-menu-btn" onclick="toggleMenu()" role="button" tabindex="0">☰
             </div>
-        </div>
-    </div>
-    <nav style="background:white;box-shadow:0 2px 10px rgba(0,0,0,0.05);position:sticky;top:0;z-index:100">
-        <div class="container"
-            style="padding:15px 20px;display:flex;justify-content:space-between;align-items:center;position:relative">
-            <a href="index.html" style="display:flex;align-items:center;gap:15px" aria-label="Go to homepage">
-                <img alt="Logo" src="../images/logo.png" style="height:  40px;" width="49" height="40">
-                <div><span style="font-size:18px;font-weight:700;color:#111;display:block">冶圣工业股份有限公司</span><span
-                        style="font-size:10px;font-weight:600;color: #996B1D">粉末冶金专家</span></div>
-            </a>
-            <div class="hidden-mobile" style="display:flex;gap:35px;align-items:center">
-                <a href="products.html" style="font-size:15px;color:#333">产品介绍</a>
-                <a href="solutions.html" style="font-size:15px;color:#333">服务流程</a>
-                <a href="capabilities.html" style="font-size:15px;color:#333">制程能力</a>
-                <a href="applications.html" style="font-size:15px;color:#333">应用领域</a>
-                <a href="case-studies.html" style="font-size:15px;color:#555">成功案例</a>
-                <a href="resources.html" style="font-size:15px;color: #996B1D;font-weight:700">资源中心</a>
-                <a href="contact.html"
-                    style="background:#C5A059;color:white;padding:8px 20px;border-radius:4px">联络我们</a>
-            </div>
-            <div class="mobile-menu-btn" onclick="toggleMenu()" aria-label="Toggle menu" role="button" tabindex="0">☰
-            </div>
-            <div class="mobile-menu" id="mobileMenu">
-                <!-- Close Button -->
-                <div onclick="toggleMenu()"
-                    style="text-align:right;padding:5px 0 15px;cursor:pointer;font-size:24px;color:#333;"
-                    aria-label="Close menu" role="button" tabindex="0">✕</div>
-                <a href="products.html" style="padding:10px 0;border-bottom:1px solid #eee">产品介绍</a>
-                <a href="case-studies.html" style="padding:10px 0;border-bottom:1px solid #eee;color:#555">成功案例</a>
-                <a href="resources.html" style="padding:10px 0;border-bottom:1px solid #eee;color: #996B1D">资源中心</a>
-                <a href="contact.html" style="padding:10px 0;color: #996B1D">联络我们</a>
-
-                <!-- Mobile Language Selector -->
-                <div style="border-top:2px solid #C5A059;margin-top:10px;padding-top:15px;">
-                    <div style="font-size:14px;font-weight:600;color: #996B1D;margin-bottom:10px;">🌐 语言 / Language
+<div class="mobile-menu" id="mobileMenu">
+<!-- Close Button -->
+<div aria-label="Close menu" onclick="toggleMenu()" role="button" style="text-align:right;padding:5px 0 15px;cursor:pointer;font-size:24px;color:#333;" tabindex="0">✕</div>
+<a href="products.html" style="padding:10px 0;border-bottom:1px solid #eee">产品介绍</a>
+<a href="case-studies.html" style="padding:10px 0;border-bottom:1px solid #eee;color:#555">成功案例</a>
+<a href="resources.html" style="padding:10px 0;border-bottom:1px solid #eee;color: #996B1D">资源中心</a>
+<a href="contact.html" style="padding:10px 0;color: #996B1D">联络我们</a>
+<!-- Mobile Language Selector -->
+<div style="border-top:2px solid #C5A059;margin-top:10px;padding-top:15px;">
+<div style="font-size:14px;font-weight:600;color: #996B1D;margin-bottom:10px;">🌐 语言 / Language
                     </div>
-                    <a href="../resources.html" style="display:block;padding:8px 0;color:#333;">🇺🇸 English</a>
-                    <a href="../zh/resources.html" style="display:block;padding:8px 0;color:#333;">🇹🇼 繁體中文</a>
-                    <a href="../zh-cn/resources.html"
-                        style="display:block;padding:8px 0;color: #996B1D;font-weight:600;">🇨🇳 简体中文</a>
-                    <a href="../de/resources.html" style="display:block;padding:8px 0;color:#333;">🇩🇪 Deutsch</a>
-                    <a href="../jp/resources.html" style="display:block;padding:8px 0;color:#333;">🇯🇵 日本語</a>
-                </div>
-            </div>
-        </div>
-    </nav>
-    <section role="main" style="padding:80px 0;background:white">
-        <div class="container">
-            <div style="text-align:center;margin-bottom:60px">
-                <h1
-                    style="font-family:'Playfair Display',serif;font-size:42px;font-weight:700;color:#111;margin-bottom:20px">
+<a href="../resources.html" style="display:block;padding:8px 0;color:#333;">🇺🇸 English</a>
+<a href="../zh/resources.html" style="display:block;padding:8px 0;color:#333;">🇹🇼 繁體中文</a>
+<a href="../zh-cn/resources.html" style="display:block;padding:8px 0;color: #996B1D;font-weight:600;">🇨🇳 简体中文</a>
+<a href="../de/resources.html" style="display:block;padding:8px 0;color:#333;">🇩🇪 Deutsch</a>
+<a href="../jp/resources.html" style="display:block;padding:8px 0;color:#333;">🇯🇵 日本語</a>
+</div>
+</div>
+</div>
+</nav>
+<section role="main" style="padding:80px 0;background:white">
+<div class="container">
+<div style="text-align:center;margin-bottom:60px">
+<h1 style="font-family:'Playfair Display',serif;font-size:42px;font-weight:700;color:#111;margin-bottom:20px">
                     技术资源</h1>
-                <h2
-                    style="font-family:'Playfair Display',serif;font-size:28px;font-weight:700;color:#555;margin-bottom:20px">
+<h2 style="font-family:'Playfair Display',serif;font-size:28px;font-weight:700;color:#555;margin-bottom:20px">
                     知识库与常见问题</h2>
-                <div style="width:80px;height:4px;background:#C5A059;margin:0 auto 30px"></div>
-                <p style="font-size:18px;color:#666;max-width:800px;margin:0 auto;line-height:1.6">
+<div style="width:80px;height:4px;background:#C5A059;margin:0 auto 30px"></div>
+<p style="font-size:18px;color:#666;max-width:800px;margin:0 auto;line-height:1.6">
                     探索有关粉末冶金的常见问题，以及行业术语的完整词汇表，帮助您做出明智的工程决策。</p>
-            </div>
-
-            <!-- Layout with Sidebar -->
-            <div class="resource-layout"><aside class="resource-sidebar">
-                    <div class="sidebar-title">📋 快速导航</div>
-                    <ul class="sidebar-nav">
-                        <li><a href="case-studies.html">📋 成功案例</a></li>
-                        <li><a href="resource-process.html#process-guide">🔄 制程选择指南</a></li>
-                        <li><a href="resource-design.html#gear-types">⚙️ 齿轮种类大全</a></li>
-                        <li class="sub-item"><a href="resource-design.html#spur-helical">• 正/螺旋齿轮</a></li>
-                        <li class="sub-item"><a href="resource-design.html#bevel-worm">• 伞/蜗轮</a></li>
-                        <li class="sub-item"><a href="resource-design.html#planetary">• 行星/谐波</a></li>
-                        <li><a href="resource-materials.html#powder-production">🔬 粉末生产方法</a></li>
-                        <li><a href="resource-quality.html#quality-control">📊 质量控制</a></li>
-                        <li><a href="resource-materials.html#density-porosity">⚡ 密度与孔隙率</a></li>
-                        <li><a href="resource-faq.html#faq">❓ 常见问题</a></li>
-                        <li><a href="resource-faq.html#glossary">📖 术语表</a></li>
-                        <li><a href="resource-materials.html#materials">🔧 材料规格</a></li>
-                        <li class="sub-item"><a href="resource-materials.html#iron-steel">• 铁铜碳钢</a></li>
-                        <li class="sub-item"><a href="resource-materials.html#stainless">• 不锈钢</a></li>
-                        <li class="sub-item"><a href="resource-materials.html#magnetic">• 软磁材料</a></li>
-                        <li class="sub-item"><a href="resource-materials.html#bronze-brass">• 青铜/黄铜</a></li>
-                    </ul>
-                </aside>
-
-                <!-- Main Content -->
-                <div class="resource-content">
+</div>
+<!-- Layout with Sidebar -->
+<div class="resource-layout"><aside class="resource-sidebar">
+<div class="sidebar-title">📋 快速导航</div>
+<ul class="sidebar-nav">
+<li><a href="case-studies.html">📋 成功案例</a></li>
+<li><a href="resource-process.html#process-guide">🔄 制程选择指南</a></li>
+<li><a href="resource-design.html#gear-types">⚙️ 齿轮种类大全</a></li>
+<li class="sub-item"><a href="resource-design.html#spur-helical">• 正/螺旋齿轮</a></li>
+<li class="sub-item"><a href="resource-design.html#bevel-worm">• 伞/蜗轮</a></li>
+<li class="sub-item"><a href="resource-design.html#planetary">• 行星/谐波</a></li>
+<li><a href="resource-materials.html#powder-production">🔬 粉末生产方法</a></li>
+<li><a href="resource-quality.html#quality-control">📊 质量控制</a></li>
+<li><a href="resource-materials.html#density-porosity">⚡ 密度与孔隙率</a></li>
+<li><a href="resource-faq.html#faq">❓ 常见问题</a></li>
+<li><a href="resource-faq.html#glossary">📖 术语表</a></li>
+<li><a href="resource-materials.html#materials">🔧 材料规格</a></li>
+<li class="sub-item"><a href="resource-materials.html#iron-steel">• 铁铜碳钢</a></li>
+<li class="sub-item"><a href="resource-materials.html#stainless">• 不锈钢</a></li>
+<li class="sub-item"><a href="resource-materials.html#magnetic">• 软磁材料</a></li>
+<li class="sub-item"><a href="resource-materials.html#bronze-brass">• 青铜/黄铜</a></li>
+</ul>
+</aside>
+<!-- Main Content -->
+<div class="resource-content">
 <!-- 齿轮种类大全 -->
-                    <div id="gear-types" style="margin-bottom:80px">
-                        <h3
-                            style="font-family:'Playfair Display',serif;font-size:28px;font-weight:700;color:#333;margin-bottom:15px;border-bottom:2px solid #eee;padding-bottom:10px">
+<div class="accordion-card" id="gear-types"><div class="accordion-header" onclick="toggleAccordion(this)"><h3 style="font-family:'Playfair Display',serif;font-size:28px;font-weight:700;color:#333;margin-bottom:15px;border-bottom:2px solid #eee;padding-bottom:10px; margin: 0 !important; border: none; padding: 0; font-size: 24px;">
                             ⚙️ 齿轮种类完整指南
-                        </h3>
-                        <p style="font-size:16px;color:#555;line-height:1.7;margin-bottom:30px">
+                        </h3><span class="accordion-icon">🔽</span></div><div class="accordion-body-wrapper"><div class="accordion-body-inner">
+
+<p style="font-size:16px;color:#555;line-height:1.7;margin-bottom:30px">
                             齿轮是用于传递动力和运动的基本机械元件。了解不同类型的齿轮有助于工程师为其应用选择正确的解决方案。本指南涵盖现代工程中使用的所有主要齿轮类型。
                         </p>
-
-                        <!-- 平行轴齿轮 -->
-                        <div id="spur-helical" style="margin-bottom:40px">
-                            <h4
-                                style="font-size:22px;font-weight:600;color:#002FA7;margin-bottom:15px;padding-left:15px;border-left:4px solid #C5A059">
+<!-- 平行轴齿轮 -->
+<div id="spur-helical" style="margin-bottom:40px">
+<h4 style="font-size:22px;font-weight:600;color:#002FA7;margin-bottom:15px;padding-left:15px;border-left:4px solid #C5A059">
                                 平行轴齿轮：正齿轮与螺旋齿轮
                             </h4>
-                            <table class="term-table">
-                                <thead>
-                                    <tr>
-                                        <th style="width:150px">齿轮类型</th>
-                                        <th>描述</th>
-                                        <th>优点</th>
-                                        <th>常见应用</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="term-name">正齿轮<br>(Spur Gear)</td>
-                                        <td>轮齿与旋转轴平行。最简单且最常见的齿轮类型。</td>
-                                        <td>高效率（高达99%）、制造容易、无轴向推力</td>
-                                        <td>时钟、洗衣机、输送带、电动工具</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="term-name">螺旋齿轮<br>(Helical Gear)</td>
-                                        <td>轮齿呈倾斜螺旋状切割。多个轮齿同时啮合。</td>
-                                        <td>运转更安静、传动更平顺、载荷能力更高</td>
-                                        <td>汽车变速箱、电梯、工业减速机</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="term-name">双螺旋齿轮<br>(Herringbone)</td>
-                                        <td>两组方向相反的螺旋齿在同一齿轮上。</td>
-                                        <td>消除轴向推力、结合螺旋齿轮优点且无需推力轴承</td>
-                                        <td>重型工业设备、船舶推进</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="term-name">内齿轮<br>(Internal Gear)</td>
-                                        <td>轮齿切割在圆筒内侧。与较小的外齿轮啮合。</td>
-                                        <td>紧凑设计、同心轴布置</td>
-                                        <td>行星齿轮组、内啮齿轮泵</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="term-name">齿条与齿轮<br>(Rack & Pinion)</td>
-                                        <td>将旋转运动转换为直线运动。小齿轮（圆形）与齿条（直线）啮合。</td>
-                                        <td>简单的直线传动、高精度定位</td>
-                                        <td>转向系统、CNC机床、滑动门</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-
-                        <!-- 相交轴齿轮 -->
-                        <div id="bevel-worm" style="margin-bottom:40px">
-                            <h4
-                                style="font-size:22px;font-weight:600;color:#002FA7;margin-bottom:15px;padding-left:15px;border-left:4px solid #C5A059">
+<table class="term-table">
+<thead>
+<tr>
+<th style="width:150px">齿轮类型</th>
+<th>描述</th>
+<th>优点</th>
+<th>常见应用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="term-name">正齿轮<br/>(Spur Gear)</td>
+<td>轮齿与旋转轴平行。最简单且最常见的齿轮类型。</td>
+<td>高效率（高达99%）、制造容易、无轴向推力</td>
+<td>时钟、洗衣机、输送带、电动工具</td>
+</tr>
+<tr>
+<td class="term-name">螺旋齿轮<br/>(Helical Gear)</td>
+<td>轮齿呈倾斜螺旋状切割。多个轮齿同时啮合。</td>
+<td>运转更安静、传动更平顺、载荷能力更高</td>
+<td>汽车变速箱、电梯、工业减速机</td>
+</tr>
+<tr>
+<td class="term-name">双螺旋齿轮<br/>(Herringbone)</td>
+<td>两组方向相反的螺旋齿在同一齿轮上。</td>
+<td>消除轴向推力、结合螺旋齿轮优点且无需推力轴承</td>
+<td>重型工业设备、船舶推进</td>
+</tr>
+<tr>
+<td class="term-name">内齿轮<br/>(Internal Gear)</td>
+<td>轮齿切割在圆筒内侧。与较小的外齿轮啮合。</td>
+<td>紧凑设计、同心轴布置</td>
+<td>行星齿轮组、内啮齿轮泵</td>
+</tr>
+<tr>
+<td class="term-name">齿条与齿轮<br/>(Rack &amp; Pinion)</td>
+<td>将旋转运动转换为直线运动。小齿轮（圆形）与齿条（直线）啮合。</td>
+<td>简单的直线传动、高精度定位</td>
+<td>转向系统、CNC机床、滑动门</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- 相交轴齿轮 -->
+<div id="bevel-worm" style="margin-bottom:40px">
+<h4 style="font-size:22px;font-weight:600;color:#002FA7;margin-bottom:15px;padding-left:15px;border-left:4px solid #C5A059">
                                 相交轴与非平行轴齿轮
                             </h4>
-                            <table class="term-table">
-                                <thead>
-                                    <tr>
-                                        <th style="width:150px">齿轮类型</th>
-                                        <th>描述</th>
-                                        <th>优点</th>
-                                        <th>常见应用</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="term-name">直齿伞齿轮<br>(Straight Bevel)</td>
-                                        <td>圆锥形齿轮，轮齿为直线状。轴线通常相交90°。</td>
-                                        <td>设计简单、适合低速应用</td>
-                                        <td>差速器齿轮、手持钻头</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="term-name">螺旋伞齿轮<br>(Spiral Bevel)</td>
-                                        <td>伞齿轮带有弧形轮齿，啮合更平顺。</td>
-                                        <td>更安静、载荷能力高于直齿伞齿轮</td>
-                                        <td>汽车车轴、航空减速箱</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="term-name">准双曲面齿轮<br>(Hypoid Gear)</td>
-                                        <td>类似螺旋伞齿轮，但轴线不相交（偏置）。</td>
-                                        <td>允许非相交轴、平顺安静</td>
-                                        <td>车辆后轴驱动</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="term-name">蜗轮蜗杆<br>(Worm Gear)</td>
-                                        <td>蜗杆（螺旋状）与蜗轮啮合。轴线非平行且不相交。</td>
-                                        <td>高减速比（高达100:1）、自锁功能</td>
-                                        <td>输送系统、调音机构、转向系统</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="term-name">交叉螺旋齿轮<br>(Crossed Helical)</td>
-                                        <td>两个螺旋齿轮轴线交叉（通常为90°）。</td>
-                                        <td>安装灵活、中等载荷</td>
-                                        <td>轻负载传动、车速表</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-
-                        <!-- 行星齿轮与特殊齿轮 -->
-                        <div id="planetary" style="margin-bottom:40px">
-                            <h4
-                                style="font-size:22px;font-weight:600;color:#002FA7;margin-bottom:15px;padding-left:15px;border-left:4px solid #C5A059">
+<table class="term-table">
+<thead>
+<tr>
+<th style="width:150px">齿轮类型</th>
+<th>描述</th>
+<th>优点</th>
+<th>常见应用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="term-name">直齿伞齿轮<br/>(Straight Bevel)</td>
+<td>圆锥形齿轮，轮齿为直线状。轴线通常相交90°。</td>
+<td>设计简单、适合低速应用</td>
+<td>差速器齿轮、手持钻头</td>
+</tr>
+<tr>
+<td class="term-name">螺旋伞齿轮<br/>(Spiral Bevel)</td>
+<td>伞齿轮带有弧形轮齿，啮合更平顺。</td>
+<td>更安静、载荷能力高于直齿伞齿轮</td>
+<td>汽车车轴、航空减速箱</td>
+</tr>
+<tr>
+<td class="term-name">准双曲面齿轮<br/>(Hypoid Gear)</td>
+<td>类似螺旋伞齿轮，但轴线不相交（偏置）。</td>
+<td>允许非相交轴、平顺安静</td>
+<td>车辆后轴驱动</td>
+</tr>
+<tr>
+<td class="term-name">蜗轮蜗杆<br/>(Worm Gear)</td>
+<td>蜗杆（螺旋状）与蜗轮啮合。轴线非平行且不相交。</td>
+<td>高减速比（高达100:1）、自锁功能</td>
+<td>输送系统、调音机构、转向系统</td>
+</tr>
+<tr>
+<td class="term-name">交叉螺旋齿轮<br/>(Crossed Helical)</td>
+<td>两个螺旋齿轮轴线交叉（通常为90°）。</td>
+<td>安装灵活、中等载荷</td>
+<td>轻负载传动、车速表</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- 行星齿轮与特殊齿轮 -->
+<div id="planetary" style="margin-bottom:40px">
+<h4 style="font-size:22px;font-weight:600;color:#002FA7;margin-bottom:15px;padding-left:15px;border-left:4px solid #C5A059">
                                 行星齿轮与专用齿轮系统
                             </h4>
-                            <table class="term-table">
-                                <thead>
-                                    <tr>
-                                        <th style="width:150px">齿轮类型</th>
-                                        <th>描述</th>
-                                        <th>优点</th>
-                                        <th>常见应用</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="term-name">行星齿轮组<br>(Planetary)</td>
-                                        <td>太阳齿轮 + 行星齿轮 + 环齿轮。行星齿轮围绕太阳齿轮公转。</td>
-                                        <td>紧凑、高扭矩密度、单一单元可提供多种传动比</td>
-                                        <td>自动变速箱、机器人、风力发电机</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="term-name">谐波减速机<br>(Harmonic Drive)</td>
-                                        <td>使用柔性花键、刚性花键和波发生器。零背隙。</td>
-                                        <td>极高精度、高减速比（30:1至320:1）、零背隙</td>
-                                        <td>机器人关节、卫星天线、半导体设备</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="term-name">摆线减速机<br>(Cycloidal)</td>
-                                        <td>偏心凸轮驱动摆线盘与环销啮合。</td>
-                                        <td>高抗冲击性、紧凑、高减速比</td>
-                                        <td>重型机械、工业机器人、伺服电机</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="term-name">非圆形齿轮<br>(Non-Circular)</td>
-                                        <td>具有非圆形节圆曲线（椭圆形、偏心等）的齿轮。</td>
-                                        <td>从恒定输入产生变速输出</td>
-                                        <td>包装机、纺织机械、特殊机构</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="term-name">端面齿轮<br>(Face Gear)</td>
-                                        <td>盘形齿轮，轮齿在端面上，与正齿轮或螺旋齿轮啮合。</td>
-                                        <td>不相交轴线的直角传动</td>
-                                        <td>航空致动器、差速器</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-
-                        <!-- PM 优势注解 -->
-                        <div class="decision-box" style="background:linear-gradient(135deg,#f0f4ff 0%,#e8f4fd 100%)">
-                            <h4>✨ 为何选择粉末冶金制造齿轮？</h4>
-                            <p style="font-size:15px;line-height:1.7;color:#555;margin-bottom:15px">
+<table class="term-table">
+<thead>
+<tr>
+<th style="width:150px">齿轮类型</th>
+<th>描述</th>
+<th>优点</th>
+<th>常见应用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="term-name">行星齿轮组<br/>(Planetary)</td>
+<td>太阳齿轮 + 行星齿轮 + 环齿轮。行星齿轮围绕太阳齿轮公转。</td>
+<td>紧凑、高扭矩密度、单一单元可提供多种传动比</td>
+<td>自动变速箱、机器人、风力发电机</td>
+</tr>
+<tr>
+<td class="term-name">谐波减速机<br/>(Harmonic Drive)</td>
+<td>使用柔性花键、刚性花键和波发生器。零背隙。</td>
+<td>极高精度、高减速比（30:1至320:1）、零背隙</td>
+<td>机器人关节、卫星天线、半导体设备</td>
+</tr>
+<tr>
+<td class="term-name">摆线减速机<br/>(Cycloidal)</td>
+<td>偏心凸轮驱动摆线盘与环销啮合。</td>
+<td>高抗冲击性、紧凑、高减速比</td>
+<td>重型机械、工业机器人、伺服电机</td>
+</tr>
+<tr>
+<td class="term-name">非圆形齿轮<br/>(Non-Circular)</td>
+<td>具有非圆形节圆曲线（椭圆形、偏心等）的齿轮。</td>
+<td>从恒定输入产生变速输出</td>
+<td>包装机、纺织机械、特殊机构</td>
+</tr>
+<tr>
+<td class="term-name">端面齿轮<br/>(Face Gear)</td>
+<td>盘形齿轮，轮齿在端面上，与正齿轮或螺旋齿轮啮合。</td>
+<td>不相交轴线的直角传动</td>
+<td>航空致动器、差速器</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- PM 优势注解 -->
+<div class="decision-box" style="background:linear-gradient(135deg,#f0f4ff 0%,#e8f4fd 100%)">
+<h4>✨ 为何选择粉末冶金制造齿轮？</h4>
+<p style="font-size:15px;line-height:1.7;color:#555;margin-bottom:15px">
                                 上述许多齿轮类型都可以使用<strong>粉末冶金 (PM)</strong>制造，具有显著优势：
                             </p>
-                            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:15px">
-                                <div
-                                    style="background:white;padding:15px;border-radius:8px;border-left:3px solid #C5A059">
-                                    <strong style="color:#002FA7">💰 成本降低30%</strong>
-                                    <p style="font-size:13px;margin:8px 0 0;color:#666">大量生产时单件成本低于CNC加工</p>
-                                </div>
-                                <div
-                                    style="background:white;padding:15px;border-radius:8px;border-left:3px solid #C5A059">
-                                    <strong style="color:#002FA7">🎯 ±0.01mm精度</strong>
-                                    <p style="font-size:13px;margin:8px 0 0;color:#666">可达AGMA 8-9级精度</p>
-                                </div>
-                                <div
-                                    style="background:white;padding:15px;border-radius:8px;border-left:3px solid #C5A059">
-                                    <strong style="color:#002FA7">🌱 材料利用率95%+</strong>
-                                    <p style="font-size:13px;margin:8px 0 0;color:#666">近净成形制程最大程度减少浪费</p>
-                                </div>
-                                <div
-                                    style="background:white;padding:15px;border-radius:8px;border-left:3px solid #C5A059">
-                                    <strong style="color:#002FA7">🛠️ 自润滑特性</strong>
-                                    <p style="font-size:13px;margin:8px 0 0;color:#666">多孔结构可浸油处理</p>
-                                </div>
-                            </div>
-                            <p style="margin-top:20px;font-size:14px;color:#666">
-                                <strong>👉 最适合PM制造的齿轮：</strong>正齿轮、螺旋齿轮、内齿轮及行星齿轮组件是粉末冶金制造的理想选择。
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:15px">
+<div style="background:white;padding:15px;border-radius:8px;border-left:3px solid #C5A059">
+<strong style="color:#002FA7">💰 成本降低30%</strong>
+<p style="font-size:13px;margin:8px 0 0;color:#666">大量生产时单件成本低于CNC加工</p>
+</div>
+<div style="background:white;padding:15px;border-radius:8px;border-left:3px solid #C5A059">
+<strong style="color:#002FA7">🎯 ±0.01mm精度</strong>
+<p style="font-size:13px;margin:8px 0 0;color:#666">可达AGMA 8-9级精度</p>
+</div>
+<div style="background:white;padding:15px;border-radius:8px;border-left:3px solid #C5A059">
+<strong style="color:#002FA7">🌱 材料利用率95%+</strong>
+<p style="font-size:13px;margin:8px 0 0;color:#666">近净成形制程最大程度减少浪费</p>
+</div>
+<div style="background:white;padding:15px;border-radius:8px;border-left:3px solid #C5A059">
+<strong style="color:#002FA7">🛠️ 自润滑特性</strong>
+<p style="font-size:13px;margin:8px 0 0;color:#666">多孔结构可浸油处理</p>
+</div>
+</div>
+<p style="margin-top:20px;font-size:14px;color:#666">
+<strong>👉 最适合PM制造的齿轮：</strong>正齿轮、螺旋齿轮、内齿轮及行星齿轮组件是粉末冶金制造的理想选择。
                                 <a href="gears.html" style="color:#002FA7;font-weight:600">了解更多我们的PM齿轮制造能力 →</a>
-                            </p>
-                        </div>
-                    </div>
+</p>
+</div>
+</div></div></div>
 </div> <!-- End resource-content -->
-            </div> <!-- End resource-layout -->
-        </div>
-    </section>
-
-    <!-- Smooth Scroll JavaScript -->
-    <script>
+</div> <!-- End resource-layout -->
+</div>
+</section>
+<!-- Smooth Scroll JavaScript -->
+<script>
         // Smooth scroll for sidebar navigation
         document.querySelectorAll('.sidebar-nav a').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -774,21 +801,20 @@
             });
         });
     </script>
-    <footer style="background:#002FA7;color:white;padding:60px 0 30px">
-        <div class="container" style="text-align:center">
-            <h3 style="color: #996B1D;margin-bottom:15px">冶圣工业股份有限公司</h3>
-            <p style="color:#a0b0d0;font-size:14px;margin-bottom:30px">新北市新庄区中正路721巷11号 | YS@yehsheng.com</p>
-            <p style="color:#e0e0e0;font-size:13px">© 2024 冶圣工业股份有限公司 版权所有。</p>
-        </div>
-    </footer>
-    <script>
+<footer style="background:#002FA7;color:white;padding:60px 0 30px">
+<div class="container" style="text-align:center">
+<h3 style="color: #996B1D;margin-bottom:15px">冶圣工业股份有限公司</h3>
+<p style="color:#a0b0d0;font-size:14px;margin-bottom:30px">新北市新庄区中正路721巷11号 | YS@yehsheng.com</p>
+<p style="color:#e0e0e0;font-size:13px">© 2024 冶圣工业股份有限公司 版权所有。</p>
+</div>
+</footer>
+<script>
         function toggleMenu() { document.getElementById('mobileMenu').classList.toggle('active') }
         function toggleLangMenu() { var m = document.getElementById("langMenu"); m.style.display = (m.style.display === "none" || m.style.display === "") ? "block" : "none" }
         document.addEventListener('click', function (e) { var m = document.getElementById("langMenu"); if (!e.target.closest('#langMenu') && !e.target.matches('[onclick="toggleLangMenu()"]')) { if (m) m.style.display = "none" } });
     </script>
-
-    <!-- Floating CTA Button -->
-    <a id="floating-cta" href="contact.html" style="
+<!-- Floating CTA Button -->
+<a href="contact.html" id="floating-cta" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 20px rgba(197,160,89,0.4)'" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 6px 25px rgba(197,160,89,0.5)'" style="
         position: fixed;
         bottom: 28px;
         right: 28px;
@@ -806,10 +832,44 @@
         align-items: center;
         gap: 6px;
         transition: all 0.3s ease;
-    " onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 6px 25px rgba(197,160,89,0.5)'"
-        onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 20px rgba(197,160,89,0.4)'">💬
+    ">💬
         免费报价</a>
-
-</body>
-
+<script>
+            function toggleAccordion(header) {
+                const card = header.closest('.accordion-card');
+                card.classList.toggle('active');
+            }
+            
+            function openAccordionFromHash() {
+                if (window.location.hash) {
+                    const target = document.querySelector(window.location.hash);
+                    if (target && target.classList.contains('accordion-card')) {
+                        target.classList.add('active');
+                        setTimeout(() => {
+                            const offsetTop = target.getBoundingClientRect().top + window.scrollY - 120;
+                            window.scrollTo({ top: offsetTop, behavior: 'smooth' });
+                        }, 300); // Wait for transition
+                    }
+                }
+            }
+            
+            window.addEventListener('hashchange', openAccordionFromHash);
+            document.addEventListener('DOMContentLoaded', function() {
+                openAccordionFromHash();
+                
+                // Intercept sidebar clicks
+                document.querySelectorAll('.sidebar-nav a').forEach(anchor => {
+                    anchor.addEventListener('click', function (e) {
+                        const href = this.getAttribute('href');
+                        if (href && href.includes('#')) {
+                            const targetId = href.split('#')[1];
+                            const targetElement = document.getElementById(targetId);
+                            if (targetElement && targetElement.classList.contains('accordion-card')) {
+                                targetElement.classList.add('active');
+                            }
+                        }
+                    });
+                });
+            });
+            </script></body>
 </html>

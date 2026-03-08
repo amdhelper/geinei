@@ -1,10 +1,10 @@
 ﻿<!DOCTYPE html>
-<html lang="ja">
 
+<html lang="ja">
 <head>
-    <meta name="google-site-verification" content="YUhT_jRF5sxYfCWMMcB08B38K6MB2yAEv4wEo1fjdXg" />
-    <!-- Google Analytics & Clarity (production only) -->
-    <script>
+<meta content="YUhT_jRF5sxYfCWMMcB08B38K6MB2yAEv4wEo1fjdXg" name="google-site-verification"/>
+<!-- Google Analytics & Clarity (production only) -->
+<script>
         if (window.location.hostname === 'yehsheng.com') {
             var gaScript = document.createElement('script');
             gaScript.async = true;
@@ -21,16 +21,14 @@
             })(window, document, "clarity", "script", "q46c2dab8f");
         }
     </script>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>【技術資料】粉末冶金FAQ、材料規格、MPIF基準</title>
-    <meta content="粉末冶金（PM）に関する技術リソース。PM部品の強度、コスト、材料に関するよくある質問（FAQ）や、業界用語集、MPIF規格などをご案内します。" name="description" />
-    <link href="https://fonts.googleapis.com" rel="preconnect" />
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet" />
-    <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>【技術資料】粉末冶金FAQ、材料規格、MPIF基準</title>
+<meta content="粉末冶金（PM）に関する技術リソース。PM部品の強度、コスト、材料に関するよくある質問（FAQ）や、業界用語集、MPIF規格などをご案内します。" name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&amp;family=Noto+Sans+JP:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<style>
         body {
             margin: 0;
             padding: 0;
@@ -372,15 +370,15 @@
             font-weight: bold
         }
     </style>
-    <link href="https://yehsheng.com/jp/resources.html" rel="canonical" />
-    <link rel="alternate" hreflang="en" href="https://yehsheng.com/resources.html" />
-    <link rel="alternate" hreflang="zh-Hant" href="https://yehsheng.com/zh/resources.html" />
-    <link rel="alternate" hreflang="zh-Hans" href="https://yehsheng.com/zh-cn/resources.html" />
-    <link rel="alternate" hreflang="de" href="https://yehsheng.com/de/resources.html" />
-    <link rel="alternate" hreflang="ja" href="https://yehsheng.com/jp/resources.html" />
-    <link rel="alternate" hreflang="x-default" href="https://yehsheng.com/resources.html" />
-    <link rel="icon" href="../images/logo.png" type="image/png">
-    <script type="application/ld+json">
+<link href="https://yehsheng.com/jp/resources.html" rel="canonical"/>
+<link href="https://yehsheng.com/resources.html" hreflang="en" rel="alternate"/>
+<link href="https://yehsheng.com/zh/resources.html" hreflang="zh-Hant" rel="alternate"/>
+<link href="https://yehsheng.com/zh-cn/resources.html" hreflang="zh-Hans" rel="alternate"/>
+<link href="https://yehsheng.com/de/resources.html" hreflang="de" rel="alternate"/>
+<link href="https://yehsheng.com/jp/resources.html" hreflang="ja" rel="alternate"/>
+<link href="https://yehsheng.com/resources.html" hreflang="x-default" rel="alternate"/>
+<link href="../images/logo.png" rel="icon" type="image/png"/>
+<script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",
@@ -393,538 +391,556 @@
       ]
     }
     </script>
-</head>
-
+<style>
+            .accordion-card {
+                background: #fff;
+                border-radius: 12px;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+                margin-bottom: 25px;
+                overflow: hidden;
+                border: 1px solid #eee;
+                transition: all 0.3s ease;
+            }
+            .accordion-card:hover {
+                box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+                transform: translateY(-2px);
+            }
+            .accordion-header {
+                padding: 15px 30px;
+                cursor: pointer;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background: #fdfbf7;
+                border-bottom: 1px solid transparent;
+                transition: all 0.3s ease;
+            }
+            .accordion-card.active .accordion-header {
+                border-bottom: 1px solid #eee;
+                background: #fff;
+            }
+            .accordion-icon {
+                font-size: 20px;
+                color: #C5A059;
+                transition: transform 0.3s ease;
+            }
+            .accordion-card.active .accordion-icon {
+                transform: rotate(180deg);
+            }
+            .accordion-body-wrapper {
+                display: grid;
+                grid-template-rows: 0fr;
+                transition: grid-template-rows 0.3s ease-out;
+            }
+            .accordion-card.active .accordion-body-wrapper {
+                grid-template-rows: 1fr;
+            }
+            .accordion-body-inner {
+                overflow: hidden;
+                padding: 0 30px;
+                opacity: 0;
+                transition: opacity 0.3s ease-out, padding 0.3s ease;
+            }
+            .accordion-card.active .accordion-body-inner {
+                padding: 30px 30px 30px 30px;
+                opacity: 1;
+            }
+            /* Mobile adjustment */
+            @media (max-width: 768px) {
+                .accordion-header { padding: 15px 20px; }
+                .accordion-body-inner { padding: 0 20px; }
+                .accordion-card.active .accordion-body-inner { padding: 20px; }
+                .accordion-header h3 { font-size: 20px !important; }
+            }
+            </style></head>
 <body>
-    <div class="hidden-mobile" style="background:#002FA7;color:white;padding:10px 0;position:relative;z-index:200">
-        <div class="container" style="display:flex;justify-content:flex-end;gap:25px;font-size:13px;font-weight:500">
-            <a href="about.html" style="color:#e8e8e8">会社概要</a>
-            <a href="contact.html" style="color:#e8e8e8">お問い合わせ</a>
-            <div style="position:relative;display:inline-block">
-                <span style="color: #996B1D;font-weight:600;cursor:pointer" onclick="toggleLangMenu()">日本語 ▼</span>
-                <div id="langMenu"
-                    style="display:none;position:absolute;right:0;top:100%;background:white;box-shadow:0 4px 12px rgba(0,0,0,0.15);border-radius:4px;min-width:120px;z-index:10000">
-                    <a href="../resources.html"
-                        style="display:block;padding:10px 15px;color:#333;font-size:13px">English</a>
-                    <a href="../zh/resources.html"
-                        style="display:block;padding:10px 15px;color:#333;font-size:13px">繁體中文</a>
-                    <a href="../zh-cn/resources.html"
-                        style="display:block;padding:10px 15px;color:#333;font-size:13px">简体中文</a>
-                    <a href="../de/resources.html"
-                        style="display:block;padding:10px 15px;color:#333;font-size:13px">Deutsch</a>
-                    <a href="../jp/resources.html"
-                        style="display:block;padding:10px 15px;color: #996B1D;font-size:13px;background:#f5f5f5">日本語</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <nav style="background:white;box-shadow:0 2px 10px rgba(0,0,0,0.05);position:sticky;top:0;z-index:100">
-        <div class="container"
-            style="padding:15px 20px;display:flex;justify-content:space-between;align-items:center;position:relative">
-            <a href="index.html" style="display:flex;align-items:center;gap:15px" aria-label="Go to homepage">
-                <img alt="Logo" src="../images/logo.png" style="height:  40px;" width="49" height="40">
-                <div><span style="font-size:18px;font-weight:700;color:#111;display:block">Yeh Sheng Powder
+<div class="hidden-mobile" style="background:#002FA7;color:white;padding:10px 0;position:relative;z-index:200">
+<div class="container" style="display:flex;justify-content:flex-end;gap:25px;font-size:13px;font-weight:500">
+<a href="about.html" style="color:#e8e8e8">会社概要</a>
+<a href="contact.html" style="color:#e8e8e8">お問い合わせ</a>
+<div style="position:relative;display:inline-block">
+<span onclick="toggleLangMenu()" style="color: #996B1D;font-weight:600;cursor:pointer">日本語 ▼</span>
+<div id="langMenu" style="display:none;position:absolute;right:0;top:100%;background:white;box-shadow:0 4px 12px rgba(0,0,0,0.15);border-radius:4px;min-width:120px;z-index:10000">
+<a href="../resources.html" style="display:block;padding:10px 15px;color:#333;font-size:13px">English</a>
+<a href="../zh/resources.html" style="display:block;padding:10px 15px;color:#333;font-size:13px">繁體中文</a>
+<a href="../zh-cn/resources.html" style="display:block;padding:10px 15px;color:#333;font-size:13px">简体中文</a>
+<a href="../de/resources.html" style="display:block;padding:10px 15px;color:#333;font-size:13px">Deutsch</a>
+<a href="../jp/resources.html" style="display:block;padding:10px 15px;color: #996B1D;font-size:13px;background:#f5f5f5">日本語</a>
+</div>
+</div>
+</div>
+</div>
+<nav style="background:white;box-shadow:0 2px 10px rgba(0,0,0,0.05);position:sticky;top:0;z-index:100">
+<div class="container" style="padding:15px 20px;display:flex;justify-content:space-between;align-items:center;position:relative">
+<a aria-label="Go to homepage" href="index.html" style="display:flex;align-items:center;gap:15px">
+<img alt="Logo" height="40" src="../images/logo.png" style="height:  40px;" width="49"/>
+<div><span style="font-size:18px;font-weight:700;color:#111;display:block">Yeh Sheng Powder
                         Parts</span><span style="font-size:10px;font-weight:600;color: #996B1D">粉末冶金エキスパート</span></div>
-            </a>
-            <div class="hidden-mobile" style="display:flex;gap:35px;align-items:center">
-                <a href="products.html" style="font-size:15px;font-weight:500;color:#333">製品紹介</a>
-                <a href="solutions.html" style="font-size:15px;font-weight:500;color:#333">サービス</a>
-                <a href="capabilities.html" style="font-size:15px;font-weight:500;color:#333">製造能力</a>
-                <a href="applications.html" style="font-size:15px;font-weight:500;color:#333">産業分野</a>
-                <a href="case-studies.html" style="font-size:15px;color:#555">導入事例</a>
-                <a href="resources.html" style="font-size:15px;font-weight:700;color: #996B1D">リソース</a>
-                <a href="contact.html"
-                    style="background:#C5A059;color:white;padding:8px 20px;border-radius:4px;font-size:14px;font-weight:500">お問い合わせ</a>
+</a>
+<div class="hidden-mobile" style="display:flex;gap:35px;align-items:center">
+<a href="products.html" style="font-size:15px;font-weight:500;color:#333">製品紹介</a>
+<a href="solutions.html" style="font-size:15px;font-weight:500;color:#333">サービス</a>
+<a href="capabilities.html" style="font-size:15px;font-weight:500;color:#333">製造能力</a>
+<a href="applications.html" style="font-size:15px;font-weight:500;color:#333">産業分野</a>
+<a href="case-studies.html" style="font-size:15px;color:#555">導入事例</a>
+<a href="resources.html" style="font-size:15px;font-weight:700;color: #996B1D">リソース</a>
+<a href="contact.html" style="background:#C5A059;color:white;padding:8px 20px;border-radius:4px;font-size:14px;font-weight:500">お問い合わせ</a>
+</div>
+<div aria-label="Toggle menu" class="mobile-menu-btn" onclick="toggleMenu()" role="button" tabindex="0">☰
             </div>
-            <div class="mobile-menu-btn" onclick="toggleMenu()" aria-label="Toggle menu" role="button" tabindex="0">☰
-            </div>
-            <div class="mobile-menu" id="mobileMenu">
-                <div onclick="toggleMenu()"
-                    style="text-align:right;padding:5px 0 15px;cursor:pointer;font-size:24px;color:#333;"
-                    aria-label="Close menu" role="button" tabindex="0">✕</div>
-                <a href="products.html" style="padding:10px 0;border-bottom:1px solid #eee">製品紹介</a>
-                <a href="solutions.html" style="padding:10px 0;border-bottom:1px solid #eee">サービス</a>
-                <a href="capabilities.html" style="padding:10px 0;border-bottom:1px solid #eee">製造能力</a>
-                <a href="applications.html" style="padding:10px 0;border-bottom:1px solid #eee">産業分野</a>
-                <a href="case-studies.html" style="font-size:14px;color:#555">導入事例</a>
-                <a href="resources.html"
-                    style="padding:10px 0;border-bottom:1px solid #eee;color: #996B1D;font-weight:700">リソース</a>
-                <a href="about.html" style="padding:10px 0;border-bottom:1px solid #eee">会社概要</a>
-                <a href="contact.html" style="padding:10px 0;color: #996B1D">お問い合わせ</a>
-                <div style="border-top:2px solid #C5A059;margin-top:10px;padding-top:15px;">
-                    <div style="font-size:14px;font-weight:600;color: #996B1D;margin-bottom:10px;">🌐 言語</div>
-                    <a href="../resources.html" style="display:block;padding:8px 0;color:#333;">🇺🇸 English</a>
-                    <a href="../zh/resources.html" style="display:block;padding:8px 0;color:#333;">🇹🇼 繁體中文</a>
-                    <a href="../zh-cn/resources.html" style="display:block;padding:8px 0;color:#333;">🇨🇳 简体中文</a>
-                    <a href="../de/resources.html" style="display:block;padding:8px 0;color:#333;">🇩🇪 Deutsch</a>
-                    <a href="../jp/resources.html"
-                        style="display:block;padding:8px 0;color: #996B1D;font-weight:600;">🇯🇵 日本語</a>
-                </div>
-            </div>
-        </div>
-    </nav>
-    <section role="main" style="padding:80px 0;background:white">
-        <div class="container">
-            <div style="text-align:center;margin-bottom:60px">
-                <h1
-                    style="font-family:'Playfair Display',serif;font-size:42px;font-weight:700;color:#111;margin-bottom:20px">
+<div class="mobile-menu" id="mobileMenu">
+<div aria-label="Close menu" onclick="toggleMenu()" role="button" style="text-align:right;padding:5px 0 15px;cursor:pointer;font-size:24px;color:#333;" tabindex="0">✕</div>
+<a href="products.html" style="padding:10px 0;border-bottom:1px solid #eee">製品紹介</a>
+<a href="solutions.html" style="padding:10px 0;border-bottom:1px solid #eee">サービス</a>
+<a href="capabilities.html" style="padding:10px 0;border-bottom:1px solid #eee">製造能力</a>
+<a href="applications.html" style="padding:10px 0;border-bottom:1px solid #eee">産業分野</a>
+<a href="case-studies.html" style="font-size:14px;color:#555">導入事例</a>
+<a href="resources.html" style="padding:10px 0;border-bottom:1px solid #eee;color: #996B1D;font-weight:700">リソース</a>
+<a href="about.html" style="padding:10px 0;border-bottom:1px solid #eee">会社概要</a>
+<a href="contact.html" style="padding:10px 0;color: #996B1D">お問い合わせ</a>
+<div style="border-top:2px solid #C5A059;margin-top:10px;padding-top:15px;">
+<div style="font-size:14px;font-weight:600;color: #996B1D;margin-bottom:10px;">🌐 言語</div>
+<a href="../resources.html" style="display:block;padding:8px 0;color:#333;">🇺🇸 English</a>
+<a href="../zh/resources.html" style="display:block;padding:8px 0;color:#333;">🇹🇼 繁體中文</a>
+<a href="../zh-cn/resources.html" style="display:block;padding:8px 0;color:#333;">🇨🇳 简体中文</a>
+<a href="../de/resources.html" style="display:block;padding:8px 0;color:#333;">🇩🇪 Deutsch</a>
+<a href="../jp/resources.html" style="display:block;padding:8px 0;color: #996B1D;font-weight:600;">🇯🇵 日本語</a>
+</div>
+</div>
+</div>
+</nav>
+<section role="main" style="padding:80px 0;background:white">
+<div class="container">
+<div style="text-align:center;margin-bottom:60px">
+<h1 style="font-family:'Playfair Display',serif;font-size:42px;font-weight:700;color:#111;margin-bottom:20px">
                     技術リソース</h1>
-                <h2
-                    style="font-family:'Playfair Display',serif;font-size:32px;font-weight:700;color:#555;margin-bottom:20px">
-                    ナレッジベース & FAQ</h2>
-                <div style="width:80px;height:4px;background:#C5A059;margin:0 auto 30px"></div>
-                <p style="font-size:18px;color:#666;max-width:800px;margin:0 auto;line-height:1.6">
+<h2 style="font-family:'Playfair Display',serif;font-size:32px;font-weight:700;color:#555;margin-bottom:20px">
+                    ナレッジベース &amp; FAQ</h2>
+<div style="width:80px;height:4px;background:#C5A059;margin:0 auto 30px"></div>
+<p style="font-size:18px;color:#666;max-width:800px;margin:0 auto;line-height:1.6">
                     粉末冶金に関するよくある質問と、業界用語の包括的な用語集をご覧ください。</p>
-            </div>
-
-            <!-- Layout with Sidebar -->
-            <div class="resource-layout"><aside class="resource-sidebar">
-                    <div class="sidebar-title">📋 クイックナビ</div>
-                    <ul class="sidebar-nav">
-                        <li><a href="case-studies.html">📋 導入事例</a></li>
-                        <li><a href="resource-process.html#process-guide">🔄 プロセス選定</a></li>
-                        <li><a href="resource-design.html#gear-types">⚙️ 歯車種類大全</a></li>
-                        <li class="sub-item"><a href="resource-design.html#spur-helical">• 平歯車/はすば歯車</a></li>
-                        <li class="sub-item"><a href="resource-design.html#bevel-worm">• かさ/ウォーム歯車</a></li>
-                        <li class="sub-item"><a href="resource-design.html#planetary">• 遊星/特殊歯車</a></li>
-                        <li><a href="resource-materials.html#powder-production">🔬 粉末製造</a></li>
-                        <li><a href="resource-quality.html#quality-control">📊 品質管理</a></li>
-                        <li><a href="resource-materials.html#density-porosity">⚡ 密度・気孔率</a></li>
-                        <li><a href="resource-faq.html#faq">❓ FAQ</a></li>
-                        <li><a href="resource-faq.html#glossary">📖 用語集</a></li>
-                        <li><a href="resource-materials.html#materials">🔧 材料仕様</a></li>
-                        <li class="sub-item"><a href="resource-materials.html#iron-steel">• 鉄銅炭素鋼</a></li>
-                        <li class="sub-item"><a href="resource-materials.html#stainless">• ステンレス鋼</a></li>
-                        <li class="sub-item"><a href="resource-materials.html#magnetic">• 軟磁性材料</a></li>
-                        <li class="sub-item"><a href="resource-materials.html#bronze-brass">• 青銅・真鍮</a></li>
-                    </ul>
-                </aside>
-
-                <!-- Main Content -->
-                <div class="resource-content">
+</div>
+<!-- Layout with Sidebar -->
+<div class="resource-layout"><aside class="resource-sidebar">
+<div class="sidebar-title">📋 クイックナビ</div>
+<ul class="sidebar-nav">
+<li><a href="case-studies.html">📋 導入事例</a></li>
+<li><a href="resource-process.html#process-guide">🔄 プロセス選定</a></li>
+<li><a href="resource-design.html#gear-types">⚙️ 歯車種類大全</a></li>
+<li class="sub-item"><a href="resource-design.html#spur-helical">• 平歯車/はすば歯車</a></li>
+<li class="sub-item"><a href="resource-design.html#bevel-worm">• かさ/ウォーム歯車</a></li>
+<li class="sub-item"><a href="resource-design.html#planetary">• 遊星/特殊歯車</a></li>
+<li><a href="resource-materials.html#powder-production">🔬 粉末製造</a></li>
+<li><a href="resource-quality.html#quality-control">📊 品質管理</a></li>
+<li><a href="resource-materials.html#density-porosity">⚡ 密度・気孔率</a></li>
+<li><a href="resource-faq.html#faq">❓ FAQ</a></li>
+<li><a href="resource-faq.html#glossary">📖 用語集</a></li>
+<li><a href="resource-materials.html#materials">🔧 材料仕様</a></li>
+<li class="sub-item"><a href="resource-materials.html#iron-steel">• 鉄銅炭素鋼</a></li>
+<li class="sub-item"><a href="resource-materials.html#stainless">• ステンレス鋼</a></li>
+<li class="sub-item"><a href="resource-materials.html#magnetic">• 軟磁性材料</a></li>
+<li class="sub-item"><a href="resource-materials.html#bronze-brass">• 青銅・真鍮</a></li>
+</ul>
+</aside>
+<!-- Main Content -->
+<div class="resource-content">
 <!-- NEW: Density & Porosity Engineering Guide -->
-                    <div id="density-porosity" style="margin-bottom: 80px;">
-                        <h3
-                            style="font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 700; color: #333; margin-bottom: 15px; border-bottom: 2px solid #eee; padding-bottom: 10px;">
+<div class="accordion-card" id="density-porosity"><div class="accordion-header" onclick="toggleAccordion(this)"><h3 style="font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 700; color: #333; margin-bottom: 15px; border-bottom: 2px solid #eee; padding-bottom: 10px;; margin: 0 !important; border: none; padding: 0; font-size: 24px;">
                             ⚡ ⚡ PM密度と気孔率 — エンジニアリングガイド
-                        </h3>
-                        <p style="font-size: 16px; color: #555; line-height: 1.7; margin-bottom: 25px;">
+                        </h3><span class="accordion-icon">🔽</span></div><div class="accordion-body-wrapper"><div class="accordion-body-inner">
+
+<p style="font-size: 16px; color: #555; line-height: 1.7; margin-bottom: 25px;">
                             Density is the single most important parameter in powder metallurgy. It directly
                             controls mechanical strength, hardness, wear resistance, and fatigue life. Unlike
                             wrought metals, PM engineers can precisely control density and porosity to balance
                             performance, cost, and unique functional properties.
                         </p>
-
-                        <h4
-                            style="font-size: 22px; font-weight: 600; color: #002FA7; margin-bottom: 15px; padding-left: 15px; border-left: 4px solid #C5A059;">
+<h4 style="font-size: 22px; font-weight: 600; color: #002FA7; margin-bottom: 15px; padding-left: 15px; border-left: 4px solid #C5A059;">
                             密度と機械的特性の関係
                         </h4>
-                        <div
-                            style="background: linear-gradient(135deg, #f0f4ff 0%, #e8f4fd 100%); border: 2px solid #C5A059; border-radius: 12px; padding: 25px; margin-bottom: 25px;">
-                            <p style="font-size: 15px; line-height: 1.8; color: #333; margin: 0 0 15px 0;">
+<div style="background: linear-gradient(135deg, #f0f4ff 0%, #e8f4fd 100%); border: 2px solid #C5A059; border-radius: 12px; padding: 25px; margin-bottom: 25px;">
+<p style="font-size: 15px; line-height: 1.8; color: #333; margin: 0 0 15px 0;">
                                 For iron-based PM parts, every <strong>0.1 g/cm³ increase in density</strong>
                                 typically yields:
                             </p>
-                            <div
-                                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px;">
-                                <div style="background: white; padding: 15px; border-radius: 8px; text-align: center;">
-                                    <div style="font-size: 28px; font-weight: 700; color: #002FA7;">+7%</div>
-                                    <strong style="font-size: 13px; color: #333;">Tensile Strength</strong>
-                                </div>
-                                <div style="background: white; padding: 15px; border-radius: 8px; text-align: center;">
-                                    <div style="font-size: 28px; font-weight: 700; color: #002FA7;">+5%</div>
-                                    <strong style="font-size: 13px; color: #333;">Hardness</strong>
-                                </div>
-                                <div style="background: white; padding: 15px; border-radius: 8px; text-align: center;">
-                                    <div style="font-size: 28px; font-weight: 700; color: #002FA7;">+10%</div>
-                                    <strong style="font-size: 13px; color: #333;">Fatigue Strength</strong>
-                                </div>
-                                <div style="background: white; padding: 15px; border-radius: 8px; text-align: center;">
-                                    <div style="font-size: 28px; font-weight: 700; color: #002FA7;">+8%</div>
-                                    <strong style="font-size: 13px; color: #333;">Impact Energy</strong>
-                                </div>
-                            </div>
-                            <p style="font-size: 14px; color: #666; margin: 15px 0 0 0;">
-                                <strong>Note:</strong> The relationship is not linear. Above 7.0 g/cm³, properties
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px;">
+<div style="background: white; padding: 15px; border-radius: 8px; text-align: center;">
+<div style="font-size: 28px; font-weight: 700; color: #002FA7;">+7%</div>
+<strong style="font-size: 13px; color: #333;">Tensile Strength</strong>
+</div>
+<div style="background: white; padding: 15px; border-radius: 8px; text-align: center;">
+<div style="font-size: 28px; font-weight: 700; color: #002FA7;">+5%</div>
+<strong style="font-size: 13px; color: #333;">Hardness</strong>
+</div>
+<div style="background: white; padding: 15px; border-radius: 8px; text-align: center;">
+<div style="font-size: 28px; font-weight: 700; color: #002FA7;">+10%</div>
+<strong style="font-size: 13px; color: #333;">Fatigue Strength</strong>
+</div>
+<div style="background: white; padding: 15px; border-radius: 8px; text-align: center;">
+<div style="font-size: 28px; font-weight: 700; color: #002FA7;">+8%</div>
+<strong style="font-size: 13px; color: #333;">Impact Energy</strong>
+</div>
+</div>
+<p style="font-size: 14px; color: #666; margin: 15px 0 0 0;">
+<strong>Note:</strong> The relationship is not linear. Above 7.0 g/cm³, properties
                                 improve more dramatically as pores become isolated (closed porosity). The
                                 theoretical density of pure iron is 7.87 g/cm³.
                             </p>
-                        </div>
-
-                        <h4
-                            style="font-size: 22px; font-weight: 600; color: #002FA7; margin-bottom: 15px; padding-left: 15px; border-left: 4px solid #C5A059;">
+</div>
+<h4 style="font-size: 22px; font-weight: 600; color: #002FA7; margin-bottom: 15px; padding-left: 15px; border-left: 4px solid #C5A059;">
                             用途別の密度範囲
                         </h4>
-                        <table class="process-table">
-                            <thead>
-                                <tr>
-                                    <th>Density Range<br>(g/cm³)</th>
-                                    <th>% of Theoretical</th>
-                                    <th>Typical Applications</th>
-                                    <th>Process Method</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><strong>5.0 – 6.0</strong></td>
-                                    <td>64 – 76%</td>
-                                    <td>Self-lubricating bearings, filters, dampers</td>
-                                    <td>Low-pressure compaction</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>6.0 – 6.6</strong></td>
-                                    <td>76 – 84%</td>
-                                    <td>General structural parts, spacers, non-critical components</td>
-                                    <td>Standard press & sinter</td>
-                                </tr>
-                                <tr>
-                                    <td class="highlight-pm"><strong>6.6 – 7.0</strong></td>
-                                    <td class="highlight-pm">84 – 89%</td>
-                                    <td class="highlight-pm">Gears, sprockets, cams — standard engineering parts
+<table class="process-table">
+<thead>
+<tr>
+<th>Density Range<br/>(g/cm³)</th>
+<th>% of Theoretical</th>
+<th>Typical Applications</th>
+<th>Process Method</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>5.0 – 6.0</strong></td>
+<td>64 – 76%</td>
+<td>Self-lubricating bearings, filters, dampers</td>
+<td>Low-pressure compaction</td>
+</tr>
+<tr>
+<td><strong>6.0 – 6.6</strong></td>
+<td>76 – 84%</td>
+<td>General structural parts, spacers, non-critical components</td>
+<td>Standard press &amp; sinter</td>
+</tr>
+<tr>
+<td class="highlight-pm"><strong>6.6 – 7.0</strong></td>
+<td class="highlight-pm">84 – 89%</td>
+<td class="highlight-pm">Gears, sprockets, cams — standard engineering parts
                                     </td>
-                                    <td class="highlight-pm">High-pressure compaction</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>7.0 – 7.4</strong></td>
-                                    <td>89 – 94%</td>
-                                    <td>High-performance gears, structural components</td>
-                                    <td>Double pressing, warm compaction, or Cu infiltration</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>7.4 – 7.8</strong></td>
-                                    <td>94 – 99%</td>
-                                    <td>Connecting rods, critical aerospace parts</td>
-                                    <td>Powder forging, HIP, or MIM</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                        <h4
-                            style="font-size: 22px; font-weight: 600; color: #002FA7; margin-bottom: 15px; margin-top: 30px; padding-left: 15px; border-left: 4px solid #C5A059;">
+<td class="highlight-pm">High-pressure compaction</td>
+</tr>
+<tr>
+<td><strong>7.0 – 7.4</strong></td>
+<td>89 – 94%</td>
+<td>High-performance gears, structural components</td>
+<td>Double pressing, warm compaction, or Cu infiltration</td>
+</tr>
+<tr>
+<td><strong>7.4 – 7.8</strong></td>
+<td>94 – 99%</td>
+<td>Connecting rods, critical aerospace parts</td>
+<td>Powder forging, HIP, or MIM</td>
+</tr>
+</tbody>
+</table>
+<h4 style="font-size: 22px; font-weight: 600; color: #002FA7; margin-bottom: 15px; margin-top: 30px; padding-left: 15px; border-left: 4px solid #C5A059;">
                             密度を高める方法
                         </h4>
-                        <table class="term-table">
-                            <thead>
-                                <tr>
-                                    <th style="width: 200px;">Method</th>
-                                    <th>Achievable Density</th>
-                                    <th>How It Works</th>
-                                    <th>Cost Impact</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="term-name">High-Pressure Compaction</td>
-                                    <td>Up to 7.1 g/cm³</td>
-                                    <td>Increase compaction pressure from 500 MPa to 700+ MPa using larger presses
+<table class="term-table">
+<thead>
+<tr>
+<th style="width: 200px;">Method</th>
+<th>Achievable Density</th>
+<th>How It Works</th>
+<th>Cost Impact</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="term-name">High-Pressure Compaction</td>
+<td>Up to 7.1 g/cm³</td>
+<td>Increase compaction pressure from 500 MPa to 700+ MPa using larger presses
                                     </td>
-                                    <td>Low — primarily requires higher-tonnage press</td>
-                                </tr>
-                                <tr>
-                                    <td class="term-name">Double Press &<br>Double Sinter (DPDS)</td>
-                                    <td>Up to 7.3 g/cm³</td>
-                                    <td>Part is compacted, pre-sintered, then re-compacted and fully sintered. The
+<td>Low — primarily requires higher-tonnage press</td>
+</tr>
+<tr>
+<td class="term-name">Double Press &amp;<br/>Double Sinter (DPDS)</td>
+<td>Up to 7.3 g/cm³</td>
+<td>Part is compacted, pre-sintered, then re-compacted and fully sintered. The
                                         pre-sintering softens the powder, allowing higher density in the second
                                         press.</td>
-                                    <td>Medium — doubles processing steps</td>
-                                </tr>
-                                <tr>
-                                    <td class="term-name">Warm Compaction</td>
-                                    <td>Up to 7.25 g/cm³</td>
-                                    <td>Die and powder are heated to 120–150°C during compaction. Reduces yield
+<td>Medium — doubles processing steps</td>
+</tr>
+<tr>
+<td class="term-name">Warm Compaction</td>
+<td>Up to 7.25 g/cm³</td>
+<td>Die and powder are heated to 120–150°C during compaction. Reduces yield
                                         strength of powder → higher density at the same pressure.</td>
-                                    <td>Medium — requires heated die tooling</td>
-                                </tr>
-                                <tr>
-                                    <td class="term-name">Copper Infiltration</td>
-                                    <td>Up to 7.3 g/cm³</td>
-                                    <td>A copper slug is placed on the part and melts during sintering, filling open
+<td>Medium — requires heated die tooling</td>
+</tr>
+<tr>
+<td class="term-name">Copper Infiltration</td>
+<td>Up to 7.3 g/cm³</td>
+<td>A copper slug is placed on the part and melts during sintering, filling open
                                         pores by capillary action. Also increases strength by 30-40%.</td>
-                                    <td>Low-Medium — adds copper material cost</td>
-                                </tr>
-                                <tr>
-                                    <td class="term-name">Powder Forging</td>
-                                    <td>Up to 7.8 g/cm³ (~100%)</td>
-                                    <td>A PM preform is heated and forged in a closed die. Achieves wrought-steel
+<td>Low-Medium — adds copper material cost</td>
+</tr>
+<tr>
+<td class="term-name">Powder Forging</td>
+<td>Up to 7.8 g/cm³ (~100%)</td>
+<td>A PM preform is heated and forged in a closed die. Achieves wrought-steel
                                         equivalent properties.</td>
-                                    <td>High — requires forging press and heated preforms</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                        <h4
-                            style="font-size: 22px; font-weight: 600; color: #002FA7; margin-bottom: 15px; margin-top: 30px; padding-left: 15px; border-left: 4px solid #C5A059;">
+<td>High — requires forging press and heated preforms</td>
+</tr>
+</tbody>
+</table>
+<h4 style="font-size: 22px; font-weight: 600; color: #002FA7; margin-bottom: 15px; margin-top: 30px; padding-left: 15px; border-left: 4px solid #C5A059;">
                             気孔率は機能 — 制限だけではない
                         </h4>
-                        <p style="font-size: 15px; color: #555; line-height: 1.7; margin-bottom: 20px;">
+<p style="font-size: 15px; color: #555; line-height: 1.7; margin-bottom: 20px;">
                             While higher density means better mechanical properties, controlled porosity is actually
                             a <strong>unique advantage</strong> of PM that no other manufacturing process can easily
                             replicate:
                         </p>
-                        <div
-                            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; margin-bottom: 25px;">
-                            <div
-                                style="background: white; padding: 20px; border-radius: 8px; border-left: 3px solid #C5A059; box-shadow: 0 2px 10px rgba(0,0,0,0.03);">
-                                <strong style="color: #002FA7; font-size: 16px;">🛢️ Oil Reservoir</strong>
-                                <p style="font-size: 14px; color: #555; margin: 10px 0 0; line-height: 1.6;">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; margin-bottom: 25px;">
+<div style="background: white; padding: 20px; border-radius: 8px; border-left: 3px solid #C5A059; box-shadow: 0 2px 10px rgba(0,0,0,0.03);">
+<strong style="color: #002FA7; font-size: 16px;">🛢️ Oil Reservoir</strong>
+<p style="font-size: 14px; color: #555; margin: 10px 0 0; line-height: 1.6;">
                                     15–25% porosity can store lubricating oil for self-lubricating bearings. The oil
                                     is released during operation and re-absorbed when stopped — enabling
                                     <strong>maintenance-free operation for 10,000+ hours</strong>.
                                 </p>
-                            </div>
-                            <div
-                                style="background: white; padding: 20px; border-radius: 8px; border-left: 3px solid #C5A059; box-shadow: 0 2px 10px rgba(0,0,0,0.03);">
-                                <strong style="color: #002FA7; font-size: 16px;">🫧 Filtration</strong>
-                                <p style="font-size: 14px; color: #555; margin: 10px 0 0; line-height: 1.6;">
+</div>
+<div style="background: white; padding: 20px; border-radius: 8px; border-left: 3px solid #C5A059; box-shadow: 0 2px 10px rgba(0,0,0,0.03);">
+<strong style="color: #002FA7; font-size: 16px;">🫧 Filtration</strong>
+<p style="font-size: 14px; color: #555; margin: 10px 0 0; line-height: 1.6;">
                                     Controlled porosity (30–50%) creates sintered metal filters with precise pore
                                     sizes. Used in hydraulic systems, chemical processing, and fuel filtration where
                                     plastic filters can't handle temperature or pressure.
                                 </p>
-                            </div>
-                            <div
-                                style="background: white; padding: 20px; border-radius: 8px; border-left: 3px solid #C5A059; box-shadow: 0 2px 10px rgba(0,0,0,0.03);">
-                                <strong style="color: #002FA7; font-size: 16px;">🔇 Vibration Damping</strong>
-                                <p style="font-size: 14px; color: #555; margin: 10px 0 0; line-height: 1.6;">
+</div>
+<div style="background: white; padding: 20px; border-radius: 8px; border-left: 3px solid #C5A059; box-shadow: 0 2px 10px rgba(0,0,0,0.03);">
+<strong style="color: #002FA7; font-size: 16px;">🔇 Vibration Damping</strong>
+<p style="font-size: 14px; color: #555; margin: 10px 0 0; line-height: 1.6;">
                                     Porous PM parts absorb vibration and noise better than solid metals. This makes
                                     them ideal for applications where noise reduction matters, such as office
                                     equipment and household appliances.
                                 </p>
-                            </div>
-                        </div>
-
-                        <h4
-                            style="font-size: 22px; font-weight: 600; color: #002FA7; margin-bottom: 15px; padding-left: 15px; border-left: 4px solid #C5A059;">
+</div>
+</div>
+<h4 style="font-size: 22px; font-weight: 600; color: #002FA7; margin-bottom: 15px; padding-left: 15px; border-left: 4px solid #C5A059;">
                             密度の測定方法
                         </h4>
-                        <table class="term-table">
-                            <thead>
-                                <tr>
-                                    <th style="width: 200px;">Method</th>
-                                    <th>Principle</th>
-                                    <th>When to Use</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="term-name">Archimedes Method<br>(Water Displacement)</td>
-                                    <td>Part is weighed in air and then submerged in water. The buoyancy difference
+<table class="term-table">
+<thead>
+<tr>
+<th style="width: 200px;">Method</th>
+<th>Principle</th>
+<th>When to Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="term-name">Archimedes Method<br/>(Water Displacement)</td>
+<td>Part is weighed in air and then submerged in water. The buoyancy difference
                                         gives the volume, and density = mass ÷ volume. Oil-sealed or wax-coated if
                                         pores are open.</td>
-                                    <td>Standard for sintered parts (MPIF 42). Most accurate for production QC.</td>
-                                </tr>
-                                <tr>
-                                    <td class="term-name">Geometric Method</td>
-                                    <td>Simple calculation: mass ÷ (measured height × width × length or π×r²×h).
+<td>Standard for sintered parts (MPIF 42). Most accurate for production QC.</td>
+</tr>
+<tr>
+<td class="term-name">Geometric Method</td>
+<td>Simple calculation: mass ÷ (measured height × width × length or π×r²×h).
                                         Quick but less accurate for complex shapes.</td>
-                                    <td>Quick in-process check for simple cylindrical or rectangular parts.</td>
-                                </tr>
-                                <tr>
-                                    <td class="term-name">Gas Pycnometry</td>
-                                    <td>Helium gas is used to measure the true volume by penetrating into open
+<td>Quick in-process check for simple cylindrical or rectangular parts.</td>
+</tr>
+<tr>
+<td class="term-name">Gas Pycnometry</td>
+<td>Helium gas is used to measure the true volume by penetrating into open
                                         pores, giving the "skeletal density."</td>
-                                    <td>Research and development. Distinguishes between open and closed porosity.
+<td>Research and development. Distinguishes between open and closed porosity.
                                     </td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                        <div class="decision-box"
-                            style="background: linear-gradient(135deg, #fff8e1 0%, #fff3e0 100%); border-color: #C5A059;">
-                            <h4>🎯 🎯 密度選定ガイド</h4>
-                            <div class="decision-item">
-                                <span>Need a <strong>self-lubricating bearing</strong>?</span>
-                                <span class="arrow">→</span>
-                                <span>Target <strong>5.5 – 6.2 g/cm³</strong> (high porosity for oil storage)</span>
-                            </div>
-                            <div class="decision-item">
-                                <span>Need a <strong>standard structural part</strong>?</span>
-                                <span class="arrow">→</span>
-                                <span style="color: #2e7d32; font-weight: 700;">✅ Target <strong>6.6 – 7.0
+</tr>
+</tbody>
+</table>
+<div class="decision-box" style="background: linear-gradient(135deg, #fff8e1 0%, #fff3e0 100%); border-color: #C5A059;">
+<h4>🎯 🎯 密度選定ガイド</h4>
+<div class="decision-item">
+<span>Need a <strong>self-lubricating bearing</strong>?</span>
+<span class="arrow">→</span>
+<span>Target <strong>5.5 – 6.2 g/cm³</strong> (high porosity for oil storage)</span>
+</div>
+<div class="decision-item">
+<span>Need a <strong>standard structural part</strong>?</span>
+<span class="arrow">→</span>
+<span style="color: #2e7d32; font-weight: 700;">✅ Target <strong>6.6 – 7.0
                                         g/cm³</strong> (our sweet spot)</span>
-                            </div>
-                            <div class="decision-item">
-                                <span>Need <strong>maximum strength</strong> (high-load gears)?</span>
-                                <span class="arrow">→</span>
-                                <span>Target <strong>7.0 – 7.3 g/cm³</strong> (double press or Cu
+</div>
+<div class="decision-item">
+<span>Need <strong>maximum strength</strong> (high-load gears)?</span>
+<span class="arrow">→</span>
+<span>Target <strong>7.0 – 7.3 g/cm³</strong> (double press or Cu
                                     infiltration)</span>
-                            </div>
-                            <div class="decision-item">
-                                <span>Need <strong>wrought-equivalent</strong> properties?</span>
-                                <span class="arrow">→</span>
-                                <span>Target <strong>7.4+ g/cm³</strong> (powder forging or HIP required)</span>
-                            </div>
-                            <p style="margin-top: 20px; font-size: 14px; color: #666;">
-                                <strong>💡 Cost-saving tip:</strong> Don't over-specify density. Higher density =
+</div>
+<div class="decision-item">
+<span>Need <strong>wrought-equivalent</strong> properties?</span>
+<span class="arrow">→</span>
+<span>Target <strong>7.4+ g/cm³</strong> (powder forging or HIP required)</span>
+</div>
+<p style="margin-top: 20px; font-size: 14px; color: #666;">
+<strong>💡 Cost-saving tip:</strong> Don't over-specify density. Higher density =
                                 higher cost. Our engineering team can help you find the optimal density for your
-                                application that balances performance and budget. <a href="contact.html"
-                                    style="color: #002FA7; font-weight: 600;">無料相談を依頼 →</a>
-                            </p>
-                        </div>
-                    </div>
+                                application that balances performance and budget. <a href="contact.html" style="color: #002FA7; font-weight: 600;">無料相談を依頼 →</a>
+</p>
+</div>
+</div></div></div>
+<div class="accordion-card" id="faq"><div class="accordion-header" onclick="toggleAccordion(this)"><h3 style="font-family:'Playfair Display',serif;font-size:28px;font-weight:700;color:#333;margin-bottom:30px;border-bottom:2px solid #eee;padding-bottom:10px; margin: 0 !important; border: none; padding: 0; font-size: 24px;">
+                            よくある質問（FAQ）</h3><span class="accordion-icon">🔽</span></div><div class="accordion-body-wrapper"><div class="accordion-body-inner">
 
-
-                    <div id="faq" style="margin-bottom:80px">
-                        <h3
-                            style="font-family:'Playfair Display',serif;font-size:28px;font-weight:700;color:#333;margin-bottom:30px;border-bottom:2px solid #eee;padding-bottom:10px">
-                            よくある質問（FAQ）</h3>
-                        <div class="faq-item">
-                            <div class="faq-question">Q1：粉末冶金部品の強度は高負荷用途に十分ですか？</div>
-                            <div class="faq-answer">
+<div class="faq-item">
+<div class="faq-question">Q1：粉末冶金部品の強度は高負荷用途に十分ですか？</div>
+<div class="faq-answer">
                                 はい、十分です。PM部品には固有の微小気孔がありますが、合金組成の調整、圧縮密度の増加、二次鍛造の使用により、鋳鉄や鍛造鋼に匹敵または超える強度に設計できます。PM部品は現在、自動車エンジン、トランスミッションギア、コネクティングロッドなどの高応力環境で広く使用されています。
                             </div>
-                        </div>
-                        <div class="faq-item">
-                            <div class="faq-question">Q2：粉末冶金とCNC加工、どちらがコスト効率が良いですか？</div>
-                            <div class="faq-answer">
+</div>
+<div class="faq-item">
+<div class="faq-question">Q2：粉末冶金とCNC加工、どちらがコスト効率が良いですか？</div>
+<div class="faq-answer">
                                 生産量によって異なります。CNC加工は高価な金型が不要なため、少量試作に適しています。しかし、大量生産（通常5,000個以上）では、粉末冶金の方が大幅にコスト効率が良くなります。PMは材料廃棄を最小限に抑え（ニアネットシェイプ）、従来の切削加工の労働集約的な工程を排除することでコストを削減します。
                             </div>
-                        </div>
-                        <div class="faq-item">
-                            <div class="faq-question">Q3：PMプロセスではどのような材料が使用できますか？</div>
-                            <div class="faq-answer">PMは非常に汎用性が高く、ほぼすべての金属を加工できます：
+</div>
+<div class="faq-item">
+<div class="faq-question">Q3：PMプロセスではどのような材料が使用できますか？</div>
+<div class="faq-answer">PMは非常に汎用性が高く、ほぼすべての金属を加工できます：
                                 <ul style="margin-top:10px;padding-left:20px">
-                                    <li><strong>鉄系合金：</strong>鉄と鋼（最も一般的）。</li>
-                                    <li><strong>非鉄金属：</strong>銅、アルミニウム、真鍮。</li>
-                                    <li><strong>耐火金属：</strong>タングステンとモリブデン（溶融が困難）。</li>
-                                    <li><strong>特殊材料：</strong>航空宇宙・医療用ステンレス鋼とスーパーアロイ。</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="faq-item">
-                            <div class="faq-question">Q4：なぜ粉末冶金は「グリーン」技術と考えられていますか？</div>
-                            <div class="faq-answer">
+<li><strong>鉄系合金：</strong>鉄と鋼（最も一般的）。</li>
+<li><strong>非鉄金属：</strong>銅、アルミニウム、真鍮。</li>
+<li><strong>耐火金属：</strong>タングステンとモリブデン（溶融が困難）。</li>
+<li><strong>特殊材料：</strong>航空宇宙・医療用ステンレス鋼とスーパーアロイ。</li>
+</ul>
+</div>
+</div>
+<div class="faq-item">
+<div class="faq-question">Q4：なぜ粉末冶金は「グリーン」技術と考えられていますか？</div>
+<div class="faq-answer">
                                 PMは最も持続可能な製造方法の一つです。材料利用率は95%以上で、金属スクラップがほとんど発生しません。また、焼結プロセスは融点以下で行われるため、従来の溶融・鋳造作業よりも少ないエネルギーで済むことが多いです。
                             </div>
-                        </div>
-                        <div class="faq-item">
-                            <div class="faq-question">Q5：粉末冶金の「自己潤滑」軸受はどのように機能しますか？</div>
-                            <div class="faq-answer">
+</div>
+<div class="faq-item">
+<div class="faq-question">Q5：粉末冶金の「自己潤滑」軸受はどのように機能しますか？</div>
+<div class="faq-answer">
                                 これはPMの独自の利点です。部品は自然に多孔質であるため、真空含浸でオイルを染み込ませることができます。軸受が運転中に加熱されると、オイルが膨張して表面に流れ出します。冷却すると、毛細管作用によりオイルが気孔に再吸収されます—「メンテナンスフリー」用途に最適です。
                             </div>
-                        </div>
-                        <div class="faq-item">
-                            <div class="faq-question">Q6：従来のPMと金属射出成形（MIM）の違いは何ですか？</div>
-                            <div class="faq-answer">どちらも金属粉末を使用します：
+</div>
+<div class="faq-item">
+<div class="faq-question">Q6：従来のPMと金属射出成形（MIM）の違いは何ですか？</div>
+<div class="faq-answer">どちらも金属粉末を使用します：
                                 <ul style="margin-top:10px;padding-left:20px">
-                                    <li><strong>従来のPM</strong>は「錠剤を圧縮する」ようなもので、大きくシンプルな形状に最適です。</li>
-                                    <li><strong>MIM</strong>は粉末をプラスチックバインダーと混合し、金型に「射出」します。スマートフォンや手術器具などの極めて小さく複雑な部品向けです。
+<li><strong>従来のPM</strong>は「錠剤を圧縮する」ようなもので、大きくシンプルな形状に最適です。</li>
+<li><strong>MIM</strong>は粉末をプラスチックバインダーと混合し、金型に「射出」します。スマートフォンや手術器具などの極めて小さく複雑な部品向けです。
                                     </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="faq-item">
-                            <div class="faq-question">Q7：PM部品はめっきや溶接ができますか？</div>
-                            <div class="faq-answer">
+</ul>
+</div>
+</div>
+<div class="faq-item">
+<div class="faq-question">Q7：PM部品はめっきや溶接ができますか？</div>
+<div class="faq-answer">
                                 はい、ただし準備が必要です。多孔質性のため、PM部品はめっき前に蒸気処理や樹脂シールを行い、化学薬品が気孔に入り込むのを防ぎます。溶接には、熱影響部を最小限にするためレーザー溶接が推奨されます。
                             </div>
-                        </div>
-                        <div class="faq-item">
-                            <div class="faq-question">Q8：PM部品の設計上の制限は何ですか？</div>
-                            <div class="faq-answer">エンジニアは金型からの離型を妨げる特徴を避けるべきです：
+</div>
+<div class="faq-item">
+<div class="faq-question">Q8：PM部品の設計上の制限は何ですか？</div>
+<div class="faq-answer">エンジニアは金型からの離型を妨げる特徴を避けるべきです：
                                 <ul style="margin-top:10px;padding-left:20px">
-                                    <li><strong>側面アンダーカット：</strong>側面の穴や溝は後加工が必要です。</li>
-                                    <li><strong>肉厚：</strong>粉末の均一な流れを確保するため、一般的に1.5mm以上が必要です。</li>
-                                    <li><strong>鋭角：</strong>工具寿命の延長と強度向上のため、丸みを帯びたエッジ（フィレット）が推奨されます。</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
+<li><strong>側面アンダーカット：</strong>側面の穴や溝は後加工が必要です。</li>
+<li><strong>肉厚：</strong>粉末の均一な流れを確保するため、一般的に1.5mm以上が必要です。</li>
+<li><strong>鋭角：</strong>工具寿命の延長と強度向上のため、丸みを帯びたエッジ（フィレット）が推奨されます。</li>
+</ul>
+</div>
+</div>
+</div></div></div>
 <!-- Glossary Section -->
-                    <div id="glossary" style="margin-bottom:80px">
-                        <h3
-                            style="font-family:'Playfair Display',serif;font-size:28px;font-weight:700;color:#333;margin-bottom:30px;border-bottom:2px solid #eee;padding-bottom:10px">
-                            粉末冶金用語集</h3>
-                        <div style="overflow-x:auto">
-                            <table class="term-table">
-                                <thead>
-                                    <tr>
-                                        <th style="width:25%">用語</th>
-                                        <th>定義</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="term-name">ジェロータ</td>
-                                        <td>「Generated
+<div class="accordion-card" id="glossary"><div class="accordion-header" onclick="toggleAccordion(this)"><h3 style="font-family:'Playfair Display',serif;font-size:28px;font-weight:700;color:#333;margin-bottom:30px;border-bottom:2px solid #eee;padding-bottom:10px; margin: 0 !important; border: none; padding: 0; font-size: 24px;">
+                            粉末冶金用語集</h3><span class="accordion-icon">🔽</span></div><div class="accordion-body-wrapper"><div class="accordion-body-inner">
+
+<div style="overflow-x:auto">
+<table class="term-table">
+<thead>
+<tr>
+<th style="width:25%">用語</th>
+<th>定義</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="term-name">ジェロータ</td>
+<td>「Generated
                                             Rotor」の略。内ローターと外ローターで構成される容積式ポンプユニット。PMはオイルポンプ用のこれらの複雑なトロコイド形状を製造する最も効率的な方法です。
                                         </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="term-name">グリーン強度</td>
-                                        <td>焼結前の圧粉体の機械的強度。炉への搬送中に破損しないよう十分な強度が必要です。</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="term-name">焼結密度</td>
-                                        <td>焼結後の部品の単位体積あたりの質量。最終的な機械的特性の主要指標です。</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="term-name">拡散接合</td>
-                                        <td>熱により原子が粒子境界を越えて移動し、金属粒子を固体に融合させるプロセス。</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="term-name">ニアネットシェイプ</td>
-                                        <td>初期部品を最終形状に非常に近い状態で製造し、二次加工の必要性を減らす製造技術。</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="term-name">含油処理</td>
-                                        <td>焼結部品の連通気孔に潤滑剤を充填するプロセス。自己潤滑軸受の製造に使用されます。</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="term-name">金属射出成形（MIM）</td>
-                                        <td>微細な金属粉末をバインダーと混合し、金型に「射出」するプロセス。小型で非常に複雑な3D形状に最適です。</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="term-name">蒸気処理</td>
-                                        <td>表面に黒色酸化鉄（Fe3O4）層を形成し、耐摩耗性を向上させ、装飾的な仕上げを提供するプロセス。</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="term-name">溶浸</td>
-                                        <td>焼結部品の気孔を低融点金属（例：鉄部品への銅）で充填し、強度と密度を向上させること。</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="term-name">気孔率</td>
-                                        <td>総体積に対する気孔（空隙）の体積の割合。「開放」（連通）または「閉鎖」（孤立）があります。</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="term-name">脱バインダー</td>
-                                        <td>最終焼結前にポリマーまたはワックスバインダーを除去する重要なステップ（特にMIMで）。</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="term-name">還元粉末</td>
-                                        <td>酸化物の化学還元によって製造される金属粉末。これらの粒子は通常スポンジ状で不規則な形状で、良好なグリーン強度を提供します。</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="term-name">サイジング/コイニング</td>
-                                        <td>焼結部品の寸法精度を向上させたり、表面密度を増加させるための二次プレス操作。</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="term-name">偏析</td>
-                                        <td>サイズや密度の違いにより、混合または供給中に異なる粉末粒子が分離する望ましくない効果。</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="term-name">球状粉末</td>
-                                        <td>ガスアトマイズによって製造される完全に丸い粉末粒子。3DプリンティングやMIM向けの優れた流動性を提供します。</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="term-name">等方圧プレス</td>
-                                        <td>流体（水またはガス）を使用してあらゆる方向から圧力をかけ、大型または複雑な形状で均一な密度を達成します。</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="term-name">見掛け密度</td>
-                                        <td>ルーズな粉末の単位体積あたりの重量。プレス段階での金型の「充填深さ」を決定するために重要です。</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
+</tr>
+<tr>
+<td class="term-name">グリーン強度</td>
+<td>焼結前の圧粉体の機械的強度。炉への搬送中に破損しないよう十分な強度が必要です。</td>
+</tr>
+<tr>
+<td class="term-name">焼結密度</td>
+<td>焼結後の部品の単位体積あたりの質量。最終的な機械的特性の主要指標です。</td>
+</tr>
+<tr>
+<td class="term-name">拡散接合</td>
+<td>熱により原子が粒子境界を越えて移動し、金属粒子を固体に融合させるプロセス。</td>
+</tr>
+<tr>
+<td class="term-name">ニアネットシェイプ</td>
+<td>初期部品を最終形状に非常に近い状態で製造し、二次加工の必要性を減らす製造技術。</td>
+</tr>
+<tr>
+<td class="term-name">含油処理</td>
+<td>焼結部品の連通気孔に潤滑剤を充填するプロセス。自己潤滑軸受の製造に使用されます。</td>
+</tr>
+<tr>
+<td class="term-name">金属射出成形（MIM）</td>
+<td>微細な金属粉末をバインダーと混合し、金型に「射出」するプロセス。小型で非常に複雑な3D形状に最適です。</td>
+</tr>
+<tr>
+<td class="term-name">蒸気処理</td>
+<td>表面に黒色酸化鉄（Fe3O4）層を形成し、耐摩耗性を向上させ、装飾的な仕上げを提供するプロセス。</td>
+</tr>
+<tr>
+<td class="term-name">溶浸</td>
+<td>焼結部品の気孔を低融点金属（例：鉄部品への銅）で充填し、強度と密度を向上させること。</td>
+</tr>
+<tr>
+<td class="term-name">気孔率</td>
+<td>総体積に対する気孔（空隙）の体積の割合。「開放」（連通）または「閉鎖」（孤立）があります。</td>
+</tr>
+<tr>
+<td class="term-name">脱バインダー</td>
+<td>最終焼結前にポリマーまたはワックスバインダーを除去する重要なステップ（特にMIMで）。</td>
+</tr>
+<tr>
+<td class="term-name">還元粉末</td>
+<td>酸化物の化学還元によって製造される金属粉末。これらの粒子は通常スポンジ状で不規則な形状で、良好なグリーン強度を提供します。</td>
+</tr>
+<tr>
+<td class="term-name">サイジング/コイニング</td>
+<td>焼結部品の寸法精度を向上させたり、表面密度を増加させるための二次プレス操作。</td>
+</tr>
+<tr>
+<td class="term-name">偏析</td>
+<td>サイズや密度の違いにより、混合または供給中に異なる粉末粒子が分離する望ましくない効果。</td>
+</tr>
+<tr>
+<td class="term-name">球状粉末</td>
+<td>ガスアトマイズによって製造される完全に丸い粉末粒子。3DプリンティングやMIM向けの優れた流動性を提供します。</td>
+</tr>
+<tr>
+<td class="term-name">等方圧プレス</td>
+<td>流体（水またはガス）を使用してあらゆる方向から圧力をかけ、大型または複雑な形状で均一な密度を達成します。</td>
+</tr>
+<tr>
+<td class="term-name">見掛け密度</td>
+<td>ルーズな粉末の単位体積あたりの重量。プレス段階での金型の「充填深さ」を決定するために重要です。</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div></div></div>
 </div> <!-- End resource-content -->
-            </div> <!-- End resource-layout -->
-        </div>
-    </section>
-
-    <!-- Smooth Scroll JavaScript -->
-    <script>
+</div> <!-- End resource-layout -->
+</div>
+</section>
+<!-- Smooth Scroll JavaScript -->
+<script>
         // Smooth scroll for sidebar navigation
         document.querySelectorAll('.sidebar-nav a').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -965,50 +981,48 @@
             });
         });
     </script>
-    <footer style="background:#002FA7;color:white;padding:80px 0 40px">
-        <div class="container">
-            <div
-                style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:50px;margin-bottom:60px">
-                <div>
-                    <div style="display:flex;align-items:center;gap:15px;margin-bottom:25px">
-                        <img alt="Logo" src="../images/logo.png" style="height:  50px;" width="61" height="50">
-                        <h3 style="font-size:20px;font-weight:700;color:#8B6914;margin:0">Yeh Sheng Powder Parts</h3>
-                    </div>
-                    <p style="color:#a0b0d0;line-height:1.6;font-size:14px">1984年創業の高精度粉末冶金部品の先進メーカー。</p>
-                </div>
-                <div>
-                    <h4 style="color: #996B1D;font-size:18px;font-weight:700;margin-bottom:25px">会社情報</h4>
-                    <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:15px">
-                        <li><a href="about.html" style="color:#a0b0d0;font-size:15px">会社概要</a></li>
-                        <li><a href="products.html" style="color:#a0b0d0;font-size:15px">製品一覧</a></li>
-                        <li><a href="capabilities.html" style="color:#a0b0d0;font-size:15px">製造能力</a></li>
-                        <li><a href="contact.html" style="color:#a0b0d0;font-size:15px">お問い合わせ</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 style="color: #996B1D;font-size:18px;font-weight:700;margin-bottom:25px">お問い合わせ</h4>
-                    <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:15px">
-                        <li style="color:#a0b0d0;font-size:15px">台湾 新北市 新荘区 中正路721巷11号</li>
-                        <li style="color:#a0b0d0;font-size:15px"><a href="mailto:YS@yehsheng.com">YS@yehsheng.com</a>
-                        </li>
-                        <li style="color:#a0b0d0;font-size:15px">+886-2-2901-8266</li>
-                    </ul>
-                </div>
-            </div>
-            <div style="border-top:1px solid rgba(255,255,255,0.1);padding-top:30px;text-align:center">
-                <p style="color:#e0e0e0;font-size:13px;margin:0">© 2024 Yeh Sheng Powder Parts Ind. Co. Ltd. All Rights
+<footer style="background:#002FA7;color:white;padding:80px 0 40px">
+<div class="container">
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:50px;margin-bottom:60px">
+<div>
+<div style="display:flex;align-items:center;gap:15px;margin-bottom:25px">
+<img alt="Logo" height="50" src="../images/logo.png" style="height:  50px;" width="61"/>
+<h3 style="font-size:20px;font-weight:700;color:#8B6914;margin:0">Yeh Sheng Powder Parts</h3>
+</div>
+<p style="color:#a0b0d0;line-height:1.6;font-size:14px">1984年創業の高精度粉末冶金部品の先進メーカー。</p>
+</div>
+<div>
+<h4 style="color: #996B1D;font-size:18px;font-weight:700;margin-bottom:25px">会社情報</h4>
+<ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:15px">
+<li><a href="about.html" style="color:#a0b0d0;font-size:15px">会社概要</a></li>
+<li><a href="products.html" style="color:#a0b0d0;font-size:15px">製品一覧</a></li>
+<li><a href="capabilities.html" style="color:#a0b0d0;font-size:15px">製造能力</a></li>
+<li><a href="contact.html" style="color:#a0b0d0;font-size:15px">お問い合わせ</a></li>
+</ul>
+</div>
+<div>
+<h4 style="color: #996B1D;font-size:18px;font-weight:700;margin-bottom:25px">お問い合わせ</h4>
+<ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:15px">
+<li style="color:#a0b0d0;font-size:15px">台湾 新北市 新荘区 中正路721巷11号</li>
+<li style="color:#a0b0d0;font-size:15px"><a href="mailto:YS@yehsheng.com">YS@yehsheng.com</a>
+</li>
+<li style="color:#a0b0d0;font-size:15px">+886-2-2901-8266</li>
+</ul>
+</div>
+</div>
+<div style="border-top:1px solid rgba(255,255,255,0.1);padding-top:30px;text-align:center">
+<p style="color:#e0e0e0;font-size:13px;margin:0">© 2024 Yeh Sheng Powder Parts Ind. Co. Ltd. All Rights
                     Reserved.</p>
-            </div>
-        </div>
-    </footer>
-    <script>
+</div>
+</div>
+</footer>
+<script>
         function toggleMenu() { document.getElementById('mobileMenu').classList.toggle('active') }
         function toggleLangMenu() { var m = document.getElementById("langMenu"); m.style.display = (m.style.display === "none" || m.style.display === "") ? "block" : "none" }
         document.addEventListener('click', function (e) { var m = document.getElementById("langMenu"); if (!e.target.closest('#langMenu') && !e.target.matches('[onclick="toggleLangMenu()"]')) { if (m) m.style.display = "none" } });
     </script>
-
-    <!-- Floating CTA Button -->
-    <a id="floating-cta" href="contact.html" style="
+<!-- Floating CTA Button -->
+<a href="contact.html" id="floating-cta" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 20px rgba(197,160,89,0.4)'" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 6px 25px rgba(197,160,89,0.5)'" style="
         position: fixed;
         bottom: 28px;
         right: 28px;
@@ -1026,10 +1040,44 @@
         align-items: center;
         gap: 6px;
         transition: all 0.3s ease;
-    " onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 6px 25px rgba(197,160,89,0.5)'"
-        onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 20px rgba(197,160,89,0.4)'">💬
+    ">💬
         お見積り</a>
-
-</body>
-
+<script>
+            function toggleAccordion(header) {
+                const card = header.closest('.accordion-card');
+                card.classList.toggle('active');
+            }
+            
+            function openAccordionFromHash() {
+                if (window.location.hash) {
+                    const target = document.querySelector(window.location.hash);
+                    if (target && target.classList.contains('accordion-card')) {
+                        target.classList.add('active');
+                        setTimeout(() => {
+                            const offsetTop = target.getBoundingClientRect().top + window.scrollY - 120;
+                            window.scrollTo({ top: offsetTop, behavior: 'smooth' });
+                        }, 300); // Wait for transition
+                    }
+                }
+            }
+            
+            window.addEventListener('hashchange', openAccordionFromHash);
+            document.addEventListener('DOMContentLoaded', function() {
+                openAccordionFromHash();
+                
+                // Intercept sidebar clicks
+                document.querySelectorAll('.sidebar-nav a').forEach(anchor => {
+                    anchor.addEventListener('click', function (e) {
+                        const href = this.getAttribute('href');
+                        if (href && href.includes('#')) {
+                            const targetId = href.split('#')[1];
+                            const targetElement = document.getElementById(targetId);
+                            if (targetElement && targetElement.classList.contains('accordion-card')) {
+                                targetElement.classList.add('active');
+                            }
+                        }
+                    });
+                });
+            });
+            </script></body>
 </html>
