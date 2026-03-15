@@ -268,21 +268,22 @@
 <a href="contact.html" style="color: #e8e8e8;">Contact</a>
 <!-- Language Dropdown -->
 <div style="position: relative; display: inline-block;">
-<button onclick="toggleLangDropdown()" style="background: transparent; border: 1px solid #C5A059; color: #7A5F12; padding: 6px 15px; border-radius: 4px; cursor: pointer; font-size: 13px; font-weight: 600; display: flex; align-items: center; gap: 8px;">
-                    ?? English ??
+<button aria-label="Select language" onclick="toggleLangDropdown()" style="background: transparent; border: 1px solid #C5A059; color: #7A5F12; padding: 6px 15px; border-radius: 4px; cursor: pointer; font-size: 13px; font-weight: 600; display: flex; align-items: center; gap: 8px;">
+                    🌐 English ▼
                 </button>
 <div id="langDropdown" style="display: none; position: absolute; right: 0; top: 100%; margin-top: 5px; background: white; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); min-width: 160px; z-index:10000; overflow: hidden;">
-<a href="capabilities.html" style="display: block; padding: 12px 20px; color: #333; font-size: 14px; border-bottom: 1px solid #eee; font-weight: 600; background: #f8f9fa;">??
+<a href="capabilities.html" style="display: block; padding: 12px 20px; color: #333; font-size: 14px; border-bottom: 1px solid #eee; font-weight: 600; background: #f8f9fa;">🇺🇸
                         English</a>
-<a href="zh/capabilities.html" style="display: block; padding: 12px 20px; color: #333; font-size: 14px; border-bottom: 1px solid #eee;">??
-                        蝜?銝剜?</a>
-<a href="zh-cn/capabilities.html" style="display: block; padding: 12px 20px; color: #333; font-size: 14px; border-bottom: 1px solid #eee;">??
-                        蝞雿葉??/a&gt;
-                        <a href="de/capabilities.html" style="display: block; padding: 12px 20px; color: #333; font-size: 14px; border-bottom: 1px solid #eee;">??
-                            Deutsch</a>
-<a href="jp/capabilities.html" style="display: block; padding: 12px 20px; color: #333; font-size: 14px;">?? ?交隤?/a&gt;
-                </a></a></div>
+<a href="zh/capabilities.html" style="display: block; padding: 12px 20px; color: #333; font-size: 14px; border-bottom: 1px solid #eee;">🇹🇼
+                        繁體中文</a>
+<a href="zh-cn/capabilities.html" style="display: block; padding: 12px 20px; color: #333; font-size: 14px; border-bottom: 1px solid #eee;">🇨🇳
+                        简体中文</a>
+<a href="de/capabilities.html" style="display: block; padding: 12px 20px; color: #333; font-size: 14px; border-bottom: 1px solid #eee;">🇩🇪
+                        Deutsch</a>
+<a href="jp/capabilities.html" style="display: block; padding: 12px 20px; color: #333; font-size: 14px;">🇯🇵 日本語</a>
 </div>
+</div>
+
 </div>
 </div>
 <!-- Navigation -->
@@ -317,7 +318,7 @@
 <!-- Mobile Menu Dropdown -->
 <div class="mobile-menu" id="mobileMenu">
 <!-- Close Button -->
-<div onclick="toggleMenu()" style="text-align:right;padding:5px 0 15px;cursor:pointer;font-size:24px;color:#333;">??/div&gt;
+<div onclick="toggleMenu()" style="text-align:right;padding:5px 0 15px;cursor:pointer;font-size:24px;color:#333;">✕</div>
                     <a href="products.html" style="font-size: 16px; font-weight: 500; color: #333; padding: 10px 0; border-bottom: 1px solid #eee;">Products</a>
 <a href="solutions.html" style="font-size: 16px; font-weight: 500; color: #333; padding: 10px 0; border-bottom: 1px solid #eee;">Service
                         Workflow</a>
@@ -330,16 +331,14 @@
 <a href="contact.html" style="font-size: 16px; font-weight: 500; color: #996B1D; padding: 10px 0;">Contact Us</a>
 <!-- Mobile Language Selector -->
 <div style="border-top:2px solid #C5A059;margin-top:10px;padding-top:15px;">
-<div style="font-size:14px;font-weight:600;color: #996B1D;margin-bottom:10px;">?? Language</div>
-<a href="capabilities.html" style="display:block;padding:8px 0;color: #996B1D;font-weight:600;">??
+<div style="font-size:14px;font-weight:600;color: #996B1D;margin-bottom:10px;">🌐 Language</div>
+<a href="capabilities.html" style="display:block;padding:8px 0;color: #996B1D;font-weight:600;">🇺🇸
                             English</a>
-<a href="zh/capabilities.html" style="display:block;padding:8px 0;color:#333;">?? 蝜?銝剜?</a>
-<a href="zh-cn/capabilities.html" style="display:block;padding:8px 0;color:#333;">??
-                            蝞雿葉??/a&gt;
-                            <a href="de/capabilities.html" style="display:block;padding:8px 0;color:#333;">??
-                                Deutsch</a>
-<a href="jp/capabilities.html" style="display:block;padding:8px 0;color:#333;">?? ?交隤?/a&gt;
-                    </a></a></div>
+<a href="zh/capabilities.html" style="display:block;padding:8px 0;color:#333;">🇹🇼 繁體中文</a>
+<a href="zh-cn/capabilities.html" style="display:block;padding:8px 0;color:#333;">🇨🇳 简体中文</a>
+<a href="de/capabilities.html" style="display:block;padding:8px 0;color:#333;">🇩🇪 Deutsch</a>
+<a href="jp/capabilities.html" style="display:block;padding:8px 0;color:#333;">🇯🇵 日本語</a>
+</div>
 </div>
 </div>
 </div></nav>
@@ -594,14 +593,14 @@
                     </p>
 <ul style="list-style: none; padding: 0; margin: 0;">
 <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">
-<span style="color: #996B1D; position: absolute; left: 0;">??/span&gt; ISO 9001:2015 Certified
+<span style="color: #996B1D; position: absolute; left: 0;">✓</span> ISO 9001:2015 Certified
                         </span></li>
 <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">
-<span style="color: #996B1D; position: absolute; left: 0;">??/span&gt; 100% Dimensional
+<span style="color: #996B1D; position: absolute; left: 0;">✓</span> 100% Dimensional
                                 Inspection
                         </span></li>
 <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">
-<span style="color: #996B1D; position: absolute; left: 0;">??/span&gt; Material Composition
+<span style="color: #996B1D; position: absolute; left: 0;">✓</span> Material Composition
                                 Analysis
                         </span></li>
 </ul>
@@ -618,13 +617,13 @@
                     </p>
 <ul style="list-style: none; padding: 0; margin: 0;">
 <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">
-<span style="color: #996B1D; position: absolute; left: 0;">??/span&gt; In-house Tooling Design
+<span style="color: #996B1D; position: absolute; left: 0;">✓</span> In-house Tooling Design
                         </span></li>
 <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">
-<span style="color: #996B1D; position: absolute; left: 0;">??/span&gt; Rapid Prototyping
+<span style="color: #996B1D; position: absolute; left: 0;">✓</span> Rapid Prototyping
                         </span></li>
 <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">
-<span style="color: #996B1D; position: absolute; left: 0;">??/span&gt; Custom Alloy Development
+<span style="color: #996B1D; position: absolute; left: 0;">✓</span> Custom Alloy Development
                         </span></li>
 </ul>
 </div>
