@@ -747,4 +747,161 @@
                 }
             </style>
 </div>
-</section></body></html>
+</section>
+<!-- Smooth Scroll JavaScript -->
+    <script>
+        // Smooth scroll for sidebar navigation
+        document.querySelectorAll('.sidebar-nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (!href.startsWith('#')) return; // Allow external links to navigate normally
+                e.preventDefault();
+                const targetElement = document.querySelector(href);
+                if (targetElement) {
+                    const offsetTop = targetElement.offsetTop - 120;
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Highlight active section in sidebar
+        window.addEventListener('scroll', function () {
+            const sections = ['process-guide', 'gear-types', 'bearings-guide', 'sintering-guide', 'powder-production', 'quality-control', 'density-porosity', 'faq', 'glossary', 'materials', 'iron-steel', 'stainless', 'magnetic', 'bronze-brass'];
+            let currentSection = '';
+
+            sections.forEach(id => {
+                const element = document.getElementById(id);
+                if (element) {
+                    const rect = element.getBoundingClientRect();
+                    if (rect.top <= 150) {
+                        currentSection = id;
+                    }
+                }
+            });
+
+            document.querySelectorAll('.sidebar-nav a').forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + currentSection) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+    
+<!-- Footer -->
+    <footer style="background: #002FA7; color: white; padding: 80px 0 40px 0;">
+        <div class="container">
+            <div
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 50px; margin-bottom: 60px;">
+                <div>
+                    <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 25px;">
+                        <img alt="Logo" src="images/logo.png" style="height: 50px;" width="61" height="50">
+                        <h3
+                            style="font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 700; color: #8B6914; margin: 0;">
+                            Yeh Sheng Powder Parts</h3>
+                    </div>
+                    <p style="color: #a0b0d0; line-height: 1.6; font-size: 14px;">Premier manufacturer of high-precision
+                        powder metallurgy components since 1984.</p>
+                </div>
+                <div>
+                    <h4
+                        style="font-family: 'Playfair Display', serif; color: #996B1D; font-size: 18px; font-weight: 700; margin-bottom: 25px;">
+                        COMPANY</h4>
+                    <ul
+                        style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 15px;">
+                        <li><a href="about.html" style="color: #a0b0d0; font-size: 15px;">About Us</a></li>
+                        <li><a href="products.html" style="color: #a0b0d0; font-size: 15px;">All Products</a></li>
+                        <li><a href="capabilities.html" style="color: #a0b0d0; font-size: 15px;">Capabilities</a></li>
+                        <li><a href="resources.html" style="color: #a0b0d0; font-size: 15px;">Resources</a></li>
+                        <li><a href="case-studies.html" style="color: #C5A059; font-size: 15px; font-weight: 600;">📋
+                                Case Studies</a></li>
+                        <li><a href="contact.html" style="color: #a0b0d0; font-size: 15px;">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4
+                        style="font-family: 'Playfair Display', serif; color: #996B1D; font-size: 18px; font-weight: 700; margin-bottom: 25px;">
+                        CONTACT US</h4>
+                    <ul
+                        style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 15px;">
+                        <li style="color: #a0b0d0; font-size: 15px;">No. 11, Ln. 721, Zhong Zheng Rd.</li>
+                        <li style="color: #a0b0d0; font-size: 15px;">Xin Zhuang Dist., New Taipei City</li>
+                        <li style="color: #a0b0d0; font-size: 15px;"><a
+                                href="mailto:YS@yehsheng.com">YS@yehsheng.com</a></li>
+                        <li style="color: #a0b0d0; font-size: 15px;">+886-2-2901-8266</li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 30px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
+                <p style="color: #e0e0e0; font-size: 13px; margin: 0;">© 2024 Yeh Sheng Powder Parts Ind. Co. Ltd. All
+                    Rights Reserved.</p>
+                <div style="display: flex; gap: 20px;">
+                    <a href="privacy-policy.html" style="color: #e0e0e0; font-size: 13px;">Privacy Policy</a>
+                    <a href="terms-of-service.html" style="color: #e0e0e0; font-size: 13px;">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function toggleLangDropdown() {
+            var dropdown = document.getElementById("langDropdown");
+            if (dropdown) {
+                dropdown.style.display = (dropdown.style.display === "none" || dropdown.style.display === "") ? "block" : "none";
+            }
+        }
+        document.addEventListener('click', function (e) {
+            var dropdown = document.getElementById("langDropdown");
+            if (dropdown && !e.target.closest('#langDropdown') && !e.target.matches('[onclick="toggleLangDropdown()"]')) {
+                dropdown.style.display = "none";
+            }
+        });
+    </script>
+
+    <!-- Floating CTA Button -->
+    <a id="floating-cta" href="contact.html" style="
+        position: fixed;
+        bottom: 28px;
+        right: 28px;
+        background: linear-gradient(135deg, #C5A059, #a8853a);
+        color: white;
+        padding: 14px 24px;
+        border-radius: 50px;
+        font-family: 'Inter', sans-serif;
+        font-size: 15px;
+        font-weight: 600;
+        text-decoration: none;
+        box-shadow: 0 4px 20px rgba(197, 160, 89, 0.4);
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        transition: all 0.3s ease;
+    " onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 6px 25px rgba(197,160,89,0.5)'"
+        onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 20px rgba(197,160,89,0.4)'">💬 Get
+        a Quote</a>
+
+
+
+    <script>
+        function toggleMenu() { 
+            var m = document.getElementById('mobileMenu');
+            if(m) m.classList.toggle('active');
+        }
+        function toggleLangDropdown() { 
+            var m = document.getElementById("langDropdown"); 
+            if(m) m.style.display = (m.style.display === "none" || m.style.display === "") ? "block" : "none"; 
+        }
+        document.addEventListener('click', function (e) { 
+            var m = document.getElementById("langDropdown"); 
+            if (m && !e.target.closest('#langDropdown') && !e.target.matches('[onclick="toggleLangDropdown()"]')) { 
+                m.style.display = "none";
+            } 
+        });
+    </script>
+
+</body>
+</html>
