@@ -1,0 +1,47 @@
+[404.html] Missing or empty meta description
+[about-us/index.html] Missing or empty meta description
+[capabilities/index.html] Missing or empty meta description
+[de/404.html] Missing or empty meta description
+[de/case-studies.html] Broken internal link/asset: privacy-policy.html (Expected at c:\Users\USER\geinei_clean\de\privacy-policy.html)
+[de/case-studies.html] Broken internal link/asset: terms-of-service.html (Expected at c:\Users\USER\geinei_clean\de\terms-of-service.html)
+[de/case-study-1.html] Broken internal link/asset: privacy-policy.html (Expected at c:\Users\USER\geinei_clean\de\privacy-policy.html)
+[de/case-study-1.html] Broken internal link/asset: terms-of-service.html (Expected at c:\Users\USER\geinei_clean\de\terms-of-service.html)
+[de/case-study-2.html] Broken internal link/asset: privacy-policy.html (Expected at c:\Users\USER\geinei_clean\de\privacy-policy.html)
+[de/case-study-2.html] Broken internal link/asset: terms-of-service.html (Expected at c:\Users\USER\geinei_clean\de\terms-of-service.html)
+[de/case-study-3.html] Broken internal link/asset: privacy-policy.html (Expected at c:\Users\USER\geinei_clean\de\privacy-policy.html)
+[de/case-study-3.html] Broken internal link/asset: terms-of-service.html (Expected at c:\Users\USER\geinei_clean\de\terms-of-service.html)
+[gears/index.html] Missing or empty meta description
+[jp/404.html] Missing or empty meta description
+[jp/case-studies.html] Broken internal link/asset: privacy-policy.html (Expected at c:\Users\USER\geinei_clean\jp\privacy-policy.html)
+[jp/case-studies.html] Broken internal link/asset: terms-of-service.html (Expected at c:\Users\USER\geinei_clean\jp\terms-of-service.html)
+[jp/case-study-1.html] Broken internal link/asset: privacy-policy.html (Expected at c:\Users\USER\geinei_clean\jp\privacy-policy.html)
+[jp/case-study-1.html] Broken internal link/asset: terms-of-service.html (Expected at c:\Users\USER\geinei_clean\jp\terms-of-service.html)
+[jp/case-study-2.html] Broken internal link/asset: privacy-policy.html (Expected at c:\Users\USER\geinei_clean\jp\privacy-policy.html)
+[jp/case-study-2.html] Broken internal link/asset: terms-of-service.html (Expected at c:\Users\USER\geinei_clean\jp\terms-of-service.html)
+[jp/case-study-3.html] Broken internal link/asset: privacy-policy.html (Expected at c:\Users\USER\geinei_clean\jp\privacy-policy.html)
+[jp/case-study-3.html] Broken internal link/asset: terms-of-service.html (Expected at c:\Users\USER\geinei_clean\jp\terms-of-service.html)
+[news/index.html] Missing or empty meta description
+[powder-metal-parts/index.html] Missing or empty meta description
+[products/index.html] Missing or empty meta description
+[reset-password/index.html] Missing or empty meta description
+[sintered-brake-pad/index.html] Missing or empty meta description
+[zh/404.html] Missing or empty meta description
+[zh/case-studies.html] Broken internal link/asset: privacy-policy.html (Expected at c:\Users\USER\geinei_clean\zh\privacy-policy.html)
+[zh/case-studies.html] Broken internal link/asset: terms-of-service.html (Expected at c:\Users\USER\geinei_clean\zh\terms-of-service.html)
+[zh/case-study-1.html] Broken internal link/asset: privacy-policy.html (Expected at c:\Users\USER\geinei_clean\zh\privacy-policy.html)
+[zh/case-study-1.html] Broken internal link/asset: terms-of-service.html (Expected at c:\Users\USER\geinei_clean\zh\terms-of-service.html)
+[zh/case-study-2.html] Broken internal link/asset: privacy-policy.html (Expected at c:\Users\USER\geinei_clean\zh\privacy-policy.html)
+[zh/case-study-2.html] Broken internal link/asset: terms-of-service.html (Expected at c:\Users\USER\geinei_clean\zh\terms-of-service.html)
+[zh/case-study-3.html] Broken internal link/asset: privacy-policy.html (Expected at c:\Users\USER\geinei_clean\zh\privacy-policy.html)
+[zh/case-study-3.html] Broken internal link/asset: terms-of-service.html (Expected at c:\Users\USER\geinei_clean\zh\terms-of-service.html)
+[zh/emerging-tech.html] Missing or empty meta description
+[zh-cn/404.html] Missing or empty meta description
+[zh-cn/case-studies.html] Broken internal link/asset: privacy-policy.html (Expected at c:\Users\USER\geinei_clean\zh-cn\privacy-policy.html)
+[zh-cn/case-studies.html] Broken internal link/asset: terms-of-service.html (Expected at c:\Users\USER\geinei_clean\zh-cn\terms-of-service.html)
+[zh-cn/case-study-1.html] Broken internal link/asset: privacy-policy.html (Expected at c:\Users\USER\geinei_clean\zh-cn\privacy-policy.html)
+[zh-cn/case-study-1.html] Broken internal link/asset: terms-of-service.html (Expected at c:\Users\USER\geinei_clean\zh-cn\terms-of-service.html)
+[zh-cn/case-study-2.html] Broken internal link/asset: privacy-policy.html (Expected at c:\Users\USER\geinei_clean\zh-cn\privacy-policy.html)
+[zh-cn/case-study-2.html] Broken internal link/asset: terms-of-service.html (Expected at c:\Users\USER\geinei_clean\zh-cn\terms-of-service.html)
+[zh-cn/case-study-3.html] Broken internal link/asset: privacy-policy.html (Expected at c:\Users\USER\geinei_clean\zh-cn\privacy-policy.html)
+[zh-cn/case-study-3.html] Broken internal link/asset: terms-of-service.html (Expected at c:\Users\USER\geinei_clean\zh-cn\terms-of-service.html)
+[zh-cn/emerging-tech.html] Missing or empty meta description
