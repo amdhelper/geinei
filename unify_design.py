@@ -209,7 +209,7 @@ GOLD_FOOTER = """
                         <span>No. 11, Ln. 721, Zhong Zheng Rd.</span>
                         <span>Xin Zhuang Dist., New Taipei City</span>
                         <a href="mailto:sales@yehsheng.com.tw" style="color: #C5A059;">sales@yehsheng.com.tw</a>
-                        <a href="tel:+886229018266" style="color: white;">+886-2-2901-8266</a>
+                        <a href="tel:+886229018266" style="color: white;">+886-2-2903-2176</a>
                     </div>
                 </div>
 
