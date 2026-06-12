@@ -2,19 +2,18 @@
 
 <html lang="de">
 <head>
-<meta content="YUhT_jRF5sxYfCWMMcB08B38K6MB2yAEv4wEo1fjdXg" name="google-site-verification"/>
-<!-- Google Analytics & Clarity (production only) -->
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XS5ZTZGF2Y"></script>
-    <script>
+<!-- Google Analytics (only on production domain) -->
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-XS5ZTZGF2Y"></script>
+<script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
       gtag('config', 'G-XS5ZTZGF2Y');
     </script>
-    <!-- Microsoft Clarity -->
-    <script type="text/javascript">
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
         (function(c,l,a,r,i,t,y){
             c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
             t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
@@ -23,38 +22,50 @@
     </script>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>【Wissensdatenbank】FAQ, Materialien &amp; MPIF-Standards</title>
-<meta content="Technische Ressourcen zur Pulvermetallurgie (PM). Finden Sie Antworten zu PM-Festigkeit, Kosten und Materialien sowie ein Glossar der Fachbegriffe." name="description"/>
+<title>【Knowledge Base】Powder Metallurgy FAQ, Materials &amp; MPIF Standards</title>
+<meta content="Technical resources for Powder Metallurgy (PM). Find FAQs about PM strength, cost, and materials, plus a comprehensive glossary of industry terms like Sintering, Green Strength, and MIM." name="description"/>
+<meta content="Powder Metallurgy FAQ, PM vs MIM, Sintered Density, Green Strength, Diffusion Bonding, PM Materials, Self-Lubricating Bearings, Yeh Sheng Resources" name="keywords"/>
+<meta content="index, follow" name="robots"/>
+<!-- Import Google Fonts: Playfair Display (Serif) for Headings, Inter (Sans) for Body -->
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
 <style>
+        /* Global Reset */
         body {
             margin: 0;
             padding: 0;
             font-family: 'Inter', sans-serif;
             color: #333;
-            background: #fcfcfc
+            background-color: #fcfcfc;
+            overflow-x: hidden;
         }
 
         a {
             text-decoration: none;
-            color: inherit
+            color: inherit;
+            transition: all 0.3s ease;
         }
 
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Utility Classes */
         .container {
             max-width: 1400px;
             margin: 0 auto;
-            padding: 0 20px
+            padding: 0 20px;
         }
 
+        /* FAQ Styles */
         .faq-item {
             background: white;
             border-radius: 8px;
             padding: 25px;
             margin-bottom: 20px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
-            border-left: 4px solid #002FA7
+            border-left: 4px solid #002FA7;
         }
 
         .faq-question {
@@ -62,31 +73,32 @@
             font-size: 20px;
             font-weight: 700;
             color: #002FA7;
-            margin-bottom: 15px
+            margin-bottom: 15px;
         }
 
         .faq-answer {
             font-size: 16px;
             color: #555;
-            line-height: 1.8
+            line-height: 1.8;
         }
 
+        /* Table Styles */
         .term-table {
             width: 100%;
             border-collapse: collapse;
             background: white;
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
             border-radius: 8px;
-            overflow: hidden
+            overflow: hidden;
         }
 
         .term-table th {
-            background: #002FA7;
+            background-color: #002FA7;
             color: white;
             padding: 15px 20px;
             text-align: left;
             font-family: 'Playfair Display', serif;
-            font-size: 18px
+            font-size: 18px;
         }
 
         .term-table td {
@@ -94,28 +106,29 @@
             border-bottom: 1px solid #eee;
             font-size: 15px;
             line-height: 1.6;
-            color: #555
+            color: #555;
         }
 
         .term-table tr:last-child td {
-            border-bottom: none
+            border-bottom: none;
         }
 
         .term-table tr:hover {
-            background: #f8f9fa
+            background-color: #f8f9fa;
         }
 
         .term-name {
             font-weight: 600;
             color: #333;
-            white-space: nowrap
+            white-space: nowrap;
         }
 
+        /* Mobile Menu Styles */
         .mobile-menu-btn {
             display: none;
             cursor: pointer;
             font-size: 24px;
-            color: #333
+            color: #333;
         }
 
         .mobile-menu {
@@ -129,42 +142,69 @@
             padding: 20px;
             flex-direction: column;
             gap: 15px;
-            z-index: 99
+            z-index: 99;
         }
 
         .mobile-menu.active {
-            display: flex
+            display: flex;
         }
 
-        @media(max-width:768px) {
+        /* Responsive Styles */
+        @media (max-width: 768px) {
             .hidden-mobile {
-                display: none !important
+                display: none !important;
             }
 
             .mobile-menu-btn {
-                display: block
+                display: block;
             }
 
+            /* Layout Adjustments */
+            .flex-col-mobile {
+                flex-direction: column !important;
+                gap: 40px !important;
+            }
+
+            .w-full-mobile {
+                width: 100% !important;
+            }
+
+            .mt-mobile {
+                margin-top: 20px !important;
+            }
+
+            /* Typography Adjustments */
             h1 {
-                font-size: 36px !important
+                font-size: 42px !important;
+                line-height: 1.2 !important;
             }
 
             h2 {
-                font-size: 28px !important
+                font-size: 32px !important;
             }
 
+            p {
+                font-size: 16px !important;
+            }
+
+            /* Spacing Adjustments */
             section {
-                padding: 60px 0 !important
+                padding: 60px 0 !important;
             }
 
+            .container {
+                padding: 0 20px;
+            }
+
+            /* Table Adjustments */
             .term-table th,
             .term-table td {
                 padding: 10px;
-                font-size: 14px
+                font-size: 14px;
             }
 
             .term-name {
-                white-space: normal
+                white-space: normal;
             }
 
             .resource-layout {
@@ -238,7 +278,7 @@
             display: flex;
             gap: 40px;
             max-width: 1400px;
-            margin: 0 auto
+            margin: 0 auto;
         }
 
         .resource-sidebar {
@@ -251,27 +291,27 @@
             background: white;
             border-radius: 12px;
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-            padding: 20px
+            padding: 20px;
         }
 
         .sidebar-title {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Playfair Display', serif;
             font-size: 16px;
             font-weight: 700;
             color: #002FA7;
             margin-bottom: 15px;
             padding-bottom: 10px;
-            border-bottom: 2px solid #C5A059
+            border-bottom: 2px solid #C5A059;
         }
 
         .sidebar-nav {
             list-style: none;
             padding: 0;
-            margin: 0
+            margin: 0;
         }
 
         .sidebar-nav li {
-            margin-bottom: 5px
+            margin-bottom: 5px;
         }
 
         .sidebar-nav a {
@@ -281,29 +321,29 @@
             font-size: 14px;
             border-radius: 6px;
             transition: all 0.2s ease;
-            border-left: 3px solid transparent
+            border-left: 3px solid transparent;
         }
 
         .sidebar-nav a:hover {
             background: #f8f9fa;
-            color: #002FA7
+            color: #002FA7;
         }
 
         .sidebar-nav a.active {
             background: #f0f4ff;
             color: #002FA7;
             font-weight: 600;
-            border-left-color: #C5A059
+            border-left-color: #C5A059;
         }
 
         .sidebar-nav .sub-item a {
             padding-left: 24px;
-            font-size: 13px
+            font-size: 13px;
         }
 
         .resource-content {
             flex: 1;
-            min-width: 0
+            min-width: 0;
         }
 
         /* Process Guide Table */
@@ -314,7 +354,7 @@
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
             border-radius: 8px;
             overflow: hidden;
-            margin-bottom: 30px
+            margin-bottom: 30px;
         }
 
         .process-table th {
@@ -323,24 +363,24 @@
             padding: 15px 12px;
             text-align: center;
             font-size: 14px;
-            font-weight: 600
+            font-weight: 600;
         }
 
         .process-table td {
             padding: 12px;
             border-bottom: 1px solid #eee;
             text-align: center;
-            font-size: 14px
+            font-size: 14px;
         }
 
         .process-table tr:nth-child(even) {
-            background: #f8f9fa
+            background: #f8f9fa;
         }
 
         .process-table .highlight-pm {
             background: #e8f5e9 !important;
             color: #2e7d32;
-            font-weight: 600
+            font-weight: 600;
         }
 
         .decision-box {
@@ -348,13 +388,13 @@
             border: 2px solid #C5A059;
             border-radius: 12px;
             padding: 25px;
-            margin-top: 30px
+            margin-top: 30px;
         }
 
         .decision-box h4 {
             color: #002FA7;
             margin: 0 0 15px 0;
-            font-size: 18px
+            font-size: 18px;
         }
 
         .decision-item {
@@ -362,25 +402,134 @@
             align-items: center;
             gap: 10px;
             padding: 8px 0;
-            font-size: 15px
+            font-size: 15px;
         }
 
         .decision-item .arrow {
             color: #C5A059;
-            font-weight: bold
+            font-weight: bold;
+        }
+    </style>
+<style id="google-translate-style">
+        /* Google Translate Customization */
+        .goog-te-gadget-simple {
+            background-color: transparent !important;
+            border: none !important;
+            padding: 0 !important;
+            font-size: 13px !important;
+        }
+
+        .goog-te-gadget-simple .goog-te-menu-value {
+            color: #996B1D !important;
+            /* Match the Gold color */
+            font-weight: 500;
+        }
+
+        .goog-te-gadget-simple .goog-te-menu-value span {
+            color: #996B1D !important;
+            border-left: none !important;
+        }
+
+        .goog-te-gadget-simple .goog-te-menu-value img {
+            display: none !important;
+            /* Hide Google Icon */
+        }
+
+        /* Hide the Google Top Bar */
+        .goog-te-banner-frame.skiptranslate {
+            display: none !important;
+        }
+
+        body {
+            top: 0px !important;
+        }
+
+        /* Hide tooltips */
+        .goog-tooltip {
+            display: none !important;
+        }
+
+        .goog-tooltip:hover {
+            display: none !important;
+        }
+
+        .goog-text-highlight {
+            background-color: transparent !important;
+            border: none !important;
+            box-shadow: none !important;
         }
     </style>
 <link href="../images/logo.png" rel="icon" type="image/png"/>
+<!-- FAQPage Schema.org Structured Data -->
 <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",
       "mainEntity": [
-        {"@type": "Question", "name": "Ist die Festigkeit von Pulvermetallurgie-Teilen ausreichend für Hochlastanwendungen?", "acceptedAnswer": {"@type": "Answer", "text": "Absolut. Obwohl PM-Teile eine inhärente Mikroporosität aufweisen, kann ihre Festigkeit so konstruiert werden, dass sie Gusseisen oder sogar Schmiedestahl erreicht oder übertrifft. Durch Anpassung der Legierungszusammensetzung, Erhöhung der Pressdichte oder Verwendung von Sekundärschmieden werden PM-Teile heute in Hochbeanspruchungsumgebungen wie Automobilmotoren, Getrieberädern und Pleuelstangen eingesetzt."}},
-        {"@type": "Question", "name": "Was ist kosteneffektiver: Pulvermetallurgie oder CNC-Bearbeitung?", "acceptedAnswer": {"@type": "Answer", "text": "Das hängt vom Produktionsvolumen ab. CNC-Bearbeitung eignet sich besser für Kleinserienprototypen, da keine teuren Werkzeuge erforderlich sind. Bei Massenproduktion (typischerweise 5.000+ Einheiten) ist Pulvermetallurgie jedoch deutlich günstiger. PM senkt die Kosten durch Minimierung des Materialabfalls (Near-Net-Shape) und Eliminierung der arbeitsintensiven Schritte des traditionellen Zerspanens."}},
-        {"@type": "Question", "name": "Welche Materialien können im PM-Prozess verwendet werden?", "acceptedAnswer": {"@type": "Answer", "text": "PM ist äußerst vielseitig. Es kann fast alle Metalle verarbeiten, darunter: Eisenbasislegierungen (Eisen und Stahl), Nichteisenmetalle (Kupfer, Aluminium und Messing), Refraktärmetalle (Wolfram und Molybdän) sowie Spezialwerkstoffe (Edelstahl und Superlegierungen für Luft- und Raumfahrt sowie Medizin)."}},
-        {"@type": "Question", "name": "Warum gilt Pulvermetallurgie als 'grüne' Technologie?", "acceptedAnswer": {"@type": "Answer", "text": "PM ist eine der nachhaltigsten Fertigungsmethoden. Sie erreicht eine Materialausnutzung von über 95%, was bedeutet, dass fast kein Metallabfall entsteht. Da der Sinterprozess zudem unterhalb des Schmelzpunkts stattfindet, benötigt er oft weniger Energie als traditionelle Schmelz- und Gießverfahren."}},
-        {"@type": "Question", "name": "Wie funktionieren 'selbstschmierende' Lager in der Pulvermetallurgie?", "acceptedAnswer": {"@type": "Answer", "text": "Dies ist ein einzigartiger Vorteil von PM. Da die Teile natürlich porös sind, können sie vakuumimprägniert mit Öl werden. Wenn das Lager im Betrieb erwärmt wird, dehnt sich das Öl aus und fließt an die Oberfläche. Beim Abkühlen wird das Öl durch Kapillarwirkung zurück in die Poren gesogen. Ideal für 'wartungsfreie' Anwendungen."}}
+        {
+          "@type": "Question",
+          "name": "Is the strength of Powder Metallurgy parts sufficient for high-load applications?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. While PM parts have inherent micro-porosity, their strength can be engineered to meet or exceed that of cast iron or even forged steel. By adjusting alloy compositions, increasing compacting density, or using Secondary Forging, PM parts are now widely used in high-stress environments like automotive engines, transmission gears, and connecting rods."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which is more cost-effective: Powder Metallurgy or CNC Machining?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends on the production volume. CNC Machining is better for low-volume prototyping because it doesn't require expensive tooling. However, for mass production (typically 5,000+ units), Powder Metallurgy is significantly cheaper. PM reduces costs by minimizing material waste (Near-Net Shape) and eliminating the labor-intensive steps of traditional cutting."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What materials can be used in the PM process?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "PM is incredibly versatile. It can process almost all metals, including: Ferrous Alloys (Iron and steel), Non-Ferrous (Copper, aluminum, and brass), Refractory Metals (Tungsten and Molybdenum), and Specialty Materials (Stainless steel and superalloys for aerospace and medical use)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is Powder Metallurgy considered a 'Green' technology?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "PM is one of the most sustainable manufacturing methods. It boasts a material utilization rate of over 95%, meaning almost no scrap metal is produced. Additionally, because the sintering process occurs below the melting point, it often requires less energy than traditional melting and casting operations."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do 'Self-Lubricating' bearings work in Powder Metallurgy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "This is a unique advantage of PM. Because the parts are naturally porous, they can be vacuum-impregnated with oil. When the bearing heats up during operation, the oil expands and flows to the surface. When it cools down, the oil is re-absorbed into the pores by capillary action. This makes them ideal for 'maintenance-free' applications."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between traditional PM and Metal Injection Molding (MIM)?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "While both use metal powders: Traditional PM is like 'pressing a tablet' and is best for larger, simpler shapes. MIM involves mixing powder with a plastic binder to 'inject' it into a mold and is designed for extremely small, highly complex parts (like those in smartphones or surgical tools) that would be impossible to press."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can PM parts be plated or welded?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, but they require preparation. Due to the porosity, PM parts are usually steam-treated or resin-sealed before plating to prevent chemicals from getting trapped in the pores. For welding, laser welding is preferred to minimize the heat-affected zone."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the design limitations for PM parts?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Engineers should avoid features that prevent the part from being ejected from the die. This includes: Side Undercuts (holes or grooves on the side must be machined later), Wall Thickness (walls should generally be thicker than 1.5mm to ensure even powder flow), and Sharp Corners (rounded edges/fillets are preferred to extend tool life and improve strength)."
+          }
+        }
       ]
     }
     </script>
@@ -445,412 +594,553 @@
                 .accordion-card.active .accordion-body-inner { padding: 20px; }
                 .accordion-header h3 { font-size: 20px !important; }
             }
-            </style>    <link href="https://yehsheng.com/de/resource-design.html" rel="canonical" />
-    <!-- hreflang tags for multilingual SEO -->
-    <link href="https://yehsheng.com/resource-design.html" hreflang="en" rel="alternate" />
-    <link href="https://yehsheng.com/resource-design.html" hreflang="x-default" rel="alternate" />
-    <link href="https://yehsheng.com/de/resource-design.html" hreflang="de" rel="alternate" />
-    <link href="https://yehsheng.com/jp/resource-design.html" hreflang="ja" rel="alternate" />
-    <link href="https://yehsheng.com/zh/resource-design.html" hreflang="zh-Hant" rel="alternate" />
-    <link href="https://yehsheng.com/zh-cn/resource-design.html" hreflang="zh-Hans" rel="alternate" />
+            </style> <link href="https://yehsheng.com/resource-design.html" rel="canonical"/>
+<!-- hreflang tags for multilingual SEO -->
+<link href="https://yehsheng.com/resource-design.html" hreflang="en" rel="alternate"/>
+<link href="https://yehsheng.com/resource-design.html" hreflang="x-default" rel="alternate"/>
+<link href="https://yehsheng.com/de/resource-design.html" hreflang="de" rel="alternate"/>
+<link href="https://yehsheng.com/jp/resource-design.html" hreflang="ja" rel="alternate"/>
+<link href="https://yehsheng.com/zh/resource-design.html" hreflang="zh-Hant" rel="alternate"/>
+<link href="https://yehsheng.com/zh-cn/resource-design.html" hreflang="zh-Hans" rel="alternate"/>
 </head>
 <body>
-<div class="hidden-mobile" style="background:#002FA7;color:white;padding:10px 0;position:relative;z-index:200">
-<div class="container" style="display:flex;justify-content:flex-end;gap:25px;font-size:13px;font-weight:500">
-<a href="about.html" style="color:#e8e8e8">&Uuml;ber uns</a>
-<a href="contact.html" style="color:#e8e8e8">Kontakt</a>
-<div style="position:relative;display:inline-block">
-<span onclick="toggleLangMenu()" style="color: #996B1D;font-weight:600;cursor:pointer">Deutsch ▼</span>
-<div id="langMenu" style="display:none;position:absolute;right:0;top:100%;background:white;box-shadow:0 4px 12px rgba(0,0,0,0.15);border-radius:4px;min-width:120px;z-index:10000">
-<a href="../resources.html" style="display:block;padding:10px 15px;color:#333;font-size:13px">English</a>
-<a href="../zh/resources.html" style="display:block;padding:10px 15px;color:#333;font-size:13px">繁體中文</a>
-<a href="../zh-cn/resources.html" style="display:block;padding:10px 15px;color:#333;font-size:13px">简体中文</a>
-<a href="../de/resources.html" style="display:block;padding:10px 15px;color: #996B1D;font-size:13px;background:#f5f5f5">Deutsch</a>
-<a href="../jp/resources.html" style="display:block;padding:10px 15px;color:#333;font-size:13px">日本語</a>
+<!-- Top Bar (Klein Blue #002FA7) -->
+<div class="hidden-mobile" style="background-color: #002FA7; color: white; padding: 10px 0;;position:relative;z-index:200">
+<div class="container" style="display: flex; justify-content: flex-end; gap: 25px; font-size: 13px; font-weight: 500; letter-spacing: 0.5px; align-items: center;">
+<a href="about.html" style="color: #e8e8e8;">Über uns</a>
+<a href="contact.html" style="color: #e8e8e8;">Kontakt</a>
+<!-- Language Dropdown -->
+<div style="position: relative; display: inline-block;">
+<button aria-label="Select language" onclick="toggleLangDropdown()" style="background: transparent; border: 1px solid #C5A059; color: #7A5F12; padding: 6px 15px; border-radius: 4px; cursor: pointer; font-size: 13px; font-weight: 600; display: flex; align-items: center; gap: 8px;">
+                    🌐 English ▼
+                </button>
+<div id="langDropdown" style="display: none; position: absolute; right: 0; top: 100%; margin-top: 5px; background: white; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); min-width: 160px; z-index:10000; overflow: hidden;">
+<a href="resources.html" style="display: block; padding: 12px 20px; color: #333; font-size: 14px; border-bottom: 1px solid #eee; font-weight: 600; background: #f8f9fa;">🇺🇸
+                        English</a>
+<a href="zh/resources.html" style="display: block; padding: 12px 20px; color: #333; font-size: 14px; border-bottom: 1px solid #eee;">🇹🇼
+                        繁體中文</a>
+<a href="zh-cn/resources.html" style="display: block; padding: 12px 20px; color: #333; font-size: 14px; border-bottom: 1px solid #eee;">🇨🇳
+                        简体中文</a>
+<a href="de/resources.html" style="display: block; padding: 12px 20px; color: #333; font-size: 14px; border-bottom: 1px solid #eee;">🇩🇪
+                        Deutsch</a>
+<a href="jp/resources.html" style="display: block; padding: 12px 20px; color: #333; font-size: 14px;">🇯🇵 日本語</a>
 </div>
 </div>
 </div>
 </div>
-<nav style="background:white;box-shadow:0 2px 10px rgba(0,0,0,0.05);position:sticky;top:0;z-index:100">
-<div class="container" style="padding:15px 20px;display:flex;justify-content:space-between;align-items:center;position:relative">
-<a aria-label="Go to homepage" href="index.html" style="display:flex;align-items:center;gap:15px">
-<img alt="Logo" height="40" src="../images/logo.png" style="height:  40px;" width="49"/>
-<div><span style="font-size:18px;font-weight:700;color:#111;display:block">Yeh Sheng Powder
-                        Parts</span><span style="font-size:10px;font-weight:600;color: #996B1D">Pulvermetallurgie-Experten</span></div>
+<!-- Navigation -->
+<nav style="background: white; box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 100;">
+<div class="container" style="padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; position: relative;">
+<div style="display: flex; align-items: center; gap: 15px;">
+<a aria-label="Go to homepage" href="index.html" style="display: flex; align-items: center; gap: 15px;">
+<img alt="Logo" height="40" src="../images/logo.png" style="height:   40px;" width="49"/>
+<div style="display: flex; flex-direction: column;">
+<span style="font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; color: #111; line-height: 1.2;">Yeh Sheng Powder Parts Ind. Co. Ltd.</span>
+<span style="font-size: 10px; font-weight: 600; color: #7A5F12; letter-spacing: 1px; text-transform: uppercase;">Powder
+                            Metallurgy</span>
+</div>
 </a>
-<div class="hidden-mobile" style="display:flex;gap:35px;align-items:center">
-<a href="products.html" style="font-size:15px;font-weight:500;color:#333">Produkte</a>
-<a href="solutions.html" style="font-size:15px;font-weight:500;color:#333">Service</a>
-<a href="capabilities.html" style="font-size:15px;font-weight:500;color:#333">F&auml;higkeiten</a>
-<a href="applications.html" style="font-size:15px;font-weight:500;color:#333">Branchen</a>
-<a href="case-studies.html" style="font-size:15px;color:#555">Fallstudien</a>
-<a href="resources.html" style="font-size:15px;font-weight:700;color: #996B1D">Ressourcen</a>
-<a href="contact.html" style="background:#C5A059;color:white;padding:8px 20px;border-radius:4px;font-size:14px;font-weight:500">Kontakt</a>
 </div>
-<div aria-label="Toggle menu" class="mobile-menu-btn" onclick="toggleMenu()" role="button" tabindex="0">☰
+<!-- Desktop Menu -->
+<div class="hidden-mobile" style="display: flex; gap: 35px; align-items: center;">
+<a href="products.html" style="font-size: 15px; font-weight: 500; color: #333; text-transform: uppercase; letter-spacing: 0.5px;">Produkte</a>
+<a href="solutions.html" style="font-size: 15px; font-weight: 500; color: #333; text-transform: uppercase; letter-spacing: 0.5px;">Service
+                    Workflow</a>
+<a href="capabilities.html" style="font-size: 15px; font-weight: 500; color: #333; text-transform: uppercase; letter-spacing: 0.5px;">Fertigung</a>
+<a href="applications.html" style="font-size: 15px; font-weight: 500; color: #333; text-transform: uppercase; letter-spacing: 0.5px;">Branchen</a>
+<a href="case-studies.html" style="font-size:14px;color:#555">Case Studies</a>
+<a href="resources.html" style="font-size: 15px; font-weight: 500; color: #996B1D; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 700;">Resources</a>
+<a href="contact.html" style="background: #C5A059; color: white; padding: 8px 20px; border-radius: 4px; font-size: 14px; font-weight: 500;">Kontakt</a>
+</div>
+<!-- Mobile Menu Button -->
+<div aria-label="Toggle menu" class="mobile-menu-btn" onclick="toggleMenu()" role="button" tabindex="0">
+                ☰
             </div>
+<!-- Mobile Menu Dropdown -->
 <div class="mobile-menu" id="mobileMenu">
+<!-- Close Button -->
 <div aria-label="Close menu" onclick="toggleMenu()" role="button" style="text-align:right;padding:5px 0 15px;cursor:pointer;font-size:24px;color:#333;" tabindex="0">✕</div>
-<a href="products.html" style="padding:10px 0;border-bottom:1px solid #eee">Produkte</a>
-<a href="solutions.html" style="padding:10px 0;border-bottom:1px solid #eee">Service</a>
-<a href="capabilities.html" style="padding:10px 0;border-bottom:1px solid #eee">F&auml;higkeiten</a>
-<a href="applications.html" style="padding:10px 0;border-bottom:1px solid #eee">Branchen</a>
-<a href="case-studies.html" style="font-size:14px;color:#555">Fallstudien</a>
-<a href="resources.html" style="padding:10px 0;border-bottom:1px solid #eee;color: #996B1D;font-weight:700">Ressourcen</a>
-<a href="about.html" style="padding:10px 0;border-bottom:1px solid #eee">&Uuml;ber uns</a>
-<a href="contact.html" style="padding:10px 0;color: #996B1D">Kontakt</a>
+<a href="products.html" style="font-size: 16px; font-weight: 500; color: #333; padding: 10px 0; border-bottom: 1px solid #eee;">Produkte</a>
+<a href="solutions.html" style="font-size: 16px; font-weight: 500; color: #333; padding: 10px 0; border-bottom: 1px solid #eee;">Service
+                    Workflow</a>
+<a href="capabilities.html" style="font-size: 16px; font-weight: 500; color: #333; padding: 10px 0; border-bottom: 1px solid #eee;">Fertigung</a>
+<a href="applications.html" style="font-size: 16px; font-weight: 500; color: #333; padding: 10px 0; border-bottom: 1px solid #eee;">Branchen</a>
+<a href="case-studies.html" style="font-size:14px;color:#555">Case Studies</a>
+<a href="resources.html" style="font-size: 16px; font-weight: 500; color: #996B1D; padding: 10px 0; border-bottom: 1px solid #eee; font-weight: 700;">Resources</a>
+<a href="about.html" style="font-size: 16px; font-weight: 500; color: #333; padding: 10px 0; border-bottom: 1px solid #eee;">Über uns</a>
+<a href="contact.html" style="font-size: 16px; font-weight: 500; color: #996B1D; padding: 10px 0;">Kontakt</a>
+<!-- Mobile Language Selector -->
 <div style="border-top:2px solid #C5A059;margin-top:10px;padding-top:15px;">
-<div style="font-size:14px;font-weight:600;color: #996B1D;margin-bottom:10px;">🌐 Sprache</div>
-<a href="../resources.html" style="display:block;padding:8px 0;color:#333;">🇺🇸 English</a>
-<a href="../zh/resources.html" style="display:block;padding:8px 0;color:#333;">🇹🇼 繁體中文</a>
-<a href="../zh-cn/resources.html" style="display:block;padding:8px 0;color:#333;">🇨🇳 简体中文</a>
-<a href="../de/resources.html" style="display:block;padding:8px 0;color: #996B1D;font-weight:600;">🇩🇪 Deutsch</a>
-<a href="../jp/resources.html" style="display:block;padding:8px 0;color:#333;">🇯🇵 日本語</a>
+<div style="font-size:14px;font-weight:600;color: #996B1D;margin-bottom:10px;">🌐 Language</div>
+<a href="case-studies.html" style="display:block;padding:8px 0;color:#555;font-weight:600">Case
+                        Studies</a>
+<a href="resources.html" style="display:block;padding:8px 0;color: #996B1D;font-weight:600;">🇺🇸
+                        English</a>
+<a href="zh/resources.html" style="display:block;padding:8px 0;color:#333;">🇹🇼 繁體中文</a>
+<a href="zh-cn/resources.html" style="display:block;padding:8px 0;color:#333;">🇨🇳 简体中文</a>
+<a href="de/resources.html" style="display:block;padding:8px 0;color:#333;">🇩🇪 Deutsch</a>
+<a href="jp/resources.html" style="display:block;padding:8px 0;color:#333;">🇯🇵 日本語</a>
 </div>
 </div>
 </div>
 </nav>
-<section role="main" style="padding:80px 0;background:white">
+<!-- Header Section -->
+<section role="main" style="padding: 80px 0; background: white;">
 <div class="container">
-<div style="text-align:center;margin-bottom:60px">
-<h1 style="font-family:'Playfair Display',serif;font-size:42px;font-weight:700;color:#111;margin-bottom:20px">
-                    Technische Ressourcen</h1>
-<h2 style="font-family:'Playfair Display',serif;font-size:32px;font-weight:700;color:#555;margin-bottom:20px">
-                    Wissensdatenbank <span style="font-family: 'Inter', 'Arial', sans-serif;">&amp;</span> FAQ</h2>
-<div style="width:80px;height:4px;background:#C5A059;margin:0 auto 30px"></div>
-<p style="font-size:18px;color:#666;max-width:800px;margin:0 auto;line-height:1.6">Entdecken Sie h&auml;ufig
-                    gestellte Fragen zur Pulvermetallurgie und ein umfassendes Glossar der Fachbegriffe.</p>
+<div style="text-align: center; margin-bottom: 60px;">
+<h1 style="font-family: 'Playfair Display', serif; font-size: 42px; font-weight: 700; color: #111; margin-bottom: 20px;">
+                    Technical Resources</h1>
+<h2 style="font-family: 'Playfair Display', serif; font-size: 32px; font-weight: 700; color: #555; margin-bottom: 20px;">
+                    Knowledge Base <span style="font-family: 'Inter', 'Arial', sans-serif;">&amp;</span> FAQ</h2>
+<div style="width: 80px; height: 4px; background-color: #C5A059; margin: 0 auto 30px auto;"></div>
+<p style="font-size: 18px; color: #555; max-width: 800px; margin: 0 auto; line-height: 1.6;">
+                    Explore common questions about Powder Metallurgy and a comprehensive glossary of industry terms to
+                    help you make informed engineering decisions.
+                </p>
 </div>
 <!-- Layout with Sidebar -->
-<div class="resource-layout"><aside class="resource-sidebar">
-<div class="sidebar-title">📋 Schnellnavigation</div>
+<div class="resource-layout">
+<aside class="resource-sidebar">
+<div class="sidebar-title">📋 Quick Navigation</div>
 <ul class="sidebar-nav">
-<li><a href="case-studies.html">📋 Fallstudien</a></li>
-<li><a href="resource-process.html#process-guide">🔄 Prozessauswahl</a></li>
-<li><a href="resource-design.html#gear-types">⚙️ Zahnradtypen-Lexikon</a></li>
-<li class="sub-item"><a href="resource-design.html#spur-helical">&bull; Stirn-/Schr&auml;gverzahnung</a></li>
-<li class="sub-item"><a href="resource-design.html#bevel-worm">&bull; Kegel-/Schneckenr&auml;der</a></li>
-<li class="sub-item"><a href="resource-design.html#planetary">&bull; Planeten-/Spezialgeber</a></li>
-<li><a href="resource-materials.html#powder-production">🔬 Pulverproduktion</a></li>
-<li><a href="resource-quality.html#quality-control">📊 Qualit&auml;tskontrolle</a></li>
-<li><a href="resource-materials.html#density-porosity">⚡ Dichte &amp; Porosit&auml;t</a></li>
+<li><a href="case-studies.html">📋 Case Studies</a></li>
+<li><a href="resource-process.html#process-guide">🔄 Process Selection</a></li>
+<li><a href="resource-design.html#gear-types">⚙️ Gear Guide</a></li>
+<li class="sub-item"><a href="resource-design.html#spur-helical">• Spur/Helical</a></li>
+<li class="sub-item"><a href="resource-design.html#bevel-worm">• Bevel/Worm</a></li>
+<li class="sub-item"><a href="resource-design.html#planetary">• Planetary/Harmonic</a></li>
+<li><a href="resource-design.html#bearings-guide">🔩 Self-Lubricating Bearings</a></li>
+<li><a href="resource-materials.html#sintering-guide">🔥 Sintering Process</a></li>
+<li><a href="resource-materials.html#powder-production">🔬 Powder Production</a></li>
+<li><a href="resource-quality.html#quality-control">📊 Quality Control</a></li>
+<li><a href="resource-materials.html#density-porosity">⚡ Density/Porosity</a></li>
 <li><a href="resource-faq.html#faq">❓ FAQ</a></li>
-<li><a href="resource-faq.html#glossary">📖 Glossar</a></li>
-<li><a href="resource-materials.html#materials">🔧 Werkstoffe</a></li>
-<li class="sub-item"><a href="resource-materials.html#iron-steel">&bull; Fe-Cu-C St&auml;hle</a></li>
-<li class="sub-item"><a href="resource-materials.html#stainless">&bull; Edelst&auml;hle</a></li>
-<li class="sub-item"><a href="resource-materials.html#magnetic">&bull; Weichmagnetisch</a></li>
-<li class="sub-item"><a href="resource-materials.html#bronze-brass">&bull; Bronze/Messing</a></li>
+<li><a href="resource-faq.html#glossary">📖 Glossary</a></li>
+<li><a href="resource-materials.html#materials">🔧 Material Specs</a></li>
 </ul>
 </aside>
-<!-- Main Content -->
-<div class="resource-content">
-<!-- Zahnradtypen-Lexikon -->
-<div class="accordion-card" id="gear-types"><div class="accordion-header" onclick="toggleAccordion(this)"><h3 style="font-family:'Playfair Display',serif;font-size:28px;font-weight:700;color:#333;margin-bottom:15px;border-bottom:2px solid #eee;padding-bottom:10px; margin: 0 !important; border: none; padding: 0; font-size: 24px;">
-                            ⚙️ Zahnradtypen-Lexikon: Vollst&auml;ndiger Leitfaden
+<div class="resource-content"><!-- Gear Types Guide Section -->
+<div class="accordion-card" id="gear-types"><div class="accordion-header" onclick="toggleAccordion(this)"><h3 style="font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 700; color: #333; margin-bottom: 15px; border-bottom: 2px solid #eee; padding-bottom: 10px;; margin: 0 !important; border: none; padding: 0; font-size: 24px;">
+                            ⚙️ Complete Guide to Gear Types
                         </h3><span class="accordion-icon">🔽</span></div><div class="accordion-body-wrapper"><div class="accordion-body-inner">
-<p style="font-size:16px;color:#555;line-height:1.7;margin-bottom:30px">
-                            Zahnr&auml;der sind fundamentale mechanische Komponenten zur Kraft- und Bewegungs&uuml;bertragung. Das
-                            Verst&auml;ndnis verschiedener Zahnradtypen hilft Ingenieuren, die richtige L&ouml;sung f&uuml;r ihre
-                            Anwendung zu w&auml;hlen. Dieser Leitfaden behandelt alle wichtigen im modernen Maschinenbau
-                            verwendeten Zahnradtypen.
+<p style="font-size: 16px; color: #555; line-height: 1.7; margin-bottom: 30px;">
+                            Gears are fundamental mechanical components used to transmit power and motion between
+                            shafts. Understanding the different types of gears helps engineers select the right solution
+                            for their application. This guide covers all major gear types used in modern engineering.
                         </p>
-<!-- Parallelachsen-Zahnräder -->
-<div id="spur-helical" style="margin-bottom:40px">
-<h4 style="font-size:22px;font-weight:600;color:#002FA7;margin-bottom:15px;padding-left:15px;border-left:4px solid #C5A059">
-                                Parallelachsen-Zahnr&auml;der: Stirn- und Schr&auml;gverzahnung
+<!-- Spur & Helical Gears -->
+<div id="spur-helical" style="margin-bottom: 40px;">
+<h4 style="font-size: 22px; font-weight: 600; color: #002FA7; margin-bottom: 15px; padding-left: 15px; border-left: 4px solid #C5A059;">
+                                Parallel Axis Gears: Spur <span style="font-family: 'Inter', 'Arial', sans-serif;">&amp;</span> Helical
                             </h4>
 <table class="term-table">
 <thead>
 <tr>
-<th style="width:150px">Zahnradtyp</th>
-<th>Beschreibung</th>
-<th>Vorteile</th>
-<th>Typische Anwendungen</th>
+<th style="width: 180px;">Gear Type</th>
+<th>Description</th>
+<th>Advantages</th>
+<th>Common Applications</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="term-name">Stirnrad<br/>(Spur Gear)</td>
-<td>Z&auml;hne parallel zur Rotationsachse. Einfachster und g&auml;ngigster Zahnradtyp.
+<td class="term-name">Spur Gear</td>
+<td>Teeth are straight and parallel to the axis of rotation. The simplest and
+                                            most common gear type.</td>
+<td>High efficiency (up to 99%), easy to manufacture, no axial thrust</td>
+<td>Clocks, washing machines, conveyors, power tools</td>
+</tr>
+<tr>
+<td class="term-name">Helical Gear</td>
+<td>Teeth are cut at an angle (helix) to the axis. Multiple teeth engage
+                                            simultaneously.</td>
+<td>Quieter operation, smoother power transmission, higher load capacity</td>
+<td>Automotive transmissions, elevators, industrial gearboxes</td>
+</tr>
+<tr>
+<td class="term-name">Double Helical<br/>(Herringbone)</td>
+<td>Two sets of helical teeth in opposite directions on the same gear.</td>
+<td>Eliminates axial thrust, combines helical advantages without thrust bearings
                                         </td>
-<td>Hoher Wirkungsgrad (bis 99%), einfache Fertigung, keine Axialkr&auml;fte</td>
-<td>Uhren, Waschmaschinen, F&ouml;rderb&auml;nder, Elektrowerkzeuge</td>
+<td>Heavy-duty industrial equipment, marine propulsion</td>
 </tr>
 <tr>
-<td class="term-name">Schr&auml;gstirnrad<br/>(Helical Gear)</td>
-<td>Z&auml;hne schr&auml;g angeordnet. Mehrere Z&auml;hne gleichzeitig im Eingriff.</td>
-<td>Leiser Lauf, gleichm&auml;&szlig;igere &Uuml;bertragung, h&ouml;here Tragf&auml;higkeit</td>
-<td>Kfz-Getriebe, Aufz&uuml;ge, Industriegetriebe</td>
+<td class="term-name">Internal Gear</td>
+<td>Teeth cut on the inner surface of a cylinder. Meshes with a smaller external
+                                            gear.</td>
+<td>Compact design, concentric shaft arrangement</td>
+<td>Planetary gearsets, internal gear pumps</td>
 </tr>
 <tr>
-<td class="term-name">Doppelschr&auml;gverzahnung<br/>(Herringbone)</td>
-<td>Zwei gegenlaufende Schr&auml;gverzahnungss&auml;tze auf einem Rad.</td>
-<td>Eliminiert Axialkr&auml;fte, Vorteile der Schr&auml;gverzahnung ohne Axiallager</td>
-<td>Schwere Industrieanlagen, Schiffsantriebe</td>
-</tr>
-<tr>
-<td class="term-name">Innenverzahnung<br/>(Internal Gear)</td>
-<td>Z&auml;hne an der Innenfl&auml;che eines Hohlzylinders. Koppelt mit Au&szlig;enzahnrad.</td>
-<td>Kompakte Bauweise, koaxiale Achsanordnung</td>
-<td>Planetengetriebe, Innenzahnradpumpen</td>
-</tr>
-<tr>
-<td class="term-name">Zahnstange<br/>(Rack &amp; Pinion)</td>
-<td>Wandelt Drehbewegung in Linearbewegung. Ritzel (rund) koppelt mit Zahnstange
-                                            (linear).</td>
-<td>Einfacher Linearantrieb, hochpr&auml;zise Positionierung</td>
-<td>Lenkungen, CNC-Maschinen, Schiebet&uuml;ren</td>
+<td class="term-name">Rack &amp; Pinion</td>
+<td>Converts rotational motion to linear motion. Pinion (circular) meshes with
+                                            rack (linear).</td>
+<td>Simple linear actuation, high precision positioning</td>
+<td>Steering systems, CNC machines, sliding gates</td>
 </tr>
 </tbody>
 </table>
 </div>
-<!-- Kreuzende Achsen -->
-<div id="bevel-worm" style="margin-bottom:40px">
-<h4 style="font-size:22px;font-weight:600;color:#002FA7;margin-bottom:15px;padding-left:15px;border-left:4px solid #C5A059">
-                                Kreuzende und windsch. Achsen
+<!-- Bevel & Worm Gears -->
+<div id="bevel-worm" style="margin-bottom: 40px;">
+<h4 style="font-size: 22px; font-weight: 600; color: #002FA7; margin-bottom: 15px; padding-left: 15px; border-left: 4px solid #C5A059;">
+                                Intersecting <span style="font-family: 'Inter', 'Arial', sans-serif;">&amp;</span> Non-Parallel Axis Gears
                             </h4>
 <table class="term-table">
 <thead>
 <tr>
-<th style="width:150px">Zahnradtyp</th>
-<th>Beschreibung</th>
-<th>Vorteile</th>
-<th>Typische Anwendungen</th>
+<th style="width: 180px;">Gear Type</th>
+<th>Description</th>
+<th>Advantages</th>
+<th>Common Applications</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="term-name">Geradverzahntes Kegelrad<br/>(Straight Bevel)</td>
-<td>Kegelr&auml;der mit geraden Z&auml;hnen. Achsen schneiden sich typisch bei 90&deg;.</td>
-<td>Einfache Konstruktion, geeignet f&uuml;r niedrige Geschwindigkeiten</td>
-<td>Differentialgetriebe, Handbohrmaschinen</td>
+<td class="term-name">Straight Bevel Gear</td>
+<td>Conical gears with straight teeth. Axes intersect at 90° (typically).</td>
+<td>Simple design, good for low-speed applications</td>
+<td>Differential gears, hand drills</td>
 </tr>
 <tr>
-<td class="term-name">Spiralkegelrad<br/>(Spiral Bevel)</td>
-<td>Kegelr&auml;der mit bogenf&ouml;rmigen Z&auml;hnen f&uuml;r gleichm&auml;&szlig;igeren Eingriff.</td>
-<td>Leiser, h&ouml;here Tragf&auml;higkeit als Geradverzahnung</td>
-<td>Fahrzeugachsen, Luftfahrtgetriebe</td>
+<td class="term-name">Spiral Bevel Gear</td>
+<td>Bevel gear with curved teeth for smoother engagement.</td>
+<td>Quieter, higher load capacity than straight bevel</td>
+<td>Automotive axles, aerospace gearboxes</td>
 </tr>
 <tr>
-<td class="term-name">Hypoidgetriebe<br/>(Hypoid Gear)</td>
-<td>&Auml;hnlich Spiralkegelrad, aber Achsen schneiden sich nicht (versetzt).</td>
-<td>Erm&ouml;glicht nicht schneidende Achsen, ruhiger Lauf</td>
-<td>Hinterachsantriebe in Fahrzeugen</td>
+<td class="term-name">Hypoid Gear</td>
+<td>Similar to spiral bevel but axes do not intersect (offset).</td>
+<td>Allows non-intersecting shafts, smooth and quiet</td>
+<td>Rear axle drives in vehicles</td>
 </tr>
 <tr>
-<td class="term-name">Schneckengetriebe<br/>(Worm Gear)</td>
-<td>Schnecke (spiralf&ouml;rmig) koppelt mit Schneckenrad. Achsen nicht parallel,
-                                            nicht schneidend.</td>
-<td>Hohe Untersetzung (bis 100:1), Selbsthemmung</td>
-<td>F&ouml;rdersysteme, Stimmvorrichtungen, Lenkungen</td>
+<td class="term-name">Worm Gear</td>
+<td>Worm (screw-like) meshes with worm wheel. Non-parallel, non-intersecting
+                                            axes.</td>
+<td>High reduction ratio (up to 100:1), self-locking capability</td>
+<td>Conveyor systems, tuning instruments, steering mechanisms</td>
 </tr>
 <tr>
-<td class="term-name">Schr&auml;gverzahnte Kreuzachse<br/>(Crossed Helical)</td>
-<td>Zwei Schr&auml;gstirnr&auml;der mit sich kreuzenden Achsen (typisch 90&deg;).</td>
-<td>Flexible Montage, mittlere Belastbarkeit</td>
-<td>Leichtlastantriebe, Tachometer</td>
+<td class="term-name">Screw Gear<br/>(Crossed Helical)</td>
+<td>Two helical gears with crossed axes (usually 90°).</td>
+<td>Flexible mounting, moderate loads</td>
+<td>Light-duty power transmission, speedometers</td>
 </tr>
 </tbody>
 </table>
 </div>
-<!-- Planeten- und Spezialgetriebe -->
-<div id="planetary" style="margin-bottom:40px">
-<h4 style="font-size:22px;font-weight:600;color:#002FA7;margin-bottom:15px;padding-left:15px;border-left:4px solid #C5A059">
-                                Planeten- und Spezialgetriebe
+<!-- Planetary & Special Gears -->
+<div id="planetary" style="margin-bottom: 40px;">
+<h4 style="font-size: 22px; font-weight: 600; color: #002FA7; margin-bottom: 15px; padding-left: 15px; border-left: 4px solid #C5A059;">
+                                Planetary <span style="font-family: 'Inter', 'Arial', sans-serif;">&amp;</span> Specialized Gear Systems
                             </h4>
 <table class="term-table">
 <thead>
 <tr>
-<th style="width:150px">Zahnradtyp</th>
-<th>Beschreibung</th>
-<th>Vorteile</th>
-<th>Typische Anwendungen</th>
+<th style="width: 180px;">Gear Type</th>
+<th>Description</th>
+<th>Advantages</th>
+<th>Common Applications</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="term-name">Planetengetriebe<br/>(Planetary)</td>
-<td>Sonnenrad + Planetenr&auml;der + Hohlrad. Planeten umkreisen das Sonnenrad.</td>
-<td>Kompakt, hohe Drehmomentdichte, mehrere &Uuml;bersetzungen m&ouml;glich</td>
-<td>Automatikgetriebe, Roboter, Windkraftanlagen</td>
+<td class="term-name">Planetary Gear Set<br/>(Epicyclic)</td>
+<td>Sun gear + planet gears + ring gear. Planets orbit around the sun gear.</td>
+<td>Compact, high torque density, multiple gear ratios from one unit</td>
+<td>Automatic transmissions, robotics, wind turbines</td>
 </tr>
 <tr>
-<td class="term-name">Wellgetriebe<br/>(Harmonic Drive)</td>
-<td>Nutzt Flexspline, Circular Spline und Wave Generator. Spielfrei.</td>
-<td>Extrem hohe Pr&auml;zision, hohe Untersetzung (30:1 bis 320:1), spielfrei</td>
-<td>Roboterarme, Satellitenantennen, Halbleiterausr&uuml;stung</td>
-</tr>
-<tr>
-<td class="term-name">Zykloidengetriebe<br/>(Cycloidal)</td>
-<td>Exzenternocken treibt Zykloidenscheibe gegen Rollenstifte.</td>
-<td>Hohe Sto&szlig;festigkeit, kompakt, hohe Untersetzung</td>
-<td>Schwere Maschinen, Industrieroboter, Servomotoren</td>
-</tr>
-<tr>
-<td class="term-name">Nichtkreisf&ouml;rmiges Zahnrad<br/>(Non-Circular)</td>
-<td>Zahnrad mit nichtkreisf&ouml;rmiger W&auml;lzlinie (elliptisch, exzentrisch usw.).
+<td class="term-name">Harmonic Drive<br/>(Strain Wave)</td>
+<td>Uses flexible spline, circular spline, and wave generator. Zero backlash.
                                         </td>
-<td>Erzeugt variable Drehzahl aus konstanter Eingangsdrehzahl</td>
-<td>Verpackungsmaschinen, Textilmaschinen, Spezialmechanismen</td>
+<td>Extremely high precision, high reduction ratio (30:1 to 320:1), zero
+                                            backlash</td>
+<td>Robot joints, satellite antennas, semiconductor equipment</td>
 </tr>
 <tr>
-<td class="term-name">Kronenrad<br/>(Face Gear)</td>
-<td>Scheibenf&ouml;rmig, Z&auml;hne auf Stirnfl&auml;che, koppelt mit Stirn- oder
-                                            Schr&auml;gstirnrad.</td>
-<td>Rechtwinklige &Uuml;bertragung bei nicht schneidenden Achsen</td>
-<td>Luftfahrtaktoren, Differentialgetriebe</td>
+<td class="term-name">Cycloidal Drive</td>
+<td>Eccentric cam drives a cycloidal disc that engages with ring pins.</td>
+<td>High shock resistance, compact, high reduction ratios</td>
+<td>Heavy machinery, industrial robots, servo motors</td>
+</tr>
+<tr>
+<td class="term-name">Non-Circular Gear</td>
+<td>Gears with non-circular pitch curves (elliptical, eccentric, etc.).</td>
+<td>Variable speed output from constant input</td>
+<td>Packaging machines, textile machinery, special mechanisms</td>
+</tr>
+<tr>
+<td class="term-name">Face Gear</td>
+<td>Disc-shaped gear with teeth on its face, meshes with a spur or helical
+                                            pinion.</td>
+<td>Right-angle drive without intersecting axes</td>
+<td>Aerospace actuators, differentials</td>
 </tr>
 </tbody>
 </table>
 </div>
-<!-- PM-Vorteile Callout -->
-<div class="decision-box" style="background:linear-gradient(135deg,#f0f4ff 0%,#e8f4fd 100%)">
-<h4>✨ Warum Pulvermetallurgie f&uuml;r Zahnr&auml;der w&auml;hlen?</h4>
-<p style="font-size:15px;line-height:1.7;color:#555;margin-bottom:15px">
-                                Viele der oben genannten Zahnradtypen k&ouml;nnen mittels <strong>Pulvermetallurgie
-                                    (PM)</strong> gefertigt werden &ndash; mit erheblichen Vorteilen:
+<!-- PM Advantages Callout -->
+<div class="decision-box" style="background: linear-gradient(135deg, #f0f4ff 0%, #e8f4fd 100%);">
+<h4>✨ Why Choose Powder Metallurgy for Gears?</h4>
+<p style="font-size: 15px; line-height: 1.7; color: #555; margin-bottom: 15px;">
+                                Many of the gear types listed above can be manufactured using <strong>Powder Metallurgy
+                                    (PM)</strong>, offering significant advantages:
                             </p>
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:15px">
-<div style="background:white;padding:15px;border-radius:8px;border-left:3px solid #C5A059">
-<strong style="color:#002FA7">💰 30% Kosteneinsparung</strong>
-<p style="font-size:13px;margin:8px 0 0;color:#666">Niedrigere St&uuml;ckkosten als CNC
-                                        bei Gro&szlig;serien</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px;">
+<div style="background: white; padding: 15px; border-radius: 8px; border-left: 3px solid #C5A059;">
+<strong style="color: #002FA7;">💰 30% Cost Reduction</strong>
+<p style="font-size: 13px; margin: 8px 0 0; color: #666;">Lower per-unit cost at
+                                        high volumes vs. CNC machining</p>
 </div>
-<div style="background:white;padding:15px;border-radius:8px;border-left:3px solid #C5A059">
-<strong style="color:#002FA7">🎯 &plusmn;0,01mm Pr&auml;zision</strong>
-<p style="font-size:13px;margin:8px 0 0;color:#666">Erreichbar: AGMA Qualit&auml;tsstufe
-                                        8-9</p>
+<div style="background: white; padding: 15px; border-radius: 8px; border-left: 3px solid #C5A059;">
+<strong style="color: #002FA7;">🎯 ±0.01mm Tolerance</strong>
+<p style="font-size: 13px; margin: 8px 0 0; color: #666;">AGMA Class 8-9 precision
+                                        achievable</p>
 </div>
-<div style="background:white;padding:15px;border-radius:8px;border-left:3px solid #C5A059">
-<strong style="color:#002FA7">🌱 95%+ Materialausbeute</strong>
-<p style="font-size:13px;margin:8px 0 0;color:#666">Near-Net-Shape minimiert
-                                        Verschnitt</p>
+<div style="background: white; padding: 15px; border-radius: 8px; border-left: 3px solid #C5A059;">
+<strong style="color: #002FA7;">🌱 95%+ Material Utilization</strong>
+<p style="font-size: 13px; margin: 8px 0 0; color: #666;">Near-net-shape process
+                                        minimizes waste</p>
 </div>
-<div style="background:white;padding:15px;border-radius:8px;border-left:3px solid #C5A059">
-<strong style="color:#002FA7">🛠️ Selbstschmierende Eigenschaften</strong>
-<p style="font-size:13px;margin:8px 0 0;color:#666">Por&ouml;se Struktur erm&ouml;glicht
-                                        &Ouml;ltr&auml;nkung</p>
+<div style="background: white; padding: 15px; border-radius: 8px; border-left: 3px solid #C5A059;">
+<strong style="color: #002FA7;">🛠️ Self-Lubricating</strong>
+<p style="font-size: 13px; margin: 8px 0 0; color: #666;">Porous structure can be
+                                        oil-impregnated</p>
 </div>
 </div>
-<p style="margin-top:20px;font-size:14px;color:#666">
-<strong>👉 Ideale Zahnr&auml;der f&uuml;r PM:</strong> Stirnr&auml;der, Schr&auml;gstirnr&auml;der,
-                                Innenverzahnungen und Planetengetriebe-Komponenten sind ideal f&uuml;r die PM-Fertigung.
-                                <a href="gears.html" style="color:#002FA7;font-weight:600">Erfahren Sie mehr &uuml;ber unsere
-                                    PM-Zahnradfertigung &rarr;</a>
+<p style="margin-top: 20px; font-size: 14px; color: #666;">
+<strong>👉 Best PM Gear Types:</strong> Spur gears, helical gears, internal gears, and
+                                planetary gear components are ideal for PM manufacturing.
+                                <a href="gears.html" style="color: #002FA7; font-weight: 600;">Learn more about our PM
+                                    gear capabilities →</a>
 </p>
 </div>
-</div></div></div>
-</div> <!-- End resource-content -->
-</div> <!-- End resource-layout -->
+</div></div></div><!-- NEW: PM Design Guidelines -->
+<div class="accordion-card" id="design-guide"><div class="accordion-header" onclick="toggleAccordion(this)"><h3 style="font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 700; color: #333; margin-bottom: 15px; border-bottom: 2px solid #eee; padding-bottom: 10px;; margin: 0 !important; border: none; padding: 0; font-size: 24px;">
+                            📐 PM Part Design Guidelines
+                        </h3><span class="accordion-icon">🔽</span></div><div class="accordion-body-wrapper"><div class="accordion-body-inner">
+<p style="font-size: 16px; color: #555; line-height: 1.7; margin-bottom: 25px;">
+                            Designing parts specifically for PM manufacturing can reduce costs and improve quality.
+                            Follow these engineering guidelines to optimize your designs for the press &amp; sinter process.
+                        </p>
+<table class="term-table">
+<thead>
+<tr>
+<th style="width: 180px;">Design Rule</th>
+<th>Guideline</th>
+<th>Reason</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="term-name">Wall Thickness</td>
+<td>Minimum <strong>1.5mm</strong> (recommended ≥2.0mm)</td>
+<td>Thin walls lead to uneven powder flow and weak spots after sintering</td>
+</tr>
+<tr>
+<td class="term-name">Draft Angles</td>
+<td>Not required for most designs (unlike casting)</td>
+<td>Parts are ejected axially from the die — a key PM advantage</td>
+</tr>
+<tr>
+<td class="term-name">Fillets &amp; Radii</td>
+<td>Use <strong>R ≥ 0.3mm</strong> on all edges and corners</td>
+<td>Sharp corners cause stress concentration and reduce tooling life</td>
+</tr>
+<tr>
+<td class="term-name">Length-to-Diameter</td>
+<td>Ratio should be <strong>≤ 3:1</strong> (ideally ≤ 2.5:1)</td>
+<td>Tall, thin parts have uneven density distribution from top to bottom</td>
+</tr>
+<tr>
+<td class="term-name">Holes</td>
+<td>Through-holes ≥ <strong>1.5mm diameter</strong> can be formed in the die</td>
+<td>Smaller or blind holes require secondary drilling</td>
+</tr>
+<tr>
+<td class="term-name">Undercuts</td>
+<td><strong>Avoid</strong> side undercuts in the press direction</td>
+<td>The part must be ejectable from a two-part die (top punch + bottom punch)</td>
+</tr>
+<tr>
+<td class="term-name">Threads</td>
+<td>Cannot be formed in the die — add via <strong>secondary tapping</strong></td>
+<td>Threads are perpendicular to the pressing direction</td>
+</tr>
+<tr>
+<td class="term-name">Flats &amp; Steps</td>
+<td>Multi-level parts are possible with <strong>stepped punches</strong></td>
+<td>Up to 4 levels can be pressed in a single operation</td>
+</tr>
+<tr>
+<td class="term-name">Density Uniformity</td>
+<td>Keep cross-sections <strong>as uniform as possible</strong></td>
+<td>Large variations in thickness cause density gradients and warping</td>
+</tr>
+</tbody>
+</table>
+<div class="decision-box" style="background: linear-gradient(135deg, #f0f4ff 0%, #e8eaf6 100%);">
+<h4>📧 Free Design Review Service</h4>
+<p style="font-size: 15px; line-height: 1.7; color: #555; margin-bottom: 10px;">
+                                Not sure if your part is suitable for PM? Send us your 2D drawing or 3D model and our
+                                engineering team will provide a <strong>free DFM (Design for Manufacturability)</strong>
+                                analysis within 48 hours.
+                            </p>
+<a href="contact.html" style="display: inline-block; background: #002FA7; color: white; padding: 12px 30px; border-radius: 6px; font-weight: 600; font-size: 15px;">Submit
+                                Your Design →</a>
 </div>
-</section>
-<!-- Smooth Scroll JavaScript -->
-<script>
-        // Smooth scroll for sidebar navigation
-        document.querySelectorAll('.sidebar-nav a').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                const targetId = this.getAttribute('href');
-                if (!targetId.startsWith('#')) return;
-                e.preventDefault();
-                const targetElement = document.querySelector(targetId);
-                if (targetElement) {
-                    const offsetTop = targetElement.offsetTop - 120;
-                    window.scrollTo({
-                        top: offsetTop,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-
-        // Highlight active section in sidebar
-        window.addEventListener('scroll', function () {
-            const sections = ['process-guide', 'powder-production', 'quality-control', 'density-porosity', 'faq', 'glossary', 'materials', 'iron-steel', 'stainless', 'magnetic', 'bronze-brass'];
-            let currentSection = '';
-
-            sections.forEach(id => {
-                const element = document.getElementById(id);
-                if (element) {
-                    const rect = element.getBoundingClientRect();
-                    if (rect.top <= 150) {
-                        currentSection = id;
-                    }
-                }
-            });
-
-            document.querySelectorAll('.sidebar-nav a').forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href') === '#' + currentSection) {
-                    link.classList.add('active');
-                }
-            });
-        });
-    </script>
-<footer style="background:#002FA7;color:white;padding:80px 0 40px">
-<div class="container">
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:50px;margin-bottom:60px">
-<div>
-<div style="display:flex;align-items:center;gap:15px;margin-bottom:25px">
-<img alt="Logo" height="50" src="../images/logo.png" style="height:  50px;" width="61"/>
-<h3 style="font-size:20px;font-weight:700;color:#8B6914;margin:0">Yeh Sheng Powder Parts</h3>
+</div></div></div><!-- Self-Lubricating Bearings Guide -->
+<div class="accordion-card" id="bearings-guide"><div class="accordion-header" onclick="toggleAccordion(this)"><h3 style="font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 700; color: #333; margin-bottom: 15px; border-bottom: 2px solid #eee; padding-bottom: 10px;; margin: 0 !important; border: none; padding: 0; font-size: 24px;">
+                                🔩 Self-Lubricating Bearings Guide
+                            </h3><span class="accordion-icon">🔽</span></div><div class="accordion-body-wrapper"><div class="accordion-body-inner">
+<p style="font-size: 16px; color: #555; line-height: 1.7; margin-bottom: 25px;">
+                                Oil-impregnated bearings are one of the most successful applications of Powder
+                                Metallurgy. Their unique porous structure allows them to store and release lubricant
+                                automatically, making them ideal for maintenance-free applications.
+                            </p>
+<h4 style="font-size: 22px; font-weight: 600; color: #002FA7; margin-bottom: 15px; padding-left: 15px; border-left: 4px solid #C5A059;">
+                                How Self-Lubricating Bearings Work
+                            </h4>
+<div style="background: linear-gradient(135deg, #f0f4ff 0%, #e8f4fd 100%); border: 2px solid #C5A059; border-radius: 12px; padding: 25px; margin-bottom: 25px;">
+<p style="font-size: 15px; line-height: 1.8; color: #333; margin: 0 0 15px 0;">
+                                    PM bearings are manufactured with <strong>controlled porosity (15-25% by
+                                        volume)</strong>. After sintering, they are vacuum-impregnated with lubricating
+                                    oil. During operation:
+                                </p>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px;">
+<div style="background: white; padding: 15px; border-radius: 8px; text-align: center;">
+<div style="font-size: 32px; margin-bottom: 8px;">🔄</div>
+<strong style="font-size: 14px; color: #002FA7;">1. Heat Expansion</strong>
+<p style="font-size: 13px; color: #666; margin: 5px 0 0;">Friction heats the
+                                            bearing → oil expands and seeps to the surface</p>
 </div>
-<p style="color:#a0b0d0;line-height:1.6;font-size:14px">F&uuml;hrender Hersteller von hochpr&auml;zisen
-                        Pulvermetallurgie-Komponenten seit 1984.</p>
+<div style="background: white; padding: 15px; border-radius: 8px; text-align: center;">
+<div style="font-size: 32px; margin-bottom: 8px;">💧</div>
+<strong style="font-size: 14px; color: #002FA7;">2. Lubrication</strong>
+<p style="font-size: 13px; color: #666; margin: 5px 0 0;">Oil film forms between
+                                            bearing and shaft → reduces friction</p>
 </div>
-<div>
-<h4 style="color: #996B1D;font-size:18px;font-weight:700;margin-bottom:25px">Unternehmen</h4>
-<ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:15px">
-<li><a href="about.html" style="color:#a0b0d0;font-size:15px">&Uuml;ber uns</a></li>
-<li><a href="products.html" style="color:#a0b0d0;font-size:15px">Produkte</a></li>
-<li><a href="capabilities.html" style="color:#a0b0d0;font-size:15px">F&auml;higkeiten</a></li>
-<li><a href="contact.html" style="color:#a0b0d0;font-size:15px">Kontakt</a></li>
-</ul>
-</div>
-<div>
-<h4 style="color: #996B1D;font-size:18px;font-weight:700;margin-bottom:25px">Kontakt</h4>
-<ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:15px">
-<li style="color:#a0b0d0;font-size:15px">Nr. 11, Ln. 721, Zhong Zheng Rd.</li>
-<li style="color:#a0b0d0;font-size:15px">New Taipei City, Taiwan</li>
-<li style="color:#a0b0d0;font-size:15px"><a href="mailto:YS@yehsheng.com">YS@yehsheng.com</a>
-</li>
-<li style="color:#a0b0d0;font-size:15px">+886-2-2903-2176</li>
-</ul>
+<div style="background: white; padding: 15px; border-radius: 8px; text-align: center;">
+<div style="font-size: 32px; margin-bottom: 8px;">🧲</div>
+<strong style="font-size: 14px; color: #002FA7;">3. Re-absorption</strong>
+<p style="font-size: 13px; color: #666; margin: 5px 0 0;">When stopped,
+                                            capillary action draws oil back into the pores</p>
 </div>
 </div>
-<div style="border-top:1px solid rgba(255,255,255,0.1);padding-top:30px;text-align:center">
-<p style="color:#e0e0e0;font-size:13px;margin:0">&copy; 2024 Yeh Sheng Powder Parts Ind. Co. Ltd. Alle Rechte
-                    vorbehalten.</p>
+</div>
+<h4 style="font-size: 22px; font-weight: 600; color: #002FA7; margin-bottom: 15px; padding-left: 15px; border-left: 4px solid #C5A059;">
+                                Bearing Type Comparison
+                            </h4>
+<table class="process-table">
+<thead>
+<tr>
+<th>Factor</th>
+<th>PM Oil-Impregnated</th>
+<th>Ball Bearing</th>
+<th>Plain Sleeve</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Maintenance</strong></td>
+<td class="highlight-pm">Maintenance-free</td>
+<td>Periodic lubrication</td>
+<td>Requires lubrication</td>
+</tr>
+<tr>
+<td><strong>Noise Level</strong></td>
+<td class="highlight-pm">Very quiet</td>
+<td>Moderate (rolling)</td>
+<td>Quiet</td>
+</tr>
+<tr>
+<td><strong>Cost (High Vol)</strong></td>
+<td class="highlight-pm">⭐ Lowest</td>
+<td>High</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td><strong>Speed Range</strong></td>
+<td>Low-Medium</td>
+<td>High</td>
+<td>Low</td>
+</tr>
+<tr>
+<td><strong>Load Capacity</strong></td>
+<td>Light-Medium</td>
+<td>High</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td><strong>Lifespan</strong></td>
+<td class="highlight-pm">10,000+ hours</td>
+<td>20,000+ hours</td>
+<td>5,000+ hours</td>
+</tr>
+</tbody>
+</table>
+<h4 style="font-size: 22px; font-weight: 600; color: #002FA7; margin-bottom: 15px; margin-top: 30px; padding-left: 15px; border-left: 4px solid #C5A059;">
+                                Common Materials for PM Bearings
+                            </h4>
+<table class="term-table">
+<thead>
+<tr>
+<th style="width: 180px;">Material</th>
+<th>MPIF Code</th>
+<th>PV Limit (MPa·m/s)</th>
+<th>Best For</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="term-name">Bronze (90Cu-10Sn)</td>
+<td>CT-1000</td>
+<td>1.8</td>
+<td>Low-speed, light-load. Household appliances, fans, toys</td>
+</tr>
+<tr>
+<td class="term-name">Iron-Copper</td>
+<td>FC-0208</td>
+<td>3.5</td>
+<td>Medium loads. Automotive accessories, power tools</td>
+</tr>
+<tr>
+<td class="term-name">Iron-Bronze Composite</td>
+<td>FC-0800</td>
+<td>2.5</td>
+<td>Balanced performance. Motors, pumps</td>
+</tr>
+</tbody>
+</table>
+<div class="decision-box" style="background: linear-gradient(135deg, #f0f4ff 0%, #e8f4fd 100%);">
+<h4>🏭 Common Applications</h4>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px;">
+<div style="background: white; padding: 12px; border-radius: 8px; text-align: center;">
+<div style="font-size: 28px;">🖥️</div>
+<strong style="font-size: 13px;">Computer Fans</strong>
+</div>
+<div style="background: white; padding: 12px; border-radius: 8px; text-align: center;">
+<div style="font-size: 28px;">🚗</div>
+<strong style="font-size: 13px;">Automotive Motors</strong>
+</div>
+<div style="background: white; padding: 12px; border-radius: 8px; text-align: center;">
+<div style="font-size: 28px;">🏠</div>
+<strong style="font-size: 13px;">Home Appliances</strong>
+</div>
+<div style="background: white; padding: 12px; border-radius: 8px; text-align: center;">
+<div style="font-size: 28px;">🔧</div>
+<strong style="font-size: 13px;">Power Tools</strong>
 </div>
 </div>
-</footer>
-<script>
-        function toggleMenu() { document.getElementById('mobileMenu').classList.toggle('active') }
-        function toggleLangMenu() { var m = document.getElementById("langMenu"); m.style.display = (m.style.display === "none" || m.style.display === "") ? "block" : "none" }
-        document.addEventListener('click', function (e) { var m = document.getElementById("langMenu"); if (!e.target.closest('#langMenu') && !e.target.matches('[onclick="toggleLangMenu()"]')) { if (m) m.style.display = "none" } });
-    </script>
-<!-- Floating CTA Button -->
-<a href="contact.html" id="floating-cta" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 20px rgba(197,160,89,0.4)'" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 6px 25px rgba(197,160,89,0.5)'" style="
-        position: fixed;
-        bottom: 28px;
-        right: 28px;
-        background: linear-gradient(135deg, #C5A059, #a8853a);
-        color: white;
-        padding: 14px 24px;
-        border-radius: 50px;
-        font-family: 'Inter', sans-serif;
-        font-size: 15px;
-        font-weight: 600;
-        text-decoration: none;
-        box-shadow: 0 4px 20px rgba(197, 160, 89, 0.4);
-        z-index: 9999;
-        display: flex;
-        align-items: center;
-        gap: 6px;
-        transition: all 0.3s ease;
-    ">💬
-        Angebot anfordern</a>
-<script>
+<p style="margin-top: 15px; font-size: 14px; color: #666;">
+<strong>💡 Design Tip:</strong> For optimal performance, maintain a shaft-to-bearing
+                                    clearance of 0.02-0.05mm. <a href="contact.html" style="color: #002FA7;">Contact
+                                        us</a> for bearing design support!
+                                </p>
+</div>
+</div></div></div></div></div></div></section><script>
             function toggleAccordion(header) {
                 const card = header.closest('.accordion-card');
                 card.classList.toggle('active');
@@ -887,5 +1177,4 @@
                     });
                 });
             });
-            </script></body>
-</html>
+            </script></body></html>
