@@ -154,6 +154,15 @@ TRANSLATIONS = {
         'Design & Manufacturing Review': '設計與製造可行性評估審查',
         'Step 3': '步驟 3',
         'Receive Manufacturing Feedback and Quotation': '取得製造回饋與正式報價',
+        'View Gear Products': '查看齒輪產品',
+        'Custom sintered spur gears, helical gears, bevel gears and internal gears for automotive, industrial and power tool applications.': '適用於汽車、工業和電動工具應用的客製化燒結直齒輪、斜齒輪、傘齒輪和內齒輪。',
+        'Precision inner and outer rotors engineered for automotive and motorcycle lubrication systems.': '專為汽車和機車潤滑系統設計的精密內外轉子。',
+        'Complex net-shape powder metallurgy components designed to reduce machining and assembly costs.': '旨在減少機械加工和組裝成本的複雜淨成形粉末冶金組件。',
+        'Corrosion-resistant powder metallurgy components for medical, sensor and food equipment applications.': '適用於醫療、感測器和食品設備應用的耐腐蝕粉末冶金組件。',
+        'Submit Drawing (PDF / STEP / DWG)': '提交圖面 (PDF / STEP / DWG)',
+        'Receive Quote': '取得報價',
+        'Powder Metallurgy & Sintered Parts Catalog': '粉末冶金與燒結零件產品目錄',
+        'Structural Parts': '結構零件',
     },
     'zh-cn': {
         # Navigation - Simplified Chinese
@@ -299,6 +308,15 @@ TRANSLATIONS = {
         'Design & Manufacturing Review': '设计与制造可行性评估审查',
         'Step 3': '步骤 3',
         'Receive Manufacturing Feedback and Quotation': '获得制造反馈与正式报价',
+        'View Gear Products': '查看齿轮产品',
+        'Custom sintered spur gears, helical gears, bevel gears and internal gears for automotive, industrial and power tool applications.': '适用于汽车、工业 and 电动工具应用的定制烧结直齿轮、斜齿轮、伞齿轮和内齿轮。',
+        'Precision inner and outer rotors engineered for automotive and motorcycle lubrication systems.': '专为汽车和摩托车润滑系统设计的精密内外转子。',
+        'Complex net-shape powder metallurgy components designed to reduce machining and assembly costs.': '旨在减少机械加工和装配成本的复杂净成形粉末冶金组件。',
+        'Corrosion-resistant powder metallurgy components for medical, sensor and food equipment applications.': '适用于医疗、传感器和食品设备应用的耐腐蚀粉末冶金组件。',
+        'Submit Drawing (PDF / STEP / DWG)': '提交图纸 (PDF / STEP / DWG)',
+        'Receive Quote': '获取报价',
+        'Powder Metallurgy & Sintered Parts Catalog': '粉末冶金与烧结零件产品目录',
+        'Structural Parts': '结构零件',
     },
     'de': {
         # Navigation
@@ -444,6 +462,15 @@ TRANSLATIONS = {
         'Design & Manufacturing Review': 'Design- & Fertigungs-Review',
         'Step 3': 'Schritt 3',
         'Receive Manufacturing Feedback and Quotation': 'Erhalten Sie Fertigungs-Feedback und Angebot',
+        'View Gear Products': 'Zahnradprodukte anzeigen',
+        'Custom sintered spur gears, helical gears, bevel gears and internal gears for automotive, industrial and power tool applications.': 'Kundenspezifische gesinterte Stirnräder, Schrägstirnräder, Kegelräder und Innenzahnräder für Automobil-, Industrie- und Elektrowerkzeuganwendungen.',
+        'Precision inner and outer rotors engineered for automotive and motorcycle lubrication systems.': 'Präzise Innen- und Außenrotoren für Schmiersysteme von Automobil und Motorrad.',
+        'Complex net-shape powder metallurgy components designed to reduce machining and assembly costs.': 'Komplexe endkonturnahe Pulvermetallurgie-Komponenten zur Reduzierung von Bearbeitungs- und Montagekosten.',
+        'Corrosion-resistant powder metallurgy components for medical, sensor and food equipment applications.': 'Korrosionsbeständige Pulvermetallurgie-Komponenten für Medizin-, Sensor- und Lebensmittelgeräteanwendungen.',
+        'Submit Drawing (PDF / STEP / DWG)': 'Zeichnung einreichen (PDF / STEP / DWG)',
+        'Receive Quote': 'Angebot erhalten',
+        'Powder Metallurgy & Sintered Parts Catalog': 'Katalog für Pulvermetallurgie & Sinterteile',
+        'Structural Parts': 'Strukturteile',
     },
     'jp': {
         # Navigation
@@ -589,6 +616,15 @@ TRANSLATIONS = {
         'Design & Manufacturing Review': '設計・製造のレビュー',
         'Step 3': 'ステップ 3',
         'Receive Manufacturing Feedback and Quotation': '製造フィードバックと見積書を受領',
+        'View Gear Products': 'ギア製品を見る',
+        'Custom sintered spur gears, helical gears, bevel gears and internal gears for automotive, industrial and power tool applications.': '自動車、産業、およびパワーツール用途向けのカスタム焼結スパーギア、ヘリカルギア、ベベルギア、および内歯車。',
+        'Precision inner and outer rotors engineered for automotive and motorcycle lubrication systems.': '自動車およびオートバイ of 潤滑システム向けに設計された精密インナーおよびアウターローター。',
+        'Complex net-shape powder metallurgy components designed to reduce machining and assembly costs.': '機械加工および組立コストを削減するように設計された複雑なネットシェイプ粉末冶金部品。',
+        'Corrosion-resistant powder metallurgy components for medical, sensor and food equipment applications.': '医療、センサー、および食品機器用途向けの耐食性粉末冶金部品。',
+        'Submit Drawing (PDF / STEP / DWG)': '図面の提出 (PDF / STEP / DWG)',
+        'Receive Quote': '見積書の受領',
+        'Powder Metallurgy & Sintered Parts Catalog': '粉末冶金・焼結部品カタログ',
+        'Structural Parts': '構造部品',
     }
 }
 
