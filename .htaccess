@@ -24,8 +24,9 @@ RewriteCond %{REQUEST_URI} ^/(zh|zh-cn|de|jp)$
 RewriteRule ^(.*)$ /$1/ [R=301,L]
 
 # Redirect old product/service URLs to appropriate pages
-RedirectPermanent /powder-metal-parts /capabilities.html
-RedirectPermanent /sintered-brake-pad /applications.html
+RedirectPermanent /powder-metal-parts /products.html
+RedirectPermanent /sintered-brake-pad /products.html
+RedirectPermanent /why-sintered-parts /resources.html
 RedirectPermanent /gears /gears.html
 RedirectPermanent /news /resources.html
 RedirectPermanent /about-us /about.html
