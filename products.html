@@ -448,6 +448,62 @@
     }
 </style>
 
+
+<style id="category-filter-styles">
+    /* Category Filter Pills (Neil Patel Style) */
+    .category-filter-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin: 30px auto 45px auto;
+        max-width: 960px;
+        padding: 0 15px;
+    }
+    .category-pill {
+        display: inline-flex;
+        align-items: center;
+        padding: 10px 24px;
+        border-radius: 30px;
+        font-size: 14px;
+        font-weight: 600;
+        color: #444;
+        background-color: #ffffff;
+        border: 1.5px solid #e2e8f0;
+        cursor: pointer;
+        transition: all 0.25s ease;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+        text-decoration: none;
+        white-space: nowrap;
+    }
+    .category-pill:hover {
+        border-color: #C5A059;
+        color: #C5A059;
+        transform: translateY(-1px);
+    }
+    .category-pill.active {
+        background-color: #C5A059;
+        color: #ffffff;
+        border-color: #C5A059;
+        box-shadow: 0 4px 14px rgba(197,160,89,0.35);
+    }
+    .product-card-item {
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+    @media (max-width: 768px) {
+        .category-filter-container {
+            justify-content: flex-start;
+            overflow-x: auto;
+            flex-wrap: nowrap;
+            padding-bottom: 10px;
+            -webkit-overflow-scrolling: touch;
+        }
+        .category-pill {
+            flex-shrink: 0;
+        }
+    }
+</style>
+
 </head>
 <body>
 <!-- Top Bar (Klein Blue) -->
@@ -689,157 +745,178 @@
         </div>
     </div>
 </nav>
-<section role="main" style="padding: 80px 0;">
+
+<section role="main" style="padding: 60px 0 80px 0;">
 <div class="container">
 <!-- Breadcrumb Navigation -->
-<nav aria-label="Breadcrumb" style="margin-bottom: 30px;">
+<nav aria-label="Breadcrumb" style="margin-bottom: 25px;">
 <ol style="display: flex; list-style: none; padding: 0; margin: 0; font-size: 14px; color: #555;">
-<li><a href="index.html" style="color: #996B1D;">Home</a></li>
+<li><a href="index.html" style="color: #996B1D; text-decoration: none;">Home</a></li>
 <li style="margin: 0 10px;">&rsaquo;</li>
 <li style="color: #333; font-weight: 500;">Products</li>
 </ol>
 </nav>
-<h1 style="font-family: 'Playfair Display', serif; font-size: 42px; font-weight: 700; color: #111; margin-bottom: 20px; text-align: center;">
-                Powder Metallurgy &amp; Sintered Parts Catalog</h1>
-<p style="text-align: center; font-size: 16px; color: #555; max-width: 800px; margin: 0 auto 50px auto; line-height: 1.6;">
-    Yeh Sheng manufactures high-precision sintered components for automotive, industrial, robotics, and medical applications. Our custom powder metallurgy solutions deliver up to 30% cost savings with net-shape manufacturing.
+
+<!-- Page Header Title -->
+<h1 style="font-family: 'Playfair Display', serif; font-size: clamp(32px, 4vw, 44px); font-weight: 700; color: #111; margin-bottom: 15px; text-align: center;">
+    Powder Metallurgy &amp; Sintered Parts Catalog
+</h1>
+<p style="text-align: center; font-size: 16px; color: #555; max-width: 800px; margin: 0 auto 30px auto; line-height: 1.6;">
+    Yeh Sheng manufactures high-precision sintered components for automotive, industrial, robotics, and medical applications. Custom OEM powder metallurgy solutions with net-shape manufacturing.
 </p>
 
-<!-- Category 1: Powder Metallurgy Gears -->
-<div id="gears-section" style="margin-bottom: 60px; padding-top: 20px;">
-    <h2 style="font-family: 'Playfair Display', serif; font-size: 32px; color: #002FA7; margin-bottom: 15px; border-bottom: 2px solid #C5A059; padding-bottom: 10px;">
-        Powder Metallurgy Gears
-    </h2>
-    <p style="color: #555; line-height: 1.6; margin-bottom: 25px; font-size: 15px;">
-        Custom sintered spur gears, helical gears, bevel gears and internal gears for automotive, industrial and power tool applications.
-    </p>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px;">
-        <!-- Card 1: Precision Gears -->
-        <div class="premium-card" style="text-align: left; padding: 0; overflow: hidden;">
-            <img alt="Precision Sintered Gears" height="250" loading="lazy" src="images/Gears_refined.jpg" style="width: 100%; height: 250px; object-fit: contain; padding: 20px; background-color: #f8f9fa; max-width: 100%;" width="300"/>
-            <div style="padding: 30px;">
-                <h3 style="font-family: 'Playfair Display', serif; font-size: 24px; margin-bottom: 15px;">
-                    Precision Sintered Gears</h3>
-                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">High-strength sintered spur, helical, planetary, and bevel gears. Achieves ±0.01mm tolerance with cost-effective powder metallurgy.</p>
-                <a href="gears.html" style="color: #996B1D; font-weight: 600; font-size: 14px;">View Gear Products &rarr;</a>
-            </div>
-        </div>
-        <!-- Card 2: Robotics & Automation -->
-        <div class="premium-card" style="text-align: left; padding: 0; overflow: hidden;">
-            <img alt="Robotics Gear Systems" height="250" loading="lazy" src="images/1002680619b_refined.png" style="width: 100%; height: 250px; object-fit: contain; padding: 20px; background-color: #f8f9fa; max-width: 100%;" width="300"/>
-            <div style="padding: 30px;">
-                <h3 style="font-family: 'Playfair Display', serif; font-size: 24px; margin-bottom: 15px;">
-                    Robotic Gear Systems</h3>
-                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">High-precision planetary gear sets and self-lubricating bronze bushings for robotic joints, actuators, and servo motors.</p>
-                <a href="gears.html" style="color: #996B1D; font-weight: 600; font-size: 14px;">View Gear Products &rarr;</a>
-            </div>
-        </div>
-    </div>
-    <div style="margin-top: 25px; display: flex; gap: 15px; flex-wrap: wrap;">
-        <a href="contact.html?product=gears" class="btn-gold" style="padding: 12px 24px; font-size: 14px; font-weight: 600; text-decoration: none;">Submit Drawing for RFQ</a>
-        <a href="gears.html" class="btn-outline-gold" style="padding: 12px 24px; font-size: 14px; font-weight: 600; text-decoration: none;">View Gear Products</a>
-    </div>
+<!-- Category Selector Pills (Filter Tabs) -->
+<div class="category-filter-container" role="tablist" aria-label="Product Category Filter">
+    <button class="category-pill active" data-target="all" onclick="filterCategory('all', this)" role="tab" aria-selected="true">All Products</button>
+    <button class="category-pill" data-target="gears" onclick="filterCategory('gears', this)" role="tab" aria-selected="false">PM Gears</button>
+    <button class="category-pill" data-target="rotors" onclick="filterCategory('rotors', this)" role="tab" aria-selected="false">Oil Pump Rotors</button>
+    <button class="category-pill" data-target="structural" onclick="filterCategory('structural', this)" role="tab" aria-selected="false">Structural Parts</button>
+    <button class="category-pill" data-target="stainless" onclick="filterCategory('stainless', this)" role="tab" aria-selected="false">Stainless Steel PM</button>
 </div>
 
-<!-- Category 2: Oil Pump Rotors -->
-<div id="rotors-section" style="margin-bottom: 60px; border-top: 1px solid #eee; padding-top: 40px;">
-    <h2 style="font-family: 'Playfair Display', serif; font-size: 32px; color: #002FA7; margin-bottom: 15px; border-bottom: 2px solid #C5A059; padding-bottom: 10px;">
-        Oil Pump Rotors
-    </h2>
-    <p style="color: #555; line-height: 1.6; margin-bottom: 25px; font-size: 15px;">
-        Precision inner and outer rotors engineered for automotive and motorcycle lubrication systems.
-    </p>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px;">
-        <!-- Card 3: Oil Pump Rotors -->
-        <div class="premium-card" style="text-align: left; padding: 0; overflow: hidden; max-width: 450px;">
-            <img alt="Oil Pump Rotors" height="250" loading="lazy" src="images/InnerandOuterRotor_optimized.png" style="width: 100%; height: 250px; object-fit: contain; padding: 20px; background-color: #f8f9fa; max-width: 100%;" width="300"/>
-            <div style="padding: 30px;">
-                <h3 style="font-family: 'Playfair Display', serif; font-size: 24px; margin-bottom: 15px;">Gerotor Inner &amp; Outer Rotors</h3>
-                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">Trochoidal inner and outer rotor sets with controlled density and high-wear-resistant alloys, custom-made for fluid pumps.</p>
+<!-- Product Cards Grid -->
+<div id="product-cards-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 30px; margin-top: 20px;">
+    
+    <!-- Card 1: Precision Gears -->
+    <div class="product-card-item premium-card" data-category="gears" style="background: #fff; border-radius: 10px; border: 1px solid #eee; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+            <div style="background-color: #f8f9fa; padding: 25px; text-align: center;">
+                <img alt="Precision Sintered Gears" loading="lazy" src="images/Gears_refined.jpg" style="max-width: 100%; height: 210px; object-fit: contain;" />
+            </div>
+            <div style="padding: 25px;">
+                <span style="font-size: 12px; font-weight: 700; color: #996B1D; text-transform: uppercase; letter-spacing: 1px; display: block; margin-bottom: 8px;">Powder Metallurgy Gears</span>
+                <h3 style="font-family: 'Playfair Display', serif; font-size: 22px; color: #111; margin: 0 0 12px 0;">Precision Sintered Gears</h3>
+                <p style="color: #555; line-height: 1.6; font-size: 14px; margin-bottom: 0;">High-strength sintered spur, helical, planetary, and bevel gears. Achieves high precision with cost-effective powder metallurgy.</p>
             </div>
         </div>
+        <div style="padding: 0 25px 25px 25px;">
+            <a href="gears.html" style="color: #002FA7; font-weight: 600; font-size: 14px; text-decoration: none; display: inline-flex; align-items: center; gap: 6px;">View Gear Products &rarr;</a>
+        </div>
     </div>
-    <div style="margin-top: 25px; display: flex; gap: 15px; flex-wrap: wrap;">
-        <a href="contact.html?product=rotors" class="btn-gold" style="padding: 12px 24px; font-size: 14px; font-weight: 600; text-decoration: none;">Submit Drawing for RFQ</a>
-    </div>
-</div>
 
-<!-- Category 3: Structural Parts -->
-<div id="structural-section" style="margin-bottom: 60px; border-top: 1px solid #eee; padding-top: 40px;">
-    <h2 style="font-family: 'Playfair Display', serif; font-size: 32px; color: #002FA7; margin-bottom: 15px; border-bottom: 2px solid #C5A059; padding-bottom: 10px;">
-        Structural Parts
-    </h2>
-    <p style="color: #555; line-height: 1.6; margin-bottom: 25px; font-size: 15px;">
-        Complex net-shape powder metallurgy components designed to reduce machining and assembly costs.
-    </p>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px;">
-        <!-- Card 4: Custom Structural Parts -->
-        <div class="premium-card" style="text-align: left; padding: 0; overflow: hidden;">
-            <img alt="Structural Parts" height="250" loading="lazy" src="images/ComputerandOtherParts_refined.png" style="width: 100%; height: 250px; object-fit: contain; padding: 20px; background-color: #f8f9fa; max-width: 100%;" width="300"/>
-            <div style="padding: 30px;">
-                <h3 style="font-family: 'Playfair Display', serif; font-size: 24px; margin-bottom: 15px;">
-                    Custom Structural Parts</h3>
-                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">Complex multi-level parts for locks, electronics, and hand tools. Net-shape sintering reduces secondary processing costs.</p>
+    <!-- Card 2: Robotics & Automation Gears -->
+    <div class="product-card-item premium-card" data-category="gears" style="background: #fff; border-radius: 10px; border: 1px solid #eee; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+            <div style="background-color: #f8f9fa; padding: 25px; text-align: center;">
+                <img alt="Robotic Gear Systems" loading="lazy" src="images/1002680619b_refined.png" style="max-width: 100%; height: 210px; object-fit: contain;" />
+            </div>
+            <div style="padding: 25px;">
+                <span style="font-size: 12px; font-weight: 700; color: #996B1D; text-transform: uppercase; letter-spacing: 1px; display: block; margin-bottom: 8px;">Powder Metallurgy Gears</span>
+                <h3 style="font-family: 'Playfair Display', serif; font-size: 22px; color: #111; margin: 0 0 12px 0;">Robotic Gear Systems</h3>
+                <p style="color: #555; line-height: 1.6; font-size: 14px; margin-bottom: 0;">High-precision planetary gear sets and self-lubricating bronze bushings for robotic joints, actuators, and servo motors.</p>
             </div>
         </div>
-        <!-- Card 5: Shock Absorber Parts -->
-        <div class="premium-card" style="text-align: left; padding: 0; overflow: hidden;">
-            <img alt="Shock Absorber Parts" height="250" loading="lazy" src="images/shock_absorber_optimized.png" style="width: 100%; height: 250px; object-fit: contain; padding: 20px; background-color: #f8f9fa; max-width: 100%;" width="300"/>
-            <div style="padding: 30px;">
-                <h3 style="font-family: 'Playfair Display', serif; font-size: 24px; margin-bottom: 15px;">Shock
-                    Absorber Parts</h3>
-                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">Sintered pistons, rod guides, and valves for vehicle suspension systems. Steam treated for wear resistance.</p>
-            </div>
-        </div>
-        <!-- Card 6: Drone Components -->
-        <div class="premium-card" style="text-align: left; padding: 0; overflow: hidden;">
-            <img alt="Drone Components" height="250" loading="lazy" src="images/1002680622b_refined.png" style="width: 100%; height: 250px; object-fit: contain; padding: 20px; background-color: #f8f9fa; max-width: 100%;" width="300"/>
-            <div style="padding: 30px;">
-                <h3 style="font-family: 'Playfair Display', serif; font-size: 24px; margin-bottom: 15px;">Drone
-                    &amp; UAV Components</h3>
-                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">Lightweight motor housings and propeller adapters. Achieves high strength-to-weight ratio for unmanned aerial vehicles.</p>
-            </div>
-        </div>
-        <!-- Card 7: Industrial & Sewing Parts -->
-        <div class="premium-card" style="text-align: left; padding: 0; overflow: hidden;">
-            <img alt="Industrial &amp; Sewing Parts" height="250" loading="lazy" src="images/industrial_sewing_final.png" style="width: 100%; height: 250px; object-fit: contain; padding: 20px; background-color: #f8f9fa; max-width: 100%;" width="300"/>
-            <div style="padding: 30px;">
-                <h3 style="font-family: 'Playfair Display', serif; font-size: 24px; margin-bottom: 15px;">
-                    Industrial &amp; Sewing Parts</h3>
-                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">Net-shape cams, gears, and pulleys for sewing machines and industrial machinery. Exceptional tolerance repeatability.</p>
-            </div>
+        <div style="padding: 0 25px 25px 25px;">
+            <a href="gears.html" style="color: #002FA7; font-weight: 600; font-size: 14px; text-decoration: none; display: inline-flex; align-items: center; gap: 6px;">View Gear Products &rarr;</a>
         </div>
     </div>
-    <div style="margin-top: 25px; display: flex; gap: 15px; flex-wrap: wrap;">
-        <a href="contact.html?product=structural" class="btn-gold" style="padding: 12px 24px; font-size: 14px; font-weight: 600; text-decoration: none;">Submit Drawing for RFQ</a>
-    </div>
-</div>
 
-<!-- Category 4: Stainless Steel PM Parts -->
-<div id="stainless-section" style="margin-bottom: 60px; border-top: 1px solid #eee; padding-top: 40px;">
-    <h2 style="font-family: 'Playfair Display', serif; font-size: 32px; color: #002FA7; margin-bottom: 15px; border-bottom: 2px solid #C5A059; padding-bottom: 10px;">
-        Stainless Steel PM Parts
-    </h2>
-    <p style="color: #555; line-height: 1.6; margin-bottom: 25px; font-size: 15px;">
-        Corrosion-resistant powder metallurgy components for medical, sensor and food equipment applications.
-    </p>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px;">
-        <!-- Card 8: Stainless Steel Parts -->
-        <div class="premium-card" style="text-align: left; padding: 0; overflow: hidden; max-width: 450px;">
-            <img alt="Stainless Steel Parts" height="250" loading="lazy" src="images/stainless_parts_v3.png" style="width: 100%; height: 250px; object-fit: contain; padding: 20px; background-color: #f8f9fa; max-width: 100%;" width="300"/>
-            <div style="padding: 30px;">
-                <h3 style="font-family: 'Playfair Display', serif; font-size: 24px; margin-bottom: 15px;">
-                    Stainless Steel Parts</h3>
-                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">Sintered parts designed for medical devices, food processing equipment, water meters, and marine environments.</p>
+    <!-- Card 3: Oil Pump Rotors -->
+    <div class="product-card-item premium-card" data-category="rotors" style="background: #fff; border-radius: 10px; border: 1px solid #eee; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+            <div style="background-color: #f8f9fa; padding: 25px; text-align: center;">
+                <img alt="Oil Pump Rotors" loading="lazy" src="images/InnerandOuterRotor_optimized.png" style="max-width: 100%; height: 210px; object-fit: contain;" />
+            </div>
+            <div style="padding: 25px;">
+                <span style="font-size: 12px; font-weight: 700; color: #996B1D; text-transform: uppercase; letter-spacing: 1px; display: block; margin-bottom: 8px;">Oil Pump Rotors</span>
+                <h3 style="font-family: 'Playfair Display', serif; font-size: 22px; color: #111; margin: 0 0 12px 0;">Gerotor Inner &amp; Outer Rotors</h3>
+                <p style="color: #555; line-height: 1.6; font-size: 14px; margin-bottom: 0;">Trochoidal inner and outer rotor sets with controlled density and high-wear-resistant alloys, custom-made for fluid and oil pumps.</p>
             </div>
         </div>
+        <div style="padding: 0 25px 25px 25px;">
+            <a href="contact.html?product=rotors" style="color: #002FA7; font-weight: 600; font-size: 14px; text-decoration: none; display: inline-flex; align-items: center; gap: 6px;">Request Rotors RFQ &rarr;</a>
+        </div>
     </div>
-    <div style="margin-top: 25px; display: flex; gap: 15px; flex-wrap: wrap;">
-        <a href="contact.html?product=stainless" class="btn-gold" style="padding: 12px 24px; font-size: 14px; font-weight: 600; text-decoration: none;">Submit Drawing for RFQ</a>
+
+    <!-- Card 4: Custom Structural Parts -->
+    <div class="product-card-item premium-card" data-category="structural" style="background: #fff; border-radius: 10px; border: 1px solid #eee; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+            <div style="background-color: #f8f9fa; padding: 25px; text-align: center;">
+                <img alt="Structural Parts" loading="lazy" src="images/ComputerandOtherParts_refined.png" style="max-width: 100%; height: 210px; object-fit: contain;" />
+            </div>
+            <div style="padding: 25px;">
+                <span style="font-size: 12px; font-weight: 700; color: #996B1D; text-transform: uppercase; letter-spacing: 1px; display: block; margin-bottom: 8px;">Structural Parts</span>
+                <h3 style="font-family: 'Playfair Display', serif; font-size: 22px; color: #111; margin: 0 0 12px 0;">Custom Structural Parts</h3>
+                <p style="color: #555; line-height: 1.6; font-size: 14px; margin-bottom: 0;">Complex multi-level parts for locks, electronics, and hand tools. Net-shape sintering reduces secondary processing costs.</p>
+            </div>
+        </div>
+        <div style="padding: 0 25px 25px 25px;">
+            <a href="contact.html?product=structural" style="color: #002FA7; font-weight: 600; font-size: 14px; text-decoration: none; display: inline-flex; align-items: center; gap: 6px;">Request Structural RFQ &rarr;</a>
+        </div>
     </div>
+
+    <!-- Card 5: Shock Absorber Parts -->
+    <div class="product-card-item premium-card" data-category="structural" style="background: #fff; border-radius: 10px; border: 1px solid #eee; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+            <div style="background-color: #f8f9fa; padding: 25px; text-align: center;">
+                <img alt="Shock Absorber Parts" loading="lazy" src="images/shock_absorber_optimized.png" style="max-width: 100%; height: 210px; object-fit: contain;" />
+            </div>
+            <div style="padding: 25px;">
+                <span style="font-size: 12px; font-weight: 700; color: #996B1D; text-transform: uppercase; letter-spacing: 1px; display: block; margin-bottom: 8px;">Structural Parts</span>
+                <h3 style="font-family: 'Playfair Display', serif; font-size: 22px; color: #111; margin: 0 0 12px 0;">Shock Absorber Components</h3>
+                <p style="color: #555; line-height: 1.6; font-size: 14px; margin-bottom: 0;">Sintered pistons, rod guides, and valves for vehicle suspension systems. Steam treated for enhanced wear resistance.</p>
+            </div>
+        </div>
+        <div style="padding: 0 25px 25px 25px;">
+            <a href="contact.html?product=shock" style="color: #002FA7; font-weight: 600; font-size: 14px; text-decoration: none; display: inline-flex; align-items: center; gap: 6px;">Request Component RFQ &rarr;</a>
+        </div>
+    </div>
+
+    <!-- Card 6: Drone & UAV Components -->
+    <div class="product-card-item premium-card" data-category="structural" style="background: #fff; border-radius: 10px; border: 1px solid #eee; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+            <div style="background-color: #f8f9fa; padding: 25px; text-align: center;">
+                <img alt="Drone Components" loading="lazy" src="images/1002680622b_refined.png" style="max-width: 100%; height: 210px; object-fit: contain;" />
+            </div>
+            <div style="padding: 25px;">
+                <span style="font-size: 12px; font-weight: 700; color: #996B1D; text-transform: uppercase; letter-spacing: 1px; display: block; margin-bottom: 8px;">Structural Parts</span>
+                <h3 style="font-family: 'Playfair Display', serif; font-size: 22px; color: #111; margin: 0 0 12px 0;">Drone &amp; UAV Components</h3>
+                <p style="color: #555; line-height: 1.6; font-size: 14px; margin-bottom: 0;">Lightweight motor housings and propeller adapters. High strength-to-weight ratio for unmanned aerial vehicles.</p>
+            </div>
+        </div>
+        <div style="padding: 0 25px 25px 25px;">
+            <a href="contact.html?product=drone" style="color: #002FA7; font-weight: 600; font-size: 14px; text-decoration: none; display: inline-flex; align-items: center; gap: 6px;">Request Drone Parts RFQ &rarr;</a>
+        </div>
+    </div>
+
+    <!-- Card 7: Industrial & Sewing Parts -->
+    <div class="product-card-item premium-card" data-category="structural" style="background: #fff; border-radius: 10px; border: 1px solid #eee; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+            <div style="background-color: #f8f9fa; padding: 25px; text-align: center;">
+                <img alt="Industrial &amp; Sewing Parts" loading="lazy" src="images/industrial_sewing_final.png" style="max-width: 100%; height: 210px; object-fit: contain;" />
+            </div>
+            <div style="padding: 25px;">
+                <span style="font-size: 12px; font-weight: 700; color: #996B1D; text-transform: uppercase; letter-spacing: 1px; display: block; margin-bottom: 8px;">Structural Parts</span>
+                <h3 style="font-family: 'Playfair Display', serif; font-size: 22px; color: #111; margin: 0 0 12px 0;">Industrial &amp; Sewing Parts</h3>
+                <p style="color: #555; line-height: 1.6; font-size: 14px; margin-bottom: 0;">Net-shape cams, gears, and pulleys for sewing machines and industrial machinery. High tolerance repeatability.</p>
+            </div>
+        </div>
+        <div style="padding: 0 25px 25px 25px;">
+            <a href="contact.html?product=industrial" style="color: #002FA7; font-weight: 600; font-size: 14px; text-decoration: none; display: inline-flex; align-items: center; gap: 6px;">Request Industrial RFQ &rarr;</a>
+        </div>
+    </div>
+
+    <!-- Card 8: Stainless Steel Parts -->
+    <div class="product-card-item premium-card" data-category="stainless" style="background: #fff; border-radius: 10px; border: 1px solid #eee; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+            <div style="background-color: #f8f9fa; padding: 25px; text-align: center;">
+                <img alt="Stainless Steel Parts" loading="lazy" src="images/stainless_parts_v3.png" style="max-width: 100%; height: 210px; object-fit: contain;" />
+            </div>
+            <div style="padding: 25px;">
+                <span style="font-size: 12px; font-weight: 700; color: #996B1D; text-transform: uppercase; letter-spacing: 1px; display: block; margin-bottom: 8px;">Stainless Steel PM</span>
+                <h3 style="font-family: 'Playfair Display', serif; font-size: 22px; color: #111; margin: 0 0 12px 0;">Stainless Steel PM Parts</h3>
+                <p style="color: #555; line-height: 1.6; font-size: 14px; margin-bottom: 0;">Corrosion-resistant sintered parts for medical devices, food processing equipment, water meters, and marine applications.</p>
+            </div>
+        </div>
+        <div style="padding: 0 25px 25px 25px;">
+            <a href="contact.html?product=stainless" style="color: #002FA7; font-weight: 600; font-size: 14px; text-decoration: none; display: inline-flex; align-items: center; gap: 6px;">Request Stainless RFQ &rarr;</a>
+        </div>
+    </div>
+
 </div>
 </div>
 </section>
+
 
 <!-- RFQ Process Section -->
 <section id="rfq-process" style="background-color: #ffffff; padding: 80px 0; border-top: 1px solid #eee;">
@@ -1289,6 +1366,45 @@
             if (icon) icon.textContent = '▲';
         }
     }
+</script>
+
+
+<script>
+function filterCategory(cat, btn) {
+    // update pill buttons
+    const pills = document.querySelectorAll('.category-pill');
+    pills.forEach(p => {
+        p.classList.remove('active');
+        p.setAttribute('aria-selected', 'false');
+    });
+    if (btn) {
+        btn.classList.add('active');
+        btn.setAttribute('aria-selected', 'true');
+    }
+
+    // filter card grid
+    const cards = document.querySelectorAll('.product-card-item');
+    cards.forEach(card => {
+        const itemCat = card.getAttribute('data-category');
+        if (cat === 'all' || itemCat === cat) {
+            card.style.display = 'flex';
+            card.style.opacity = '1';
+        } else {
+            card.style.display = 'none';
+        }
+    });
+}
+
+// Auto filter on page load if hash exists
+window.addEventListener('DOMContentLoaded', () => {
+    let hash = window.location.hash.replace('#', '').replace('-section', '');
+    if (hash) {
+        const targetBtn = document.querySelector(`.category-pill[data-target="${hash}"]`);
+        if (targetBtn) {
+            filterCategory(hash, targetBtn);
+        }
+    }
+});
 </script>
 
 </body>
