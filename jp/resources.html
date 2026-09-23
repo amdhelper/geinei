@@ -567,6 +567,7 @@
     .mega-link {
         transition: background-color 0.15s ease, color 0.15s ease;
         text-decoration: none;
+        line-height: 1.4 !important;
     }
     .mega-link:hover, .mega-link:focus-visible {
         background-color: #f4f5f7;
@@ -713,7 +714,7 @@
                 </div>
             </li>
 
-            <!-- Industries Mega Menu Item -->
+            <!-- Industries Mega Menu Item (Single-Column Vertical List) -->
             <li class="nav-item mega-dropdown-item" style="position: relative;">
                 <button class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false" aria-controls="mega-industries" style="background: none; border: none; font-size: 15px; font-weight: 600; color: #333; text-transform: uppercase; letter-spacing: 0.5px; padding: 12px 0; cursor: pointer; display: flex; align-items: center; gap: 5px;">
                     適用分野 <span class="arrow" style="font-size: 10px; transition: transform 0.2s; opacity: 0.7;">▼</span>
@@ -722,15 +723,15 @@
                     <div style="display: grid; grid-template-columns: 1.25fr 1fr; gap: 24px;">
                         <div>
                             <div style="font-size: 12px; font-weight: 700; color: #7A5F12; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px; border-bottom: 1px solid #eee; padding-bottom: 6px;">主要適用分野</div>
-                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 6px;">
-                                <a href="applications.html" style="font-size: 13px; font-weight: 700; color: #111; grid-column: span 2; padding: 6px 10px; border-radius: 4px;" class="mega-link">適用分野概要</a>
-                                <a href="applications.html#automotive" style="font-size: 13px; color: #444; padding: 6px 10px; border-radius: 4px;" class="mega-link">自動車・バイク部品</a>
-                                <a href="applications.html#industrial" style="font-size: 13px; color: #444; padding: 6px 10px; border-radius: 4px;" class="mega-link">産業機械部品</a>
-                                <a href="applications.html#powertools" style="font-size: 13px; color: #444; padding: 6px 10px; border-radius: 4px;" class="mega-link">電動工具ギア</a>
-                                <a href="applications.html#robotics" style="font-size: 13px; color: #444; padding: 6px 10px; border-radius: 4px;" class="mega-link">ロボティクス・自動化</a>
-                                <a href="applications.html#green-energy" style="font-size: 13px; color: #444; padding: 6px 10px; border-radius: 4px;" class="mega-link">クリーンエネルギー・EV</a>
-                                <a href="applications.html#hardware" style="font-size: 13px; color: #444; padding: 6px 10px; border-radius: 4px;" class="mega-link">ハードウェア・電子部品</a>
-                            </div>
+                            <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 6px;">
+                                <li><a href="applications.html" style="font-size: 14px; font-weight: 600; color: #111; display: block; padding: 6px 10px; border-radius: 4px;" class="mega-link">適用分野概要</a></li>
+                                <li><a href="applications.html#automotive" style="font-size: 14px; color: #444; display: block; padding: 6px 10px; border-radius: 4px;" class="mega-link">自動車・バイク部品</a></li>
+                                <li><a href="applications.html#industrial" style="font-size: 14px; color: #444; display: block; padding: 6px 10px; border-radius: 4px;" class="mega-link">産業機械部品</a></li>
+                                <li><a href="applications.html#powertools" style="font-size: 14px; color: #444; display: block; padding: 6px 10px; border-radius: 4px;" class="mega-link">電動工具ギア</a></li>
+                                <li><a href="applications.html#robotics" style="font-size: 14px; color: #444; display: block; padding: 6px 10px; border-radius: 4px;" class="mega-link">ロボティクス・自動化</a></li>
+                                <li><a href="applications.html#green-energy" style="font-size: 14px; color: #444; display: block; padding: 6px 10px; border-radius: 4px;" class="mega-link">クリーンエネルギー・EV</a></li>
+                                <li><a href="applications.html#hardware" style="font-size: 14px; color: #444; display: block; padding: 6px 10px; border-radius: 4px;" class="mega-link">ハードウェア・電子部品</a></li>
+                            </ul>
                         </div>
                         <div style="background: #f8f9fa; border-radius: 8px; padding: 16px; border: 1px solid #eee; display: flex; flex-direction: column; justify-content: space-between;">
                             <div>
