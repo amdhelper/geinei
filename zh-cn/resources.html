@@ -617,6 +617,62 @@
     }
 </style>
 
+
+<style id="category-filter-styles">
+    /* Category Filter Pills (Neil Patel Style) */
+    .category-filter-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin: 30px auto 45px auto;
+        max-width: 960px;
+        padding: 0 15px;
+    }
+    .category-pill {
+        display: inline-flex;
+        align-items: center;
+        padding: 10px 24px;
+        border-radius: 30px;
+        font-size: 14px;
+        font-weight: 600;
+        color: #444;
+        background-color: #ffffff;
+        border: 1.5px solid #e2e8f0;
+        cursor: pointer;
+        transition: all 0.25s ease;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+        text-decoration: none;
+        white-space: nowrap;
+    }
+    .category-pill:hover {
+        border-color: #C5A059;
+        color: #C5A059;
+        transform: translateY(-1px);
+    }
+    .category-pill.active {
+        background-color: #C5A059;
+        color: #ffffff;
+        border-color: #C5A059;
+        box-shadow: 0 4px 14px rgba(197,160,89,0.35);
+    }
+    .product-card-item, .app-card-item, .resource-card-item, .industry-card-3d, .case-card-link {
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+    @media (max-width: 768px) {
+        .category-filter-container {
+            justify-content: flex-start;
+            overflow-x: auto;
+            flex-wrap: nowrap;
+            padding-bottom: 10px;
+            -webkit-overflow-scrolling: touch;
+        }
+        .category-pill {
+            flex-shrink: 0;
+        }
+    }
+</style>
+
 </head>
 <body>
 <!-- Top Bar (Klein Blue #002FA7) -->
@@ -877,9 +933,20 @@
 <!-- Resources Grid -->
 <section style="padding: 80px 0; background: #f8f9fa;">
 <div class="container">
+
+<div class="category-filter-container" role="tablist" aria-label="Category Filter">
+    <button class="category-pill active" data-target="all" onclick="filterCategory('all', this)" role="tab" aria-selected="true">全部技术资源</button>
+    <button class="category-pill" data-target="process" onclick="filterCategory('process', this)" role="tab" aria-selected="false">制程比较与选择</button>
+    <button class="category-pill" data-target="design" onclick="filterCategory('design', this)" role="tab" aria-selected="false">设计规范与指南</button>
+    <button class="category-pill" data-target="materials" onclick="filterCategory('materials', this)" role="tab" aria-selected="false">材料与规格表</button>
+    <button class="category-pill" data-target="quality" onclick="filterCategory('quality', this)" role="tab" aria-selected="false">品质认证与标准</button>
+    <button class="category-pill" data-target="faq" onclick="filterCategory('faq', this)" role="tab" aria-selected="false">常见问题 FAQ</button>
+    <button class="category-pill" data-target="news" onclick="filterCategory('news', this)" role="tab" aria-selected="false">最新消息与案例</button>
+</div>
+
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap: 40px;">
 <!-- Card 1: Process -->
-<a class="case-card-link" href="resource-process.html" style="display: block; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s ease; text-decoration: none; color: inherit;">
+<a data-category="process" class="case-card-link" href="resource-process.html" style="display: block; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s ease; text-decoration: none; color: inherit;">
 <div style="height: 200px; background-image: url('../images/thumb_res_process.png'); background-size: cover; background-position: center; border-bottom: 3px solid #C5A059;">
 </div>
 <div style="padding: 30px;">
@@ -895,7 +962,7 @@
 </div>
 </a>
 <!-- Card 2: Design -->
-<a class="case-card-link" href="resource-design.html" style="display: block; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s ease; text-decoration: none; color: inherit;">
+<a data-category="design" class="case-card-link" href="resource-design.html" style="display: block; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s ease; text-decoration: none; color: inherit;">
 <div style="height: 200px; background-image: url('../images/thumb_res_design.png'); background-size: cover; background-position: center; border-bottom: 3px solid #C5A059;">
 </div>
 <div style="padding: 30px;">
@@ -912,7 +979,7 @@
 </div>
 </a>
 <!-- Card 3: Materials -->
-<a class="case-card-link" href="resource-materials.html" style="display: block; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s ease; text-decoration: none; color: inherit;">
+<a data-category="materials" class="case-card-link" href="resource-materials.html" style="display: block; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s ease; text-decoration: none; color: inherit;">
 <div style="height: 200px; background-image: url('../images/thumb_res_material.png'); background-size: cover; background-position: center; border-bottom: 3px solid #C5A059;">
 </div>
 <div style="padding: 30px;">
@@ -928,7 +995,7 @@
 </div>
 </a>
 <!-- Card 4: Quality -->
-<a class="case-card-link" href="resource-quality.html" style="display: block; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s ease; text-decoration: none; color: inherit;">
+<a data-category="quality" class="case-card-link" href="resource-quality.html" style="display: block; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s ease; text-decoration: none; color: inherit;">
 <div style="height: 200px; background-image: url('../images/thumb_res_quality.png'); background-size: cover; background-position: center; border-bottom: 3px solid #C5A059;">
 </div>
 <div style="padding: 30px;">
@@ -942,7 +1009,7 @@
 </div>
 </a>
 <!-- Card 5: FAQ & Glossary -->
-<a class="case-card-link" href="resource-faq.html" style="display: block; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s ease; text-decoration: none; color: inherit;">
+<a data-category="faq" class="case-card-link" href="resource-faq.html" style="display: block; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s ease; text-decoration: none; color: inherit;">
 <div style="height: 200px; background-image: url('../images/thumb_res_faq.png'); background-size: cover; background-position: center; border-bottom: 3px solid #C5A059;">
 </div>
 <div style="padding: 30px;">
@@ -958,7 +1025,7 @@
 </div>
 </a>
 <!-- Card 6: Industry News -->
-<a class="case-card-link" href="resource-news.html" style="display: block; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s ease; text-decoration: none; color: inherit;">
+<a data-category="news" class="case-card-link" href="resource-news.html" style="display: block; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s ease; text-decoration: none; color: inherit;">
 <div style="height: 200px; background-image: url('../images/thumb_res_news.png'); background-size: cover; background-position: center; border-bottom: 3px solid #C5A059;">
 </div>
 <div style="padding: 30px;">
@@ -1241,6 +1308,44 @@
             if (icon) icon.textContent = '▲';
         }
     }
+</script>
+
+
+<script id="category-filter-script">
+function filterCategory(cat, btn) {
+    const pills = document.querySelectorAll('.category-pill');
+    pills.forEach(p => {
+        p.classList.remove('active');
+        p.setAttribute('aria-selected', 'false');
+    });
+    if (btn) {
+        btn.classList.add('active');
+        btn.setAttribute('aria-selected', 'true');
+    }
+
+    const cards = document.querySelectorAll('.product-card-item, .app-card-item, .resource-card-item, .industry-card-3d, .case-card-link');
+    cards.forEach(card => {
+        const itemCat = card.getAttribute('data-category');
+        if (!itemCat) return;
+        if (cat === 'all' || itemCat === cat) {
+            card.style.display = card.tagName === 'A' ? 'block' : 'flex';
+            if (card.classList.contains('industry-card-3d')) card.style.display = 'block';
+            card.style.opacity = '1';
+        } else {
+            card.style.display = 'none';
+        }
+    });
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+    let hash = window.location.hash.replace('#', '').replace('-section', '');
+    if (hash) {
+        const targetBtn = document.querySelector(`.category-pill[data-target="${hash}"]`);
+        if (targetBtn) {
+            filterCategory(hash, targetBtn);
+        }
+    }
+});
 </script>
 
 </body>

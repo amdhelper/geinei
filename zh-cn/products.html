@@ -448,6 +448,62 @@
     }
 </style>
 
+
+<style id="category-filter-styles">
+    /* Category Filter Pills (Neil Patel Style) */
+    .category-filter-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin: 30px auto 45px auto;
+        max-width: 960px;
+        padding: 0 15px;
+    }
+    .category-pill {
+        display: inline-flex;
+        align-items: center;
+        padding: 10px 24px;
+        border-radius: 30px;
+        font-size: 14px;
+        font-weight: 600;
+        color: #444;
+        background-color: #ffffff;
+        border: 1.5px solid #e2e8f0;
+        cursor: pointer;
+        transition: all 0.25s ease;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+        text-decoration: none;
+        white-space: nowrap;
+    }
+    .category-pill:hover {
+        border-color: #C5A059;
+        color: #C5A059;
+        transform: translateY(-1px);
+    }
+    .category-pill.active {
+        background-color: #C5A059;
+        color: #ffffff;
+        border-color: #C5A059;
+        box-shadow: 0 4px 14px rgba(197,160,89,0.35);
+    }
+    .product-card-item, .app-card-item, .resource-card-item, .industry-card-3d, .case-card-link {
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+    @media (max-width: 768px) {
+        .category-filter-container {
+            justify-content: flex-start;
+            overflow-x: auto;
+            flex-wrap: nowrap;
+            padding-bottom: 10px;
+            -webkit-overflow-scrolling: touch;
+        }
+        .category-pill {
+            flex-shrink: 0;
+        }
+    }
+</style>
+
 </head>
 <body>
 <!-- Top Bar (Klein Blue) -->
@@ -703,6 +759,14 @@
 <p style="text-align: center; font-size: 16px; color: #555; max-width: 800px; margin: 0 auto 50px auto; line-height: 1.6;">
     Yeh Sheng manufactures high-precision sintered components for automotive, industrial, robotics, and medical applications. Our custom powder metallurgy solutions deliver up to 30% cost savings with net-shape manufacturing.
 </p>
+<div class="category-filter-container" role="tablist" aria-label="Category Filter">
+    <button class="category-pill active" data-target="all" onclick="filterCategory('all', this)" role="tab" aria-selected="true">全部产品</button>
+    <button class="category-pill" data-target="gears" onclick="filterCategory('gears', this)" role="tab" aria-selected="false">粉末冶金齿轮</button>
+    <button class="category-pill" data-target="rotors" onclick="filterCategory('rotors', this)" role="tab" aria-selected="false">机油泵转子</button>
+    <button class="category-pill" data-target="structural" onclick="filterCategory('structural', this)" role="tab" aria-selected="false">结构零件</button>
+    <button class="category-pill" data-target="stainless" onclick="filterCategory('stainless', this)" role="tab" aria-selected="false">不锈钢零件</button>
+</div>
+
 <!-- Category 1: Powder Metallurgy Gears -->
 <div id="gears-section" style="margin-bottom: 60px; padding-top: 20px;">
 <h2 style="font-family: 'Playfair Display', serif; font-size: 32px; color: #002FA7; margin-bottom: 15px; border-bottom: 2px solid #C5A059; padding-bottom: 10px;">
@@ -711,7 +775,7 @@
 <p style="color: #555; line-height: 1.6; margin-bottom: 25px; font-size: 15px;">适用于汽车、工业 and 电动工具应用的定制烧结直齿轮、斜齿轮、伞齿轮和内齿轮。</p>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px;">
 <!-- Card 1: Precision Gears -->
-<div class="premium-card" style="text-align: left; padding: 0; overflow: hidden;">
+<div data-category="structural" class="premium-card product-card-item" style="text-align: left; padding: 0; overflow: hidden;">
 <img alt="Precision Sintered Gears" height="250" loading="lazy" src="../images/Gears_refined.jpg" style="width: 100%; height: 250px; object-fit: contain; padding: 20px; background-color: #f8f9fa; max-width: 100%;" width="300"/>
 <div style="padding: 30px;">
 <h3 style="font-family: 'Playfair Display', serif; font-size: 24px; margin-bottom: 15px;">
@@ -721,7 +785,7 @@
 </div>
 </div>
 <!-- Card 2: Robotics & Automation -->
-<div class="premium-card" style="text-align: left; padding: 0; overflow: hidden;">
+<div data-category="structural" class="premium-card product-card-item" style="text-align: left; padding: 0; overflow: hidden;">
 <img alt="Robotics Gear Systems" height="250" loading="lazy" src="../images/1002680619b_refined.png" style="width: 100%; height: 250px; object-fit: contain; padding: 20px; background-color: #f8f9fa; max-width: 100%;" width="300"/>
 <div style="padding: 30px;">
 <h3 style="font-family: 'Playfair Display', serif; font-size: 24px; margin-bottom: 15px;">
@@ -742,7 +806,7 @@
 <p style="color: #555; line-height: 1.6; margin-bottom: 25px; font-size: 15px;">专为汽车和摩托车润滑系统设计的精密内外转子。</p>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px;">
 <!-- Card 3: Oil Pump Rotors -->
-<div class="premium-card" style="text-align: left; padding: 0; overflow: hidden; max-width: 450px;">
+<div data-category="structural" class="premium-card product-card-item" style="text-align: left; padding: 0; overflow: hidden; max-width: 450px;">
 <img alt="油泵转子" height="250" loading="lazy" src="../images/InnerandOuterRotor_optimized.png" style="width: 100%; height: 250px; object-fit: contain; padding: 20px; background-color: #f8f9fa; max-width: 100%;" width="300"/>
 <div style="padding: 30px;">
 <h3 style="font-family: 'Playfair Display', serif; font-size: 24px; margin-bottom: 15px;">Gerotor Inner &amp; Outer Rotors</h3>
@@ -760,7 +824,7 @@
 <p style="color: #555; line-height: 1.6; margin-bottom: 25px; font-size: 15px;">旨在减少机械加工和装配成本的复杂净成形粉末冶金组件。</p>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px;">
 <!-- Card 4: Custom Structural Parts -->
-<div class="premium-card" style="text-align: left; padding: 0; overflow: hidden;">
+<div data-category="structural" class="premium-card product-card-item" style="text-align: left; padding: 0; overflow: hidden;">
 <img alt="结构零件" height="250" loading="lazy" src="../images/ComputerandOtherParts_refined.png" style="width: 100%; height: 250px; object-fit: contain; padding: 20px; background-color: #f8f9fa; max-width: 100%;" width="300"/>
 <div style="padding: 30px;">
 <h3 style="font-family: 'Playfair Display', serif; font-size: 24px; margin-bottom: 15px;">
@@ -769,7 +833,7 @@
 </div>
 </div>
 <!-- Card 5: Shock Absorber Parts -->
-<div class="premium-card" style="text-align: left; padding: 0; overflow: hidden;">
+<div data-category="structural" class="premium-card product-card-item" style="text-align: left; padding: 0; overflow: hidden;">
 <img alt="Shock Absorber Parts" height="250" loading="lazy" src="../images/shock_absorber_optimized.png" style="width: 100%; height: 250px; object-fit: contain; padding: 20px; background-color: #f8f9fa; max-width: 100%;" width="300"/>
 <div style="padding: 30px;">
 <h3 style="font-family: 'Playfair Display', serif; font-size: 24px; margin-bottom: 15px;">Shock
@@ -778,7 +842,7 @@
 </div>
 </div>
 <!-- Card 6: Drone Components -->
-<div class="premium-card" style="text-align: left; padding: 0; overflow: hidden;">
+<div data-category="structural" class="premium-card product-card-item" style="text-align: left; padding: 0; overflow: hidden;">
 <img alt="Drone Components" height="250" loading="lazy" src="../images/1002680622b_refined.png" style="width: 100%; height: 250px; object-fit: contain; padding: 20px; background-color: #f8f9fa; max-width: 100%;" width="300"/>
 <div style="padding: 30px;">
 <h3 style="font-family: 'Playfair Display', serif; font-size: 24px; margin-bottom: 15px;">Drone
@@ -787,7 +851,7 @@
 </div>
 </div>
 <!-- Card 7: Industrial & Sewing Parts -->
-<div class="premium-card" style="text-align: left; padding: 0; overflow: hidden;">
+<div data-category="structural" class="premium-card product-card-item" style="text-align: left; padding: 0; overflow: hidden;">
 <img alt="Industrial &amp; Sewing Parts" height="250" loading="lazy" src="../images/industrial_sewing_final.png" style="width: 100%; height: 250px; object-fit: contain; padding: 20px; background-color: #f8f9fa; max-width: 100%;" width="300"/>
 <div style="padding: 30px;">
 <h3 style="font-family: 'Playfair Display', serif; font-size: 24px; margin-bottom: 15px;">
@@ -808,7 +872,7 @@
 <p style="color: #555; line-height: 1.6; margin-bottom: 25px; font-size: 15px;">适用于医疗、传感器和食品设备应用的耐腐蚀粉末冶金组件。</p>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px;">
 <!-- Card 8: Stainless Steel Parts -->
-<div class="premium-card" style="text-align: left; padding: 0; overflow: hidden; max-width: 450px;">
+<div data-category="structural" class="premium-card product-card-item" style="text-align: left; padding: 0; overflow: hidden; max-width: 450px;">
 <img alt="Stainless Steel Parts" height="250" loading="lazy" src="../images/stainless_parts_v3.png" style="width: 100%; height: 250px; object-fit: contain; padding: 20px; background-color: #f8f9fa; max-width: 100%;" width="300"/>
 <div style="padding: 30px;">
 <h3 style="font-family: 'Playfair Display', serif; font-size: 24px; margin-bottom: 15px;">
@@ -1266,6 +1330,44 @@
             if (icon) icon.textContent = '▲';
         }
     }
+</script>
+
+
+<script id="category-filter-script">
+function filterCategory(cat, btn) {
+    const pills = document.querySelectorAll('.category-pill');
+    pills.forEach(p => {
+        p.classList.remove('active');
+        p.setAttribute('aria-selected', 'false');
+    });
+    if (btn) {
+        btn.classList.add('active');
+        btn.setAttribute('aria-selected', 'true');
+    }
+
+    const cards = document.querySelectorAll('.product-card-item, .app-card-item, .resource-card-item, .industry-card-3d, .case-card-link');
+    cards.forEach(card => {
+        const itemCat = card.getAttribute('data-category');
+        if (!itemCat) return;
+        if (cat === 'all' || itemCat === cat) {
+            card.style.display = card.tagName === 'A' ? 'block' : 'flex';
+            if (card.classList.contains('industry-card-3d')) card.style.display = 'block';
+            card.style.opacity = '1';
+        } else {
+            card.style.display = 'none';
+        }
+    });
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+    let hash = window.location.hash.replace('#', '').replace('-section', '');
+    if (hash) {
+        const targetBtn = document.querySelector(`.category-pill[data-target="${hash}"]`);
+        if (targetBtn) {
+            filterCategory(hash, targetBtn);
+        }
+    }
+});
 </script>
 
 </body>

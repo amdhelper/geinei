@@ -584,6 +584,62 @@
     }
 </style>
 
+
+<style id="category-filter-styles">
+    /* Category Filter Pills (Neil Patel Style) */
+    .category-filter-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin: 30px auto 45px auto;
+        max-width: 960px;
+        padding: 0 15px;
+    }
+    .category-pill {
+        display: inline-flex;
+        align-items: center;
+        padding: 10px 24px;
+        border-radius: 30px;
+        font-size: 14px;
+        font-weight: 600;
+        color: #444;
+        background-color: #ffffff;
+        border: 1.5px solid #e2e8f0;
+        cursor: pointer;
+        transition: all 0.25s ease;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+        text-decoration: none;
+        white-space: nowrap;
+    }
+    .category-pill:hover {
+        border-color: #C5A059;
+        color: #C5A059;
+        transform: translateY(-1px);
+    }
+    .category-pill.active {
+        background-color: #C5A059;
+        color: #ffffff;
+        border-color: #C5A059;
+        box-shadow: 0 4px 14px rgba(197,160,89,0.35);
+    }
+    .product-card-item, .app-card-item, .resource-card-item, .industry-card-3d, .case-card-link {
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+    @media (max-width: 768px) {
+        .category-filter-container {
+            justify-content: flex-start;
+            overflow-x: auto;
+            flex-wrap: nowrap;
+            padding-bottom: 10px;
+            -webkit-overflow-scrolling: touch;
+        }
+        .category-pill {
+            flex-shrink: 0;
+        }
+    }
+</style>
+
 </head>
 <body>
 <!-- Top Bar (Klein Blue #002FA7) -->
@@ -835,9 +891,20 @@
                     粉末冶金廣泛應用於製造汽車、機車、工業機械、電動工具、電動車系統及自動化設備的精密金屬組件。冶聖工業生產客製化<a href="products.html" style="color: #996B1D; font-weight: 600; text-decoration: underline;">燒結產品</a>，包括避震器零件、油泵轉子、齒輪、襯套、鏈輪以及適用於 OEM 應用的結構零件。我們結合先進的<a href="capabilities.html" style="color: #996B1D; font-weight: 600; text-decoration: underline;">製程能力</a>與完善的<a href="solutions.html" style="color: #996B1D; font-weight: 600; text-decoration: underline;">服務流程</a>，提供高品質且具成本效益的解決方案。
                 </p>
 </div>
+
+<div class="category-filter-container" role="tablist" aria-label="Category Filter">
+    <button class="category-pill active" data-target="all" onclick="filterCategory('all', this)" role="tab" aria-selected="true">全部應用領域</button>
+    <button class="category-pill" data-target="automotive" onclick="filterCategory('automotive', this)" role="tab" aria-selected="false">汽機車產業</button>
+    <button class="category-pill" data-target="industrial" onclick="filterCategory('industrial', this)" role="tab" aria-selected="false">工業機械與設備</button>
+    <button class="category-pill" data-target="powertools" onclick="filterCategory('powertools', this)" role="tab" aria-selected="false">電動工具</button>
+    <button class="category-pill" data-target="robotics" onclick="filterCategory('robotics', this)" role="tab" aria-selected="false">機器人與自動化</button>
+    <button class="category-pill" data-target="green-energy" onclick="filterCategory('green-energy', this)" role="tab" aria-selected="false">綠能與電動車</button>
+    <button class="category-pill" data-target="hardware" onclick="filterCategory('hardware', this)" role="tab" aria-selected="false">五金與電子零件</button>
+</div>
+
 <div class="industry-grid-fixed grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16" id="industry-grid-container">
                 <!-- Card 1: Automotive & Motorcycle -->
-                <div class="industry-card-3d group" id="automotive">
+                <div class="industry-card-3d group" id="automotive" data-category="automotive" data-category="automotive">
                     <div class="card-image-container bg-gray-200">
                         <img alt="汽機車零件" class="w-full h-full object-contain p-8"
                             src="../images/automotive_parts_v2.png" loading="lazy" width="300" height="250">
@@ -863,7 +930,7 @@
                 </div>
 
                 <!-- Card 2: Industrial Machinery & Mechanical Systems -->
-                <div class="industry-card-3d group" id="industrial">
+                <div class="industry-card-3d group" id="industrial" data-category="industrial" data-category="industrial">
                     <div class="card-image-container bg-gray-200">
                         <img alt="工業機械與機械系統" class="w-full h-full object-contain p-8"
                             src="../images/industrial_parts_v2.png" loading="lazy" width="300" height="250">
@@ -889,7 +956,7 @@
                 </div>
 
                 <!-- Card 3: Robotics & Automation -->
-                <div class="industry-card-3d group" id="robotics">
+                <div class="industry-card-3d group" id="robotics" data-category="robotics" data-category="robotics">
                     <div class="card-image-container bg-gray-200">
                         <img alt="機器人與自動化" class="w-full h-full object-contain p-8"
                             src="../images/1002680619b_refined.png" loading="lazy" width="300" height="250">
@@ -915,7 +982,7 @@
                 </div>
 
                 <!-- Card 4: Power Tools -->
-                <div class="industry-card-3d group" id="powertools">
+                <div class="industry-card-3d group" id="powertools" data-category="powertools" data-category="powertools">
                     <div class="card-image-container bg-gray-200">
                         <img alt="電動工具" class="w-full h-full object-contain p-8"
                             src="../images/power_tool_parts_v2.png" loading="lazy" width="300" height="250">
@@ -941,7 +1008,7 @@
                 </div>
 
                 <!-- Card 5: EV & Electrification -->
-                <div class="industry-card-3d group" id="green-energy">
+                <div class="industry-card-3d group" id="green-energy" data-category="green-energy" data-category="green-energy">
                     <div class="card-image-container bg-gray-200">
                         <img alt="電動車與電氣化" class="w-full h-full object-contain p-8"
                             src="../images/InnerandOuterRotor_optimized.png" loading="lazy" width="300" height="250">
@@ -967,7 +1034,7 @@
                 </div>
 
                 <!-- Card 6: Hardware & Precision Components -->
-                <div class="industry-card-3d group" id="hardware">
+                <div class="industry-card-3d group" id="hardware" data-category="hardware" data-category="hardware">
                     <div class="card-image-container bg-gray-200">
                         <img alt="五金與精密零件" class="w-full h-full object-contain p-8"
                             src="../images/hardware_parts_v2.png" loading="lazy" width="300" height="250">
@@ -1261,6 +1328,44 @@
             if (icon) icon.textContent = '▲';
         }
     }
+</script>
+
+
+<script id="category-filter-script">
+function filterCategory(cat, btn) {
+    const pills = document.querySelectorAll('.category-pill');
+    pills.forEach(p => {
+        p.classList.remove('active');
+        p.setAttribute('aria-selected', 'false');
+    });
+    if (btn) {
+        btn.classList.add('active');
+        btn.setAttribute('aria-selected', 'true');
+    }
+
+    const cards = document.querySelectorAll('.product-card-item, .app-card-item, .resource-card-item, .industry-card-3d, .case-card-link');
+    cards.forEach(card => {
+        const itemCat = card.getAttribute('data-category');
+        if (!itemCat) return;
+        if (cat === 'all' || itemCat === cat) {
+            card.style.display = card.tagName === 'A' ? 'block' : 'flex';
+            if (card.classList.contains('industry-card-3d')) card.style.display = 'block';
+            card.style.opacity = '1';
+        } else {
+            card.style.display = 'none';
+        }
+    });
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+    let hash = window.location.hash.replace('#', '').replace('-section', '');
+    if (hash) {
+        const targetBtn = document.querySelector(`.category-pill[data-target="${hash}"]`);
+        if (targetBtn) {
+            filterCategory(hash, targetBtn);
+        }
+    }
+});
 </script>
 
 </body>
