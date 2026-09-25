@@ -752,8 +752,10 @@
                                 <li><a href="applications.html#industrial" style="font-size: 14px; color: #444; display: block; padding: 6px 10px; border-radius: 4px;" class="mega-link">産業機械部品</a></li>
                                 <li><a href="applications.html#powertools" style="font-size: 14px; color: #444; display: block; padding: 6px 10px; border-radius: 4px;" class="mega-link">電動工具ギア</a></li>
                                 <li><a href="applications.html#robotics" style="font-size: 14px; color: #444; display: block; padding: 6px 10px; border-radius: 4px;" class="mega-link">ロボティクス・自動化</a></li>
-                                <li><a href="applications.html#green-energy" style="font-size: 14px; color: #444; display: block; padding: 6px 10px; border-radius: 4px;" class="mega-link">クリーンエネルギー・EV</a></li>
+                                <li><a href="applications.html#green-energy" style="font-size: 14px; color: #444; display: block; padding: 6px 10px; border-radius: 4px;" class="mega-link">グリーンエネルギー・EV</a></li>
                                 <li><a href="applications.html#hardware" style="font-size: 14px; color: #444; display: block; padding: 6px 10px; border-radius: 4px;" class="mega-link">ハードウェア・電子部品</a></li>
+                                <li><a href="applications.html#medical" style="font-size: 14px; color: #444; display: block; padding: 6px 10px; border-radius: 4px;" class="mega-link">医療機器</a></li>
+                                <li><a href="applications.html#security" style="font-size: 14px; color: #444; display: block; padding: 6px 10px; border-radius: 4px;" class="mega-link">錠前・セキュリティ機器</a></li>
                             </ul>
                         </div>
                         <div style="background: #f8f9fa; border-radius: 8px; padding: 16px; border: 1px solid #eee; display: flex; flex-direction: column; justify-content: space-between;">
@@ -843,8 +845,10 @@
                     <a href="applications.html#industrial" style="font-size: 14px; color: #444; padding: 6px 0;">産業機械部品</a>
                     <a href="applications.html#powertools" style="font-size: 14px; color: #444; padding: 6px 0;">電動工具ギア</a>
                     <a href="applications.html#robotics" style="font-size: 14px; color: #444; padding: 6px 0;">ロボティクス・自動化</a>
-                    <a href="applications.html#green-energy" style="font-size: 14px; color: #444; padding: 6px 0;">クリーンエネルギー・EV</a>
+                    <a href="applications.html#green-energy" style="font-size: 14px; color: #444; padding: 6px 0;">グリーンエネルギー・EV</a>
                     <a href="applications.html#hardware" style="font-size: 14px; color: #444; padding: 6px 0;">ハードウェア・電子部品</a>
+                    <a href="applications.html#medical" style="font-size: 14px; color: #444; padding: 6px 0;">医療機器</a>
+                    <a href="applications.html#security" style="font-size: 14px; color: #444; padding: 6px 0;">錠前・セキュリティ機器</a>
                 </div>
             </div>
 
@@ -898,8 +902,11 @@
     <button class="category-pill" data-target="industrial" onclick="filterCategory('industrial', this)" role="tab" aria-selected="false">産業機械・設備</button>
     <button class="category-pill" data-target="powertools" onclick="filterCategory('powertools', this)" role="tab" aria-selected="false">電動工具</button>
     <button class="category-pill" data-target="robotics" onclick="filterCategory('robotics', this)" role="tab" aria-selected="false">ロボティクス・自動化</button>
-    <button class="category-pill" data-target="green-energy" onclick="filterCategory('green-energy', this)" role="tab" aria-selected="false">グリーンエナジー・EV</button>
+    <button class="category-pill" data-target="green-energy" onclick="filterCategory('green-energy', this)" role="tab" aria-selected="false">グリーンエネルギー・EV</button>
     <button class="category-pill" data-target="hardware" onclick="filterCategory('hardware', this)" role="tab" aria-selected="false">ハードウェア・電子部品</button>
+
+    <button class="category-pill" data-target="medical" onclick="filterCategory('medical', this)" role="tab" aria-selected="false">医療機器</button>
+    <button class="category-pill" data-target="security" onclick="filterCategory('security', this)" role="tab" aria-selected="false">錠前・セキュリティ機器</button>
 </div>
 
 <div class="industry-grid-fixed grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16" id="industry-grid-container">
@@ -1010,10 +1017,10 @@
                 <!-- Card 5: EV & Electrification -->
                 <div class="industry-card-3d group" id="green-energy" data-category="green-energy" data-category="green-energy">
                     <div class="card-image-container bg-gray-200">
-                        <img alt="EV・電動化" class="w-full h-full object-contain p-8"
+                        <img alt="グリーンエネルギー・EV" class="w-full h-full object-contain p-8"
                             src="../images/InnerandOuterRotor_optimized.png" loading="lazy" width="300" height="250">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60"></div>
-                        <div class="absolute bottom-4 left-4 text-white font-bold text-xl">EV・電動化</div>
+                        <div class="absolute bottom-4 left-4 text-white font-bold text-xl">グリーンエネルギー・EV</div>
                     </div>
                     <div class="card-content" style="display: flex; flex-direction: column; height: 100%;">
                         <p class="text-gray-600 mb-6" style="font-size: 14px; line-height: 1.6; min-height: 80px;">
@@ -1052,6 +1059,58 @@
                             <p class="text-sm text-gray-500 mb-4">ネットシェイプ製造、一貫した品質、材料廃棄物の削減、および繰り返しの部品設計に対するコスト効率の高い生産。</p>
                             <h3 class="font-bold text-gray-800 mb-2 text-sm uppercase tracking-wide">関連焼結部品</h3>
                             <p class="text-sm text-gray-500 mb-4">スリーブ、スペーサー、小型ギア、ブッシュ、構造部品、およびカスタム焼結金属部品。</p>
+                        </div>
+                        <div style="margin-top: auto; padding-top: 1.5rem;">
+                            <a href="contact.html" class="btn-outline-gold" style="display: block; text-align: center; padding: 10px 20px; font-size: 14px; font-weight: 600; border-radius: 4px;">評価用に図面を提出する</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 7: Medical Devices -->
+                <div class="industry-card-3d group" id="medical" data-category="medical">
+                    <div class="card-image-container bg-gray-200">
+                        <img alt="医療機器用部品" class="w-full h-full object-contain p-8"
+                            src="../images/medical_parts_v2.png" loading="lazy" width="300" height="250">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60"></div>
+                        <div class="absolute bottom-4 left-4 text-white font-bold text-xl">医療機器用部品</div>
+                    </div>
+                    <div class="card-content" style="display: flex; flex-direction: column; height: 100%;">
+                        <p class="text-gray-600 mb-6" style="font-size: 14px; line-height: 1.6; min-height: 80px;">
+                            粉末冶金は、医療機器や手術器具に使用される高純度、耐食性、高精度なコンポーネントのために精密で信頼性の高い製造技術を提供します。
+                        </p>
+                        <div class="border-t border-gray-100 pt-4" style="flex-grow: 1;">
+                            <h3 class="font-bold text-gray-800 mb-2 text-sm uppercase tracking-wide">主な用途</h3>
+                            <p class="text-sm text-gray-500 mb-4">手術器具用コンポーネント、医療機器用ブラケット、ポンプ部品、生体適合性把持部、および精密構造部品。</p>
+                            <h3 class="font-bold text-gray-800 mb-2 text-sm uppercase tracking-wide">メリット</h3>
+                            <p class="text-sm text-gray-500 mb-4">高い寸法精度、優れた表面仕上げ、ステンレス鋼および生体適合性材料との高い互換性。</p>
+                            <h3 class="font-bold text-gray-800 mb-2 text-sm uppercase tracking-wide">関連焼結部品</h3>
+                            <p class="text-sm text-gray-500 mb-4">ステンレス焼結部品、マイクロギア、ブラケット、ハウジング部品、および医療機器用カスタム焼結部品。</p>
+                        </div>
+                        <div style="margin-top: auto; padding-top: 1.5rem;">
+                            <a href="contact.html" class="btn-outline-gold" style="display: block; text-align: center; padding: 10px 20px; font-size: 14px; font-weight: 600; border-radius: 4px;">評価用に図面を提出する</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 8: Lock & Security -->
+                <div class="industry-card-3d group" id="security" data-category="security">
+                    <div class="card-image-container bg-gray-200">
+                        <img alt="錠前・セキュリティ機器" class="w-full h-full object-contain p-8"
+                            src="../images/lock_parts_v2.png" loading="lazy" width="300" height="250">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60"></div>
+                        <div class="absolute bottom-4 left-4 text-white font-bold text-xl">錠前・セキュリティ機器</div>
+                    </div>
+                    <div class="card-content" style="display: flex; flex-direction: column; height: 100%;">
+                        <p class="text-gray-600 mb-6" style="font-size: 14px; line-height: 1.6; min-height: 80px;">
+                            セキュリティシステムおよびロック機構には、複雑で耐摩耗性が高く高強度な部品が必要です。粉末冶金は、シリンダーコア、ラッチ、およびロック機構のコスト効率の高い量産を可能にします。
+                        </p>
+                        <div class="border-t border-gray-100 pt-4" style="flex-grow: 1;">
+                            <h3 class="font-bold text-gray-800 mb-2 text-sm uppercase tracking-wide">主な用途</h3>
+                            <p class="text-sm text-gray-500 mb-4">シリンダーロック部品、ドアロックラッチ、ロック機構、セキュリティハードウェア、およびスマートロックコンポーネント。</p>
+                            <h3 class="font-bold text-gray-800 mb-2 text-sm uppercase tracking-wide">メリット</h3>
+                            <p class="text-sm text-gray-500 mb-4">優れた耐摩耗性、複雑なロック形状に対する精密なフィット感、焼結熱処理材による高い防犯性能。</p>
+                            <h3 class="font-bold text-gray-800 mb-2 text-sm uppercase tracking-wide">関連焼結部品</h3>
+                            <p class="text-sm text-gray-500 mb-4">焼結ロックボルト・ラッチ、シリンダーコア、セキュリティカム、ガイドリング、およびセキュリティ機器用カスタム焼結部品。</p>
                         </div>
                         <div style="margin-top: auto; padding-top: 1.5rem;">
                             <a href="contact.html" class="btn-outline-gold" style="display: block; text-align: center; padding: 10px 20px; font-size: 14px; font-weight: 600; border-radius: 4px;">評価用に図面を提出する</a>

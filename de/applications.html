@@ -752,8 +752,10 @@
                                 <li><a href="applications.html#industrial" style="font-size: 14px; color: #444; display: block; padding: 6px 10px; border-radius: 4px;" class="mega-link">Industriemaschinen</a></li>
                                 <li><a href="applications.html#powertools" style="font-size: 14px; color: #444; display: block; padding: 6px 10px; border-radius: 4px;" class="mega-link">Elektrowerkzeuge</a></li>
                                 <li><a href="applications.html#robotics" style="font-size: 14px; color: #444; display: block; padding: 6px 10px; border-radius: 4px;" class="mega-link">Robotik & Automation</a></li>
-                                <li><a href="applications.html#green-energy" style="font-size: 14px; color: #444; display: block; padding: 6px 10px; border-radius: 4px;" class="mega-link">Erneuerbare Energien & EV</a></li>
+                                <li><a href="applications.html#green-energy" style="font-size: 14px; color: #444; display: block; padding: 6px 10px; border-radius: 4px;" class="mega-link">Grüne Energie & EV</a></li>
                                 <li><a href="applications.html#hardware" style="font-size: 14px; color: #444; display: block; padding: 6px 10px; border-radius: 4px;" class="mega-link">Hardware & Elektronik</a></li>
+                                <li><a href="applications.html#medical" style="font-size: 14px; color: #444; display: block; padding: 6px 10px; border-radius: 4px;" class="mega-link">Medizintechnik</a></li>
+                                <li><a href="applications.html#security" style="font-size: 14px; color: #444; display: block; padding: 6px 10px; border-radius: 4px;" class="mega-link">Schloss- & Sicherheitstechnik</a></li>
                             </ul>
                         </div>
                         <div style="background: #f8f9fa; border-radius: 8px; padding: 16px; border: 1px solid #eee; display: flex; flex-direction: column; justify-content: space-between;">
@@ -843,8 +845,10 @@
                     <a href="applications.html#industrial" style="font-size: 14px; color: #444; padding: 6px 0;">Industriemaschinen</a>
                     <a href="applications.html#powertools" style="font-size: 14px; color: #444; padding: 6px 0;">Elektrowerkzeuge</a>
                     <a href="applications.html#robotics" style="font-size: 14px; color: #444; padding: 6px 0;">Robotik & Automation</a>
-                    <a href="applications.html#green-energy" style="font-size: 14px; color: #444; padding: 6px 0;">Erneuerbare Energien & EV</a>
+                    <a href="applications.html#green-energy" style="font-size: 14px; color: #444; padding: 6px 0;">Grüne Energie & EV</a>
                     <a href="applications.html#hardware" style="font-size: 14px; color: #444; padding: 6px 0;">Hardware & Elektronik</a>
+                    <a href="applications.html#medical" style="font-size: 14px; color: #444; padding: 6px 0;">Medizintechnik</a>
+                    <a href="applications.html#security" style="font-size: 14px; color: #444; padding: 6px 0;">Schloss- & Sicherheitstechnik</a>
                 </div>
             </div>
 
@@ -898,8 +902,11 @@
     <button class="category-pill" data-target="industrial" onclick="filterCategory('industrial', this)" role="tab" aria-selected="false">Industriemaschinen</button>
     <button class="category-pill" data-target="powertools" onclick="filterCategory('powertools', this)" role="tab" aria-selected="false">Elektrowerkzeuge</button>
     <button class="category-pill" data-target="robotics" onclick="filterCategory('robotics', this)" role="tab" aria-selected="false">Robotik & Automation</button>
-    <button class="category-pill" data-target="green-energy" onclick="filterCategory('green-energy', this)" role="tab" aria-selected="false">Erneuerbare Energien & EV</button>
+    <button class="category-pill" data-target="green-energy" onclick="filterCategory('green-energy', this)" role="tab" aria-selected="false">Grüne Energie & EV</button>
     <button class="category-pill" data-target="hardware" onclick="filterCategory('hardware', this)" role="tab" aria-selected="false">Hardware & Elektronik</button>
+
+    <button class="category-pill" data-target="medical" onclick="filterCategory('medical', this)" role="tab" aria-selected="false">Medizintechnik</button>
+    <button class="category-pill" data-target="security" onclick="filterCategory('security', this)" role="tab" aria-selected="false">Schloss- & Sicherheitstechnik</button>
 </div>
 
 <div class="industry-grid-fixed grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16" id="industry-grid-container">
@@ -1010,10 +1017,10 @@
                 <!-- Card 5: EV & Electrification -->
                 <div class="industry-card-3d group" id="green-energy" data-category="green-energy" data-category="green-energy">
                     <div class="card-image-container bg-gray-200">
-                        <img alt="Elektrofahrzeuge &amp; Elektrifizierung" class="w-full h-full object-contain p-8"
+                        <img alt="Grüne Energie & EV" class="w-full h-full object-contain p-8"
                             src="../images/InnerandOuterRotor_optimized.png" loading="lazy" width="300" height="250">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60"></div>
-                        <div class="absolute bottom-4 left-4 text-white font-bold text-xl">Elektrofahrzeuge &amp; Elektrifizierung</div>
+                        <div class="absolute bottom-4 left-4 text-white font-bold text-xl">Grüne Energie & EV</div>
                     </div>
                     <div class="card-content" style="display: flex; flex-direction: column; height: 100%;">
                         <p class="text-gray-600 mb-6" style="font-size: 14px; line-height: 1.6; min-height: 80px;">
@@ -1052,6 +1059,58 @@
                             <p class="text-sm text-gray-500 mb-4">Net-Shape-Fertigung, gleichbleibende Qualität, reduzierte Materialverschwendung und kostengünstige Produktion für wiederkehrende Teiledesigns.</p>
                             <h3 class="font-bold text-gray-800 mb-2 text-sm uppercase tracking-wide">Passende Sinterteile</h3>
                             <p class="text-sm text-gray-500 mb-4">Hülsen, Abstandshalter, kleine Zahnräder, Buchsen, Strukturteile und kundenspezifische Sintermetallkomponenten.</p>
+                        </div>
+                        <div style="margin-top: auto; padding-top: 1.5rem;">
+                            <a href="contact.html" class="btn-outline-gold" style="display: block; text-align: center; padding: 10px 20px; font-size: 14px; font-weight: 600; border-radius: 4px;">Zeichnung zur Bewertung einreichen</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 7: Medical Devices -->
+                <div class="industry-card-3d group" id="medical" data-category="medical">
+                    <div class="card-image-container bg-gray-200">
+                        <img alt="Medizintechnik" class="w-full h-full object-contain p-8"
+                            src="../images/medical_parts_v2.png" loading="lazy" width="300" height="250">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60"></div>
+                        <div class="absolute bottom-4 left-4 text-white font-bold text-xl">Medizintechnik</div>
+                    </div>
+                    <div class="card-content" style="display: flex; flex-direction: column; height: 100%;">
+                        <p class="text-gray-600 mb-6" style="font-size: 14px; line-height: 1.6; min-height: 80px;">
+                            Die Pulvermetallurgie bietet eine präzise und zuverlässige Fertigung für hochreine, korrosionsbeständige und maßgenaue Bauteile in medizinischen Geräten und chirurgischen Instrumenten.
+                        </p>
+                        <div class="border-t border-gray-100 pt-4" style="flex-grow: 1;">
+                            <h3 class="font-bold text-gray-800 mb-2 text-sm uppercase tracking-wide">Typische Anwendungen</h3>
+                            <p class="text-sm text-gray-500 mb-4">Komponenten für chirurgische Instrumente, Halterungen für medizinische Geräte, Pumpenbauteile, Zähne für Greifinstrumente und Präzisionsstrukturteile.</p>
+                            <h3 class="font-bold text-gray-800 mb-2 text-sm uppercase tracking-wide">Vorteile</h3>
+                            <p class="text-sm text-gray-500 mb-4">Hohe Maßgenauigkeit, hervorragende Oberflächengüte, Kompatibilität mit Edelstahl und biologisch verträglichen Materialien.</p>
+                            <h3 class="font-bold text-gray-800 mb-2 text-sm uppercase tracking-wide">Passende Sinterteile</h3>
+                            <p class="text-sm text-gray-500 mb-4">Edelstahl-PM-Teile, Mikrozahnräder, Halterungen, Gehäusekomponenten und kundenspezifische Sinterteile für die Medizintechnik.</p>
+                        </div>
+                        <div style="margin-top: auto; padding-top: 1.5rem;">
+                            <a href="contact.html" class="btn-outline-gold" style="display: block; text-align: center; padding: 10px 20px; font-size: 14px; font-weight: 600; border-radius: 4px;">Zeichnung zur Bewertung einreichen</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 8: Lock & Security -->
+                <div class="industry-card-3d group" id="security" data-category="security">
+                    <div class="card-image-container bg-gray-200">
+                        <img alt="Schloss- & Sicherheitstechnik" class="w-full h-full object-contain p-8"
+                            src="../images/lock_parts_v2.png" loading="lazy" width="300" height="250">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60"></div>
+                        <div class="absolute bottom-4 left-4 text-white font-bold text-xl">Schloss- & Sicherheitstechnik</div>
+                    </div>
+                    <div class="card-content" style="display: flex; flex-direction: column; height: 100%;">
+                        <p class="text-gray-600 mb-6" style="font-size: 14px; line-height: 1.6; min-height: 80px;">
+                            Sicherheitssysteme und Schlossmechanismen erfordern komplexe, verschleißfeste und hochfeste Bauteile. Die Pulvermetallurgie ermöglicht die kosteneffiziente Großserienfertigung von Schließzylindern, Riegeln und Sperrmechanismen.
+                        </p>
+                        <div class="border-t border-gray-100 pt-4" style="flex-grow: 1;">
+                            <h3 class="font-bold text-gray-800 mb-2 text-sm uppercase tracking-wide">Typische Anwendungen</h3>
+                            <p class="text-sm text-gray-500 mb-4">Schließzylinderkomponenten, Türschlossriegel, Sperrmechanismen, Sicherheitsbeschläge und intelligente Schlosskomponenten.</p>
+                            <h3 class="font-bold text-gray-800 mb-2 text-sm uppercase tracking-wide">Vorteile</h3>
+                            <p class="text-sm text-gray-500 mb-4">Hohe Verschleißfestigkeit, präzise Passform für komplexe Schließgeometrien, hohe Einbruchhemmung durch gehärtete Sinterwerkstoffe.</p>
+                            <h3 class="font-bold text-gray-800 mb-2 text-sm uppercase tracking-wide">Passende Sinterteile</h3>
+                            <p class="text-sm text-gray-500 mb-4">Gesinterte Schlossriegel, Zylinderkerne, Sicherheitsnocken, Führungsringe und kundenspezifische Schließkomponenten.</p>
                         </div>
                         <div style="margin-top: auto; padding-top: 1.5rem;">
                             <a href="contact.html" class="btn-outline-gold" style="display: block; text-align: center; padding: 10px 20px; font-size: 14px; font-weight: 600; border-radius: 4px;">Zeichnung zur Bewertung einreichen</a>

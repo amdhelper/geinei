@@ -748,12 +748,14 @@
                             <div style="font-size: 12px; font-weight: 700; color: #7A5F12; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px; border-bottom: 1px solid #eee; padding-bottom: 6px;">主要服務產業</div>
                             <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 6px;">
                                 <li><a href="applications.html" style="font-size: 14px; font-weight: 600; color: #111; display: block; padding: 6px 10px; border-radius: 4px;" class="mega-link">所有應用領域總覽</a></li>
-                                <li><a href="applications.html#automotive" style="font-size: 14px; color: #444; display: block; padding: 6px 10px; border-radius: 4px;" class="mega-link">汽機車產業零件</a></li>
-                                <li><a href="applications.html#industrial" style="font-size: 14px; color: #444; display: block; padding: 6px 10px; border-radius: 4px;" class="mega-link">工業機械組件</a></li>
+                                <li><a href="applications.html#automotive" style="font-size: 14px; color: #444; display: block; padding: 6px 10px; border-radius: 4px;" class="mega-link">汽機車零件</a></li>
+                                <li><a href="applications.html#industrial" style="font-size: 14px; color: #444; display: block; padding: 6px 10px; border-radius: 4px;" class="mega-link">產業機械零件</a></li>
                                 <li><a href="applications.html#powertools" style="font-size: 14px; color: #444; display: block; padding: 6px 10px; border-radius: 4px;" class="mega-link">電動工具齒輪</a></li>
                                 <li><a href="applications.html#robotics" style="font-size: 14px; color: #444; display: block; padding: 6px 10px; border-radius: 4px;" class="mega-link">機器人與自動化</a></li>
-                                <li><a href="applications.html#green-energy" style="font-size: 14px; color: #444; display: block; padding: 6px 10px; border-radius: 4px;" class="mega-link">綠能與電動車 (EV)</a></li>
+                                <li><a href="applications.html#green-energy" style="font-size: 14px; color: #444; display: block; padding: 6px 10px; border-radius: 4px;" class="mega-link">綠能與電動車</a></li>
                                 <li><a href="applications.html#hardware" style="font-size: 14px; color: #444; display: block; padding: 6px 10px; border-radius: 4px;" class="mega-link">五金與電子零件</a></li>
+                                <li><a href="applications.html#medical" style="font-size: 14px; color: #444; display: block; padding: 6px 10px; border-radius: 4px;" class="mega-link">醫療器材零件</a></li>
+                                <li><a href="applications.html#security" style="font-size: 14px; color: #444; display: block; padding: 6px 10px; border-radius: 4px;" class="mega-link">鎖具與安全防護</a></li>
                             </ul>
                         </div>
                         <div style="background: #f8f9fa; border-radius: 8px; padding: 16px; border: 1px solid #eee; display: flex; flex-direction: column; justify-content: space-between;">
@@ -839,12 +841,14 @@
                 </button>
                 <div class="mobile-accordion-content" style="display: none; padding: 0 0 12px 15px; flex-direction: column; gap: 10px;">
                     <a href="applications.html" style="font-size: 14px; color: #996B1D; font-weight: 600; padding: 6px 0;">所有應用領域總覽</a>
-                    <a href="applications.html#automotive" style="font-size: 14px; color: #444; padding: 6px 0;">汽機車產業零件</a>
-                    <a href="applications.html#industrial" style="font-size: 14px; color: #444; padding: 6px 0;">工業機械組件</a>
+                    <a href="applications.html#automotive" style="font-size: 14px; color: #444; padding: 6px 0;">汽機車零件</a>
+                    <a href="applications.html#industrial" style="font-size: 14px; color: #444; padding: 6px 0;">產業機械零件</a>
                     <a href="applications.html#powertools" style="font-size: 14px; color: #444; padding: 6px 0;">電動工具齒輪</a>
                     <a href="applications.html#robotics" style="font-size: 14px; color: #444; padding: 6px 0;">機器人與自動化</a>
-                    <a href="applications.html#green-energy" style="font-size: 14px; color: #444; padding: 6px 0;">綠能與電動車 (EV)</a>
+                    <a href="applications.html#green-energy" style="font-size: 14px; color: #444; padding: 6px 0;">綠能與電動車</a>
                     <a href="applications.html#hardware" style="font-size: 14px; color: #444; padding: 6px 0;">五金與電子零件</a>
+                    <a href="applications.html#medical" style="font-size: 14px; color: #444; padding: 6px 0;">醫療器材零件</a>
+                    <a href="applications.html#security" style="font-size: 14px; color: #444; padding: 6px 0;">鎖具與安全防護</a>
                 </div>
             </div>
 
@@ -900,6 +904,9 @@
     <button class="category-pill" data-target="robotics" onclick="filterCategory('robotics', this)" role="tab" aria-selected="false">機器人與自動化</button>
     <button class="category-pill" data-target="green-energy" onclick="filterCategory('green-energy', this)" role="tab" aria-selected="false">綠能與電動車</button>
     <button class="category-pill" data-target="hardware" onclick="filterCategory('hardware', this)" role="tab" aria-selected="false">五金與電子零件</button>
+
+    <button class="category-pill" data-target="medical" onclick="filterCategory('medical', this)" role="tab" aria-selected="false">醫療器材零件</button>
+    <button class="category-pill" data-target="security" onclick="filterCategory('security', this)" role="tab" aria-selected="false">鎖具與安全防護</button>
 </div>
 
 <div class="industry-grid-fixed grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16" id="industry-grid-container">
@@ -1010,10 +1017,10 @@
                 <!-- Card 5: EV & Electrification -->
                 <div class="industry-card-3d group" id="green-energy" data-category="green-energy" data-category="green-energy">
                     <div class="card-image-container bg-gray-200">
-                        <img alt="電動車與電氣化" class="w-full h-full object-contain p-8"
+                        <img alt="綠能與電動車" class="w-full h-full object-contain p-8"
                             src="../images/InnerandOuterRotor_optimized.png" loading="lazy" width="300" height="250">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60"></div>
-                        <div class="absolute bottom-4 left-4 text-white font-bold text-xl">電動車與電氣化</div>
+                        <div class="absolute bottom-4 left-4 text-white font-bold text-xl">綠能與電動車</div>
                     </div>
                     <div class="card-content" style="display: flex; flex-direction: column; height: 100%;">
                         <p class="text-gray-600 mb-6" style="font-size: 14px; line-height: 1.6; min-height: 80px;">
@@ -1055,6 +1062,58 @@
                         </div>
                         <div style="margin-top: auto; padding-top: 1.5rem;">
                             <a href="contact.html" class="btn-outline-gold" style="display: block; text-align: center; padding: 10px 20px; font-size: 14px; font-weight: 600; border-radius: 4px;">提交圖面進行評估</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 7: Medical Devices -->
+                <div class="industry-card-3d group" id="medical" data-category="medical">
+                    <div class="card-image-container bg-gray-200">
+                        <img alt="醫療器材零件" class="w-full h-full object-contain p-8"
+                            src="../images/medical_parts_v2.png" loading="lazy" width="300" height="250">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60"></div>
+                        <div class="absolute bottom-4 left-4 text-white font-bold text-xl">醫療器材零件</div>
+                    </div>
+                    <div class="card-content" style="display: flex; flex-direction: column; height: 100%;">
+                        <p class="text-gray-600 mb-6" style="font-size: 14px; line-height: 1.6; min-height: 80px;">
+                            粉末冶金技術能為醫療設備與手術工具提供高精度、耐腐蝕且具高純度的金屬零組件，滿足醫療級規範要求。
+                        </p>
+                        <div class="border-t border-gray-100 pt-4" style="flex-grow: 1;">
+                            <h3 class="font-bold text-gray-800 mb-2 text-sm uppercase tracking-wide">主要應用</h3>
+                            <p class="text-sm text-gray-500 mb-4">手術器械零組件、醫療設備固定架、流體泵浦零件、生物相容性夾具及精密結構件。</p>
+                            <h3 class="font-bold text-gray-800 mb-2 text-sm uppercase tracking-wide">技術優勢</h3>
+                            <p class="text-sm text-gray-500 mb-4">高尺寸精度、優異表面粗糙度度、相容不銹鋼合金材質與優良批量重覆性。</p>
+                            <h3 class="font-bold text-gray-800 mb-2 text-sm uppercase tracking-wide">相關粉末冶金零件</h3>
+                            <p class="text-sm text-gray-500 mb-4">不銹鋼燒結零件、微型齒輪、固定支架、外殼組件及客製化醫療燒結件。</p>
+                        </div>
+                        <div style="margin-top: auto; padding-top: 1.5rem;">
+                            <a href="contact.html" class="btn-outline-gold" style="display: block; text-align: center; padding: 10px 20px; font-size: 14px; font-weight: 600; border-radius: 4px;">評估圖面傳送</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 8: Lock & Security -->
+                <div class="industry-card-3d group" id="security" data-category="security">
+                    <div class="card-image-container bg-gray-200">
+                        <img alt="鎖具與安全防護" class="w-full h-full object-contain p-8"
+                            src="../images/lock_parts_v2.png" loading="lazy" width="300" height="250">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60"></div>
+                        <div class="absolute bottom-4 left-4 text-white font-bold text-xl">鎖具與安全防護</div>
+                    </div>
+                    <div class="card-content" style="display: flex; flex-direction: column; height: 100%;">
+                        <p class="text-gray-600 mb-6" style="font-size: 14px; line-height: 1.6; min-height: 80px;">
+                            安防系統與鎖具機構需要高強度、耐磨耗且幾何形狀複雜的金屬零件。粉末冶金能實現鎖芯、鎖舌與防盜機構的高效率量產。
+                        </p>
+                        <div class="border-t border-gray-100 pt-4" style="flex-grow: 1;">
+                            <h3 class="font-bold text-gray-800 mb-2 text-sm uppercase tracking-wide">主要應用</h3>
+                            <p class="text-sm text-gray-500 mb-4">門鎖鎖舌、鎖芯轉軸、安全閂鎖、智慧鎖零組件及防盜五金機構。</p>
+                            <h3 class="font-bold text-gray-800 mb-2 text-sm uppercase tracking-wide">技術優勢</h3>
+                            <p class="text-sm text-gray-500 mb-4">極佳的耐摩耗性能、複雜鎖具形狀之精密貼合度，經熱處理後具有優異防破壞強度。</p>
+                            <h3 class="font-bold text-gray-800 mb-2 text-sm uppercase tracking-wide">相關粉末冶金零件</h3>
+                            <p class="text-sm text-gray-500 mb-4">燒結鎖舌、鎖芯零件、安全凸輪、導向環及客製化安防五金零件。</p>
+                        </div>
+                        <div style="margin-top: auto; padding-top: 1.5rem;">
+                            <a href="contact.html" class="btn-outline-gold" style="display: block; text-align: center; padding: 10px 20px; font-size: 14px; font-weight: 600; border-radius: 4px;">評估圖面傳送</a>
                         </div>
                     </div>
                 </div>

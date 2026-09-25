@@ -773,6 +773,8 @@
                                 <li><a href="applications.html#robotics" style="font-size: 14px; color: #444; display: block; padding: 6px 10px; border-radius: 4px;" class="mega-link">Robotics & Automation</a></li>
                                 <li><a href="applications.html#green-energy" style="font-size: 14px; color: #444; display: block; padding: 6px 10px; border-radius: 4px;" class="mega-link">Green Energy & EV</a></li>
                                 <li><a href="applications.html#hardware" style="font-size: 14px; color: #444; display: block; padding: 6px 10px; border-radius: 4px;" class="mega-link">Hardware & Electronics</a></li>
+                                <li><a href="applications.html#medical" style="font-size: 14px; color: #444; display: block; padding: 6px 10px; border-radius: 4px;" class="mega-link">Medical Devices</a></li>
+                                <li><a href="applications.html#security" style="font-size: 14px; color: #444; display: block; padding: 6px 10px; border-radius: 4px;" class="mega-link">Lock & Security</a></li>
                             </ul>
                         </div>
                         <div style="background: #f8f9fa; border-radius: 8px; padding: 16px; border: 1px solid #eee; display: flex; flex-direction: column; justify-content: space-between;">
@@ -864,6 +866,8 @@
                     <a href="applications.html#robotics" style="font-size: 14px; color: #444; padding: 6px 0;">Robotics & Automation</a>
                     <a href="applications.html#green-energy" style="font-size: 14px; color: #444; padding: 6px 0;">Green Energy & EV</a>
                     <a href="applications.html#hardware" style="font-size: 14px; color: #444; padding: 6px 0;">Hardware & Electronics</a>
+                    <a href="applications.html#medical" style="font-size: 14px; color: #444; padding: 6px 0;">Medical Devices</a>
+                    <a href="applications.html#security" style="font-size: 14px; color: #444; padding: 6px 0;">Lock & Security</a>
                 </div>
             </div>
 
@@ -919,6 +923,9 @@
     <button class="category-pill" data-target="robotics" onclick="filterCategory('robotics', this)" role="tab" aria-selected="false">Robotics & Automation</button>
     <button class="category-pill" data-target="green-energy" onclick="filterCategory('green-energy', this)" role="tab" aria-selected="false">Green Energy & EV</button>
     <button class="category-pill" data-target="hardware" onclick="filterCategory('hardware', this)" role="tab" aria-selected="false">Hardware & Electronics</button>
+
+    <button class="category-pill" data-target="medical" onclick="filterCategory('medical', this)" role="tab" aria-selected="false">Medical Devices</button>
+    <button class="category-pill" data-target="security" onclick="filterCategory('security', this)" role="tab" aria-selected="false">Lock & Security</button>
 </div>
 
 <div class="industry-grid-fixed grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16" id="industry-grid-container">
@@ -1029,10 +1036,10 @@
                 <!-- Card 5: EV & Electrification -->
                 <div class="industry-card-3d group" id="green-energy" data-category="green-energy" data-category="green-energy">
                     <div class="card-image-container bg-gray-200">
-                        <img alt="EV &amp; Electrification" class="w-full h-full object-contain p-8"
+                        <img alt="Green Energy & EV" class="w-full h-full object-contain p-8"
                             src="images/InnerandOuterRotor_optimized.png" loading="lazy" width="300" height="250">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60"></div>
-                        <div class="absolute bottom-4 left-4 text-white font-bold text-xl">EV &amp; Electrification</div>
+                        <div class="absolute bottom-4 left-4 text-white font-bold text-xl">Green Energy & EV</div>
                     </div>
                     <div class="card-content" style="display: flex; flex-direction: column; height: 100%;">
                         <p class="text-gray-600 mb-6" style="font-size: 14px; line-height: 1.6; min-height: 80px;">
@@ -1071,6 +1078,58 @@
                             <p class="text-sm text-gray-500 mb-4">Net-shape manufacturing, consistent quality, reduced material waste, and cost-effective production for repeated part designs.</p>
                             <h3 class="font-bold text-gray-800 mb-2 text-sm uppercase tracking-wide">Related PM Parts</h3>
                             <p class="text-sm text-gray-500 mb-4">Sleeves, spacers, small gears, bushings, structural parts, and custom sintered metal components.</p>
+                        </div>
+                        <div style="margin-top: auto; padding-top: 1.5rem;">
+                            <a href="contact.html" class="btn-outline-gold" style="display: block; text-align: center; padding: 10px 20px; font-size: 14px; font-weight: 600; border-radius: 4px;">Submit Drawing for Evaluation</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 7: Medical Devices -->
+                <div class="industry-card-3d group" id="medical" data-category="medical">
+                    <div class="card-image-container bg-gray-200">
+                        <img alt="Medical Devices" class="w-full h-full object-contain p-8"
+                            src="images/medical_parts_v2.png" loading="lazy" width="300" height="250">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60"></div>
+                        <div class="absolute bottom-4 left-4 text-white font-bold text-xl">Medical Devices</div>
+                    </div>
+                    <div class="card-content" style="display: flex; flex-direction: column; height: 100%;">
+                        <p class="text-gray-600 mb-6" style="font-size: 14px; line-height: 1.6; min-height: 80px;">
+                            Powder metallurgy provides high-precision, corrosion-resistant, and high-purity metal components for medical equipment, surgical instruments, and diagnostic devices.
+                        </p>
+                        <div class="border-t border-gray-100 pt-4" style="flex-grow: 1;">
+                            <h3 class="font-bold text-gray-800 mb-2 text-sm uppercase tracking-wide">Key Applications</h3>
+                            <p class="text-sm text-gray-500 mb-4">Surgical instrument components, medical equipment brackets, fluid pump parts, biocompatible grippers, and structural components.</p>
+                            <h3 class="font-bold text-gray-800 mb-2 text-sm uppercase tracking-wide">Advantages</h3>
+                            <p class="text-sm text-gray-500 mb-4">High dimensional precision, superior surface finish, compatibility with stainless steel alloys, and excellent repeatability.</p>
+                            <h3 class="font-bold text-gray-800 mb-2 text-sm uppercase tracking-wide">Related PM Parts</h3>
+                            <p class="text-sm text-gray-500 mb-4">Stainless steel PM parts, micro gears, brackets, housing components, and custom medical sintered parts.</p>
+                        </div>
+                        <div style="margin-top: auto; padding-top: 1.5rem;">
+                            <a href="contact.html" class="btn-outline-gold" style="display: block; text-align: center; padding: 10px 20px; font-size: 14px; font-weight: 600; border-radius: 4px;">Submit Drawing for Evaluation</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 8: Lock & Security -->
+                <div class="industry-card-3d group" id="security" data-category="security">
+                    <div class="card-image-container bg-gray-200">
+                        <img alt="Lock & Security" class="w-full h-full object-contain p-8"
+                            src="images/lock_parts_v2.png" loading="lazy" width="300" height="250">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60"></div>
+                        <div class="absolute bottom-4 left-4 text-white font-bold text-xl">Lock & Security</div>
+                    </div>
+                    <div class="card-content" style="display: flex; flex-direction: column; height: 100%;">
+                        <p class="text-gray-600 mb-6" style="font-size: 14px; line-height: 1.6; min-height: 80px;">
+                            Security systems and lock mechanisms require high-strength, wear-resistant, and complex metal components. Powder metallurgy enables cost-effective mass production of lock cylinders, deadbolts, and latching mechanisms.
+                        </p>
+                        <div class="border-t border-gray-100 pt-4" style="flex-grow: 1;">
+                            <h3 class="font-bold text-gray-800 mb-2 text-sm uppercase tracking-wide">Key Applications</h3>
+                            <p class="text-sm text-gray-500 mb-4">Door lock deadbolts, cylinder lock cores, security latches, smart lock components, and anti-theft hardware mechanisms.</p>
+                            <h3 class="font-bold text-gray-800 mb-2 text-sm uppercase tracking-wide">Advantages</h3>
+                            <p class="text-sm text-gray-500 mb-4">Exceptional wear resistance, precise fitting for intricate locking geometries, high strength via heat-treated sintered alloys.</p>
+                            <h3 class="font-bold text-gray-800 mb-2 text-sm uppercase tracking-wide">Related PM Parts</h3>
+                            <p class="text-sm text-gray-500 mb-4">Sintered lock latches, cylinder cores, security cams, guide rings, and custom lock hardware parts.</p>
                         </div>
                         <div style="margin-top: auto; padding-top: 1.5rem;">
                             <a href="contact.html" class="btn-outline-gold" style="display: block; text-align: center; padding: 10px 20px; font-size: 14px; font-weight: 600; border-radius: 4px;">Submit Drawing for Evaluation</a>
