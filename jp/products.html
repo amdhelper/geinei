@@ -523,6 +523,57 @@
   }
 }
 </script>
+<style id="products-filter-style">
+.category-filter-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 30px auto 45px auto;
+    max-width: 960px;
+    padding: 0 15px;
+}
+.category-pill {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 24px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #444;
+    background-color: #ffffff;
+    border: 1.5px solid #e2e8f0;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+    text-decoration: none;
+    white-space: nowrap;
+}
+.category-pill:hover {
+    border-color: #C5A059;
+    color: #C5A059;
+    transform: translateY(-1px);
+}
+.category-pill.active {
+    background-color: #C5A059;
+    color: #1a1a1a;
+    font-weight: 700;
+    border-color: #C5A059;
+    box-shadow: 0 4px 14px rgba(197,160,89,0.35);
+}
+@media (max-width: 768px) {
+    .category-filter-container {
+        justify-content: flex-start;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        padding-bottom: 10px;
+        -webkit-overflow-scrolling: touch;
+    }
+    .category-pill {
+        flex-shrink: 0;
+    }
+}
+</style>
 </head>
 <body>
 <!-- Top Bar (Klein Blue) -->
@@ -564,9 +615,9 @@
 <ul class="desktop-nav-menu hidden-mobile" style="display: flex; gap: 28px; align-items: center; list-style: none; margin: 0; padding: 0;">
 <!-- Products Mega Menu Item -->
 <li class="nav-item mega-dropdown-item" style="position: relative;">
-<button aria-controls="mega-products" aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" style="background: none; border: none; font-size: 15px; font-weight: 600; color: #333; text-transform: uppercase; letter-spacing: 0.5px; padding: 12px 0; cursor: pointer; display: flex; align-items: center; gap: 5px;">
+<a href="products.html" aria-controls="mega-products" aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" style="background: none; border: none; font-size: 15px; font-weight: 600; color: #333; text-transform: uppercase; letter-spacing: 0.5px; padding: 12px 0; cursor: pointer; display: flex; align-items: center; gap: 5px;">
                     製品情報 <span class="arrow" style="font-size: 10px; transition: transform 0.2s; opacity: 0.7;">▼</span>
-</button>
+</a>
 <div class="mega-menu-panel" id="mega-products" style="width: 680px;">
 <div style="display: grid; grid-template-columns: 1.25fr 1fr; gap: 24px;">
 <div>
@@ -592,9 +643,9 @@
 </li>
 <!-- Capabilities Mega Menu Item -->
 <li class="nav-item mega-dropdown-item" style="position: relative;">
-<button aria-controls="mega-capabilities" aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" style="background: none; border: none; font-size: 15px; font-weight: 600; color: #333; text-transform: uppercase; letter-spacing: 0.5px; padding: 12px 0; cursor: pointer; display: flex; align-items: center; gap: 5px;">
+<a href="capabilities.html" aria-controls="mega-capabilities" aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" style="background: none; border: none; font-size: 15px; font-weight: 600; color: #333; text-transform: uppercase; letter-spacing: 0.5px; padding: 12px 0; cursor: pointer; display: flex; align-items: center; gap: 5px;">
                     製造能力 <span class="arrow" style="font-size: 10px; transition: transform 0.2s; opacity: 0.7;">▼</span>
-</button>
+</a>
 <div class="mega-menu-panel" id="mega-capabilities" style="width: 680px;">
 <div style="display: grid; grid-template-columns: 1.25fr 1fr; gap: 24px;">
 <div>
@@ -618,9 +669,9 @@
 </li>
 <!-- Industries Mega Menu Item (Single-Column Vertical List) -->
 <li class="nav-item mega-dropdown-item" style="position: relative;">
-<button aria-controls="mega-industries" aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" style="background: none; border: none; font-size: 15px; font-weight: 600; color: #333; text-transform: uppercase; letter-spacing: 0.5px; padding: 12px 0; cursor: pointer; display: flex; align-items: center; gap: 5px;">
+<a href="applications.html" aria-controls="mega-industries" aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" style="background: none; border: none; font-size: 15px; font-weight: 600; color: #333; text-transform: uppercase; letter-spacing: 0.5px; padding: 12px 0; cursor: pointer; display: flex; align-items: center; gap: 5px;">
                     適用分野 <span class="arrow" style="font-size: 10px; transition: transform 0.2s; opacity: 0.7;">▼</span>
-</button>
+</a>
 <div class="mega-menu-panel" id="mega-industries" style="width: 680px;">
 <div style="display: grid; grid-template-columns: 1.25fr 1fr; gap: 24px;">
 <div>
@@ -650,9 +701,9 @@
 </li>
 <!-- Resources Simple Dropdown Item -->
 <li class="nav-item mega-dropdown-item" style="position: relative;">
-<button aria-controls="mega-resources" aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" style="background: none; border: none; font-size: 15px; font-weight: 600; color: #333; text-transform: uppercase; letter-spacing: 0.5px; padding: 12px 0; cursor: pointer; display: flex; align-items: center; gap: 5px;">
+<a href="resources.html" aria-controls="mega-resources" aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" style="background: none; border: none; font-size: 15px; font-weight: 600; color: #333; text-transform: uppercase; letter-spacing: 0.5px; padding: 12px 0; cursor: pointer; display: flex; align-items: center; gap: 5px;">
                     リソース <span class="arrow" style="font-size: 10px; transition: transform 0.2s; opacity: 0.7;">▼</span>
-</button>
+</a>
 <div class="mega-menu-panel" id="mega-resources" style="width: 260px; padding: 12px 0;">
 <ul style="list-style: none; padding: 0; margin: 0;">
 <li><a class="mega-link" href="resources.html" style="font-size: 14px; font-weight: 600; color: #111; display: block; padding: 8px 20px;">リソースハブ</a></li>
@@ -763,17 +814,16 @@
 <li style="color: #333; font-weight: 500;">製品紹介</li>
 </ol>
 </nav>
-<h1 style="font-family: 'Playfair Display', serif; font-size: 42px; font-weight: 700; color: #111; margin-bottom: 20px; text-align: center;">粉末冶金・焼結部品製品カタログ</h1>
+<h1 style="font-family: 'Playfair Display', serif; font-size: 42px; font-weight: 700; color: #111; margin-bottom: 20px; text-align: center;">粉末冶金・焼結部品製品カタログ</h1><div class="category-filter-container">
+<button aria-selected="true" class="category-pill active" onclick="filterCategory('all', this)">全製品</button>
+<button aria-selected="false" class="category-pill" onclick="filterCategory('gears', this)">精密ギア</button>
+<button aria-selected="false" class="category-pill" onclick="filterCategory('oil-pump', this)">オイルポンプローター</button>
+<button aria-selected="false" class="category-pill" onclick="filterCategory('structural', this)">構造部品</button>
+<button aria-selected="false" class="category-pill" onclick="filterCategory('stainless', this)">ステンレス部品</button>
+</div>
 <p style="text-align: center; font-size: 16px; color: #555; max-width: 800px; margin: 0 auto 50px auto; line-height: 1.6;">
     Yeh Sheng manufactures high-precision sintered components for automotive, industrial, robotics, and medical applications. Our custom powder metallurgy solutions deliver up to 30% cost savings with net-shape manufacturing.
 </p>
-<div aria-label="Category Filter" class="category-filter-container" role="tablist">
-<button aria-selected="true" class="category-pill active" data-target="all" onclick="filterCategory('all', this)" role="tab">全製品一覧</button>
-<button aria-selected="false" class="category-pill" data-target="gears" onclick="filterCategory('gears', this)" role="tab">焼結ギア</button>
-<button aria-selected="false" class="category-pill" data-target="rotors" onclick="filterCategory('rotors', this)" role="tab">オイルポンプローター</button>
-<button aria-selected="false" class="category-pill" data-target="structural" onclick="filterCategory('structural', this)" role="tab">構造部品</button>
-<button aria-selected="false" class="category-pill" data-target="stainless" onclick="filterCategory('stainless', this)" role="tab">ステンレス焼結部品</button>
-</div>
 <!-- Category 1: Powder Metallurgy Gears -->
 <div id="gears-section" style="margin-bottom: 60px; padding-top: 20px;">
 <h2 style="font-family: 'Playfair Display', serif; font-size: 32px; color: #002FA7; margin-bottom: 15px; border-bottom: 2px solid #C5A059; padding-bottom: 10px;">
@@ -782,7 +832,7 @@
 <p style="color: #555; line-height: 1.6; margin-bottom: 25px; font-size: 15px;">自動車、産業、およびパワーツール用途向けのカスタム焼結スパーギア、ヘリカルギア、ベベルギア、および内歯車。</p>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px;">
 <!-- Card 1: Precision Gears -->
-<div class="premium-card product-card-item" data-category="structural" style="text-align: left; padding: 0; overflow: hidden;">
+<div class="premium-card product-card-item" data-category="gears" style="text-align: left; padding: 0; overflow: hidden;">
 <img alt="Precision Sintered Gears" height="250" loading="lazy" src="../images/Gears_refined.jpg" style="width: 100%; height: 250px; object-fit: contain; padding: 20px; background-color: #f8f9fa; max-width: 100%;" width="300"/>
 <div style="padding: 30px;">
 <h3 style="font-family: 'Playfair Display', serif; font-size: 24px; margin-bottom: 15px;">
@@ -792,7 +842,7 @@
 </div>
 </div>
 <!-- Card 2: Robotics & Automation -->
-<div class="premium-card product-card-item" data-category="structural" style="text-align: left; padding: 0; overflow: hidden;">
+<div class="premium-card product-card-item" data-category="gears" style="text-align: left; padding: 0; overflow: hidden;">
 <img alt="Robotics Gear Systems" height="250" loading="lazy" src="../images/1002680619b_refined.png" style="width: 100%; height: 250px; object-fit: contain; padding: 20px; background-color: #f8f9fa; max-width: 100%;" width="300"/>
 <div style="padding: 30px;">
 <h3 style="font-family: 'Playfair Display', serif; font-size: 24px; margin-bottom: 15px;">
@@ -813,7 +863,7 @@
 <p style="color: #555; line-height: 1.6; margin-bottom: 25px; font-size: 15px;">自動車およびオートバイ of 潤滑システム向けに設計された精密インナーおよびアウターローター。</p>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px;">
 <!-- Card 3: Oil Pump Rotors -->
-<div class="premium-card product-card-item" data-category="structural" style="text-align: left; padding: 0; overflow: hidden; max-width: 450px;">
+<div class="premium-card product-card-item" data-category="oil-pump" style="text-align: left; padding: 0; overflow: hidden; max-width: 450px;">
 <img alt="オイルポンプローター" height="250" loading="lazy" src="../images/InnerandOuterRotor_optimized.png" style="width: 100%; height: 250px; object-fit: contain; padding: 20px; background-color: #f8f9fa; max-width: 100%;" width="300"/>
 <div style="padding: 30px;">
 <h3 style="font-family: 'Playfair Display', serif; font-size: 24px; margin-bottom: 15px;">Gerotor Inner &amp; Outer Rotors</h3>
@@ -879,7 +929,7 @@
 <p style="color: #555; line-height: 1.6; margin-bottom: 25px; font-size: 15px;">医療、センサー、および食品機器用途向けの耐食性粉末冶金部品。</p>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px;">
 <!-- Card 8: Stainless Steel Parts -->
-<div class="premium-card product-card-item" data-category="structural" style="text-align: left; padding: 0; overflow: hidden; max-width: 450px;">
+<div class="premium-card product-card-item" data-category="stainless" style="text-align: left; padding: 0; overflow: hidden; max-width: 450px;">
 <img alt="Stainless Steel Parts" height="250" loading="lazy" src="../images/stainless_parts_v3.png" style="width: 100%; height: 250px; object-fit: contain; padding: 20px; background-color: #f8f9fa; max-width: 100%;" width="300"/>
 <div style="padding: 30px;">
 <h3 style="font-family: 'Playfair Display', serif; font-size: 24px; margin-bottom: 15px;">
@@ -1253,6 +1303,10 @@
             }
 
             button.addEventListener('click', function(e) {
+                var href = button.getAttribute('href');
+                if (href && href !== '#' && !href.startsWith('javascript:')) {
+                    return; // Normal link navigation to products.html, capabilities.html, etc.
+                }
                 e.preventDefault();
                 var isOpen = button.getAttribute('aria-expanded') === 'true';
                 if (isOpen) {
@@ -1371,6 +1425,30 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     }
 });
+</script>
+<script id="products-filter-script">
+function filterCategory(cat, btn) {
+    const pills = document.querySelectorAll('.category-pill');
+    pills.forEach(p => {
+        p.classList.remove('active');
+        p.setAttribute('aria-selected', 'false');
+    });
+    if (btn) {
+        btn.classList.add('active');
+        btn.setAttribute('aria-selected', 'true');
+    }
+
+    const cards = document.querySelectorAll('.product-card-item');
+    cards.forEach(card => {
+        const itemCat = card.getAttribute('data-category');
+        if (cat === 'all' || itemCat === cat) {
+            card.style.display = '';
+            card.style.opacity = '1';
+        } else {
+            card.style.display = 'none';
+        }
+    });
+}
 </script>
 </body>
 </html>

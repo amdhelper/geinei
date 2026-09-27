@@ -355,9 +355,9 @@
 <ul class="desktop-nav-menu hidden-mobile" style="display: flex; gap: 28px; align-items: center; list-style: none; margin: 0; padding: 0;">
 <!-- Products Mega Menu Item -->
 <li class="nav-item mega-dropdown-item" style="position: relative;">
-<button aria-controls="mega-products" aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" style="background: none; border: none; font-size: 15px; font-weight: 600; color: #333; text-transform: uppercase; letter-spacing: 0.5px; padding: 12px 0; cursor: pointer; display: flex; align-items: center; gap: 5px;">
+<a href="products.html" aria-controls="mega-products" aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" style="background: none; border: none; font-size: 15px; font-weight: 600; color: #333; text-transform: uppercase; letter-spacing: 0.5px; padding: 12px 0; cursor: pointer; display: flex; align-items: center; gap: 5px;">
                     Products <span class="arrow" style="font-size: 10px; transition: transform 0.2s; opacity: 0.7;">▼</span>
-</button>
+</a>
 <div class="mega-menu-panel" id="mega-products" style="width: 680px;">
 <div style="display: grid; grid-template-columns: 1.25fr 1fr; gap: 24px;">
 <div>
@@ -383,9 +383,9 @@
 </li>
 <!-- Capabilities Mega Menu Item -->
 <li class="nav-item mega-dropdown-item" style="position: relative;">
-<button aria-controls="mega-capabilities" aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" style="background: none; border: none; font-size: 15px; font-weight: 600; color: #333; text-transform: uppercase; letter-spacing: 0.5px; padding: 12px 0; cursor: pointer; display: flex; align-items: center; gap: 5px;">
+<a href="capabilities.html" aria-controls="mega-capabilities" aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" style="background: none; border: none; font-size: 15px; font-weight: 600; color: #333; text-transform: uppercase; letter-spacing: 0.5px; padding: 12px 0; cursor: pointer; display: flex; align-items: center; gap: 5px;">
                     Capabilities <span class="arrow" style="font-size: 10px; transition: transform 0.2s; opacity: 0.7;">▼</span>
-</button>
+</a>
 <div class="mega-menu-panel" id="mega-capabilities" style="width: 680px;">
 <div style="display: grid; grid-template-columns: 1.25fr 1fr; gap: 24px;">
 <div>
@@ -409,9 +409,9 @@
 </li>
 <!-- Industries Mega Menu Item (Single-Column Vertical List) -->
 <li class="nav-item mega-dropdown-item" style="position: relative;">
-<button aria-controls="mega-industries" aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" style="background: none; border: none; font-size: 15px; font-weight: 600; color: #333; text-transform: uppercase; letter-spacing: 0.5px; padding: 12px 0; cursor: pointer; display: flex; align-items: center; gap: 5px;">
+<a href="applications.html" aria-controls="mega-industries" aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" style="background: none; border: none; font-size: 15px; font-weight: 600; color: #333; text-transform: uppercase; letter-spacing: 0.5px; padding: 12px 0; cursor: pointer; display: flex; align-items: center; gap: 5px;">
                     Industries <span class="arrow" style="font-size: 10px; transition: transform 0.2s; opacity: 0.7;">▼</span>
-</button>
+</a>
 <div class="mega-menu-panel" id="mega-industries" style="width: 680px;">
 <div style="display: grid; grid-template-columns: 1.25fr 1fr; gap: 24px;">
 <div>
@@ -441,9 +441,9 @@
 </li>
 <!-- Resources Simple Dropdown Item -->
 <li class="nav-item mega-dropdown-item" style="position: relative;">
-<button aria-controls="mega-resources" aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" style="background: none; border: none; font-size: 15px; font-weight: 600; color: #333; text-transform: uppercase; letter-spacing: 0.5px; padding: 12px 0; cursor: pointer; display: flex; align-items: center; gap: 5px;">
+<a href="resources.html" aria-controls="mega-resources" aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" style="background: none; border: none; font-size: 15px; font-weight: 600; color: #333; text-transform: uppercase; letter-spacing: 0.5px; padding: 12px 0; cursor: pointer; display: flex; align-items: center; gap: 5px;">
                     Resources <span class="arrow" style="font-size: 10px; transition: transform 0.2s; opacity: 0.7;">▼</span>
-</button>
+</a>
 <div class="mega-menu-panel" id="mega-resources" style="width: 260px; padding: 12px 0;">
 <ul style="list-style: none; padding: 0; margin: 0;">
 <li><a class="mega-link" href="resources.html" style="font-size: 14px; font-weight: 600; color: #111; display: block; padding: 8px 20px;">Resources Hub</a></li>
@@ -809,6 +809,10 @@
             }
 
             button.addEventListener('click', function(e) {
+                var href = button.getAttribute('href');
+                if (href && href !== '#' && !href.startsWith('javascript:')) {
+                    return; // Normal link navigation to products.html, capabilities.html, etc.
+                }
                 e.preventDefault();
                 var isOpen = button.getAttribute('aria-expanded') === 'true';
                 if (isOpen) {
