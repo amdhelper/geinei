@@ -358,57 +358,11 @@
 <link href="https://yehsheng.com/case-study-2.html" hreflang="x-default" rel="alternate"/>
 
 <style id="case-nav-style">
-/* Case Studies Navigation Pills */
-.case-nav-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 12px;
-    margin: 25px auto 15px auto;
-    max-width: 960px;
-    padding: 0 15px;
-}
-.case-nav-pill {
-    display: inline-flex;
-    align-items: center;
-    padding: 10px 22px;
-    border-radius: 30px;
-    font-size: 14px;
-    font-weight: 600;
-    color: #ffffff;
-    background-color: transparent;
-    border: 1.5px solid #C5A059;
-    cursor: pointer;
-    transition: all 0.25s ease;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    text-decoration: none;
-    white-space: nowrap;
-}
-.case-nav-pill:hover {
-    background-color: rgba(197, 160, 89, 0.2);
-    color: #ffffff;
-    border-color: #C5A059;
-    transform: translateY(-1px);
-}
-.case-nav-pill.active {
-    background-color: #C5A059;
-    color: #1a1a1a;
-    font-weight: 700;
-    border-color: #C5A059;
-    box-shadow: 0 4px 14px rgba(197,160,89,0.4);
-}
-@media (max-width: 768px) {
-    .case-nav-container {
-        justify-content: flex-start;
-        overflow-x: auto;
-        flex-wrap: nowrap;
-        padding-bottom: 10px;
-        -webkit-overflow-scrolling: touch;
-    }
-    .case-nav-pill {
-        flex-shrink: 0;
-    }
-}
+.case-nav-container { display:flex; justify-content:center; flex-wrap:wrap; gap:12px; margin:25px auto 15px auto; max-width:960px; padding:0 15px; }
+.case-nav-pill { display:inline-flex; align-items:center; padding:10px 22px; border-radius:30px; font-size:14px; font-weight:600; color:#ffffff; background-color:transparent; border:1.5px solid #C5A059; transition:all .25s ease; box-shadow:0 2px 6px rgba(0,0,0,.1); text-decoration:none; white-space:nowrap; }
+.case-nav-pill:hover { background-color:rgba(197,160,89,.2); transform:translateY(-1px); }
+.case-nav-pill.active { background-color:#C5A059; color:#1a1a1a; font-weight:700; box-shadow:0 4px 14px rgba(197,160,89,.4); }
+@media (max-width:768px){ .case-nav-container{justify-content:flex-start;overflow-x:auto;flex-wrap:nowrap;padding-bottom:10px;} .case-nav-pill{flex-shrink:0;} }
 </style>
 </head>
 <body>
@@ -644,10 +598,10 @@
 <div class="container">
 <h1 style="font-family: 'Barlow', 'Helvetica Neue', Arial, sans-serif; font-size: 36px; font-weight: 400; text-transform: uppercase; color: white; margin-bottom: 15px;">案例 2：日本避震器零組件之台灣粉末冶金在地化生產</h1>
 <div class="case-nav-container">
-<a class="case-nav-pill" href="case-studies.html">← 所有案例研究</a>
-<a class="case-nav-pill" href="case-study-1.html">案例 1：牙科設備齒輪</a>
-<a class="case-nav-pill active" href="case-study-2.html">案例 2：避震器在地化</a>
-<a class="case-nav-pill" href="case-study-3.html">案例 3：液壓聯軸器急件</a>
+  <a href="case-studies.html" class="case-nav-pill">← 所有案例總覽</a>
+  <a href="case-study-1.html" class="case-nav-pill">案例 1：牙科 OEM 齒輪</a>
+  <a href="case-study-2.html" class="case-nav-pill active">案例 2：避震器零組件在地化</a>
+  <a href="case-study-3.html" class="case-nav-pill">案例 3：液壓聯軸器急件支援</a>
 </div>
 
 
