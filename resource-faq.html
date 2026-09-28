@@ -708,6 +708,55 @@
   ]
 }
 </script>
+<style id="faq-category-pill-styles">
+.category-filter-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 30px auto 40px auto;
+    max-width: 1100px;
+    padding: 0 15px;
+}
+.category-pill {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 22px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #1a1a1a;
+    background-color: #ffffff;
+    border: 1.5px solid #C5A059;
+    transition: all 0.25s ease;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    text-decoration: none;
+    white-space: nowrap;
+}
+.category-pill:hover {
+    background-color: rgba(197, 160, 89, 0.15);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(197,160,89,0.2);
+}
+.category-pill.active {
+    background-color: #C5A059;
+    color: #1a1a1a;
+    font-weight: 700;
+    box-shadow: 0 4px 14px rgba(197,160,89,0.4);
+}
+@media (max-width: 768px) {
+    .category-filter-container {
+        justify-content: flex-start;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        padding-bottom: 10px;
+        -webkit-overflow-scrolling: touch;
+    }
+    .category-pill {
+        flex-shrink: 0;
+    }
+}
+</style>
 </head>
 <body>
 <!-- Top Bar (Klein Blue #002FA7) -->
@@ -967,26 +1016,23 @@
                 </p>
 </div>
 <!-- Layout with Sidebar -->
-<div class="resource-layout">
-<aside class="resource-sidebar">
-<div class="sidebar-title">Quick Navigation</div>
-<ul class="sidebar-nav">
-<li><a href="case-studies.html">Case Studies</a></li>
-<li><a href="resource-process.html#process-guide">Process Selection</a></li>
-<li><a href="resource-design.html#gear-types">Gear Guide</a></li>
-<li class="sub-item"><a href="resource-design.html#spur-helical">&bull; Spur/Helical</a></li>
-<li class="sub-item"><a href="resource-design.html#bevel-worm">&bull; Bevel/Worm</a></li>
-<li class="sub-item"><a href="resource-design.html#planetary">&bull; Planetary/Harmonic</a></li>
-<li><a href="resource-design.html#bearings-guide">Self-Lubricating Bearings</a></li>
-<li><a href="resource-materials.html#sintering-guide">Sintering Process</a></li>
-<li><a href="resource-materials.html#powder-production">Powder Production</a></li>
-<li><a href="resource-quality.html#quality-control">Quality Control</a></li>
-<li><a href="resource-materials.html#density-porosity">Density/Porosity</a></li>
-<li><a href="resource-faq.html#faq">FAQ</a></li>
-<li><a href="resource-faq.html#glossary">Glossary</a></li>
-<li><a href="resource-materials.html#materials">Material Specs</a></li>
-</ul>
-</aside>
+<div class="category-filter-container" role="navigation" aria-label="Quick Navigation">
+<a class="category-pill" href="case-studies.html">Case Studies</a>
+<a class="category-pill" href="resource-process.html#process-guide">Process Selection</a>
+<a class="category-pill" href="resource-design.html#gear-types">Gear Guide</a>
+<a class="category-pill" href="resource-design.html#spur-helical">Gear Guide: Spur/Helical</a>
+<a class="category-pill" href="resource-design.html#bevel-worm">Gear Guide: Bevel/Worm</a>
+<a class="category-pill" href="resource-design.html#planetary">Gear Guide: Planetary/Harmonic</a>
+<a class="category-pill" href="resource-design.html#bearings-guide">Self-Lubricating Bearings</a>
+<a class="category-pill" href="resource-materials.html#sintering-guide">Sintering Process</a>
+<a class="category-pill" href="resource-materials.html#powder-production">Powder Production</a>
+<a class="category-pill" href="resource-quality.html#quality-control">Quality Control</a>
+<a class="category-pill" href="resource-materials.html#density-porosity">Density/Porosity</a>
+<a class="category-pill active" href="#faq">FAQ</a>
+<a class="category-pill" href="#glossary">Glossary</a>
+<a class="category-pill" href="resource-materials.html#materials">Material Specs</a>
+</div>
+<div class="resource-layout" style="display: block; max-width: 1000px; margin: 0 auto;">
 <div class="resource-content"><!-- FAQ Section -->
 <div class="accordion-card" id="faq"><div class="accordion-header" onclick="toggleAccordion(this)"><h3 style="font-family: 'Barlow', 'Helvetica Neue', Arial, sans-serif; font-size: 28px; font-weight: 500; color: #333; margin-bottom: 30px; border-bottom: 2px solid #eee; padding-bottom: 10px;; margin: 0 !important; border: none; padding: 0; font-size: 24px;">
                             Frequently Asked Questions (FAQ)
