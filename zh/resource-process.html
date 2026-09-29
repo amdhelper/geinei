@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 
-<html lang="zh">
+<html lang="zh-Hant">
 <head>
 <!-- Google Analytics (only on production domain) -->
-<!-- Google tag (gtag.js) -->
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-XS5ZTZGF2Y"></script>
-<script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XS5ZTZGF2Y"></script>
+    <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
       gtag('config', 'G-XS5ZTZGF2Y');
     </script>
-<!-- Microsoft Clarity -->
-<script type="text/javascript">
+    <!-- Microsoft Clarity -->
+    <script type="text/javascript">
         (function(c,l,a,r,i,t,y){
             c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
             t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
@@ -22,8 +22,8 @@
     </script>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>【Knowledge Base】Powder Metallurgy FAQ, Materials &amp; MPIF Standards</title>
-<meta content="Technical resources for Powder Metallurgy (PM). Find FAQs about PM strength, cost, and materials, plus a comprehensive glossary of industry terms like Sintering, Green Strength, and MIM." name="description"/>
+<title>粉末冶金 vs CNC加工 vs 鑄造：成本與產量比較 | 業勝</title>
+<meta content="比較粉末冶金與 CNC 加工、壓鑄及精密鑄造在產量、公差、模具成本與交期上的差異。包含 PM 與 MIM 的決策指南。" name="description"/>
 <meta content="index, follow" name="robots"/>
 <!-- Import Google Fonts: Barlow (Sans) for Headings (GKN Style), Inter (Sans) for Body -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -482,78 +482,6 @@
     </style>
 <link href="../images/logo.png" rel="icon" type="image/png"/>
 <!-- FAQPage Schema.org Structured Data -->
-<script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Is the strength of Powder Metallurgy parts sufficient for high-load applications?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Absolutely. While PM parts have inherent micro-porosity, their strength can be engineered to meet or exceed that of cast iron or even forged steel. By adjusting alloy compositions, increasing compacting density, or using Secondary Forging, PM parts are now widely used in high-stress environments like automotive engines, transmission gears, and connecting rods."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Which is more cost-effective: Powder Metallurgy or CNC Machining?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "It depends on the production volume. CNC Machining is better for low-volume prototyping because it doesn't require expensive tooling. However, for mass production (typically 5,000+ units), Powder Metallurgy is significantly cheaper. PM reduces costs by minimizing material waste (Near-Net Shape) and eliminating the labor-intensive steps of traditional cutting."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What materials can be used in the PM process?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "PM is incredibly versatile. It can process almost all metals, including: Ferrous Alloys (Iron and steel), Non-Ferrous (Copper, aluminum, and brass), Refractory Metals (Tungsten and Molybdenum), and Specialty Materials (Stainless steel and superalloys for aerospace and medical use)."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Why is Powder Metallurgy considered a 'Green' technology?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "PM is one of the most sustainable manufacturing methods. It boasts a material utilization rate of over 95%, meaning almost no scrap metal is produced. Additionally, because the sintering process occurs below the melting point, it often requires less energy than traditional melting and casting operations."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How do 'Self-Lubricating' bearings work in Powder Metallurgy?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "This is a unique advantage of PM. Because the parts are naturally porous, they can be vacuum-impregnated with oil. When the bearing heats up during operation, the oil expands and flows to the surface. When it cools down, the oil is re-absorbed into the pores by capillary action. This makes them ideal for 'maintenance-free' applications."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is the difference between traditional PM and Metal Injection Molding (MIM)?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "While both use metal powders: Traditional PM is like 'pressing a tablet' and is best for larger, simpler shapes. MIM involves mixing powder with a plastic binder to 'inject' it into a mold and is designed for extremely small, highly complex parts (like those in smartphones or surgical tools) that would be impossible to press."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can PM parts be plated or welded?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, but they require preparation. Due to the porosity, PM parts are usually steam-treated or resin-sealed before plating to prevent chemicals from getting trapped in the pores. For welding, laser welding is preferred to minimize the heat-affected zone."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What are the design limitations for PM parts?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Engineers should avoid features that prevent the part from being ejected from the die. This includes: Side Undercuts (holes or grooves on the side must be machined later), Wall Thickness (walls should generally be thicker than 1.5mm to ensure even powder flow), and Sharp Corners (rounded edges/fillets are preferred to extend tool life and improve strength)."
-          }
-        }
-      ]
-    }
-    </script>
 <style>
             .accordion-card {
                 background: #fff;
@@ -615,7 +543,7 @@
                 .accordion-card.active .accordion-body-inner { padding: 20px; }
                 .accordion-header h3 { font-size: 20px !important; }
             }
-            </style> 
+            </style>    
     <link href="https://yehsheng.com/zh/resource-process.html" rel="canonical" />
     <!-- hreflang tags for multilingual SEO -->
     <link href="https://yehsheng.com/resource-process.html" hreflang="en" rel="alternate" />
@@ -726,7 +654,7 @@
 <a href="../zh/resource-process.html" style="display: block; padding: 12px 20px; color: #333; font-size: 14px; border-bottom: 1px solid #eee; font-weight: 600; background: #f8f9fa;">🇹🇼
                         繁體中文</a>
 <a href="../zh-cn/resource-process.html" style="display: block; padding: 12px 20px; color: #333; font-size: 14px; border-bottom: 1px solid #eee;">🇨🇳
-                        简体中文</a>
+                        簡體中文</a>
 <a href="../de/resource-process.html" style="display: block; padding: 12px 20px; color: #333; font-size: 14px; border-bottom: 1px solid #eee;">🇩🇪
                         Deutsch</a>
 <a href="../jp/resource-process.html" style="display: block; padding: 12px 20px; color: #333; font-size: 14px;">🇯🇵 日本語</a>
@@ -748,22 +676,21 @@
 
         <!-- Desktop Menu -->
         <ul class="desktop-nav-menu hidden-mobile" style="display: flex; gap: 28px; align-items: center; list-style: none; margin: 0; padding: 0;">
-            
             <!-- Products Mega Menu Item -->
             <li class="nav-item mega-dropdown-item" style="position: relative;">
                 <a href="products.html" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false" aria-controls="mega-products" style="background: none; border: none; font-size: 15px; font-weight: 600; color: #333; text-transform: uppercase; letter-spacing: 0.5px; padding: 12px 0; cursor: pointer; display: flex; align-items: center; gap: 5px;">
-                    產品介紹 <span class="arrow" style="font-size: 10px; transition: transform 0.2s; opacity: 0.7;">▼</span>
+                    產品目錄 <span class="arrow" style="font-size: 10px; transition: transform 0.2s; opacity: 0.7;">▼</span>
                 </a>
                 <div id="mega-products" class="mega-menu-panel" style="width: 680px;">
                     <div style="display: grid; grid-template-columns: 1.25fr 1fr; gap: 24px;">
                         <div>
-                            <div style="font-size: 12px; font-weight: 700; color: #7A5F12; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px; border-bottom: 1px solid #eee; padding-bottom: 6px;">產品分類目錄</div>
+                            <div style="font-size: 12px; font-weight: 700; color: #7A5F12; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px; border-bottom: 1px solid #eee; padding-bottom: 6px;">粉末冶金產品系列</div>
                             <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 6px;">
                                 <li><a href="products.html" style="font-size: 14px; font-weight: 600; color: #111; display: block; padding: 6px 10px; border-radius: 4px;" class="mega-link">所有產品目錄</a></li>
                                 <li><a href="gears.html" style="font-size: 14px; color: #444; display: block; padding: 6px 10px; border-radius: 4px;" class="mega-link">精密燒結齒輪</a></li>
-                                <li><a href="products.html#rotors-section" style="font-size: 14px; color: #444; display: block; padding: 6px 10px; border-radius: 4px;" class="mega-link">油泵轉子 (Gerotor)</a></li>
-                                <li><a href="products.html#structural-section" style="font-size: 14px; color: #444; display: block; padding: 6px 10px; border-radius: 4px;" class="mega-link">客製化結構零件</a></li>
-                                <li><a href="products.html#stainless-section" style="font-size: 14px; color: #444; display: block; padding: 6px 10px; border-radius: 4px;" class="mega-link">不鏽鋼粉末冶金組件</a></li>
+                                <li><a href="products.html#rotors-section" style="font-size: 14px; color: #444; display: block; padding: 6px 10px; border-radius: 4px;" class="mega-link">機油幫浦轉子 (Gerotors)</a></li>
+                                <li><a href="products.html#structural-section" style="font-size: 14px; color: #444; display: block; padding: 6px 10px; border-radius: 4px;" class="mega-link">客製化結構件</a></li>
+                                <li><a href="products.html#stainless-section" style="font-size: 14px; color: #444; display: block; padding: 6px 10px; border-radius: 4px;" class="mega-link">不銹鋼粉末冶金零件</a></li>
                             </ul>
                         </div>
                         <div style="background: #f8f9fa; border-radius: 8px; padding: 16px; border: 1px solid #eee; display: flex; flex-direction: column; justify-content: space-between;">
@@ -790,14 +717,14 @@
                             <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 6px;">
                                 <li><a href="capabilities.html" style="font-size: 14px; font-weight: 600; color: #111; display: block; padding: 6px 10px; border-radius: 4px;" class="mega-link">製程能力總覽</a></li>
                                 <li><a href="solutions.html" style="font-size: 14px; color: #444; display: block; padding: 6px 10px; border-radius: 4px;" class="mega-link">OEM 服務流程</a></li>
-                                <li><a href="emerging-tech.html" style="font-size: 14px; color: #444; display: block; padding: 6px 10px; border-radius: 4px;" class="mega-link">新興技術與材料</a></li>
+                                <li><a href="emerging-tech.html" style="font-size: 14px; color: #444; display: block; padding: 6px 10px; border-radius: 4px;" class="mega-link">前瞻技術與材料</a></li>
                             </ul>
                         </div>
                         <div style="background: #f8f9fa; border-radius: 8px; padding: 16px; border: 1px solid #eee; display: flex; flex-direction: column; justify-content: space-between;">
                             <div>
-                                <img src="../images/process_full_banner.jpg" alt="壓製與燒結製造技術" style="width: 100%; height: 110px; object-fit: cover; border-radius: 6px; margin-bottom: 10px;" />
-                                <div style="font-size: 14px; font-weight: 700; color: #002FA7;">壓製與燒結製造技術</div>
-                                <div style="font-size: 12px; color: #666; margin-top: 4px; line-height: 1.4;">提供從模具開發、成型燒結到精密二次加工的完整 OEM 製造服務。</div>
+                                <img src="../images/capabilities_v2.png" alt="製造廠房設備" style="width: 100%; height: 110px; object-fit: contain; border-radius: 6px; margin-bottom: 10px; background: white; padding: 6px;" />
+                                <div style="font-size: 14px; font-weight: 700; color: #002FA7;">廠內全製程生產</div>
+                                <div style="font-size: 12px; color: #666; margin-top: 4px; line-height: 1.4;">從粉末配料、自動化壓實、氣氛燒結到精密二次加工。</div>
                             </div>
                             <a href="capabilities.html" style="font-size: 13px; font-weight: 600; color: #996B1D; margin-top: 10px; display: inline-block; text-decoration: none;">檢視製程能力</a>
                         </div>
@@ -805,7 +732,7 @@
                 </div>
             </li>
 
-            <!-- Industries Mega Menu Item (Single-Column Vertical List) -->
+            <!-- Industries Mega Menu Item -->
             <li class="nav-item mega-dropdown-item" style="position: relative;">
                 <a href="applications.html" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false" aria-controls="mega-industries" style="background: none; border: none; font-size: 15px; font-weight: 600; color: #333; text-transform: uppercase; letter-spacing: 0.5px; padding: 12px 0; cursor: pointer; display: flex; align-items: center; gap: 5px;">
                     應用領域 <span class="arrow" style="font-size: 10px; transition: transform 0.2s; opacity: 0.7;">▼</span>
@@ -813,7 +740,7 @@
                 <div id="mega-industries" class="mega-menu-panel" style="width: 680px;">
                     <div style="display: grid; grid-template-columns: 1.25fr 1fr; gap: 24px;">
                         <div>
-                            <div style="font-size: 12px; font-weight: 700; color: #7A5F12; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px; border-bottom: 1px solid #eee; padding-bottom: 6px;">主要服務產業</div>
+                            <div style="font-size: 12px; font-weight: 700; color: #7A5F12; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px; border-bottom: 1px solid #eee; padding-bottom: 6px;">目標產業應用</div>
                             <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 6px;">
                                 <li><a href="applications.html" style="font-size: 14px; font-weight: 600; color: #111; display: block; padding: 6px 10px; border-radius: 4px;" class="mega-link">所有應用領域總覽</a></li>
                                 <li><a href="applications.html#automotive" style="font-size: 14px; color: #444; display: block; padding: 6px 10px; border-radius: 4px;" class="mega-link">汽機車零件</a></li>
@@ -828,11 +755,11 @@
                         </div>
                         <div style="background: #f8f9fa; border-radius: 8px; padding: 16px; border: 1px solid #eee; display: flex; flex-direction: column; justify-content: space-between;">
                             <div>
-                                <img src="../images/automotive_parts_v2.png" alt="汽機車零件應用" style="width: 100%; height: 110px; object-fit: contain; border-radius: 6px; margin-bottom: 10px; background: white; padding: 6px;" />
-                                <div style="font-size: 14px; font-weight: 700; color: #002FA7;">汽機車零件應用</div>
-                                <div style="font-size: 12px; color: #666; margin-top: 4px; line-height: 1.4;">適用於引擎油泵、傳動系統與避震器的高強度粉末冶金燒結組件。</div>
+                                <img src="../images/automotive_parts_v2.png" alt="汽車零件" style="width: 100%; height: 110px; object-fit: contain; border-radius: 6px; margin-bottom: 10px; background: white; padding: 6px;" />
+                                <div style="font-size: 14px; font-weight: 700; color: #002FA7;">汽車與機車零件</div>
+                                <div style="font-size: 12px; color: #666; margin-top: 4px; line-height: 1.4;">專為引擎機油幫浦、變速箱系統與避震器設計的燒結元件。</div>
                             </div>
-                            <a href="applications.html" style="font-size: 13px; font-weight: 600; color: #996B1D; margin-top: 10px; display: inline-block; text-decoration: none;">檢視應用領域</a>
+                            <a href="applications.html" style="font-size: 13px; font-weight: 600; color: #996B1D; margin-top: 10px; display: inline-block; text-decoration: none;">查看應用案例</a>
                         </div>
                     </div>
                 </div>
@@ -878,15 +805,15 @@
             
             <div class="mobile-accordion-item" style="border-bottom: 1px solid #eee;">
                 <button onclick="toggleMobileAccordion(this)" aria-expanded="false" style="width: 100%; background: none; border: none; text-align: left; padding: 12px 0; font-size: 16px; font-weight: 600; color: #111; display: flex; justify-content: space-between; align-items: center; cursor: pointer;">
-                    <span>產品介紹</span>
+                    <span>產品目錄</span>
                     <span class="acc-icon" style="font-size: 12px;">▼</span>
                 </button>
                 <div class="mobile-accordion-content" style="display: none; padding: 0 0 12px 15px; flex-direction: column; gap: 10px;">
                     <a href="products.html" style="font-size: 14px; color: #996B1D; font-weight: 600; padding: 6px 0;">所有產品目錄</a>
                     <a href="gears.html" style="font-size: 14px; color: #444; padding: 6px 0;">精密燒結齒輪</a>
-                    <a href="products.html#rotors-section" style="font-size: 14px; color: #444; padding: 6px 0;">油泵轉子 (Gerotor)</a>
-                    <a href="products.html#structural-section" style="font-size: 14px; color: #444; padding: 6px 0;">客製化結構零件</a>
-                    <a href="products.html#stainless-section" style="font-size: 14px; color: #444; padding: 6px 0;">不鏽鋼粉末冶金組件</a>
+                    <a href="products.html#rotors-section" style="font-size: 14px; color: #444; padding: 6px 0;">機油幫浦轉子 (Gerotors)</a>
+                    <a href="products.html#structural-section" style="font-size: 14px; color: #444; padding: 6px 0;">客製化結構件</a>
+                    <a href="products.html#stainless-section" style="font-size: 14px; color: #444; padding: 6px 0;">不銹鋼粉末冶金零件</a>
                 </div>
             </div>
 
@@ -898,7 +825,7 @@
                 <div class="mobile-accordion-content" style="display: none; padding: 0 0 12px 15px; flex-direction: column; gap: 10px;">
                     <a href="capabilities.html" style="font-size: 14px; color: #996B1D; font-weight: 600; padding: 6px 0;">製程能力總覽</a>
                     <a href="solutions.html" style="font-size: 14px; color: #444; padding: 6px 0;">OEM 服務流程</a>
-                    <a href="emerging-tech.html" style="font-size: 14px; color: #444; padding: 6px 0;">新興技術與材料</a>
+                    <a href="emerging-tech.html" style="font-size: 14px; color: #444; padding: 6px 0;">前瞻技術與材料</a>
                 </div>
             </div>
 
@@ -943,11 +870,11 @@
             <div style="border-top: 2px solid #C5A059; margin-top: 10px; padding-top: 15px;">
                 <div style="font-size: 13px; font-weight: 700; color: #7A5F12; margin-bottom: 8px;">語言 / Language</div>
                 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
-                    <a href="../index.html" style="font-size: 13px; color: #333;">🇺🇸 English</a>
-                    <a href="../zh/index.html" style="font-size: 13px; color: #996B1D; font-weight: 600;">🇹🇼 繁體中文</a>
-                    <a href="../zh-cn/index.html" style="font-size: 13px; color: #333;">🇨🇳 简体中文</a>
-                    <a href="../de/index.html" style="font-size: 13px; color: #333;">🇩🇪 Deutsch</a>
-                    <a href="../jp/index.html" style="font-size: 13px; color: #333; grid-column: span 2;">🇯🇵 日本語</a>
+                    <a href="../resource-process.html" style="font-size: 13px; color: #333;">🇺🇸 English</a>
+                    <a href="../zh/resource-process.html" style="font-size: 13px; color: #996B1D; font-weight: 600;">🇹🇼 繁體中文</a>
+                    <a href="../zh-cn/resource-process.html" style="font-size: 13px; color: #333;">🇨🇳 簡體中文</a>
+                    <a href="../de/resource-process.html" style="font-size: 13px; color: #333;">🇩🇪 Deutsch</a>
+                    <a href="../jp/resource-process.html" style="font-size: 13px; color: #333; grid-column: span 2;">🇯🇵 日本語</a>
                 </div>
             </div>
         </div>
@@ -957,13 +884,12 @@
 <section role="main" style="padding: 80px 0; background: white;">
 <div class="container">
 <div style="text-align: center; margin-bottom: 60px;">
-<h1 style="font-family: 'Barlow', 'Helvetica Neue', Arial, sans-serif; font-size: 42px; font-weight: 400; color: #1a1a1a; margin-bottom: 20px;">粉末壓製與燒結完整製造流程解析</h1>
+<h1 style="font-family: 'Barlow', 'Helvetica Neue', Arial, sans-serif; font-size: 42px; font-weight: 400; color: #1a1a1a; margin-bottom: 20px;">壓製與燒結粉末冶金製造流程</h1>
 <h2 style="font-family: 'Barlow', 'Helvetica Neue', Arial, sans-serif; font-size: 32px; font-weight: 500; color: #555; margin-bottom: 20px;">
-                    Knowledge Base <span style="font-family: 'Inter', 'Arial', sans-serif;">&amp;</span> FAQ</h2>
+                    知識庫與常見問題</h2>
 <div style="width: 80px; height: 4px; background-color: #C5A059; margin: 0 auto 30px auto;"></div>
 <p style="font-size: 18px; color: #555; max-width: 800px; margin: 0 auto; line-height: 1.6;">
-                    Explore common questions about Powder Metallurgy and a comprehensive glossary of industry terms to
-                    help you make informed engineering decisions.
+                    探索有關粉末冶金的常見問題及完整的產業術語表，協助您做出明智的工程決策。
                 </p>
 </div>
 <!-- Capsule Navigation Bar -->
@@ -980,407 +906,366 @@
 <div class="resource-layout" style="display: block; max-width: 1000px; margin: 0 auto;">
 <div class="resource-content"><!-- NEW: Process Selection Guide Section -->
 <div class="accordion-card" id="process-guide"><div class="accordion-header" onclick="toggleAccordion(this)"><h3 style="font-family: 'Barlow', 'Helvetica Neue', Arial, sans-serif; font-size: 28px; font-weight: 500; color: #333; margin-bottom: 15px; border-bottom: 2px solid #eee; padding-bottom: 10px;; margin: 0 !important; border: none; padding: 0; font-size: 24px;">
-                            Process Selection Guide
+                            製程選擇指南
                         </h3><span class="accordion-icon">▼</span></div><div class="accordion-body-wrapper"><div class="accordion-body-inner">
 <p style="font-size: 16px; color: #555; line-height: 1.7; margin-bottom: 25px;">
-                            Not sure if Powder Metallurgy is right for your project? Use this guide to compare PM with
-                            CNC Machining and Casting to find the best manufacturing process for your needs.
+                            不確定粉末冶金是否適合您的專案？使用本指南比較 PM 與 CNC 加工及鑄造，找到最符合您需求的製造流程。
                         </p>
 <table class="process-table">
 <thead>
 <tr>
-<th>Factor</th>
-<th>Powder Metallurgy</th>
-<th>CNC Machining</th>
-<th>Casting</th>
+<th>考量因素</th>
+<th>粉末冶金</th>
+<th>CNC 加工</th>
+<th>鑄造</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Best For</strong></td>
-<td class="highlight-pm">Complex shapes, High volume</td>
-<td>Prototypes, Tight tolerances</td>
-<td>Large parts, Simple shapes</td>
+<td><strong>最適合</strong></td>
+<td class="highlight-pm">複雜形狀、高產量</td>
+<td>原型、嚴格公差</td>
+<td>大型零件、簡單形狀</td>
 </tr>
 <tr>
-<td><strong>Minimum Quantity</strong></td>
-<td>5,000+ pcs</td>
-<td>1+ pcs</td>
-<td>500+ pcs</td>
+<td><strong>最小訂購量</strong></td>
+<td>5,000+ 件</td>
+<td>1+ 件</td>
+<td>500+ 件</td>
 </tr>
 <tr>
-<td><strong>Typical Tolerance</strong></td>
-<td>±0.01 ~ 0.05mm</td>
-<td>±0.005mm</td>
-<td>±0.5mm</td>
+<td><strong>典型公差</strong></td>
+<td>&plusmn;0.01 ~ 0.05mm</td>
+<td>&plusmn;0.005mm</td>
+<td>&plusmn;0.5mm</td>
 </tr>
 <tr>
-<td><strong>Material Waste</strong></td>
+<td><strong>材料浪費</strong></td>
 <td class="highlight-pm">&lt;5%</td>
 <td>30-60%</td>
 <td>10-20%</td>
 </tr>
 <tr>
-<td><strong>Tooling Cost</strong></td>
-<td>Medium-High</td>
-<td>None</td>
-<td>High</td>
+<td><strong>模具成本</strong></td>
+<td>中到高</td>
+<td>無</td>
+<td>高</td>
 </tr>
 <tr>
-<td><strong>Unit Cost (High Vol)</strong></td>
-<td class="highlight-pm">⭐ Lowest</td>
-<td>Highest</td>
-<td>Medium</td>
+<td><strong>單件成本 (高產量)</strong></td>
+<td class="highlight-pm">⭐ 最低</td>
+<td>最高</td>
+<td>中等</td>
 </tr>
 <tr>
-<td><strong>Lead Time (Tooling)</strong></td>
-<td>45-60 days</td>
-<td>1-3 days</td>
-<td>30-45 days</td>
+<td><strong>交期 (模具)</strong></td>
+<td>45-60 天</td>
+<td>1-3 天</td>
+<td>30-45 天</td>
 </tr>
 </tbody>
 </table>
 <div class="decision-box">
-<h4>Quick Decision Guide</h4>
+<h4>快速決策指南</h4>
 <div class="decision-item">
-<span>Need <strong>1-100 parts</strong> with tight tolerances?</span>
-<span class="arrow">→</span>
-<span><strong>CNC Machining</strong></span>
+<span>需要 <strong>1-100 件</strong> 且要求嚴格公差？</span>
+<span class="arrow">&rarr;</span>
+<span><strong>CNC 加工</strong></span>
 </div>
 <div class="decision-item">
-<span>Need <strong>100-5,000 parts</strong> + simple shape?</span>
-<span class="arrow">→</span>
-<span><strong>Casting</strong></span>
+<span>需要 <strong>100-5,000 件</strong> + 簡單形狀？</span>
+<span class="arrow">&rarr;</span>
+<span><strong>鑄造</strong></span>
 </div>
 <div class="decision-item">
-<span>Need <strong>5,000+ parts</strong> + complex shape?</span>
-<span class="arrow">→</span>
-<span style="color: #2e7d32; font-weight: 700;">Powder Metallurgy</span>
+<span>需要 <strong>5,000+ 件</strong> + 複雜形狀？</span>
+<span class="arrow">&rarr;</span>
+<span style="color: #2e7d32; font-weight: 700;">粉末冶金</span>
 </div>
 <p style="margin-top: 20px; font-size: 14px; color: #666;">
-<strong>Pro Tip:</strong> Even for smaller quantities, PM may be cost-effective if
-                                you plan to scale up production later. <a href="contact.html" style="color: #002FA7;">Contact us</a> for a free consultation!
+<strong>專業建議：</strong>即使產量較小，若您計劃日後擴大生產，PM 仍可能具備成本效益。<a href="contact.html" style="color: #002FA7;">聯絡我們</a>取得免費諮詢！
                             </p>
 </div>
 </div></div></div><!-- NEW: PM Forming Methods Section -->
 <div class="accordion-card" id="forming-methods"><div class="accordion-header" onclick="toggleAccordion(this)"><h3 style="font-family: 'Barlow', 'Helvetica Neue', Arial, sans-serif; font-size: 28px; font-weight: 500; color: #333; margin-bottom: 15px; border-bottom: 2px solid #eee; padding-bottom: 10px;; margin: 0 !important; border: none; padding: 0; font-size: 24px;">
-                            Powder Metallurgy Forming Methods
+                            粉末冶金成型方法
                         </h3><span class="accordion-icon">▼</span></div><div class="accordion-body-wrapper"><div class="accordion-body-inner">
 <p style="font-size: 16px; color: #555; line-height: 1.7; margin-bottom: 30px;">
-                            Powder Metallurgy encompasses several distinct forming technologies, each optimized for
-                            different part sizes, complexities, and production volumes. Understanding these methods
-                            helps engineers select the most cost-effective approach for their application.
+                            粉末冶金包含幾種不同的成型技術，每種技術針對不同的零件尺寸、複雜度和生產產量進行了最佳化。了解這些方法有助於工程師為其應用選擇最具成本效益的方案。
                         </p>
 <!-- Press & Sinter -->
 <div id="press-sinter" style="margin-bottom: 40px;">
 <h4 style="font-size: 22px; font-weight: 600; color: #002FA7; margin-bottom: 15px; padding-left: 15px; border-left: 4px solid #C5A059;">
-                                1. Conventional Press <span style="font-family: 'Inter', 'Arial', sans-serif;">&amp;</span> Sinter
-                                <span style="background: #e8f5e9; color: #2e7d32; font-size: 12px; padding: 3px 10px; border-radius: 12px; margin-left: 10px; font-weight: 700;">OUR
-                                    CORE PROCESS</span>
+                                1. 傳統壓製與燒結
+                                <span style="background: #e8f5e9; color: #2e7d32; font-size: 12px; padding: 3px 10px; border-radius: 12px; margin-left: 10px; font-weight: 700;">我們的核心製程</span>
 </h4>
 <div style="background: linear-gradient(135deg, #f0f4ff 0%, #e8f4fd 100%); border: 2px solid #C5A059; border-radius: 12px; padding: 25px; margin-bottom: 20px;">
 <p style="font-size: 15px; line-height: 1.8; color: #333; margin: 0 0 15px 0;">
-                                    The most established and widely used PM process. Metal powder is compacted in a
-                                    rigid die
-                                    under high pressure (400–700 MPa), then sintered in a controlled-atmosphere furnace
-                                    at
-                                    temperatures just below the melting point (typically 1100–1300°C).
+                                    最成熟且應用最廣泛的 PM 製程。金屬粉末在高壓（400&ndash;700 MPa）下於剛性模具中壓實，然後在低於熔點的溫度（通常為 1100&ndash;1300&deg;C）下於控制氣氛爐中燒結。
                                 </p>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px;">
 <div style="background: white; padding: 12px; border-radius: 8px; text-align: center;">
 <div style="font-size: 24px; margin-bottom: 5px;"></div>
-<strong style="font-size: 13px;">±0.01mm Tolerance</strong>
+<strong style="font-size: 13px;">&plusmn;0.01mm 公差</strong>
 </div>
 <div style="background: white; padding: 12px; border-radius: 8px; text-align: center;">
 
-<strong style="font-size: 13px;">5,000–1M+ pcs/month</strong>
+<strong style="font-size: 13px;">5,000&ndash;1M+ 件/月</strong>
 </div>
 <div style="background: white; padding: 12px; border-radius: 8px; text-align: center;">
 
-<strong style="font-size: 13px;">1g – 2kg Part Weight</strong>
+<strong style="font-size: 13px;">1g &ndash; 2kg 零件重量</strong>
 </div>
 <div style="background: white; padding: 12px; border-radius: 8px; text-align: center;">
 
-<strong style="font-size: 13px;">Lowest Unit Cost</strong>
+<strong style="font-size: 13px;">最低單件成本</strong>
 </div>
 </div>
 <p style="font-size: 14px; color: #555; margin: 15px 0 0 0; line-height: 1.7;">
-<strong>Why Yeh Sheng chooses this process:</strong> With over 40 years of
-                                    experience,
-                                    conventional press &amp; sinter delivers the best balance of precision, cost, and
-                                    production
-                                    volume. It is the industry-proven method for gears, structural parts, and bearings —
-                                    trusted by leading OEMs worldwide.
+<strong>為什麼業勝選擇此製程：</strong>憑藉超過 40 年的經驗，傳統壓製與燒結在精度、成本和生產產量之間提供了最佳平衡。這是用於齒輪、結構件和軸承且經產業驗證的方法 &mdash; 深受全球領先 OEM 廠商的信賴。
                                 </p>
 </div>
 <p style="font-size: 15px; color: #555; line-height: 1.7;">
-<strong>Best for:</strong> Gears, sprockets, bushings, structural parts, motor
-                                components<br/>
-<strong>Typical materials:</strong> Iron-based alloys, copper-based alloys, stainless
-                                steel<br/>
-<strong>Advantages:</strong> Lowest cost at volume, excellent repeatability, mature
-                                tooling technology, near-net-shape (95%+ material utilization)
+<strong>最適合：</strong>齒輪、鏈輪、襯套、結構零件、馬達元件<br/>
+<strong>典型材料：</strong>鐵基合金、銅基合金、不銹鋼<br/>
+<strong>優勢：</strong>高產量下成本最低、極佳的可重複性、成熟的模具技術、近淨成型（95%+ 材料利用率）
                             </p>
 </div>
 <!-- MIM -->
 <div id="mim" style="margin-bottom: 40px;">
 <h4 style="font-size: 22px; font-weight: 600; color: #002FA7; margin-bottom: 15px; padding-left: 15px; border-left: 4px solid #C5A059;">
-                                2. Metal Injection Molding (MIM)
+                                2. 金屬射出成型 (MIM)
                             </h4>
 <p style="font-size: 15px; color: #555; line-height: 1.7; margin-bottom: 15px;">
-                                MIM combines the design freedom of plastic injection molding with the material
-                                properties
-                                of metals. Fine metal powder (typically &lt;20μm) is mixed with a thermoplastic binder,
-                                injected into a mold, then debound and sintered to near-full density (96–99%).
+                                MIM 將塑膠射出成型的設計自由度與金屬的材料特性相結合。細微的金屬粉末（通常 &lt;20&mu;m）與熱塑性黏結劑混合，射入模具中，然後經過脫脂並燒結至接近全密度（96&ndash;99%）。
                             </p>
 <p style="font-size: 15px; color: #555; line-height: 1.7;">
-<strong>Best for:</strong> Very small, highly complex 3D parts (&lt;100g)<br/>
-<strong>Typical applications:</strong> Smartphone hinges, surgical tools, watch
-                                components, firearm parts<br/>
-<strong>Advantages:</strong> Extreme geometric complexity, tight tolerances on small
-                                parts<br/>
-<strong>Limitations:</strong> Higher cost per unit, limited to small parts, long
-                                debinding cycle
+<strong>最適合：</strong>非常小、極度複雜的 3D 零件（&lt;100g）<br/>
+<strong>典型應用：</strong>智慧型手機軸承轉軸、手術工具、手錶元件、槍枝零件<br/>
+<strong>優勢：</strong>極高的幾何複雜度、小零件上的嚴格公差<br/>
+<strong>限制：</strong>單件成本較高、僅限於小零件、脫脂週期長
                             </p>
 </div>
 <!-- HIP & Powder Forging -->
 <div id="hip-forging" style="margin-bottom: 40px;">
 <h4 style="font-size: 22px; font-weight: 600; color: #002FA7; margin-bottom: 15px; padding-left: 15px; border-left: 4px solid #C5A059;">
-                                3. Hot Isostatic Pressing (HIP) <span style="font-family: 'Inter', 'Arial', sans-serif;">&amp;</span> Powder Forging
+                                3. 熱等均壓 (HIP) 與粉末鍛造
                             </h4>
 <p style="font-size: 15px; color: #555; line-height: 1.7; margin-bottom: 15px;">
-<strong>HIP</strong> uses high temperature and gas pressure simultaneously to eliminate
-                                internal porosity, achieving near 100% theoretical density. It is used for critical
-                                aerospace
-                                and medical implant components where zero porosity is essential.
+<strong>HIP</strong> 同時使用高溫與氣體壓力來消除內部孔隙，達到接近 100% 的理論密度。用於零孔隙至關重要的關鍵航空航天與醫療植入物元件。
                             </p>
 <p style="font-size: 15px; color: #555; line-height: 1.7; margin-bottom: 15px;">
-<strong>Powder Forging</strong> combines PM with forging: a PM preform is heated and
-                                then
-                                forged in a closed die. This produces fully dense parts with wrought-like mechanical
-                                properties. Common in automotive connecting rods.
+<strong>粉末鍛造</strong> 將 PM 與鍛造相結合：將 PM 預成型體加熱，然後於封閉模具中鍛造。這能產生具有類似鍛造機械性能的全密度零件。常見於汽車連桿。
                             </p>
 <p style="font-size: 15px; color: #555; line-height: 1.7;">
-<strong>Best for:</strong> Aerospace turbine discs, medical implants, high-performance
-                                connecting rods<br/>
-<strong>Advantages:</strong> Near 100% density, superior mechanical properties<br/>
-<strong>Limitations:</strong> Very high equipment and processing costs
+<strong>最適合：</strong>航空航天渦輪盤、醫療植入物、高性能連桿<br/>
+<strong>優勢：</strong>接近 100% 密度、卓越的機械性能<br/>
+<strong>限制：</strong>極高的設備與加工成本
                             </p>
 </div>
 <!-- Additive Manufacturing -->
 <div style="margin-bottom: 40px;">
 <h4 style="font-size: 22px; font-weight: 600; color: #002FA7; margin-bottom: 15px; padding-left: 15px; border-left: 4px solid #C5A059;">
-                                4. Additive Manufacturing (Metal 3D Printing)
+                                4. 積層製造（金屬 3D 列印）
                             </h4>
 <p style="font-size: 15px; color: #555; line-height: 1.7; margin-bottom: 15px;">
-                                The newest member of the PM family. Technologies like Selective Laser Melting (SLM) and
-                                Electron Beam Melting (EBM) use a laser or electron beam to selectively fuse metal
-                                powder
-                                layer by layer, building parts directly from CAD data.
+                                PM 家族的新成員。像選擇性雷射熔融（SLM）和電子束熔融（EBM）等技術使用雷射或電子束逐層選擇性熔合金屬粉末，直接從 CAD 數據構建零件。
                             </p>
 <p style="font-size: 15px; color: #555; line-height: 1.7;">
-<strong>Best for:</strong> Prototyping, one-off custom parts, topology-optimized
-                                structures<br/>
-<strong>Advantages:</strong> No tooling needed, unlimited geometric freedom, rapid
-                                prototyping<br/>
-<strong>Limitations:</strong> Very slow production speed, extremely high cost per unit,
-                                surface finish requires post-processing
+<strong>最適合：</strong>打樣原型、單件客製化零件、拓撲最佳化結構<br/>
+<strong>優勢：</strong>無需模具、無限的幾何自由度、快速打樣原型<br/>
+<strong>限制：</strong>生產速度非常慢、單件成本極高、表面粗糙度需要後處理
                             </p>
 </div>
 <!-- Comparison Table -->
 <table class="process-table">
 <thead>
 <tr>
-<th>Method</th>
-<th>Part Size</th>
-<th>Complexity</th>
-<th>Volume</th>
-<th>Unit Cost</th>
-<th>Density</th>
+<th>方法</th>
+<th>零件尺寸</th>
+<th>複雜度</th>
+<th>產量</th>
+<th>單件成本</th>
+<th>密度</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Press &amp; Sinter</strong></td>
-<td>1g – 2kg</td>
-<td>Medium</td>
+<td><strong>壓製與燒結</strong></td>
+<td>1g &ndash; 2kg</td>
+<td>中等</td>
 <td class="highlight-pm">5,000+</td>
-<td class="highlight-pm">⭐ Lowest</td>
-<td>85–92%</td>
+<td class="highlight-pm">⭐ 最低</td>
+<td>85&ndash;92%</td>
 </tr>
 <tr>
 <td><strong>MIM</strong></td>
 <td>&lt;100g</td>
-<td>Very High</td>
+<td>極高</td>
 <td>10,000+</td>
-<td>Medium</td>
-<td>96–99%</td>
+<td>中等</td>
+<td>96&ndash;99%</td>
 </tr>
 <tr>
 <td><strong>HIP</strong></td>
-<td>Any</td>
-<td>Low-Medium</td>
+<td>任意</td>
+<td>低-中等</td>
 <td>1+</td>
-<td>Very High</td>
+<td>極高</td>
 <td>~100%</td>
 </tr>
 <tr>
-<td><strong>Powder Forging</strong></td>
-<td>100g – 5kg</td>
-<td>Medium</td>
+<td><strong>粉末鍛造</strong></td>
+<td>100g &ndash; 5kg</td>
+<td>中等</td>
 <td>10,000+</td>
-<td>Medium-High</td>
+<td>中高</td>
 <td>~100%</td>
 </tr>
 <tr>
-<td><strong>Metal 3D Printing</strong></td>
-<td>Any</td>
-<td>Unlimited</td>
-<td>1–100</td>
-<td>Highest</td>
-<td>95–99%</td>
+<td><strong>金屬 3D 列印</strong></td>
+<td>任意</td>
+<td>無限制</td>
+<td>1&ndash;100</td>
+<td>最高</td>
+<td>95&ndash;99%</td>
 </tr>
 </tbody>
 </table>
 <div class="decision-box">
-<h4>Which PM Method is Right for You?</h4>
+<h4>哪種 PM 方法最適合您？</h4>
 <div class="decision-item">
-<span>Need <strong>mass production</strong> (5,000+ pcs) at the lowest cost?</span>
-<span class="arrow">→</span>
-<span style="color: #2e7d32; font-weight: 700;">Press &amp; Sinter (Our specialty!)</span>
+<span>以最低成本需要<strong>量產</strong>（5,000+ 件）？</span>
+<span class="arrow">&rarr;</span>
+<span style="color: #2e7d32; font-weight: 700;">壓製與燒結（我們的專長！）</span>
 </div>
 <div class="decision-item">
-<span>Need <strong>tiny, complex parts</strong> (&lt;100g)?</span>
-<span class="arrow">→</span>
+<span>需要<strong>微小、複雜的零件</strong>（&lt;100g）？</span>
+<span class="arrow">&rarr;</span>
 <span><strong>MIM</strong></span>
 </div>
 <div class="decision-item">
-<span>Need <strong>zero porosity</strong> for aerospace/medical?</span>
-<span class="arrow">→</span>
-<span><strong>HIP or Powder Forging</strong></span>
+<span>需要<strong>零孔隙</strong>用於航空航天/醫療？</span>
+<span class="arrow">&rarr;</span>
+<span><strong>HIP 或粉末鍛造</strong></span>
 </div>
 <div class="decision-item">
-<span>Need <strong>1-10 prototypes</strong> quickly?</span>
-<span class="arrow">→</span>
-<span><strong>Metal 3D Printing</strong></span>
+<span>需要快速取得 <strong>1-10 個樣品原型</strong>？</span>
+<span class="arrow">&rarr;</span>
+<span><strong>金屬 3D 列印</strong></span>
 </div>
 <p style="margin-top: 20px; font-size: 14px; color: #666;">
-<strong>Not sure?</strong> <a href="contact.html" style="color: #002FA7;">Contact our
-                                    engineering team</a> — we'll help you choose the best process for your project.
+<strong>不確定嗎？</strong> <a href="contact.html" style="color: #002FA7;">聯絡我們的工程團隊</a> &mdash; 我們將協助您為專案選擇最佳製程。
                             </p>
 </div>
 </div></div></div><!-- NEW: PM vs CNC vs Casting Section -->
 <div class="accordion-card" id="pm-vs-cnc"><div class="accordion-header" onclick="toggleAccordion(this)"><h3 style="font-family: 'Barlow', 'Helvetica Neue', Arial, sans-serif; font-size: 28px; font-weight: 500; color: #333; margin-bottom: 15px; border-bottom: 2px solid #eee; padding-bottom: 10px;; margin: 0 !important; border: none; padding: 0; font-size: 24px;">
-                            PM vs CNC Machining vs Casting — When to Use Which?
+                            PM vs CNC 加工 vs 鑄造 &mdash; 何時使用哪種？
                         </h3><span class="accordion-icon">▼</span></div><div class="accordion-body-wrapper"><div class="accordion-body-inner">
 <p style="font-size: 16px; color: #555; line-height: 1.7; margin-bottom: 25px;">
-                            Choosing the right manufacturing process can save you 30–50% on production costs.
-                            Here's a detailed comparison to help you decide.
+                            選擇正確的製造流程可為您節省 30&ndash;50% 的生產成本。以下為詳細比較，協助您做決定。
                         </p>
 <table class="process-table">
 <thead>
 <tr>
-<th style="width: 160px;">Factor</th>
-<th style="background: linear-gradient(135deg, #1a5d1a, #2e7d32);">Powder Metallurgy
+<th style="width: 160px;">考量因素</th>
+<th style="background: linear-gradient(135deg, #1a5d1a, #2e7d32);">粉末冶金
                                     </th>
-<th>CNC Machining</th>
-<th>Die Casting</th>
-<th>Investment Casting</th>
+<th>CNC 加工</th>
+<th>壓鑄</th>
+<th>精密鑄造</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Ideal Volume</strong></td>
-<td class="highlight-pm">5,000 – 1,000,000+</td>
-<td>1 – 5,000</td>
+<td><strong>理想產量</strong></td>
+<td class="highlight-pm">5,000 &ndash; 1,000,000+</td>
+<td>1 &ndash; 5,000</td>
 <td>10,000+</td>
-<td>100 – 10,000</td>
+<td>100 &ndash; 10,000</td>
 </tr>
 <tr>
-<td><strong>精密公差</strong></td>
-<td>±0.01 – 0.05mm</td>
-<td>±0.005mm</td>
-<td>±0.1 – 0.3mm</td>
-<td>±0.1mm</td>
+<td><strong>公差</strong></td>
+<td>&plusmn;0.01 &ndash; 0.05mm</td>
+<td>&plusmn;0.005mm</td>
+<td>&plusmn;0.1 &ndash; 0.3mm</td>
+<td>&plusmn;0.1mm</td>
 </tr>
 <tr>
-<td><strong>Material Waste</strong></td>
+<td><strong>材料浪費</strong></td>
 <td class="highlight-pm">&lt;5%</td>
-<td>30–60%</td>
-<td>5–15%</td>
-<td>10–20%</td>
+<td>30&ndash;60%</td>
+<td>5&ndash;15%</td>
+<td>10&ndash;20%</td>
 </tr>
 <tr>
-<td><strong>Tooling Cost</strong></td>
-<td>$5,000 – $30,000</td>
-<td>None</td>
-<td>$20,000 – $100,000+</td>
-<td>$3,000 – $15,000</td>
+<td><strong>模具成本</strong></td>
+<td>$5,000 &ndash; $30,000</td>
+<td>無</td>
+<td>$20,000 &ndash; $100,000+</td>
+<td>$3,000 &ndash; $15,000</td>
 </tr>
 <tr>
-<td><strong>Unit Cost (High Vol)</strong></td>
-<td class="highlight-pm">⭐ Very Low</td>
-<td>High</td>
-<td>Low</td>
-<td>Medium</td>
+<td><strong>單件成本 (高產量)</strong></td>
+<td class="highlight-pm">⭐ 非常低</td>
+<td>高</td>
+<td>低</td>
+<td>中等</td>
 </tr>
 <tr>
-<td><strong>Part Complexity</strong></td>
-<td>High (2.5D)</td>
-<td>Very High (3D)</td>
-<td>Medium</td>
-<td>Very High (3D)</td>
+<td><strong>零件複雜度</strong></td>
+<td>高 (2.5D)</td>
+<td>極高 (3D)</td>
+<td>中等</td>
+<td>極高 (3D)</td>
 </tr>
 <tr>
-<td><strong>Typical Materials</strong></td>
-<td>Iron, steel, copper, stainless</td>
-<td>Any machinable metal</td>
-<td>Aluminum, zinc, magnesium</td>
-<td>Steel, stainless, superalloys</td>
+<td><strong>典型材料</strong></td>
+<td>鐵、鋼、銅、不銹鋼</td>
+<td>任何可加工金屬</td>
+<td>鋁、鋅、鎂</td>
+<td>鋼、不銹鋼、高溫合金</td>
 </tr>
 <tr>
-<td><strong>Lead Time (Tooling)</strong></td>
-<td>45–60 days</td>
-<td>1–3 days</td>
-<td>60–90 days</td>
-<td>30–45 days</td>
+<td><strong>交期 (模具)</strong></td>
+<td>45&ndash;60 天</td>
+<td>1&ndash;3 天</td>
+<td>60&ndash;90 天</td>
+<td>30&ndash;45 天</td>
 </tr>
 <tr>
-<td><strong>Self-Lubricating?</strong></td>
-<td class="highlight-pm">Yes (oil impregnation)</td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
+<td><strong>具自潤性？</strong></td>
+<td class="highlight-pm">是（含油浸漬）</td>
+<td>否</td>
+<td>否</td>
+<td>否</td>
 </tr>
 </tbody>
 </table>
 <div class="decision-box" style="background: linear-gradient(135deg, #fff8e1 0%, #fff3e0 100%); border-color: #C5A059;">
-<h4>Hypothetical Cost Savings Scenario</h4>
+<h4>💡 假設性成本節省情境</h4>
 <p style="font-size: 15px; line-height: 1.8; color: #555;">
-                                For example, a typical small iron gear for power tools produced by CNC machining
-                                may cost significantly more per piece than the same part made by PM press &amp; sinter.
-                                At an annual volume of 50,000+ pieces, the savings can be substantial:
+                                例如，用於電動工具的典型小鐵齒輪，若使用 CNC 加工製造，其單件成本可能顯著高於使用 PM 壓製與燒結製造的相同零件。在年產量 50,000+ 件的情況下，節省的成本相當可觀：
                             </p>
 <div style="display: flex; align-items: center; gap: 20px; margin: 15px 0; flex-wrap: wrap;">
 <div style="background: #ffebee; padding: 15px 25px; border-radius: 8px; text-align: center;">
-<div style="font-size: 12px; color: #c62828;">CNC Machining</div>
-<div style="font-size: 24px; font-weight: 700; color: #c62828;">Higher Cost</div>
+<div style="font-size: 12px; color: #c62828;">CNC 加工</div>
+<div style="font-size: 24px; font-weight: 700; color: #c62828;">成本較高</div>
 </div>
-<div style="font-size: 24px; color: #C5A059;">→</div>
+<div style="font-size: 24px; color: #C5A059;">&rarr;</div>
 <div style="background: #e8f5e9; padding: 15px 25px; border-radius: 8px; text-align: center;">
-<div style="font-size: 12px; color: #2e7d32;">PM Process</div>
-<div style="font-size: 24px; font-weight: 700; color: #2e7d32;">Up to 65% Less</div>
+<div style="font-size: 12px; color: #2e7d32;">PM 製程</div>
+<div style="font-size: 24px; font-weight: 700; color: #2e7d32;">最多降低 65%</div>
 </div>
 <div style="font-size: 24px; color: #C5A059;">= </div>
 <div style="background: #fff8e1; padding: 15px 25px; border-radius: 8px; text-align: center;">
-<div style="font-size: 12px; color: #f57f17;">Potential Savings</div>
-<div style="font-size: 24px; font-weight: 700; color: #f57f17;">Significant</div>
+<div style="font-size: 12px; color: #f57f17;">潛在節省</div>
+<div style="font-size: 24px; font-weight: 700; color: #f57f17;">相當可觀</div>
 </div>
 </div>
 <p style="font-size: 14px; color: #666; margin: 0;">
-<em>* Actual savings vary depending on part geometry, material, and volume.</em>
-<a href="contact.html" style="color: #002FA7;"> Get a free cost comparison for your
-                                    specific part →</a>
+<em>* 實際節省金額因零件幾何形狀、材料和產量而異。</em>
+<a href="contact.html" style="color: #002FA7;">為您的特定零件取得免費成本比較 &rarr;</a>
 </p>
 </div>
 </div></div></div></div></div></div></section><script>
@@ -1419,6 +1304,19 @@
                         }
                     });
                 });
+            });
+
+            function toggleLangDropdown() {
+                var dropdown = document.getElementById("langDropdown");
+                if (dropdown) {
+                    dropdown.style.display = (dropdown.style.display === "none" || dropdown.style.display === "") ? "block" : "none";
+                }
+            }
+            document.addEventListener('click', function (e) {
+                var dropdown = document.getElementById("langDropdown");
+                if (dropdown && !e.target.closest('#langDropdown') && !e.target.matches('[onclick="toggleLangDropdown()"]')) {
+                    dropdown.style.display = "none";
+                }
             });
             </script>
 <script id="mega-menu-custom-js">
