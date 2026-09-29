@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="en">
 <head>
@@ -29,6 +29,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="assets/resource-pills.css" rel="stylesheet"/>
 <style>
         /* Global Reset */
         body {
@@ -637,56 +638,8 @@
 </style>
 <style id="category-filter-styles">
     /* Category Filter Pills (Neil Patel Style) */
-    .category-filter-container {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 12px;
-        margin: 30px auto 45px auto;
-        max-width: 960px;
-        padding: 0 15px;
-    }
-    .category-pill {
-        display: inline-flex;
-        align-items: center;
-        padding: 10px 24px;
-        border-radius: 30px;
-        font-size: 14px;
-        font-weight: 600;
-        color: #444;
-        background-color: #ffffff;
-        border: 1.5px solid #e2e8f0;
-        cursor: pointer;
-        transition: all 0.25s ease;
-        box-shadow: 0 2px 6px rgba(0,0,0,0.03);
-        text-decoration: none;
-        white-space: nowrap;
-    }
-    .category-pill:hover {
-        border-color: #C5A059;
-        color: #C5A059;
-        transform: translateY(-1px);
-    }
-    .category-pill.active {
-        background-color: #C5A059;
-        color: #ffffff;
-        border-color: #C5A059;
-        box-shadow: 0 4px 14px rgba(197,160,89,0.35);
-    }
     .product-card-item, .app-card-item, .resource-card-item, .industry-card-3d, .case-card-link {
         transition: opacity 0.3s ease, transform 0.3s ease;
-    }
-    @media (max-width: 768px) {
-        .category-filter-container {
-            justify-content: flex-start;
-            overflow-x: auto;
-            flex-wrap: nowrap;
-            padding-bottom: 10px;
-            -webkit-overflow-scrolling: touch;
-        }
-        .category-pill {
-            flex-shrink: 0;
-        }
     }
 </style>
 <link href="https://yehsheng.com/resources.html" rel="canonical"/>
@@ -944,7 +897,7 @@
 <!-- Resources Grid -->
 <section style="padding: 80px 0; background: #f8f9fa;">
 <div class="container">
-<div class="category-filter-container">
+<div class="category-filter-container" role="navigation" aria-label="Category Navigation">
 <a class="category-pill active" href="resources.html">All Resources</a>
 <a class="category-pill" href="resource-process.html">Process Selection</a>
 <a class="category-pill" href="resource-design.html">Design Guidelines</a>

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="en">
 <head>
@@ -29,6 +29,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="assets/resource-pills.css" rel="stylesheet"/>
 <style>
         /* Global Reset */
         body {
@@ -965,27 +966,18 @@
                     help you make informed engineering decisions.
                 </p>
 </div>
-<!-- Layout with Sidebar -->
-<div class="resource-layout">
-<aside class="resource-sidebar">
-<div class="sidebar-title">Quick Navigation</div>
-<ul class="sidebar-nav">
-<li><a href="case-studies.html">Case Studies</a></li>
-<li><a href="resource-process.html#process-guide">Process Selection</a></li>
-<li><a href="resource-design.html#gear-types">Gear Guide</a></li>
-<li class="sub-item"><a href="resource-design.html#spur-helical">&bull; Spur/Helical</a></li>
-<li class="sub-item"><a href="resource-design.html#bevel-worm">&bull; Bevel/Worm</a></li>
-<li class="sub-item"><a href="resource-design.html#planetary">&bull; Planetary/Harmonic</a></li>
-<li><a href="resource-design.html#bearings-guide">Self-Lubricating Bearings</a></li>
-<li><a href="resource-materials.html#sintering-guide">Sintering Process</a></li>
-<li><a href="resource-materials.html#powder-production">Powder Production</a></li>
-<li><a href="resource-quality.html#quality-control">Quality Control</a></li>
-<li><a href="resource-materials.html#density-porosity">Density/Porosity</a></li>
-<li><a href="resource-faq.html#faq">FAQ</a></li>
-<li><a href="resource-faq.html#glossary">Glossary</a></li>
-<li><a href="resource-materials.html#materials">Material Specs</a></li>
-</ul>
-</aside>
+<!-- Capsule Navigation Bar -->
+<div class="category-filter-container" role="navigation" aria-label="Category Navigation">
+<a class="category-pill" href="resources.html">All Resources</a>
+<a class="category-pill" href="resource-process.html">Process Selection</a>
+<a class="category-pill" href="resource-design.html">Design Guidelines</a>
+<a class="category-pill active" href="resource-materials.html">Materials &amp; Specs</a>
+<a class="category-pill" href="resource-quality.html">Quality Standards</a>
+<a class="category-pill" href="resource-faq.html">FAQ &amp; Glossary</a>
+<a class="category-pill" href="resource-news.html">Industry News</a>
+<a class="category-pill" href="case-studies.html">Case Studies</a>
+</div>
+<div class="resource-layout" style="display: block; max-width: 1000px; margin: 0 auto;">
 <div class="resource-content"><!-- NEW: Surface Treatment & Secondary Operations -->
 <div class="accordion-card" id="surface-treatment"><div class="accordion-header" onclick="toggleAccordion(this)"><h3 style="font-family: 'Barlow', 'Helvetica Neue', Arial, sans-serif; font-size: 28px; font-weight: 500; color: #333; margin-bottom: 15px; border-bottom: 2px solid #eee; padding-bottom: 10px;; margin: 0 !important; border: none; padding: 0; font-size: 24px;">
                             Surface Treatment <span style="font-family: 'Inter', 'Arial', sans-serif;">&amp;</span> Secondary Operations
