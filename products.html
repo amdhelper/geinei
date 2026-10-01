@@ -1457,16 +1457,41 @@ function filterCategory(cat, btn) {
     });
 }
 
-// Auto filter on page load if hash exists
-window.addEventListener('DOMContentLoaded', () => {
+// Auto filter on page load or hash change if hash exists
+function handleProductHash() {
     let hash = window.location.hash.replace('#', '').replace('-section', '');
-    if (hash) {
-        const targetBtn = document.querySelector(`.category-pill[data-target="${hash}"]`);
+    if (!hash) return;
+    
+    const hashMap = {
+        'rotors': 'oil-pump',
+        'oil-pump': 'oil-pump',
+        'structural': 'structural',
+        'stainless': 'stainless',
+        'gears': 'gears'
+    };
+    const targetSlug = hashMap[hash];
+    if (targetSlug) {
+        const pills = Array.from(document.querySelectorAll('.category-pill'));
+        const targetBtn = pills.find(btn => (btn.getAttribute('onclick') || '').includes(targetSlug));
         if (targetBtn) {
-            filterCategory(hash, targetBtn);
+            filterCategory(targetSlug, targetBtn);
+            
+            const targetElem = document.querySelector('.category-filter-container') || document.getElementById('product-cards-grid');
+            if (targetElem) {
+                const nav = document.querySelector('.main-nav');
+                const navHeight = nav ? nav.offsetHeight : 80;
+                const targetTop = targetElem.getBoundingClientRect().top + window.pageYOffset - navHeight - 20;
+                window.scrollTo({
+                    top: Math.max(0, targetTop),
+                    behavior: 'smooth'
+                });
+            }
         }
     }
-});
+}
+
+window.addEventListener('DOMContentLoaded', handleProductHash);
+window.addEventListener('hashchange', handleProductHash);
 </script>
 <script id="products-filter-script">
 function filterCategory(cat, btn) {
