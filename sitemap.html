@@ -142,12 +142,6 @@
             padding: 28px 24px;
             display: flex;
             flex-direction: column;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-        }
-
-        .sitemap-card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.06);
         }
 
         .sitemap-card-title {
@@ -167,7 +161,28 @@
             margin: 0;
             display: flex;
             flex-direction: column;
-            gap: 16px;
+            gap: 6px;
+        }
+
+        .sitemap-list li {
+            position: relative;
+            padding: 8px 12px;
+            border-radius: 6px;
+            transition: background-color 0.15s ease;
+            min-height: 44px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            box-sizing: border-box;
+        }
+
+        .sitemap-list li:hover {
+            background-color: #f0f4f8;
+        }
+
+        .sitemap-list li:hover .sitemap-item-title {
+            color: #996B1D;
+            text-decoration: underline;
         }
 
         .sitemap-item-title {
@@ -180,8 +195,14 @@
             display: inline-block;
         }
 
-        .sitemap-item-title:hover {
-            color: #996B1D;
+        .sitemap-item-title::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 1;
         }
 
         .sitemap-item-desc {
@@ -234,6 +255,9 @@
             transition: all 0.2s ease;
             display: inline-flex;
             align-items: center;
+            white-space: nowrap;
+            min-height: 44px;
+            box-sizing: border-box;
         }
 
         .quick-tag-item:hover {
