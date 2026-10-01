@@ -767,11 +767,9 @@
             }
         });
     </script>
-<!-- Floating CTA Button -->
+<!-- Floating CTA Button with Close Option -->
+<div id="floating-cta-container" style="position: fixed; bottom: 28px; right: 28px; z-index: 9999; display: flex; align-items: center;">
 <a href="contact.html" id="floating-cta" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 20px rgba(197,160,89,0.4)'" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 6px 25px rgba(197,160,89,0.5)'" style="
-        position: fixed;
-        bottom: 28px;
-        right: 28px;
         background: linear-gradient(135deg, #C5A059, #a8853a);
         color: white;
         padding: 14px 24px;
@@ -781,12 +779,57 @@
         font-weight: 600;
         text-decoration: none;
         box-shadow: 0 4px 20px rgba(197, 160, 89, 0.4);
-        z-index: 9999;
         display: flex;
         align-items: center;
         gap: 6px;
         transition: all 0.3s ease;
     ">提交圖面索取報價</a>
+<button aria-label="Close" class="floating-cta-close" onclick="closeFloatingCTA(event)" type="button" style="position: absolute; top: -8px; right: -8px; width: 24px; height: 24px; border-radius: 50%; background-color: #1a1a1a; color: #ffffff; border: 2px solid #ffffff; font-size: 14px; font-weight: bold; line-height: 20px; text-align: center; cursor: pointer; z-index: 10000; padding: 0; box-shadow: 0 2px 6px rgba(0,0,0,0.3); display: flex; align-items: center; justify-content: center; outline: none;">×</button>
+</div>
+
+<style>
+.floating-cta-close::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    bottom: -8px;
+    left: -8px;
+    right: -8px;
+    background: transparent;
+}
+</style>
+
+<script>
+function closeFloatingCTA(e) {
+    if (e) {
+        if (e.preventDefault) e.preventDefault();
+        if (e.stopPropagation) e.stopPropagation();
+    }
+    var container = document.getElementById('floating-cta-container');
+    if (container) {
+        container.style.transition = 'opacity 0.3s ease, visibility 0.3s ease';
+        container.style.opacity = '0';
+        container.style.visibility = 'hidden';
+        setTimeout(function() {
+            container.style.display = 'none';
+        }, 300);
+    }
+    try {
+        sessionStorage.setItem('floating_cta_closed', 'true');
+    } catch(err) {}
+}
+
+(function() {
+    try {
+        if (sessionStorage.getItem('floating_cta_closed') === 'true') {
+            var container = document.getElementById('floating-cta-container');
+            if (container) {
+                container.style.display = 'none';
+            }
+        }
+    } catch(e) {}
+})();
+</script>
 <script id="mega-menu-custom-js">
     (function() {
         var dropdownItems = document.querySelectorAll('.mega-dropdown-item');
