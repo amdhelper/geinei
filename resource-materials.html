@@ -2844,6 +2844,31 @@
                 });
             });
             </script>
+<script>
+        function resetLanguage() {
+            // Clear Google Translate cookies
+            document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+            document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=." + document.domain;
+
+            // Reload the page
+            window.location.reload();
+        }
+
+        // Language Dropdown Toggle
+        function toggleLangDropdown() {
+            var dropdown = document.getElementById("langDropdown");
+            dropdown.style.display = dropdown.style.display === "none" ? "block" : "none";
+        }
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function (e) {
+            var dropdown = document.getElementById("langDropdown");
+            var button = e.target.closest('button');
+            if (dropdown && !e.target.closest('#langDropdown') && (!button || !button.onclick || button.onclick.toString().indexOf('toggleLangDropdown') === -1)) {
+                dropdown.style.display = "none";
+            }
+        });
+    </script>
 <script id="mega-menu-custom-js">
     (function() {
         var dropdownItems = document.querySelectorAll('.mega-dropdown-item');
