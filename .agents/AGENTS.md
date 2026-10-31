@@ -18,3 +18,14 @@ For future updates of the Applications page (`applications.html` and its localiz
 * AI-generated factory scenes
 * Non-authentic engineering imagery
 * Generic product collages that do not communicate Yeh Sheng as a manufacturing factory
+
+## Locked Language Versions
+
+The following language versions are COMPLETE and LOCKED. Do NOT modify them unless the user explicitly asks:
+
+* English (root-level *.html files)
+* Traditional Chinese (zh/)
+* Simplified Chinese (zh-cn/)
+* Japanese (jp/)
+
+When working on other languages (de/), do not touch the locked directories or root pages. Shared changes (sitemap, CSS, JS) must be confirmed with the user first.
