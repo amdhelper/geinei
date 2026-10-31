@@ -27,5 +27,6 @@ The following language versions are COMPLETE and LOCKED. Do NOT modify them unle
 * Traditional Chinese (zh/)
 * Simplified Chinese (zh-cn/)
 * Japanese (jp/)
+* German (de/)
 
-When working on other languages (de/), do not touch the locked directories or root pages. Shared changes (sitemap, CSS, JS) must be confirmed with the user first.
+All 5 language versions are now complete and locked. Do not touch the locked directories or root pages unless explicitly requested by the user. Shared changes (sitemap, CSS, JS) must be confirmed with the user first.
